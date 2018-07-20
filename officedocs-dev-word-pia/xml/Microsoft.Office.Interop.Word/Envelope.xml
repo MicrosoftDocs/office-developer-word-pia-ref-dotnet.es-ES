@@ -1,0 +1,1401 @@
+<Type Name="Envelope" FullName="Microsoft.Office.Interop.Word.Envelope">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="433ee9bb5f738804f44b8db15151d5f4a75a9ec8" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20675108" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Envelope" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Envelope" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Envelope" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Envelope" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Envelope" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00020918-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Representa un sobre.</summary>
+    <remarks>
+      <para>No hay ninguna colección Envelopes; cada <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto contiene sólo un objeto <b>Envelope</b> .</para>
+      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word._Document.Envelope" /> (propiedad) para devolver un objeto <b>Envelope</b> .</para> Objeto 
+      <para><b>Envelope</b> está disponible independientemente de si se ha agregado un sobre al documento especificado. Sin embargo, se produce un error si usa la propiedad <b>Envelope</b> . <b>UpdateDocument</b> (método) o una de las siguientes propiedades cuando no se ha agregado un sobre al documento: <see cref="P:Microsoft.Office.Interop.Word.Envelope.Address" />, <see cref="P:Microsoft.Office.Interop.Word.Envelope.AddressFromLeft" />, <see cref="P:Microsoft.Office.Interop.Word.Envelope.AddressFromTop" />, <see cref="P:Microsoft.Office.Interop.Word.Envelope.FeedSource" />, <see cref="P:Microsoft.Office.Interop.Word.Envelope.ReturnAddress" />, <see cref="P:Microsoft.Office.Interop.Word.Envelope.ReturnAddressFromLeft" />, y <see cref="P:Microsoft.Office.Interop.Word.Envelope.ReturnAddressFromTop" />.</para> Uso de 
+      <para>la <see cref="M:Microsoft.Office.Interop.Word.Envelope.Insert(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para agregar un sobre al documento especificado. Usar el <see cref="M:Microsoft.Office.Interop.Word.Envelope.PrintOut(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> (método) para establecer las propiedades de un sobre e imprimirlo sin agregarlo al documento.</para><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Address">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Range Address { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Range Address" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.Address" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Address As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Address { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve la dirección sobre como un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Se produce un error si se utiliza esta propiedad cuando se ha agregado un sobre al documento especificado.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddressFromLeft">
+      <MemberSignature Language="C#" Value="public float AddressFromLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 AddressFromLeft" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.AddressFromLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Property AddressFromLeft As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float AddressFromLeft { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece la distancia (en puntos) entre el borde izquierdo sobre y la dirección de entrega.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si utiliza esta propiedad antes de que se ha agregado un sobre al documento, se produce un error.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddressFromTop">
+      <MemberSignature Language="C#" Value="public float AddressFromTop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 AddressFromTop" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.AddressFromTop" />
+      <MemberSignature Language="VB.NET" Value="Public Property AddressFromTop As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float AddressFromTop { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece la distancia (en puntos) entre el borde superior sobre y la dirección de entrega.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si utiliza esta propiedad antes de que se ha agregado un sobre al documento, se produce un error.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddressStyle">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Style AddressStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Style AddressStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.AddressStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AddressStyle As Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Style ^ AddressStyle { Microsoft::Office::Interop::Word::Style ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Style" /> object que representa el estilo de dirección del remite sobre.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si se agrega un sobre al documento, se actualiza automáticamente el texto que se ha dado formateado con el estilo Envelope Address.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
+          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultFaceUp">
+      <MemberSignature Language="C#" Value="public bool DefaultFaceUp { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DefaultFaceUp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.DefaultFaceUp" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultFaceUp As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DefaultFaceUp { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(20)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(20)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(20)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determina si los sobres se coloquen mirando hacia arriba de forma predeterminada.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Esta propiedad devuelve <b>True</b> si los sobres se coloquen mirando hacia arriba de forma predeterminada, y <b>False</b> si no.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultHeight">
+      <MemberSignature Language="C#" Value="public float DefaultHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 DefaultHeight" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.DefaultHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultHeight As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float DefaultHeight { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece el alto predeterminado sobre, en puntos.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si establece la <b>DefaultHeight</b> o <see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultWidth" /> (propiedad), el tamaño de sobre se cambia automáticamente a tamaño personal en el cuadro de diálogo Opciones de sobre (menú Herramientas). Usar el <see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultSize" /> (propiedad) para establecer el tamaño predeterminado a un tamaño predefinido.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultOmitReturnAddress">
+      <MemberSignature Language="C#" Value="public bool DefaultOmitReturnAddress { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DefaultOmitReturnAddress" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.DefaultOmitReturnAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultOmitReturnAddress As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DefaultOmitReturnAddress { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determina si se omite el remite de los sobres de forma predeterminada.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Esta propiedad devuelve <b>True</b> si se omite el remite de los sobres de forma predeterminada, y <b>False</b> si no.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultOrientation">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdEnvelopeOrientation DefaultOrientation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdEnvelopeOrientation DefaultOrientation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.DefaultOrientation" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultOrientation As WdEnvelopeOrientation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdEnvelopeOrientation DefaultOrientation { Microsoft::Office::Interop::Word::WdEnvelopeOrientation get(); void set(Microsoft::Office::Interop::Word::WdEnvelopeOrientation value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdEnvelopeOrientation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece la orientación predeterminada para insertar los sobres.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultPrintBarCode">
+      <MemberSignature Language="C#" Value="public bool DefaultPrintBarCode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DefaultPrintBarCode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.DefaultPrintBarCode" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultPrintBarCode As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DefaultPrintBarCode { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determina si se agrega un código de barras POSTNET a sobres o etiquetas postales de forma predeterminada.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Esta propiedad devuelve <b>True</b> si se agrega un código de barras POSTNET a sobres o etiquetas postales de forma predeterminada y <b>False</b> si no.</para>
+          <para>Sólo correo para Estados Unidos. Para sobres, esta propiedad debe establecerse en <b>True</b> antes de que el <see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultPrintFIMA" /> se establece la propiedad.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultPrintFIMA">
+      <MemberSignature Language="C#" Value="public bool DefaultPrintFIMA { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DefaultPrintFIMA" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.DefaultPrintFIMA" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultPrintFIMA As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DefaultPrintFIMA { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determina si se agrega una marca de identificación (FIM-A) a los sobres de forma predeterminada.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Esta propiedad devuelve <b>True</b> si se agrega una marca de identificación (FIM-A) a los sobres de forma predeterminada, y <b>False</b> si no.</para>
+          <para>Sólo correo para Estados Unidos. Un código FIM-A se usa para realizar una ordenación previa de respuesta de cortesía. El <see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultPrintBarCode" /> (propiedad) debe establecerse en <b>True</b> antes de establecer esta propiedad.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultSize">
+      <MemberSignature Language="C#" Value="public string this { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.DefaultSize" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property DefaultSize As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece el tamaño de sobre predeterminado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La cadena que se devuelve corresponde a la parte derecha de la cadena que aparece en el cuadro Tamaño de sobre en el cuadro de diálogo Opciones de sobre. Si se establece el <see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultHeight" /> o <see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultWidth" /> (propiedad), el tamaño de sobre se cambia automáticamente a tamaño personal en el cuadro de diálogo Opciones de sobre (menú Herramientas) y esta propiedad devuelve "Tamaño personal".</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultWidth">
+      <MemberSignature Language="C#" Value="public float DefaultWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 DefaultWidth" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.DefaultWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultWidth As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float DefaultWidth { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece el ancho predeterminado sobre, en puntos.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si establece la <see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultHeight" /> o <b>DefaultWidth (</b> propiedad), el tamaño de sobre se cambia automáticamente a tamaño personal en el cuadro de diálogo Opciones de sobre (menú Herramientas). Usar el <see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultSize" /> (propiedad) para establecer el tamaño predeterminado a un tamaño predefinido.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FeedSource">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdPaperTray FeedSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdPaperTray FeedSource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.FeedSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property FeedSource As WdPaperTray" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdPaperTray FeedSource { Microsoft::Office::Interop::Word::WdPaperTray get(); void set(Microsoft::Office::Interop::Word::WdPaperTray value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdPaperTray</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece la Bandeja de papel del remite sobre.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si utiliza esta propiedad antes de que se ha agregado un sobre al documento, se produce un error.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (ref object ExtractAddress, ref object Address, ref object AutoText, ref object OmitReturnAddress, ref object ReturnAddress, ref object ReturnAutoText, ref object PrintBarCode, ref object PrintFIMA, ref object Size, ref object Height, ref object Width, ref object FeedSource, ref object AddressFromLeft, ref object AddressFromTop, ref object ReturnAddressFromLeft, ref object ReturnAddressFromTop, ref object DefaultFaceUp, ref object DefaultOrientation, ref object PrintEPostage, ref object Vertical, ref object RecipientNamefromLeft, ref object RecipientNamefromTop, ref object RecipientPostalfromLeft, ref object RecipientPostalfromTop, ref object SenderNamefromLeft, ref object SenderNamefromTop, ref object SenderPostalfromLeft, ref object SenderPostalfromTop);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert([in]object&amp; ExtractAddress, [in]object&amp; Address, [in]object&amp; AutoText, [in]object&amp; OmitReturnAddress, [in]object&amp; ReturnAddress, [in]object&amp; ReturnAutoText, [in]object&amp; PrintBarCode, [in]object&amp; PrintFIMA, [in]object&amp; Size, [in]object&amp; Height, [in]object&amp; Width, [in]object&amp; FeedSource, [in]object&amp; AddressFromLeft, [in]object&amp; AddressFromTop, [in]object&amp; ReturnAddressFromLeft, [in]object&amp; ReturnAddressFromTop, [in]object&amp; DefaultFaceUp, [in]object&amp; DefaultOrientation, [in]object&amp; PrintEPostage, [in]object&amp; Vertical, [in]object&amp; RecipientNamefromLeft, [in]object&amp; RecipientNamefromTop, [in]object&amp; RecipientPostalfromLeft, [in]object&amp; RecipientPostalfromTop, [in]object&amp; SenderNamefromLeft, [in]object&amp; SenderNamefromTop, [in]object&amp; SenderPostalfromLeft, [in]object&amp; SenderPostalfromTop) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Envelope.Insert(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (Optional ByRef ExtractAddress As Object, Optional ByRef Address As Object, Optional ByRef AutoText As Object, Optional ByRef OmitReturnAddress As Object, Optional ByRef ReturnAddress As Object, Optional ByRef ReturnAutoText As Object, Optional ByRef PrintBarCode As Object, Optional ByRef PrintFIMA As Object, Optional ByRef Size As Object, Optional ByRef Height As Object, Optional ByRef Width As Object, Optional ByRef FeedSource As Object, Optional ByRef AddressFromLeft As Object, Optional ByRef AddressFromTop As Object, Optional ByRef ReturnAddressFromLeft As Object, Optional ByRef ReturnAddressFromTop As Object, Optional ByRef DefaultFaceUp As Object, Optional ByRef DefaultOrientation As Object, Optional ByRef PrintEPostage As Object, Optional ByRef Vertical As Object, Optional ByRef RecipientNamefromLeft As Object, Optional ByRef RecipientNamefromTop As Object, Optional ByRef RecipientPostalfromLeft As Object, Optional ByRef RecipientPostalfromTop As Object, Optional ByRef SenderNamefromLeft As Object, Optional ByRef SenderNamefromTop As Object, Optional ByRef SenderPostalfromLeft As Object, Optional ByRef SenderPostalfromTop As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ExtractAddress" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Address" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AutoText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="OmitReturnAddress" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAddress" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAutoText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PrintBarCode" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PrintFIMA" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Size" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="FeedSource" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddressFromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddressFromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAddressFromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAddressFromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DefaultFaceUp" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DefaultOrientation" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PrintEPostage" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Vertical" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RecipientNamefromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RecipientNamefromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RecipientPostalfromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RecipientPostalfromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="SenderNamefromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="SenderNamefromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="SenderPostalfromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="SenderPostalfromTop" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ExtractAddress">
+          <b>Objeto</b>de opcional. <b>True</b> para usar el texto marcado por el marcador EnvelopeAddress (marcador definido por el usuario) como la dirección del destinatario.</param>
+        <param name="Address">
+          <b>Objeto</b>de opcional. Una cadena que especifica la dirección del destinatario (omitido si <paramref name="ExtractAddress" /> es <b>True</b>).</param>
+        <param name="AutoText">
+          <b>Objeto</b>de opcional. Cadena que especifica un elemento de Autotexto que se utilizará para la dirección. Si se especifica, <paramref name="Address" /> se omite.</param>
+        <param name="OmitReturnAddress">
+          <b>Objeto</b>de opcional. <b>True</b> para no insertar un remite.</param>
+        <param name="ReturnAddress">
+          <b>Objeto</b>de opcional. Cadena que especifica la dirección del remitente.</param>
+        <param name="ReturnAutoText">
+          <b>Objeto</b>de opcional. Cadena que especifica un elemento de Autotexto que se utilizará para la dirección del remitente. Si se especifica, <paramref name="ReturnAddress" /> se omite.</param>
+        <param name="PrintBarCode">
+          <b>Objeto</b>de opcional. <b>True</b> para agregar un código de barras POSTNET. Para el correo de Estados Unidos.</param>
+        <param name="PrintFIMA">
+          <b>Objeto</b>de opcional. <b>True</b> para agregar una marca de identificación (FIMA) que se use en la clasificación previa del correo de respuesta de cortesía. Para el correo de Estados Unidos.</param>
+        <param name="Size">
+          <b>Objeto</b>de opcional. Cadena que especifica el tamaño del sobre. La cadena debe ajustarse a uno de los tamaños enumerados en el cuadro Tamaño del sobre del cuadro de diálogo Opciones de sobre; por ejemplo, "Sobre 10" o "C4".</param>
+        <param name="Height">
+          <b>Objeto</b>de opcional. El alto sobre, medido en puntos, cuando la <paramref name="Size" /> argumento se establece como "Tamaño personal".</param>
+        <param name="Width">
+          <b>Objeto</b>de opcional. El ancho sobre, medido en puntos, cuando la <paramref name="Size" /> argumento se establece como "Tamaño personal".</param>
+        <param name="FeedSource">
+          <b>Objeto</b>de opcional. <b>True</b> para utilizar el <see cref="P:Microsoft.Office.Interop.Word.Envelope.FeedSource" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Word.Envelope" /> objeto para especificar qué bandeja de papel se utilizará cuando se imprima el sobre.</param>
+        <param name="AddressFromLeft">
+          <b>Objeto</b>de opcional. Distancia, medida en puntos, entre el borde izquierdo del sobre y la dirección del destinatario.</param>
+        <param name="AddressFromTop">
+          <b>Objeto</b>de opcional. Distancia, medida en puntos, entre el borde superior del sobre y la dirección del destinatario.</param>
+        <param name="ReturnAddressFromLeft">
+          <b>Objeto</b>de opcional. Distancia, medida en puntos, entre el borde izquierdo del sobre y el remite.</param>
+        <param name="ReturnAddressFromTop">
+          <b>Objeto</b>de opcional. Distancia, medida en puntos, entre el borde superior del sobre y el remite.</param>
+        <param name="DefaultFaceUp">
+          <b>Objeto</b>de opcional. <b>True</b> para imprimir el sobre boca arriba; <b>False</b> para imprimirlo boca abajo.</param>
+        <param name="DefaultOrientation">
+          <b>Objeto</b>de opcional. La orientación de los sobres. Puede ser cualquier <see cref="T:Microsoft.Office.Interop.Word.WdEnvelopeOrientation" /> constante.</param>
+        <param name="PrintEPostage">
+          <b>Objeto</b>de opcional. <b>True</b> para insertar el franqueo de un distribuidor de franqueo de Internet.</param>
+        <param name="Vertical">
+          <b>Objeto</b>de opcional. <b>True</b> para imprimir texto vertical en el sobre. Se utiliza para los sobres asiáticos. Valor predeterminado es <b>False</b>.</param>
+        <param name="RecipientNamefromLeft">
+          <b>Objeto</b>de opcional. Posición del nombre del destinatario, medida en puntos desde el borde izquierdo del sobre. Se utiliza para los sobres asiáticos.</param>
+        <param name="RecipientNamefromTop">
+          <b>Objeto</b>de opcional. Posición del nombre del destinatario, medida en puntos desde el borde superior del sobre. Se utiliza para los sobres asiáticos.</param>
+        <param name="RecipientPostalfromLeft">
+          <b>Objeto</b>de opcional. Posición del código postal del destinatario, medida en puntos desde el borde izquierdo del sobre. Se utiliza para los sobres asiáticos.</param>
+        <param name="RecipientPostalfromTop">
+          <b>Objeto</b>de opcional. Posición del código postal del destinatario, medida en puntos desde el borde superior del sobre. Se utiliza para los sobres asiáticos.</param>
+        <param name="SenderNamefromLeft">
+          <b>Objeto</b>de opcional. Posición del nombre del remitente, medida en puntos desde el borde izquierdo del sobre. Se utiliza para los sobres asiáticos.</param>
+        <param name="SenderNamefromTop">
+          <b>Objeto</b>de opcional. Posición del nombre del remitente, medida en puntos desde el borde superior del sobre. Se utiliza para los sobres asiáticos.</param>
+        <param name="SenderPostalfromLeft">
+          <b>Objeto</b>de opcional. Posición del código postal del remitente, medida en puntos desde el borde izquierdo del sobre. Se utiliza para los sobres asiáticos.</param>
+        <param name="SenderPostalfromTop">
+          <b>Objeto</b>de opcional. Posición del código postal del remitente, medida en puntos desde el borde superior del sobre. Se utiliza para los sobres asiáticos.</param>
+        <summary>Inserta un sobre como sección independiente al principio del documento especificado.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert2000">
+      <MemberSignature Language="C#" Value="public void Insert2000 (ref object ExtractAddress, ref object Address, ref object AutoText, ref object OmitReturnAddress, ref object ReturnAddress, ref object ReturnAutoText, ref object PrintBarCode, ref object PrintFIMA, ref object Size, ref object Height, ref object Width, ref object FeedSource, ref object AddressFromLeft, ref object AddressFromTop, ref object ReturnAddressFromLeft, ref object ReturnAddressFromTop, ref object DefaultFaceUp, ref object DefaultOrientation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert2000([in]object&amp; ExtractAddress, [in]object&amp; Address, [in]object&amp; AutoText, [in]object&amp; OmitReturnAddress, [in]object&amp; ReturnAddress, [in]object&amp; ReturnAutoText, [in]object&amp; PrintBarCode, [in]object&amp; PrintFIMA, [in]object&amp; Size, [in]object&amp; Height, [in]object&amp; Width, [in]object&amp; FeedSource, [in]object&amp; AddressFromLeft, [in]object&amp; AddressFromTop, [in]object&amp; ReturnAddressFromLeft, [in]object&amp; ReturnAddressFromTop, [in]object&amp; DefaultFaceUp, [in]object&amp; DefaultOrientation) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Envelope.Insert2000(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert2000 (Optional ByRef ExtractAddress As Object, Optional ByRef Address As Object, Optional ByRef AutoText As Object, Optional ByRef OmitReturnAddress As Object, Optional ByRef ReturnAddress As Object, Optional ByRef ReturnAutoText As Object, Optional ByRef PrintBarCode As Object, Optional ByRef PrintFIMA As Object, Optional ByRef Size As Object, Optional ByRef Height As Object, Optional ByRef Width As Object, Optional ByRef FeedSource As Object, Optional ByRef AddressFromLeft As Object, Optional ByRef AddressFromTop As Object, Optional ByRef ReturnAddressFromLeft As Object, Optional ByRef ReturnAddressFromTop As Object, Optional ByRef DefaultFaceUp As Object, Optional ByRef DefaultOrientation As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ExtractAddress" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Address" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AutoText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="OmitReturnAddress" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAddress" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAutoText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PrintBarCode" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PrintFIMA" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Size" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="FeedSource" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddressFromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddressFromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAddressFromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAddressFromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DefaultFaceUp" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DefaultOrientation" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ExtractAddress">To be added.</param>
+        <param name="Address">To be added.</param>
+        <param name="AutoText">To be added.</param>
+        <param name="OmitReturnAddress">To be added.</param>
+        <param name="ReturnAddress">To be added.</param>
+        <param name="ReturnAutoText">To be added.</param>
+        <param name="PrintBarCode">To be added.</param>
+        <param name="PrintFIMA">To be added.</param>
+        <param name="Size">To be added.</param>
+        <param name="Height">To be added.</param>
+        <param name="Width">To be added.</param>
+        <param name="FeedSource">To be added.</param>
+        <param name="AddressFromLeft">To be added.</param>
+        <param name="AddressFromTop">To be added.</param>
+        <param name="ReturnAddressFromLeft">To be added.</param>
+        <param name="ReturnAddressFromTop">To be added.</param>
+        <param name="DefaultFaceUp">To be added.</param>
+        <param name="DefaultOrientation">To be added.</param>
+        <summary>Reservado para uso interno.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="public void Options ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Options() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Envelope.Options" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Options ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Options();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Muestra el cuadro de diálogo Opciones de sobre.</summary>
+        <remarks>
+          <para>El método <b>Options</b> funciona únicamente si el documento es el documento principal de una combinación de correspondencia de sobres.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un objeto que representa el objeto primario del objeto especificado.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintOut">
+      <MemberSignature Language="C#" Value="public void PrintOut (ref object ExtractAddress, ref object Address, ref object AutoText, ref object OmitReturnAddress, ref object ReturnAddress, ref object ReturnAutoText, ref object PrintBarCode, ref object PrintFIMA, ref object Size, ref object Height, ref object Width, ref object FeedSource, ref object AddressFromLeft, ref object AddressFromTop, ref object ReturnAddressFromLeft, ref object ReturnAddressFromTop, ref object DefaultFaceUp, ref object DefaultOrientation, ref object PrintEPostage, ref object Vertical, ref object RecipientNamefromLeft, ref object RecipientNamefromTop, ref object RecipientPostalfromLeft, ref object RecipientPostalfromTop, ref object SenderNamefromLeft, ref object SenderNamefromTop, ref object SenderPostalfromLeft, ref object SenderPostalfromTop);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PrintOut([in]object&amp; ExtractAddress, [in]object&amp; Address, [in]object&amp; AutoText, [in]object&amp; OmitReturnAddress, [in]object&amp; ReturnAddress, [in]object&amp; ReturnAutoText, [in]object&amp; PrintBarCode, [in]object&amp; PrintFIMA, [in]object&amp; Size, [in]object&amp; Height, [in]object&amp; Width, [in]object&amp; FeedSource, [in]object&amp; AddressFromLeft, [in]object&amp; AddressFromTop, [in]object&amp; ReturnAddressFromLeft, [in]object&amp; ReturnAddressFromTop, [in]object&amp; DefaultFaceUp, [in]object&amp; DefaultOrientation, [in]object&amp; PrintEPostage, [in]object&amp; Vertical, [in]object&amp; RecipientNamefromLeft, [in]object&amp; RecipientNamefromTop, [in]object&amp; RecipientPostalfromLeft, [in]object&amp; RecipientPostalfromTop, [in]object&amp; SenderNamefromLeft, [in]object&amp; SenderNamefromTop, [in]object&amp; SenderPostalfromLeft, [in]object&amp; SenderPostalfromTop) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Envelope.PrintOut(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PrintOut (Optional ByRef ExtractAddress As Object, Optional ByRef Address As Object, Optional ByRef AutoText As Object, Optional ByRef OmitReturnAddress As Object, Optional ByRef ReturnAddress As Object, Optional ByRef ReturnAutoText As Object, Optional ByRef PrintBarCode As Object, Optional ByRef PrintFIMA As Object, Optional ByRef Size As Object, Optional ByRef Height As Object, Optional ByRef Width As Object, Optional ByRef FeedSource As Object, Optional ByRef AddressFromLeft As Object, Optional ByRef AddressFromTop As Object, Optional ByRef ReturnAddressFromLeft As Object, Optional ByRef ReturnAddressFromTop As Object, Optional ByRef DefaultFaceUp As Object, Optional ByRef DefaultOrientation As Object, Optional ByRef PrintEPostage As Object, Optional ByRef Vertical As Object, Optional ByRef RecipientNamefromLeft As Object, Optional ByRef RecipientNamefromTop As Object, Optional ByRef RecipientPostalfromLeft As Object, Optional ByRef RecipientPostalfromTop As Object, Optional ByRef SenderNamefromLeft As Object, Optional ByRef SenderNamefromTop As Object, Optional ByRef SenderPostalfromLeft As Object, Optional ByRef SenderPostalfromTop As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(106)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ExtractAddress" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Address" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AutoText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="OmitReturnAddress" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAddress" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAutoText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PrintBarCode" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PrintFIMA" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Size" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="FeedSource" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddressFromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddressFromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAddressFromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAddressFromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DefaultFaceUp" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DefaultOrientation" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PrintEPostage" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Vertical" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RecipientNamefromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RecipientNamefromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RecipientPostalfromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RecipientPostalfromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="SenderNamefromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="SenderNamefromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="SenderPostalfromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="SenderPostalfromTop" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ExtractAddress">
+          <b>Objeto</b>de opcional. <b>True</b> para usar el texto marcado por el marcador "EnvelopeAddress" (un marcador definido por el usuario) como la dirección del destinatario.</param>
+        <param name="Address">
+          <b>Objeto</b>de opcional. Una cadena que especifica la dirección del destinatario (omitido si <paramref name="ExtractAddress" /> es <b>True</b>).</param>
+        <param name="AutoText">
+          <b>Objeto</b>de opcional. Nombre del elemento de Autotexto que contiene la dirección del destinatario.</param>
+        <param name="OmitReturnAddress">
+          <b>Objeto</b>de opcional. <b>True</b> para omitir el remite.</param>
+        <param name="ReturnAddress">
+          <b>Objeto</b>de opcional. Cadena que especifica la dirección del remitente.</param>
+        <param name="ReturnAutoText">
+          <b>Objeto</b>de opcional. Nombre del elemento de Autotexto que contiene la información del remite.</param>
+        <param name="PrintBarCode">
+          <b>Objeto</b>de opcional. <b>True</b> para agregar un código de barras POSTNET. Para el correo de Estados Unidos.</param>
+        <param name="PrintFIMA">
+          <b>Objeto</b>de opcional. <b>True</b> para agregar una marca de identificación (FIM-A) para su uso en la clasificación previa del correo de respuesta de cortesía. Para el correo de Estados Unidos.</param>
+        <param name="Size">
+          <b>Objeto</b>de opcional. Cadena que especifica el tamaño del sobre. La cadena debe ajustarse a uno de los tamaños enumerados en la parte izquierda del cuadro Tamaño de sobre en el cuadro de diálogo Opciones de sobre (por ejemplo, "Tamaño 10").</param>
+        <param name="Height">
+          <b>Objeto</b>de opcional. El alto sobre (en puntos) cuando el <paramref name="Size" /> argumento se establece como "Tamaño personal".</param>
+        <param name="Width">
+          <b>Objeto</b>de opcional. El ancho sobre, (en puntos) cuando el <paramref name="Size" /> argumento se establece como "Tamaño personal".</param>
+        <param name="FeedSource">
+          <b>Objeto</b>de opcional. <b>True</b> para utilizar el <see cref="P:Microsoft.Office.Interop.Word.Envelope.FeedSource" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Word.Envelope" /> objeto para especificar qué bandeja de papel se utilizará cuando se imprima el sobre.</param>
+        <param name="AddressFromLeft">
+          <b>Objeto</b>de opcional. Distancia, en puntos, entre el borde izquierdo del sobre y la dirección del destinatario.</param>
+        <param name="AddressFromTop">
+          <b>Objeto</b>de opcional. Distancia, en puntos, entre el borde superior del sobre y la dirección del destinatario.</param>
+        <param name="ReturnAddressFromLeft">
+          <b>Objeto</b>de opcional. Distancia, en puntos, entre el borde izquierdo del sobre y el remite.</param>
+        <param name="ReturnAddressFromTop">
+          <b>Objeto</b>de opcional. Distancia, en puntos, entre el borde superior del sobre y el remite.</param>
+        <param name="DefaultFaceUp">
+          <b>Objeto</b>de opcional. <b>True</b> para imprimir el sobre boca arriba; <b>False</b> para imprimirlo boca abajo.</param>
+        <param name="DefaultOrientation">
+          <b>Objeto</b>de opcional. La orientación sobre. Puede ser cualquier <see cref="T:Microsoft.Office.Interop.Word.WdEnvelopeOrientation" /> constante.</param>
+        <param name="PrintEPostage">
+          <b>Objeto</b>de opcional. <b>True</b> para imprimir franqueo mediante un proveedor de franqueo electrónico de Internet.</param>
+        <param name="Vertical">
+          <b>Objeto</b>de opcional. <b>True</b> imprime el texto verticalmente en el contenedor. Se utiliza para los sobres asiáticos.</param>
+        <param name="RecipientNamefromLeft">
+          <b>Objeto</b>de opcional. Posición del nombre del destinatario, medida en puntos, desde el borde izquierdo del sobre. Se utiliza para sobres en lenguas asiáticas.</param>
+        <param name="RecipientNamefromTop">
+          <b>Objeto</b>de opcional. Posición del nombre del destinatario, medida en puntos, desde el borde superior del sobre. Se utiliza para sobres en lenguas asiáticas.</param>
+        <param name="RecipientPostalfromLeft">
+          <b>Objeto</b>de opcional. Posición del código postal del destinatario, medida en puntos, desde el borde izquierdo del sobre. Se utiliza para sobres en lenguas asiáticas.</param>
+        <param name="RecipientPostalfromTop">
+          <b>Objeto</b>de opcional. Posición del código postal del destinatario, medida en puntos, desde el borde superior del sobre. Se utiliza para sobres en lenguas asiáticas.</param>
+        <param name="SenderNamefromLeft">
+          <b>Objeto</b>de opcional. Posición del nombre del remitente, medida en puntos, desde el borde izquierdo del sobre. Se utiliza para sobres en lenguas asiáticas.</param>
+        <param name="SenderNamefromTop">
+          <b>Objeto</b>de opcional. Posición del nombre del remitente, medida en puntos, desde el borde superior del sobre. Se utiliza para sobres en lenguas asiáticas.</param>
+        <param name="SenderPostalfromLeft">
+          <b>Objeto</b>de opcional. Posición del código postal del remitente, medida en puntos, desde el borde izquierdo del sobre. Se utiliza para sobres en lenguas asiáticas.</param>
+        <param name="SenderPostalfromTop">
+          <b>Objeto</b>de opcional. Posición del código postal del remitente, medida en puntos, desde el borde superior del sobre. Se utiliza para sobres en lenguas asiáticas.</param>
+        <summary>Imprime un sobre sin agregarlo al documento activo.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintOut2000">
+      <MemberSignature Language="C#" Value="public void PrintOut2000 (ref object ExtractAddress, ref object Address, ref object AutoText, ref object OmitReturnAddress, ref object ReturnAddress, ref object ReturnAutoText, ref object PrintBarCode, ref object PrintFIMA, ref object Size, ref object Height, ref object Width, ref object FeedSource, ref object AddressFromLeft, ref object AddressFromTop, ref object ReturnAddressFromLeft, ref object ReturnAddressFromTop, ref object DefaultFaceUp, ref object DefaultOrientation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PrintOut2000([in]object&amp; ExtractAddress, [in]object&amp; Address, [in]object&amp; AutoText, [in]object&amp; OmitReturnAddress, [in]object&amp; ReturnAddress, [in]object&amp; ReturnAutoText, [in]object&amp; PrintBarCode, [in]object&amp; PrintFIMA, [in]object&amp; Size, [in]object&amp; Height, [in]object&amp; Width, [in]object&amp; FeedSource, [in]object&amp; AddressFromLeft, [in]object&amp; AddressFromTop, [in]object&amp; ReturnAddressFromLeft, [in]object&amp; ReturnAddressFromTop, [in]object&amp; DefaultFaceUp, [in]object&amp; DefaultOrientation) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Envelope.PrintOut2000(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PrintOut2000 (Optional ByRef ExtractAddress As Object, Optional ByRef Address As Object, Optional ByRef AutoText As Object, Optional ByRef OmitReturnAddress As Object, Optional ByRef ReturnAddress As Object, Optional ByRef ReturnAutoText As Object, Optional ByRef PrintBarCode As Object, Optional ByRef PrintFIMA As Object, Optional ByRef Size As Object, Optional ByRef Height As Object, Optional ByRef Width As Object, Optional ByRef FeedSource As Object, Optional ByRef AddressFromLeft As Object, Optional ByRef AddressFromTop As Object, Optional ByRef ReturnAddressFromLeft As Object, Optional ByRef ReturnAddressFromTop As Object, Optional ByRef DefaultFaceUp As Object, Optional ByRef DefaultOrientation As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ExtractAddress" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Address" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AutoText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="OmitReturnAddress" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAddress" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAutoText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PrintBarCode" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PrintFIMA" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Size" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="FeedSource" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddressFromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddressFromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAddressFromLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReturnAddressFromTop" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DefaultFaceUp" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DefaultOrientation" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ExtractAddress">To be added.</param>
+        <param name="Address">To be added.</param>
+        <param name="AutoText">To be added.</param>
+        <param name="OmitReturnAddress">To be added.</param>
+        <param name="ReturnAddress">To be added.</param>
+        <param name="ReturnAutoText">To be added.</param>
+        <param name="PrintBarCode">To be added.</param>
+        <param name="PrintFIMA">To be added.</param>
+        <param name="Size">To be added.</param>
+        <param name="Height">To be added.</param>
+        <param name="Width">To be added.</param>
+        <param name="FeedSource">To be added.</param>
+        <param name="AddressFromLeft">To be added.</param>
+        <param name="AddressFromTop">To be added.</param>
+        <param name="ReturnAddressFromLeft">To be added.</param>
+        <param name="ReturnAddressFromTop">To be added.</param>
+        <param name="DefaultFaceUp">To be added.</param>
+        <param name="DefaultOrientation">To be added.</param>
+        <summary>Reservado para uso interno.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecipientNamefromLeft">
+      <MemberSignature Language="C#" Value="public float RecipientNamefromLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 RecipientNamefromLeft" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.RecipientNamefromLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Property RecipientNamefromLeft As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float RecipientNamefromLeft { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(23)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(23)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(23)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece un valor <b>Single</b> que representa la posición, medida en puntos, del nombre del destinatario desde el borde izquierdo sobre. Se utiliza para los sobres asiáticos.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecipientNamefromTop">
+      <MemberSignature Language="C#" Value="public float RecipientNamefromTop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 RecipientNamefromTop" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.RecipientNamefromTop" />
+      <MemberSignature Language="VB.NET" Value="Public Property RecipientNamefromTop As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float RecipientNamefromTop { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(24)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(24)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(24)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece un valor <b>Single</b> que representa la posición, medida en puntos, del nombre del destinatario desde el borde superior sobre.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Esta propiedad se utiliza para los sobres asiáticos.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecipientPostalfromLeft">
+      <MemberSignature Language="C#" Value="public float RecipientPostalfromLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 RecipientPostalfromLeft" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.RecipientPostalfromLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Property RecipientPostalfromLeft As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float RecipientPostalfromLeft { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(25)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(25)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(25)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece un valor <b>Single</b> que representa la posición, medida en puntos, del código postal del destinatario desde el borde izquierdo sobre.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Esta propiedad se utiliza para los sobres asiáticos.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecipientPostalfromTop">
+      <MemberSignature Language="C#" Value="public float RecipientPostalfromTop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 RecipientPostalfromTop" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.RecipientPostalfromTop" />
+      <MemberSignature Language="VB.NET" Value="Public Property RecipientPostalfromTop As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float RecipientPostalfromTop { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(26)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(26)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(26)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece un valor <b>Single</b> que representa la posición, medida en puntos, del código postal del destinatario desde el borde superior sobre.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Esta propiedad se utiliza para los sobres asiáticos.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnAddress">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Range ReturnAddress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Range ReturnAddress" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.ReturnAddress" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnAddress As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ ReturnAddress { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa el remite.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Se produce un error si se utiliza esta propiedad antes de agregar un sobre al documento.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnAddressFromLeft">
+      <MemberSignature Language="C#" Value="public float ReturnAddressFromLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 ReturnAddressFromLeft" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.ReturnAddressFromLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReturnAddressFromLeft As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float ReturnAddressFromLeft { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece la distancia (en puntos) entre el borde izquierdo sobre y el remite.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si utiliza esta propiedad antes de que se ha agregado un sobre al documento, se produce un error.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnAddressFromTop">
+      <MemberSignature Language="C#" Value="public float ReturnAddressFromTop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 ReturnAddressFromTop" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.ReturnAddressFromTop" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReturnAddressFromTop As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float ReturnAddressFromTop { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece la distancia (en puntos) entre el borde superior sobre y el remite.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si utiliza esta propiedad antes de que se ha agregado un sobre al documento, se produce un error.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnAddressStyle">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Style ReturnAddressStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Style ReturnAddressStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.ReturnAddressStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnAddressStyle As Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Style ^ ReturnAddressStyle { Microsoft::Office::Interop::Word::Style ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Style" /> object que representa el estilo del remite del remite sobre.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si se agrega un sobre al documento, se actualiza automáticamente el texto con formato del estilo remite sobre.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SenderNamefromLeft">
+      <MemberSignature Language="C#" Value="public float SenderNamefromLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 SenderNamefromLeft" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.SenderNamefromLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Property SenderNamefromLeft As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float SenderNamefromLeft { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(27)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(27)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(27)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece un valor <b>Single</b> que representa la posición, medida en puntos, del nombre del remitente en el borde izquierdo sobre.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Esta propiedad se utiliza para los sobres asiáticos.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SenderNamefromTop">
+      <MemberSignature Language="C#" Value="public float SenderNamefromTop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 SenderNamefromTop" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.SenderNamefromTop" />
+      <MemberSignature Language="VB.NET" Value="Public Property SenderNamefromTop As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float SenderNamefromTop { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(28)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(28)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(28)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece un valor <b>Single</b> que representa la posición, medida en puntos, del nombre del remitente en el borde superior sobre.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Esta propiedad se utiliza para los sobres asiáticos.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SenderPostalfromLeft">
+      <MemberSignature Language="C#" Value="public float SenderPostalfromLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 SenderPostalfromLeft" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.SenderPostalfromLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Property SenderPostalfromLeft As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float SenderPostalfromLeft { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(29)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(29)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(29)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece un valor <b>Single</b> que representa la posición, medida en puntos, del código postal de la dirección del remitente en el borde izquierdo sobre.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Esta propiedad se utiliza para los sobres asiáticos.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SenderPostalfromTop">
+      <MemberSignature Language="C#" Value="public float SenderPostalfromTop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 SenderPostalfromTop" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.SenderPostalfromTop" />
+      <MemberSignature Language="VB.NET" Value="Public Property SenderPostalfromTop As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float SenderPostalfromTop { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(30)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(30)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(30)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece un valor <b>Single</b> que representa la posición, medida en puntos, del código postal de la dirección del remitente en el borde superior sobre.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Esta propiedad se utiliza para los sobres asiáticos.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateDocument">
+      <MemberSignature Language="C#" Value="public void UpdateDocument ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateDocument() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Envelope.UpdateDocument" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdateDocument ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateDocument();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Actualiza el sobre del documento con la configuración actual del sobre.</summary>
+        <remarks>
+          <para>Si utiliza esta propiedad antes de que se ha agregado un sobre al documento, se produce un error.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Vertical">
+      <MemberSignature Language="C#" Value="public bool Vertical { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Vertical" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Envelope.Vertical" />
+      <MemberSignature Language="VB.NET" Value="Public Property Vertical As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Vertical { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Orienta verticalmente el texto en los sobres y etiquetas postales asiáticos.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Esta propiedad devuelve <b>True</b> si el texto en los sobres asiáticos y etiquetas postales se orienta verticalmente y <b>False</b> si no.</para>
+          <para>Esta propiedad sólo funciona con etiquetas postales o sobres que se configuran para una combinación de correspondencia y se aplica sólo a los idiomas asiáticos.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

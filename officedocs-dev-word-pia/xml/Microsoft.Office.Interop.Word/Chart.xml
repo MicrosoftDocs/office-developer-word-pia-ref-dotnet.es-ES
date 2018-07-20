@@ -1,0 +1,3450 @@
+<Type Name="Chart" FullName="Microsoft.Office.Interop.Word.Chart">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="616cb136ed9c6470acdef04821482823dc95523f" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20675834" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Chart" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Chart" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Chart" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Chart" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Chart" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("6FFA84BB-A350-4442-BB53-A43653459A84")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Representa un gráfico en un documento.</summary>
+    <remarks>
+      <para>Las siguientes propiedades y métodos para devolver un objeto <b>Chart</b> que se describen en la sección ejemplo:</para>
+      <para />
+      <list type="bullet">
+        <item>
+          <para>propiedad
+            <b>gráfico</b></para>
+        </item>
+        <item>
+          <para>
+            <b>AddChart</b> (método)</para>
+        </item>
+      </list>
+      <para />
+      <para />
+    </remarks>
+    <example>
+      <para>El <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> colección contiene un objeto para cada forma entre líneas, incluidos los gráficos, en un documento. Utilice <b>InlineShapes</b>(<paramref name="Index" />), donde <paramref name="Index" /> es el número de índice de una forma en línea, para devolver un solo objeto <b>InlineShape</b> . Usar el <see cref="P:Microsoft.Office.Interop.Word.InlineShape.HasChart" /> (propiedad) para determinar si el objeto <b>InlineShape</b> representa un gráfico. Si la propiedad <b>HasChart</b> se establece en <b>True</b>, utilice la <see cref="P:Microsoft.Office.Interop.Word.InlineShape.Chart" /> propiedad para devolver un objeto <b>Chart</b> .</para>
+      <para>También puede usar el <see cref="P:Microsoft.Office.Interop.Word.InlineShape.Type" /> (propiedad) para determinar si el objeto <b>InlineShape</b> representa un gráfico. Si la propiedad <b>Type</b> se establece en <b>WdInlineShapeChart</b>, la forma entre líneas representa un gráfico.</para>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa la aplicación Microsoft Word. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto). Solo lectura.</summary>
+        <value>
+          <b>Object</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyChartTemplate">
+      <MemberSignature Language="C#" Value="public void ApplyChartTemplate (string FileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyChartTemplate([in]string FileName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.ApplyChartTemplate(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ApplyChartTemplate (FileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ApplyChartTemplate(System::String ^ FileName);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743884)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <b>Cadena de</b> nombre de archivo de una plantilla de gráfico requerida.</param>
+        <summary>Aplica un tipo de gráfico estándar o personalizado a un gráfico.</summary>
+        <remarks>
+          <para>Este método no es compatible con la toma de constantes para diagramas nativos o combinados.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyCustomType">
+      <MemberSignature Language="C#" Value="public void ApplyCustomType (Microsoft.Office.Core.XlChartType ChartType, object TypeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyCustomType([in]valuetype Microsoft.Office.Core.XlChartType ChartType, [in]object TypeName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.ApplyCustomType(Microsoft.Office.Core.XlChartType,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ApplyCustomType (ChartType As XlChartType, Optional TypeName As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1401)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ChartType" Type="Microsoft.Office.Core.XlChartType" />
+        <Parameter Name="TypeName" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="ChartType">Requiere <see cref="T:Microsoft.Office.Core.XlChartType" /> un tipo de gráfico estándar</param>
+        <param name="TypeName">Requiere el <b>objeto de</b> un tipo de gráfico estándar</param>
+        <summary>Aplica un tipo de gráfico estándar o personalizado a un gráfico.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyDataLabels">
+      <MemberSignature Language="C#" Value="public void ApplyDataLabels (Microsoft.Office.Interop.Word.XlDataLabelsType Type = Microsoft.Office.Interop.Word.XlDataLabelsType.xlDataLabelsShowValue, object LegendKey, object AutoText, object HasLeaderLines, object ShowSeriesName, object ShowCategoryName, object ShowValue, object ShowPercentage, object ShowBubbleSize, object Separator);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyDataLabels([in]valuetype Microsoft.Office.Interop.Word.XlDataLabelsType Type, [in]object LegendKey, [in]object AutoText, [in]object HasLeaderLines, [in]object ShowSeriesName, [in]object ShowCategoryName, [in]object ShowValue, [in]object ShowPercentage, [in]object ShowBubbleSize, [in]object Separator) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.ApplyDataLabels(Microsoft.Office.Interop.Word.XlDataLabelsType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ApplyDataLabels (Optional Type As XlDataLabelsType = Microsoft.Office.Interop.Word.XlDataLabelsType.xlDataLabelsShowValue, Optional LegendKey As Object, Optional AutoText As Object, Optional HasLeaderLines As Object, Optional ShowSeriesName As Object, Optional ShowCategoryName As Object, Optional ShowValue As Object, Optional ShowPercentage As Object, Optional ShowBubbleSize As Object, Optional Separator As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1922)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.LCIDConversion(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Interop.Word.XlDataLabelsType" />
+        <Parameter Name="LegendKey" Type="System.Object" />
+        <Parameter Name="AutoText" Type="System.Object" />
+        <Parameter Name="HasLeaderLines" Type="System.Object" />
+        <Parameter Name="ShowSeriesName" Type="System.Object" />
+        <Parameter Name="ShowCategoryName" Type="System.Object" />
+        <Parameter Name="ShowValue" Type="System.Object" />
+        <Parameter Name="ShowPercentage" Type="System.Object" />
+        <Parameter Name="ShowBubbleSize" Type="System.Object" />
+        <Parameter Name="Separator" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Type">Requiere <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" /> el tipo de rótulo de datos que se debe aplicar.</param>
+        <param name="LegendKey">						Si es <b>True</b>, se muestra la clave de la leyenda junto al punto. El valor predeterminado es <b>False</b>.</param>
+        <param name="AutoText">
+          <b>True</b> si el objeto genera automáticamente el texto adecuado basado en el contenido.</param>
+        <param name="HasLeaderLines">Para el <see cref="T:Microsoft.Office.Interop.Word.Chart" /> y <see cref="T:Microsoft.Office.Interop.Word.Series" /> objetos, <b>True</b> si la serie tiene líneas guía.</param>
+        <param name="ShowSeriesName">Pasar un valor booleano para habilitar o deshabilitar el nombre de la serie correspondiente al rótulo de datos.</param>
+        <param name="ShowCategoryName">Pasar un valor booleano para habilitar o deshabilitar el nombre de la categoría correspondiente al rótulo de datos.</param>
+        <param name="ShowValue">Pasar un valor booleano para habilitar o deshabilitar el valor del rótulo de datos.</param>
+        <param name="ShowPercentage">un valor booleano para habilitar o deshabilitar el porcentaje para el rótulo de datos.</param>
+        <param name="ShowBubbleSize">Pasar un valor booleano para habilitar o deshabilitar el tamaño de la burbuja correspondiente al rótulo de datos.</param>
+        <param name="Separator">Separador de la etiqueta de datos.</param>
+        <summary>Aplica rótulos de datos a todas las series de un gráfico.</summary>
+        <remarks>
+          <para>La siguiente tabla se muestra la <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" /> los argumentos que se pueden pasar a la <paramref name="Type" /> parámetro de un <see cref="M:Microsoft.Office.Interop.Word.Chart.ApplyDataLabels(Microsoft.Office.Interop.Word.XlDataLabelsType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método.</para>
+          <list type="table">
+            <item>
+              <description>
+                <b>xlDataLabelsShowBubbleSizes</b>. El tamaño de la burbuja del rótulo de datos.</description>
+            </item>
+            <item>
+              <description>
+                <b>xlDataLabelsShowLabelAndPercent</b>.  Porcentaje del total y categoría del punto. Sólo está disponible para los gráficos circulares y gráficos de anillos.</description>
+            </item>
+            <item>
+              <description>
+                <b>xlDataLabelsShowPercent</b>. Porcentaje del total. Sólo está disponible para los gráficos circulares y gráficos de anillos.</description>
+            </item>
+            <item>
+              <description>
+                <b>xlDataLabelsShowLabel</b>. Categoría del punto.</description>
+            </item>
+            <item>
+              <description>
+                <b>xlDataLabelsShowNone</b>. Sin etiquetas de datos.</description>
+            </item>
+            <item>
+              <description>
+                <b>xlDataLabelsShowValue</b>. predeterminada. Valor del punto (que se supone si no se especifica este argumento).</description>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyLayout">
+      <MemberSignature Language="C#" Value="public void ApplyLayout (int Layout, object ChartType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyLayout([in]int32 Layout, [in]object ChartType) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.ApplyLayout(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ApplyLayout (Layout As Integer, Optional ChartType As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2468)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Layout" Type="System.Int32" />
+        <Parameter Name="ChartType" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Layout">
+          <b>Número entero</b> Especifica el tipo de diseño.  El tipo de diseño se indica mediante un número comprendido entre 1 y 10.</param>
+        <param name="ChartType">
+          <b>Objeto</b> que contiene una constante <b>XlChartType</b> que representa el tipo de gráfico.</param>
+        <summary>Aplica los diseños mostrados en la cinta de opciones.</summary>
+        <remarks>
+          <para>Cuando se usa un diseño en el tipo de gráfico actual, se aplica un número del 1 al 10 para el tipo de gráfico.  También puede aplicar el diseño de un tipo de gráfico en otro tipo de gráfico.  Por ejemplo, puede aplicar los diseños que están disponibles en un gráfico de líneas a un gráfico de columnas.  El diseño sólo agrega los elementos del gráfico que están disponibles para ese tipo de gráfico determinado.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Area3DGroup">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ChartGroup Area3DGroup { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ChartGroup Area3DGroup" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Area3DGroup" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Area3DGroup As ChartGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartGroup ^ Area3DGroup { Microsoft::Office::Interop::Word::ChartGroup ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ChartGroup</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve el grupo de gráficos de áreas en un gráfico 3D.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AreaGroups">
+      <MemberSignature Language="C#" Value="public object AreaGroups (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AreaGroups([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.AreaGroups(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AreaGroups (Optional Index As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.LCIDConversion(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <b>Objeto</b> el número del grupo de gráficos opcional.</param>
+        <summary>En un gráfico 2D, devuelve un objeto object que representa un grupo de gráficos de área única (un <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto) o una colección de los grupos de gráficos de áreas (un <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> colección).</summary>
+        <returns>
+          <b>Object</b>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoFormat">
+      <MemberSignature Language="C#" Value="public void AutoFormat (int Gallery, object Format);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AutoFormat([in]int32 Gallery, [in]object Format) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.AutoFormat(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AutoFormat (Gallery As Integer, Optional Format As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743870)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Gallery" Type="System.Int32" />
+        <Parameter Name="Format" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Gallery">
+          <b>Integer</b>
+        </param>
+        <param name="Format">
+          <b>Object</b>
+        </param>
+        <summary>Esta API es compatible con Visual Studio Tools para la infraestructura de Office y no está pensada para usarse directamente desde el código.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoScaling">
+      <MemberSignature Language="C#" Value="public bool AutoScaling { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoScaling" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.AutoScaling" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoScaling As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoScaling { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743871)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743871)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743871)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cambia la escala de un gráfico 3D para que sea más cerca en tamaño del gráfico 2D equivalente. El <see cref="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" /> propiedad debe ser <b>True</b>. Lectura y escritura.</summary>
+        <value>
+          <b>Boolean</b>
+          <b>True</b> si Microsoft Word ajusta un gráfico 3-d para que sea más cerca en tamaño del gráfico 2D equivalente; de lo contrario, <b>False</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Axes">
+      <MemberSignature Language="C#" Value="public object Axes (object Type, Microsoft.Office.Interop.Word.XlAxisGroup AxisGroup = Microsoft.Office.Interop.Word.XlAxisGroup.xlPrimary);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Axes([in]object Type, [in]valuetype Microsoft.Office.Interop.Word.XlAxisGroup AxisGroup) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.Axes(System.Object,Microsoft.Office.Interop.Word.XlAxisGroup)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Axes (Optional Type As Object, Optional AxisGroup As XlAxisGroup = Microsoft.Office.Interop.Word.XlAxisGroup.xlPrimary) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743861)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.LCIDConversion(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="System.Object" />
+        <Parameter Name="AxisGroup" Type="Microsoft.Office.Interop.Word.XlAxisGroup" />
+      </Parameters>
+      <Docs>
+        <param name="Type">Requiere el eje del <b>objeto</b> especifica devolver. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" /> constantes: <b>xlValue</b>, <b>xlCategory</b>o <b>xlSeriesAxis</b> (<b>xlSeriesAxis</b> sólo es válido para gráficos 3D).</param>
+        <param name="AxisGroup">Opcional <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /> especifica el grupo de ejes. Si se omite este argumento, se usa el grupo principal. Los gráficos 3D tienen un solo grupo de ejes.</param>
+        <summary>Obtiene un objeto que ya sea representa un solo eje o una colección de ejes del gráfico.</summary>
+        <returns>
+          <b>Object</b>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackWall">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Walls BackWall { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Walls BackWall" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.BackWall" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BackWall As Walls" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Walls ^ BackWall { Microsoft::Office::Interop::Word::Walls ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2378)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2378)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Walls</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Walls" /> objeto que permite al usuario dar formato por separado al plano posterior de un gráfico 3D. Es de solo lectura</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.Walls" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bar3DGroup">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ChartGroup Bar3DGroup { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ChartGroup Bar3DGroup" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Bar3DGroup" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bar3DGroup As ChartGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartGroup ^ Bar3DGroup { Microsoft::Office::Interop::Word::ChartGroup ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ChartGroup</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve el grupo de gráficos de barras en un gráfico 3D.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BarGroups">
+      <MemberSignature Language="C#" Value="public object BarGroups (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object BarGroups([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.BarGroups(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BarGroups (Optional Index As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.LCIDConversion(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">Opcional <b>objeto</b> especifica el grupo de gráficos.</param>
+        <summary>En un gráfico 2D, devuelve un objeto object que representa un grupo de gráficos de barras único (un <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto) o una colección de los grupos de gráficos de barras (un <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> colección).</summary>
+        <returns>
+          <b>Object</b>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BarShape">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.XlBarShape BarShape { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.XlBarShape BarShape" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.BarShape" />
+      <MemberSignature Language="VB.NET" Value="Public Property BarShape As XlBarShape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlBarShape BarShape { Microsoft::Office::Interop::Word::XlBarShape get(); void set(Microsoft::Office::Interop::Word::XlBarShape value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743880)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743880)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743880)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.XlBarShape</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece la forma empleada en todas las series de un gráfico de columnas o de barras 3D. Lectura y escritura.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.XlBarShape" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CategoryLabelLevel">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.XlCategoryLabelLevel CategoryLabelLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.XlCategoryLabelLevel CategoryLabelLevel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.CategoryLabelLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property CategoryLabelLevel As XlCategoryLabelLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlCategoryLabelLevel CategoryLabelLevel { Microsoft::Office::Interop::Word::XlCategoryLabelLevel get(); void set(Microsoft::Office::Interop::Word::XlCategoryLabelLevel value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(237)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(237)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(237)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.XlCategoryLabelLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.XlCategoryLabelLevel" /> constante que especifica el nivel de origen de los rótulos de categorías del gráfico. Lectura y escritura.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChartArea">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ChartArea ChartArea { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ChartArea ChartArea" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ChartArea" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChartArea As ChartArea" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartArea ^ ChartArea { Microsoft::Office::Interop::Word::ChartArea ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743869)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743869)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ChartArea</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ChartArea" /> object que representa el área de gráfico completa del gráfico. Es de solo lectura</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.ChartArea" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChartColor">
+      <MemberSignature Language="C#" Value="public object ChartColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ChartColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ChartColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChartColor As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ChartColor { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2467)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2467)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2467)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece un valor de tipo integer que representa la combinación de colores para el gráfico. Lectura y escritura.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Combinaciones de colores del gráfico se numeran de 1 a 17; el valor de esta propiedad corresponde a las combinaciones de colores que se muestran en la Galería cambiar colores en la ficha de la cinta de opciones de diseño de herramientas de gráfico.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChartData">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ChartData ChartData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ChartData ChartData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ChartData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChartData As ChartData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartData ^ ChartData { Microsoft::Office::Interop::Word::ChartData ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743901)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743901)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ChartData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve información sobre los datos vinculados o incrustados asociados al gráfico. Es de solo lectura</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.ChartData" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChartGroups">
+      <MemberSignature Language="C#" Value="public object ChartGroups[object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ChartGroups(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ChartGroups(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChartGroups(Optional Index As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ChartGroups[System::Object ^] { System::Object ^ get(System::Object ^ Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">El número del grupo de gráficos. Si especifica un solo <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> se devuelve el objeto. Si se omite, un <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> se devuelve el objeto que contiene una colección de todos los <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto de ese gráfico.</param>
+        <summary>Devuelve un objeto que representa un solo grupo de gráficos o una colección de todos los grupos de gráficos del gráfico.</summary>
+        <value>
+          <b>Object</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChartStyle">
+      <MemberSignature Language="C#" Value="public object ChartStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ChartStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ChartStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChartStyle As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ChartStyle { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2465)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2465)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2465)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece el estilo de gráfico para el gráfico. Lectura/Escritura <b>Objeto</b>.</summary>
+        <value>
+          <b>Object</b>
+        </value>
+        <remarks>
+          <para>Puede usar un número entre 1 y 48 para establecer el estilo de gráfico.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChartTitle">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ChartTitle ChartTitle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ChartTitle ChartTitle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ChartTitle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChartTitle As ChartTitle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartTitle ^ ChartTitle { Microsoft::Office::Interop::Word::ChartTitle ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743811)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743811)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ChartTitle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> object que representa el título del gráfico especificado. Es de solo lectura</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" />
+        </value>
+        <remarks>
+          <para>El <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> objeto no existe y no puede utilizarse a menos que la <see cref="P:Microsoft.Office.Interop.Word.Chart.HasTitle" /> propiedad del gráfico sea <b>True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChartType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.XlChartType ChartType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.XlChartType ChartType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ChartType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChartType As XlChartType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::XlChartType ChartType { Microsoft::Office::Core::XlChartType get(); void set(Microsoft::Office::Core::XlChartType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1400)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1400)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1400)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.XlChartType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece el tipo de gráfico. Lectura y escritura.</summary>
+        <value>
+          <b>XlChartType</b>
+        </value>
+        <remarks>
+          <para>Algunos tipos de gráficos no están disponibles para informes de gráfico dinámico.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChartWizard">
+      <MemberSignature Language="C#" Value="public void ChartWizard (object Source, object Gallery, object Format, object PlotBy, object CategoryLabels, object SeriesLabels, object HasLegend, object Title, object CategoryTitle, object ValueTitle, object ExtraTitle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ChartWizard([in]object Source, [in]object Gallery, [in]object Format, [in]object PlotBy, [in]object CategoryLabels, [in]object SeriesLabels, [in]object HasLegend, [in]object Title, [in]object CategoryTitle, [in]object ValueTitle, [in]object ExtraTitle) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ChartWizard (Optional Source As Object, Optional Gallery As Object, Optional Format As Object, Optional PlotBy As Object, Optional CategoryLabels As Object, Optional SeriesLabels As Object, Optional HasLegend As Object, Optional Title As Object, Optional CategoryTitle As Object, Optional ValueTitle As Object, Optional ExtraTitle As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743874)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.LCIDConversion(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Source" Type="System.Object" />
+        <Parameter Name="Gallery" Type="System.Object" />
+        <Parameter Name="Format" Type="System.Object" />
+        <Parameter Name="PlotBy" Type="System.Object" />
+        <Parameter Name="CategoryLabels" Type="System.Object" />
+        <Parameter Name="SeriesLabels" Type="System.Object" />
+        <Parameter Name="HasLegend" Type="System.Object" />
+        <Parameter Name="Title" Type="System.Object" />
+        <Parameter Name="CategoryTitle" Type="System.Object" />
+        <Parameter Name="ValueTitle" Type="System.Object" />
+        <Parameter Name="ExtraTitle" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Source">
+          <b>Objeto</b> el rango que contiene los datos de origen para el nuevo gráfico opcional. Si se omite este argumento, Microsoft Word modificará la hoja de gráficos activa o el gráfico seleccionado en la hoja de cálculo activa.</param>
+        <param name="Gallery">Opcional <b>objeto</b> contiene una de las constantes de <see cref="T:Microsoft.Office.Interop.Excel.XlChartType" /> que especifica el tipo de gráfico.</param>
+        <param name="Format">
+          <b>Objeto</b> el número de opción de los autoformatos integrados opcional. Puede ser un número de 1 a 10, según el tipo de galería. Si se omite este argumento, Microsoft Word elige un valor predeterminado basado en el origen de datos y el tipo de galería.</param>
+        <param name="PlotBy">Opcional <b>objeto</b> especifica si los datos de cada serie están en filas o columnas. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> constantes: <b>xlRows</b> o <b>xlColumns</b>.</param>
+        <param name="CategoryLabels">Opcional <b>objeto</b> contiene un <b>número entero</b> que especifica el número de filas o columnas del rango de origen que contienen rótulos de categorías. Valores válidos son de 0 (cero) a través de una menor que el número máximo de las categorías o series correspondientes.</param>
+        <param name="SeriesLabels">Opcional <b>objeto</b> contiene un <b>número entero</b> que especifica el número de filas o columnas del rango de origen que contienen rótulos de series. Valores válidos son de 0 (cero) a través de una menor que el número máximo de las categorías o series correspondientes.</param>
+        <param name="HasLegend">Opcional <b>objeto</b> se establece en <b>True</b> para incluir una leyenda.</param>
+        <param name="Title">
+          <b>Objeto de</b> texto del título del gráfico opcional.</param>
+        <param name="CategoryTitle">Opcional <b>objeto</b> el texto del título de eje de categorías.</param>
+        <param name="ValueTitle">
+          <b>Objeto</b> el texto del título del eje valor opcional.</param>
+        <param name="ExtraTitle">Opcional <b>objeto</b> el título del eje de series para gráficos 3D o el segundo título del eje de valores para gráficos 2D.</param>
+        <summary>Modifica las propiedades del gráfico especificado. Puede usar este método para aplicar rápidamente formato a un gráfico sin tener que establecer las propiedades por separado. Este método no es interactivo y cambia únicamente las propiedades especificadas.</summary>
+        <remarks>
+          <para>Si <paramref name="Source" /> se omite y la selección no es un gráfico en el documento activo, se produce un error en este método y se produce un error.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearToMatchColorStyle">
+      <MemberSignature Language="C#" Value="public void ClearToMatchColorStyle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearToMatchColorStyle() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.ClearToMatchColorStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearToMatchColorStyle ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearToMatchColorStyle();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2469)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Borra todos los colores en el gráfico especificado que no siguen el estilo de color aplicado al gráfico.</summary>
+        <remarks>
+          <para>Use este método para restablecer todos los el gráfico un formato de color para el estilo de color aplicado al gráfico.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearToMatchStyle">
+      <MemberSignature Language="C#" Value="public void ClearToMatchStyle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearToMatchStyle() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.ClearToMatchStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearToMatchStyle ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearToMatchStyle();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2466)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Borra el formato de los elementos del gráfico y usa los formatos automáticos.</summary>
+        <remarks>
+          <para>Use este método para restablecer el formato automático de los elementos de gráfico.    Si utiliza este método en un gráfico, se restablecerá todo el formato (incluidas las invalidaciones).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Column3DGroup">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ChartGroup Column3DGroup { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ChartGroup Column3DGroup" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Column3DGroup" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column3DGroup As ChartGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartGroup ^ Column3DGroup { Microsoft::Office::Interop::Word::ChartGroup ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ChartGroup</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve el grupo de gráficos de columnas en un gráfico 3D.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnGroups">
+      <MemberSignature Language="C#" Value="public object ColumnGroups (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ColumnGroups([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.ColumnGroups(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ColumnGroups (Optional Index As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.LCIDConversion(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <b>Objeto</b>de opcional. Especifica el grupo de gráficos.</param>
+        <summary>En un gráfico 2D, devuelve un objeto object que representa un grupo de gráficos de una sola columna (un <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto) o una colección de los grupos de gráficos de columnas (un <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> colección).</summary>
+        <returns>
+          <b>Object</b>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public void Copy (object Before, object After);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Copy([in]object Before, [in]object After) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.Copy(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Copy (Optional Before As Object, Optional After As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(551)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.LCIDConversion(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Before" Type="System.Object" />
+        <Parameter Name="After" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Before">No está admitido para este objeto.</param>
+        <param name="After">No está admitido para este objeto.</param>
+        <summary>No está admitido para este objeto.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyPicture">
+      <MemberSignature Language="C#" Value="public void CopyPicture (Microsoft.Office.Interop.Word.XlPictureAppearance Appearance = Microsoft.Office.Interop.Word.XlPictureAppearance.xlScreen, Microsoft.Office.Interop.Word.XlCopyPictureFormat Format = Microsoft.Office.Interop.Word.XlCopyPictureFormat.xlPicture, Microsoft.Office.Interop.Word.XlPictureAppearance Size = Microsoft.Office.Interop.Word.XlPictureAppearance.xlPrinter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyPicture([in]valuetype Microsoft.Office.Interop.Word.XlPictureAppearance Appearance, [in]valuetype Microsoft.Office.Interop.Word.XlCopyPictureFormat Format, [in]valuetype Microsoft.Office.Interop.Word.XlPictureAppearance Size) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.CopyPicture(Microsoft.Office.Interop.Word.XlPictureAppearance,Microsoft.Office.Interop.Word.XlCopyPictureFormat,Microsoft.Office.Interop.Word.XlPictureAppearance)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyPicture (Optional Appearance As XlPictureAppearance = Microsoft.Office.Interop.Word.XlPictureAppearance.xlScreen, Optional Format As XlCopyPictureFormat = Microsoft.Office.Interop.Word.XlCopyPictureFormat.xlPicture, Optional Size As XlPictureAppearance = Microsoft.Office.Interop.Word.XlPictureAppearance.xlPrinter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743875)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.LCIDConversion(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Appearance" Type="Microsoft.Office.Interop.Word.XlPictureAppearance" />
+        <Parameter Name="Format" Type="Microsoft.Office.Interop.Word.XlCopyPictureFormat" />
+        <Parameter Name="Size" Type="Microsoft.Office.Interop.Word.XlPictureAppearance" />
+      </Parameters>
+      <Docs>
+        <param name="Appearance">Opcional <see cref="T:Microsoft.Office.Interop.Word.XlPictureAppearance" /> especifica cómo se debe copiar la imagen. El valor predeterminado es <see cref="F:Microsoft.Office.Interop.Word.XlPictureAppearance.xlScreen" />.</param>
+        <param name="Format">Opcional <see cref="T:Microsoft.Office.Interop.Word.XlCopyPictureFormat" /> el formato de la imagen. El valor predeterminado es <see cref="F:Microsoft.Office.Interop.Word.XlCopyPictureFormat.xlPicture" />.</param>
+        <param name="Size">Opcional <see cref="T:Microsoft.Office.Interop.Word.XlPictureAppearance" /> el tamaño de la imagen copiada cuando el objeto es un gráfico en una hoja de gráfico (no está incrustado en una hoja de cálculo). El valor predeterminado es <see cref="F:Microsoft.Office.Interop.Word.XlPictureAppearance.xlPrinter" />.</param>
+        <summary>Copia el objeto seleccionado en el Portapapeles como una imagen.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Corners">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Corners Corners { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Corners Corners" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Corners" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Corners As Corners" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Corners ^ Corners { Microsoft::Office::Interop::Word::Corners ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(79)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(79)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Corners</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve las esquinas de un gráfico 3D.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.Corners" />Corners</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <b>entero</b> de 32 bits que indica la aplicación en la que se creó el objeto especificado. Es de solo lectura</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>
+          <para>Si el objeto se creó en Microsoft Word, el <see cref="P:Microsoft.Office.Interop.Word.Chart.Creator" /> (propiedad) devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, consulte la referencia del lenguaje de ayuda que se incluye con Microsoft Office Macintosh Edition.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataTable">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.DataTable DataTable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.DataTable DataTable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.DataTable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataTable As DataTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::DataTable ^ DataTable { Microsoft::Office::Interop::Word::DataTable ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743876)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743876)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.DataTable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.DataTable" /> object que representa la tabla de datos del gráfico. Es de solo lectura</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.DataTable" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public object Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Function Delete () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Elimina el objeto.</summary>
+        <returns>
+          <b>Object</b>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteHiddenContent">
+      <MemberSignature Language="C#" Value="public void DeleteHiddenContent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteHiddenContent() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.DeleteHiddenContent" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DeleteHiddenContent ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteHiddenContent();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(240)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DepthPercent">
+      <MemberSignature Language="C#" Value="public int DepthPercent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DepthPercent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.DepthPercent" />
+      <MemberSignature Language="VB.NET" Value="Public Property DepthPercent As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DepthPercent { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743812)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743812)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743812)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece la profundidad de un gráfico 3D como un porcentaje del ancho del gráfico (entre 20 y 2000 por ciento). Lectura y escritura.</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>
+          <para>Esta propiedad se aplica solamente a gráficos 3D.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayBlanksAs">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.XlDisplayBlanksAs DisplayBlanksAs { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.XlDisplayBlanksAs DisplayBlanksAs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.DisplayBlanksAs" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayBlanksAs As XlDisplayBlanksAs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlDisplayBlanksAs DisplayBlanksAs { Microsoft::Office::Interop::Word::XlDisplayBlanksAs get(); void set(Microsoft::Office::Interop::Word::XlDisplayBlanksAs value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743826)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743826)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743826)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.XlDisplayBlanksAs</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece la forma en que se trazan las celdas en blanco en un gráfico. Puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.XlDisplayBlanksAs" /> constantes. Lectura y escritura.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.XlDisplayBlanksAs" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoughnutGroups">
+      <MemberSignature Language="C#" Value="public object DoughnutGroups (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object DoughnutGroups([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.DoughnutGroups(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DoughnutGroups (Optional Index As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.LCIDConversion(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <b>Objeto</b>de opcional. Especifica el grupo de gráficos.</param>
+        <summary>En un gráfico 2D, devuelve un objeto object que representa un grupo de gráficos de anillos único (un <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto) o una colección de los grupos de gráficos de anillos (un <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> colección).</summary>
+        <returns>
+          <b>Object</b>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Elevation">
+      <MemberSignature Language="C#" Value="public int Elevation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Elevation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Elevation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Elevation As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Elevation { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743814)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743814)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743814)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece la elevación de la vista del gráfico 3D, en grados. Lectura y escritura.</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>
+          <para>La elevación del gráfico es el alto en el que se ve el gráfico, en grados. El valor predeterminado es 15 para la mayoría de los tipos de gráfico. El valor de esta propiedad debe estar comprendido entre -90 y 90, excepto para los gráficos de barras 3D, donde debe estar comprendido entre 0 y 44.</para>
+          <para>
+            <b>Nota</b>: esta propiedad se aplica solamente a gráficos 3D.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Export">
+      <MemberSignature Language="C#" Value="public bool Export (string FileName, object FilterName, object Interactive);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Export([in]string FileName, [in]object FilterName, [in]object Interactive) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.Export(System.String,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Export (FileName As String, Optional FilterName As Object, Optional Interactive As Object) As Boolean" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743882)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.String" />
+        <Parameter Name="FilterName" Type="System.Object" />
+        <Parameter Name="Interactive" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <b>Cadena</b> el nombre del archivo exportado requerida.</param>
+        <param name="FilterName">Nombre opcional de <b>objeto</b> el independiente del idioma del filtro gráfico tal como se aparece en el registro.</param>
+        <param name="Interactive">Opcional <b>objeto</b><b>es True</b> para mostrar el cuadro de diálogo que contiene las opciones específicas del filtro. Si este argumento es <b>False</b>, Microsoft Word utiliza los valores predeterminados para el filtro. El valor predeterminado es <b>False</b>.</param>
+        <summary>Exporta el gráfico con un formato de imagen. Este método devuelve un valor de <b>tipo Boolean</b> que indica si la exportación se realizó correctamente.</summary>
+        <returns>
+          <b>Boolean</b>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Floor">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Floor Floor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Floor Floor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Floor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Floor As Floor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Floor ^ Floor { Microsoft::Office::Interop::Word::Floor ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743865)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743865)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Floor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Floor" /> object que representa el plano inferior del gráfico 3D. Es de solo lectura</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.Floor" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FullSeriesCollection">
+      <MemberSignature Language="C#" Value="public object FullSeriesCollection (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object FullSeriesCollection([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.FullSeriesCollection(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FullSeriesCollection (Optional Index As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(236)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.LCIDConversion(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">El número de índice en la colección de series de la serie para devolver.</param>
+        <summary>Devuelve la colección de todas las series del gráfico especificado o la serie especificada.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GapDepth">
+      <MemberSignature Language="C#" Value="public int GapDepth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 GapDepth" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.GapDepth" />
+      <MemberSignature Language="VB.NET" Value="Public Property GapDepth As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int GapDepth { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743816)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743816)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743816)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece la distancia entre la serie de datos en un gráfico 3D, como un porcentaje del ancho del marcador. El valor de la propiedad debe ser entre 0 y 500. Lectura y escritura.</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>
+          <para>
+            <b>Nota</b>: esta propiedad se aplica solamente a gráficos 3D.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChartElement">
+      <MemberSignature Language="C#" Value="public void GetChartElement (int x, int y, out int ElementID, out int Arg1, out int Arg2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetChartElement([in]int32 x, [in]int32 y, [out] int32&amp; ElementID, [out] int32&amp; Arg1, [out] int32&amp; Arg2) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.GetChartElement(System.Int32,System.Int32,System.Int32@,System.Int32@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetChartElement (x As Integer, y As Integer, ByRef ElementID As Integer, ByRef Arg1 As Integer, ByRef Arg2 As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetChartElement(int x, int y, [Runtime::InteropServices::Out] int % ElementID, [Runtime::InteropServices::Out] int % Arg1, [Runtime::InteropServices::Out] int % Arg2);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1409)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+        <Parameter Name="ElementID" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="Arg1" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="Arg2" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="x">Requiere <b>entero</b> la coordenada X del elemento de gráfico.</param>
+        <param name="y">Requiere <b>entero</b> la coordenada Y del elemento de gráfico.</param>
+        <param name="ElementID">
+          <b>Número entero</b> Cuando se devuelve el método, este argumento contiene el <see cref="T:Microsoft.Office.Interop.Word.XlChartItem" /> valor del elemento de gráfico en las coordenadas especificadas. Para obtener más información, vea la sección "Comentarios".</param>
+        <param name="Arg1">
+          <b>Número entero</b> Cuando se devuelve el método, este argumento contiene información relacionada con el elemento de gráfico. Para obtener más información, vea la sección "Comentarios".</param>
+        <param name="Arg2">
+          <b>Número entero</b> Cuando se devuelve el método, este argumento contiene información relacionada con el elemento de gráfico. Para obtener más información, vea la sección "Comentarios".</param>
+        <summary>Devuelve información sobre el elemento de gráfico en las coordenadas X e Y especificadas. Este método tiene la particularidad de que solo se especifican los valores de los dos primeros argumentos. Microsoft Word rellena el resto de los argumentos y el código debe examinar sus valores al finalizar el método.</summary>
+        <remarks>
+          <para>El valor de <paramref name="ElementID" /> después de que el método devuelve determina si <paramref name="Arg1" /> y <paramref name="Arg2" /> contienen cualquier información, tal como se muestra en la siguiente tabla.</para>
+          <list type="table">
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlAxis" />
+              </description>
+              <description>21</description>
+              <description>AxisIndex</description>
+              <description>AxisType</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlAxisTitle" />
+              </description>
+              <description>17</description>
+              <description>AxisIndex</description>
+              <description>AxisType</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDisplayUnitLabel" />
+              </description>
+              <description>30</description>
+              <description>AxisIndex</description>
+              <description>AxisType</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlMajorGridlines" />
+              </description>
+              <description>15</description>
+              <description>AxisIndex</description>
+              <description>AxisType</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlMinorGridlines" />
+              </description>
+              <description>16</description>
+              <description>AxisIndex</description>
+              <description>AxisType</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlPivotChartDropZone" />
+              </description>
+              <description>32</description>
+              <description>DropZoneType</description>
+              <description>Ninguno</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlPivotChartFieldButton" />
+              </description>
+              <description>31</description>
+              <description>DropZoneType</description>
+              <description>Ninguno</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDownBars" />
+              </description>
+              <description>20</description>
+              <description>GroupIndex</description>
+              <description>Ninguno</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDropLines" />
+              </description>
+              <description>26</description>
+              <description>GroupIndex</description>
+              <description>Ninguno</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlHiLoLines" />
+              </description>
+              <description>25</description>
+              <description>GroupIndex</description>
+              <description>Ninguno</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlRadarAxisLabels" />
+              </description>
+              <description>27</description>
+              <description>GroupIndex</description>
+              <description>Ninguno</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlSeriesLines" />
+              </description>
+              <description>22</description>
+              <description>GroupIndex</description>
+              <description>Ninguno</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlUpBars" />
+              </description>
+              <description> 18</description>
+              <description>GroupIndex</description>
+              <description>Ninguno</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlChartArea" />
+              </description>
+              <description>2</description>
+              <description>Ninguno</description>
+              <description>Ninguno</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlChartTitle" />
+              </description>
+              <description>4</description>
+              <description>Ninguno</description>
+              <description>Ninguno</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlCorners" />
+              </description>
+              <description>6</description>
+              <description>Ninguno</description>
+              <description>Ninguno</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDataTable" />
+              </description>
+              <description>7</description>
+              <description>Ninguno</description>
+              <description>Ninguno</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlFloor" />
+              </description>
+              <description>23</description>
+              <description>Ninguno</description>
+              <description>Ninguno</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlLeaderLines" />
+              </description>
+              <description>29</description>
+              <description>Ninguno</description>
+              <description>Ninguno</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlLegend" />
+              </description>
+              <description>24</description>
+              <description>Ninguno</description>
+              <description>Ninguno</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlNothing" />
+              </description>
+              <description>28</description>
+              <description>Ninguno</description>
+              <description>Ninguno</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlPlotArea" />
+              </description>
+              <description>19</description>
+              <description>Ninguno</description>
+              <description>Ninguno</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlWalls" />
+              </description>
+              <description>5</description>
+              <description>Ninguno</description>
+              <description>Ninguno</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDataLabel" />
+              </description>
+              <description>7</description>
+              <description>SeriesIndex</description>
+              <description>PointIndex</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlErrorBars" />
+              </description>
+              <description>9</description>
+              <description>SeriesIndex</description>
+              <description>Ninguno</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlLegendEntry" />
+              </description>
+              <description>12</description>
+              <description>SeriesIndex</description>
+              <description>Ninguno</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlLegendKey" />
+              </description>
+              <description>13</description>
+              <description>SeriesIndex</description>
+              <description>Ninguno</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlSeries" />
+              </description>
+              <description>3</description>
+              <description>SeriesIndex</description>
+              <description>PointIndex</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlShape" />
+              </description>
+              <description>14</description>
+              <description>ShapeIndex</description>
+              <description>Ninguno</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlTrendline" />
+              </description>
+              <description>8</description>
+              <description>SeriesIndex</description>
+              <description>TrendLineIndex</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlXErrorBars" />
+              </description>
+              <description>10</description>
+              <description>SeriesIndex</description>
+              <description>Ninguno</description>
+            </item>
+            <item>
+              <description>
+                <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlYErrorBars" />
+              </description>
+              <description>11</description>
+              <description>SeriesIndex</description>
+              <description>Ninguno</description>
+            </item>
+          </list>
+          <para>En la siguiente tabla se describe el significado de <paramref name="Arg1" /> y <paramref name="Arg2" /> después de que el método devuelve.</para>
+          <list type="table">
+            <item>
+              <description>AxisIndex</description>
+              <description>Especifica si el eje es principal o secundaria. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /> constantes: <b>xlPrimary</b> o <b>xlSecondary</b>.</description>
+            </item>
+            <item>
+              <description>AxisType</description>
+              <description>especifica el tipo de eje. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" /> constantes: <b>xlCategory</b>, <b>xlSeriesAxis</b>o <b>xlValue</b>.</description>
+            </item>
+            <item>
+              <description>DropZoneType</description>
+              <description>especifica el tipo de zona de colocación: columna, datos, página o campo de fila. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.XlPivotFieldOrientation" /> constantes: <b>xlColumnField</b>, <b>xlDataField</b>, <b>xlPageField</b>o <b>xlRowField</b>. Las constantes de campo de columna y fila especifican los campos de serie y categoría, respectivamente.</description>
+            </item>
+            <item>
+              <description>GroupIndex</description>
+              <description>especifica el desplazamiento en el <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> colección para un grupo de gráficos específico.</description>
+            </item>
+            <item>
+              <description>PointIndex</description>
+              <description>especifica el desplazamiento en el <see cref="T:Microsoft.Office.Interop.Word.Points" /> colección para un punto determinado dentro de una serie. Un valor de – 1 indica que están seleccionados todos los puntos de datos.</description>
+            </item>
+            <item>
+              <description>SeriesIndex</description>
+              <description>especifica el desplazamiento en el <see cref="T:Microsoft.Office.Interop.Word.Series" /> colección para una serie dada.</description>
+            </item>
+            <item>
+              <description>ShapeIndex</description>
+              <description>especifica el desplazamiento en el <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> colección para una forma dada.</description>
+            </item>
+            <item>
+              <description>TrendlineIndex</description>
+              <description>especifica el desplazamiento en el <see cref="T:Microsoft.Office.Interop.Word.Trendlines" /> colección para una línea de tendencia dada de una serie.</description>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasAxis">
+      <MemberSignature Language="C#" Value="public object HasAxis[object Index1, object Index2] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object HasAxis(object, object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.HasAxis(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasAxis(Optional Index1 As Object, Optional Index2 As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ HasAxis[System::Object ^, System::Object ^] { System::Object ^ get(System::Object ^ Index1, System::Object ^ Index2); void set(System::Object ^ Index1, System::Object ^ Index2, System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743862)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743862)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743862)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.LCIDConversion(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index1" Type="System.Object" />
+        <Parameter Name="Index2" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index1">
+          <b>Objeto</b> en el tipo de eje requerido. Ejes de series se aplican sólo a los gráficos 3D. Puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" /> constantes.</param>
+        <param name="Index2">
+          <b>Objeto</b> del grupo de ejes opcional. Los gráficos 3D sólo tienen un conjunto de ejes. Puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /> constantes.</param>
+        <summary>Devuelve o establece información acerca de los ejes existentes en el gráfico. Lectura y escritura.</summary>
+        <value>
+          <b>Object</b>
+        </value>
+        <remarks>
+          <para>Al establecer esta propiedad debe escribir un valor para al menos uno de los parámetros.</para>
+          <para>Microsoft Word puede crear o eliminar ejes si se cambia el tipo de gráfico o la <see cref="P:Microsoft.Office.Interop.Word.Axis.AxisGroup" /> (propiedad).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasDataTable">
+      <MemberSignature Language="C#" Value="public bool HasDataTable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasDataTable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.HasDataTable" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasDataTable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasDataTable { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1396)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1396)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1396)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene o establece un valor que indica si la <see cref="T:Microsoft.Office.Interop.Word.Chart" /> tiene una tabla de datos. Lectura y escritura.</summary>
+        <value>
+          <b>Boolean</b>
+          <b>True</b> si el gráfico tiene una tabla de datos. En caso contrario,<b>False</b></value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasHiddenContent">
+      <MemberSignature Language="C#" Value="public bool HasHiddenContent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasHiddenContent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.HasHiddenContent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasHiddenContent As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasHiddenContent { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(239)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(239)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasLegend">
+      <MemberSignature Language="C#" Value="public bool HasLegend { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasLegend" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.HasLegend" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasLegend As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasLegend { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(53)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(53)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(53)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve <b>True</b> si el gráfico tiene una leyenda. Lectura y escritura.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasPivotFields">
+      <MemberSignature Language="C#" Value="public bool HasPivotFields { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasPivotFields" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.HasPivotFields" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasPivotFields As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasPivotFields { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1815)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1815)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1815)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determina si se muestran los controles de gráfico dinámico en el informe de gráfico dinámico especificado</summary>
+        <value>
+          <b>Boolean</b> Para un gráfico normal, esta propiedad siempre devuelve <b>False</b> y no se puede establecer.</value>
+        <remarks>
+          <para>El valor predeterminado es <b>True</b></para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasTitle">
+      <MemberSignature Language="C#" Value="public bool HasTitle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasTitle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.HasTitle" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasTitle As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasTitle { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> si el eje o el gráfico tiene un título visible. Lectura y escritura.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>
+          <para>Un título de gráfico está representado por un <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> objeto.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeightPercent">
+      <MemberSignature Language="C#" Value="public int HeightPercent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 HeightPercent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.HeightPercent" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeightPercent As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HeightPercent { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743818)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743818)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743818)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece el alto de un gráfico 3D como un porcentaje del ancho del gráfico (entre 5 y 500 por ciento). Lectura y escritura.</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Legend">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Legend Legend { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Legend Legend" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Legend" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Legend As Legend" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Legend ^ Legend { Microsoft::Office::Interop::Word::Legend ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(84)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(84)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Legend</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Legend" /> object que representa la leyenda del gráfico. Es de solo lectura</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.Legend" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Line3DGroup">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ChartGroup Line3DGroup { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ChartGroup Line3DGroup" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Line3DGroup" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Line3DGroup As ChartGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartGroup ^ Line3DGroup { Microsoft::Office::Interop::Word::ChartGroup ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(20)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(20)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ChartGroup</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve el grupo de gráficos de líneas en un gráfico 3D.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineGroups">
+      <MemberSignature Language="C#" Value="public object LineGroups (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object LineGroups([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.LineGroups(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LineGroups (Optional Index As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.LCIDConversion(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">Opcional <b>objeto</b> especifica el grupo de gráficos.</param>
+        <summary>En un gráfico 2D, devuelve un objeto object que representa un grupo de gráficos de línea única (un <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto) o una colección de los grupos de gráficos de líneas (un <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> colección).</summary>
+        <returns>
+          <b>Object</b>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve al objeto primario del objeto especificado. Es de solo lectura</summary>
+        <value>
+          <b>Object</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Paste">
+      <MemberSignature Language="C#" Value="public void Paste (object Type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Paste([in]object Type) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.Paste(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Paste (Optional Type As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743879)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.LCIDConversion(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Type">Especifica la información del gráfico para pegar si hay un gráfico en el Portapapeles. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Excel.XlPasteType" /><b>valor</b>, <b>predeterminado es</b>o <b>puede usar</b>. El valor predeterminado es que <b>puede usar</b>. Si no hay datos que no sea un gráfico en el Portapapeles, no se puede usar este argumento. Pegar</param>
+        <summary>Pega los datos de gráfico que contiene el Portapapeles en el gráfico indicado.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Perspective">
+      <MemberSignature Language="C#" Value="public int Perspective { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Perspective" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Perspective" />
+      <MemberSignature Language="VB.NET" Value="Public Property Perspective As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Perspective { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743820)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743820)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743820)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece un valor <b>entero</b> que representa la perspectiva de la vista del gráfico 3D.</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>
+          <para>El valor de esta propiedad debe estar entre 0 y 100. Esta propiedad se omite si la <see cref="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" /> propiedad está establecida en <b>True</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pie3DGroup">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ChartGroup Pie3DGroup { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ChartGroup Pie3DGroup" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Pie3DGroup" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Pie3DGroup As ChartGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartGroup ^ Pie3DGroup { Microsoft::Office::Interop::Word::ChartGroup ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(21)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(21)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ChartGroup</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve el grupo de gráficos circulares en un gráfico 3D.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PieGroups">
+      <MemberSignature Language="C#" Value="public object PieGroups (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object PieGroups([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.PieGroups(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PieGroups (Optional Index As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.LCIDConversion(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">Opcional <b>objeto</b> especifica el grupo de gráficos.</param>
+        <summary>En un gráfico 2D, devuelve un objeto object que representa un grupo de gráficos circulares único (un <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto) o una colección de los grupos de gráficos circulares (un <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> colección).</summary>
+        <returns>
+          <b>Object</b>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PivotLayout">
+      <MemberSignature Language="C#" Value="public object PivotLayout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object PivotLayout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.PivotLayout" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PivotLayout As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ PivotLayout { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1814)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1814)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No está admitido para este objeto.</summary>
+        <value>Devuelve <see cref="T:System.Object" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlotArea">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.PlotArea PlotArea { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.PlotArea PlotArea" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.PlotArea" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PlotArea As PlotArea" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::PlotArea ^ PlotArea { Microsoft::Office::Interop::Word::PlotArea ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743866)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743866)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.PlotArea</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.PlotArea" /> object que representa el área de trazado de un gráfico. Es de solo lectura</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.PlotArea" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlotBy">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.XlRowCol PlotBy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.XlRowCol PlotBy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.PlotBy" />
+      <MemberSignature Language="VB.NET" Value="Public Property PlotBy As XlRowCol" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlRowCol PlotBy { Microsoft::Office::Interop::Word::XlRowCol get(); void set(Microsoft::Office::Interop::Word::XlRowCol value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(202)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(202)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(202)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.XlRowCol</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece la forma en que se utilizan las columnas o filas como series de datos en el gráfico. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> constantes: <b>xlColumns</b> o <b>xlRows</b>. Lectura y escritura.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" />
+        </value>
+        <remarks>
+          <para>Para los informes de gráfico dinámico, esta propiedad es de sólo lectura y siempre devuelve <b>xlColumns</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlotVisibleOnly">
+      <MemberSignature Language="C#" Value="public bool PlotVisibleOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PlotVisibleOnly" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.PlotVisibleOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property PlotVisibleOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PlotVisibleOnly { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(92)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(92)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(92)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Obtiene o establece un valor que indica si se trazan sólo las celdas visibles. Lectura y escritura.</summary>
+        <value>
+          <b>Boolean</b>
+          <b>True</b> si sólo se trazan las celdas visibles. <b>False</b> si se trazan las celdas visibles como ocultas.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RadarGroups">
+      <MemberSignature Language="C#" Value="public object RadarGroups (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object RadarGroups([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.RadarGroups(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RadarGroups (Optional Index As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.LCIDConversion(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">Opcional <b>objeto</b> especifica el grupo de gráficos.</param>
+        <summary>En un gráfico 2D, devuelve un objeto object que representa un grupo de gráficos radiales único (un <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto) o una colección de los grupos de gráficos radiales (un <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> colección).</summary>
+        <returns>
+          <b>Object</b>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Refresh() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743899)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Hace que el gráfico especificado se vuelva a dibujar inmediatamente.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RightAngleAxes">
+      <MemberSignature Language="C#" Value="public object RightAngleAxes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object RightAngleAxes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" />
+      <MemberSignature Language="VB.NET" Value="Public Property RightAngleAxes As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ RightAngleAxes { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743822)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743822)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743822)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> si los ejes del gráfico están en ángulo recto, independientemente de la rotación de gráfico o la elevación. Se aplica sólo a 3D de líneas, columnas y los gráficos de barras. Lectura y escritura.</summary>
+        <value>
+          <b>Object</b>
+        </value>
+        <remarks>
+          <para>Si esta propiedad se establece en <b>True</b>, el <see cref="P:Microsoft.Office.Interop.Word.Chart.Perspective" /> propiedad se omite.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotation">
+      <MemberSignature Language="C#" Value="public object Rotation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Rotation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Rotation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Rotation As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Rotation { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743824)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743824)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743824)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece el giro de la vista del gráfico 3D (la rotación del área de trazado alrededor del eje z, en grados). El valor de esta propiedad debe ser entre 0 y 360, excepto para los gráficos de barras 3D, donde el valor debe ser de 0 a 44. El valor predeterminado es 20. Se aplica solamente a gráficos 3D. Lectura y escritura.</summary>
+        <value>
+          <b>Object</b>
+        </value>
+        <remarks>
+          <para>Giros siempre se redondean al entero más próximo.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveChartTemplate">
+      <MemberSignature Language="C#" Value="public void SaveChartTemplate (string FileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveChartTemplate([in]string FileName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.SaveChartTemplate(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveChartTemplate (FileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveChartTemplate(System::String ^ FileName);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743885)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <b>Cadena</b> el nombre de la plantilla de gráfico requerida.</param>
+        <summary>Guarda una plantilla de gráfico personalizada en la lista de plantillas de gráfico disponibles.</summary>
+        <remarks>
+          <para>De forma predeterminada, este método guarda el gráfico activo al directorio de plantillas de gráfico del usuario.  Si se especifica una ruta UNC o dirección URL, el gráfico se guardará en la ubicación especificada.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Select">
+      <MemberSignature Language="C#" Value="public object Select (object Replace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Select([in]object Replace) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.Select(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Select (Optional Replace As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(235)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.LCIDConversion(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Replace" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Replace">(se utiliza sólo con hojas). Opcional <b>objeto</b><b>True</b> para reemplazar la selección actual con el objeto especificado. <b>False</b> para extender la selección actual de modo que incluya los objetos previamente seleccionados y el objeto especificado.</param>
+        <summary>Selecciona el objeto.</summary>
+        <returns>
+          <b>Object</b>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SeriesCollection">
+      <MemberSignature Language="C#" Value="public object SeriesCollection (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object SeriesCollection([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.SeriesCollection(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SeriesCollection (Optional Index As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(68)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.LCIDConversion(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <b>Objeto</b> requerido el nombre o número de la serie.</param>
+        <summary>Devuelve un <b>objeto</b> que representa todas las series del gráfico.</summary>
+        <returns>
+          <b>Object</b>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SeriesNameLevel">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.XlSeriesNameLevel SeriesNameLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.XlSeriesNameLevel SeriesNameLevel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.SeriesNameLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property SeriesNameLevel As XlSeriesNameLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlSeriesNameLevel SeriesNameLevel { Microsoft::Office::Interop::Word::XlSeriesNameLevel get(); void set(Microsoft::Office::Interop::Word::XlSeriesNameLevel value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(238)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(238)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(238)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.XlSeriesNameLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.XlSeriesNameLevel" /> constante que especifica el nivel de origen de los nombres de serie. Lectura y escritura.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBackgroundPicture">
+      <MemberSignature Language="C#" Value="public void SetBackgroundPicture (string FileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetBackgroundPicture([in]string FileName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.SetBackgroundPicture(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetBackgroundPicture (FileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetBackgroundPicture(System::String ^ FileName);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743873)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <b>Cadena</b> el nombre del archivo gráfico requerida.</param>
+        <summary>Establece el gráfico de fondo para una hoja de cálculo o un gráfico.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDefaultChart">
+      <MemberSignature Language="C#" Value="public void SetDefaultChart (object Name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetDefaultChart([in]object Name) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.SetDefaultChart(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetDefaultChart (Name As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDefaultChart(System::Object ^ Name);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743883)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Name" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Name">Necesario. <b>Objeto</b> Especifica el nombre de la plantilla de gráfico predeterminada que se va a usar al crear nuevos gráficos.  Este nombre se puede establecer en el nombre de una plantilla de gráfico definido por el usuario en la galería o un especial <see cref="T:Microsoft.Office.Interop.Word.XlChartGallery" /> constante, <see cref="F:Microsoft.Office.Interop.Word.XlChartGallery.xlBuiltIn" />, para especificar una plantilla de gráfico integrada.</param>
+        <summary>Especifica el nombre de la plantilla de gráfico que Microsoft Word utiliza para crear nuevos gráficos.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetElement">
+      <MemberSignature Language="C#" Value="public void SetElement (Microsoft.Office.Core.MsoChartElementType Element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetElement([in]valuetype Microsoft.Office.Core.MsoChartElementType Element) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.SetElement(Microsoft.Office.Core.MsoChartElementType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetElement (Element As MsoChartElementType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetElement(Microsoft::Office::Core::MsoChartElementType Element);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743900)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Element" Type="Microsoft.Office.Core.MsoChartElementType" />
+      </Parameters>
+      <Docs>
+        <param name="Element">Requiere <see cref="T:Microsoft.Office.Core.MsoChartElementType" /> especifica el tipo de elemento de gráfico.</param>
+        <summary>Conjuntos de elementos de gráfico de un gráfico. Lectura y escritura.</summary>
+        <remarks>
+          <para>Para gráficos, los siguientes comandos en la ficha Diseño corresponden a la <see cref="M:Microsoft.Office.Interop.Word.Chart.SetElement(Microsoft.Office.Core.MsoChartElementType)" /> método:</para>
+          <list type="bullet">
+            <item>
+              <para>todos los del grupo rótulos.</para>
+            </item>
+            <item>
+              <para>Todo el contenido en el grupo de ejes.</para>
+            </item>
+            <item>
+              <para>Todos los del grupo análisis.</para>
+            </item>
+            <item>
+              <para>Botones área de trazado, cuadro gráfico y plano inferior del gráfico.</para>
+            </item>
+          </list>
+          <para>
+            <see cref="T:Microsoft.Office.Core.MsoChartElementType" /> es una enumeración de constantes que hacen referencia a todos los comandos anteriores.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSourceData">
+      <MemberSignature Language="C#" Value="public void SetSourceData (string Source, object PlotBy);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSourceData([in]string Source, [in]object PlotBy) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.SetSourceData(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSourceData (Source As String, Optional PlotBy As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1413)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Source" Type="System.String" />
+        <Parameter Name="PlotBy" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Source">
+          <b>Cadena de</b> la dirección del rango de datos del gráfico que contiene el origen de datos requerido.</param>
+        <param name="PlotBy">Opcional <b>objeto</b> especifica el modo de trazar los datos. Puede ser cualquiera de los siguientes <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> constantes: <b>xlColumns</b> o <b>xlRows</b>.</param>
+        <summary>Establece el rango de datos de origen para la <see cref="T:Microsoft.Office.Interop.Word.Chart" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Shapes">
+      <MemberSignature Language="C#" Value="public object Shapes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Shapes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Shapes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shapes As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Shapes { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743903)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743903)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> colección que representa todas las formas de la hoja de gráfico. Es de solo lectura</summary>
+        <value>
+          <b>Object</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowAllFieldButtons">
+      <MemberSignature Language="C#" Value="public bool ShowAllFieldButtons { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowAllFieldButtons" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ShowAllFieldButtons" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowAllFieldButtons As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowAllFieldButtons { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2848)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2848)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2848)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>[!PRECAUCIóN] Este objeto, miembro o enumeración está en desuso y no debería usarse en el código.</summary>
+        <value>
+          <b>true</b> si todos los botones en un gráfico de tabla dinámica del campo se deben mostrar; en caso contrario, <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowAxisFieldButtons">
+      <MemberSignature Language="C#" Value="public bool ShowAxisFieldButtons { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowAxisFieldButtons" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ShowAxisFieldButtons" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowAxisFieldButtons As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowAxisFieldButtons { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2846)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2846)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2846)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>[!PRECAUCIóN] Este objeto, miembro o enumeración está en desuso y no debería usarse en el código.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowDataLabelsOverMaximum">
+      <MemberSignature Language="C#" Value="public bool ShowDataLabelsOverMaximum { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowDataLabelsOverMaximum" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ShowDataLabelsOverMaximum" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowDataLabelsOverMaximum As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowDataLabelsOverMaximum { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743895)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743895)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743895)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece si se deben mostrar los rótulos de datos cuando el valor es mayor que el valor máximo en el eje de valores.  Lectura y escritura.</summary>
+        <value>
+          <b>Boolean</b>
+        </value>
+        <remarks>
+          <para>Si cambia el eje de valores de manera que sea menor que el tamaño de los puntos de datos, puede usar esta propiedad para establecer si se deben mostrar los rótulos de datos. Esta propiedad se aplica a sólo en los gráficos 2D.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowLegendFieldButtons">
+      <MemberSignature Language="C#" Value="public bool ShowLegendFieldButtons { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowLegendFieldButtons" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ShowLegendFieldButtons" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowLegendFieldButtons As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowLegendFieldButtons { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2845)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2845)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2845)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>[!PRECAUCIóN] Este objeto, miembro o enumeración está en desuso y no debería usarse en el código.</summary>
+        <value>
+          <b>true</b> si los botones de campo de leyenda de un gráfico dinámico se deben mostrar; en caso contrario, <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowReportFilterFieldButtons">
+      <MemberSignature Language="C#" Value="public bool ShowReportFilterFieldButtons { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowReportFilterFieldButtons" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ShowReportFilterFieldButtons" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowReportFilterFieldButtons As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowReportFilterFieldButtons { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2844)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2844)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2844)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Este objeto, miembro o enumeración está en desuso y no está pensada para usarse en su código..</summary>
+        <value>
+          <b>true</b> si los botones de campo de filtro de informe en un gráfico dinámico se deben mostrar; en caso contrario, <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowValueFieldButtons">
+      <MemberSignature Language="C#" Value="public bool ShowValueFieldButtons { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowValueFieldButtons" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.ShowValueFieldButtons" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowValueFieldButtons As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowValueFieldButtons { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2847)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2847)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2847)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Este objeto, miembro o enumeración está en desuso y no está pensada para usarse en su código..</summary>
+        <value>
+          <b>true</b> si el campo de valor los botones en un gráfico dinámico se deben mostrar; en caso contrario, <b>false</b>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SideWall">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Walls SideWall { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Walls SideWall" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.SideWall" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SideWall As Walls" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Walls ^ SideWall { Microsoft::Office::Interop::Word::Walls ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2377)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2377)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Walls</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Walls" /> objeto que permite al usuario dar formato por separado al plano lateral de un gráfico 3D.  Es de solo lectura</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.Walls" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubType">
+      <MemberSignature Language="C#" Value="public int SubType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SubType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.SubType" />
+      <MemberSignature Language="VB.NET" Value="Public Property SubType As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SubType { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(109)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(109)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(109)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Esta API es compatible con Visual Studio Tools para la infraestructura de Office y no está pensada para usarse directamente desde el código.</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SurfaceGroup">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ChartGroup SurfaceGroup { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ChartGroup SurfaceGroup" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.SurfaceGroup" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SurfaceGroup As ChartGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartGroup ^ SurfaceGroup { Microsoft::Office::Interop::Word::ChartGroup ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ChartGroup</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve el grupo de gráficos de superficie de un gráfico 3D.</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public int Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Type { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reservado para uso interno.</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Walls">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Walls Walls { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Walls Walls" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Chart.Walls" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Walls As Walls" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Walls ^ Walls { Microsoft::Office::Interop::Word::Walls ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743864)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743864)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.LCIDConversion(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Walls</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Walls" /> objeto que representa los planos laterales de un gráfico 3D. Es de solo lectura</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.Walls" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XYGroups">
+      <MemberSignature Language="C#" Value="public object XYGroups (object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object XYGroups([in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Chart.XYGroups(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function XYGroups (Optional Index As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.LCIDConversion(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">Opcional <b>objeto</b> especifica el grupo de gráficos.</param>
+        <summary>En un gráfico 2D, devuelve un objeto object que representa un grupo de gráficos de dispersión único (un <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto) o una colección de grupos de gráficos de dispersión (un <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> colección).</summary>
+        <returns>
+          <b>Object</b>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
