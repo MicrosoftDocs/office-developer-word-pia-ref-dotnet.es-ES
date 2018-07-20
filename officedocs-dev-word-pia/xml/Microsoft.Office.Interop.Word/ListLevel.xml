@@ -1,0 +1,609 @@
+<Type Name="ListLevel" FullName="Microsoft.Office.Interop.Word.ListLevel">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="40804d3d1c4f0bf8f247c8b34546720ff5855ffd" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20674306" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ListLevel" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListLevel" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListLevel" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ListLevel" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ListLevel" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002098D-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Representa un solo nivel de lista, ya sea el único nivel de una lista numerada o con viñetas, o bien uno de los nueve niveles de una lista de esquema numerado.</summary>
+    <remarks>
+      <para>El objeto <b>ListLevel</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> colección.</para>
+      <para>Uso <b>ListLevels</b>(<paramref name="index" />), donde <paramref name="index" /> es un número comprendido entre 1 y 9, para devolver un solo objeto <b>ListLevel</b> .</para>
+      <para>El objeto <b>ListLevel</b> proporciona el acceso a todas las propiedades de formato para el nivel de lista especificado, como el <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />, y <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" /> propiedades.</para>
+      <para>Para aplicar un nivel de lista, en primer lugar identifique el intervalo o la lista y, a continuación, usar el <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> (método). Cada ficha al principio del párrafo se traduce en un nivel de lista. Por ejemplo, un párrafo que empieza con tres tabulaciones se convertirá en un párrafo de lista de nivel tres después de utiliza el método <b>ApplyListTemplate</b> .</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Alignment">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdListLevelAlignment Alignment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdListLevelAlignment Alignment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />
+      <MemberSignature Language="VB.NET" Value="Public Property Alignment As WdListLevelAlignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdListLevelAlignment Alignment { Microsoft::Office::Interop::Word::WdListLevelAlignment get(); void set(Microsoft::Office::Interop::Word::WdListLevelAlignment value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdListLevelAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.WdListLevelAlignment" /> constante que representa la alineación del nivel de lista de la plantilla de lista.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyPictureBullet">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape ApplyPictureBullet (string FileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape ApplyPictureBullet([in]string FileName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListLevel.ApplyPictureBullet(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ApplyPictureBullet (FileName As String) As InlineShape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::InlineShape ^ ApplyPictureBullet(System::String ^ FileName);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <b>String</b> requerida. Ruta de acceso y nombre de archivo del archivo de imagen.</param>
+        <summary>Aplica el formato de viñeta de imagen a un párrafo o un intervalo de párrafos.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
+          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Font">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Font Font { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Font Font" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.Font" />
+      <MemberSignature Language="VB.NET" Value="Public Property Font As Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Font ^ Font { Microsoft::Office::Interop::Word::Font ^ get(); void set(Microsoft::Office::Interop::Word::Font ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.Font" /> object que representa el formato de carácter del objeto especificado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Para establecer esta propiedad, especifique una expresión que devuelve un objeto <b>Font</b> .</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.Index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <b>entero</b> que representa la posición de un elemento de una colección.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LinkedStyle">
+      <MemberSignature Language="C#" Value="public string LinkedStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LinkedStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.LinkedStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property LinkedStyle As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LinkedStyle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece el nombre del estilo que ha vinculado a especificado <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> objeto.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberFormat">
+      <MemberSignature Language="C#" Value="public string NumberFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NumberFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumberFormat As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NumberFormat { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece el formato de número para el nivel de lista especificado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>El signo de porcentaje (%) seguido de cualquier número comprendido entre 1 y 9 representa el estilo de número desde el nivel de lista respectivo. Por ejemplo, si desea que el formato del primer nivel sea "Artículo I", "Artículo II", y así sucesivamente, la cadena para la propiedad <b>NumberFormat</b> será "Artículo %1" y el <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" /> la propiedad se establecerá en <b>wdListNumberStyleUpperCaseRoman</b>.</para>
+          <para>Si se establece la propiedad <b>NumberStyle</b> en <b>wdListNumberStyleBullet</b>, la cadena para la propiedad <b>NumberFormat</b> sólo puede contener un carácter.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberPosition">
+      <MemberSignature Language="C#" Value="public float NumberPosition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 NumberPosition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumberPosition As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float NumberPosition { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece la posición (en puntos) del número o viñeta para especificado <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> objeto.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Para cada nivel de lista, puede establecer la posición del número o viñeta, la posición de la ficha y la posición del texto que se ajusta.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberStyle">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdListNumberStyle NumberStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdListNumberStyle NumberStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumberStyle As WdListNumberStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdListNumberStyle NumberStyle { Microsoft::Office::Interop::Word::WdListNumberStyle get(); void set(Microsoft::Office::Interop::Word::WdListNumberStyle value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdListNumberStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece el estilo de número para el <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> objeto.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La propiedad <b>NumberStyle</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdListNumberStyle" /> constantes. Es posible que algunas de estas constantes no estén disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un objeto que representa el objeto primario del objeto especificado.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PictureBullet">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape PictureBullet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.InlineShape PictureBullet" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.PictureBullet" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PictureBullet As InlineShape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::InlineShape ^ PictureBullet { Microsoft::Office::Interop::Word::InlineShape ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto que representa una viñeta de imagen.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetOnHigher">
+      <MemberSignature Language="C#" Value="public int ResetOnHigher { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ResetOnHigher" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.ResetOnHigher" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResetOnHigher As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ResetOnHigher { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Establece o devuelve el nivel de lista que debe aparecer antes de que el nivel de lista especificado reinicia la numeración a partir de 1. <b>False</b> si la numeración continúa la secuencia cada vez que el nivel de lista que aparece.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Esta característica permite que las listas se puedan intercalar, manteniendo la secuencia numérica. No se puede establecer la propiedad <b>ResetOnHigher</b> de una lista de nivel en un valor mayor o igual que el índice de la <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> colección.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetOnHigherOld">
+      <MemberSignature Language="C#" Value="public bool ResetOnHigherOld { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ResetOnHigherOld" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.ResetOnHigherOld" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResetOnHigherOld As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ResetOnHigherOld { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reservado para uso interno.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartAt">
+      <MemberSignature Language="C#" Value="public int StartAt { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StartAt" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.StartAt" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartAt As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartAt { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece el número inicial de especificado <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> objeto.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabPosition">
+      <MemberSignature Language="C#" Value="public float TabPosition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 TabPosition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.TabPosition" />
+      <MemberSignature Language="VB.NET" Value="Public Property TabPosition As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float TabPosition { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece la posición de tabulación para especificado <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> objeto.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextPosition">
+      <MemberSignature Language="C#" Value="public float TextPosition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 TextPosition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.TextPosition" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextPosition As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float TextPosition { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece la posición (en puntos) de la segunda línea de texto ajustado para especificado <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> objeto.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrailingCharacter">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdTrailingCharacter TrailingCharacter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdTrailingCharacter TrailingCharacter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />
+      <MemberSignature Language="VB.NET" Value="Public Property TrailingCharacter As WdTrailingCharacter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdTrailingCharacter TrailingCharacter { Microsoft::Office::Interop::Word::WdTrailingCharacter get(); void set(Microsoft::Office::Interop::Word::WdTrailingCharacter value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdTrailingCharacter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Devuelve o establece el carácter insertado después del número en el nivel de lista especificado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>La propiedad <b>TrailingCharacter</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdTrailingCharacter" /> constantes.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
