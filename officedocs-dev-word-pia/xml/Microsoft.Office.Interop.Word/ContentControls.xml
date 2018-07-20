@@ -1,0 +1,384 @@
+<Type Name="ContentControls" FullName="Microsoft.Office.Interop.Word.ContentControls">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="2a6fe745ee4c6ef85a6a96c2f41f77a80cbd76ed" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20675504" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ContentControls : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ContentControls implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ContentControls" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ContentControls&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ContentControls : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("804CD967-F83B-432D-9446-C61A45CFEFF0")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="3e9ae-101">Una colección de <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> objetos.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="3e9ae-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> objects.</span>
+      </span>
+      <span data-ttu-id="3e9ae-102">Los controles de contenido son regiones delimitadas y posiblemente con etiquetas de un documento que funcionan como contenedores para tipos específicos de contenido.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="3e9ae-102">Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content.</span>
+      </span>
+      <span data-ttu-id="3e9ae-103">Los controles de contenido individuales pueden incluir contenido como fechas, listas o párrafos de texto con formato.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="3e9ae-103">Individual content controls may contain content such as dates, lists, or paragraphs of formatted text.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="3e9ae-104">
+        <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" /> (método) para crear un nuevo control de contenido e insertar en un documento.</para> Uso de 
+      <para>el <see cref="P:Microsoft.Office.Interop.Word.ContentControls.Item(System.Object@)" /> (método) para tener acceso a un control de contenido específico de la colección. Usar el <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> objeto para trabajar con controles de contenido individuales. Para obtener más información, vea <a href="HV10107832">trabajar con controles de contenido</a></para><para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="3e9ae-104">
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" /> method to create a new content control and insert it into a document.</para>
+          <para>Use the <see cref="P:Microsoft.Office.Interop.Word.ContentControls.Item(System.Object@)" /> method to access a specific content control in the collection. Use the <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> object to work with individual content controls. For more information, see  <a href="HV10107832">Working with Content Controls</a></para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ContentControl Add (Microsoft.Office.Interop.Word.WdContentControlType Type = Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlRichText, ref object Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.ContentControl Add([in]valuetype Microsoft.Office.Interop.Word.WdContentControlType Type, [in]object&amp; Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Optional Type As WdContentControlType = Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlRichText, Optional ByRef Range As Object) As ContentControl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ContentControl</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Interop.Word.WdContentControlType" />
+        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Type">
+          <span data-ttu-id="3e9ae-105">Especifica el tipo de control de contenido que se va a insertar en el documento activo.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3e9ae-105">Specifies the type of content control  to insert into the active document.</span>
+          </span>
+          <span data-ttu-id="3e9ae-106">Si se omite, Microsoft Office Word inserta un control de contenido de texto enriquecido.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3e9ae-106">If omitted, Microsoft Office Word inserts a rich-text content control.</span>
+          </span>
+        </param>
+        <param name="Range">
+          <span data-ttu-id="3e9ae-p103">Especifica el lugar del documento activo en el que se debe colocar el control de contenido. Si se omite, Word coloca el control en la posición del punto de inserción o reemplaza la selección actual.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3e9ae-p103">Specifies where in the active document to place the content control. If omitted, Word places the content control at the position of the insertion point or replaces the current selection.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="3e9ae-109">Agrega un nuevo control de contenido, del tipo especificado en el documento activo y devuelve un <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> object que representa el nuevo control de contenido.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3e9ae-109">Adds a new content control, of the type specified, into the active document and returns a <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> object that represents the new content control.</span>
+          </span>
+        </summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Interop.Word.ContentControl" />
+        </returns>
+        <remarks>
+          <span data-ttu-id="3e9ae-110">
+            <para>Puede anidar los controles de contenido dentro de los controles de contenido de texto enriquecido, controles de contenido de galería de bloques de creación y controles de contenido de grupo.  Si el punto de inserción o la selección actual está dentro de un control de contenido de un tipo diferente, este método genera un error.  En este caso, puede mover el punto de inserción o usar el <paramref name="Range" /> parámetro para especificar una ubicación dentro del documento.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3e9ae-110">
+              <para>You can nest content controls only within rich-text content controls, building block gallery content controls, and group content controls.  If the insertion point or current selection is inside a content control of a different type, this method raises an error.  In this case, you can either move the insertion point or use the <paramref name="Range" /> parameter to specify a location within the document.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControls.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3e9ae-111">Devuelve un <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa la aplicación Microsoft Word.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3e9ae-111">Returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word._Application" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControls.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3e9ae-112">Devuelve el número de elementos en el <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> colección.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3e9ae-112">Returns the number of items in the <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> collection.</span>
+          </span>
+          <span data-ttu-id="3e9ae-113">Es de solo lectura</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3e9ae-113">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="3e9ae-114">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3e9ae-114">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControls.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3e9ae-115">Devuelve un entero de 32 bits que indica la aplicación en la que se creó el complemento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3e9ae-115">Returns a 32-bit integer that indicates the application in which the add-in was created.</span>
+          </span>
+          <span data-ttu-id="3e9ae-116">Es de solo lectura</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3e9ae-116">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="3e9ae-117">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3e9ae-117">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="3e9ae-118">
+            <para>Si el objeto se creó en Microsoft Word, la propiedad <b>Creator</b> devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para>
+            <para>
+              <b>Nota</b>: este valor también puede representarse mediante la constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3e9ae-118">
+              <para>If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."  This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para>
+                <b>Note</b>: This value can also be represented by the constant <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControls.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ContentControl this[ref object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ContentControl Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControls.Item(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As ContentControl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ContentControl ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::ContentControl ^ get(System::Object ^ % Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ContentControl</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="3e9ae-119">Especifica la posición ordinal del control de contenido que se debe devolver.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3e9ae-119">Specifies the ordinal position of the content control to return.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="3e9ae-120">Devuelve el control de contenido especificado dentro de la colección de controles de contenido en un documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3e9ae-120">Returns the specified content control within the collection of content controls in a document.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Word.ContentControl" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControls.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="3e9ae-121">Devuelve el objeto primario de la <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3e9ae-121">Returns the parent object of the <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> object.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="3e9ae-122">
+            <b>Object</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="3e9ae-122">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

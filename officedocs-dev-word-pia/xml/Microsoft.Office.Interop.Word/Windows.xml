@@ -1,0 +1,563 @@
+<Type Name="Windows" FullName="Microsoft.Office.Interop.Word.Windows">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="aa5d387f914422cf8c79854703cd4dd7eb61e181" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="es-ES" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20675183" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Windows implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Windows" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Windows&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Windows : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00020961-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="6486c-101">Una colección de <see cref="T:Microsoft.Office.Interop.Word.Window" /> objetos que representan todas las ventanas disponibles.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="6486c-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.Window" /> objects that represent all the available windows.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="6486c-102">
+        <para>Utilice la propiedad <b>Windows</b> de la <see cref="T:Microsoft.Office.Interop.Word.Application" /> o <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto para devolver la colección <b>Windows</b> . La colección <b>Windows</b> del objeto <b>Application</b> contiene todas las ventanas de la aplicación, mientras que la colección <b>Windows</b> del objeto <b>Document</b> contiene sólo las ventanas que muestran el documento especificado.</para>
+        <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.Windows.Add(System.Object@)" /> (método) o la <see cref="M:Microsoft.Office.Interop.Word.Window.NewWindow" /> método para agregar una nueva ventana a la colección Windows.</para>
+        <para>Usar <b>Windows</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la ventana o el número de índice, para devolver un único objeto <b>Window</b> .</para>
+        <para>El número de índice es el número a la izquierda del nombre de la ventana en el menú Ventana.</para>
+        <para>Aparecen dos puntos (:) y un número en el título de la ventana cuando más de una ventana abierta para un documento.</para>
+        <para>Cuando se cambia la vista a la vista preliminar, se crea una nueva ventana. Esta ventana se quita de la colección <b>Windows</b> al cerrar la vista preliminar.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="6486c-102">
+          <para>Use the <b>Windows</b> property of the <see cref="T:Microsoft.Office.Interop.Word.Application" /> or <see cref="T:Microsoft.Office.Interop.Word.Document" /> object to return the <b>Windows</b> collection. The <b>Windows</b> collection for the <b>Application</b> object contains all the windows in the application, whereas the <b>Windows</b> collection for the <b>Document</b> object contains only the windows that display the specified document.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Word.Windows.Add(System.Object@)" /> method or the <see cref="M:Microsoft.Office.Interop.Word.Window.NewWindow" /> method to add a new window to the Windows collection.</para>
+          <para>Use <b>Windows</b>(<paramref name="index" />), where <paramref name="index" /> is the window name or the index number, to return a single <b>Window</b> object.</para>
+          <para>The index number is the number to the left of the window name on the Window menu.</para>
+          <para>A colon (:) and a number appear in the window caption when more than one window is open for a document.</para>
+          <para>When you switch the view to print preview, a new window is created. This window is removed from the <b>Windows</b> collection when you close print preview.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Window Add (ref object Window);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Window Add([in]object&amp; Window) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Windows.Add(System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Window</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Window" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Window">
+          <span data-ttu-id="6486c-103">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-103">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="6486c-104">El objeto de <b>ventana</b> que desea abrir otra ventana.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-104">The <b>Window</b> object you want to open another window for.</span>
+          </span>
+          <span data-ttu-id="6486c-105">Si se omite este argumento, se abre una nueva ventana para el documento activo.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-105">If this argument is omitted, a new window is opened for the active document.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="6486c-106">Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Window" /> objeto que representa una nueva ventana de un documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-106">Returns a <see cref="T:Microsoft.Office.Interop.Word.Window" /> object that represents a new window of a document.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="6486c-107">
+            <para>Cuando más de una ventana está abierta para el documento, aparecen dos puntos (:) y un número en el título de la ventana.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-107">
+              <para>A colon (:) and a number appear in the window caption when more than one window is open for the document.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Windows.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6486c-108">Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-108">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Arrange">
+      <MemberSignature Language="C#" Value="public void Arrange (ref object ArrangeStyle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Arrange([in]object&amp; ArrangeStyle) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Windows.Arrange(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Arrange (Optional ByRef ArrangeStyle As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ArrangeStyle" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ArrangeStyle">
+          <span data-ttu-id="6486c-109">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-109">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="6486c-110">Organización de la ventana.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-110">The window arrangement.</span>
+          </span>
+          <span data-ttu-id="6486c-111">Puede ser cualquiera de los siguientes <see cref="T:Microsoft.Office.Interop.Word.WdArrangeStyle" /> constantes: <b>wdIcons</b> o <b>wdTiled</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-111">Can be either of the following <see cref="T:Microsoft.Office.Interop.Word.WdArrangeStyle" /> constants: <b>wdIcons</b> or <b>wdTiled</b>.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="6486c-112">Organiza todas las ventanas del documento abierto en el área de trabajo de la aplicación.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-112">Arranges all open document windows in the application workspace.</span>
+          </span>
+          <span data-ttu-id="6486c-113">Como Microsoft Word utiliza una interfaz simple de documentos (SDI), este método ya no surte ningún efecto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-113">Because Microsoft Word uses a Single Document Interface (SDI), this method no longer has any effect.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BreakSideBySide">
+      <MemberSignature Language="C#" Value="public bool BreakSideBySide ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool BreakSideBySide() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Windows.BreakSideBySide" />
+      <MemberSignature Language="VB.NET" Value="Public Function BreakSideBySide () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool BreakSideBySide();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="6486c-114">Finaliza el modo de en paralelo si dos ventanas están en modo de forma simultánea.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-114">Ends side-by-side mode if two windows are in side-by-side mode.</span>
+          </span>
+          <span data-ttu-id="6486c-115">Devuelve un <b>valor Boolean</b> que indica si el método tuvo éxito.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-115">Returns a <b>Boolean</b> that represents whether the method was successful.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareSideBySideWith">
+      <MemberSignature Language="C#" Value="public bool CompareSideBySideWith (ref object Document);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CompareSideBySideWith([in]object&amp; Document) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Windows.CompareSideBySideWith(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompareSideBySideWith (ByRef Document As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CompareSideBySideWith(System::Object ^ % Document);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Document" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Document">
+          <span data-ttu-id="6486c-116">
+            <b>Objeto</b>requerido.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-116">Required <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="6486c-117">El documento para verlo en windows de forma simultánea.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-117">The document to view in side-by-side windows.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="6486c-118">Abre dos ventanas en modo de forma simultánea.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-118">Opens two windows in side-by-side mode.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="6486c-119">
+            <para>No se puede usar el método <b>CompareSideBySideWith</b> con el <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto o el <see cref="P:Microsoft.Office.Interop.Word._Application.ActiveDocument" /> (propiedad).</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-119">
+              <para>You cannot use the <b>CompareSideBySideWith</b> method with the <see cref="T:Microsoft.Office.Interop.Word.Application" /> object or the <see cref="P:Microsoft.Office.Interop.Word._Application.ActiveDocument" /> property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Windows.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6486c-120">Devuelve el número de elementos de la colección especificada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-120">Returns the number of items in the specified collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Windows.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6486c-121">Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-121">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="6486c-122">
+            <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
+          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-122">
+              <para>If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD." This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Windows.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Window this[ref object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Window Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Windows.Item(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As Window" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Window ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::Window ^ get(System::Object ^ % Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Window</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="6486c-123">Un <b>objeto</b> que indica la posición ordinal o una cadena que representa el nombre del objeto individual.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-123">An <b>Object</b> indicating the ordinal position or a string representing the name of the individual object.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="6486c-124">Devuelve un objeto individual de una colección.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-124">Returns an individual object in a collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Windows.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6486c-125">Devuelve un objeto que representa el objeto primario del objeto especificado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-125">Returns an object that represents the parent object of the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetPositionsSideBySide">
+      <MemberSignature Language="C#" Value="public void ResetPositionsSideBySide ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetPositionsSideBySide() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Windows.ResetPositionsSideBySide" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetPositionsSideBySide ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetPositionsSideBySide();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="6486c-126">Restablece dos ventanas de documento que estén en el modo de vista Comparar en paralelo con.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-126">Resets two document windows that are in the Compare side by side with view mode.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="6486c-127">
+            <para>El método <b>ResetPositionsSideBySide</b> corresponde al botón Restablecer posición de la ventana en la barra de herramientas Comparar en paralelo.</para> Método 
+          <para>Utilice el <b>ResetPositionsSideBySide</b> para restablecer la visualización de dos documentos. Por ejemplo, si un usuario minimiza o maximiza una de las dos ventanas de documento que se están comparadas, el método <b>ResetPositionsSideBySide</b> restablece la presentación para que las dos ventanas vuelven a estar mostrado side-by-side.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-127">
+              <para>The <b>ResetPositionsSideBySide</b> method corresponds to the Reset Window Position button on the Compare Side by Side toolbar.</para>
+              <para>Use the <b>ResetPositionsSideBySide</b> method to reset the display of two documents. For example, if a user minimizes or maximizes one of the two document windows being compared, the <b>ResetPositionsSideBySide</b> method resets the display so that the two windows are displayed side-by-side again.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncScrollingSideBySide">
+      <MemberSignature Language="C#" Value="public bool SyncScrollingSideBySide { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SyncScrollingSideBySide" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Windows.SyncScrollingSideBySide" />
+      <MemberSignature Language="VB.NET" Value="Public Property SyncScrollingSideBySide As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SyncScrollingSideBySide { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1003)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1003)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1003)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="6486c-128">
+            <b>Es true</b> , se habilita el desplazamiento del contenido de windows al mismo tiempo.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-128">
+              <b>True</b> enables scrolling of the contents of windows at the same time.</span>
+          </span>
+          <span data-ttu-id="6486c-129">
+            <b>False</b> deshabilita el desplazamiento de ventanas al mismo tiempo.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="6486c-129">
+              <b>False</b> disables scrolling of windows at the same time.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
