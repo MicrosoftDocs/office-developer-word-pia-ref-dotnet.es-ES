@@ -1,13 +1,5 @@
 <Type Name="Adjustments" FullName="Microsoft.Office.Interop.Word.Adjustments">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="04d00f5197d85b4aee3912704a4c99c46098e504" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674864" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Adjustments" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f71474edc1a4cdff5dca9567b6a826b678d59ad6" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144656" /></Metadata><TypeSignature Language="C#" Value="public interface Adjustments" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Adjustments" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Adjustments" />
   <TypeSignature Language="VB.NET" Value="Public Interface Adjustments" />
@@ -26,43 +18,27 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="26968-101">Contiene una colección de valores de ajuste para el objeto AutoShape o WordArt especificado.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="26968-101">Contains a collection of adjustment values for the specified AutoShape or WordArt object.</span>
-      </span>
-    </summary>
-    <remarks>
-      <span data-ttu-id="26968-102">
-        <para>Cada valor de ajuste representa una forma que se puede ajustar un controlador de ajuste. Debido a que algunos controladores de ajuste pueden ajustarse de dos maneras: por ejemplo, algunos controladores pueden ajustarse tanto horizontal como verticalmente, una forma puede tener más valores de ajuste que controladores de ajuste de. Una forma puede tener hasta ocho ajustes.</para> Uso de 
-      <para>la <see cref="P:Microsoft.Office.Interop.Word.Shape.Adjustments" /> propiedad para devolver un objeto <b>Adjustments</b> . Utilice <b>Adjustments</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice del valor de ajuste, para devolver un solo valor de ajuste.</para><para>Las formas diferentes tienen distintos números de valores de ajuste, diferentes tipos de ajustes cambian la geometría de una forma de diferentes maneras y diferentes tipos de ajuste tienen diferentes rangos de valores válidos.</para><para>Debido a que cada forma ajustable tiene un conjunto diferente de ajustes, la mejor forma de comprobar el comportamiento de ajuste para una forma específica es crear manualmente una instancia de la forma, hacer los ajustes con la grabadora de macros activada y, a continuación, examine el grabado código.</para><para>En la siguiente tabla se resumen los intervalos de valores de ajuste válidos para distintos tipos de ajustes. En la mayoría de los casos, si se especifica un valor que está fuera del intervalo de valores válidos, el valor válido más cercano se asignará al ajuste.</para><list type="table"><item><description>Lineal (horizontal o vertical)</description><description>generalmente el valor 0,0 representa el borde izquierdo o superior de la forma y el valor 1,0 representa el borde derecho o inferior de la forma. Los valores válidos corresponden a ajustes válidos que puede realizar manualmente a la forma. Por ejemplo, si sólo puede arrastrar un controlador de ajuste hasta la mitad de la forma manualmente, el valor máximo del ajuste correspondiente será 0,5. Para formas como llamadas, donde los valores 0,0 y 1,0 representan los límites del rectángulo definido por los puntos inicial y final de la línea de llamada, negativo números y números mayores que 1.0 son valores válidos.</description></item><item><description>Radial</description><description>un valor de ajuste de 1.0 corresponde al ancho de la forma. El valor máximo es 0,5, o la mitad de la forma.</description></item> Los valores de 
-          <description>ángulo</description><description><item>se expresan en grados. Si se especifica un valor fuera del intervalo: 180 y 180, se normalizará para incluirlo en dicho intervalo. 
-        </item></description></list><para /></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="26968-102">
-          <para>Each adjustment value represents one way an adjustment handle can be adjusted. Because some adjustment handles can be adjusted in two ways — for instance, some handles can be adjusted both horizontally and vertically — a shape can have more adjustment values than it has adjustment handles. A shape can have up to eight adjustments.</para>
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Word.Shape.Adjustments" /> property to return an <b>Adjustments</b> object. Use <b>Adjustments</b>(<paramref name="index" />), where <paramref name="index" /> is the adjustment value's index number, to return a single adjustment value.</para>
-          <para>Different shapes have different numbers of adjustment values, different kinds of adjustments change the geometry of a shape in different ways, and different kinds of adjustments have different ranges of valid values.</para>
-          <para>Because each adjustable shape has a different set of adjustments, the best way to verify the adjustment behavior for a specific shape is to manually create an instance of the shape, make adjustments with the macro recorder turned on, and then examine the recorded code.</para>
-          <para>The following table summarizes the ranges of valid adjustment values for different types of adjustments. In most cases, if you specify a value that's beyond the range of valid values, the closest valid value will be assigned to the adjustment.</para>
-          <list type="table">
-            <item>
-              <description>Linear (horizontal or vertical)</description>
-              <description>Generally the value 0.0 represents the left or top edge of the shape and the value 1.0 represents the right or bottom edge of the shape. Valid values correspond to valid adjustments you can make to the shape manually. For example, if you can only pull an adjustment handle half way across the shape manually, the maximum value for the corresponding adjustment will be 0.5. For shapes such as callouts, where the values 0.0 and 1.0 represent the limits of the rectangle defined by the starting and ending points of the callout line, negative numbers and numbers greater than 1.0 are valid values.</description>
-            </item>
-            <item>
-              <description>Radial</description>
-              <description>An adjustment value of 1.0 corresponds to the width of the shape. The maximum value is 0.5, or half way across the shape.</description>
-            </item>
-            <item>
-              <description>Angle</description>
-              <description>Values are expressed in degrees. If you specify a value outside the range — 180 to 180, it will be normalized to be within that range.</description>
-            </item>
-          </list>
-          <para />
-        </span>
-      </span>
-    </remarks>
+    <summary><span data-ttu-id="bf68a-101">Contiene una colección de valores de ajuste para el objeto de Autoforma o WordArt especificado.</span><span class="sxs-lookup"><span data-stu-id="bf68a-101">Contains a collection of adjustment values for the specified AutoShape or WordArt object.</span></span></summary>
+    <remarks><para><span data-ttu-id="bf68a-102">Cada valor de ajuste representa un modo en el que puede ajustarse un controlador de ajuste.</span><span class="sxs-lookup"><span data-stu-id="bf68a-102">Each adjustment value represents one way an adjustment handle can be adjusted.</span></span> <span data-ttu-id="bf68a-103">Puesto que algunos controladores pueden ajustarse de dos maneras distintas (por ejemplo, horizontal y verticalmente), una forma puede tener más valores de ajuste que controladores de ajuste.</span><span class="sxs-lookup"><span data-stu-id="bf68a-103">Because some adjustment handles can be adjusted in two ways — for instance, some handles can be adjusted both horizontally and vertically — a shape can have more adjustment values than it has adjustment handles.</span></span> <span data-ttu-id="bf68a-104">Una forma puede tener hasta ocho ajustes.</span><span class="sxs-lookup"><span data-stu-id="bf68a-104">A shape can have up to eight adjustments.</span></span></para>
+      <para><span data-ttu-id="bf68a-105">Utilice la <see cref="P:Microsoft.Office.Interop.Word.Shape.Adjustments" /> propiedad para devolver un objeto <b>Adjustments</b> .</span><span class="sxs-lookup"><span data-stu-id="bf68a-105">Use the <see cref="P:Microsoft.Office.Interop.Word.Shape.Adjustments" /> property to return an <b>Adjustments</b> object.</span></span> <span data-ttu-id="bf68a-106">Use <b>Adjustments</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice del valor de ajuste, para devolver un solo valor de ajuste.</span><span class="sxs-lookup"><span data-stu-id="bf68a-106">Use <b>Adjustments</b>(<paramref name="index" />), where <paramref name="index" /> is the adjustment value's index number, to return a single adjustment value.</span></span></para>
+      <para><span data-ttu-id="bf68a-107">Las diversas formas tienen números de valores de ajuste distintos, los diferentes tipos de ajuste cambian la geometría de una forma de distintas formas y los tipos de ajuste diferentes tienen intervalos de valores válidos distintos.</span><span class="sxs-lookup"><span data-stu-id="bf68a-107">Different shapes have different numbers of adjustment values, different kinds of adjustments change the geometry of a shape in different ways, and different kinds of adjustments have different ranges of valid values.</span></span></para>
+      <para><span data-ttu-id="bf68a-108">Como cada forma ajustable tiene un conjunto de ajustes distinto, la mejor manera de comprobar el funcionamiento del ajuste de una forma específica es crear una instancia de la forma manualmente, hacer los ajustes con la grabadora de macros activada y, a continuación, examinar el código grabado.</span><span class="sxs-lookup"><span data-stu-id="bf68a-108">Because each adjustable shape has a different set of adjustments, the best way to verify the adjustment behavior for a specific shape is to manually create an instance of the shape, make adjustments with the macro recorder turned on, and then examine the recorded code.</span></span></para>
+      <para><span data-ttu-id="bf68a-p103">La tabla siguiente resume el intervalo de valores de ajuste válidos para distintos tipos de ajustes. En la mayoría de los casos, si especifica un valor no incluido en el intervalo de valores válidos, se asignará al ajuste el valor válido más parecido.</span><span class="sxs-lookup"><span data-stu-id="bf68a-p103">The following table summarizes the ranges of valid adjustment values for different types of adjustments. In most cases, if you specify a value that's beyond the range of valid values, the closest valid value will be assigned to the adjustment.</span></span></para>
+      <list type="table">
+        <item>
+          <description><span data-ttu-id="bf68a-111">Lineal (horizontal o vertical)</span><span class="sxs-lookup"><span data-stu-id="bf68a-111">Linear (horizontal or vertical)</span></span></description>
+          <description><span data-ttu-id="bf68a-p104">Generalmente el valor 0,0 representa el borde izquierdo o superior de la forma y el valor 1,0 representa el borde derecho o inferior de la forma. Los valores válidos corresponden a ajustes válidos que puede realizar manualmente a la forma. Por ejemplo, si sólo arrastra manualmente un controlador de ajuste a mitad de camino sobre la forma, el valor máximo para el ajuste correspondiente será 0,5. Para formas como llamadas, donde los valores 0,0 y 1,0 representan los límites del rectángulo definido por los puntos inicial y final de la línea de llamada, números negativos y números mayores que 1,0 son valores válidos.</span><span class="sxs-lookup"><span data-stu-id="bf68a-p104">Generally the value 0.0 represents the left or top edge of the shape and the value 1.0 represents the right or bottom edge of the shape. Valid values correspond to valid adjustments you can make to the shape manually. For example, if you can only pull an adjustment handle half way across the shape manually, the maximum value for the corresponding adjustment will be 0.5. For shapes such as callouts, where the values 0.0 and 1.0 represent the limits of the rectangle defined by the starting and ending points of the callout line, negative numbers and numbers greater than 1.0 are valid values.</span></span></description>
+        </item>
+        <item>
+          <description><span data-ttu-id="bf68a-116">Radial</span><span class="sxs-lookup"><span data-stu-id="bf68a-116">Radial</span></span></description>
+          <description><span data-ttu-id="bf68a-p105">Un valor de 1,0 corresponde al ancho de la forma. El valor máximo es 0,5; es decir, la mitad de la forma.</span><span class="sxs-lookup"><span data-stu-id="bf68a-p105">An adjustment value of 1.0 corresponds to the width of the shape. The maximum value is 0.5, or half way across the shape.</span></span></description>
+        </item>
+        <item>
+          <description><span data-ttu-id="bf68a-119">Ángulo</span><span class="sxs-lookup"><span data-stu-id="bf68a-119">Angle</span></span></description>
+          <description><span data-ttu-id="bf68a-120">Los valores se expresan en grados.</span><span class="sxs-lookup"><span data-stu-id="bf68a-120">Values are expressed in degrees.</span></span> <span data-ttu-id="bf68a-121">Si especifica un valor fuera del intervalo (180 a 180), se normalizará para que esté dentro de ese intervalo.</span><span class="sxs-lookup"><span data-stu-id="bf68a-121">If you specify a value outside the range — 180 to 180, it will be normalized to be within that range.</span></span></description>
+        </item>
+      </list>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -88,12 +64,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="26968-103">Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa el creador del objeto especificado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="26968-103">Returns an <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the creator of the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="bf68a-122">Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa al creador del objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="bf68a-122">Returns an <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the creator of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,12 +92,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="26968-104">Devuelve un valor que indica el número de elementos en especificado <see cref="T:Microsoft.Office.Interop.Word.Adjustments" /> colección.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="26968-104">Returns a value indicating the number of items in the specified <see cref="T:Microsoft.Office.Interop.Word.Adjustments" /> collection.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="bf68a-123">Devuelve un valor que indica el número de elementos de la <see cref="T:Microsoft.Office.Interop.Word.Adjustments" /> colección especificada.</span><span class="sxs-lookup"><span data-stu-id="bf68a-123">Returns a value indicating the number of items in the specified <see cref="T:Microsoft.Office.Interop.Word.Adjustments" /> collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,25 +120,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="26968-105">Devuelve un valor que indica la aplicación en la que se creó el objeto especificado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="26968-105">Returns a value that indicates the application in which the specified object was created.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="bf68a-124">Devuelve un valor que indica la aplicación en la que se creó el objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="bf68a-124">Returns a value that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="26968-106">
-            <para>Por ejemplo, si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition</para><para /></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="26968-106">
-              <para>For example, if the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD." This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
-              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="bf68a-125">Por ejemplo, si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".</span><span class="sxs-lookup"><span data-stu-id="bf68a-125">For example, if the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="bf68a-126">[!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</span><span class="sxs-lookup"><span data-stu-id="bf68a-126">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="bf68a-127">La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="bf68a-127">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="bf68a-128">Por ejemplo, Microsoft Word tiene el código de creador MSWD.</span><span class="sxs-lookup"><span data-stu-id="bf68a-128">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="bf68a-129">Para obtener información adicional acerca de esta propiedad, consulte la referencia del lenguaje de ayuda que se incluye con Microsoft Office Macintosh Edition</span><span class="sxs-lookup"><span data-stu-id="bf68a-129">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -204,33 +156,12 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <span data-ttu-id="26968-107">Número de índice del ajuste.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="26968-107">The index number of the adjustment.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="26968-108">Devuelve o establece el valor de ajuste especificado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="26968-108">Returns or sets the specified adjustment value.</span>
-          </span>
-        </summary>
+        <param name="Index"><span data-ttu-id="bf68a-130">Número de índice del ajuste.</span><span class="sxs-lookup"><span data-stu-id="bf68a-130">The index number of the adjustment.</span></span></param>
+        <summary><span data-ttu-id="bf68a-131">Devuelve o establece el valor de ajuste especificado.</span><span class="sxs-lookup"><span data-stu-id="bf68a-131">Returns or sets the specified adjustment value.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="26968-109">
-            <para>Para ajustes lineales, un valor de ajuste de 0,0 corresponde generalmente al borde izquierdo o superior de la forma y un valor de 1.0 generalmente se corresponde con el borde derecho o inferior de la forma. Sin embargo, los ajustes pueden pasar más allá de los límites de forma para algunas formas. Para ajustes radiales, un valor de ajuste de 1.0 corresponde al ancho de la forma. Para ajustes angulares, el valor de ajuste se especifica en grados. La propiedad <b>Item</b> se aplica únicamente a las formas que tienen ajustes.</para>
-            <para>Objetos autoformas y WordArt tienen hasta ocho ajustes.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="26968-109">
-              <para>For linear adjustments, an adjustment value of 0.0 generally corresponds to the left or top edge of the shape, and a value of 1.0 generally corresponds to the right or bottom edge of the shape. However, adjustments can pass beyond shape boundaries for some shapes. For radial adjustments, an adjustment value of 1.0 corresponds to the width of the shape. For angular adjustments, the adjustment value is specified in degrees. The <b>Item</b> property applies only to shapes that have adjustments.</para>
-              <para>AutoShapes and WordArt objects have up to eight adjustments.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="bf68a-p109">Para ajustes lineales, un valor de ajuste de 0,0 corresponde generalmente al borde izquierdo o superior de la forma y un valor de 1.0 corresponde generalmente al borde derecho o inferior de la forma. Sin embargo, los ajustes pueden sobrepasar los límites de la forma para algunas formas. Para ajustes radiales, un valor de ajuste de 1.0 corresponde al ancho de la forma. Para ajustes angulares, el valor de ajuste se especifica en grados. La propiedad <b>Item</b> se aplica únicamente a las formas que tienen ajustes.</span><span class="sxs-lookup"><span data-stu-id="bf68a-p109">For linear adjustments, an adjustment value of 0.0 generally corresponds to the left or top edge of the shape, and a value of 1.0 generally corresponds to the right or bottom edge of the shape. However, adjustments can pass beyond shape boundaries for some shapes. For radial adjustments, an adjustment value of 1.0 corresponds to the width of the shape. For angular adjustments, the adjustment value is specified in degrees. The <b>Item</b> property applies only to shapes that have adjustments.</span></span></para>
+          <para><span data-ttu-id="bf68a-137">Las autoformas y los objetos de WordArt tienen hasta ocho ajustes.</span><span class="sxs-lookup"><span data-stu-id="bf68a-137">AutoShapes and WordArt objects have up to eight adjustments.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -256,12 +187,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="26968-110">Devuelve un objeto object que representa el objeto primario del especificado <see cref="T:Microsoft.Office.Interop.Word.Adjustments" /> colección.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="26968-110">Returns an object that represents the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.Adjustments" /> collection.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="bf68a-138">Devuelve un objeto Object que representa el objeto primario de la <see cref="T:Microsoft.Office.Interop.Word.Adjustments" /> colección especificada.</span><span class="sxs-lookup"><span data-stu-id="bf68a-138">Returns an object that represents the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.Adjustments" /> collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
