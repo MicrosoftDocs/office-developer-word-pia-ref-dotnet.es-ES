@@ -1,13 +1,5 @@
 <Type Name="XMLNodes" FullName="Microsoft.Office.Interop.Word.XMLNodes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ca593505e7b34c3c76616e23b1644ee18df222d3" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675722" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XMLNodes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1bb0a31f85f85e8cdffe7c844d4d494ab8d5858b" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142629" /></Metadata><TypeSignature Language="C#" Value="public interface XMLNodes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLNodes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLNodes" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLNodes&#xA;Implements IEnumerable" />
@@ -30,11 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objetos que representa los nodos de la vista de árbol del panel de tareas Estructura XML, que indica los elementos que un usuario ha aplicado a un documento.</summary>
-    <remarks>
-      <para>Cada nodo de la vista de árbol es una instancia de un objeto <b>XMLNode</b> . La jerarquía en la vista de árbol indica si un nodo contiene nodos secundarios.</para>
-      <para>Puede devolver una colección <b>XMLNodes</b> para una selección, un intervalo o el documento completo. El orden en que aparecen los objetos <b>XMLNode</b> de la colección <b>XMLNodes</b> es el mismo orden en el que aparecen sus etiquetas inicial o final dentro de la selección especificada, el intervalo o documento.</para> Uso de 
-      <para>el <see cref="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" /> (propiedad) de la colección <b>XMLNodes</b> para devolver un objeto <b>XMLNode</b> individual. Usar el <see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" /> (método) para comprobar que un elemento XML es válido de acuerdo con los esquemas aplicados y los requeridos elementos secundarios existen y están en el orden requerido. Una vez ejecutado el método <b>Validate</b> , utilice la <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> (propiedad) para comprobar si un elemento es válido y la <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> propiedad para mostrar un mensaje al usuario respecto a qué debe corregir para adaptar el código XML del documento se ajusten al esquema XML de r reglas.</para><para>Usar la <see cref="M:Microsoft.Office.Interop.Word.XMLNodes.Add(System.String,System.String,System.Object@)" /> método para agregar un elemento XML a una selección, un intervalo o el documento.</para><para>Debido a que XML distingue mayúsculas de minúsculas, el elemento XML como se escribió en el <paramref name="Name" /> parámetro del método <b>Add</b> se debe escribir exactamente como aparece en el esquema al que hace referencia en el <paramref name="Namespace" /> parámetro.</para><para /></remarks>
+    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objetos que representa los nodos en la vista de árbol del panel de tareas estructura XML, que indica los elementos que un usuario ha aplicado a un documento.</summary>
+    <remarks><para>Cada nodo de la vista de árbol es una aparición de un objeto <b>XMLNode</b>. La jerarquía de dicha vista indica si un nodo contiene nodos secundarios.</para>
+      <para>Puede devolver una colección <b>XMLNodes</b> para una selección, un intervalo o el documento completo. El orden en que aparecen los objetos <b>XMLNode</b> de la colección <b>XMLNodes</b> es el mismo orden en el que aparecen sus etiquetas de inicio o finalización en la selección, intervalo o documento.</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" /> propiedad de la colección <b>XMLNodes</b> para devolver un objeto <b>XmlNode</b> individual. Utilice el <see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" /> método para comprobar que un elemento XML es válido de acuerdo con los esquemas aplicados y que existen los elementos secundarios necesarios y que se encuentran en el orden requerido. Una vez que haya ejecutado el método <b>Validate</b> , <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> use la propiedad para comprobar si un elemento es válido <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> y la propiedad para mostrar un mensaje al usuario en función de lo que el usuario tenga que corregir para que el código XML del documento se ajuste a las reglas del esquema XML.</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.XMLNodes.Add(System.String,System.String,System.Object@)" /> método para agregar un elemento XML a una selección, un intervalo o el documento.</para>
+      <para>Como XML distingue mayúsculas de minúsculas, el elemento XML tal y como <paramref name="Name" /> se escribe en el parámetro del método <b>Add</b> debe escribirse exactamente como aparece en el esquema al que se <paramref name="Namespace" /> hace referencia en el parámetro.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -67,7 +61,7 @@
         <param name="Name">To be added.</param>
         <param name="Namespace">To be added.</param>
         <param name="Range">To be added.</param>
-        <summary>[!PRECAUCIóN] Este objeto, miembro o enumeración está en desuso y no debería usarse en el código.</summary>
+        <summary>Este objeto, miembro o enumeración está en desuso y no debería usarse en el código.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -95,7 +89,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -153,9 +147,9 @@
       <Docs>
         <summary>Obtiene un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -216,7 +210,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>objeto</b> que indica la posición ordinal o una cadena que representa el nombre del objeto individual.</param>
+        <param name="Index"><b>Objeto</b> que indica la posición ordinal o una cadena que representa el nombre del objeto individual.</param>
         <summary>Devuelve un objeto individual de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

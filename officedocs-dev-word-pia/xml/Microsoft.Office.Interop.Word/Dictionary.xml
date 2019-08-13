@@ -1,13 +1,5 @@
 <Type Name="Dictionary" FullName="Microsoft.Office.Interop.Word.Dictionary">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f7e27533dba0d2d5080542778447d02727eef81e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675072" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Dictionary" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7eb1c3a125004711f709d1a46bde81b4b66d431c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147056" /></Metadata><TypeSignature Language="C#" Value="public interface Dictionary" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Dictionary" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Dictionary" />
   <TypeSignature Language="VB.NET" Value="Public Interface Dictionary" />
@@ -27,13 +19,15 @@
   </Attributes>
   <Docs>
     <summary>Representa un diccionario.</summary>
-    <remarks>
-      <para>Los objetos 
-        <b>Dictionary</b> que representan diccionarios personalizados son miembros de la <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> colección. Otros objetos de diccionario son devueltos por propiedades de la <see cref="T:Microsoft.Office.Interop.Word.Language" /> colección; entre estas se incluyen la <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />, y <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" /> propiedades. Puede usar estas propiedades para cada idioma para el que estén instaladas las herramientas de corrección.</para>
-      <para>Uso <b>CustomDictionaries</b>(<paramref name="index" />), donde <paramref name="index" /> es un número de índice o el nombre de cadena del diccionario, para devolver un solo objeto <b>Dictionary</b> que representa un diccionario personalizado.</para> Uso de 
-      <para>el <see cref="P:Microsoft.Office.Interop.Word.Dictionaries.ActiveCustomDictionary" /> (propiedad) para establecer el diccionario ortográfico personalizado de la colección a la que se agregarán las palabras nuevas. Si se intenta establecer esta propiedad en un diccionario que no es un diccionario personalizado, se produce un error.</para> Uso de 
-      <para>la <see cref="M:Microsoft.Office.Interop.Word.Dictionaries.Add(System.String)" /> método para agregar un nuevo diccionario a la colección de diccionarios personalizados activos. Si no hay ningún archivo con el nombre especificado, Microsoft Word crea it.</para><para>Usar la <see cref="P:Microsoft.Office.Interop.Word.Dictionary.Name" /> y <see cref="P:Microsoft.Office.Interop.Word.Dictionary.Path" /> (propiedad) para localizar cualquiera de los diccionarios.</para> Uso de 
-      <para>el <see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" /> (propiedad) para determinar si el diccionario personalizado especificado puede tener un idioma específico asignado a él con el <see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageID" /> (propiedad). Si el diccionario es específico del idioma, comprobará sólo el texto que tiene el formato del idioma especificado.</para><para>La <see cref="P:Microsoft.Office.Interop.Word.Dictionary.ReadOnly" /> propiedad devuelve <b>True</b> para los archivos .lex (diccionarios de revisión integrados) y <b>False</b> para los archivos .dic (diccionarios ortográficos personalizados).</para><para /></remarks>
+    <remarks><para>Los objetos 
+        <b>Dictionary</b> que representan diccionarios personalizados son miembros de <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> la colección. Las propiedades de la <see cref="T:Microsoft.Office.Interop.Word.Language" /> colección devuelven otros objetos Dictionary; entre ellas se <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />incluyen <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />las <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />propiedades, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" /> , y. Puede usar estas propiedades para cada idioma para el que se instalen las herramientas de corrección.</para>
+      <para>Use <b>CustomDictionaries</b>(<paramref name="index" />), donde <paramref name="index" /> es un número de índice o el nombre de la cadena del diccionario, para devolver un solo objeto <b>Dictionary</b> que representa un diccionario personalizado.</para>
+      <para>Use la <see cref="P:Microsoft.Office.Interop.Word.Dictionaries.ActiveCustomDictionary" /> propiedad para establecer el diccionario ortográfico personalizado en la colección a la que se agregan las palabras nuevas. Si intenta establecer esta propiedad en un diccionario que no es un diccionario personalizado, se produce un error.</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.Dictionaries.Add(System.String)" /> método para agregar un nuevo diccionario a la colección de diccionarios personalizados activos. Si no hay ningún archivo con el nombre especificado, Microsoft Word lo crea.</para>
+      <para>Use la <see cref="P:Microsoft.Office.Interop.Word.Dictionary.Name" /> propiedad <see cref="P:Microsoft.Office.Interop.Word.Dictionary.Path" /> y para buscar cualquiera de los diccionarios.</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" /> propiedad para determinar si el diccionario personalizado especificado puede tener un idioma específico asignado a él con la <see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageID" /> propiedad. Si el diccionario es específico del idioma, comprobará sólo el texto que tiene el formato del idioma especificado.</para>
+      <para>La <see cref="P:Microsoft.Office.Interop.Word.Dictionary.ReadOnly" /> propiedad devuelve <b>true</b> para los archivos. Lex (diccionarios de revisión integrados) y <b>false</b> para los archivos. dic (diccionarios ortográficos personalizados).</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,9 +83,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -147,9 +141,9 @@
       <Docs>
         <summary>Devuelve o establece el idioma del objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para utilizar un diccionario personalizado, en primer lugar debe establecer la <see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" /> propiedad en <b>True</b> antes de especificar la propiedad <b>LanguageID</b> . Diccionarios personalizados que son específicos del idioma sólo tienen texto con el formato de ese idioma.</para> Propiedad LanguageID el 
-          <para>puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes. Algunas de estas constantes no estén disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para><para /></remarks>
+        <remarks><para>Para un diccionario personalizado, primero debe establecer la <see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" /> propiedad en <b>true</b> antes de especificar la propiedad <b>LanguageID</b> . Diccionarios personalizados que son específicos del idioma sólo tienen en el texto el formato de ese idioma.</para>
+          <para>La propiedad LanguageID puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes. Algunas de estas constantes pueden no estar disponibles, según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageSpecific">
@@ -178,8 +172,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el diccionario personalizado va a utilizarse sólo con texto con formato para un idioma específico.</summary>
+        <summary><b>True</b> si el diccionario personalizado va a utilizarse sólo con texto con formato para un idioma específico.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -265,11 +258,9 @@
       <Docs>
         <summary>Devuelve el disco o la ruta de acceso Web al objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La ruta de acceso no incluye un carácter final, por ejemplo, "C:\MSOffice" o "http://MyServer". Usar el <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> (propiedad) para agregar el carácter que separa carpetas y letras de unidad. Usar el <see cref="P:Microsoft.Office.Interop.Word.Dictionary.Name" /> (propiedad) para devolver el nombre de archivo sin la ruta de acceso.</para>
-          <para>Nota se puede utilizar la propiedad <b>PathSeparator</b> para crear direcciones Web aunque contengan barras diagonales (/) y <b>la propiedad PathSeparator sea una barra diagonal inversa</b> (\).</para>
-          <para />
-        </remarks>
+        <remarks><para>La ruta de acceso no incluye un carácter final, por ejemplo, "C:\MSOffice" o "http://MyServer". Use la <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> propiedad para agregar el carácter que separa carpetas y Letras de unidad. Use la <see cref="P:Microsoft.Office.Interop.Word.Dictionary.Name" /> propiedad para devolver el nombre de archivo sin la ruta de acceso.</para>
+          <para>Nota puede utilizar la propiedad <b>PathSeparator</b> para crear direcciones web, aunque contengan barras diagonales (/) y el valor predeterminado de la propiedad <b>PathSeparator</b> sea una barra\)diagonal inversa (.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -295,13 +286,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si no se puede cambiar el diccionario especificado.</summary>
+        <summary><b>True</b> si no se puede cambiar el diccionario especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Los diccionarios de sinónimos, división de palabras, ortografía y gramática activos son de sólo lectura. Los diccionarios personalizados son de lectura y escritura.</para>
-          <para />
-        </remarks>
+        <remarks><para>Los diccionarios activos gramaticales, ortográficos, de división de palabras y de sinónimos activos son de sólo lectura. Los diccionarios personalizados son de lectura y escritura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -329,10 +317,8 @@
       <Docs>
         <summary>Devuelve el tipo de diccionario.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>Type</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" /> constantes.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propiedad <b>Type</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" /> constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

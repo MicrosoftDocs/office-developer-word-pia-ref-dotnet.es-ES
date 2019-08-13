@@ -1,13 +1,5 @@
 <Type Name="Panes" FullName="Microsoft.Office.Interop.Word.Panes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d90b242373bbbcaf3d57c22154e720e2f2e43252" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674950" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Panes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c93e1f96de2b3c9480f4dadee3a64fe30ee9c1e5" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144179" /></Metadata><TypeSignature Language="C#" Value="public interface Panes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Panes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Panes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Panes&#xA;Implements IEnumerable" />
@@ -31,13 +23,11 @@
   </Attributes>
   <Docs>
     <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.Pane" /> objetos que representan los paneles de ventana de una sola ventana.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.Window.Panes" /> propiedad para devolver la colección <b>Panes</b> .</para>
-      <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.Panes.Add(System.Object@)" /> (método) o el <see cref="P:Microsoft.Office.Interop.Word.Window.Split" /> (propiedad) para agregar un panel de la ventana.</para>
-      <para>Se puede usar el <see cref="P:Microsoft.Office.Interop.Word.View.SplitSpecial" /> propiedad para mostrar comentarios, notas al pie o notas al final en un panel independiente.</para>
-      <para>Una ventana tiene varios paneles si está dividida o si la vista activa no es la vista Diseño de impresión y se muestra información como notas al pie o comentarios.</para>
-      <para />
-    </remarks>
+    <remarks><para>Use la <see cref="P:Microsoft.Office.Interop.Word.Window.Panes" /> propiedad para devolver la <b></b> colección panes.</para>
+      <para>Use el <see cref="M:Microsoft.Office.Interop.Word.Panes.Add(System.Object@)" /> método o la <see cref="P:Microsoft.Office.Interop.Word.Window.Split" /> propiedad para agregar un panel de ventana.</para>
+      <para>Puede usar la <see cref="P:Microsoft.Office.Interop.Word.View.SplitSpecial" /> propiedad para mostrar comentarios, notas al pie o notas al final en un panel independiente.</para>
+      <para>Una ventana tiene más de un panel si está dividida o si la vista activa no es la vista Diseño de impresión y se muestra información como notas al pie o comentarios.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -62,14 +52,11 @@
         <Parameter Name="SplitVertical" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="SplitVertical">
-          <b>Objeto</b>de opcional. Número que indica el porcentaje de la ventana, de arriba a abajo, que desea que aparezca encima de la línea de división.</param>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Pane" /> objeto que representa un nuevo panel a una ventana.</summary>
+        <param name="SplitVertical"><b>Objeto</b>opcional. Número que indica el porcentaje de la ventana, de arriba a abajo, que desea que aparezca encima de la línea de división.</param>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Pane" /> objeto Object que representa un nuevo panel de una ventana.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Este método se producirá un error si se aplica a una ventana que ya está dividida.</para>
-          <para />
-        </remarks>
+        <remarks><para>Este método producirá un error si se aplica a una ventana que ya esté dividida.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -95,7 +82,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -153,9 +140,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -216,7 +203,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entero</b> que indica la posición ordinal del objeto individual.</param>
+        <param name="Index"><b>Entero</b> que indica la posición ordinal del objeto individual.</param>
         <summary>Devuelve un objeto individual de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

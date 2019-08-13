@@ -1,13 +1,5 @@
 <Type Name="XMLSchemaReference" FullName="Microsoft.Office.Interop.Word.XMLSchemaReference">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="acaac46d8cdaa975c35ab2d3b765efb532a14120" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674307" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XMLSchemaReference" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="eda28c551cfb233a178c64483141f2ff3f4a18e4" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145411" /></Metadata><TypeSignature Language="C#" Value="public interface XMLSchemaReference" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLSchemaReference" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLSchemaReference" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLSchemaReference" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Representa un esquema individual adjunto a un documento.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.XMLChildNodeSuggestion.XMLSchemaReference" /> propiedad para devolver un objeto XMLSchemaReference para un <see cref="T:Microsoft.Office.Interop.Word.XMLChildNodeSuggestion" /> objeto.</para>
-      <para />
-    </remarks>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.XMLChildNodeSuggestion.XMLSchemaReference" /> propiedad para devolver un objeto XMLSchemaReference para un <see cref="T:Microsoft.Office.Interop.Word.XMLChildNodeSuggestion" /> objeto.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +46,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,9 +76,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -169,10 +159,8 @@
       <Docs>
         <summary>Devuelve una <b>cadena</b> que representa el identificador uniforme de recursos (URI) del espacio de nombres del esquema para el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si está creando esquemas XML para utilizarlos con Microsoft Word, se recomienda que especifique el valor <b>targetNamespace</b> en el esquema.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si está creando esquemas XML para su uso con Microsoft Word, es muy recomendable que especifique el valor <b>targetNamespace</b> en el esquema.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -225,10 +213,8 @@
       <Parameters />
       <Docs>
         <summary>Carga de nuevo un documento almacenado en memoria caché resolviendo el hipervínculo al documento y descargándolo.</summary>
-        <remarks>
-          <para>Este método vuelve a cargar el documento de forma asincrónica; es decir, las instrucciones posteriores al método <b>Reload</b> en el procedimiento pueden ejecutarse antes de que el documento en realidad se vuelve a cargar. Por este motivo, es posible que obtenga resultados inesperados usar este método en el código.</para>
-          <para />
-        </remarks>
+        <remarks><para>Este método vuelve a cargar el documento de forma asincrónica; es decir, las instrucciones posteriores al método <b>Reload</b> en el procedimiento pueden ejecutarse antes de que realmente se vuelve a cargar en el documento. Debido a esto, puede obtener resultados inesperados si usa este método en el código.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

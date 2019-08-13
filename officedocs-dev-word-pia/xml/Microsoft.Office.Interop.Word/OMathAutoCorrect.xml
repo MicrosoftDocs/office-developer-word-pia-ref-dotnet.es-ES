@@ -1,13 +1,5 @@
 <Type Name="OMathAutoCorrect" FullName="Microsoft.Office.Interop.Word.OMathAutoCorrect">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="496371be8dfa743a25eebac4dfef38a8e285d3d1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675093" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OMathAutoCorrect" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c0cc8c6beb49c151853fe8d7c4420fa2e287c5e7" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144396" /></Metadata><TypeSignature Language="C#" Value="public interface OMathAutoCorrect" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMathAutoCorrect" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMathAutoCorrect" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMathAutoCorrect" />
@@ -26,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa la característica de Autocorrección matemática en Microsoft Office Word. Para obtener acceso a las entradas de Autocorrección math, use la <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntries" /> colección.</summary>
+    <summary>Representa la característica de Autocorrección matemática en Microsoft Office Word. Para obtener acceso a los elementos de Autocorrección matemática <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntries" /> , utilice la colección.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,10 +45,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un objeto object que representa la aplicación Microsoft Word.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Devuelve un objeto Object que representa la aplicación Microsoft Word.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,15 +73,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> de 32 bits que indica la aplicación en la que el complemento que se creó. Solo lectura</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, el <see cref="P:Microsoft.Office.Interop.Word.OMathAutoCorrect.Creator" /> (propiedad) devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Este valor también puede representarse mediante la constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />. </para>
-          <para>Esta propiedad se ha diseñado principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve un <b>entero</b> de 32 bits que indica la aplicación en la que se creó el complemento. Solo lectura</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Si el objeto se creó en Microsoft Word, la <see cref="P:Microsoft.Office.Interop.Word.OMathAutoCorrect.Creator" /> propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Este valor también puede representarse mediante la <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />constante. </para>
+          <para>Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Entries">
@@ -117,10 +103,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.OMathAutoCorrectEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve la colección de ecuaciones entradas de Autocorrección que se encuentra dentro de la característica de Autocorrección de ecuación. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntries" />
-        </value>
+        <summary>Devuelve la colección de entradas de Autocorrección de ecuaciones que se encuentran dentro de la característica de Autocorrección de ecuaciones. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntries" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,10 +131,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.OMathRecognizedFunctions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve la colección que representa las funciones reconocidas que se corrigen automáticamente mediante la característica de Autocorrección de ecuación. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunctions" />
-        </value>
+        <summary>Devuelve la colección que representa las funciones reconocidas que se corrigen automáticamente mediante la característica de Autocorrección de ecuaciones. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunctions" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,10 +159,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario del especificado <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrect" /> objeto.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve el objeto primario del objeto especificado <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrect" /> .</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,10 +190,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <b>valor Boolean</b> que indica si Microsoft Office Word reemplaza automáticamente las cadenas de las ecuaciones por las definiciones de Autocorrección matemática correspondientes. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Devuelve o establece un <b>valor Boolean</b> que representa si Microsoft Office Word reemplaza automáticamente las cadenas de las ecuaciones por las definiciones de Autocorrección matemática correspondientes. Lectura/escritura.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,10 +221,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <b>valor Boolean</b> que indica si Microsoft Office Word utiliza las reglas de Autocorrección matemática fuera de las ecuaciones de un documento. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Devuelve o establece un <b>valor Boolean</b> que representa si Microsoft Office Word utiliza las reglas de Autocorrección matemática fuera de las ecuaciones de un documento. Lectura/escritura.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

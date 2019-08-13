@@ -1,13 +1,5 @@
 <Type Name="ConditionalStyle" FullName="Microsoft.Office.Interop.Word.ConditionalStyle">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3dc3c17325c9abc472dde54c99259df173951e78" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675070" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ConditionalStyle" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1856d1f818edfe095c50db1a4a943bea18857b17" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147252" /></Metadata><TypeSignature Language="C#" Value="public interface ConditionalStyle" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ConditionalStyle" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ConditionalStyle" />
   <TypeSignature Language="VB.NET" Value="Public Interface ConditionalStyle" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Representa el formato especial aplicado a áreas especificadas de una tabla, si a la tabla seleccionada se le ha aplicado un formato con un estilo de tabla concreto.</summary>
-    <remarks>
-      <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.TableStyle.Condition(Microsoft.Office.Interop.Word.WdConditionCode)" /> (método) de la <see cref="T:Microsoft.Office.Interop.Word.TableStyle" /> objeto para devolver un objeto <b>ConditionalStyle</b> . El <see cref="P:Microsoft.Office.Interop.Word.ConditionalStyle.Shading" /> propiedad se puede usar para aplicar un sombreado a áreas especificadas de una tabla.</para>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.ConditionalStyle.Borders" /> (propiedad) para aplicar bordes a las áreas especificadas de una tabla.</para>
-      <para />
-    </remarks>
+    <remarks><para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.TableStyle.Condition(Microsoft.Office.Interop.Word.WdConditionCode)" /> método del <see cref="T:Microsoft.Office.Interop.Word.TableStyle" /> objeto para devolver un objeto <b>ConditionalStyle</b> . La <see cref="P:Microsoft.Office.Interop.Word.ConditionalStyle.Shading" /> propiedad se puede usar para aplicar sombreado a áreas especificadas de una tabla.</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.ConditionalStyle.Borders" /> propiedad para aplicar bordes a las áreas especificadas de una tabla.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Borders" /> colección que representa todos los bordes del objeto especificado.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.Borders" /> colección que representa todos los bordes del objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,10 +111,8 @@
       <Docs>
         <summary>Devuelve o establece la cantidad de espacio (en puntos) que se agrega bajo el contenido de una sola celda o de todas las celdas de una tabla.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El valor de la propiedad <b>BottomPadding</b> para una sola celda anula el valor de la propiedad <b>BottomPadding</b> para toda la tabla.</para>
-          <para />
-        </remarks>
+        <remarks><para>El valor de la propiedad <b>BottomPadding</b> para una sola celda anula el valor de la propiedad <b>BottomPadding</b> para toda la tabla.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -152,9 +140,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Por ejemplo, si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Por ejemplo, si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -183,7 +171,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.Font" /> object que representa el formato de carácter del objeto especificado.</summary>
+        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.Font" /> objeto Object que representa el formato de carácter del objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -216,10 +204,8 @@
       <Docs>
         <summary>Devuelve o establece la cantidad de espacio (en puntos) para agregar a la izquierda del contenido de una sola celda o de todas las celdas de una tabla.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El valor de la propiedad <b>LeftPadding</b> para una sola celda anula el valor de la propiedad <b>LeftPadding</b> para toda la tabla.</para>
-          <para />
-        </remarks>
+        <remarks><para>El valor de la propiedad <b>LeftPadding</b> para una sola celda anula el valor de la propiedad <b>LeftPadding</b> para toda la tabla.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ParagraphFormat">
@@ -248,7 +234,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ParagraphFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> objeto que representa la configuración de párrafo para el estilo especificado.</summary>
+        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> objeto que representa la configuración de párrafo del estilo especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -309,10 +295,8 @@
       <Docs>
         <summary>Devuelve o establece la cantidad de espacio (en puntos) para agregar a la derecha del contenido de una sola celda o de todas las celdas de una tabla.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El valor de la propiedad <b>RightPadding</b> para una sola celda anula el valor de la propiedad <b>RightPadding</b> para toda la tabla.</para>
-          <para />
-        </remarks>
+        <remarks><para>El valor de la propiedad <b>RightPadding</b> para una sola celda anula el valor de la propiedad <b>RightPadding</b> para toda la tabla.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shading">
@@ -371,10 +355,8 @@
       <Docs>
         <summary>Devuelve o establece la cantidad de espacio (en puntos) para agregar por encima del contenido de una sola celda o de todas las celdas de una tabla.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El valor de la propiedad <b>TopPadding</b> para una sola celda anula el valor de la propiedad <b>TopPadding</b> para toda la tabla.</para>
-          <para />
-        </remarks>
+        <remarks><para>El valor de la propiedad <b>TopPadding</b> para una sola celda anula el valor de la propiedad <b>TopPadding</b> para toda la tabla.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

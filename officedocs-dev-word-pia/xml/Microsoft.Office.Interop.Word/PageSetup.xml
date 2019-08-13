@@ -1,13 +1,5 @@
 <Type Name="PageSetup" FullName="Microsoft.Office.Interop.Word.PageSetup">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="558d1f8af2b21e49d591c611c2670c360008123e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675589" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PageSetup" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="433e93ba8183c9b0045586babe477ca93fb72916" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144207" /></Metadata><TypeSignature Language="C#" Value="public interface PageSetup" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PageSetup" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.PageSetup" />
   <TypeSignature Language="VB.NET" Value="Public Interface PageSetup" />
@@ -26,11 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa la descripción de la configuración de página. El objeto  <b>PageSetup</b> contiene todos los atributos de configuración de página (margen izquierdo, margen inferior, tamaño de papel, etc.) en forma de propiedades.</summary>
-    <remarks>
-      <para>Utilice la propiedad <b>PageSetup</b> para devolver un objeto <b>PageSetup</b> .</para>
-      <para />
-    </remarks>
+    <summary>Representa la descripción de la configuración de página. El objeto <b>PageSetup</b> contiene todos los atributos de configuración de página (margen izquierdo, margen inferior, tamaño de papel y otros) como propiedades.</summary>
+    <remarks><para>Use la propiedad <b>PageSetup</b> para devolver un objeto <b>PageSetup</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +46,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,8 +77,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> para que Microsoft Word para que imprima un documento en una serie de folletos para que las páginas impresas se puedan dobla y leer como un libro.</summary>
+        <summary><b>True</b> para que Microsoft Word para que imprima un documento en una serie de folletos para que las páginas impresas se puedan dobla y leer como un libro.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,7 +108,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <b>número entero</b> que representa el número de páginas de cada folleto.</summary>
+        <summary>Devuelve o establece un <b>valor de tipo Integer</b> que representa el número de páginas de cada folleto.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,8 +139,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> para que Microsoft Word invertir el orden de impresión de libro doble impresión de documentos de idioma asiático o bidireccional.</summary>
+        <summary><b>True</b> para que Microsoft Word invertir el orden de impresión de libro doble impresión de documentos de idioma asiático o bidireccional.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -243,9 +231,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DifferentFirstPageHeaderFooter">
@@ -274,8 +262,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si un encabezado o pie de página se usa en la primera página. Puede ser <b>True</b>, <b>False</b> o <b>wdUndefined</b>.</summary>
+        <summary><b>True</b> si un encabezado o pie de página se usa en la primera página. Puede ser <b>True</b>, <b>False</b> o <b>wdUndefined</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -368,12 +355,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la cantidad (en puntos) de espacio de margen adicional agregado a cada página de un documento o una sección para el enlace.</summary>
+        <summary>Devuelve o establece la cantidad de espacio, en puntos, de margen adicional para la encuadernación agregado a cada página de un documento o de una sección.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el <see cref="P:Microsoft.Office.Interop.Word.PageSetup.MirrorMargins" /> (propiedad) se establece en <b>True</b>, la propiedad <b>Gutter</b> agrega el espacio adicional al interior los márgenes. De lo contrario, se agrega el espacio adicional al margen izquierdo.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.MirrorMargins" /> propiedad se establece en <b>true</b>, la propiedad <b>Gutter</b> agrega el espacio adicional a los márgenes interiores. De lo contrario, el espacio adicional se agrega al margen izquierdo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GutterOnTop">
@@ -501,7 +486,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la distancia (en puntos) entre el encabezado y la parte superior de la página.</summary>
+        <summary>Devuelve o establece la distancia, en puntos, entre el encabezado y la parte superior de la página.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -565,10 +550,8 @@
       <Docs>
         <summary>Devuelve o establece la distancia (en puntos) entre el borde izquierdo de la página y el borde izquierdo del texto del cuerpo.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el <see cref="P:Microsoft.Office.Interop.Word.PageSetup.MirrorMargins" /> (propiedad) se establece en <b>True</b>, la propiedad <b>LeftMargin</b> controla la configuración de márgenes interiores y el <see cref="P:Microsoft.Office.Interop.Word.PageSetup.RightMargin" /> (propiedad) controla la configuración de los márgenes exteriores.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.MirrorMargins" /> propiedad se establece en <b>true</b>, la propiedad <b>LeftMargin</b> controla la configuración de los márgenes interiores y <see cref="P:Microsoft.Office.Interop.Word.PageSetup.RightMargin" /> la propiedad controla la configuración de los márgenes exteriores.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LineNumbering">
@@ -597,12 +580,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.LineNumbering</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la <see cref="T:Microsoft.Office.Interop.Word.LineNumbering" /> objeto que representa los números de línea para especificado <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> objeto.</summary>
+        <summary>Devuelve o establece el <see cref="T:Microsoft.Office.Interop.Word.LineNumbering" /> objeto que representa los números de línea del objeto <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Debe estar en la vista Diseño de impresión para ver la numeración de líneas.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para ver la numeración de líneas es necesario estar en la vista Diseño de impresión.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LinesPage">
@@ -662,13 +643,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si los márgenes interior y exterior de las páginas opuestas tienen el mismo ancho. Puede ser <b>True</b>, <b>False</b> o <b>wdUndefined</b>.</summary>
+        <summary><b>True</b> si los márgenes interior y exterior de las páginas opuestas tienen el mismo ancho. Puede ser <b>True</b>, <b>False</b> o <b>wdUndefined</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si la propiedad <b>MirrorMargins</b> está establecida en <b>True</b>, el <see cref="P:Microsoft.Office.Interop.Word.PageSetup.LeftMargin" /> (propiedad) controla la configuración de márgenes interiores y el <see cref="P:Microsoft.Office.Interop.Word.PageSetup.RightMargin" /> (propiedad) controla la configuración de los márgenes exteriores.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la propiedad <b>MirrorMargins</b> se establece en <b>true</b>, la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.LeftMargin" /> propiedad controla la configuración de los márgenes interiores y <see cref="P:Microsoft.Office.Interop.Word.PageSetup.RightMargin" /> la propiedad controla la configuración de los márgenes exteriores.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OddAndEvenPagesHeaderFooter">
@@ -697,8 +675,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el texto especificado <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> objeto tiene distintos encabezados y pies de página para páginas pares e impares. Puede ser <b>True</b>, <b>False</b> o <b>wdUndefined</b>.</summary>
+        <summary><b>True</b> si el objeto <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> especificado tiene distintos encabezados y pies de página para páginas pares e impares. Puede ser <b>True</b>, <b>False</b> o <b>wdUndefined</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -731,10 +708,8 @@
       <Docs>
         <summary>Devuelve o establece la orientación de la página.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Algunas de las <see cref="T:Microsoft.Office.Interop.Word.WdOrientation" /> constantes pueden no estar disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
-          <para />
-        </remarks>
+        <remarks><para>Es posible que <see cref="T:Microsoft.Office.Interop.Word.WdOrientation" /> algunas de las constantes no estén disponibles para usted, según la compatibilidad con el idioma (por ejemplo, Inglés estadounidense) que haya seleccionado o instalado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OtherPagesTray">
@@ -763,7 +738,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPaperTray</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la Bandeja de papel que se usará para todos excepto la primera página de un documento o sección.</summary>
+        <summary>Devuelve o establece la bandeja de papel que se va a usar para todas las páginas, excepto la primera, de un documento o una sección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -796,11 +771,9 @@
       <Docs>
         <summary>Devuelve o establece el alto de la página en puntos.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Establecer la propiedad <b>PageHeight</b> se cambia la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.PaperSize" /> propiedad a <b>wdPaperCustom</b>.</para>
-          <para>Usar la propiedad <b>PaperSize</b> para establecer el alto de la página y el ancho en los de un tamaño de papel predefinido, como carta o A4.</para>
-          <para />
-        </remarks>
+        <remarks><para>El establecimiento <b></b> de la propiedad PageHeight <see cref="P:Microsoft.Office.Interop.Word.PageSetup.PaperSize" /> cambia la propiedad a <b>wdPaperCustom</b>.</para>
+          <para>Utilice la propiedad <b>PaperSize</b> para establecer el alto de la página y el ancho en los de un tamaño de papel predefinido, como carta o A4.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageWidth">
@@ -831,11 +804,9 @@
       <Docs>
         <summary>Devuelve o establece el ancho de la página en puntos.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Establecer la propiedad <b>PageWidth</b> se cambia la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.PaperSize" /> propiedad a <b>wdPaperCustom</b>.</para>
-          <para>Usar la propiedad <b>PaperSize</b> para establecer el alto de la página y el ancho en los de un tamaño de papel predefinido, como carta o A4.</para>
-          <para />
-        </remarks>
+        <remarks><para>El establecimiento <b></b> de la propiedad PageWidth <see cref="P:Microsoft.Office.Interop.Word.PageSetup.PaperSize" /> cambia la propiedad a <b>wdPaperCustom</b>.</para>
+          <para>Utilice la propiedad <b>PaperSize</b> para establecer el alto de la página y el ancho en los de un tamaño de papel predefinido, como carta o A4.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PaperSize">
@@ -866,10 +837,8 @@
       <Docs>
         <summary>Devuelve o establece el tamaño de papel.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Configuración de la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.PageHeight" /> o <see cref="P:Microsoft.Office.Interop.Word.PageSetup.PageWidth" /> (propiedad) de la propiedad <b>PaperSize</b> cambia a <b>wdPaperCustom</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si se <see cref="P:Microsoft.Office.Interop.Word.PageSetup.PageHeight" /> establece <see cref="P:Microsoft.Office.Interop.Word.PageSetup.PageWidth" /> la propiedad o, la propiedad <b>PaperSize</b> cambia a <b>wdPaperCustom</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -928,10 +897,8 @@
       <Docs>
         <summary>Devuelve o establece la distancia (en puntos) entre el borde derecho de la página y el borde derecho del texto del cuerpo.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el <see cref="P:Microsoft.Office.Interop.Word.PageSetup.MirrorMargins" /> (propiedad) se establece en <b>True</b>, la propiedad <b>RightMargin</b> controla la configuración de los márgenes exteriores y la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.LeftMargin" /> propiedad controla la configuración de márgenes interiores.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.MirrorMargins" /> propiedad se establece en <b>true</b>, la propiedad <b>RightMargin</b> controla la configuración de los márgenes exteriores y <see cref="P:Microsoft.Office.Interop.Word.PageSetup.LeftMargin" /> la propiedad controla la configuración de los márgenes internos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SectionDirection">
@@ -1078,13 +1045,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si se imprimen las notas al final al final de la siguiente sección que no suprima las notas al final. Suprimido las notas al final se imprimen antes de las notas al final de esa sección.</summary>
+        <summary><b>True</b> si se imprimen las notas al final al final de la siguiente sección que no suprima las notas al final. Suprimido las notas al final se imprimen antes de las notas al final de esa sección.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad sólo tiene efecto si el <see cref="P:Microsoft.Office.Interop.Word.Endnotes.Location" /> (propiedad) está establecida en <b>wdEndOfSection</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta propiedad sólo tiene efecto si la <see cref="P:Microsoft.Office.Interop.Word.Endnotes.Location" /> propiedad se establece en <b>wdEndOfSection</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextColumns">
@@ -1113,12 +1077,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextColumns</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> colección que representa el conjunto de columnas de texto para especificado <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> objeto.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> colección que representa el conjunto de columnas de texto del objeto <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Siempre habrá al menos una columna de texto en la colección. Al crear nuevas columnas de texto, se agregarán a una colección de una columna.</para>
-          <para />
-        </remarks>
+        <remarks><para>Siempre habrá, como mínimo, una columna de texto en la colección. Al crear nuevas columnas de texto, se agrega a una colección de una columna.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TogglePortrait">
@@ -1143,10 +1105,8 @@
       <Parameters />
       <Docs>
         <summary>Activa o desactiva la orientación de página horizontal o vertical de un documento o de una sección.</summary>
-        <remarks>
-          <para>Si las secciones especificadas tienen orientaciones de página distintas, se produce un error.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si las secciones especificadas tienen orientaciones de página distintas, se produce un error.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TopMargin">
@@ -1206,8 +1166,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si Microsoft Word imprime las páginas del documento especificado dos por hoja.</summary>
+        <summary><b>True</b> si Microsoft Word imprime las páginas del documento especificado dos por hoja.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

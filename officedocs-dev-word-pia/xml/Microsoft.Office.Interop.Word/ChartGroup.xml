@@ -1,13 +1,5 @@
 <Type Name="ChartGroup" FullName="Microsoft.Office.Interop.Word.ChartGroup">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4444187f8205ad4277847ad3e62bd596ec10edd2" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675581" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartGroup" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c46b7a3f6b3884f675aec38fe394cce284c200df" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142274" /></Metadata><TypeSignature Language="C#" Value="public interface ChartGroup" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartGroup" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ChartGroup" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartGroup" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Representa una o varias series trazadas en un gráfico empleando el mismo formato.</summary>
-    <remarks>
-      <para>Un gráfico contiene uno o más grupos de gráficos, cada grupo de gráficos contiene uno o más <see cref="T:Microsoft.Office.Interop.Word.Series" /> objetos y cada serie contiene uno o más <see cref="T:Microsoft.Office.Interop.Word.Points" /> objetos. Por ejemplo, un único gráfico podría contener un grupo de gráficos de líneas, que contiene todas las series trazadas con el formato de gráfico de líneas y un grupo de gráficos de barras, que contiene todas las series trazadas con el formato de gráfico de barras. El objeto <b>ChartGroup</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> colección.</para>
+    <remarks><para>Un gráfico contiene uno o más grupos de gráficos, cada grupo de gráficos contiene uno <see cref="T:Microsoft.Office.Interop.Word.Series" /> o más objetos y cada serie contiene uno o <see cref="T:Microsoft.Office.Interop.Word.Points" /> más objetos. Por ejemplo, un único gráfico podría contener un grupo de gráficos de línea, que contiene todas las series trazadas con el formato de gráfico de líneas y un grupo de gráficos de barras, que contiene todas las series trazadas con el formato de gráfico de barras. El objeto <b>ChartGroup</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> colección.</para>
       <para>Use <b>ChartGroups</b>(<paramref name="Index" />), donde <paramref name="index" /> es el número de índice del grupo de gráficos, para devolver un único objeto <b>ChartGroup</b> .</para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,10 +47,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa la aplicación Microsoft Word. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto). Solo lectura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Cuando se usa sin un calificador de objeto, esta <see cref="T:Microsoft.Office.Interop.Word._Application" /> propiedad devuelve un objeto que representa la aplicación Microsoft Word. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto). Solo lectura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,10 +78,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlAxisGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el tipo de grupo de ejes. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" />
-        </value>
+        <summary>Devuelve el tipo de grupo de ejes. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,14 +109,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el factor de escala para las burbujas del grupo de gráficos especificado.  Lectura y escritura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Esta propiedad se puede establecer en un número entero entre 0 (cero) y 300, que corresponde a un porcentaje del tamaño predeterminado.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece el factor de escala para las burbujas del grupo de gráficos especificado.  Lectura/escritura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Esta propiedad puede establecerse en un entero entre 0 (cero) y 300, correspondiente a un porcentaje del tamaño predeterminado. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CategoryCollection">
@@ -158,7 +140,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">El número de índice en la colección de categorías visible de la categoría que desea devolver.</param>
+        <param name="Index">Número de índice de la colección de categorías visibles de la categoría que se va a devolver.</param>
         <summary>Devuelve todas las categorías visibles en el grupo de gráficos o la categoría visible especificada.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -187,14 +169,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> de 32 bits que indica la aplicación en la que se creó el objeto especificado. Es de solo lectura</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, el <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.Creator" /> (propiedad) devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, consulte la referencia del lenguaje de ayuda que se incluye con Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve un <b>entero</b> de 32 bits que indica la aplicación en la que se creó el objeto especificado. Solo lectura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Si el objeto se creó en Microsoft Word, la <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.Creator" /> propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DoughnutHoleSize">
@@ -223,10 +201,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el tamaño del agujero en un grupo de gráficos de anillos. El tamaño del agujero se expresa como un porcentaje del tamaño del gráfico, comprendido entre 10 y 90 por ciento. Lectura y escritura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Devuelve o establece el tamaño del agujero en un grupo de gráficos de anillos. El tamaño del agujero se expresa como un porcentaje del tamaño del gráfico, comprendido entre el 10 y el 90%. Lectura/escritura.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,10 +229,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.DownBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve las barras descendentes de un gráfico de líneas. Sólo se aplica a gráficos de líneas. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.DownBars" />
-        </value>
+        <summary>Devuelve las barras descendentes de un gráfico de líneas. Sólo se aplica a gráficos de líneas. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.DownBars" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,10 +257,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.DropLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve líneas de unión para una serie en un gráfico de líneas o de áreas. Sólo se aplica a gráficos de líneas o gráficos de áreas. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.DropLines" />
-        </value>
+        <summary>Devuelve líneas de unión para una serie en un gráfico de líneas o de áreas. Se aplica solamente a los gráficos de líneas o gráficos de áreas. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.DropLines" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,14 +288,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el ángulo del primer sector del gráfico circular o gráfico de anillos, en grados (a la derecha de vertical). Se aplica sólo a circular, gráficos circulares 3D y gráficos de anillos. Lectura y escritura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Puede ser un valor comprendido entre 0 y 360.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece el ángulo del primer sector del gráfico circular o gráfico de anillos, en grados (en el sentido de las agujas del reloj desde vertical). Se aplica solo a gráficos circulares, circulares 3D y de anillos. Lectura/escritura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Puede ser un valor comprendido entre 0 y 360.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FullCategoryCollection">
@@ -351,8 +319,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">El número de índice en la colección completa de categoría de la categoría que desea devolver.</param>
-        <summary>Devuelve todas las categorías en el grupo de gráficos o la categoría especificada, ya sea visible o filtrada fuera.</summary>
+        <param name="Index">Número de índice de la colección de categorías completa de la categoría que se va a devolver.</param>
+        <summary>Devuelve todas las categorías del grupo de gráficos o la categoría especificada, ya sea visible o filtrada.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -383,14 +351,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gráficos de barras y columnas: Devuelve o establece el espacio entre barra o columna clústeres, como un porcentaje de la barra o columna de ancho. Gráfico circular con subgráfico circular y barras de gráficos circulares: Devuelve o establece el espacio entre las secciones principales y secundaria del gráfico. Lectura y escritura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>El valor de esta propiedad debe estar entre 0 y 500.</para>
-          <para />
-        </remarks>
+        <summary>Gráficos de barras y columnas: devuelve o establece el espacio entre las agrupaciones de barras o columnas, en forma de un porcentaje del ancho de las barras o las columnas. Gráficos circulares con subgráfico circular y gráficos circulares con subgráfico de barras: devuelve o establece el espacio entre las secciones primaria y secundaria del gráfico. Lectura/escritura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>El valor de la propiedad debe ser entre 0 y 500.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Has3DShading">
@@ -419,14 +383,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el valor que determina si un grupo de gráficos tiene sombreado 3D. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b> establecido en <b>True</b> si el grupo de gráficos tiene sombreado tridimensional, en caso contrario, <b>False</b>.</value>
-        <remarks>
-          <para>
-            <b>Nota</b>: configuración <b>Has3DShading</b> = <b>False</b> tiene el efecto de establecer el gráfico de material a "Sin relieve" o quitar el efecto, mientras que si establece el <b>Has3DShading</b> = <b>es True</b> , se establece el contenido del gráfico en el valor predeterminado.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece el valor que determina si un grupo de gráficos tiene sombreado 3D. Lectura/escritura.</summary>
+        <value>Un <b>valor booleano</b> establecido en <b>true</b> si el grupo de gráficos tiene sombreado tridimensional; en caso contrario, <b>false</b>.</value>
+        <remarks><para>
+            <b>Nota</b>: la configuración de <b>Has3DShading</b> = <b>false</b> tiene el efecto de establecer el material del gráfico en "plano" o quitar el efecto, mientras que si se establece el valor de <b>Has3DShading</b> = <b></b> , se establece el contenido del gráfico en el valor predeterminado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasDropLines">
@@ -455,9 +416,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el valor que indica si el gráfico tiene líneas de unión. Se aplica solamente a gráficos de líneas y de áreas. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b> establecido en <b>True</b> si el gráfico de líneas o un gráfico de áreas tiene líneas de unión; en caso contrario, <b>False</b></value>
+        <summary>Devuelve o establece el valor que indica si el gráfico tiene líneas de Unión. Se aplica sólo a los gráficos de líneas y de áreas. Lectura/escritura.</summary>
+        <value>Un <b>valor booleano</b> establecido en <b>true</b> si el gráfico de líneas o el gráfico de áreas tiene líneas de Unión; en caso contrario, <b>false</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -487,9 +447,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el valor que indica si el gráfico tiene líneas de máximos y mínimos. Sólo se aplica a gráficos de líneas. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b> establecido en <b>True</b> si el gráfico de líneas tiene líneas de máximos y mínimos; en caso contrario, <b>False</b></value>
+        <summary>Devuelve o establece el valor que se indica si el gráfico tiene líneas de máximos y mínimos. Sólo se aplica a gráficos de líneas. Lectura/escritura.</summary>
+        <value>Un <b>valor booleano</b> establecido en <b>true</b> si el gráfico de líneas tiene líneas de máximos y mínimos; en caso contrario, <b>false</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -519,9 +478,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el valor que indica si un gráfico radial tiene rótulos de ejes. Se aplica solamente a gráficos radiales. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b> establecido en <b>True</b> si un gráfico radial tiene rótulos de ejes; en caso contrario, <b>False</b></value>
+        <summary>Devuelve o establece el valor que se indica si un gráfico radial tiene rótulos de ejes. Se aplica sólo a gráficos radiales. Lectura/escritura.</summary>
+        <value>Un <b>valor booleano</b> establecido en <b>true</b> si un gráfico radial tiene rótulos de ejes; en caso contrario, <b>false</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -551,9 +509,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el valor que indica si un gráfico de columnas apiladas o gráfico de barras tiene líneas de serie o si un gráfico circular con subgráfico circular o barras de gráfico circular tiene líneas de conexión entre las dos secciones. Se aplica sólo a 2D barras apiladas, D-2 columnas apiladas, gráfico circular con subgráfico circular o barra de gráficos circulares. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b> establecido en los valores enumerados en la tabla debajo de acuerdo con las condiciones enumeradas. DescriptionReturn ValueA circular de gráfico circular o de barras de gráfico circular que tiene líneas de conexión entre las dos secciones. <b>Es true</b> Un gráfico de columnas apiladas o gráfico de barras que tiene serie líneas<b>True</b>de lo contrario<b>es False</b></value>
+        <summary>Devuelve o establece el valor que se indica si un gráfico de columnas apiladas o gráfico de barras tiene líneas de serie o si un gráfico circular con subgráfico circular o con subgráfico de barras tiene líneas de conexión entre las dos secciones. Se aplica únicamente a los gráficos de dos dimensiones de columnas o barras apiladas, de un gráfico circular de otro gráfico circular, o de barras de sector circular. Lectura/escritura.</summary>
+        <value>Un <b>valor booleano</b> que se establece en los valores que aparecen en la tabla siguiente, de acuerdo con las condiciones indicadas. DescriptionReturn: gráfico circular con subgráfico circular o subgráfico de barras que tiene líneas de conexión entre las dos secciones. <b>True</b> Un gráfico de columnas apiladas o gráfico de barras que tiene líneas de serie<b>true</b>; en caso contrario,<b>false</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -583,9 +540,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el valor que indica si tiene un gráfico de barras ascendentes y descendentes. Sólo se aplica a gráficos de líneas. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b> establecido en <b>True</b> si el gráfico de líneas tiene barras; ascendentes y descendentes en caso contrario, <b>False</b>.</value>
+        <summary>Devuelve o establece el valor que se indica si un gráfico tiene barras ascendentes y descendentes. Sólo se aplica a gráficos de líneas. Lectura/escritura.</summary>
+        <value>Un <b>valor booleano</b> establecido en <b>true</b> si el gráfico de líneas tiene barras ascendentes y descendentes; de lo contrario, <b>false</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -612,10 +568,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.HiLoLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve las líneas de máximos y mínimos de una serie en un gráfico de líneas. Sólo se aplica a gráficos de líneas. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.HiLoLines" />
-        </value>
+        <summary>Devuelve las líneas de máximos y mínimos de una serie en un gráfico de líneas. Sólo se aplica a gráficos de líneas. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.HiLoLines" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -643,9 +597,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve el número de índice del objeto contenido en el conjunto de objetos similares.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -675,14 +627,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Especifica cómo se colocan las barras y columnas. Puede ser un valor comprendido entre-100 y 100. Se aplica sólo a las barras 2D y de los gráficos de columnas 2D. Lectura y escritura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si esta propiedad se establece en-100, las barras se colocan para que haya una barra Ancho entre ellas. Si la superposición es 0 (cero), no hay ningún espacio entre las barras (cada barra empieza inmediatamente después de la barra de anterior). Si la superposición es 100, las barras se colocarán unas sobre otras.</para>
-          <para />
-        </remarks>
+        <summary>Esta propiedad especifica cómo se sitúan las barras y las columnas. Puede ser un valor comprendido entre  - 100 y 100. Se aplica únicamente a los gráficos de barras 2D y de columnas 2D. Lectura/escritura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Si esta propiedad se establece en – 100, las barras se colocarán de manera que haya un ancho de barra entre ellas. Con superposición igual a 0 (cero), no hay espacio entre las barras (cada barra empieza inmediatamente después de la que le precede). Si la superposición es 100, las barras se colocarán unas sobre otras.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -708,10 +656,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve al objeto primario del objeto especificado. Es de solo lectura</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve el elemento primario del objeto especificado. Solo lectura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -738,10 +684,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.TickLabels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve las etiquetas de ejes radiales para el grupo de gráficos especificado. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.TickLabels" />
-        </value>
+        <summary>Devuelve las etiquetas de ejes radiales para el grupo de gráficos especificado. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.TickLabels" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -771,14 +715,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el tamaño de la sección secundaria de un subgráfico circular de gráfico circular o de una barra de un gráfico circular, como un porcentaje del tamaño del gráfico circular principal. Lectura y escritura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Puede ser un valor comprendido entre 5 y 200.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece el tamaño de la sección secundaria de un sector o una barra de un gráfico circular, como porcentaje del tamaño del gráfico circular principal. Lectura/escritura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Puede ser un valor comprendido entre 5 y 200.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SeriesCollection">
@@ -803,9 +743,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Opcional <b>objeto</b> el nombre o número de la serie que desea que se han devuelto. Si no se utiliza el índice, se devolverán todas las series del grupo de gráficos.</param>
+        <param name="Index"><b>Objeto</b> opcional el nombre o el número de la serie que desea que se devuelva. Si no se usa index, se devolverán todas las series del grupo de gráficos.</param>
         <summary>Devuelve la serie solicitada desde dentro del grupo de gráficos.</summary>
-        <returns>Un <b>objeto</b> en el <see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" /> formato, que representa todas las series solicitadas desde el grupo de gráficos</returns>
+        <returns>Un <b>objeto</b> en el <see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" /> formato que representa toda la serie solicitada del grupo de gráficos</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -832,10 +772,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.SeriesLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve las líneas de serie para un columnas apiladas 2D barras apiladas, D-2, el gráfico circular con subgráfico circular o barra de un gráfico circular. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.SeriesLines" />
-        </value>
+        <summary>Devuelve las líneas de serie de una barra apilada 2D, una columna apilada 2D, un gráfico circular con subgráfico circular o una barra de gráfico circular. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.SeriesLines" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -865,9 +803,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el valor que determina si se muestran las burbujas negativas para el grupo de gráficos. Válido sólo para los gráficos de burbujas. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b> establecido en <b>True</b> si se muestran las burbujas negativas para el grupo de gráficos, en caso contrario, <b>False</b>.</value>
+        <summary>Devuelve o establece el valor que determina si se muestran las burbujas negativas para el grupo de gráficos. Válido únicamente para gráficos de burbujas. Lectura/escritura.</summary>
+        <value>Un <b>valor booleano</b> establecido en <b>true</b> si se muestran las burbujas negativas para el grupo de gráficos; de lo contrario, <b>false</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -897,8 +834,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlSizeRepresents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece qué representa el tamaño de burbuja en un gráfico de burbujas. Lectura y escritura.</summary>
-        <value>Puede ser cualquiera de los siguientes <see cref="T:Microsoft.Office.Interop.Word.XlSizeRepresents" /> constantes: <b>xlSizeIsArea</b> o <b>xlSizeIsWidth</b></value>
+        <summary>Devuelve o establece qué representa el tamaño de burbuja en un gráfico de burbujas. Lectura/escritura.</summary>
+        <value>Puede ser cualquiera de las siguientes <see cref="T:Microsoft.Office.Interop.Word.XlSizeRepresents" /> constantes: <b>xlSizeIsArea</b> o <b>xlSizeIsWidth</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -928,10 +865,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlChartSplitType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la forma en que se dividen las dos secciones de un subgráfico circular de gráfico circular o de una barra de gráfico circular. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlChartSplitType" />
-        </value>
+        <summary>Devuelve o establece el modo en que se dividen las dos secciones de un gráfico circular o de barras. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlChartSplitType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -961,10 +896,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el valor de umbral que separa las dos secciones de un subgráfico circular de gráfico circular o de una barra de gráfico circular. Lectura y escritura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve o establece el valor mínimo que separa dos secciones de un subgráfico circular de gráfico circular o de un subgráfico de barras de gráfico circular. Lectura/escritura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1001,9 +934,7 @@
       </ReturnValue>
       <Docs>
         <summary>Reservado para uso interno.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1040,8 +971,7 @@
       </ReturnValue>
       <Docs>
         <summary>Reservado para uso interno.</summary>
-        <value>
-          <b>Número entero</b>.</value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1068,10 +998,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.UpBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve las barras ascendentes de un gráfico de líneas. Sólo se aplica a gráficos de líneas. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.UpBars" />
-        </value>
+        <summary>Devuelve las barras ascendentes de un gráfico de líneas. Sólo se aplica a gráficos de líneas. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.UpBars" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1101,9 +1029,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el valor que indica si Microsoft Word asigna un color o trama diferente a cada marcador de datos. El gráfico debe contener una sola serie. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b> establecido en <b>True</b> si Microsoft Word asigna un color o trama diferente a cada marcador de datos; en caso contrario, <b>False</b></value>
+        <summary>Devuelve o establece el valor que indica si Microsoft Word asigna un color o trama diferente a cada marcador de datos. El gráfico debe contener una sola serie. Lectura/escritura.</summary>
+        <value>Un <b>valor booleano</b> establecido en <b>true</b> si Microsoft Word asigna un color o trama diferente a cada marcador de datos; en caso contrario, <b>false</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

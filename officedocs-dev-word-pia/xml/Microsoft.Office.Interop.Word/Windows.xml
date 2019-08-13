@@ -1,13 +1,5 @@
 <Type Name="Windows" FullName="Microsoft.Office.Interop.Word.Windows">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="aa5d387f914422cf8c79854703cd4dd7eb61e181" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675183" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="485e25bf5a3ae2e6749378af1596be5bee3a3b09" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142664" /></Metadata><TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Windows implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Windows" />
   <TypeSignature Language="VB.NET" Value="Public Interface Windows&#xA;Implements IEnumerable" />
@@ -31,15 +23,13 @@
   </Attributes>
   <Docs>
     <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.Window" /> objetos que representan todas las ventanas disponibles.</summary>
-    <remarks>
-      <para>Utilice la propiedad <b>Windows</b> de la <see cref="T:Microsoft.Office.Interop.Word.Application" /> o <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto para devolver la colección <b>Windows</b> . La colección <b>Windows</b> del objeto <b>Application</b> contiene todas las ventanas de la aplicación, mientras que la colección <b>Windows</b> del objeto <b>Document</b> contiene sólo las ventanas que muestran el documento especificado.</para>
-      <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.Windows.Add(System.Object@)" /> (método) o la <see cref="M:Microsoft.Office.Interop.Word.Window.NewWindow" /> método para agregar una nueva ventana a la colección Windows.</para>
-      <para>Usar <b>Windows</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la ventana o el número de índice, para devolver un único objeto <b>Window</b> .</para>
-      <para>El número de índice es el número a la izquierda del nombre de la ventana en el menú Ventana.</para>
-      <para>Aparecen dos puntos (:) y un número en el título de la ventana cuando más de una ventana abierta para un documento.</para>
+    <remarks><para>Utilice la propiedad <b>Windows</b> del objeto <see cref="T:Microsoft.Office.Interop.Word.Application" /> or <see cref="T:Microsoft.Office.Interop.Word.Document" /> para devolver la colección <b>Windows</b> . La colección <b>Windows</b> del objeto <b>Application</b> contiene todas las ventanas de la aplicación, mientras que la colección <b>Windows</b> del objeto <b>Document</b> contiene sólo las ventanas que muestran el documento especificado.</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.Windows.Add(System.Object@)" /> método o el <see cref="M:Microsoft.Office.Interop.Word.Window.NewWindow" /> método para agregar una nueva ventana a la colección Windows.</para>
+      <para>Use <b>Windows</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la ventana o el número de índice, para devolver un solo objeto <b>Window</b> .</para>
+      <para>El número de índice es el número a la izquierda del nombre de la ventana en el menú ventana.</para>
+      <para>Cuando hay varias ventanas abiertas para un documento, aparecen dos puntos (:) y un número en el título de la ventana.</para>
       <para>Cuando se cambia la vista a la vista preliminar, se crea una nueva ventana. Esta ventana se quita de la colección <b>Windows</b> al cerrar la vista preliminar.</para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,14 +53,11 @@
         <Parameter Name="Window" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Window">
-          <b>Objeto</b>de opcional. El objeto de <b>ventana</b> que desea abrir otra ventana. Si se omite este argumento, se abre una nueva ventana para el documento activo.</param>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Window" /> objeto que representa una nueva ventana de un documento.</summary>
+        <param name="Window"><b>Objeto</b>opcional. El objeto de <b>ventana</b> que desea abrir otra ventana. Si se omite este argumento, se abre una nueva ventana para el documento activo.</param>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Window" /> objeto Object que representa una nueva ventana de un documento.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Cuando más de una ventana está abierta para el documento, aparecen dos puntos (:) y un número en el título de la ventana.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si hay más de una ventana abierta para el mismo documento, en el título de la ventana aparecerán dos puntos (:) seguidos de un número.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -96,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -123,8 +110,7 @@
         <Parameter Name="ArrangeStyle" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ArrangeStyle">
-          <b>Objeto</b>de opcional. Organización de la ventana. Puede ser cualquiera de los siguientes <see cref="T:Microsoft.Office.Interop.Word.WdArrangeStyle" /> constantes: <b>wdIcons</b> o <b>wdTiled</b>.</param>
+        <param name="ArrangeStyle"><b>Objeto</b>opcional. Organización de la ventana. Puede ser cualquiera de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdArrangeStyle" /> constantes: <b>wdIcons</b> o <b>wdTiled</b>.</param>
         <summary>Organiza todas las ventanas del documento abierto en el área de trabajo de la aplicación. Como Microsoft Word utiliza una interfaz simple de documentos (SDI), este método ya no surte ningún efecto.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,7 +136,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Finaliza el modo de en paralelo si dos ventanas están en modo de forma simultánea. Devuelve un <b>valor Boolean</b> que indica si el método tuvo éxito.</summary>
+        <summary>Finaliza el modo paralelo si dos ventanas están en dicho modo. Devuelve un <b>valor Boolean</b> que indica si el método tuvo éxito.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -178,14 +164,11 @@
         <Parameter Name="Document" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Document">
-          <b>Objeto</b>requerido. El documento para verlo en windows de forma simultánea.</param>
-        <summary>Abre dos ventanas en modo de forma simultánea.</summary>
+        <param name="Document"><b>Objeto</b>requerido. Documento que se va a ver en la ventana en paralelo.</param>
+        <summary>Abre dos ventanas en paralelo.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>No se puede usar el método <b>CompareSideBySideWith</b> con el <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto o el <see cref="P:Microsoft.Office.Interop.Word._Application.ActiveDocument" /> (propiedad).</para>
-          <para />
-        </remarks>
+        <remarks><para>No se puede usar el método <b>CompareSideBySideWith</b> con <see cref="T:Microsoft.Office.Interop.Word.Application" /> el objeto o <see cref="P:Microsoft.Office.Interop.Word._Application.ActiveDocument" /> la propiedad.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -241,9 +224,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -304,7 +287,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>objeto</b> que indica la posición ordinal o una cadena que representa el nombre del objeto individual.</param>
+        <param name="Index"><b>Objeto</b> que indica la posición ordinal o una cadena que representa el nombre del objeto individual.</param>
         <summary>Devuelve un objeto individual de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -360,9 +343,9 @@
       <Parameters />
       <Docs>
         <summary>Restablece dos ventanas de documento que estén en el modo de vista Comparar en paralelo con.</summary>
-        <remarks>
-          <para>El método <b>ResetPositionsSideBySide</b> corresponde al botón Restablecer posición de la ventana en la barra de herramientas Comparar en paralelo.</para> Método 
-          <para>Utilice el <b>ResetPositionsSideBySide</b> para restablecer la visualización de dos documentos. Por ejemplo, si un usuario minimiza o maximiza una de las dos ventanas de documento que se están comparadas, el método <b>ResetPositionsSideBySide</b> restablece la presentación para que las dos ventanas vuelven a estar mostrado side-by-side.</para><para /></remarks>
+        <remarks><para>El método <b>ResetPositionsSideBySide</b> corresponde al botón Restablecer posición de la ventana de la barra de herramientas comparar en paralelo.</para>
+          <para>Utilice el método <b>ResetPositionsSideBySide</b> para restablecer la visualización de dos documentos. Por ejemplo, si un usuario minimiza o maximiza una de las dos ventanas de documento que se están comparando, el método <b>ResetPositionsSideBySide</b> restablece la presentación de modo que las dos ventanas se muestren de nuevo en paralelo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncScrollingSideBySide">
@@ -391,8 +374,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>Es true</b> , se habilita el desplazamiento del contenido de windows al mismo tiempo. <b>False</b> deshabilita el desplazamiento de ventanas al mismo tiempo.</summary>
+        <summary><b>True</b> permite el desplazamiento del contenido de las ventanas a la vez. <b>False</b> deshabilita el desplazamiento de ventanas al mismo tiempo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

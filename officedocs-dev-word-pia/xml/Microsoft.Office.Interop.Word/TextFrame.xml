@@ -1,13 +1,5 @@
 <Type Name="TextFrame" FullName="Microsoft.Office.Interop.Word.TextFrame">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="43a95d54648a4f84b9738139489698d0d40d0080" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674446" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TextFrame" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9dc205fa2eb96a394cd184a865635344805cf9be" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143822" /></Metadata><TypeSignature Language="C#" Value="public interface TextFrame" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextFrame" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TextFrame" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextFrame" />
@@ -26,12 +18,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa el marco de texto en un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto. Contiene el texto en el marco de texto, así como las propiedades que controlan los márgenes y la orientación del marco de texto.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.Shape.TextFrame" /> propiedad para devolver el objeto <b>TextFrame</b> de una forma. El <see cref="P:Microsoft.Office.Interop.Word.TextFrame.TextRange" /> (propiedad) devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa el intervalo de texto dentro del marco de texto especificado.</para>
-      <b>Tenga en cuenta</b> algunas formas no admiten 
-      <para>adjunto texto (líneas, formas libres, imágenes y objetos OLE, por ejemplo). Si se intenta devolver o establecer las propiedades que controlan el texto en un marco de texto para dichos objetos, se produce un error.</para><para>Usar el <see cref="P:Microsoft.Office.Interop.Word.TextFrame.HasText" /> (propiedad) para determinar si el marco de texto contiene texto.</para> Marcos de texto de 
-      <para>se pueden vincular para que el texto fluya desde el marco de texto de una forma en el marco de texto de otra forma. Usar el <see cref="P:Microsoft.Office.Interop.Word.TextFrame.Next" /> y <see cref="P:Microsoft.Office.Interop.Word.TextFrame.Previous" /> propiedades para vincular marcos de texto.</para><para>Usar la <see cref="P:Microsoft.Office.Interop.Word.TextFrame.ContainingRange" /> propiedad para devolver un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que represente todo el contenido que fluye entre marcos de texto vinculados.</para><para /></remarks>
+    <summary>Representa el marco de texto de <see cref="T:Microsoft.Office.Interop.Word.Shape" /> un objeto. Contiene el texto en el marco de texto, así como las propiedades que controlan los márgenes y la orientación del marco de texto.</summary>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.Shape.TextFrame" /> propiedad para devolver el objeto <b>TextFrame</b> de una forma. La <see cref="P:Microsoft.Office.Interop.Word.TextFrame.TextRange" /> propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto Object que representa el intervalo de texto dentro del marco de texto especificado.</para>
+      <para>
+        <b>Nota:</b>  Algunas formas no admiten texto adjunto (líneas, formas libres, imágenes y objetos OLE, por ejemplo). Si trata de devolver o establecer las propiedades que controlen el texto de un marco de texto para estos objetos, se produce un error.</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.TextFrame.HasText" /> propiedad para determinar si el marco de texto contiene texto.</para>
+      <para>Marcos de texto pueden vincularse para que el texto fluya desde el marco de texto de una forma en el marco de texto de otra forma. Use las <see cref="P:Microsoft.Office.Interop.Word.TextFrame.Next" /> propiedades <see cref="P:Microsoft.Office.Interop.Word.TextFrame.Previous" /> y para vincular marcos de texto.</para>
+      <para>Use la <see cref="P:Microsoft.Office.Interop.Word.TextFrame.ContainingRange" /> propiedad para devolver un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que represente todo el artículo que fluye entre marcos de texto vinculados.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,7 +82,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <b>número entero</b> que representa si un marco de texto cambia de tamaño automáticamente.</summary>
+        <summary>Devuelve o establece un <b>valor de tipo Integer</b> que indica si un marco de texto cambia de tamaño automáticamente.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -115,10 +109,8 @@
       <Parameters />
       <Docs>
         <summary>Interrumpe el vínculo hacia delante del marco de texto especificado, en caso de que dicho vínculo exista.</summary>
-        <remarks>
-          <para>Al aplicar este método a una forma en el medio de una cadena de formas con marcos de texto vinculados, se interrumpirá la cadena, quedando dos conjuntos de las formas vinculadas. Sin embargo, todo el texto permanecerá en la primera serie de las formas vinculadas.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si este método se aplica a una forma que se encuentra en mitad de una cadena de formas con marcos de texto vinculados, se romperá la cadena dejando dos series de formas vinculadas. Sin embargo, todo el texto permanecerá en la primera serie de las formas vinculadas.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -144,12 +136,10 @@
         <ReturnType>Microsoft.Office.Core.TextColumn2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el <see cref="T:Microsoft.Office.Core.TextColumn2" /> object que representa las columnas del marco de texto especificado.</summary>
-        <value>El <see cref="T:Microsoft.Office.Core.TextColumn2" /> object que representa las columnas del marco de texto especificado.</value>
-        <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene el <see cref="T:Microsoft.Office.Core.TextColumn2" /> objeto que representa las columnas del marco de texto especificado.</summary>
+        <value><see cref="T:Microsoft.Office.Core.TextColumn2" /> Objeto que representa las columnas del marco de texto especificado.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ContainingRange">
@@ -175,7 +165,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que represente todo el contenido de una serie de formas con marcos de texto vinculados que pertenece el marco de texto especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa todo el artículo en una serie de formas con marcos de texto vinculados a los que pertenece el marco de texto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -205,9 +195,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteText">
@@ -258,8 +248,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la forma especificada tiene texto asociado.</summary>
+        <summary><b>True</b> si la forma especificada tiene texto asociado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -291,11 +280,9 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece la alineación horizontal del texto en un marco de texto.</summary>
-        <value>La alineación horizontal del texto en un marco de texto.</value>
-        <remarks>
-          <para>Lectura y escritura <see cref="T:Microsoft.Office.Core.MsoHorizontalAnchor" />.</para>
-          <para />
-        </remarks>
+        <value>Alineación horizontal del texto en un marco de texto.</value>
+        <remarks><para>Lectura y escritura <see cref="T:Microsoft.Office.Core.MsoHorizontalAnchor" />.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MarginBottom">
@@ -479,12 +466,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece si el texto en el marco de texto no debe girar cuando se gira la forma.</summary>
-        <value>A <see cref="T:Microsoft.Office.Core.MsoTriState" /> objeto.</value>
-        <remarks>
-          <para>Lectura y escritura <see cref="T:Microsoft.Office.Core.MsoTriState" />. Sólo las constantes <b>MsoTriState</b><b>msoFalse</b> y <b>msoTrue</b> pueden usarse para establecer esta propiedad.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene o establece si el texto del marco de texto no debe girar cuando se gira la forma.</summary>
+        <value>Un <see cref="T:Microsoft.Office.Core.MsoTriState" /> objeto.</value>
+        <remarks><para>Lectura y escritura <see cref="T:Microsoft.Office.Core.MsoTriState" />. Sólo las constantes <b>MsoTriState</b> <b>msoFalse</b> y <b>msoTrue</b> pueden utilizarse para establecer esta propiedad.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -515,34 +500,32 @@
       <Docs>
         <summary>Devuelve o establece la orientación del texto dentro del marco.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Core.MsoTextOrientation" />puede ser una de estas constantes <b>MsoTextOrientation</b> . </para>
           <para>
-            <b>msoTextOrientationDownward </b>
+            <b>msoTextOrientationDownward</b>
           </para>
           <para>
-            <b>msoTextOrientationHorizontal </b>
+            <b>msoTextOrientationHorizontal</b>
           </para>
           <para>
-            <b>msoTextOrientationHorizontalRotatedFarEast </b>
+            <b>msoTextOrientationHorizontalRotatedFarEast</b>
           </para>
           <para>
-            <b>msoTextOrientationMixed </b>
+            <b>msoTextOrientationMixed</b>
           </para>
           <para>
             <b>msoTextOrientationUpward</b>
           </para>
           <para>
-            <b> msoTextOrientationVertical </b>
+            <b>msoTextOrientationVertical</b>
           </para>
           <para>
             <b>msoTextOrientationVerticalFarEast</b>
           </para>
-          <para>algunas de las constantes enumeradas anteriormente no estén disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
-          <para>Se puede establecer la orientación para un marco de texto o para un intervalo o selección que se encuentren dentro de un marco de texto. Para obtener información acerca de la diferencia entre un marco de texto y un cuadro de texto, vea el <see cref="T:Microsoft.Office.Interop.Word.TextFrame" /> objeto.</para>
-          <para />
-        </remarks>
+          <para>Algunas de las constantes indicadas anteriormente pueden no estar disponibles, según la compatibilidad de idioma, por ejemplo Inglés (EE.UU.), que se haya seleccionado o instalado.</para>
+          <para>Puede establecer la orientación para un marco de texto o para un intervalo o selección que se encuentren dentro de un marco de texto. Para obtener información sobre la diferencia entre un marco de texto y un cuadro de texto <see cref="T:Microsoft.Office.Interop.Word.TextFrame" /> , vea el objeto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Overflowing">
@@ -568,8 +551,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el texto dentro del marco de texto especificado no se ajusta en el marco.</summary>
+        <summary><b>True</b> si el texto dentro del marco de texto especificado no se ajusta en el marco.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -597,7 +579,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto que representa la forma primaria del marco de texto.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto que representa la forma principal del marco de texto.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -629,9 +611,8 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece el tipo de ruta de acceso para el marco de texto especificado.</summary>
-        <value>El tipo de ruta de acceso para el marco de texto especificado.</value>
-        <remarks>
-          <para>El valor de esta propiedad puede ser uno de los siguientes <see cref="T:Microsoft.Offic.Core.MsoPathType" /> constantes:</para>
+        <value>Tipo de ruta de acceso para el marco de texto especificado.</value>
+        <remarks><para>El valor de esta propiedad puede ser una de las siguientes <see cref="T:Microsoft.Offic.Core.MsoPathType" /> constantes:</para>
           <list type="bullet">
             <item>
               <para>
@@ -664,8 +645,7 @@
               </para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Previous">
@@ -722,7 +702,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa el texto en el marco de texto especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto Object que representa el texto del marco de texto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -750,12 +730,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ThreeDFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /> objeto que contiene las propiedades del marco de texto especificado de formato de efectos 3D.</summary>
-        <value>A <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /> objeto que contiene las propiedades del marco de texto especificado de formato de efectos 3D.</value>
-        <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /> objeto que contiene las propiedades de formato de efecto 3D del marco de texto especificado.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /> Objeto que contiene las propiedades de formato de efecto 3D del marco de texto especificado.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidLinkTarget">
@@ -781,13 +759,11 @@
         <Parameter Name="TargetTextFrame" Type="Microsoft.Office.Interop.Word.TextFrame" />
       </Parameters>
       <Docs>
-        <param name="TargetTextFrame">Requiere <see cref="T:Microsoft.Office.Interop.Word.TextFrame" /> objeto. El marco de texto de destino al que desea vincular el marco de texto especificado.</param>
+        <param name="TargetTextFrame">Objeto <see cref="T:Microsoft.Office.Interop.Word.TextFrame" /> requerido. Marco de texto objetivo al que se desea vincular el marco de texto especificado.</param>
         <summary>Determina si se puede vincular el marco de texto de una forma al marco de texto de otra forma.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>La propiedad <b>TextFrame</b> devuelve <b>True</b> si <paramref name="TargetTextFrame" /> es un destino válido. Devuelve <b>False</b> si <paramref name="TargetTextFrame" /> ya contiene texto o ya está vinculado o si la forma no admite texto adjunto.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propiedad <b>TextFrame</b> devuelve <b>true</b> si <paramref name="TargetTextFrame" /> es un destino válido. Devuelve <b>false</b> si <paramref name="TargetTextFrame" /> ya contiene texto o ya está vinculado o si la forma no admite texto adjunto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalAnchor">
@@ -817,9 +793,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece una constante <b>MsoVerticalAnchor</b> que representa la alineación vertical del texto dentro de una forma. Lectura y escritura.</summary>
-        <value>
-          <b>MsoVerticalAnchor</b>
-        </value>
+        <value><b>MsoVerticalAnchor</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -849,12 +823,10 @@
         <ReturnType>Microsoft.Office.Core.MsoWarpFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece el formato de deformación (cómo está deformado por el texto) para el marco de texto especificado.</summary>
-        <value>El formato de deformación (cómo está deformado por el texto) para el marco de texto especificado.</value>
-        <remarks>
-          <para>Lectura y escritura <see cref="T:Microsoft.Office.Core.MsoWarpFormat" />.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene o establece el formato de deformación (cómo se distorsiona el texto) para el marco de texto especificado.</summary>
+        <value>El formato de deformación (cómo se distorsiona el texto) para el marco de texto especificado.</value>
+        <remarks><para>Lectura y escritura <see cref="T:Microsoft.Office.Core.MsoWarpFormat" />.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WordWrap">
@@ -883,14 +855,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si Microsoft Word ajusta el texto latino en medio de una palabra en los párrafos especificados o marcos de texto.</summary>
+        <summary><b>True</b> si Microsoft Word ajusta el texto latino en medio de una palabra en los párrafos o marcos de texto especificados.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>WordWrap</b> devuelve <b>wdUndefined</b> si se establece en <b>True</b> sólo para algunos de los párrafos especificados o marcos de texto.</para>
-          <para>Este uso puede no estar disponible, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
-          <para />
-        </remarks>
+        <remarks><para>La propiedad <b>WordWrap</b> devuelve <b>wdUndefined</b> si se establece en <b>true</b> sólo para algunos de los párrafos o marcos de texto especificados.</para>
+          <para>Es posible que este uso no esté disponible para usted, en función de la compatibilidad de idioma (por ejemplo, Inglés estadounidense) que haya seleccionado o instalado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

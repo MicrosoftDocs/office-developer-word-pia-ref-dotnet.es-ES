@@ -1,13 +1,5 @@
 <Type Name="Variables" FullName="Microsoft.Office.Interop.Word.Variables">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9c2b6ad10492a0ea22a2cb22b7ede41be953247c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674744" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Variables : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="644ab7343db817764d5aa3ab3fa23f78b8f047eb" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143780" /></Metadata><TypeSignature Language="C#" Value="public interface Variables : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Variables implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Variables" />
   <TypeSignature Language="VB.NET" Value="Public Interface Variables&#xA;Implements IEnumerable" />
@@ -30,16 +22,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.Variable" /> objetos que representan las variables agregadas a un documento o plantilla. Las variables de documento se usan para conservar la configuración de la macro entre sesiones de macros.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word._Document.Variables" /> (propiedad) para devolver la colección <b>Variables</b> .</para>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Word.Variables.Add(System.String,System.Object@)" /> método para agregar una variable a un documento.</para>
-      <para>Si se intenta agregar una variable de documento con un nombre que ya existe en la colección <b>Variables</b> , se produce un error. Para evitar este error, puede enumerar la colección antes de agregar nuevas variables.</para>
-      <para>Utilice <b>Variables</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de variable de documento o el número de índice, para devolver un solo objeto <b>Variable</b> .</para>
-      <para>El número de índice representa la posición de la variable de documento en la colección <b>Variables</b> . La primera variable agregada a la colección de <b>Variables</b> es el número de índice 1; la segunda variable agregada a la colección es el número de índice 2 y así sucesivamente.</para>
-      <para>Para agregar una variable a una plantilla, abra la plantilla como un documento mediante el uso de la <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> método.</para>
-      <para />
-    </remarks>
+    <summary>Colección de <see cref="T:Microsoft.Office.Interop.Word.Variable" /> objetos que representa las variables agregadas a un documento o una plantilla. Las variables de documento se usan para conservar la configuración de la macro entre sesiones de macros.</summary>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Word._Document.Variables" /> propiedad para devolver la colección <b>variables</b> .</para>
+      <para>Use el <see cref="M:Microsoft.Office.Interop.Word.Variables.Add(System.String,System.Object@)" /> método para agregar una variable a un documento.</para>
+      <para>Si intenta agregar una variable de documento con un nombre que ya existe en la colección <b>Variables</b>, se produce un error. Para evitar este error, puede enumerar la colección antes de agregar nuevas variables.</para>
+      <para>Use <b>variables</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la variable de documento o el número de índice, para devolver un único objeto <b>variable</b> .</para>
+      <para>El número de índice representa la posición de la variable de documento en la colección <b>Variables</b>. La primera variable agregada a la colección de <b>Variables</b> es el número de índice 1; la segunda variable agregada a la colección es el número de índice 2 y así sucesivamente.</para>
+      <para>Para agregar una variable a una plantilla, abra la plantilla como un documento mediante el <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> método.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -65,11 +55,9 @@
         <Parameter Name="Value" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>String</b> requerida. Nombre de la variable del documento.</param>
-        <param name="Value">
-          <b>Objeto</b>de opcional. Valor de la variable del documento.</param>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Variable" /> objeto que representa una variable agregada a un documento.</summary>
+        <param name="Name"><b>String</b> requerida. Nombre de la variable del documento.</param>
+        <param name="Value"><b>Objeto</b>opcional. Valor de la variable del documento.</param>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Variable" /> objeto Object que representa una variable agregada a un documento.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -97,7 +85,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,9 +143,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -218,7 +206,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>objeto</b> que indica la posición ordinal o una cadena que representa el nombre del objeto individual.</param>
+        <param name="Index"><b>Objeto</b> que indica la posición ordinal o una cadena que representa el nombre del objeto individual.</param>
         <summary>Devuelve un objeto individual de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

@@ -1,13 +1,5 @@
 <Type Name="Characters" FullName="Microsoft.Office.Interop.Word.Characters">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="970f47e28fba4dae64b3146c852a17fe54ae01d1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674557" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Characters : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3ed2d642991aec68ae45afbf33e3cbb38e71bb89" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142323" /></Metadata><TypeSignature Language="C#" Value="public interface Characters : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Characters implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Characters" />
   <TypeSignature Language="VB.NET" Value="Public Interface Characters&#xA;Implements IEnumerable" />
@@ -31,11 +23,12 @@
   </Attributes>
   <Docs>
     <summary>Una colección de caracteres en un documento, selección o intervalo.</summary>
-    <remarks>
-      <para>No hay ningún objeto de <b>carácter</b> ; en su lugar, cada elemento de la colección <b>Characters</b> es un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa un carácter.</para>
-      <para>Utilice la propiedad <b>Characters</b> para devolver la colección <b>Characters</b> .</para> Utilice <b>caracteres</b>de 
-      <para>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un objeto <b>Range</b> que representa un carácter. El número de índice representa la posición de un carácter en la colección <b>Characters</b> .</para><para>El <see cref="P:Microsoft.Office.Interop.Word.Characters.Count" /> (propiedad) para esta colección de un documento devuelve el número de elementos sólo del artículo principal. Para contar los elementos de otros contenidos utilice la colección con el objeto <b>Range</b> .</para> Método de 
-      <para>un <b>complemento</b> no está disponible para el conjunto de caracteres. En su lugar, use la <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> o <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" /> método para agregar caracteres a un objeto <b>Range</b> .</para><para /></remarks>
+    <remarks><para>No hay ningún objeto <b>character</b> ; en su lugar, cada elemento de <b></b> la colección Characters <see cref="T:Microsoft.Office.Interop.Word.Range" /> es un objeto que representa un carácter.</para>
+      <para>Utilice la <b></b> propiedad Characters para devolver la colección <b>Characters</b> .</para>
+      <para>Use <b></b>Characters<paramref name="index" />(), <paramref name="index" /> donde es el número de índice, para devolver un objeto <b>Range</b> que representa un carácter. El número de índice representa la posición de un carácter en la colección <b>Characters</b>.</para>
+      <para>La <see cref="P:Microsoft.Office.Interop.Word.Characters.Count" /> propiedad de esta colección de un documento devuelve el número de elementos solo del artículo principal. Para contar los elementos de otros contenidos utilice la colección con el objeto <b>Range</b>.</para>
+      <para>No hay ningún método <b>Add</b> disponible para la colección Characters. En su lugar, use <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> el <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" /> método or para agregar caracteres a un objeto <b>Range</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa el creador del objeto especificado.</summary>
+        <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa al creador del objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,9 +112,9 @@
       <Docs>
         <summary>Obtiene un valor que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="First">
@@ -147,7 +140,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa el primer carácter de un documento.</summary>
+        <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa el primer carácter de un documento.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -239,7 +232,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa el último carácter, la palabra o la oración de un documento.</summary>
+        <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa el último carácter, palabra o frase de un documento.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -267,7 +260,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un objeto object que representa el objeto primario del objeto especificado.</summary>
+        <summary>Obtiene un objeto Object que representa el objeto primario del objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

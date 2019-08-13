@@ -1,13 +1,5 @@
 <Type Name="OMathBreaks" FullName="Microsoft.Office.Interop.Word.OMathBreaks">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f9c72f843364011a8216932603f09101b9463d96" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675406" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OMathBreaks" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="57096ad1b41af4f6a8d95ffbf0b00ee20b306376" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147811" /></Metadata><TypeSignature Language="C#" Value="public interface OMathBreaks" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMathBreaks" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMathBreaks" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMathBreaks" />
@@ -52,11 +44,9 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">La posición en la que se va a insertar el salto en la ecuación de <b>Integer</b> requerido.</param>
-        <summary>Inserta un salto en una ecuación y devuelve un <see cref="T:Microsoft.Office.Interop.Word.OMathBreak" /> object que representa el salto.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.OMathBreak" />
-        </returns>
+        <param name="Range"><b>Entero</b> requerido la posición en la que se va a insertar el salto en la ecuación.</param>
+        <summary>Inserta un salto en una ecuación y devuelve un <see cref="T:Microsoft.Office.Interop.Word.OMathBreak" /> objeto que representa el salto.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.OMathBreak" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,10 +73,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa la aplicación Microsoft Word.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,10 +101,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el número de elementos en el <see cref="T:Microsoft.Office.Interop.Word.OMathBreaks" /> colección. Es de solo lectura</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Devuelve el número de elementos de la <see cref="T:Microsoft.Office.Interop.Word.OMathBreaks" /> colección. Solo lectura.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,15 +129,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> de 32 bits que indica la aplicación en la que el complemento que se creó. Es de solo lectura</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, el <see cref="P:Microsoft.Office.Interop.Word.OMathBreaks.Creator" /> (propiedad) devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Este valor también puede representarse mediante la constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />. </para>
-          <para>Esta propiedad se ha diseñado principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve un <b>entero</b> de 32 bits que indica la aplicación en la que se creó el complemento. Solo lectura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Si el objeto se creó en Microsoft Word, la <see cref="P:Microsoft.Office.Interop.Word.OMathBreaks.Creator" /> propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Este valor también puede representarse mediante la <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />constante. </para>
+          <para>Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -177,11 +159,9 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Requiere <b>entero</b> especifica la posición ordinal del objeto dentro de la colección.</param>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.OMathBreak" /> object que representa el elemento especificado de la colección.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.OMathBreak" />
-        </returns>
+        <param name="Index"><b>Integer</b> requerido especifica la posición ordinal del objeto dentro de la colección.</param>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.OMathBreak" /> objeto Object que representa el elemento especificado de la colección.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.OMathBreak" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,10 +188,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario del especificado <see cref="T:Microsoft.Office.Interop.Word.OMathBreaks" /> objeto.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve el objeto primario del objeto especificado <see cref="T:Microsoft.Office.Interop.Word.OMathBreaks" /> .</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

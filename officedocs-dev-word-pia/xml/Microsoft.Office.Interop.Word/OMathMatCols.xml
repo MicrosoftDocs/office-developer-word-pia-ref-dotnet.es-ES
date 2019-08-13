@@ -1,13 +1,5 @@
 <Type Name="OMathMatCols" FullName="Microsoft.Office.Interop.Word.OMathMatCols">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="17758115d02b9d12c8799571528a35efb1fa65df" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674894" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OMathMatCols : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="abe8476dfc239d91296b3c205afbe2aa035bb6f2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144319" /></Metadata><TypeSignature Language="C#" Value="public interface OMathMatCols : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMathMatCols implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMathMatCols" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMathMatCols&#xA;Implements IEnumerable" />
@@ -30,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa una colección de columnas de la matriz. Usar el <see cref="T:Microsoft.Office.Interop.Word.OMathMatCol" /> objeto para tener acceso a los miembros individuales de la colección.</summary>
+    <summary>Representa una colección de columnas de la matriz. Utilice el <see cref="T:Microsoft.Office.Interop.Word.OMathMatCol" /> objeto para obtener acceso a los miembros individuales de la colección.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -56,11 +48,9 @@
         <Parameter Name="BeforeCol" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="BeforeCol">Opcional <b>objeto</b> una columna existente en la matriz antes de que se va a colocar la nueva columna.</param>
-        <summary>Crea una columna de ecuación y lo agrega a una matriz y devuelve un <see cref="T:Microsoft.Office.Interop.Word.OMathMatCol" /> objeto.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.OMathMatCol" />
-        </returns>
+        <param name="BeforeCol"><b>Objeto</b> opcional una columna existente en la matriz antes de la que se va a situar la nueva columna.</param>
+        <summary>Crea una columna de ecuación, la agrega a una matriz y devuelve <see cref="T:Microsoft.Office.Interop.Word.OMathMatCol" /> un objeto.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.OMathMatCol" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,10 +77,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa la aplicación Microsoft Word.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,10 +105,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el número de elementos en el <see cref="T:Microsoft.Office.Interop.Word.OMathMatCols" /> colección. Es de solo lectura</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Devuelve el número de elementos de la <see cref="T:Microsoft.Office.Interop.Word.OMathMatCols" /> colección. Solo lectura.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,15 +133,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> de 32 bits que indica la aplicación en la que el complemento que se creó. Es de solo lectura</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, el <see cref="P:Microsoft.Office.Interop.Word.OMathMatCols.Creator" /> (propiedad) devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.  </para>
-          <para>Esta propiedad se ha diseñado principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve un <b>entero</b> de 32 bits que indica la aplicación en la que se creó el complemento. Solo lectura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Si el objeto se creó en Microsoft Word, la <see cref="P:Microsoft.Office.Interop.Word.OMathMatCols.Creator" /> propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />constante.  </para>
+          <para>Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -216,11 +198,9 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Requiere <b>entero</b> especifica la posición ordinal del objeto dentro de la colección.</param>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.OMathMatCol" /> object que representa el elemento especificado de la colección.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.OMathMatCol" />
-        </value>
+        <param name="Index"><b>Integer</b> requerido especifica la posición ordinal del objeto dentro de la colección.</param>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.OMathMatCol" /> objeto Object que representa el elemento especificado de la colección.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.OMathMatCol" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -247,10 +227,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario del especificado <see cref="T:Microsoft.Office.Interop.Word.OMathMatCols" /> objeto.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve el objeto primario del objeto especificado <see cref="T:Microsoft.Office.Interop.Word.OMathMatCols" /> .</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

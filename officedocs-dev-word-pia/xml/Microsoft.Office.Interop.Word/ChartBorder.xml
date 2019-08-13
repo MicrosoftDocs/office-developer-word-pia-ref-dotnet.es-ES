@@ -1,13 +1,5 @@
 <Type Name="ChartBorder" FullName="Microsoft.Office.Interop.Word.ChartBorder">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2fd24a30fabc34e696a58ddfd1adcc102522082d" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675945" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartBorder" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="69c49b130adc15e81ab8b1f1667ccfbd4a595e7e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147301" /></Metadata><TypeSignature Language="C#" Value="public interface ChartBorder" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartBorder" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ChartBorder" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartBorder" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Representa el borde de un objeto.</summary>
-    <remarks>
-      <para>Más de los objetos con borde tienen un borde que se trata como una sola entidad, independientemente de cómo los lados que tenga. El borde completo debe devolverse como una unidad. Usar el <see cref="P:Microsoft.Office.Interop.Word.Trendline.Border" /> (propiedad), por ejemplo desde una <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> objeto, para devolver el objeto <b>Border</b> de este tipo de objeto.</para>
-      <para />
-    </remarks>
+    <remarks><para>La mayoría de los objetos con borde tienen un borde que se trata como una única entidad, independientemente del número de lados que tenga. El borde completo debe devolverse como una unidad. Use la <see cref="P:Microsoft.Office.Interop.Word.Trendline.Border" /> propiedad, por ejemplo de un <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> objeto, para devolver el objeto <b>Border</b> de este tipo de objeto.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,10 +46,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa la aplicación Microsoft Word. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa el creador del objeto especificado (puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto). Es de solo lectura</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Cuando se usa sin un calificador de objeto, esta <see cref="T:Microsoft.Office.Interop.Word._Application" /> propiedad devuelve un objeto que representa la aplicación Microsoft Word. Cuando se utiliza con un calificador de objeto, esta <see cref="T:Microsoft.Office.Interop.Word._Application" /> propiedad devuelve un objeto que representa al creador del objeto especificado (puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto). Solo lectura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,10 +77,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <b>objeto</b> que representa el color primario del objeto.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve o establece un <b>objeto</b> que representa el color principal del objeto.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,12 +108,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor de <b>objeto</b> que representa el color del borde.</summary>
-        <value>
-          <b>Object</b>
-        </value>
-        <remarks>
-          <para>El color se especifica como un valor de índice para la paleta de colores actual o como uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> constantes:</para>
+        <summary>Devuelve o establece un valor de <b>Object</b> que representa el color del borde.</summary>
+        <value><b>Objeto</b></value>
+        <remarks><para>El color se especifica como un valor de índice para la paleta de colores activa o bien como una de <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> las siguientes constantes:</para>
           <list type="bullet">
             <item>
               <para>
@@ -140,8 +123,7 @@
               </para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -167,14 +149,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> de 32 bits que indica la aplicación en la que se creó el objeto especificado. Es de solo lectura</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, el <see cref="P:Microsoft.Office.Interop.Word.ChartBorder.Creator" /> (propiedad) devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, consulte la referencia del lenguaje de ayuda que se incluye con Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve un <b>entero</b> de 32 bits que indica la aplicación en la que se creó el objeto especificado. Solo lectura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Si el objeto se creó en Microsoft Word, la <see cref="P:Microsoft.Office.Interop.Word.ChartBorder.Creator" /> propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LineStyle">
@@ -203,14 +181,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o configura el estilo de línea para el borde. Es de lectura y escritura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
-        <remarks>
-          <para>Para obtener más información, vea: <see cref="T:Microsoft.Office.Interop.Word.XlLineStyle" />, <see cref="F:Microsoft.Office.Interop.Word.XlConstants.xlGray25" />, <see cref="F:Microsoft.Office.Interop.Word.XlConstants.xlGray50" />, <see cref="F:Microsoft.Office.Interop.Word.XlConstants.xlGray75" />, o <see cref="F:Microsoft.Office.Interop.Word.XlConstants.xlAutomatic" />. Además, <see cref="F:Microsoft.Office.Interop.Word.XlLineStyle.xlDouble" /> y <see cref="F:Microsoft.Office.Interop.Word.XlLineStyle.xlSlantDashDot" /> no se aplican a los gráficos.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o configura el estilo de línea para el borde. Lectura y escritura</summary>
+        <value><b>Objeto</b></value>
+        <remarks><para>Para obtener más información, <see cref="T:Microsoft.Office.Interop.Word.XlLineStyle" />vea <see cref="F:Microsoft.Office.Interop.Word.XlConstants.xlGray25" />: <see cref="F:Microsoft.Office.Interop.Word.XlConstants.xlGray50" />, <see cref="F:Microsoft.Office.Interop.Word.XlConstants.xlGray75" />,, <see cref="F:Microsoft.Office.Interop.Word.XlConstants.xlAutomatic" />o. Además, <see cref="F:Microsoft.Office.Interop.Word.XlLineStyle.xlDouble" /> <see cref="F:Microsoft.Office.Interop.Word.XlLineStyle.xlSlantDashDot" /> no se aplica a los gráficos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -236,10 +210,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve al objeto primario del objeto especificado. Es de solo lectura</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve al objeto primario del objeto especificado. Solo lectura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -269,10 +241,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.XlBorderWeight" /> object que representa el grosor del borde.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.XlBorderWeight" /> objeto que representa el grosor del borde.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

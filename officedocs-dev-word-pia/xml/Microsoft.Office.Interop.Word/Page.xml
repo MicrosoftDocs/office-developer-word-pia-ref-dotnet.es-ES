@@ -1,13 +1,5 @@
 <Type Name="Page" FullName="Microsoft.Office.Interop.Word.Page">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="89b8ef148f01e9d3f0c12f2806f50476efc1f370" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675211" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Page" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8d472e16e6aba91d640b12e000710035de65e0ab" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144242" /></Metadata><TypeSignature Language="C#" Value="public interface Page" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Page" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Page" />
   <TypeSignature Language="VB.NET" Value="Public Interface Page" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Representa una página de un documento. Utilizar el objeto <b>Page</b> y las propiedades y métodos relacionados para definir el diseño de página de un documento mediante programación.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.Pages.Item(System.Int32)" /> (método) para tener acceso a una página específica en un documento.</para>
-      <para>Para tener acceso el número de página, utilice la <see cref="P:Microsoft.Office.Interop.Word.Range.Information(Microsoft.Office.Interop.Word.WdInformation)" /> (propiedad) de un <see cref="T:Microsoft.Office.Interop.Word.Range" /> o <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto, o el <see cref="P:Microsoft.Office.Interop.Word.Break.PageIndex" /> (propiedad) de un <see cref="T:Microsoft.Office.Interop.Word.Break" /> objeto al que pertenece el <see cref="T:Microsoft.Office.Interop.Word.Breaks" /> colección del objeto <b>Page</b> especificado.</para>
-      <para>La <see cref="P:Microsoft.Office.Interop.Word.Page.Top" /> y <see cref="P:Microsoft.Office.Interop.Word.Page.Left" /> las propiedades del objeto <b>Page</b> siempre devuelven 0 (cero) que indica la esquina superior izquierda de la página. El <see cref="P:Microsoft.Office.Interop.Word.Page.Height" /> y <see cref="P:Microsoft.Office.Interop.Word.Page.Width" /> propiedades devuelven el alto y el ancho en puntos (72 puntos = 1 pulgada) del tamaño de papel especificado en el cuadro de diálogo Configurar página o a través del <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> objeto. Por ejemplo, para una página de 8-1/2 por 11 pulgadas en modo vertical, la propiedad <b>Height</b> devuelve 792 y la propiedad <b>Width</b> devuelve 612. Cuatro de estas propiedades es de sólo lectura.</para>
-      <para />
-    </remarks>
+    <remarks><para>Use el <see cref="P:Microsoft.Office.Interop.Word.Pages.Item(System.Int32)" /> método para obtener acceso a una página específica de un documento.</para>
+      <para>Para tener acceso al número de página, <see cref="P:Microsoft.Office.Interop.Word.Range.Information(Microsoft.Office.Interop.Word.WdInformation)" /> utilice la propiedad <see cref="T:Microsoft.Office.Interop.Word.Range" /> de <see cref="T:Microsoft.Office.Interop.Word.Selection" /> un objeto o, <see cref="P:Microsoft.Office.Interop.Word.Break.PageIndex" /> o bien, <see cref="T:Microsoft.Office.Interop.Word.Break" /> la propiedad de un objeto <see cref="T:Microsoft.Office.Interop.Word.Breaks" /> que pertenezca a la colección del objeto <b>Page</b> especificado.</para>
+      <para>Las <see cref="P:Microsoft.Office.Interop.Word.Page.Top" /> propiedades <see cref="P:Microsoft.Office.Interop.Word.Page.Left" /> y del objeto <b>Page</b> siempre devuelven un 0 (cero) que indica la esquina superior izquierda de la página. Las <see cref="P:Microsoft.Office.Interop.Word.Page.Height" /> propiedades <see cref="P:Microsoft.Office.Interop.Word.Page.Width" /> y devuelven el alto y el ancho en puntos (72 puntos = 1 pulgada) del tamaño de papel especificado en el cuadro de diálogo <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> Configurar página o a través del objeto. Por ejemplo, para una página de 8 y 1/2 por 11 pulgadas en modo vertical, la propiedad <b>Height</b> devuelve 792 y la propiedad <b>Width</b> devuelve 612. Cuatro de estas propiedades es de sólo lectura.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,12 +76,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Breaks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Breaks" /> colección que representa los saltos de una página. La colección <b>Breaks</b> incluye saltos de sección, de columna y de página.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.Breaks" /> colección que representa los saltos de una página. La colección <b>Breaks</b> incluye saltos de sección, de columna y de página.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Utilizar la colección <b>Breaks</b> y las propiedades y objetos relacionados para definir mediante programación el diseño de página en un documento.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilizar la colección <b>Breaks</b> y las propiedades y objetos relacionados para definir mediante programación el diseño de página en un documento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -119,9 +107,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnhMetaFileBits">
@@ -147,14 +135,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>objeto</b> que representa una representación gráfica de cómo aparece una página de texto. Es de solo lectura</summary>
-        <value>
-          <b>Object</b>
-        </value>
-        <remarks>
-          <para>El <see cref="P:Microsoft.Office.Interop.Word.Page.EnhMetaFileBits" /> propiedad devuelve una matriz de bytes, que se puede utilizar con el Microsoft Windows 32 Application Programming Interface desde dentro del entorno de desarrollo de Microsoft Visual Basic o Microsoft C++.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve un <b>objeto</b> que representa una representación gráfica de cómo aparece una página de texto. Solo lectura.</summary>
+        <value><b>Objeto</b></value>
+        <remarks><para>La <see cref="P:Microsoft.Office.Interop.Word.Page.EnhMetaFileBits" /> propiedad devuelve una matriz de bytes, que se puede usar con la interfaz de programación de aplicaciones de microsoft Windows 32 en el entorno de desarrollo de Microsoft Visual Basic o Microsoft C++.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -180,12 +164,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>La propiedad <b>Height</b> devuelve el alto en puntos (72 puntos = 1 pulgada) del tamaño de papel especificado en el cuadro de diálogo Configurar página o a través del <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> objeto.</summary>
+        <summary>La propiedad <b>height</b> devuelve el alto en puntos (72 puntos = 1 pulgada) del tamaño de papel especificado en el cuadro de diálogo Configurar página o <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> a través del objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Por ejemplo, para una página de 8-1/2 por 11 pulgadas en modo vertical, la propiedad <b>Height</b> devuelve 792 y la propiedad <b>Width</b> devuelve 612.</para>
-          <para />
-        </remarks>
+        <remarks><para>Por ejemplo, para una página de 8 y 1/2 por 11 pulgadas en modo vertical, la propiedad <b>Height</b> devuelve 792 y la propiedad <b>Width</b> devuelve 612.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -267,12 +249,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Rectangles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Rectangles" /> colección que representa una parte de texto o gráficos en una página en un documento.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.Rectangles" /> colección que representa una parte de texto o gráficos en una página de un documento.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Utilice la colección <b>Rectangles</b> y objetos relacionados y las propiedades para definir el diseño de página de un documento mediante programación. Los rectángulos corresponden a partes de texto o gráficos en una página en un documento.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilice la colección <b>Rectangles</b> y objetos relacionados y propiedades para definir el diseño de página de un documento mediante programación. Los rectángulos corresponden a partes de texto o gráficos en una página de un documento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveAsPNG">
@@ -357,12 +337,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el ancho en puntos (72 puntos = 1 pulgada) del tamaño de papel especificado en el cuadro de diálogo Configurar página o a través del <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> objeto.</summary>
+        <summary>Devuelve el ancho en puntos (72 puntos = 1 pulgada) del tamaño de papel especificado en el cuadro de diálogo Configurar página o <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> en el objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Por ejemplo, para una página de 8-1/2 por 11 pulgadas en modo vertical, la propiedad <b>Height</b> devuelve 792 y la propiedad <b>Width</b> devuelve 612.</para>
-          <para />
-        </remarks>
+        <remarks><para>Por ejemplo, para una página de 8 y 1/2 por 11 pulgadas en modo vertical, la propiedad <b>Height</b> devuelve 792 y la propiedad <b>Width</b> devuelve 612.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="CoAuthoring" FullName="Microsoft.Office.Interop.Word.CoAuthoring">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d195f255aaf0a9c9baac4c0c2a349c00374fd387" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674936" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CoAuthoring" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="aa37e28413aff41cf5c8b6361b6d410b11b49671" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147273" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthoring" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CoAuthoring" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CoAuthoring" />
   <TypeSignature Language="VB.NET" Value="Public Interface CoAuthoring" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Proporciona el punto de entrada principal al modelo de objetos de co-autoría.</summary>
-    <remarks>
-      <para>El objeto <b>CoAuthoring</b> proporciona información sobre la co-autoría en el nivel de documento. Por ejemplo, el objeto <b>CoAuthoring</b> puede proporcionar información acerca de si existen los bloqueos en el documento, los usuarios que tienen bloqueos actuales en el documento, o si o actualizaciones del contenido de documento no está disponible desde el servidor. Usar el <see cref="T:Microsoft.Office.Interop.Word.Document.CoAuthoring" /> (propiedad) para devolver el objeto <b>CoAuthoring</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>El objeto <b>CoAuthoring</b> proporciona información sobre la co-autoría del documento. Por ejemplo, el objeto <b>CoAuthoring</b> puede proporcionar información sobre la existencia de bloqueos en el documento, qué usuarios tienen bloqueos actuales en el documento o si se encuentran disponibles en el servidor actualizaciones para el documento. Use la <see cref="T:Microsoft.Office.Interop.Word.Document.CoAuthoring" /> propiedad para devolver el <b></b> objeto coauthoring.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,12 +46,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
-        <value>Un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</value>
-        <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa la aplicación Microsoft Word.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Application" /> Objeto que representa la aplicación Microsoft Word.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Authors">
@@ -87,12 +75,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Word.CoAuthors" /> colección que representa todos los coautores modificando actualmente el documento.</summary>
-        <value>A <see cref="T:Microsoft.Office.Interop.Word.CoAuthors" /> colección que representa todos los coautores modificando actualmente el documento.</value>
-        <remarks>
-          <para>Es de sólo lectura. La colección devuelta por esta propiedad es estática. Si esta colección es almacenado y, a continuación, nuevo a los usuarios comienzan a editar el documento, o los usuarios actuales ya no están editando el documento, la colección almacenada no cambia.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene una <see cref="T:Microsoft.Office.Interop.Word.CoAuthors" /> colección que representa todos los coautores que están editando actualmente el documento.</summary>
+        <value>Una <see cref="T:Microsoft.Office.Interop.Word.CoAuthors" /> colección que representa todos los coautores que están editando el documento en ese momento.</value>
+        <remarks><para>Solo lectura. La colección que devuelve esta propiedad es estática. Si esta colección se almacena y, a continuación, los nuevos usuarios comienzan a editar el documento, o los usuarios actuales ya no están editando el documento, la colección almacenada no cambia.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CanMerge">
@@ -118,24 +104,27 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene si el documento puede combinarse en automáticamente.</summary>
-        <value>
-          <b>true</b> si el documento puede combinarse en automáticamente; en caso contrario, <b>false</b>.</value>
-        <remarks>
-          <para>Sólo los documentos que se encuentran en una biblioteca de documentos de Microsoft SharePoint Server 2010 pueden combinarse automáticamente. Además, un documento con las siguientes características no puede combinarse automáticamente:</para>
+        <summary>Obtiene si el documento puede combinarse automáticamente.</summary>
+        <value><b>true</b> si el documento puede combinarse automáticamente; de lo contrario, <b>false</b>.</value>
+        <remarks><para>Solo se pueden combinar automáticamente los documentos que se encuentran en una biblioteca de documentos de Microsoft SharePoint Server 2010. Asimismo, no es posible combinar de forma automática un documento con las siguientes características:</para>
           <list type="bullet">
             <item>
-              <para>modo Final</para>
+              <para>Administración de derechos digitales</para>
             </item>
             <item>
-              <para>cifrado</para>
+              <para>Firmas digitales</para>
             </item>
             <item>
-              <para>rol documento maestro</para>
-            </item> de
-            <item><para>Administración de derechos digitales</para></item><item><para>Firmas digitales</para></item></list>
-          <para />
-        </remarks>
+              <para>Modo final</para>
+            </item>
+            <item>
+              <para>Cifrado</para>
+            </item>
+            <item>
+              <para>Rol Documento maestro</para>
+            </item>
+          </list>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CanShare">
@@ -161,13 +150,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene si este documento puede ser con co-autoría.</summary>
-        <value>
-          <b>es true</b> si este documento puede ser de co-autoría; en caso contrario, <b>false</b>.</value>
-        <remarks>
-          <para>Es de sólo lectura. Esta propiedad sólo es <b>true</b> si la <see cref="P:Microsoft.Office.Interop.Word.CoAuthoring.CanMerge" /> propiedad es <b>true</b> y el documento es un archivo .docx.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene si este documento puede ser de co-autoría.</summary>
+        <value><b>es true</b> si este documento puede ser de co-autoría; de lo contrario, <b>false</b>.</value>
+        <remarks><para>Solo lectura. Esta propiedad es <b>true</b> sólo si la <see cref="P:Microsoft.Office.Interop.Word.CoAuthoring.CanMerge" /> propiedad es <b>true</b> y el documento es un archivo. docx.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Conflicts">
@@ -193,12 +179,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Conflicts</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Word.Conflicts" /> colección que representa todos los conflictos de un documento.</summary>
-        <value>A <see cref="T:Microsoft.Office.Interop.Word.Conflicts" /> colección que representa todos los conflictos de un documento.</value>
-        <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene una <see cref="T:Microsoft.Office.Interop.Word.Conflicts" /> colección que representa todos los conflictos de un documento.</summary>
+        <value>Una <see cref="T:Microsoft.Office.Interop.Word.Conflicts" /> colección que representa todos los conflictos de un documento.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -225,13 +209,11 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
-        <value>Un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</value>
-        <remarks>
-          <para>Sólo lectura de <b>tipo long</b>. Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Esta propiedad se ha diseñado principalmente para usarse en Apple Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Word tiene el código de creador MSWD.</para>
+        <value>Entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</value>
+        <remarks><para><b>Long</b>de sólo lectura. Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Esta propiedad se diseñó principalmente para usarse en Apple Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Word tiene el código de creador MSWD.</para>
           <para>
-            <b>Precaución</b>: este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
-          <para />
-        </remarks>
+            <b>PRECAUCIÓN</b>: este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Locks">
@@ -257,12 +239,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthLocks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> colección que representa los bloqueos en el documento.</summary>
-        <value>A <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> colección que representa los bloqueos en el documento.</value>
-        <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene una <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> colección que representa los bloqueos en el documento.</summary>
+        <value>Una <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> colección que representa los bloqueos en el documento.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Me">
@@ -288,12 +268,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> object que representa el usuario actual.</summary>
-        <value>A <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> object que representa el usuario actual.</value>
-        <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> objeto que representa al usuario actual.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> Objeto que representa al usuario actual.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -319,8 +297,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:System.Object" /> que representa el objeto primario del especificado <see cref="T:Microsoft.Office.Interop.Word.CoAuthoring" /> objeto.</summary>
-        <value>Un <see cref="T:System.Object" /> que representa el objeto primario del especificado <see cref="T:Microsoft.Office.Interop.Word.CoAuthoring" /> objeto.</value>
+        <summary>Obtiene un <see cref="T:System.Object" /> objeto que representa el objeto primario del objeto <see cref="T:Microsoft.Office.Interop.Word.CoAuthoring" /> especificado.</summary>
+        <value>Un <see cref="T:System.Object" /> que representa el objeto primario del objeto especificado <see cref="T:Microsoft.Office.Interop.Word.CoAuthoring" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -347,13 +325,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene si el documento tiene actualizaciones que no se han aceptado pendientes.</summary>
-        <value>
-          <b>true</b> si el documento tiene actualizaciones que no se han aceptado; pendientes en caso contrario, <b>false</b>.</value>
-        <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene si el documento tiene actualizaciones pendientes que no se han aceptado.</summary>
+        <value><b>true</b> si el documento tiene actualizaciones pendientes que no se han aceptado; de lo contrario, <b>false</b>.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Updates">
@@ -379,12 +354,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthUpdates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> colección que representa todas las actualizaciones disponibles en el documento.</summary>
-        <value>A <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> colección que representa todas las actualizaciones disponibles en el documento.</value>
-        <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene una <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> colección que representa todas las actualizaciones disponibles para el documento.</summary>
+        <value>Una <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> colección que representa todas las actualizaciones disponibles para el documento.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

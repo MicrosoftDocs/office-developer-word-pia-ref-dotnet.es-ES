@@ -1,13 +1,5 @@
 <Type Name="Diagram" FullName="Microsoft.Office.Interop.Word.Diagram">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="716f02ec4b6e7d1f64d0bb8f9f474e53ca6129f2" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675253" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Diagram" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bc06f6c988452cbcd9040e790955deac67b02537" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147106" /></Metadata><TypeSignature Language="C#" Value="public interface Diagram" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Diagram" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Diagram" />
   <TypeSignature Language="VB.NET" Value="Public Interface Diagram" />
@@ -26,13 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa un único diagrama en un documento.</summary>
-    <remarks>
-      <para>El objeto <b>Diagram</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> colección.</para>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.Shape.Diagram" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />, <see cref="T:Microsoft.Office.Interop.Word.Shape" />, y <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> objetos para devolver un único objeto de <b>diagrama</b> . Usar el <see cref="M:Microsoft.Office.Interop.Word.Diagram.Convert(Microsoft.Office.Core.MsoDiagramType)" /> método para cambiar un diagrama de un tipo a otro.</para>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.Diagram.Reverse" /> (propiedad) para voltear el orden de los nodos de un diagrama.</para>
-      <para />
-    </remarks>
+    <summary>Representa un solo diagrama de un documento.</summary>
+    <remarks><para>El objeto <b>Diagram</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> colección.</para>
+      <para>Use la <see cref="P:Microsoft.Office.Interop.Word.Shape.Diagram" /> propiedad de los <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />objetos <see cref="T:Microsoft.Office.Interop.Word.Shape" />, y <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> para devolver un solo objeto <b>Diagram</b> . Use el <see cref="M:Microsoft.Office.Interop.Word.Diagram.Convert(Microsoft.Office.Core.MsoDiagramType)" /> método para cambiar un diagrama de un tipo a otro.</para>
+      <para>Use la <see cref="P:Microsoft.Office.Interop.Word.Diagram.Reverse" /> propiedad para voltear el orden de los nodos en un diagrama.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,7 +79,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Establece o devuelve un <see cref="T:Microsoft.Office.Core.MsoTriState" /> constante que especifica el estado de formato automático de un diagrama.</summary>
+        <summary>Establece o devuelve una <see cref="T:Microsoft.Office.Core.MsoTriState" /> constante que especifica el estado de formato automático de un diagrama.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,7 +110,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Core.MsoTriState" /> constante que determina la colocación automática de los nodos y conectores en un diagrama.</summary>
+        <summary>Devuelve o establece una <see cref="T:Microsoft.Office.Core.MsoTriState" /> constante que determina la colocación automática de los nodos y conectores en un diagrama.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,8 +138,8 @@
         <Parameter Name="Type" Type="Microsoft.Office.Core.MsoDiagramType" />
       </Parameters>
       <Docs>
-        <param name="Type">Requiere <see cref="T:Microsoft.Office.Core.MsoDiagramType" />. El tipo de diagrama que se va a convertir.</param>
-        <summary>Un diagrama de un tipo se convierte en un diagrama de otro tipo.</summary>
+        <param name="Type">Es <see cref="T:Microsoft.Office.Core.MsoDiagramType" />obligatorio. Tipo de diagrama al que se va a convertir.</param>
+        <summary>Convierte un diagrama de un tipo en un diagrama de otro tipo.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,9 +168,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Por ejemplo, si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Por ejemplo, si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FitText">
@@ -204,11 +194,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ajusta el tamaño del texto en los nodos de un diagrama para que encaje dentro de los límites de los nodos.</summary>
-        <remarks>
-          <para>Este método funciona sólo en Microsoft Office PowerPoint 2003.</para>
-          <para />
-        </remarks>
+        <summary>Ajusta el tamaño del texto en los nodos de un diagrama para que quepan dentro de los límites de los nodos.</summary>
+        <remarks><para>Este método funciona únicamente en Microsoft Office PowerPoint 2003.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Nodes">
@@ -234,7 +222,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.DiagramNodes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.DiagramNodes" /> objeto que representa los nodos de un diagrama.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.DiagramNodes" /> objeto Object que representa los nodos de un diagrama.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -293,8 +281,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>MsoTrue</b> invierte los nodos de un diagrama.</summary>
+        <summary><b>MsoTrue</b> invierte los nodos de un diagrama.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

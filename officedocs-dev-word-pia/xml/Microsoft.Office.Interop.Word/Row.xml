@@ -1,13 +1,5 @@
 <Type Name="Row" FullName="Microsoft.Office.Interop.Word.Row">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f3f888ce7666e70b4f715eac11cdc9ad62446510" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675221" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Row" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2a9aa0e9a5a9ac735956a630fd3d9e5e8530abf2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144032" /></Metadata><TypeSignature Language="C#" Value="public interface Row" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Row" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Row" />
   <TypeSignature Language="VB.NET" Value="Public Interface Row" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Representa una fila de una tabla.</summary>
-    <remarks>
-      <para>El objeto <b>Row</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Rows" /> colección. La colección <b>Rows</b> incluye todas las filas en la tabla, el intervalo o la selección especificada.</para>
-      <para>Uso <b>filas</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un solo objeto <b>Row</b> . El número de índice representa la posición de la fila en la selección, intervalo o tabla.</para>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Word.Rows.Add(System.Object@)" /> método para agregar una fila a una tabla.</para>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.Row.Cells" /> (propiedad) para modificar las celdas individuales en un objeto <b>Row</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>El objeto <b>Row</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Rows" /> colección. La colección <b>Rows</b> incluye todas las filas de la tabla, el intervalo o la selección especificada.</para>
+      <para>Use <b>Rows</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un solo objeto <b>Row</b> . El número de índice representa la posición de la fila en la tabla, el intervalo o la selección.</para>
+      <para>Use el <see cref="M:Microsoft.Office.Interop.Word.Rows.Add(System.Object@)" /> método para agregar una fila a una tabla.</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.Row.Cells" /> propiedad para modificar las celdas individuales de un objeto <b>Row</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alignment">
@@ -62,10 +52,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRowAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.WdRowAlignment" /> constante que representa la alineación de las filas especificadas.</summary>
+        <summary>Devuelve o establece una <see cref="T:Microsoft.Office.Interop.Word.WdRowAlignment" /> constante que representa la alineación de las filas especificadas.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>WdRowAlignment</b> puede ser una de las siguientes constantes:</para>
           <para>
             <b>wdAlignRowLeft</b>
@@ -76,8 +65,7 @@
           <para>
             <b>wdAlignRowRight</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowBreakAcrossPages">
@@ -106,12 +94,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina si el texto en una fila de tabla o las filas se puede dividirse en un salto de página.</summary>
+        <summary>Determina si el texto de una fila de tabla o de filas puede dividirse en un salto de página.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad devolver valores pueden ser <b>True</b>, <b>False</b> o <b>wdUndefined</b> (sólo parte del texto especificado se permite dividir).</para>
-          <para />
-        </remarks>
+        <remarks><para>Los valores devueltos de la propiedad pueden ser <b>true</b>, <b>false</b> o <b>wdUndefined</b> (sólo se permite dividir parte del texto especificado).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -137,7 +123,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -168,7 +154,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Borders" /> colección que representa todos los bordes del objeto especificado.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.Borders" /> colección que representa todos los bordes del objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -196,7 +182,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Cells</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Cells" /> colección que representa las celdas de tabla en una columna, fila, selección o intervalo.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.Cells" /> colección que representa las celdas de tabla en una columna, fila, selección o intervalo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -224,16 +210,12 @@
         <Parameter Name="NestedTables" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Separator">
-          <b>Objeto</b>de opcional. El carácter que delimita las columnas convertidas (las marcas de párrafo delimitan las filas convertidas). Puede ser cualquier siguiente <see cref="T:Microsoft.Office.Interop.Word.WdTableFieldSeparator" /> constantes:<b>wdSeparateByCommas</b><b>wdSeparateByDefaultListSeparator</b><b>wdSeparateByParagraphs</b><b>wdSeparateByTabs predeterminado</b></param>
-        <param name="NestedTables">
-          <b>Objeto</b>de opcional. <b>True</b> si las tablas anidadas se convierten en texto. Este argumento se omite si <paramref name="Separator" /> no es <b>wdSeparateByParagraphs</b>. El valor predeterminado es <b>True</b>.</param>
-        <summary>Convierte una tabla en texto y devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa el texto delimitado.</summary>
+        <param name="Separator"><b>Objeto</b>opcional. El carácter que delimita las columnas convertidas (las marcas de párrafo delimitan las filas convertidas). Puede ser cualquiera de <see cref="T:Microsoft.Office.Interop.Word.WdTableFieldSeparator" /> las siguientes constantes:<b>wdSeparateByCommas</b><b>wdSeparateByDefaultListSeparator</b><b>wdSeparateByParagraphs</b><b>wdSeparateByTabs predeterminado</b></param>
+        <param name="NestedTables"><b>Objeto</b>opcional. <b>True</b> si las tablas anidadas se convierten en texto. Este argumento se omite si <paramref name="Separator" /> no es <b>wdSeparateByParagraphs</b>. El valor predeterminado es <b>True</b>.</param>
+        <summary>Convierte una tabla en texto y devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa el texto delimitado.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Al aplicar el método <b>ConvertToText</b> a un <see cref="T:Microsoft.Office.Interop.Word.Table" /> de objeto, se elimina el objeto. Para mantener una referencia del contenido convertido de la tabla, debe asignar el objeto <b>Range</b> devuelto por el método <b>ConvertToText</b> a una nueva variable de objeto.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cuando se aplica el método <b>ConvertToText</b> a un <see cref="T:Microsoft.Office.Interop.Word.Table" /> objeto, se elimina el objeto. Para mantener una referencia del contenido convertido de la tabla, debe asignar el objeto <b>Range</b> devuelto por el método <b>ConvertToText</b> a una nueva variable de objeto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertToTextOld">
@@ -292,9 +274,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -350,11 +332,9 @@
       <Docs>
         <summary>Determina si la fila o filas especificadas tienen el formato de título de tabla.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Las filas con formato de títulos de la tabla se repiten cuando una tabla ocupa más de una página.</para>
-          <para>Posibles valores pueden ser <b>True</b>, <b>False</b> o <b>wdUndefined</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Las filas con formato de títulos de la tabla se repiten cuando una tabla ocupa más de una página.</para>
+          <para>Los valores posibles de la propiedad pueden ser <b>true</b>, <b>false</b> o <b>wdUndefined</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -383,12 +363,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el alto de la fila especificada de una tabla.</summary>
+        <summary>Devuelve o establece el alto de la fila especificada en una tabla.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el <see cref="P:Microsoft.Office.Interop.Word.Row.HeightRule" /> (propiedad) de la fila especificada es <b>wdRowHeightAuto</b>, <b>Height</b> devuelve <b>wdUndefined</b>. Establecer la propiedad <b>Height</b> , <b>HeightRule</b> establece en <b>wdRowHeightAtLeast</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la <see cref="P:Microsoft.Office.Interop.Word.Row.HeightRule" /> propiedad de la fila especificada es <b>wdRowHeightAuto</b>, <b>height</b> devuelve <b>wdUndefined</b>. Al establecer la propiedad <b>height</b> , <b>HeightRule</b> se establece en <b>wdRowHeightAtLeast</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HeightRule">
@@ -419,9 +397,8 @@
       <Docs>
         <summary>Devuelve o establece la regla que determinará el alto de la fila especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdRowHeightRule" /> puede ser una de las siguientes constantes:</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdRowHeightRule" />puede ser una de las siguientes constantes:</para>
           <para>
             <b>wdRowHeightAtLeast</b>
           </para>
@@ -431,8 +408,7 @@
           <para>
             <b>wdRowHeightAuto</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -463,10 +439,8 @@
       <Docs>
         <summary>Devuelve o establece la etiqueta de identificación para el objeto especificado cuando se guarda el documento actual como una página Web.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Con la excepción de la <see cref="T:Microsoft.Office.Interop.Word.Editor" /> de objetos, puede utilizar una etiqueta como referencia de hipervínculo desde otras páginas Web o desde dentro del documento actual.</para>
-          <para />
-        </remarks>
+        <remarks><para>Con la excepción del <see cref="T:Microsoft.Office.Interop.Word.Editor" /> objeto, puede usar un rótulo como referencia de hipervínculo desde otras páginas web o desde el documento actual.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -492,7 +466,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> que representa la posición de un elemento de una colección.</summary>
+        <summary>Devuelve un <b>entero</b> que representa la posición de un elemento en una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -609,10 +583,8 @@
       <Docs>
         <summary>Devuelve el nivel de anidamiento de la fila especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La tabla más exterior tiene un nivel de anidamiento de 1. El nivel de anidamiento de cada tabla anidada sucesivamente es superior de la tabla anterior en uno.</para>
-          <para />
-        </remarks>
+        <remarks><para>La tabla más exterior tiene un nivel 1 de anidamiento. El nivel de anidamiento de cada tabla sucesivamente anidada es superior en uno al de la tabla anterior.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -722,12 +694,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa la parte de un documento que está incluida en el objeto especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa la parte de un documento incluida en el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para obtener información acerca de la devolución de un intervalo de un documento o la devolución de un intervalo de formas de una colección de formas, vea el <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> (método).</para>
-          <para />
-        </remarks>
+        <remarks><para>Para obtener información sobre la devolución de un intervalo de un documento o la devolución de un intervalo de formas de una <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> colección de formas, vea el método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -752,10 +722,8 @@
       <Parameters />
       <Docs>
         <summary>Selecciona el objeto especificado.</summary>
-        <remarks>
-          <para>Después de utilizar este método, utilice el <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> (propiedad) para trabajar con los elementos seleccionados.</para>
-          <para />
-        </remarks>
+        <remarks><para>Después de utilizar este método, utilice <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> la propiedad para trabajar con los elementos seleccionados.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetHeight">
@@ -782,9 +750,8 @@
         <Parameter Name="HeightRule" Type="Microsoft.Office.Interop.Word.WdRowHeightRule" />
       </Parameters>
       <Docs>
-        <param name="RowHeight">
-          <b>Single</b>requerido. Alto de la fila o las filas en puntos.</param>
-        <param name="HeightRule">Requiere <see cref="T:Microsoft.Office.Interop.Word.WdRowHeightRule" />. La regla que determinará el alto de las filas especificadas. <b>WdRowHeightRule</b> puede ser una de las siguientes constantes:<b>wdRowHeightAtLeast</b><b>wdRowHeightExactly</b><b>wdRowHeightAuto</b></param>
+        <param name="RowHeight"><b>Single</b>requerido. Alto de la fila o las filas en puntos.</param>
+        <param name="HeightRule">Es <see cref="T:Microsoft.Office.Interop.Word.WdRowHeightRule" />obligatorio. La regla que determinará el alto de las filas especificadas. <b>WdRowHeightRule</b> puede ser una de las siguientes constantes:<b>wdRowHeightAtLeast</b><b>wdRowHeightExactly</b><b>wdRowHeightAuto</b></param>
         <summary>Establece el alto de las filas de la tabla.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -813,14 +780,11 @@
         <Parameter Name="RulerStyle" Type="Microsoft.Office.Interop.Word.WdRulerStyle" />
       </Parameters>
       <Docs>
-        <param name="LeftIndent">
-          <b>Single</b>requerido. Distancia, en puntos, entre el borde izquierdo actual de la fila o las filas especificadas y el borde izquierdo deseado.</param>
-        <param name="RulerStyle">Requiere <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" />. Controla la forma en que Microsoft Word ajusta la tabla cuando se cambia la sangría izquierda. <b>WdRulerStyle</b> puede ser una de las siguientes constantes: <b>wdAdjustNone</b> – ajusta el borde izquierdo de la fila o filas, y conserva el ancho de todas las columnas mediante su desplazamiento a la izquierda o derecha. Éste es el valor predeterminado. <b>wdAdjustSameWidth</b> – ajusta el borde izquierdo de la primera columna y conserva la posición del borde derecho de la tabla mediante el ajuste del ancho de todas las celdas en la fila o filas especificadas en el mismo valor. <b>wdAdjustFirstColumn</b> – ajusta el borde izquierdo de la primera columna sólo, conserva las posiciones de las demás columnas y el borde derecho de la tabla. <b>wdAdjustProportional</b> – ajusta el borde izquierdo de la primera columna y conserva la posición del borde derecho de la tabla mediante el ajuste proporcional del ancho de todas las celdas de la fila o filas especificadas.</param>
+        <param name="LeftIndent"><b>Single</b>requerido. Distancia, en puntos, entre el borde izquierdo actual de la fila o las filas especificadas y el borde izquierdo deseado.</param>
+        <param name="RulerStyle">Es <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" />obligatorio. Controla la forma en que Microsoft Word ajusta la tabla cuando se cambia la sangría izquierda. <b>WdRulerStyle</b> puede ser una de las siguientes constantes: <b>wdAdjustNone</b> – ajusta el borde izquierdo de la fila o filas, conservando el ancho de todas las columnas al desplazarlas a la izquierda o a la derecha. El propietario, el autor y el propietario del sitio aún pueden tener acceso al elemento. <b>wdAdjustSameWidth</b> : ajusta el borde izquierdo de la primera columna y conserva la posición del borde derecho de la tabla estableciendo el ancho de todas las celdas de la fila o filas especificadas en el mismo valor. <b>wdAdjustFirstColumn</b> : ajusta el borde izquierdo de la primera columna solamente, conservando las posiciones de las demás columnas y el borde derecho de la tabla. <b>wdAdjustProportional</b> : ajusta el borde izquierdo de la primera columna y conserva la posición del borde derecho de la tabla mediante el ajuste proporcional del ancho de todas las celdas de la fila o filas especificadas.</param>
         <summary>Establece la sangría de una fila o varias filas de una tabla.</summary>
-        <remarks>
-          <para>El comportamiento de <b>WdRulerStyle</b> descrito anteriormente se aplica a tablas alineado a la izquierda. El comportamiento de <b>WdRulerStyle</b> para tablas centradas o alineadas a la derecha puede ser inesperado; en estos casos, debe utilizarse el método <b>SetLeftIndent</b> con cuidado.</para>
-          <para />
-        </remarks>
+        <remarks><para>El comportamiento de <b>WdRulerStyle</b> descrito anteriormente se aplica a las tablas alineadas a la izquierda. El comportamiento de <b>WdRulerStyle</b> para tablas centradas o alineadas a la derecha puede ser inesperado; en estos casos, el método <b>SetLeftIndent</b> debe usarse con cuidado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shading">
@@ -877,7 +841,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la distancia (en puntos) entre el texto en columnas adyacentes de la fila especificada.</summary>
+        <summary>Devuelve o establece la distancia (en puntos) entre el texto de las columnas adyacentes de la fila especificada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

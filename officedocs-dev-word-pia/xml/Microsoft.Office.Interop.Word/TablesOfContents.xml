@@ -1,13 +1,5 @@
 <Type Name="TablesOfContents" FullName="Microsoft.Office.Interop.Word.TablesOfContents">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="34f7f3f0b04b6f94b3b32e279d16090a2318aa78" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675836" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TablesOfContents : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1dba7adac0f83b8430c22e283a149c42e38aadef" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143927" /></Metadata><TypeSignature Language="C#" Value="public interface TablesOfContents : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TablesOfContents implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TablesOfContents" />
   <TypeSignature Language="VB.NET" Value="Public Interface TablesOfContents&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.TableOfContents" /> objetos que representan las tablas de contenido en un documento.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word._Document.TablesOfContents" /> (propiedad) para devolver la colección <b>TablesOfContents</b> .</para>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Word.TablesOfContents.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para agregar una tabla de contenido a un documento.</para>
-      <para>Uso <b>TablesOfContents</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un solo objeto <b>TableOfContents</b> . El número de índice representa la posición de la tabla de contenido en el documento.</para>
-      <para />
-    </remarks>
+    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.TableOfContents" /> objetos que representan las tablas de contenido de un documento.</summary>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Word._Document.TablesOfContents" /> propiedad para devolver la colección <b>TablesOfContents</b> .</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.TablesOfContents.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para agregar una tabla de contenido a un documento.</para>
+      <para>Utilice <b>TablesOfContents</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un único objeto <b>TableOfContents</b> . El número de índice representa la posición de la tabla de contenido en el documento.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -71,29 +61,18 @@
         <Parameter Name="UseOutlineLevels" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Requiere <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. Intervalo donde desea que aparezca la tabla de contenido. La tabla de contenido reemplazará al intervalo, si no se contrae el intervalo.</param>
-        <param name="UseHeadingStyles">
-          <b>Objeto</b>de opcional. <b>True</b> para utilizar estilos de título integrados para crear la tabla de contenido. El valor predeterminado es <b>True</b>.</param>
-        <param name="UpperHeadingLevel">
-          <b>Objeto</b>de opcional. Nivel de título inicial para la tabla de contenido. Equivale al valor inicial que se ha utilizado con el modificador \o de un campo Tabla de contenido (TOC). El valor predeterminado es 1.</param>
-        <param name="LowerHeadingLevel">
-          <b>Objeto</b>de opcional. Nivel de título final para la tabla de contenido. Equivale al valor final que se ha utilizado con el modificador \o de un campo Tabla de contenido (TOC). El valor predeterminado es 9.</param>
-        <param name="UseFields">
-          <b>Objeto</b>de opcional. <b>True</b> si los campos de tabla de contenido (TC) se usan para crear la tabla de contenido. Usar el <see cref="M:Microsoft.Office.Interop.Word.TablesOfContents.MarkEntry(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@)" /> (método) para marcar los elementos que se deben incluir en la tabla de contenido. El valor predeterminado es <b>False</b>.</param>
-        <param name="TableID">
-          <b>Objeto</b>de opcional. Identificador de una letra que se usa para generar una tabla de contenido a partir de campos TC. Equivale al modificador \f de un campo Tabla de contenido (TOC). Por ejemplo, "T" crea una tabla de contenido a partir de campos TC utilizando el identificador de tabla T. Si se omite este argumento, no se utilizan campos TC.</param>
-        <param name="RightAlignPageNumbers">
-          <b>Objeto</b>de opcional. <b>True</b> si los números de página en la tabla de contenido se alinean con el margen derecho. El valor predeterminado es <b>True</b>.</param>
-        <param name="IncludePageNumbers">
-          <b>Objeto</b>de opcional. <b>True</b> para incluir los números de página en la tabla de contenido. El valor predeterminado es <b>True</b>.</param>
-        <param name="AddedStyles">
-          <b>Objeto</b>de opcional. El nombre de la cadena de estilos adicionales utilizados para compilar la tabla de contenido (estilos distintos de título 1-Título 9). Usar el <see cref="M:Microsoft.Office.Interop.Word.HeadingStyles.Add(System.Object@,System.Int16)" /> (método) de un <see cref="T:Microsoft.Office.Interop.Word.HeadingStyles" /> objeto para crear nuevos estilos de título.</param>
-        <param name="UseHyperlinks">
-          <b>Objeto</b>de opcional. <b>True</b> si se deben aplicar formato en las entradas de una tabla de contenido como hipervínculos cuando el documento se publique en la Web. El valor predeterminado es <b>True</b>.</param>
-        <param name="HidePageNumbersInWeb">
-          <b>Objeto</b>de opcional. <b>True</b> para utilizar los niveles de esquema para crear la tabla de contenido. El valor predeterminado es <b>False</b>.</param>
-        <param name="UseOutlineLevels">
-          <b>Objeto</b>de opcional. <b>True</b> para utilizar los niveles de esquema para crear la tabla de contenido. El valor predeterminado es <b>False</b>.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> requerido. Intervalo donde desea que aparezca la tabla de contenido. La tabla de contenido reemplaza el intervalo si el intervalo no está contraído.</param>
+        <param name="UseHeadingStyles"><b>Objeto</b>opcional. <b>True</b> para utilizar estilos de título integrados para crear la tabla de contenido. El valor predeterminado es <b>True</b>.</param>
+        <param name="UpperHeadingLevel"><b>Objeto</b>opcional. Nivel de título inicial para la tabla de contenido. Equivale al valor inicial que se ha utilizado con el modificador \o de un campo Tabla de contenido (TOC). El valor predeterminado es 1.</param>
+        <param name="LowerHeadingLevel"><b>Objeto</b>opcional. Nivel de título final para la tabla de contenido. Equivale al valor final que se ha utilizado con el modificador \o de un campo Tabla de contenido (TOC). El valor predeterminado es 9.</param>
+        <param name="UseFields"><b>Objeto</b>opcional. <b>True</b> si los campos de tabla de contenido (TC) se usan para crear la tabla de contenido. Use el <see cref="M:Microsoft.Office.Interop.Word.TablesOfContents.MarkEntry(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para marcar las entradas que se incluirán en la tabla de contenido. El valor predeterminado es <b>False</b>.</param>
+        <param name="TableID"><b>Objeto</b>opcional. Identificador de una letra que se usa para generar una tabla de contenido a partir de los campos TC. Equivale al modificador \f de un campo Tabla de contenido (TOC). Por ejemplo, "T" genera un tabla de contenido a partir de los campos TC utilizando el identificador de tabla T. Si se omite este argumento, los campos TC no se utilizan.</param>
+        <param name="RightAlignPageNumbers"><b>Objeto</b>opcional. <b>True</b> si los números de página en la tabla de contenido se alinean con el margen derecho. El valor predeterminado es <b>True</b>.</param>
+        <param name="IncludePageNumbers"><b>Objeto</b>opcional. <b>True</b> para incluir los números de página en la tabla de contenido. El valor predeterminado es <b>True</b>.</param>
+        <param name="AddedStyles"><b>Objeto</b>opcional. Nombre de la cadena de estilos adicionales utilizada para compilar la tabla de contenido (estilos distintos de Título 1 - Título 9). Use el <see cref="M:Microsoft.Office.Interop.Word.HeadingStyles.Add(System.Object@,System.Int16)" /> método de un <see cref="T:Microsoft.Office.Interop.Word.HeadingStyles" /> objeto para crear nuevos estilos de título.</param>
+        <param name="UseHyperlinks"><b>Objeto</b>opcional. <b>True</b> si se deben aplicar formato en las entradas de una tabla de contenido como hipervínculos cuando el documento se publique en la Web. El valor predeterminado es <b>True</b>.</param>
+        <param name="HidePageNumbersInWeb"><b>Objeto</b>opcional. <b>True</b> para utilizar los niveles de esquema para crear la tabla de contenido. El valor predeterminado es <b>False</b>.</param>
+        <param name="UseOutlineLevels"><b>Objeto</b>opcional. <b>True</b> para utilizar los niveles de esquema para crear la tabla de contenido. El valor predeterminado es <b>False</b>.</param>
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.TableOfContents" /> objeto que representa una tabla de contenido agregada a un documento.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -144,7 +123,7 @@
         <param name="AddedStyles">To be added.</param>
         <param name="UseHyperlinks">To be added.</param>
         <param name="HidePageNumbersInWeb">To be added.</param>
-        <summary>Reservado para uso interno.</summary>
+        <summary>Reservado para uso interno. </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -218,7 +197,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -276,9 +255,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -307,34 +286,32 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdTocFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el formato de las tablas de contenido en el documento especificado.</summary>
+        <summary>Devuelve o establece el formato de las tablas de contenido del documento especificado.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTocFormat" />puede ser una de estas constantes <b>WdTocFormat (</b> . </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTocFormat" />puede ser una de estas constantes <b>WdTocFormat</b> . </para>
-          <para>
-            <b>wdTOCDistinctive </b>
+            <b>wdTOCDistinctive</b>
           </para>
           <para>
-            <b>wdTOCFormal </b>
+            <b>wdTOCFormal</b>
           </para>
           <para>
-            <b>wdTOCSimple </b>
+            <b>wdTOCSimple</b>
           </para>
           <para>
-            <b>wdTOCClassic </b>
+            <b>wdTOCClassic</b>
           </para>
           <para>
-            <b>wdTOCFancy </b>
+            <b>wdTOCFancy</b>
           </para>
           <para>
-            <b>wdTOCModern </b>
+            <b>wdTOCModern</b>
           </para>
           <para>
             <b>wdTOCTemplate</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -395,7 +372,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entero</b> que indica la posición ordinal del objeto individual.</param>
+        <param name="Index"><b>Entero</b> que indica la posición ordinal del objeto individual.</param>
         <summary>Devuelve un objeto individual de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -426,15 +403,11 @@
         <Parameter Name="Level" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Requiere <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. Ubicación del elemento. El campo TC se inserta después de <paramref name="Range" />.</param>
-        <param name="Entry">
-          <b>Objeto</b>de opcional. Texto que aparece en la tabla de contenido o tabla de ilustraciones. Para indicar un subelemento, incluya el texto del elemento principal y el del subelemento separados por dos puntos (:), por ejemplo "Introducción: El Producto".</param>
-        <param name="EntryAutoText">
-          <b>Objeto</b>de opcional. El nombre de la entrada de Autotexto que incluye texto para el índice, tabla de ilustraciones o tabla de contenido (<paramref name="Entry" /> se pasa por alto).</param>
-        <param name="TableID">
-          <b>Objeto</b>de opcional. Identificador de una sola letra del elemento de la tabla de ilustraciones o tabla de contenido, por ejemplo "i" para una "ilustración".</param>
-        <param name="Level">
-          <b>Objeto</b>de opcional. Nivel para el elemento de la tabla de contenido o tabla de ilustraciones.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> requerido. Ubicación del elemento. El campo TC se inserta después <paramref name="Range" />de.</param>
+        <param name="Entry"><b>Objeto</b>opcional. Texto que aparece en la tabla de contenido o tabla de ilustraciones. Para indicar un subelemento, incluya el texto del elemento principal y el del subelemento separados por dos puntos (:), por ejemplo "Introducción: El Producto".</param>
+        <param name="EntryAutoText"><b>Objeto</b>opcional. El nombre del elemento de Autotexto que incluye texto para el índice, la tabla de ilustraciones o la tabla<paramref name="Entry" /> de contenido (se pasa por alto).</param>
+        <param name="TableID"><b>Objeto</b>opcional. Identificador de una sola letra del elemento de la tabla de ilustraciones o tabla de contenido, por ejemplo "i" para una "ilustración".</param>
+        <param name="Level"><b>Objeto</b>opcional. Nivel para el elemento de la tabla de contenido o tabla de ilustraciones.</param>
         <summary>Inserta un campo TC (tabla de contenido) después del intervalo especificado. El método devuelve un <see cref="T:Microsoft.Office.Interop.Word.Field" /> objeto que representa el campo TC.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

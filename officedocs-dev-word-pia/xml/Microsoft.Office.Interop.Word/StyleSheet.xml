@@ -1,13 +1,5 @@
 <Type Name="StyleSheet" FullName="Microsoft.Office.Interop.Word.StyleSheet">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="72919b7cdf16361f5caf5cd5a9ed121ce0c8383c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675279" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface StyleSheet" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3e2da0d0a53e0f2e767486bea8385d1ef59128f2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143948" /></Metadata><TypeSignature Language="C#" Value="public interface StyleSheet" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract StyleSheet" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.StyleSheet" />
   <TypeSignature Language="VB.NET" Value="Public Interface StyleSheet" />
@@ -26,14 +18,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa una sola hoja de estilos en cascada adjunta a un documento web.</summary>
-    <remarks>
-      <para>El objeto <b>StyleSheet</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.StyleSheets" /> colección. La colección <b>StyleSheets</b> contiene todas las hojas de estilo en cascada adjuntas al documento especificado.</para>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.StyleSheets.Item(System.Object@)" /> (propiedad) o <b>StyleSheets</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre o número de la hoja de estilos de la colección de <b>hojas de estilo</b> para devolver un objeto <b>StyleSheet</b> .</para>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Index" /> (propiedad) para determinar la prioridad de las hojas de estilos en cascada.</para>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Word.StyleSheet.Move(Microsoft.Office.Interop.Word.WdStyleSheetPrecedence)" /> adjunto de método a ordenar la prioridad de las hojas de estilos.</para>
-      <para />
-    </remarks>
+    <summary>Representa una sola hoja de estilos en cascada adjunta a un documento Web.</summary>
+    <remarks><para>El objeto <b>StyleSheet</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.StyleSheets" /> colección. La colección <b>StyleSheets</b> contiene todas las hojas de estilo en cascada adjuntas al documento especificado.</para>
+      <para>Use la <see cref="P:Microsoft.Office.Interop.Word.StyleSheets.Item(System.Object@)" /> propiedad o <b>las hojas</b>de<paramref name="index" />estilos () <paramref name="index" /> , donde es el nombre o el número de la hoja de <b></b> estilos, de la colección Stylesheets para devolver un objeto <b>StyleSheet</b> .</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Index" /> propiedad para determinar la prioridad de las hojas de estilos en cascada.</para>
+      <para>Use el <see cref="M:Microsoft.Office.Interop.Word.StyleSheet.Move(Microsoft.Office.Interop.Word.WdStyleSheetPrecedence)" /> método para reordenar la prioridad de las hojas de estilo adjuntas.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,9 +79,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -144,10 +134,8 @@
       <Docs>
         <summary>Especifica el nombre de una hoja de estilos en cascada, incluida la unidad o ruta de acceso Web.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Uso de esta propiedad es equivalente a usar el <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Path" />, <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />, y <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Name" /> propiedades en secuencia.</para>
-          <para />
-        </remarks>
+        <remarks><para>Usar esta propiedad es equivalente a usar las <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Path" />propiedades <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />, y <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Name" /> en Sequence.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -173,7 +161,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> que representa la posición de un elemento de una colección.</summary>
+        <summary>Devuelve un <b>entero</b> que representa la posición de un elemento en una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -201,7 +189,7 @@
         <Parameter Name="Precedence" Type="Microsoft.Office.Interop.Word.WdStyleSheetPrecedence" />
       </Parameters>
       <Docs>
-        <param name="Precedence">Requiere <see cref="T:Microsoft.Office.Interop.Word.WdStyleSheetPrecedence" />. Nivel de precedencia. Puede ser una de estas constantes WdStyleSheetPrecedence:<b>wdStyleSheetPrecedenceHigher</b><b>wdStyleSheetPrecedenceHighest valor</b><b>wdStyleSheetPrecedenceLower</b><b>wdStyleSheetPrecedenceLowest</b></param>
+        <param name="Precedence">Es <see cref="T:Microsoft.Office.Interop.Word.WdStyleSheetPrecedence" />obligatorio. Nivel de precedencia. Puede ser una de estas constantes WdStyleSheetPrecedence (:<b>wdStyleSheetPrecedenceHigher</b><b>wdStyleSheetPrecedenceHighest</b><b>wdStyleSheetPrecedenceLower</b><b>wdStyleSheetPrecedenceLowest</b></param>
         <summary>Mueve el orden de precedencia de una hoja de estilos.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -287,12 +275,10 @@
       <Docs>
         <summary>Devuelve el disco o la ruta de acceso Web al objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La ruta de acceso no incluye un carácter final, por ejemplo, "C:\MSOffice" o "http://MyServer". Usar el <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> (propiedad) para agregar el carácter que separa carpetas y letras de unidad. Usar el <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Name" /> (propiedad) para devolver el nombre de archivo sin la ruta de acceso y el uso del <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.FullName" /> propiedad para devolver el nombre de archivo y la ruta de acceso conjuntamente.</para>
+        <remarks><para>La ruta de acceso no incluye un carácter final, por ejemplo, "C:\MSOffice" o "http://MyServer". Use la <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> propiedad para agregar el carácter que separa carpetas y Letras de unidad. Utilice la <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Name" /> propiedad para devolver el nombre de archivo sin la ruta de acceso <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.FullName" /> y use la propiedad para devolver juntos el nombre de archivo y la ruta de acceso.</para>
           <para>
-            <b>Nota</b> puede utilizar la propiedad <b>PathSeparator</b> para crear direcciones Web aunque contengan barras diagonales (/) y la propiedad <b>PathSeparator</b> el valor predeterminado es una barra diagonal inversa (\).</para>
-          <para />
-        </remarks>
+            <b>Nota:</b>  Puede usar la propiedad <b>PathSeparator</b> para crear direcciones web, aunque contengan barras diagonales (/) y el valor predeterminado de la propiedad <b>PathSeparator</b> sea una barra\)diagonal inversa (.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -354,9 +340,8 @@
       <Docs>
         <summary>Devuelve el tipo de plantilla.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTemplateType" />puede ser una de las constantes siguientes:</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTemplateType" />. puede ser una de las siguientes constantes:</para>
           <para>
             <b>wdAttachedTemplate</b>
           </para>
@@ -366,8 +351,7 @@
           <para>
             <b>wdNormalTemplate</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

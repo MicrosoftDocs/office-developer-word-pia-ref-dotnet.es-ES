@@ -1,13 +1,5 @@
 <Type Name="SmartTagRecognizer" FullName="Microsoft.Office.Interop.Word.SmartTagRecognizer">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a1596270bff23eea1f59ab9bdc76d1e9433b328f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674285" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTagRecognizer" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4f6682dbac9852e24913ff87211561eae8bef090" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143983" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagRecognizer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagRecognizer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagRecognizer" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Representa componentes instalados que etiquetan texto con tipos de información.</summary>
-    <remarks>
-      <para>El componente de etiqueta inteligente de dirección (en inglés) contiene reconocedores de calle, ciudad, estado y código postal, entre otros elementos relacionados de direcciones. Cuando un usuario activa un componente instalado, ya sea mediante código o mediante el uso de la ficha etiquetas inteligentes en el cuadro de diálogo Autocorrección, Microsoft Word etiqueta el texto que coincide con estos elementos en un documento.</para>
+    <remarks><para>El componente de etiqueta inteligente dirección (Inglés) contiene reconocedores de la calle, ciudad, estado y código postal, entre otros elementos relacionados con la dirección. Cuando un usuario activa un componente instalado, ya sea mediante código o mediante la ficha etiquetas inteligentes en el cuadro de diálogo Autocorrección, Microsoft Word etiqueta el texto que coincide con estos elementos en un documento.</para>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />, <see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" />, y <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> objetos están relacionados ya que cada elemento reconocido por un componente de etiqueta inteligente es un objeto <b>SmartTagType</b> . Por ejemplo, "city" en el componente de etiqueta inteligente dirección es un objeto <b>SmartTagType</b> específico. El tipo de etiqueta inteligente de ciudad está en relación con objetos <b>SmartTagRecognizer</b> (la parte del componente de etiqueta inteligente que reconoce etiquetas inteligentes del tipo "ciudad" en los documentos) y objetos <b>SmartTagAction</b> (la parte del componente de etiqueta inteligente que proporciona las acciones relacionadas con el tipo de etiqueta inteligente específico, que puede incluir buscar una ciudad conocida en Microsoft MapPoint en MSN). En términos simples, el reconocedor realiza el etiquetado, el controlador de acciones proporciona funcionalidad para el usuario final y el nexo de unión es el tipo de etiqueta inteligente que trabajan.</para>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.SmartTagRecognizers.Item(System.Object@)" /> (método) de la <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizers" /> colección para devolver un solo objeto <b>SmartTagRecognizer</b> . Cuando haya obtenido un objeto <b>SmartTagRecognizer</b> , puede determinar si los reconocedores de etiquetas inteligentes están habilitados para la aplicación.</para>
-      <para />
-    </remarks>
+        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />, <see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" />y <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> los objetos están relacionados en que cada elemento reconocido por un componente de etiqueta inteligente es un objeto <b>SmartTagType</b> . Por ejemplo, "ciudad" en el componente de etiqueta inteligente Dirección es un objeto <b>SmartTagType</b> específico. El tipo de etiqueta inteligente de ciudad está en relación con objetos <b>SmartTagRecognizer</b> (la parte del componente de etiqueta inteligente que reconoce etiquetas inteligentes del tipo "ciudad" de los documentos) y objetos <b>SmartTagAction</b> (la parte de ese mismo componente que proporciona las acciones relacionadas con el tipo de etiqueta específico, entre las que se puede incluir buscar una ciudad conocida en Microsoft MapPoint en MSN). En pocas palabras, el reconocedor realiza la etiqueta, el controlador de acciones proporciona funciones de usuario final y lo que los une es el tipo de etiqueta inteligente con el que trabajan.</para>
+      <para>Utilice el <see cref="P:Microsoft.Office.Interop.Word.SmartTagRecognizers.Item(System.Object@)" /> método de la <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizers" /> colección para devolver un solo objeto <b>SmartTagRecognizer</b> . Una vez devuelto un objeto <b>SmartTagRecognizer</b>, puede determinar si los reconocedores de etiquetas inteligentes están habilitados para la aplicación.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,7 +83,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve la etiqueta que identifica el reconocedor de etiqueta inteligente especificada.</summary>
+        <summary>Devuelve la etiqueta que identifica el reconocedor de etiquetas inteligentes especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -126,9 +116,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -163,8 +153,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si reconocedor de etiquetas de un inteligentes está habilitado.</summary>
+        <summary><b>True</b> si está habilitado un reconocedor de etiquetas inteligentes.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -259,10 +248,8 @@
       <Docs>
         <summary>Obtiene el identificador de programación (ProgID) del objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Intercambio dinámico de datos (DDE) es una tecnología antigua que no es segura. Si es posible, utilice una alternativa a DDE más segura.</para>
-          <para />
-        </remarks>
+        <remarks><para>El intercambio dinámico de datos (DDE) es una tecnología más antigua que no es segura. Si es posible, use una alternativa más segura a DDE.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

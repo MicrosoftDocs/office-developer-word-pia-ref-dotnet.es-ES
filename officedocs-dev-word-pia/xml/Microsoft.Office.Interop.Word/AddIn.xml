@@ -1,13 +1,5 @@
 <Type Name="AddIn" FullName="Microsoft.Office.Interop.Word.AddIn">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="eca0625fe8de93d38c8fe893e6a66c3f0bf7b440" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674298" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AddIn" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="695249a505a14baf5625853d5db3725ed54c358e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144676" /></Metadata><TypeSignature Language="C#" Value="public interface AddIn" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddIn" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AddIn" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddIn" />
@@ -27,15 +19,13 @@
   </Attributes>
   <Docs>
     <summary>Representa un solo complemento, tanto si está instalado como si no.</summary>
-    <remarks>
-      <para>El objeto <b>AddIn</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> colección. La colección <b>AddIns</b> contiene todos los complementos disponibles en Microsoft Word, independientemente de si están cargadas actualmente. La colección <b>AddIns</b> incluye las plantillas globales o las bibliotecas de complementos de Word (WLL) que se muestra en el cuadro de diálogo Plantillas y complementos (menú Herramientas).</para>
-      <para>Uso <b>AddIns</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de inicio o el número de índice, para devolver un solo objeto <b>AddIn</b> . Deben coincidir exactamente con la ortografía (pero no necesariamente las mayúsculas y minúsculas) del nombre, como se muestra en el cuadro de diálogo Plantillas y complementos.</para>
+    <remarks><para>El objeto <b>AddIn</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> colección. La colección <b>AddIns</b> contiene todos los complementos disponibles en Microsoft Word, independientemente de si están cargados actualmente o no. La colección <b>AddIns</b> incluye las plantillas globales o las bibliotecas de complementos (WLL) de Word que se muestran en el cuadro de diálogo Plantillas y complementos (menú herramientas).</para>
+      <para>Use <b>AddIns</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre del complemento o el número de índice, para devolver un solo objeto <b>AddIn</b> . Debe coincidir exactamente con la ortografía (pero no necesariamente las mayúsculas y minúsculas) del nombre, como se muestra en el cuadro de diálogo Plantillas y complementos.</para>
       <para>El número de índice representa la posición del complemento en la lista de complementos en el cuadro de diálogo Plantillas y complementos.</para>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> método para agregar un complemento a la lista de complementos disponibles y (opcionalmente) instalarlo mediante el <paramref name="Install" /> argumento.</para>
-      <para>Para instalar un complemento que se muestra en la lista de complementos disponibles, use la <see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> (propiedad).</para>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" /> (propiedad) para determinar si un objeto <b>AddIn</b> es una plantilla o una biblioteca WLL.</para>
-      <para />
-    </remarks>
+      <para>Use el <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> método para agregar un complemento a la lista de complementos disponibles y, opcionalmente, instalarlo mediante el <paramref name="Install" /> argumento.</para>
+      <para>Para instalar un complemento que se muestra en la lista de complementos disponibles, use la <see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> propiedad.</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" /> propiedad para determinar si un objeto <b>AddIn</b> es una plantilla o una biblioteca WLL.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa el creador del objeto especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa al creador del objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,12 +79,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un valor que indica si el complemento especificado se carga automáticamente cuando se inicia Microsoft Word.</summary>
+        <summary>Devuelve un valor que indica si el complemento especificado se carga automáticamente al iniciar Microsoft Word.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Los complementos que se encuentra en la carpeta de inicio en la carpeta del programa Word se cargan automáticamente.</para>
-          <para />
-        </remarks>
+        <remarks><para>Complementos ubicados en la carpeta de inicio en la carpeta del programa Word se cargan automáticamente.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Compiled">
@@ -120,12 +108,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un valor que indica si el complemento especificado es una biblioteca de complemento de Microsoft Word (WLL).</summary>
+        <summary>Devuelve un valor que indica si el complemento especificado es una biblioteca de complementos de Microsoft Word (WLL).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el complemento especificado no es una biblioteca WLL, es una plantilla.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si el complemento especificado no es un WLL, es una plantilla.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -153,9 +139,9 @@
       <Docs>
         <summary>Devuelve un valor que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -179,7 +165,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Elimina el especificado <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> objeto.</summary>
+        <summary>Elimina el objeto especificado <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> .</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,7 +192,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un valor que representa la posición de un elemento de un <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> colección.</summary>
+        <summary>Devuelve un valor que representa la posición de un elemento en una <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -237,11 +223,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor que indica <b>True</b> si el complemento especificado está instalado (cargado).</summary>
+        <summary>Devuelve o establece un valor que indica <b>true</b> si el complemento especificado está instalado (cargado).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Los complementos que se cargan se seleccionan en el cuadro de diálogo Plantillas y complementos (menú Herramientas).</para> Complementos de 
-          <para>desinstalado se incluyen en el <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> colección. Para quitar una plantilla o una biblioteca WLL de la colección <b>AddIns</b> , aplique el <see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" /> (método) a la <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> objeto (el nombre del complemento se quita del cuadro de diálogo Plantillas y complementos). Para descargar todas las plantillas y bibliotecas WLL, aplique el <see cref="M:Microsoft.Office.Interop.Word.AddIns.Unload(System.Boolean)" /> (método) a la colección <b>AddIns</b> .</para><para /></remarks>
+        <remarks><para>Los complementos que están cargados se encuentran seleccionados en el cuadro de diálogo Plantillas y complementos (menú Herramientas).</para>
+          <para>Los complementos desinstalados se incluyen en la <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> colección. Para quitar una plantilla o una biblioteca WLL de la colección <b>AddIns</b> , <see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" /> aplique el método <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> al objeto (el nombre del complemento se quita del cuadro de diálogo Plantillas y complementos). Para descargar todas las plantillas y bibliotecas WLL, <see cref="M:Microsoft.Office.Interop.Word.AddIns.Unload(System.Boolean)" /> aplique el método a la colección <b>AddIns</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -267,7 +253,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un valor que indica el nombre del especificado <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> objeto.</summary>
+        <summary>Devuelve un valor que indica el nombre del objeto especificado <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> .</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -295,7 +281,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un valor que representa el objeto primario del especificado <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> objeto.</summary>
+        <summary>Devuelve un valor que representa el objeto primario del objeto especificado <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> .</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -323,12 +309,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un valor que indica la dirección URL de especificado <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> objeto.</summary>
+        <summary>Devuelve un valor que indica la dirección URL del objeto <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La ruta de acceso no incluye un carácter de barra diagonal final — por ejemplo, "http://MyServer". Usar el <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.PathSeparator" /> (propiedad) para agregar una barra diagonal de caracteres, aunque el valor predeterminado es la propiedad <b>PathSeparator</b> para una barra diagonal inversa (\).</para>
-          <para />
-        </remarks>
+        <remarks><para>La ruta de acceso no incluye un carácter de barra diagonal hacia delante al finalhttp://MyServer; por ejemplo, "". Utilice la <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.PathSeparator" /> propiedad para agregar un carácter de barra diagonal hacia la derecha, aunque el valor predeterminado de la propiedad <b>PathSeparator</b> sea\)una barra diagonal inversa (.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="DiagramNode" FullName="Microsoft.Office.Interop.Word.DiagramNode">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="781ae7dde743bb26d8b688f166e2d47c3047c43d" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674416" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DiagramNode" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9738bbfbf5c67a83fbc7807283833051a5fadce7" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147098" /></Metadata><TypeSignature Language="C#" Value="public interface DiagramNode" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DiagramNode" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DiagramNode" />
   <TypeSignature Language="VB.NET" Value="Public Interface DiagramNode" />
@@ -26,10 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa un nodo de diagrama en un diagrama.</summary>
-    <remarks>
-      <para>El objeto <b>DiagramNode</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.DiagramNodes" /> colección.</para> Propiedad 
-      <para>el <b>DiagramNode</b> de uso de la <see cref="T:Microsoft.Office.Interop.Word.Shape" /> o <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> objeto para devolver un objeto <b>DiagramNode</b> . Usar el <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" /> método para agregar un nodo a un diagrama.</para><para>Usar la <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.Delete" /> método para quitar un nodo de un diagrama.</para><para /></remarks>
+    <summary>Representa un solo nodo de diagrama en un diagrama.</summary>
+    <remarks><para>El objeto <b>DiagramNode</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.DiagramNodes" /> colección.</para>
+      <para>Utilice la propiedad <b>DiagramNode</b> del objeto <see cref="T:Microsoft.Office.Interop.Word.Shape" /> or <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> para devolver un objeto <b>DiagramNode</b> . Utilice el <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" /> método para agregar un nodo a un diagrama.</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.Delete" /> método para quitar un nodo de un diagrama.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNode">
@@ -55,9 +48,9 @@
         <Parameter Name="NodeType" Type="Microsoft.Office.Core.MsoDiagramNodeType" />
       </Parameters>
       <Docs>
-        <param name="Pos">Opcional <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. Especifica dónde se agregará el nodo con respecto al nodo de llamada.</param>
+        <param name="Pos">Opcional <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. Especifica dónde se agregará el nodo en relación con el nodo de llamada.</param>
         <param name="NodeType">Opcional <see cref="T:Microsoft.Office.Core.MsoDiagramNodeType" />. Especifica el tipo de nodo.</param>
-        <summary>Crea un nodo de diagrama, devolviendo un <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> object que representa el nuevo nodo de diagrama. Para los diagramas conceptuales, el objeto <b>DiagramNode</b> se agrega al final de la lista de formas.</summary>
+        <summary>Crea un nodo de diagrama, que <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> devuelve un objeto que representa el nuevo nodo de diagrama. Para los diagramas conceptuales, el objeto <b>DiagramNode</b> se agrega al final de la lista de formas.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,7 +106,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.DiagramNodeChildren</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.DiagramNodeChildren" /> object que contiene todos los elementos secundarios del nodo de diagrama especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.DiagramNodeChildren" /> objeto que contiene todos los elementos secundarios del nodo de diagrama especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -142,10 +135,10 @@
         <Parameter Name="Pos" Type="Microsoft.Office.Core.MsoRelativeNodePosition" />
       </Parameters>
       <Docs>
-        <param name="copyChildren">Requerido de <b>tipo Boolean</b>. True para clonar a también los secundarios del nodo de diagrama.</param>
-        <param name="TargetNode">Objeto <b>DiagramNode</b> opcional. El nodo donde se colocará el nuevo nodo.</param>
-        <param name="Pos">Opcional <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. Si <paramref name="TargetNode" /> se especifica, indica dónde se agregará el nodo relativa a <paramref name="TargetNode" />.</param>
-        <summary>Clona un nodo de diagrama especificado. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> object que representa el clon.</summary>
+        <param name="copyChildren"><b>Boolean</b> obligatorio. True para clonar también los elementos secundarios del nodo de diagrama.</param>
+        <param name="TargetNode">Objeto <b>DiagramNode</b> opcional. Nodo donde se colocará el nuevo nodo.</param>
+        <param name="Pos">Opcional <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. Si <paramref name="TargetNode" /> se especifica, indica el lugar en el que se agregará <paramref name="TargetNode" />el nodo con relación a.</param>
+        <summary>Clona un nodo de diagrama especificado. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> objeto Object que representa el clon.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -175,9 +168,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Por ejemplo, si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Por ejemplo, si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -228,7 +221,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Diagram</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Diagram" /> de objeto al que pertenece un nodo de diagrama.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Diagram" /> objeto al que pertenece un nodo de diagrama.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -259,7 +252,7 @@
         <ReturnType>Microsoft.Office.Core.MsoOrgChartLayoutType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Core.MsoOrgChartLayoutType" /> constante que indica el formato de los nodos secundarios de un organigrama.</summary>
+        <summary>Devuelve o establece una <see cref="T:Microsoft.Office.Core.MsoOrgChartLayoutType" /> constante que indica el formato de los nodos secundarios en un organigrama.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -288,8 +281,8 @@
         <Parameter Name="Pos" Type="Microsoft.Office.Core.MsoRelativeNodePosition" />
       </Parameters>
       <Docs>
-        <param name="TargetNode">Requiere <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> objeto. El nodo de diagrama donde se moverá el nodo especificado.</param>
-        <param name="Pos">Requiere <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. Especifica dónde se agregará el nodo relativa a <paramref name="TargetNode" />.</param>
+        <param name="TargetNode">Objeto <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> requerido. Nodo de diagrama en el que se moverá el nodo especificado.</param>
+        <param name="Pos">Es <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />obligatorio. Especifica el lugar al que se agregará el <paramref name="TargetNode" />nodo en relación con.</param>
         <summary>Mueve un nodo de diagrama y cualquiera de sus nodos secundarios dentro de un diagrama.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -315,12 +308,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Devuelve el siguiente <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> objeto en una colección de nodos de diagrama.</summary>
+        <summary>Devuelve el siguiente <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> objeto de una colección de nodos de diagrama.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.PrevNode" /> método para devolver el objeto <b>DiagramNode</b> anterior de una colección de nodos de diagrama.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.PrevNode" /> método para devolver el objeto <b>DiagramNode</b> anterior en una colección de nodos de diagrama.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -372,12 +363,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> object que representa el nodo de diagrama anterior en una colección de nodos de diagrama.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> objeto Object que representa el nodo de diagrama anterior de una colección de nodos de diagrama.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.NextNode" /> método para devolver el siguiente objeto <b>DiagramNode</b> de un conjunto de nodos de diagrama.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.NextNode" /> método para devolver el siguiente objeto <b>DiagramNode</b> en una colección de nodos de diagrama.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReplaceNode">
@@ -403,12 +392,10 @@
         <Parameter Name="TargetNode" Type="Microsoft.Office.Interop.Word.DiagramNode&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="TargetNode">Requiere <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> objeto. El nodo de diagrama se reemplazará.</param>
-        <summary>Reemplaza un nodo de diagrama de destino con el nodo de diagrama de origen.</summary>
-        <remarks>
-          <para>Se elimina el nodo de diagrama de destino y el nodo de diagrama de origen, incluido cualquiera de sus nodos secundarios, se mueven en la que se encontraba el nodo de diagrama de destino.</para>
-          <para />
-        </remarks>
+        <param name="TargetNode">Objeto <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> requerido. Nodo de diagrama que se va a reemplazar.</param>
+        <summary>Reemplaza un nodo de diagrama de destino por el nodo de diagrama de origen.</summary>
+        <remarks><para>El nodo de diagrama de destino se elimina y el nodo de diagrama de origen, incluidos todos sus nodos secundarios, se mueven a donde estaba el nodo de diagrama de destino.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Root">
@@ -434,7 +421,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.DiagramNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> object que representa el nodo de diagrama raíz al que pertenece el nodo de diagrama de origen.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> objeto Object que representa el nodo de diagrama raíz al que pertenece el nodo de diagrama de origen.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -490,13 +477,11 @@
         <Parameter Name="Pos" Type="Microsoft.Office.Core.MsoRelativeNodePosition" />
       </Parameters>
       <Docs>
-        <param name="TargetNode">Requiere <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> objeto. El nodo con el que se va a intercambiar.</param>
-        <param name="Pos">Opcional <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. La posición del nodo con respecto al nodo con el que se va a intercambiar.</param>
+        <param name="TargetNode">Objeto <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> requerido. Nodo con el que se va a intercambiar.</param>
+        <param name="Pos">Opcional <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. Posición del nodo con respecto al nodo con el que se está intercambiando.</param>
         <summary>Intercambia el nodo de diagrama de destino con el nodo de diagrama de origen.</summary>
-        <remarks>
-          <para>Los nodos de diagrama secundarios se mueven junto con sus nodos raíz correspondientes.</para>
-          <para />
-        </remarks>
+        <remarks><para>Los nodos de diagramas secundarios se mueven junto con los nodos raíz correspondientes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextShape">
@@ -522,7 +507,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto que representa la forma del cuadro de texto asociado con un nodo de diagrama.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto Object que representa la forma del cuadro de texto asociado a un nodo de diagrama.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -550,7 +535,7 @@
         <Parameter Name="ReceivingNode" Type="Microsoft.Office.Interop.Word.DiagramNode&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="ReceivingNode">Requiere <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> objeto. El nodo que se va a transferir los nodos secundarios.</param>
+        <param name="ReceivingNode">Objeto <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> requerido. Nodo al que se van a transferir los nodos secundarios.</param>
         <summary>Mueve los nodos secundarios del nodo de diagrama de origen al nodo de diagrama de destino (receptor).</summary>
         <remarks>To be added.</remarks>
       </Docs>

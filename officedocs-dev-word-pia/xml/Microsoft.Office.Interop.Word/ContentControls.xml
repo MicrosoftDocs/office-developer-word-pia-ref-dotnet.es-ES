@@ -1,13 +1,5 @@
 <Type Name="ContentControls" FullName="Microsoft.Office.Interop.Word.ContentControls">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2a6fe745ee4c6ef85a6a96c2f41f77a80cbd76ed" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675504" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ContentControls : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3cda051fb250a0a8e28df389d60e93ae84593df0" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147166" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControls : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ContentControls implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ContentControls" />
   <TypeSignature Language="VB.NET" Value="Public Interface ContentControls&#xA;Implements IEnumerable" />
@@ -31,9 +23,9 @@
   </Attributes>
   <Docs>
     <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> objetos.  Los controles de contenido son regiones delimitadas y posiblemente con etiquetas de un documento que funcionan como contenedores para tipos específicos de contenido. Los controles de contenido individuales pueden incluir contenido como fechas, listas o párrafos de texto con formato.</summary>
-    <remarks>
-      <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" /> (método) para crear un nuevo control de contenido e insertar en un documento.</para> Uso de 
-      <para>el <see cref="P:Microsoft.Office.Interop.Word.ContentControls.Item(System.Object@)" /> (método) para tener acceso a un control de contenido específico de la colección. Usar el <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> objeto para trabajar con controles de contenido individuales. Para obtener más información, vea <a href="HV10107832">trabajar con controles de contenido</a></para><para /></remarks>
+    <remarks><para>Use el <see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" /> método para crear un nuevo control de contenido e insertarlo en un documento.</para>
+      <para>Utilice el <see cref="P:Microsoft.Office.Interop.Word.ContentControls.Item(System.Object@)" /> método para tener acceso a un control de contenido específico de la colección. Use el <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> objeto para trabajar con controles de contenido individuales. Para obtener más información, vea <a href="HV10107832">trabajar con controles de contenido</a></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -59,16 +51,12 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Type">Especifica el tipo de control de contenido que se va a insertar en el documento activo. Si se omite, Microsoft Office Word inserta un control de contenido de texto enriquecido.</param>
+        <param name="Type">Especifica el tipo de control de contenido que se debe insertar en el documento activo. Si se omite, Microsoft Office Word inserta un control de contenido de texto enriquecido.</param>
         <param name="Range">Especifica el lugar del documento activo en el que se debe colocar el control de contenido. Si se omite, Word coloca el control en la posición del punto de inserción o reemplaza la selección actual.</param>
-        <summary>Agrega un nuevo control de contenido, del tipo especificado en el documento activo y devuelve un <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> object que representa el nuevo control de contenido.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.ContentControl" />
-        </returns>
-        <remarks>
-          <para>Puede anidar los controles de contenido dentro de los controles de contenido de texto enriquecido, controles de contenido de galería de bloques de creación y controles de contenido de grupo.  Si el punto de inserción o la selección actual está dentro de un control de contenido de un tipo diferente, este método genera un error.  En este caso, puede mover el punto de inserción o usar el <paramref name="Range" /> parámetro para especificar una ubicación dentro del documento.</para>
-          <para />
-        </remarks>
+        <summary>Agrega un nuevo control de contenido, del tipo especificado, al documento activo y devuelve un <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> objeto Object que representa el nuevo control de contenido.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.ContentControl" /></returns>
+        <remarks><para>Los controles de contenido sólo se pueden anidar dentro de controles de contenido de texto enriquecido, controles de contenido de galerías de bloques de creación y controles de contenido de grupo.  Si el punto de inserción o la selección actual se encuentran dentro de un control de contenido de otro tipo, este método produce un error.  En este caso, puede mover el punto de inserción o usar el <paramref name="Range" /> parámetro para especificar una ubicación dentro del documento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -94,10 +82,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa la aplicación Microsoft Word.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,10 +110,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el número de elementos en el <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> colección. Es de solo lectura</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Devuelve el número de elementos de la <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> colección. Solo lectura.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,16 +138,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el complemento. Es de solo lectura</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, la propiedad <b>Creator</b> devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el complemento. Solo lectura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Si el objeto se creó en Microsoft Word, la propiedad <b>Creator</b> devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
           <para>
-            <b>Nota</b>: este valor también puede representarse mediante la constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
-          <para />
-        </remarks>
+            <b>Nota</b>: este valor también puede representarse mediante la <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />constante.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -225,10 +205,8 @@
       </Parameters>
       <Docs>
         <param name="Index">Especifica la posición ordinal del control de contenido que se debe devolver.</param>
-        <summary>Devuelve el control de contenido especificado dentro de la colección de controles de contenido en un documento.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ContentControl" />
-        </value>
+        <summary>Devuelve el control de contenido especificado dentro de la colección de controles de contenido de un documento.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ContentControl" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,10 +233,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario de la <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> objeto.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve el objeto primario del <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> objeto.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

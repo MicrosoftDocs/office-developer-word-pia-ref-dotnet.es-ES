@@ -1,13 +1,5 @@
 <Type Name="OtherCorrectionsException" FullName="Microsoft.Office.Interop.Word.OtherCorrectionsException">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e186e6e8e85e147427b61c8a653479e1f59b6e02" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674743" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OtherCorrectionsException" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2fac51f3d9d305116cf8247fe9c821060c032481" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144249" /></Metadata><TypeSignature Language="C#" Value="public interface OtherCorrectionsException" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OtherCorrectionsException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OtherCorrectionsException" />
   <TypeSignature Language="VB.NET" Value="Public Interface OtherCorrectionsException" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Representa una sola excepción de Autocorrección.</summary>
-    <remarks>
-      <para>El objeto <b>OtherCorrectionsException</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.OtherCorrectionsExceptions" /> colección. La colección <b>OtherCorrectionsExceptions</b> incluye todas las palabras que Microsoft Word no corrige automáticamente. Esta lista corresponde a la lista de excepciones de Autocorrección en la ficha otras correcciones en el cuadro de diálogo excepciones de Autocorrección (comando Autocorrección, menú Herramientas).</para>
-      <para>Uso <b>OtherCorrectionsExceptions</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la excepción de Autocorrección o el número de índice, para devolver un solo objeto <b>OtherCorrectionsException</b> .</para>
-      <para>El número de índice representa la posición de la excepción de Autocorrección en la colección <b>OtherCorrectionsExceptions</b> .</para>
-      <para>Si el valor de la <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.OtherCorrectionsAutoAdd" /> propiedad es <b>True</b>, las palabras se agregan automáticamente a la lista de excepciones de Autocorrección. Usar el <see cref="M:Microsoft.Office.Interop.Word.OtherCorrectionsExceptions.Add(System.String)" /> método para agregar un elemento a la colección <b>OtherCorrectionsExceptions</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>El objeto <b>OtherCorrectionsException</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.OtherCorrectionsExceptions" /> colección. La colección <b>OtherCorrectionsExceptions</b> incluye todas las palabras que Microsoft Word no corregirá automáticamente. Esta lista se corresponde con la lista de excepciones de Autocorrección en la ficha otras correcciones en el cuadro de diálogo excepciones de Autocorrección (comando Autocorrección, menú herramientas).</para>
+      <para>Utilice <b>OtherCorrectionsExceptions</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la excepción de Autocorrección o el número de índice, para devolver un solo objeto <b>OtherCorrectionsException</b> .</para>
+      <para>El número de índice representa la posición de la excepción de Autocorrección en la colección <b>OtherCorrectionsExceptions</b>.</para>
+      <para>Si el valor de la <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.OtherCorrectionsAutoAdd" /> propiedad es <b>true</b>, las palabras se agregan automáticamente a la lista de excepciones de Autocorrección. Utilice el <see cref="M:Microsoft.Office.Interop.Word.OtherCorrectionsExceptions.Add(System.String)" /> método para agregar un elemento a la colección <b>OtherCorrectionsExceptions</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,9 +79,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número complejo hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el Núm_complejo hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -142,7 +132,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> que representa la posición de un elemento de una colección.</summary>
+        <summary>Devuelve un <b>entero</b> que representa la posición de un elemento en una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="DropDown" FullName="Microsoft.Office.Interop.Word.DropDown">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d1aa9b15f2b37ab9a12aa1f385ead515fc2994b0" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674561" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DropDown" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="657342fc0405fbd6f204e36ef3b45bfddf99d76e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144578" /></Metadata><TypeSignature Language="C#" Value="public interface DropDown" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DropDown" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DropDown" />
   <TypeSignature Language="VB.NET" Value="Public Interface DropDown" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Representa un campo de formulario desplegable que contiene una lista de los elementos de un formulario.</summary>
-    <remarks>
-      <para>Utilice la <b>sintaxis FormFields</b>(<paramref name="index" />), donde índice es el número de índice o el nombre del marcador asociado al campo de formulario desplegable, para devolver un solo <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objeto. Usar el <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" /> propiedad con el objeto <b>FormField</b> para devolver un objeto <b>DropDown</b> .</para>
-      <para>El número de índice representa la posición del campo de formulario en el <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> colección.</para>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> método con la colección <b>FormFields</b> para agregar un campo de formulario desplegable.</para>
-      <para />
-    </remarks>
+    <remarks><para>Utilice <b>FormFields</b>(<paramref name="index" />), donde index es el número de índice o el nombre del marcador asociado al campo de formulario desplegable, para devolver un <see cref="T:Microsoft.Office.Interop.Word.FormField" /> solo objeto. Utilice la <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" /> propiedad con el objeto <b>FormField</b> para devolver un objeto <b>DropDown</b> .</para>
+      <para>El número de índice representa la posición del campo de formulario en <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> la colección.</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> método con la colección <b>FormFields</b> para agregar un campo de formulario desplegable.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,9 +78,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -121,10 +111,8 @@
       <Docs>
         <summary>Devuelve o establece el elemento de lista desplegable predeterminado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El primer elemento de un campo de formulario desplegable es 1, el segundo elemento es 2 y así sucesivamente.</para>
-          <para />
-        </remarks>
+        <remarks><para>El primer elemento de un campo de formulario desplegable es 1, el segundo elemento es 2, etc.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListEntries">
@@ -150,7 +138,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ListEntries" /> colección que representa todos los elementos en una <see cref="T:Microsoft.Office.Interop.Word.DropDown" /> objeto.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.ListEntries" /> colección que representa todos los elementos de un <see cref="T:Microsoft.Office.Interop.Word.DropDown" /> objeto.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -208,11 +196,9 @@
       <Docs>
         <summary>Determina si el objeto de campo de formulario especificado es un campo de formulario de casilla de verificación válido.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad devuelve <b>True</b> si el objeto de campo de formulario especificado es un campo de formulario de casilla de verificación válido y <b>False</b> si no.</para>
-          <para>Para el <see cref="T:Microsoft.Office.Interop.Word.CheckBox" />, <see cref="T:Microsoft.Office.Interop.Word.DropDown" />, y <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> objetos, use la <see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objeto para determinar el tipo de campo de formulario (<b>wdFieldFormCheckBox</b>, <b>wdFieldFormDropDown</b>o <b>wdFieldFormTextInput</b>) antes de aplicar el <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" />, <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" />, o <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> (propiedad). Esta precaución asegura que el objeto <b>FormField</b> sea del tipo esperado.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta propiedad devuelve <b>true</b> si el objeto de campo de formulario especificado es un campo de formulario de casilla de verificación válido y <b>false</b> en caso contrario.</para>
+          <para>Para los <see cref="T:Microsoft.Office.Interop.Word.CheckBox" />objetos <see cref="T:Microsoft.Office.Interop.Word.DropDown" />, y <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> , <see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> use la propiedad del <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objeto para determinar el tipo de campo de formulario (<b>wdFieldFormCheckBox</b>, <b>wdFieldFormDropDown</b>o <b>wdFieldFormTextInput</b>) antes de aplicarlo. la <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" />propiedad <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" />, o <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> . Esta precaución garantiza que el objeto <b>FormField</b> sea del tipo esperado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">

@@ -1,13 +1,5 @@
 <Type Name="ChartGroups" FullName="Microsoft.Office.Interop.Word.ChartGroups">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c1eae1ad84eba37ae4a3a9946acbcb5c23a1752c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675169" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartGroups : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8bebc47132f81850e7ac6d28b26efb7bbad92e07" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142253" /></Metadata><TypeSignature Language="C#" Value="public interface ChartGroups : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartGroups implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ChartGroups" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartGroups&#xA;Implements IEnumerable" />
@@ -31,12 +23,10 @@
   </Attributes>
   <Docs>
     <summary>Representa una o varias series trazadas en un gráfico empleando el mismo formato.</summary>
-    <remarks>
-      <para>A <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> colección es una colección de todos los <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objetos del gráfico especificado.  Un gráfico contiene uno o más grupos de gráficos, cada grupo de gráficos contiene una o más series y cada serie contiene uno o varios puntos. Por ejemplo, un único gráfico podría contener un grupo de gráficos de líneas, que contiene todas las series trazadas con el formato de gráfico de líneas y un grupo de gráficos de barras, que contiene todas las series trazadas con el formato de gráfico de barras.</para>
-      <para>Usar la <see cref="P:Microsoft.Office.Interop.Word.Chart.ChartGroups(System.Object)" /> propiedad para devolver el <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> colección.</para>
-      <para>Use <b>ChartGroups</b>(<paramref name="index" />), donde <paramref name="Index" /> es el número de índice del grupo de gráficos, para devolver un solo <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto.</para>
-      <para />
-    </remarks>
+    <remarks><para>Una <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> colección es una colección de todos los <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objetos del gráfico especificado.  Un gráfico contiene uno o más grupos de gráficos, cada grupo de gráficos contiene una o más series y cada serie contiene uno o varios puntos. Por ejemplo, un único gráfico podría contener un grupo de gráficos de línea, que contiene todas las series trazadas con el formato de gráfico de líneas y un grupo de gráficos de barras, que contiene todas las series trazadas con el formato de gráfico de barras.</para>
+      <para>Use la <see cref="P:Microsoft.Office.Interop.Word.Chart.ChartGroups(System.Object)" /> propiedad para devolver la <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> colección. </para>
+      <para>Use <b>ChartGroups</b>(<paramref name="index" />), donde <paramref name="Index" /> es el número de índice del grupo de gráficos, para <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> devolver un solo objeto. </para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,10 +52,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa la aplicación Microsoft Word. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto). Solo lectura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Cuando se usa sin un calificador de objeto, esta <see cref="T:Microsoft.Office.Interop.Word._Application" /> propiedad devuelve un objeto que representa la aplicación Microsoft Word. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto). Solo lectura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,9 +81,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve un <b>entero</b> que representa el número de objetos de la colección.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,14 +109,10 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve un <b>entero</b> de 32 bits que indica la aplicación en la que se creó el objeto especificado. Solo lectura</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, la propiedad <b>Creator</b> devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
-          <para>Esta propiedad se ha diseñado principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>Si el objeto se creó en Microsoft Word, la propiedad <b>Creator</b> devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />constante.</para>
+          <para>Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -191,11 +173,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Requiere el <b>objeto</b> especifica la posición ordinal del objeto dentro de la colección.</param>
+        <param name="Index">Required <b>Object</b> especifica la posición ordinal del objeto dentro de la colección.</param>
         <summary>Devuelve un elemento especificado de la colección.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -222,10 +202,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve al objeto primario del objeto especificado. Es de solo lectura</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve al objeto primario del objeto especificado. Solo lectura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

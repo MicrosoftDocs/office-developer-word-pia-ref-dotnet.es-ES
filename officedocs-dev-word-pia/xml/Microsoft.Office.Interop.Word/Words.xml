@@ -1,13 +1,5 @@
 <Type Name="Words" FullName="Microsoft.Office.Interop.Word.Words">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d48de7da434ab165907e297c39bfe4ff1b969693" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674268" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Words : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d236676b440e6d795d3c1717b83df235a2ae0ef2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142657" /></Metadata><TypeSignature Language="C#" Value="public interface Words : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Words implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Words" />
   <TypeSignature Language="VB.NET" Value="Public Interface Words&#xA;Implements IEnumerable" />
@@ -31,12 +23,13 @@
   </Attributes>
   <Docs>
     <summary>Una colección de palabras de un documento, selección o intervalo.</summary>
-    <remarks>
-      <para>Cada elemento de la colección de <b>palabras</b> es un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa una palabra. No hay ningún objeto de Word.</para>
-      <para>Utilice la propiedad <b>Words</b> para devolver el objeto <b>Words</b> .</para>
-      <para>Utiliza <b>palabras</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un objeto <b>Range</b> que representa una palabra. El número de índice representa la posición de la palabra en la colección <b>Words</b> .</para> Colección de 
-      <para>el elemento de las <b>palabras</b> incluye tanto la palabra como los espacios detrás de la palabra. Si la selección es el punto de inserción y va seguido de un espacio, Selection.Words (1) hace referencia a la palabra que precede a la selección. Si la selección es el punto de inserción y va seguida de un carácter, Selection.Words (1) hace referencia a la palabra posterior a la selección.</para><para>El <see cref="P:Microsoft.Office.Interop.Word.Words.Count" /> (propiedad) para esta colección de un documento devuelve el número de elementos sólo del artículo principal. Para contar los elementos de otros contenidos utilice la colección con el objeto <b>Range</b> . Además, la propiedad <b>Count</b> incluye las marcas de puntuación y de párrafo en el total. Si necesita un recuento de las palabras reales de un documento, use el cuadro de diálogo Contar palabras.</para> Método 
-      <para>el <b>complemento</b> no está disponible para la colección de <b>palabras</b> . En su lugar, use la <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> (método) o la <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" /> método para agregar texto a un objeto <b>Range</b> .</para><para /></remarks>
+    <remarks><para>Cada elemento de la <b></b> colección Words es <see cref="T:Microsoft.Office.Interop.Word.Range" /> un objeto que representa una palabra. No hay ningún objeto de Word.</para>
+      <para>Utilice la propiedad <b>Words</b> para devolver el objeto <b>Words</b>.</para>
+      <para>Use <b></b>Words<paramref name="index" />(), <paramref name="index" /> donde es el número de índice, para devolver un objeto <b>Range</b> que representa una palabra. El número de índice representa la posición de la palabra en la colección de <b>palabras</b>.</para>
+      <para>El elemento de la colección <b>Words</b> incluye tanto la palabra como los espacios detrás de la palabra. Si la selección es el punto de inserción y está inmediatamente seguido de un espacio, Selection. Words (1) hace referencia a la palabra que precede a la selección. Si la selección es el punto de inserción y va seguido de un carácter, Selection. Words (1) hace referencia a la palabra siguiente a la selección.</para>
+      <para>La <see cref="P:Microsoft.Office.Interop.Word.Words.Count" /> propiedad de esta colección de un documento devuelve el número de elementos solo del artículo principal. Para contar los elementos de otros contenidos utilice la colección con el objeto <b>Range</b>. Además, la propiedad <b>Count</b> incluye marcas de párrafo y los signos de puntuación en el total. Si necesita el recuento de las palabras reales en un documento, utilice el cuadro de diálogo contar palabras.</para>
+      <para>El método <b>Add</b> no está disponible para la colección <b>Words</b> . En su lugar, use <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> el método o <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" /> el método para agregar texto a un objeto <b>Range</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +55,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,9 +113,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="First">
@@ -148,7 +141,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa la primera palabra de un documento, selección o intervalo.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto Object que representa la primera palabra de un documento, una selección o un intervalo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -211,7 +204,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>objeto</b> que indica la posición ordinal o una cadena que representa el nombre del objeto individual.</param>
+        <param name="Index"><b>Objeto</b> que indica la posición ordinal o una cadena que representa el nombre del objeto individual.</param>
         <summary>Devuelve un objeto individual de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -240,7 +233,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa la última palabra de un documento, selección o intervalo.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto Object que representa la última palabra de un documento, selección o intervalo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

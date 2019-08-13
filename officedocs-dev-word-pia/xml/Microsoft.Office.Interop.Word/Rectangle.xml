@@ -1,13 +1,5 @@
 <Type Name="Rectangle" FullName="Microsoft.Office.Interop.Word.Rectangle">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="74c49e1052dd5117e8e3d3146cbc28af58e2f384" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674311" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Rectangle" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="822aaf72779d605103ffbe8e7e7c32e66b3cab6a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147701" /></Metadata><TypeSignature Language="C#" Value="public interface Rectangle" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Rectangle" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Rectangle" />
   <TypeSignature Language="VB.NET" Value="Public Interface Rectangle" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Representa una parte de texto o un gráfico en una página. Utilice el objeto <b>Rectangle</b> y relacionados métodos y propiedades para definir el diseño de página de un documento mediante programación.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.Rectangles.Item(System.Int32)" /> método para devolver un objeto <b>Rectangle</b> específico.</para>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.Rectangle.RectangleType" /> (propiedad) para determinar el tipo de rectángulo.</para>
-      <para />
-    </remarks>
+    <remarks><para>Utilice el <see cref="P:Microsoft.Office.Interop.Word.Rectangles.Item(System.Int32)" /> método para devolver un objeto <b>Rectangle</b> específico.</para>
+      <para>Use la <see cref="P:Microsoft.Office.Interop.Word.Rectangle.RectangleType" /> propiedad para determinar el tipo de rectángulo.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,9 +77,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -143,7 +133,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor de tipo integer que representa la posición horizontal del rectángulo especificado, medido en puntos.</summary>
+        <summary>Devuelve o establece un valor de tipo Integer que representa la posición horizontal del rectángulo especificado, medido en puntos.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -171,12 +161,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Lines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Lines" /> colección que representa las líneas de una parte especificada del texto de una página.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.Lines" /> colección que representa las líneas en una parte especificada del texto de una página.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Use la colección de <b>líneas</b> y objetos relacionados y las propiedades para definir el diseño de página de un documento mediante programación.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilice la colección de <b>líneas</b> y objetos relacionados y propiedades para definir el diseño de página de un documento mediante programación.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -230,7 +218,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa la parte de un documento que está incluida en el objeto especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa la parte de un documento incluida en el objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -258,63 +246,61 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRectangleType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.WdRectangleType" /> constante que representa el tipo de rectángulo especificado.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.WdRectangleType" /> constante que representa el tipo de rectángulo especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad<b>RectangleType</b> puede ser una de las siguientes constantes <b>WdRectangleType</b> .</para>
+        <remarks><para>La propiedad<b>RectangleType</b> puede ser una de las siguientes constantes <b>WdRectangleType</b> .</para>
           <list type="table">
             <item>
               <description>
                 <b>wdLineBetweenColumnRectangle</b>
               </description>
-              <description>representa una región correspondiente a una línea de separación entre columnas.</description>
+              <description>Representa una región correspondiente a una línea de separación entre columnas.</description>
             </item>
             <item>
               <description>
                 <b>wdMarkupRectangle</b>
               </description>
-              <description>representa un espacio ocupado por un globo de comentario.</description>
+              <description>Representa un espacio ocupado por un globo de comentario.</description>
             </item>
             <item>
               <description>
                 <b>wdMarkupRectangleButton</b>
               </description>
-              <description>representa un espacio ocupado por el indicador más (...) que aparece en un globo de comentario cuando hay texto adicional para el comentario.</description>
+              <description>Representa un espacio ocupado por el indicador (...) que aparece en un globo de comentario cuando el comentario tiene texto adicional.</description>
             </item>
             <item>
               <description>
                 <b>wdPageBorderRectangle</b>
               </description>
-              <description>representa un espacio ocupado por un borde de página.</description>
+              <description>Representa un espacio ocupado por un borde de página.</description>
             </item>
             <item>
               <description>
                 <b>wdSelection</b>
               </description>
-              <description>representa un espacio ocupado por una herramienta de selección, por ejemplo la herramienta de selección de tabla en la esquina superior izquierda de una tabla o el delimitador de una imagen.</description>
+              <description>Representa un espacio ocupado por una herramienta de selección, por ejemplo, la herramienta de selección de tabla situada en la esquina superior izquierda de una tabla, o el delimitador de una imagen.</description>
             </item>
             <item>
               <description>
                 <b>wdShapeRectangle</b>
               </description>
-              <description>representa un espacio ocupado por una forma.</description>
+              <description>Representa un espacio ocupado por una forma.</description>
             </item>
             <item>
               <description>
                 <b>wdSystem</b>
               </description>
-              <description>no es aplicable.</description>
+              <description>No procede.</description>
             </item>
             <item>
               <description>
                 <b>wdTextRectangle</b>
               </description>
-              <description>representa un espacio ocupado por texto.</description>
+              <description>Representa un espacio ocupado por texto.</description>
             </item>
           </list>
-          <para>Rectángulos en Microsoft Word son secciones dentro de una página en un documento que contienen tipos específicos de información. Algunas secciones son partes de texto; otras son formas. El propósito de rectángulos es permitir mayor control sobre el diseño de página mediante programación.</para>
-          <para />
-        </remarks>
+          <para>Los rectángulos en Microsoft Word son secciones dentro de una página en un documento que contienen tipos específicos de información. Algunas secciones son partes de texto; otras son formas. El propósito de rectángulos es permitir mayor control sobre el diseño de página mediante programación.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Top">

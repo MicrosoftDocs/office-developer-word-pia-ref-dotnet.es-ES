@@ -1,13 +1,5 @@
 <Type Name="TablesOfAuthorities" FullName="Microsoft.Office.Interop.Word.TablesOfAuthorities">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b04829d6e20038907ae0e4d3dfef9a45a8da9159" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674929" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TablesOfAuthorities : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fef3d3e5c7ec2a8397d6977b226d1f8051218c96" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143934" /></Metadata><TypeSignature Language="C#" Value="public interface TablesOfAuthorities : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TablesOfAuthorities implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TablesOfAuthorities" />
   <TypeSignature Language="VB.NET" Value="Public Interface TablesOfAuthorities&#xA;Implements IEnumerable" />
@@ -30,10 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.TableOfAuthorities" /> objetos (campos TOA) que representa las tablas de autoridades de un documento.</summary>
-    <remarks>
-      <para>Usar el <see cref="T:Microsoft.Office.Interop.Word.TablesOfAuthorities" /> (propiedad) para devolver la colección <b>TablesOfAuthorities</b> .</para> Uso de 
-      <para>la <see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para agregar una tabla de autoridades a un documento. Una tabla de autoridades se genera a partir de los campos TA (elemento de tabla de autoridades) en un documento.</para><para>Uso <b>TablesOfAuthorities</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un solo objeto <b>TableOfAuthorities</b> . El número de índice representa la posición de la tabla de autoridades en el documento.</para><para /></remarks>
+    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.TableOfAuthorities" /> objetos (campos Toa) que representa las tablas de autoridades de un documento.</summary>
+    <remarks><para>Utilice la <see cref="T:Microsoft.Office.Interop.Word.TablesOfAuthorities" /> propiedad para devolver la colección <b>TablesOfAuthorities</b> .</para>
+      <para>Use el <see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para agregar una tabla de autoridades a un documento. Una tabla de autoridades se genera a partir de los campos TA (elemento de tabla de autoridades) de un documento.</para>
+      <para>Utilice <b>TablesOfAuthorities</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un solo objeto <b>TableOfAuthorities</b> . El número de índice representa la posición de la tabla de autoridades en el documento.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -67,33 +60,21 @@
         <Parameter Name="PageNumberSeparator" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Requiere <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. Intervalo donde desea que aparezca la tabla de autoridades. En la tabla de autoridades reemplazará al intervalo, si no se contrae el intervalo.</param>
-        <param name="Category">
-          <b>Objeto</b>de opcional. Categoría de entradas que desea incluir en la tabla de autoridades. Corresponde al modificador \c de un campo Tabla de autoridades (TOA). Los valores del 0 al 16 corresponden a los elementos que aparecen en el cuadro categoría en la ficha tabla de autoridades en el cuadro de diálogo Índice y tablas (comando referencia, menú Insertar). El valor predeterminado es 1.</param>
-        <param name="Bookmark">
-          <b>Objeto</b>de opcional. Nombre de la cadena del marcador de la que se desean obtener los elementos para la tabla de autoridades. Si <paramref name="Bookmark" /> se especifica, se recopilan las entradas de la parte del documento marcada por el marcador. Equivale al modificador \b de un campo Tabla de autoridades (TOA).</param>
-        <param name="Passim">
-          <b>Objeto</b>de opcional. <b>True</b> para reemplazar cinco o más referencias de página a la misma autoridad con la palabra Passim en la tabla de autoridades. Equivale al modificador \p de un campo tabla de autoridades (TOA). Si se omite este argumento, <paramref name="Passim" /> se supone que es <b>False</b>.</param>
-        <param name="KeepEntryFormatting">
-          <b>Objeto</b>de opcional. <b>True</b> para aplicar el formato de tabla de autoridades a las entradas de la tabla de autoridades. Corresponde al modificador \f de un campo tabla de autoridades (TOA). Si se omite este argumento, <paramref name="KeepEntryFormatting" /> se supone que es <b>True</b>.</param>
-        <param name="Separator">
-          <b>Objeto</b>de opcional. Los caracteres (hasta un máximo de cinco) entre cada número de secuencia y su número de página en la tabla de autoridades. Equivale al modificador \d de un campo Tabla de autoridades (TOA). Si se omite este argumento, se utiliza un guión (-).</param>
-        <param name="IncludeSequenceName">
-          <b>Objeto</b>de opcional. Cadena que especifica el identificador del campo Secuencia (SEQ) para la tabla de autoridades. Equivale al modificador \s de un campo Tabla de autoridades (TOA).</param>
-        <param name="EntrySeparator">
-          <b>Objeto</b>de opcional. Los caracteres (hasta un máximo de cinco) que separan cada elemento y su número de página en la tabla de autoridades. Equivale al modificador \e de un campo Tabla de autoridades (TOA). Si se omite este argumento, no se utiliza ningún separador.</param>
-        <param name="PageRangeSeparator">
-          <b>Objeto</b>de opcional. Los caracteres (hasta un máximo de cinco) que separan los números de la página inicial y final en cada intervalo de páginas de la tabla de autoridades. Equivale al modificador \g de un campo Tabla de autoridades (TOA). Si se omite este argumento, se utiliza un guión corto.</param>
-        <param name="IncludeCategoryHeader">
-          <b>Objeto</b>de opcional. <b>True</b> para que el nombre de categoría de cada grupo de entradas aparecen en la tabla de autoridades (por ejemplo, Cases). Corresponde al modificador \h de un campo tabla de autoridades (TOA). Si se omite este argumento, <paramref name="IncludeCategoryHeader" /> se supone que es <b>True</b>.</param>
-        <param name="PageNumberSeparator">
-          <b>Objeto</b>de opcional. Los caracteres (hasta un máximo de cinco) que separan los números de página dentro de las referencias de página de la tabla de autoridades. Equivale al modificador \l de un campo Tabla de autoridades (TOA). Si se omite este argumento, se utiliza una coma y un espacio.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> requerido. Intervalo donde desea que aparezca la tabla de autoridades. La tabla de autoridades reemplaza el intervalo si el intervalo no está contraído.</param>
+        <param name="Category"><b>Objeto</b>opcional. Categoría de entradas que desea incluir en la tabla de autoridades. Corresponde al modificador \c de un campo Tabla de autoridades (TOA). Los valores del 0 al 16 corresponden a los elementos que aparecen en el cuadro Categoría en la ficha Tabla de autoridades del cuadro de diálogo Índice y tablas (comando Referencia, menú Insertar). El valor predeterminado es 1.</param>
+        <param name="Bookmark"><b>Objeto</b>opcional. Nombre de la cadena del marcador de la que se desean obtener los elementos para la tabla de autoridades. Si <paramref name="Bookmark" /> se especifica, las entradas se recopilan solo desde la parte del documento marcada por el marcador. Equivale al modificador \b de un campo Tabla de autoridades (TOA).</param>
+        <param name="Passim"><b>Objeto</b>opcional. <b>True</b> para reemplazar cinco o más referencias de página a la misma autoridad con la palabra Passim en la tabla de autoridades. Equivale al modificador \p de un campo tabla de autoridades (TOA). Si se omite este argumento, <paramref name="Passim" /> se supone que es <b>false</b>.</param>
+        <param name="KeepEntryFormatting"><b>Objeto</b>opcional. <b>True</b> para aplicar el formato de tabla de autoridades a las entradas de la tabla de autoridades. Corresponde al modificador \f de un campo tabla de autoridades (TOA). Si se omite este argumento, <paramref name="KeepEntryFormatting" /> se supone que es <b>true</b>.</param>
+        <param name="Separator"><b>Objeto</b>opcional. Los caracteres (hasta un máximo de cinco) entre cada número de secuencia y su número de página en la tabla de autoridades. Equivale al modificador \d de un campo Tabla de autoridades (TOA). Si se omite este argumento, se utiliza un guión (-).</param>
+        <param name="IncludeSequenceName"><b>Objeto</b>opcional. Cadena que especifica el identificador del campo Secuencia (SEQ) para la tabla de autoridades. Equivale al modificador \s de un campo Tabla de autoridades (TOA).</param>
+        <param name="EntrySeparator"><b>Objeto</b>opcional. Los caracteres (hasta un máximo de cinco) que separan cada elemento y su número de página en la tabla de autoridades. Equivale al modificador \e de un campo Tabla de autoridades (TOA). Si se omite este argumento, no se utiliza ningún separador.</param>
+        <param name="PageRangeSeparator"><b>Objeto</b>opcional. Los caracteres (hasta un máximo de cinco) que separan los números de la página inicial y final en cada intervalo de páginas de la tabla de autoridades. Equivale al modificador \g de un campo Tabla de autoridades (TOA). Si se omite este argumento, se utiliza un guión corto.</param>
+        <param name="IncludeCategoryHeader"><b>Objeto</b>opcional. <b>True</b> para que el nombre de categoría de cada grupo de entradas aparecen en la tabla de autoridades (por ejemplo, Cases). Corresponde al modificador \h de un campo tabla de autoridades (TOA). Si se omite este argumento, <paramref name="IncludeCategoryHeader" /> se supone que es <b>true</b>.</param>
+        <param name="PageNumberSeparator"><b>Objeto</b>opcional. Los caracteres (hasta un máximo de cinco) que separan los números de página dentro de las referencias de página de la tabla de autoridades. Equivale al modificador \l de un campo Tabla de autoridades (TOA). Si se omite este argumento, se utiliza una coma y un espacio.</param>
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.TableOfAuthorities" /> objeto que representa una tabla de autoridades agregada a un documento.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Una tabla de autoridades se genera a partir de los campos de tabla de autoridades entrada (TA) en un documento. Usar el <see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.MarkCitation(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> (método) para marcar las citas que deben incluirse en la tabla de autoridades.</para>
-          <para />
-        </remarks>
+        <remarks><para>Una tabla de autoridades se genera a partir de los campos de tabla de autoridades entrada (TA) de un documento. Use el <see cref="M:Microsoft.Office.Interop.Word.TablesOfAuthorities.MarkCitation(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> método para marcar las citas que deben incluirse en la tabla de autoridades.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -119,7 +100,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -177,9 +158,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -210,8 +191,7 @@
       <Docs>
         <summary>Devuelve o establece el formato de las tablas de autoridades del documento especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Word.WdToaFormat" />puede ser una de las siguientes constantes <b>WdToaFormat</b> :</para>
           <para>
             <b>wdTOAClassic</b>
@@ -228,8 +208,7 @@
           <para>
             <b>wdTOASimple</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -290,7 +269,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entero</b> que indica la posición ordinal del objeto individual.</param>
+        <param name="Index"><b>Entero</b> que indica la posición ordinal del objeto individual.</param>
         <summary>Devuelve un objeto individual de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -321,15 +300,11 @@
         <Parameter Name="Category" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ShortCitation">
-          <b>String</b> requerida. Cita corta del elemento, tal y como aparecerá en el cuadro de diálogo Marcar cita (menú Insertar, comando Índice y tablas).</param>
-        <param name="LongCitation">
-          <b>Objeto</b>de opcional. Texto de cita larga del elemento, tal y como aparecerá en la tabla de autoridades.</param>
-        <param name="LongCitationAutoText">
-          <b>Objeto</b>de opcional. Nombre de elemento de Autotexto que contiene el texto de la cita larga tal y como aparecerá en la tabla de autoridades.</param>
-        <param name="Category">
-          <b>Objeto</b>de opcional. Número de categoría que debe asociarse con el elemento: 1 corresponde a la primera categoría del cuadro Categoría del cuadro de diálogo Marcar cita, 2 a la segunda categoría, y así sucesivamente.</param>
-        <summary>Inserta un campo TA (elemento de tabla de autoridades) después de todas las instancias de la <paramref name="ShortCitation" /> texto.</summary>
+        <param name="ShortCitation"><b>String</b> requerida. Cita corta del elemento, tal y como aparecerá en el cuadro de diálogo Marcar cita (menú Insertar, comando Índice y tablas).</param>
+        <param name="LongCitation"><b>Objeto</b>opcional. Texto de cita larga del elemento, tal y como aparecerá en la tabla de autoridades.</param>
+        <param name="LongCitationAutoText"><b>Objeto</b>opcional. Nombre de elemento de Autotexto que contiene el texto de la cita larga tal y como aparecerá en la tabla de autoridades.</param>
+        <param name="Category"><b>Objeto</b>opcional. Número de categoría que debe asociarse con el elemento: 1 corresponde a la primera categoría del cuadro Categoría del cuadro de diálogo Marcar cita, 2 a la segunda categoría, y así sucesivamente.</param>
+        <summary>Inserta un campo TA (elemento de tabla de autoridades) detrás de todas las instancias <paramref name="ShortCitation" /> del texto.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -358,15 +333,11 @@
         <Parameter Name="Category" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Requiere <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. Ubicación del elemento de tabla de autoridades. El campo TA se inserta después de <paramref name="Range" />.</param>
-        <param name="ShortCitation">
-          <b>String</b> requerida. Cita corta del elemento, tal y como aparecerá en el cuadro de diálogo Marcar cita (menú Insertar, comando Índice y tablas).</param>
-        <param name="LongCitation">
-          <b>Objeto</b>de opcional. Cita larga del elemento, tal y como aparecerá en la tabla de autoridades.</param>
-        <param name="LongCitationAutoText">
-          <b>Objeto</b>de opcional. Nombre del elemento de Autotexto que contiene el texto de la cita larga tal y como aparecerá en la tabla de autoridades.</param>
-        <param name="Category">
-          <b>Objeto</b>de opcional. Número de categoría que debe asociarse con el elemento: 1 corresponde a la primera categoría del cuadro Categoría del cuadro de diálogo Marcar cita, 2 a la segunda categoría, y así sucesivamente.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> requerido. Ubicación del elemento de tabla de autoridades. El campo TA se inserta después <paramref name="Range" />de.</param>
+        <param name="ShortCitation"><b>String</b> requerida. Cita corta del elemento, tal y como aparecerá en el cuadro de diálogo Marcar cita (menú Insertar, comando Índice y tablas).</param>
+        <param name="LongCitation"><b>Objeto</b>opcional. Cita larga del elemento, tal y como aparecerá en la tabla de autoridades.</param>
+        <param name="LongCitationAutoText"><b>Objeto</b>opcional. Nombre del elemento de Autotexto que contiene el texto de la cita larga tal y como aparecerá en la tabla de autoridades.</param>
+        <param name="Category"><b>Objeto</b>opcional. Número de categoría que debe asociarse con el elemento: 1 corresponde a la primera categoría del cuadro Categoría del cuadro de diálogo Marcar cita, 2 a la segunda categoría, y así sucesivamente.</param>
         <summary>Inserta un campo TA (elemento de tabla de autoridades) y devuelve el campo como un <see cref="T:Microsoft.Office.Interop.Word.Field" /> objeto.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -395,9 +366,8 @@
         <Parameter Name="ShortCitation" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ShortCitation">
-          <b>String</b> requerida. Texto de la cita corta.</param>
-        <summary>Busca y selecciona la siguiente aparición de una cita y especificado.</summary>
+        <param name="ShortCitation"><b>String</b> requerida. Texto de la cita corta.</param>
+        <summary>Busca y selecciona la siguiente aparición de una cita especificada.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

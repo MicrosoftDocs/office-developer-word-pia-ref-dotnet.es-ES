@@ -1,13 +1,5 @@
 <Type Name="CheckBox" FullName="Microsoft.Office.Interop.Word.CheckBox">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="49c5e968d7ca83ab33c2d641b57ba5240bef239d" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674558" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CheckBox" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="44f3ebc6503c36473eb317875150d1134c7933aa" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147182" /></Metadata><TypeSignature Language="C#" Value="public interface CheckBox" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CheckBox" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CheckBox" />
   <TypeSignature Language="VB.NET" Value="Public Interface CheckBox" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Representa un solo campo de formulario de casilla de verificación.</summary>
-    <remarks>
-      <para>Utilice la <b>sintaxis FormFields</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice o el nombre del marcador asociado con la casilla de verificación, para devolver un solo <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objeto. Usar el <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" /> (propiedad) con el objeto <b>FormField</b> para devolver un objeto <b>CheckBox</b> .</para>
-      <para>El número de índice representa la posición del campo de formulario en el <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> colección.</para>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> método con el objeto <b>FormFields </b>para agregar un campo de formulario de casilla de verificación.</para>
-      <para />
-    </remarks>
+    <remarks><para>Use <b>FormFields</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice o el nombre del marcador asociado a la casilla de verificación, <see cref="T:Microsoft.Office.Interop.Word.FormField" /> para devolver un único objeto. Utilice la <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" /> propiedad con el objeto <b>FormField</b> para devolver un objeto <b>CheckBox</b> .</para>
+      <para>El número de índice representa la posición del campo de formulario en <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> la colección.</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> método con el objeto <b>FormFields </b>para agregar un campo de formulario de casilla de verificación.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,8 +79,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> cambia el tamaño de la casilla de verificación o marco de texto según el tamaño de fuente del texto adyacente. <b>False</b> cambia el tamaño de la casilla de verificación o marco de texto de acuerdo con el <see cref="P:Microsoft.Office.Interop.Word.CheckBox.Size" /> (propiedad).</summary>
+        <summary><b>True</b> cambia el tamaño de la casilla de verificación o marco de texto según el tamaño de fuente del texto adyacente. <b>False</b> cambia el tamaño de la casilla de verificación o marco <see cref="P:Microsoft.Office.Interop.Word.CheckBox.Size" /> de texto de acuerdo con la propiedad.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,9 +109,9 @@
       <Docs>
         <summary>Devuelve un valor que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -240,10 +229,8 @@
       <Docs>
         <summary>Devuelve un valor que indica si el objeto de campo de formulario especificado es un campo de formulario de casilla de verificación válido.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objeto para determinar el tipo de campo de formulario (<see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormCheckBox" />, <see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormDropDown" />, o <see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormTextInput" />) antes de aplicar el <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" /> (propiedad). Esta precaución asegura que el objeto <b>FormField </b>sea del tipo esperado.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.FormField.Type" /> propiedad del <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objeto para determinar el tipo de campo de formulario (<see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormCheckBox" />, <see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormDropDown" />o <see cref="F:Microsoft.Office.Interop.Word.WdFieldType.wdFieldFormTextInput" />) antes de aplicar la <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" /> propiedad. Esta precaución garantiza que el objeto <b>FormField </b>sea del tipo esperado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">

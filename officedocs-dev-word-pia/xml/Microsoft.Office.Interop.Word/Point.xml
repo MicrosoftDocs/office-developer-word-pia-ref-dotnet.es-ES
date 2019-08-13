@@ -1,13 +1,5 @@
 <Type Name="Point" FullName="Microsoft.Office.Interop.Word.Point">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6463b2ec96c5facea5e267d5e29a17385680b063" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674317" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Point" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e59e39b44825c3b2a985f05858eb282283053524" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144151" /></Metadata><TypeSignature Language="C#" Value="public interface Point" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Point" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Point" />
   <TypeSignature Language="VB.NET" Value="Public Interface Point" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Representa un solo punto de una serie de un gráfico.</summary>
-    <remarks>
-      <para>El <see cref="T:Microsoft.Office.Interop.Word.Point" /> objeto es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Points" /> colección. El <see cref="T:Microsoft.Office.Interop.Word.Points" /> colección contiene todos los puntos de la uno serie.</para>
-      <para />
-    </remarks>
+    <remarks><para>El <see cref="T:Microsoft.Office.Interop.Word.Point" /> objeto es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Points" /> colección. La <see cref="T:Microsoft.Office.Interop.Word.Points" /> colección contiene todos los puntos de una serie.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,9 +46,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa la aplicación Microsoft Word. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto). Solo lectura.</summary>
-        <value>
-          <b>Aplicación</b> (vea lo anterior)</value>
+        <summary>Cuando se usa sin un calificador de objeto, esta <see cref="T:Microsoft.Office.Interop.Word._Application" /> propiedad devuelve un objeto que representa la aplicación Microsoft Word. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto). Solo lectura.</summary>
+        <value><b>Aplicación</b> (vea más arriba)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,10 +83,9 @@
       </Parameters>
       <Docs>
         <param name="Type">Tipo de etiqueta de datos que se aplica.</param>
-        <param name="LegendKey">						Si es <b>True</b>, se muestra la clave de la leyenda junto al punto. El valor predeterminado es <b>False</b>.</param>
-        <param name="AutoText">
-          <b>True</b> si el objeto genera automáticamente el texto adecuado basado en el contenido.</param>
-        <param name="HasLeaderLines">Para el <see cref="T:Microsoft.Office.Interop.Word.Chart" /> y <see cref="T:Microsoft.Office.Interop.Word.Series" /> objetos, <b>True</b> si la serie tiene líneas guía.</param>
+        <param name="LegendKey"><b>True</b> para mostrar la clave de leyenda junto al punto. El valor predeterminado es <b>False</b>.</param>
+        <param name="AutoText"><b>True</b> si el objeto genera automáticamente el texto adecuado basado en el contenido.</param>
+        <param name="HasLeaderLines">Para los <see cref="T:Microsoft.Office.Interop.Word.Chart" /> objetos <see cref="T:Microsoft.Office.Interop.Word.Series" /> y, <b>true</b> si la serie tiene líneas guía.</param>
         <param name="ShowSeriesName">Pasar un valor booleano para habilitar o deshabilitar el nombre de la serie correspondiente al rótulo de datos.</param>
         <param name="ShowCategoryName">Pasar un valor booleano para habilitar o deshabilitar el nombre de la categoría correspondiente al rótulo de datos.</param>
         <param name="ShowValue">Pasar un valor booleano para habilitar o deshabilitar el valor del rótulo de datos.</param>
@@ -105,14 +93,10 @@
         <param name="ShowBubbleSize">Pasar un valor booleano para habilitar o deshabilitar el tamaño de la burbuja correspondiente al rótulo de datos.</param>
         <param name="Separator">Separador de la etiqueta de datos.</param>
         <summary>Aplica rótulos de datos a un punto.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
-        <remarks>
-          <para>
+        <returns><b>Objeto</b></returns>
+        <remarks><para>
             <paramref name="Type" />puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" /> constantes.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyPictToEnd">
@@ -141,11 +125,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si una imagen se aplica al final del punto o a todos los puntos de la serie. <b>Boolean</b> de lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>True</b> si una imagen se aplica al final del punto o a todos los puntos de la serie. <b>Boolean</b> de lectura y escritura.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,11 +156,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si una imagen se aplica a la parte delantera del punto o a todos los puntos de la serie. <b>Boolean</b> de lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>True</b> si una imagen se aplica a la parte delantera del punto o a todos los puntos de la serie. <b>Boolean</b> de lectura y escritura.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,11 +187,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si una imagen se aplica a los lados del punto o a todos los puntos de la serie. <b>Boolean</b> de lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>True</b> si una imagen se aplica a los lados del punto o a todos los puntos de la serie. <b>Boolean</b> de lectura y escritura.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,10 +218,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Border" /> object que representa el borde del objeto.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Border" /> objeto Object que representa el borde del objeto.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -272,9 +245,7 @@
       <Parameters />
       <Docs>
         <summary>Borra el formato del objeto.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <returns><b>Objeto</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -300,9 +271,7 @@
       <Parameters />
       <Docs>
         <summary>Si el punto tiene un relleno de imagen, este método copia la imagen en el Portapapeles.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <returns><b>Objeto</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -329,14 +298,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. <b>Integer</b> de sólo lectura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, el <see cref="P:Microsoft.Office.Interop.Word.Point.Creator" /> (propiedad) devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, consulte la referencia del lenguaje de ayuda que se incluye con Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. <b>Integer</b> de solo lectura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Si el objeto se creó en Microsoft Word, la <see cref="P:Microsoft.Office.Interop.Word.Point.Creator" /> propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLabel">
@@ -362,10 +327,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.DataLabel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> object que representa el rótulo de datos asociado al punto. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.DataLabel" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> objeto Object que representa el rótulo de datos asociado al punto. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.DataLabel" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -391,13 +354,9 @@
       <Parameters />
       <Docs>
         <summary>Elimina el objeto.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
-        <remarks>
-          <para>Eliminación de un <see cref="T:Microsoft.Office.Interop.Word.Point" /> objeto elimina toda la serie.</para>
-          <para />
-        </remarks>
+        <returns><b>Objeto</b></returns>
+        <remarks><para>Al eliminar un <see cref="T:Microsoft.Office.Interop.Word.Point" /> objeto se elimina toda la serie.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Explosion">
@@ -426,10 +385,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el valor de expansión de un sector del gráfico circular o gráfico de anillos. Devuelve 0 (cero) si no hay ninguna expansión (el vértice del sector está en el centro del círculo). <b>Integer</b> de lectura y escritura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Devuelve o establece el valor de expansión de un sector del gráfico circular o gráfico de anillos. Devuelve 0 (cero) si no hay expansión (el vértice del sector está en el centro del círculo). Valor <b>Entero</b> de lectura y escritura.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -459,10 +416,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> objeto para una forma especificada o un <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> objeto para un gráfico especificado que contiene las propiedades de la forma o el gráfico de formato de relleno.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> objeto para una forma especificada o un <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> objeto de un gráfico especificado que contiene las propiedades de formato de relleno de la forma o el gráfico.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -490,10 +445,8 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve la línea, relleno y efecto de formato para el objeto.
-Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+De sólo <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -523,15 +476,10 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si un punto tiene aspecto tridimensional. <b>Boolean</b> de lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Esta propiedad sólo se aplica a los gráficos de burbujas.</para>
-          <para />
-        </remarks>
+        <summary><b>True</b> si un punto tiene aspecto tridimensional. <b>Boolean</b> de lectura y escritura.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Esta propiedad se aplica solamente a los gráficos de burbujas.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasDataLabel">
@@ -560,11 +508,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el punto tiene etiqueta de datos. <b>Boolean</b> de lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>True</b> si el punto tiene etiqueta de datos. <b>Boolean</b> de lectura y escritura.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -593,10 +538,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       <Docs>
         <summary>Obtiene el alto, en puntos, del objeto.</summary>
         <value>Alto del objeto, en puntos.</value>
-        <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
-        </remarks>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -625,10 +568,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>Microsoft.Office.Interop.Word.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Interior" /> object que representa el interior del objeto especificado.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Interior" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Interior" /> objeto Object que representa el interior del objeto especificado.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -658,11 +599,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si Microsoft Word invierte el diseño en el objeto cuando éste corresponde a un número negativo. <b>Boolean</b> de lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>True</b> si Microsoft Word invierte el diseño en el objeto cuando éste corresponde a un número negativo. <b>Boolean</b> de lectura y escritura.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -690,11 +628,9 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Obtiene un valor que representa la distancia, en puntos, desde el borde izquierdo del objeto hasta el borde izquierdo del área del gráfico.</summary>
-        <value>La distancia, en puntos, desde el borde izquierdo del objeto hasta el borde izquierdo del área del gráfico.</value>
-        <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
-        </remarks>
+        <value>Distancia, en puntos, desde el borde izquierdo del objeto al borde izquierdo del área del gráfico.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MarkerBackgroundColor">
@@ -723,10 +659,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Establece el color de fondo del marcador como un valor RGB o devuelve el valor de índice de color correspondiente. Se aplica solamente a gráficos de líneas, dispersión y radiales. <b>Integer</b> de lectura y escritura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Establece el color de fondo del marcador como un valor RGB o devuelve el valor de índice de color correspondiente. Se aplica únicamente a los gráficos de líneas, de dispersión y radiales. Valor <b>Entero</b> de lectura y escritura.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -756,10 +690,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>Microsoft.Office.Interop.Word.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el color de fondo del marcador como un índice para la paleta de colores actual o como uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> constantes: <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" /> o <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" />. Se aplica solamente a gráficos de líneas, dispersión y radiales. Lectura y escritura <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />
-        </value>
+        <summary>Devuelve o establece el color de fondo del marcador como un índice para la paleta de colores activa o bien como una <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> de las siguientes <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" /> constantes <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" />: o. Se aplica únicamente a los gráficos de líneas, de dispersión y radiales. Lectura y escritura <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -789,10 +721,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Establece el color de primer plano del marcador como un valor RGB o devuelve el valor de índice de color correspondiente. Se aplica solamente a gráficos de líneas, dispersión y radiales. <b>Integer</b> de lectura y escritura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Establece el color de primer plano del marcador como un valor RGB o devuelve el valor del índice de color correspondiente. Se aplica únicamente a los gráficos de líneas, de dispersión y radiales. Valor <b>Entero</b> de lectura y escritura.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -822,10 +752,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>Microsoft.Office.Interop.Word.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el color de primer plano del marcador como un índice para la paleta de colores actual o como uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> constantes: <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" /> o <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" />. Se aplica solamente a gráficos de líneas, dispersión y radiales. Lectura y escritura <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />
-        </value>
+        <summary>Devuelve o establece el color de primer plano del marcador como un índice para la paleta de colores activa o bien como <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> una de las <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexAutomatic" /> siguientes <see cref="F:Microsoft.Office.Interop.Word.XlColorIndex.xlColorIndexNone" />constantes: o. Se aplica únicamente a los gráficos de líneas, de dispersión y radiales. Lectura y escritura <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" />.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -855,10 +783,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el tamaño de los marcadores de datos, en puntos. Puede ser un valor comprendido entre 2 y 72. <b>Integer</b> de lectura y escritura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Devuelve o establece el tamaño de los marcadores de datos, en puntos. Puede ser cualquier valor comprendido entre 2 y 72. Valor <b>Entero</b> de lectura y escritura.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -889,9 +815,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece el estilo del marcador de un punto o una serie en un gráfico de líneas, de dispersión o radial. Lectura y escritura <see cref="T:Microsoft.Office.Interop.Word.XlMarkerStyle" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlMarkerStyle" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlMarkerStyle" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -919,12 +843,10 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Obtiene el nombre del objeto.</summary>
-        <value>El nombre del objeto.</value>
-        <remarks>
-          <para>Es de sólo lectura. Esta propiedad se corresponde con el nombre de un punto de datos en un gráfico. El nombre se representa con el siguiente formato:</para>
+        <value>Nombre del objeto.</value>
+        <remarks><para>Solo lectura. This property corresponds to the name of a data point on a chart. El nombre se representa con el siguiente formato:</para>
           <code>S&amp;lt;series number&amp;gt;P&amp;lt;point number&amp;gt;</code>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -951,9 +873,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Devuelve al objeto primario del objeto especificado. Read-only <b>objeto</b>.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -979,13 +899,9 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       <Parameters />
       <Docs>
         <summary>Pega una imagen del Portapapeles como marcador en el punto seleccionado.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
-        <remarks>
-          <para>Este método se puede usar en la columna, barra, línea o radiales y establece la <see cref="P:Microsoft.Office.Interop.Word.Point.MarkerStyle" /> (propiedad) a <see cref="F:Microsoft.Office.Interop.Word.XlMarkerStyle.xlMarkerStylePicture" />.</para>
-          <para />
-        </remarks>
+        <returns><b>Objeto</b></returns>
+        <remarks><para>Este método se puede usar en gráficos de columnas, barras, líneas o radiales y establece la <see cref="P:Microsoft.Office.Interop.Word.Point.MarkerStyle" /> propiedad en. <see cref="F:Microsoft.Office.Interop.Word.XlMarkerStyle.xlMarkerStylePicture" /></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PictureType">
@@ -1014,10 +930,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>Microsoft.Office.Interop.Word.XlChartPictureType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" /> valor que representa las imágenes de manera que se muestran en un gráfico de columnas o de barras.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" />
-        </value>
+        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" /> valor que representa el modo en que se muestran las imágenes en un gráfico de imágenes de barras o columnas.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1053,10 +967,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la unidad de cada imagen del gráfico si el <see cref="P:Microsoft.Office.Interop.Word.LegendKey.PictureType" /> propiedad está establecida en <see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStackScale" /> (si no, esta propiedad se omite).</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>Devuelve o establece la unidad de cada imagen del gráfico si la <see cref="P:Microsoft.Office.Interop.Word.LegendKey.PictureType" /> propiedad se establece en <see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStackScale" /> (si no es así, esta propiedad se omite).</summary>
+        <value><b>Doble</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1086,10 +998,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la unidad de cada imagen del gráfico si el <see cref="P:Microsoft.Office.Interop.Word.LegendKey.PictureType" /> propiedad está establecida en <see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStackScale" /> (si no, esta propiedad se omite). Lectura y escritura <b>doble</b>.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>Devuelve o establece la unidad de cada imagen del gráfico si la <see cref="P:Microsoft.Office.Interop.Word.LegendKey.PictureType" /> propiedad se establece en <see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStackScale" /> (si no es así, esta propiedad se omite). <b>Double</b> de lectura y escritura.</summary>
+        <value><b>Doble</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1118,12 +1028,10 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       <Docs>
         <param name="loc">Especifica una coordenada horizontal o vertical.</param>
         <param name="Index">Especifica qué coordenada de posición del sector circular para devolver. El valor predeterminado es <see cref="F:Microsoft.Office.Interop.Word.XlPieSliceIndex.xlOuterCenterPoint" />.</param>
-        <summary>Obtiene la posición horizontal o vertical de un punto de un elemento de gráfico, en puntos, desde el borde superior o izquierdo del objeto hasta el borde superior o izquierdo del área del gráfico.</summary>
-        <returns>La posición horizontal o vertical de la de un punto de un elemento de gráfico, en puntos.</returns>
-        <remarks>
-          <para>Esta propiedad sólo se aplica a tipos de gráficos circulares.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene la posición horizontal o vertical de un punto en un elemento de gráfico, en puntos, desde el borde superior o izquierdo del objeto hasta el borde superior o izquierdo del área del gráfico.</summary>
+        <returns>Posición vertical u horizontal de un punto en un elemento de gráfico, en puntos.</returns>
+        <remarks><para>Esta propiedad se aplica solamente a los tipos de gráficos circulares.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SecondaryPlot">
@@ -1152,11 +1060,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el punto está en la sección secundaria de un subgráfico circular de gráfico circular o de un subgráfico de barras de gráfico circular. Se aplica únicamente a los puntos de subgráficos circulares de gráficos circulares o de subgráficos de barras de gráficos circulares. <b>Boolean</b> de lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>True</b> si el punto está en la sección secundaria de un subgráfico circular de gráfico circular o de un subgráfico de barras de gráfico circular. Se aplica únicamente a los puntos de subgráficos circulares de gráficos circulares o de subgráficos de barras de gráficos circulares. <b>Boolean</b> de lectura y escritura.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1182,9 +1087,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       <Parameters />
       <Docs>
         <summary>Selecciona el objeto.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <returns><b>Objeto</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1215,9 +1118,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece un valor <b>Boolean</b> que determina si el objeto tiene una sombra.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1245,11 +1146,9 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Obtiene un valor que representa la distancia, en puntos, desde el borde superior del objeto hasta el borde superior del área del gráfico.</summary>
-        <value>La distancia, en puntos, desde el borde superior del objeto hasta el borde superior del área del gráfico.</value>
-        <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
-        </remarks>
+        <value>Distancia, en puntos, desde el borde superior del objeto hasta el borde superior del área del gráfico.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -1276,11 +1175,9 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Obtiene el ancho, en puntos, del objeto.</summary>
-        <value>El ancho del objeto en puntos.</value>
-        <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
-        </remarks>
+        <value>El ancho del objeto, en puntos.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

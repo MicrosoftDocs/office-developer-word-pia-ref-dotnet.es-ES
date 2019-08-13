@@ -1,13 +1,5 @@
 <Type Name="Categories" FullName="Microsoft.Office.Interop.Word.Categories">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="40bfdd55758f26399f3d8b0589b3673685e9d356" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674697" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Categories" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="262df085f360d3a0744754fa774db2e3a5857658" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142344" /></Metadata><TypeSignature Language="C#" Value="public interface Categories" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Categories" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Categories" />
   <TypeSignature Language="VB.NET" Value="Public Interface Categories" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Representa una colección de categorías de bloques de creación.</summary>
-    <remarks>
-      <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.Categories.Item(System.Object@)" /> (método) para tener acceso a una categoría existente. A continuación, puede usar el <see cref="P:Microsoft.Office.Interop.Word.Category.BuildingBlocks" /> (propiedad) para tener acceso a una colección de <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objetos para la categoría. </para>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Word.Categories.Item(System.Object@)" /> método para tener acceso a una categoría existente; para crear una nueva categoría, use el <see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> (método) de la <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> colección. Establezca el valor de la <paramref name="Category" /> parámetro.</para>
-      <para>Para obtener más información sobre bloques de creación, vea <a href="HV10120827">trabajar con bloques de creación</a></para>
-      <para />
-    </remarks>
+    <remarks><para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.Categories.Item(System.Object@)" /> método para tener acceso a una categoría existente. A continuación, puede usar <see cref="P:Microsoft.Office.Interop.Word.Category.BuildingBlocks" /> la propiedad para tener acceso a <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> una colección de objetos de la categoría. </para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.Categories.Item(System.Object@)" /> método para obtener acceso a una categoría existente; para crear una nueva categoría, use el <see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> método de la <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> colección. Establezca el valor del <paramref name="Category" /> parámetro.</para>
+      <para>Para obtener más información acerca de los bloques de creación, vea <a href="HV10120827">trabajar con bloques de creación</a></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,10 +48,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa la aplicación Microsoft Word.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,10 +76,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el número de elementos en el <see cref="T:Microsoft.Office.Interop.Word.Categories" /> colección. Es de solo lectura</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Devuelve el número de elementos de la <see cref="T:Microsoft.Office.Interop.Word.Categories" /> colección. Solo lectura.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,16 +104,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. Es de solo lectura</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, la propiedad <b>Creator</b> devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. Solo lectura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Si el objeto se creó en Microsoft Word, la propiedad <b>Creator</b> devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
           <para>
-            <b>Nota</b>: este valor también puede representarse mediante la constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
-          <para />
-        </remarks>
+            <b>Nota</b>: este valor también puede representarse mediante la <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />constante.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -155,9 +137,7 @@
       <Docs>
         <param name="Index">Especifica una <b>cadena</b> o <b>entero</b> que representa el nombre o la posición ordinal del objeto en la colección.</param>
         <summary>Devuelve el elemento especificado de la colección.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.Category" />
-        </returns>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.Category" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,10 +164,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario del especificado <see cref="T:Microsoft.Office.Interop.Word.Categories" /> colección.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve el objeto primario de la colección <see cref="T:Microsoft.Office.Interop.Word.Categories" /> especificada.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

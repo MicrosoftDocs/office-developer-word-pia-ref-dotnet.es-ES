@@ -1,13 +1,5 @@
 <Type Name="CaptionLabels" FullName="Microsoft.Office.Interop.Word.CaptionLabels">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a5b18cc4854bad28ef83a10609929afbf66624da" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674521" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CaptionLabels : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="11b1f047ded4a980ea2a99b665ed62e339edaa4f" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147327" /></Metadata><TypeSignature Language="C#" Value="public interface CaptionLabels : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CaptionLabels implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CaptionLabels" />
   <TypeSignature Language="VB.NET" Value="Public Interface CaptionLabels&#xA;Implements IEnumerable" />
@@ -31,9 +23,12 @@
   </Attributes>
   <Docs>
     <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.CaptionLabel" /> objetos que representan las etiquetas de título disponibles.</summary>
-    <remarks>
-      <para>Los elementos de la colección <b>CaptionLabels</b> aparecen en el cuadro de etiqueta en el cuadro de diálogo Título (menú Insertar).</para> Uso de 
-      <para>el <see cref="P:Microsoft.Office.Interop.Word.AutoCaption.CaptionLabel" /> (propiedad) para devolver la colección <b>CaptionLabels</b> . De forma predeterminada, la colección <b>CaptionLabels</b> incluye estas tres etiquetas de título integradas: <b>figura</b>, <b>tabla</b>y <b>ecuación</b>.</para><para>Usar la <see cref="M:Microsoft.Office.Interop.Word.CaptionLabels.Add(System.String)" /> método para agregar una etiqueta de título personalizada.</para><para>Uso <b>CaptionLabels</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la etiqueta de título o el número de índice, para devolver un solo objeto <b>CaptionLabel</b> .</para><para>El número de índice representa la posición de la etiqueta de título de la colección <b>CaptionLabels</b> .</para><para /></remarks>
+    <remarks><para>Los elementos de la colección <b>CaptionLabels</b> aparecen en el cuadro etiqueta del cuadro de diálogo título (menú Insertar).</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.AutoCaption.CaptionLabel" /> propiedad para devolver la colección <b>CaptionLabels</b> . De forma predeterminada, la colección <b>CaptionLabels</b> incluye las tres etiquetas de título integradas: <b>figura</b>, <b>tabla</b>y <b>ecuación</b>.</para>
+      <para>Use el <see cref="M:Microsoft.Office.Interop.Word.CaptionLabels.Add(System.String)" /> método para agregar una etiqueta de título personalizada.</para>
+      <para>Use <b>CaptionLabels</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la etiqueta de título o número de índice, para devolver un solo objeto <b>CaptionLabel</b> .</para>
+      <para>El número de índice representa la posición de la etiqueta del título del conjunto <b>CaptionLabels</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -59,8 +54,8 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">El nombre de un objeto <b>CaptionLabel</b> .</param>
-        <summary>Agrega un <see cref="T:Microsoft.Office.Interop.Word.CaptionLabel" /> objeto que representa una etiqueta de título personalizada a la <see cref="T:Microsoft.Office.Interop.Word.CaptionLabels" /> colección.</summary>
+        <param name="Name">Nombre de un objeto <b>CaptionLabel</b> .</param>
+        <summary>Agrega un <see cref="T:Microsoft.Office.Interop.Word.CaptionLabel" /> objeto que representa una etiqueta de título personalizada a <see cref="T:Microsoft.Office.Interop.Word.CaptionLabels" /> la colección.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,9 +141,9 @@
       <Docs>
         <summary>Devuelve un valor que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

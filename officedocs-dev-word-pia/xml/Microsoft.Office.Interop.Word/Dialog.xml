@@ -1,13 +1,5 @@
 <Type Name="Dialog" FullName="Microsoft.Office.Interop.Word.Dialog">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="48514fbfc024b02f9dcbf4a3b5c4070722ec2532" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674525" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Dialog" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="380f2c7cc87b01108dff60968ffecadad651a7bd" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147084" /></Metadata><TypeSignature Language="C#" Value="public interface Dialog" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Dialog" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Dialog" />
   <TypeSignature Language="VB.NET" Value="Public Interface Dialog" />
@@ -27,10 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Representa un cuadro de diálogo integrado.</summary>
-    <remarks>
-      <para>El objeto <b>Dialog</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Dialogs" /> colección. La colección <b>Dialogs</b> contiene todos los cuadros de diálogo integrados en Microsoft Word. No se puede crear un nuevo cuadro de diálogo integrado o agregar uno a la colección <b>Dialogs</b> .</para>
-      <para>Uso de <b>los cuadros de diálogo</b>(<paramref name="index" />), donde <paramref name="index" /> es una <see cref="T:Microsoft.Office.Interop.Word.WdWordDialog" /> constante que identifica el cuadro de diálogo, para devolver un solo objeto <b>Dialog</b> .</para> Constantes de 
-      <para>la <b>WdWordDialog</b> se forman a partir del prefijo "wdDialog" seguido del nombre del menú y el cuadro de diálogo. Por ejemplo, la constante para el cuadro de diálogo Configurar página es <b>wdDialogFilePageSetup</b>y el cuadro de diálogo nuevo es <b>wdDialogFileNew</b>.</para><para /></remarks>
+    <remarks><para>El objeto <b>Dialog</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Dialogs" /> colección. La <b></b> colección Dialogs contiene todos los cuadros de diálogo integrados en Microsoft Word. No se puede crear un nuevo cuadro de diálogo integrado o agregar uno a la colección <b>Dialogs</b>.</para>
+      <para>Use <b>Dialogs</b>(<paramref name="index" />), donde <paramref name="index" /> es una <see cref="T:Microsoft.Office.Interop.Word.WdWordDialog" /> constante que identifica el cuadro de diálogo, para devolver un solo objeto <b>Dialog</b> .</para>
+      <para>Las constantes <b>WdWordDialog</b> se forman a partir del prefijo "wdDialog" seguido del nombre del menú y del cuadro de diálogo. Por ejemplo, la constante del cuadro de diálogo Configurar página es <b>wdDialogFilePageSetup</b> y la del cuadro de diálogo Nuevo es <b>wdDialogFileNew</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,10 +76,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el identificador de control de la barra de herramientas para un cuadro de diálogo integrado de Microsoft Office Word. Es de solo lectura</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Devuelve el identificador del control de barra de herramientas para un cuadro de diálogo integrado de Microsoft Office Word. Solo lectura.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,9 +134,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Por ejemplo, si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Por ejemplo, si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultTab">
@@ -202,31 +192,31 @@
         <Parameter Name="TimeOut" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="TimeOut">
-          <b>Objeto</b>de opcional. Período de tiempo que Word esperará antes de cerrar automáticamente el cuadro de diálogo. Una unidad corresponde a 0,001 segundos aproximadamente. La actividad del sistema concurrente puede incrementar el valor de tiempo eficaz. Si se omite este argumento, se cerrará el cuadro de diálogo cuando lo haga el usuario.</param>
-        <summary>Muestra el cuadro de diálogo de Microsoft Word integrado especificado hasta que el usuario lo cierre o haya transcurrido el período de tiempo especificado. Devuelve un <b>entero</b> que indica que se hizo clic en el botón para cerrar el cuadro de diálogo.</summary>
+        <param name="TimeOut"><b>Objeto</b>opcional. Período de tiempo que Word esperará antes de cerrar automáticamente el cuadro de diálogo. Una unidad corresponde a 0,001 segundos aproximadamente. La actividad del sistema concurrente puede incrementar el valor de tiempo eficaz. Si se omite este argumento, se cerrará el cuadro de diálogo cuando lo haga el usuario.</param>
+        <summary>Muestra el cuadro de diálogo integrado de Microsoft Word especificado hasta que el usuario lo cierra o hasta que ha transcurrido el período de tiempo especificado. Devuelve un <b>entero</b> que indica el botón en el que se hizo clic para cerrar el cuadro de diálogo.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <list type="table">
+        <remarks><list type="table">
             <item>
               <description>-2</description>
-              <description>Botón cerrar la.</description>
+              <description>Botón Cerrar.</description>
             </item>
             <item>
               <description>-1</description>
-              <description>botón Aceptar el.</description>
+              <description>Botón Aceptar.</description>
             </item>
             <item>
               <description>0 (cero)</description>
-              <description>botón Cancelar el.</description>
+              <description>Botón Cancelar.</description>
             </item>
             <item>
-              <description> &gt; 0 (cero)</description>
-              <description>un botón de comando: 1 es el primer botón, 2 es el segundo botón y así sucesivamente.</description>
+              <description>&gt; 0 (zero)</description>
+              <description>Botón de comando: 1 corresponde al primer botón, 2 al segundo, y así sucesivamente.</description>
             </item>
-          </list> Uso de 
-          <para>la <see cref="M:Microsoft.Office.Interop.Word.Dialog.Show(System.Object@)" /> cuadro método para mostrar el cuadro de diálogo de Word integrado especificado, a continuación, (si el usuario hace clic en el botón Aceptar) efectuar las acciones especificadas por el usuario en el cuadro de diálogo. El método <b>Display</b> , por otro lado, muestra el cuadro de diálogo de Word integrado especificado, pero no realiza ninguna acción después de que el usuario cierra el cuadro de diálogo. Por lo tanto, debe elegir el método a usar la siguiente manera:</para>(método)
-          <para>usar la <b>presentación</b> si las acciones que el usuario va a realizar en el cuadro de diálogo se hayan completado antes de que el usuario cierra el cuadro de diálogo - por ejemplo, cuando el usuario personaliza un menú o una barra de herramientas por usar el cuadro de diálogo Personalizar (<b>wdDialogToolsCustomize</b>). También puede usar el método <b>Display</b> si desea omitir las acciones solicitadas por el usuario, si las acciones que normalmente se completan después de que el usuario cierra el cuadro de diálogo.</para><para>Utilice el método <b>Show</b> si las acciones que el usuario va a realizar en el cuadro de diálogo normalmente se completan después de que el usuario cierra el cuadro de diálogo - por ejemplo, cuando el usuario selecciona un archivo para abrir mediante el cuadro de diálogo Abrir (<b>wdDialogFileOpen</b>).</para><para /></remarks>
+          </list>
+          <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.Dialog.Show(System.Object@)" /> método para mostrar el cuadro de diálogo de Word integrado especificado y, si el usuario hace clic en el botón Aceptar, realice las acciones especificadas por el usuario en el cuadro de diálogo. Por otra parte, el método <b>Display</b> muestra el cuadro de diálogo de Word integrado especificado, pero no realiza ninguna acción después de que el usuario cierre el cuadro de diálogo. Por lo tanto, debe elegir el método que se va a usar de la siguiente manera:</para>
+          <para>Utilice el método <b>Display</b> si las acciones que realizará el usuario en el cuadro de diálogo se completan antes de que el usuario cierre el cuadro de diálogo (por ejemplo, cuando el usuario personaliza un menú o una barra de herramientas) mediante el cuadro de diálogo Personalizar (<b>wdDialogToolsCustomize</b>). También puede usar el método <b>Display</b> si desea omitir las acciones solicitadas por el usuario, si esas acciones suelen completarse después de que el usuario cierre el cuadro de diálogo.</para>
+          <para>Use el método <b>Show</b> si las acciones que realizará el usuario en el cuadro de diálogo suelen completarse después de que el usuario cierre el cuadro de diálogo (por ejemplo, cuando el usuario selecciona un archivo para abrirlo) mediante el cuadro de diálogo Abrir (<b>wdDialogFileOpen</b>).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -304,31 +294,37 @@
         <Parameter Name="TimeOut" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="TimeOut">
-          <b>Objeto</b>de opcional. Período de tiempo que Word esperará antes de cerrar automáticamente el cuadro de diálogo. Una unidad corresponde a 0,001 segundos aproximadamente. La actividad del sistema concurrente puede incrementar el valor de tiempo eficaz. Si se omite este argumento, se descartará el cuadro de diálogo cuando lo haga el usuario.</param>
-        <summary>Muestra y lleva a cabo acciones iniciadas en el cuadro de diálogo de Microsoft Word integrado especificado. Devuelve un <b>entero</b> que indica que se hizo clic en el botón para cerrar el cuadro de diálogo.</summary>
+        <param name="TimeOut"><b>Objeto</b>opcional. Período de tiempo que Word esperará antes de cerrar automáticamente el cuadro de diálogo. Una unidad corresponde a 0,001 segundos aproximadamente. La actividad del sistema concurrente puede incrementar el valor de tiempo eficaz. Si se omite este argumento, se descartará el cuadro de diálogo cuando lo haga el usuario.</param>
+        <summary>Muestra y lleva a cabo acciones iniciadas en el cuadro de diálogo integrado de Microsoft Word especificado. Devuelve un <b>entero</b> que indica el botón en el que se hizo clic para cerrar el cuadro de diálogo.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <list type="table">
+        <remarks><list type="table">
             <item>
               <description>-2</description>
-              <description>El botón <b>Cerrar</b> .</description>
+              <description>Botón <b>Cerrar</b>.</description>
             </item>
             <item>
               <description>-1</description>
-              <description>el botón <b>Aceptar</b> .</description>
+              <description>Botón <b>Aceptar</b>.</description>
             </item>
             <item>
               <description>0 (cero)</description>
-              <description>el botón <b>Cancelar</b> .</description>
+              <description>Botón <b>Cancelar</b>.</description>
             </item>
             <item>
-              <description> &gt; 0 (cero)</description>
-              <description>un botón de comando: 1 es el primer botón, 2 es el segundo botón y así sucesivamente.</description>
+              <description>&gt; 0 (zero)</description>
+              <description>Botón de comando: 1 corresponde al primer botón, 2 al segundo, y así sucesivamente.</description>
             </item>
-          </list> Método 
-          <para>Utilice el <b>Mostrar</b> muestra el cuadro de diálogo de Word integrado especificado cuadro, a continuación, (si el usuario hace clic en el botón <b>Aceptar</b> ) efectuar las acciones especificadas por el usuario en el cuadro de diálogo. El <see cref="M:Microsoft.Office.Interop.Word.Dialog.Display(System.Object@)" /> método, por otro lado, muestra el cuadro de diálogo de Word integrado especificado, pero no realiza ninguna acción después de que el usuario cierra el cuadro de diálogo. Por lo tanto, debe elegir el método a usar la siguiente manera:</para>(método)
-          <list type="bullet"><item><para>usar la <b>presentación</b> si las acciones que el usuario va a realizar en el cuadro de diálogo se hayan completado antes de que el usuario cierra el cuadro de diálogo - por ejemplo, cuando el usuario personaliza un menú o barra de herramientas mediante el cuadro de diálogo Personalizar (<b>wdDialogToolsCustomize</b>). También puede usar el método <b>Display</b> si desea omitir las acciones solicitadas por el usuario, si las acciones que normalmente se completan después de que el usuario cierra el cuadro de diálogo.</para></item><item><para>Utilice el método <b>Show</b> si las acciones que el usuario va a realizar en el cuadro de diálogo normalmente se completan después de que el usuario cierra el cuadro de diálogo - por ejemplo, cuando el usuario selecciona un archivo para abrir mediante el cuadro de diálogo Abrir (<b>wdDialogFileOpen</b>).</para></item></list><para /></remarks>
+          </list>
+          <para>Use el método <b>Show</b> muestra el cuadro de diálogo de Word integrado especificado y, a continuación, (si el usuario hace clic en el botón <b>Aceptar</b> ), lleve a cabo las acciones especificadas por el usuario en el cuadro de diálogo. Por <see cref="M:Microsoft.Office.Interop.Word.Dialog.Display(System.Object@)" /> otra parte, el método muestra el cuadro de diálogo de Word integrado especificado, pero no realiza ninguna acción después de que el usuario cierre el cuadro de diálogo. Por lo tanto, debe elegir el método que se va a usar de la siguiente manera:</para>
+          <list type="bullet">
+            <item>
+              <para>Utilice el método <b>Display</b> si las acciones que realizará el usuario en el cuadro de diálogo se completan antes de que el usuario cierre el cuadro de diálogo (por ejemplo, cuando el usuario personaliza un menú o una barra de herramientas) mediante el cuadro de diálogo Personalizar (<b>wdDialogToolsCustomize</b>). También puede usar el método <b>Display</b> si desea omitir las acciones solicitadas por el usuario, si esas acciones suelen completarse después de que el usuario cierre el cuadro de diálogo.</para>
+            </item>
+            <item>
+              <para>Use el método <b>Show</b> si las acciones que realizará el usuario en el cuadro de diálogo suelen completarse después de que el usuario cierre el cuadro de diálogo (por ejemplo, cuando el usuario selecciona un archivo para abrirlo) mediante el cuadro de diálogo Abrir (<b>wdDialogFileOpen</b>).</para>
+            </item>
+          </list>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">

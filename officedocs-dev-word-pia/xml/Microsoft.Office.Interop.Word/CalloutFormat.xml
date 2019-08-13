@@ -1,13 +1,5 @@
 <Type Name="CalloutFormat" FullName="Microsoft.Office.Interop.Word.CalloutFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c04c571668cd9e557fbce92649a5a632d6c743de" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674702" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CalloutFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3e225a3d98b4c368d5c9c0b464dfefb3fd25e89a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147329" /></Metadata><TypeSignature Language="C#" Value="public interface CalloutFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CalloutFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CalloutFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface CalloutFormat" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Contiene propiedades y métodos que se pueden aplicar a llamadas con línea.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.Shape.Callout" /> (propiedad) para devolver un objeto <b>CalloutFormat</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.Shape.Callout" /> propiedad para devolver un objeto <b>CalloutFormat</b> . </para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Accent">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor que indica si una barra de énfasis vertical que separa el texto de llamada desde la línea de llamada.</summary>
+        <summary>Devuelve o establece un valor que indica si una barra de énfasis vertical separa el texto de llamada de la línea de llamada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,11 +82,9 @@
       <Docs>
         <summary>Devuelve o establece un valor que indica el ángulo de la línea de llamada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si la línea de llamada contiene más de un segmento de línea, esta propiedad devuelve o establece el ángulo del segmento que está más alejado del cuadro de texto de llamada.</para>
+        <remarks><para>Si la línea de llamada contiene más de un segmento de línea, esta propiedad devuelve o establece el ángulo del segmento que está más alejado del cuadro de texto de llamada.</para>
           <para>Si establece el valor de esta propiedad en cualquier valor distinto de <b>msoCalloutAngleAutomatic</b>, la línea de llamada mantiene un ángulo fijo mientras arrastra la llamada.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -122,7 +110,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -159,13 +147,11 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor que indica si se cambia el lugar donde la línea de llamada se une al cuadro de texto de llamada dependiendo de si el origen de la línea de llamada (donde apunta la llamada) está a la izquierda o derecha del cuadro de texto de la llamada.</summary>
+        <summary>Devuelve o establece un valor que indica si el punto donde la línea de la llamada se une al cuadro de texto de la llamada cambia en función de si el origen de la línea de llamada (donde señala la llamada) está a la izquierda o a la derecha del cuadro de texto de la llamada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cuando el valor de esta propiedad es <b>True</b>, el valor de colocación (distancia vertical desde el borde del cuadro de texto de la llamada hasta el lugar donde se adjunta la línea de llamada) se mide desde la parte superior del cuadro de texto cuando el cuadro de texto está a la derecha del origen , y se mide desde la parte inferior del cuadro de texto cuando el cuadro de texto está a la izquierda del origen. Cuando el valor de esta propiedad es <b>False</b>, el valor de colocación siempre se mide desde la parte superior del cuadro de texto, independientemente de las posiciones relativas del cuadro de texto y el origen. Usar el <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" /> (método) para establecer el valor de drop y usar el <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> propiedad para devolver el valor de drop.</para>
-          <para>Al establecer esta propiedad afecta a una llamada sólo si se ha establecido explícitamente un valor de drop, es decir, si el valor de la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" /><b>propiedad</b>. De forma predeterminada, llamadas tienen explícitamente colocar valores establecidos cuando se crean.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cuando el valor de esta propiedad es <b>true</b>, el valor de la línea de unión (distancia vertical desde el borde del cuadro de texto de la llamada hasta el punto donde se adjunta la línea de la llamada) se mide desde la parte superior del cuadro de texto cuando el cuadro de texto está a la derecha del origen y se mide desde la parte inferior del cuadro de texto cuando el cuadro de texto está a la izquierda del origen. Si el valor de esta propiedad es <b>False</b>, el valor de colocación siempre se mide desde la parte superior del cuadro de texto, independientemente de las posiciones relativas del cuadro de texto y del origen. Use el <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" /> método para establecer el valor de colocación y use la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> propiedad para devolver el valor de colocación.</para>
+          <para>El establecimiento de esta propiedad afecta a una llamada sólo si se ha establecido explícitamente un valor de Drop, es decir, <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" /> si el valor de la propiedad es <b>msoCalloutDropCustom</b>. De forma predeterminada, cuando se crean las llamadas establecen explícitamente sus valores descendentes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoLength">
@@ -191,12 +177,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un valor que indica si se va a establecer automáticamente la longitud de la línea de llamada.</summary>
+        <summary>Devuelve un valor que indica si se establece automáticamente la longitud de la línea de llamada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.AutomaticLength" /> (método) para establecer esta propiedad en <b>msoTrue</b>y utilice el <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> (método) para establecer esta propiedad en <b>msoFalse</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.AutomaticLength" /> método para establecer esta propiedad en <b>msoTrue</b>y utilice el <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> método para establecer esta propiedad en <b>msoFalse</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutomaticLength">
@@ -224,11 +208,9 @@
       <Parameters />
       <Docs>
         <summary>Especifica que el primer segmento de la línea de llamada (el segmento unido al cuadro de la llamada de texto) se ajusta automáticamente cuando se mueva la llamada.</summary>
-        <remarks>
-          <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> (método) para especificar que el primer segmento de la línea de llamada conserva la longitud fija devuelta por la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" /> (propiedad) siempre que se mueva la llamada. Se aplica sólo a llamadas cuyas líneas constan de más de un segmento (tipos <b>msoCalloutThree</b> y <b>msoCalloutFour</b>).</para>
-          <para>Aplicar este método establece la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> propiedad en <b>True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use el <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> método para especificar que el primer segmento de la línea de llamada conserva la longitud fija devuelta <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" /> por la propiedad siempre que se mueva la llamada. Se aplica sólo a llamadas cuyas líneas estén formadas por más de un segmento (tipos <b>msoCalloutThree</b> y <b>msoCalloutFour</b>).</para>
+          <para>Al aplicar este método, <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> la propiedad se establece en <b>true</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -287,9 +269,9 @@
       <Docs>
         <summary>Devuelve un valor que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomDrop">
@@ -317,11 +299,9 @@
       <Docs>
         <param name="Drop">Distancia de colocación en puntos.</param>
         <summary>Establece la distancia vertical (en puntos) desde el borde del texto del cuadro de límite hasta el lugar donde la línea de llamada se une al cuadro de texto.</summary>
-        <remarks>
-          <para>Esta distancia se mide desde la parte superior del cuadro de texto a menos que el <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> (propiedad) se establece en <b>True</b> y el cuadro de texto está a la izquierda del origen de la línea de llamada (el lugar al que señala la llamada), en cuyo caso la distancia de colocación se mide desde la parte inferior del cuadro de texto.</para>
-          <para>Si el <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> método anteriormente se usó para establecer la separación de la llamada especificada, llame al método <b>PresetDrop</b> nuevo con el argumento <b>msoCalloutDropCustom</b> antes de utilizar el método <b>CustomDrop</b> para que personalizados drop configuración en vigor.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta distancia se mide desde la parte superior del cuadro de texto, <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> a menos que la propiedad se establezca en <b>true</b> y el cuadro de texto se encuentra a la izquierda del origen de la línea de la llamada (el lugar al que señala la llamada), en cuyo caso la distancia de la línea de Unión se mide desde la parte inferior. del cuadro de texto.</para>
+          <para>Si el <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> método se usó previamente para establecer el Drop para la llamada especificada, llame al método <b>PresetDrop</b> de nuevo con el argumento <b>msoCalloutDropCustom</b> antes de usar el método <b>CustomDrop</b> para que la configuración de Drop personalizada tome efectivo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomLength">
@@ -349,11 +329,9 @@
       <Docs>
         <param name="Length">Longitud del primer segmento de la llamada, en puntos.</param>
         <summary>Especifica que el primer segmento de la línea de la llamada (el segmento adjunto al cuadro de texto) mantenga una longitud fija siempre que se mueva la llamada.</summary>
-        <remarks>
-          <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.AutomaticLength" /> (método) para especificar que el primer segmento de la línea de llamada se ajuste automáticamente siempre que se mueva la llamada. Se aplica sólo a llamadas cuyas líneas constan de más de un segmento (tipos <b>msoCalloutThree</b> y <b>msoCalloutFour</b>).</para>
-          <para>Aplicar este método establece la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> propiedad establece en <b>False</b> y el <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" /> (propiedad) en el valor especificado para la <paramref name="Length" /> argumento.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use el <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.AutomaticLength" /> método para especificar que el primer segmento de la línea de llamada se ajuste automáticamente siempre que se mueva la llamada. Se aplica sólo a llamadas cuyas líneas estén formadas por más de un segmento (tipos <b>msoCalloutThree</b> y <b>msoCalloutFour</b>).</para>
+          <para>Al aplicar este método, <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> la propiedad se establece en <b>false</b> y se establece la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" /> propiedad en el <paramref name="Length" /> valor especificado para el argumento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Drop">
@@ -381,12 +359,10 @@
       <Docs>
         <summary>Para llamadas con un valor de línea de unión establecido explícitamente, esta propiedad devuelve la distancia vertical, en puntos, desde el lado del cuadro de límite del texto hasta el lugar donde la línea de la llamada se une al cuadro de texto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta distancia se mide desde la parte superior del cuadro de texto a menos que el <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> (propiedad) se establece en <b>True</b> y el cuadro de texto está a la izquierda del origen de la línea de llamada (el lugar al que señala la llamada), en cuyo caso la distancia de colocación se mide desde la parte inferior del cuadro de texto.</para>
-          <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" /> (método) para establecer el valor de esta propiedad.</para>
-          <para>El valor de esta propiedad refleja con exactitud la posición de los datos adjuntos de línea de llamada al cuadro de texto sólo si la llamada ha establecido explícitamente un valor de drop, es decir, si el valor de la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" /><b>propiedad</b>. Usar el <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> método con un argumento <b>msoCalloutCustomDrop</b> para establecer la propiedad <b>DropType</b> en <b>msoCalloutDropCustom</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta distancia se mide desde la parte superior del cuadro de texto, <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> a menos que la propiedad se establezca en <b>true</b> y el cuadro de texto se encuentra a la izquierda del origen de la línea de la llamada (el lugar al que señala la llamada), en cuyo caso la distancia de la línea de Unión se mide desde la parte inferior. del cuadro de texto.</para>
+          <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" /> método para establecer el valor de esta propiedad.</para>
+          <para>El valor de esta propiedad refleja con exactitud la posición en la que la línea de la llamada se adjunta al cuadro de texto sólo si la llamada tiene un valor de Drop explícitamente establecido, es <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" /> decir, si el valor de la propiedad es <b>msoCalloutDropCustom</b>. Use el <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> método con un argumento <b>msoCalloutCustomDrop</b> para establecer la propiedad <b>DropType</b> en <b>msoCalloutDropCustom</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DropType">
@@ -414,11 +390,9 @@
       <Docs>
         <summary>Devuelve un valor que indica dónde se adjunta la línea de llamada al cuadro de texto de la llamada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el tipo de colocación de la llamada es <b>msoCalloutDropCustom</b>, los valores de la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> y <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> las propiedades y las posiciones relativas del cuadro de texto de llamada y el origen de la línea de llamada (el lugar al que señala la llamada) se utilizan para determinar dónde la llamada línea se une al cuadro de texto.</para>
-          <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> (método) para establecer el valor de esta propiedad.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si el tipo de línea de <b></b>Unión de la llamada es msoCalloutDropCustom <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> , <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> los valores de las propiedades y y las posiciones relativas del cuadro de texto de la llamada y el origen de la línea de la llamada (lugar al que señala la llamada) se utilizan para determinar dónde se encuentra la llamada. línea se une al cuadro de texto.</para>
+          <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> método para establecer el valor de esta propiedad.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Gap">
@@ -475,13 +449,11 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando el <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> (propiedad) de la llamada especificada está establecida en <b>False</b>, la propiedad <b>Length</b> devuelve la longitud (en puntos) del primer segmento de la línea de llamada (el segmento unido al cuadro de llamada de texto).</summary>
+        <summary>Cuando la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> propiedad de la llamada especificada se establece en <b>false</b>, la propiedad <b>length</b> devuelve la longitud (en puntos) del primer segmento de la línea de llamada (el segmento unido al cuadro de texto de la llamada).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se aplica sólo a llamadas cuyas líneas constan de más de un segmento (tipos <b>msoCalloutThree</b> y <b>msoCalloutFour</b>).</para>
-          <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> (método) para establecer el valor de esta propiedad para la <see cref="T:Microsoft.Office.Interop.Word.CalloutFormat" /> objeto.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se aplica sólo a llamadas cuyas líneas estén formadas por más de un segmento (tipos <b>msoCalloutThree</b> y <b>msoCalloutFour</b>).</para>
+          <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> método para establecer el valor de esta propiedad para el <see cref="T:Microsoft.Office.Interop.Word.CalloutFormat" /> objeto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -537,10 +509,8 @@
       <Docs>
         <param name="DropType">La posición inicial de la línea de llamada con respecto al cuadro de límite de texto.</param>
         <summary>Especifica si la línea de la llamada se adjunta al lado superior, inferior o central del cuadro de texto de la llamada, o bien si se adjunta a un punto situado a una distancia especificada desde el lado superior o inferior del cuadro de texto.</summary>
-        <remarks>
-          <para>Si especifica <b>msoCalloutDropCustom</b> para la <paramref name="DropType" /> parámetro, los valores de la <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> y <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> las propiedades y las posiciones relativas del cuadro de texto de llamada y el origen de la línea de llamada (el lugar al que señala la llamada) se utilizan para determinar donde la línea de llamada se une al cuadro de texto.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si especifica <b>msoCalloutDropCustom</b> para el <paramref name="DropType" /> parámetro, los valores de las <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> propiedades y <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> y las posiciones relativas del cuadro de texto de la llamada y el origen de la línea de la llamada (el punto en el que señala la llamada) se usan para determinar donde la línea de la llamada se une al cuadro de texto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">

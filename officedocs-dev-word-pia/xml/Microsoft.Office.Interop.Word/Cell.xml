@@ -1,13 +1,5 @@
 <Type Name="Cell" FullName="Microsoft.Office.Interop.Word.Cell">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8ad0130c14870aad4b806b0703212d56fec37a14" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674655" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Cell" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5c545e74b89b7677ca1439554a6927ae25fd8a91" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142372" /></Metadata><TypeSignature Language="C#" Value="public interface Cell" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Cell" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Cell" />
   <TypeSignature Language="VB.NET" Value="Public Interface Cell" />
@@ -27,10 +19,12 @@
   </Attributes>
   <Docs>
     <summary>Representa una celda de tabla.</summary>
-    <remarks>
-      <para>El objeto <b>Cell</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Cells" /> colección. La colección <b>Cells</b> representa todas las celdas del objeto especificado.</para>
-      <para>Utilice <b>celda</b>(<paramref name="row" />, <paramref name="column" />), donde <paramref name="row" /> es el número de fila y <paramref name="column" /> es el número de columna o <b>celdas</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un objeto <b>Cell</b> .</para> Uso de 
-      <para>la <see cref="M:Microsoft.Office.Interop.Word.Cells.Add(System.Object@)" /> método para agregar un objeto <b>Cell</b> a la colección <b>Cells</b> . También puede usar el <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertCells(System.Object@)" /> (método) de la <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto para insertar nuevas celdas.</para><para>Utilice el método <b>Add</b> con la <see cref="T:Microsoft.Office.Interop.Word.Rows" /> o <see cref="T:Microsoft.Office.Interop.Word.Columns" /> colección que se va a agregar una fila o columna de celdas.</para><para>Usar el <see cref="P:Microsoft.Office.Interop.Word.Selection.Information(Microsoft.Office.Interop.Word.WdInformation)" /> (propiedad) con un <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto para devolver el número de fila y columna actual.</para><para /></remarks>
+    <remarks><para>El objeto <b>Cell</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Cells" /> colección. La colección <b>Cells</b> representa todas las celdas del objeto especificado.</para>
+      <para>Use <b></b>la celda<paramref name="row" />( <paramref name="column" />,), <paramref name="row" /> donde es el número de <paramref name="column" /> fila y es el número de columna,<paramref name="index" />o <b>celdas</b>( <paramref name="index" /> ), donde es el número de índice, para devolver un objeto <b>Cell</b> .</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.Cells.Add(System.Object@)" /> método para agregar un objeto <b>Cell</b> a la colección <b>Cells</b> . También puede usar el <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertCells(System.Object@)" /> método del <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto para insertar nuevas celdas.</para>
+      <para>Utilice el método <b>Add</b> con la <see cref="T:Microsoft.Office.Interop.Word.Rows" /> colección <see cref="T:Microsoft.Office.Interop.Word.Columns" /> or para agregar una fila o columna de celdas.</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.Selection.Information(Microsoft.Office.Interop.Word.WdInformation)" /> propiedad con un <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto para devolver el número de fila y de columna actual.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa el creador del objeto especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa al creador del objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -83,10 +77,8 @@
       <Parameters />
       <Docs>
         <summary>Inserta un campo = (Fórmula) que calcula y muestra la suma de los valores de las celdas de la tabla situada sobre la celda especificada en la expresión o a la izquierda de la misma.</summary>
-        <remarks>
-          <para>Para obtener información acerca de cómo Microsoft Word determina los valores que se van a agregar, consulte el <see cref="M:Microsoft.Office.Interop.Word.Cell.Formula(System.Object@,System.Object@)" /> (método).</para>
-          <para />
-        </remarks>
+        <remarks><para>Para obtener información sobre cómo Microsoft Word determina los valores que se van a <see cref="M:Microsoft.Office.Interop.Word.Cell.Formula(System.Object@,System.Object@)" /> agregar, vea el método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Borders">
@@ -115,7 +107,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.Borders" /> colección que representa todos los bordes del objeto especificado.</summary>
+        <summary>Devuelve o establece una <see cref="T:Microsoft.Office.Interop.Word.Borders" /> colección que representa todos los bordes del objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,12 +138,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece una cantidad de espacio (en puntos) que se agrega bajo el contenido de una celda.</summary>
+        <summary>Devuelve o establece la cantidad de espacio (en puntos) que se agregará debajo del contenido de una celda.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El valor de la propiedad <b>BottomPadding</b> para una sola celda anula el valor de la <see cref="P:Microsoft.Office.Interop.Word.Table.BottomPadding" /> propiedad para toda la tabla.</para>
-          <para />
-        </remarks>
+        <remarks><para>El valor de la propiedad <b>BottomPadding</b> para una sola celda anula el valor de la <see cref="P:Microsoft.Office.Interop.Word.Table.BottomPadding" /> propiedad para toda la tabla.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -177,7 +167,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Column</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Column" /> object que representa la columna de tabla que contiene la celda especificada.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Column" /> objeto Object que representa la columna de tabla que contiene la celda especificada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -205,7 +195,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un valor que indica el número de la columna de tabla que contiene la celda especificada.</summary>
+        <summary>Devuelve un valor que indica el número de la columna de la tabla que contiene la celda especificada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -235,9 +225,9 @@
       <Docs>
         <summary>Devuelve un valor que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -295,10 +285,8 @@
       <Docs>
         <summary>Devuelve o establece un valor que indica si Microsoft Word reduce visualmente el tamaño del texto escrito en una celda para que quepa dentro del ancho de columna.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si la propiedad <b>FitText</b> está establecida en <b>True</b>, no se cambia el tamaño de fuente del texto, pero el ancho visual de los caracteres se ajusta para que quepa todo el texto escrito en la celda.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la propiedad <b>FitText</b> está establecida en <b>True</b>, no se cambia el tamaño de fuente del texto, pero el ancho visual de los caracteres se ajusta a todo el texto escrito en la celda.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Formula">
@@ -327,15 +315,13 @@
         <param name="Formula">Fórmula matemática que desea que evalúe el campo = (Fórmula). Son válidas las referencias de tipo de hoja de cálculo a las celdas de la tabla. Por ejemplo, "=SUM(A4:C4)" especifica los tres primeros valores de la cuarta fila.</param>
         <param name="NumFormat">Formato para el resultado del campo = (Fórmula).</param>
         <summary>Inserta un campo = (Fórmula) que contiene la fórmula especificada en la celda de una tabla.</summary>
-        <remarks>
-          <para>
-            <b>Fórmula</b> es opcional, siempre y cuando no hay al menos una celda que contiene un valor por encima o a la izquierda de la celda que contiene el punto de inserción. Si las celdas sobre el punto de inserción contienen valores, el campo insertado será {= SUM (ABOVE)}; Si los puntos de las celdas a la izquierda de la inserción contienen valores, el campo insertado será {= SUM (Left)}. Si las celdas sobre el punto de inserción y las celdas a la izquierda del punto de inserción contienen valores, Microsoft Word utiliza las siguientes reglas para determinar la función <b>suma</b> para insertar:</para>
-          <para>Si la celda situada inmediatamente sobre la inserción de los puntos contiene un valor, Word insertará {= SUM (ABOVE)}.</para>
-          <para>Si la celda situada inmediatamente sobre el punto de inserción no contiene ningún valor y la celda inmediatamente a la izquierda sí, Word inserta {= SUM (Left)}.</para>
-          <para>Si ninguna celda adyacente contiene un valor, Word insertará {= SUM (ABOVE)}.</para>
-          <para>Si no especifica <b>Formula</b> y todas las celdas situadas sobre y a la izquierda del punto de inserción están vacías, el resultado del campo dará un error.</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>Formula</b> es opcional, siempre y cuando hay al menos una celda que contiene un valor por encima o a la izquierda de la celda que contiene el punto de inserción. Si las celdas sobre el punto de inserción contienen valores, el campo insertado será {= SUM (ABOVE)}; Si las celdas a la izquierda de la inserción punto contienen valores, el campo insertado será {= SUM (Left)}. Si las celdas situadas sobre el punto de inserción y las celdas a la izquierda del punto de inserción contienen valores, Microsoft Word utilizará las siguientes reglas para determinar qué función <b>SUM</b> se debe insertar:</para>
+          <para>Si la celda situada sobre el punto de inserción contiene un valor, Word insertará {=SUM(ABOVE)}.</para>
+          <para>Si la celda situada sobre el punto de inserción no contiene ningún valor y la que está a la izquierda sí, Word insertará {=SUM(LEFT)}.</para>
+          <para>Si ninguna celda adyacente contiene valores, Word insertará {=SUM(ABOVE)}.</para>
+          <para>Si no especifica <b>que formula</b> y todas las celdas por encima y a la izquierda del punto de inserción están vacías, el resultado del campo dará un error.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -364,12 +350,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el alto del objeto especificado (en puntos a menos que se indique lo contrario).</summary>
+        <summary>Devuelve o establece el alto del objeto especificado (en puntos, a menos que se especifique lo contrario).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el <see cref="P:Microsoft.Office.Interop.Word.Row.HeightRule" /> (propiedad) de la fila especificada es <b>wdRowHeightAuto</b>, <b>Height</b> devuelve <b>wdUndefined</b>; establecer la propiedad <b>Height</b> , <b>HeightRule</b> establece en <b>wdRowHeightAtLeast</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la <see cref="P:Microsoft.Office.Interop.Word.Row.HeightRule" /> propiedad de la fila especificada es <b>wdRowHeightAuto</b>, <b>height</b> devuelve <b>wdUndefined</b>; al establecer la propiedad <b>height</b> , <b>HeightRule</b> se establece en <b>wdRowHeightAtLeast</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HeightRule">
@@ -400,10 +384,8 @@
       <Docs>
         <summary>Devuelve o establece la regla que determinará el alto de la celda especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si la propiedad <b>HeightRule</b> de un <see cref="T:Microsoft.Office.Interop.Word.Cell" /> objeto establece automáticamente la propiedad para toda la fila.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si se <b></b> establece la propiedad HeightRule <see cref="T:Microsoft.Office.Interop.Word.Cell" /> de un objeto, la propiedad de toda la fila se establece automáticamente.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -463,12 +445,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la cantidad de espacio (en puntos) para agregar a la izquierda del contenido de una sola celda.</summary>
+        <summary>Devuelve o establece la cantidad de espacio (en puntos) que se va a agregar a la izquierda del contenido de una sola celda.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La configuración de la <see cref="P:Microsoft.Office.Interop.Word.Cell.LeftPadding" /> (propiedad) para una sola celda anula el valor de la <see cref="P:Microsoft.Office.Interop.Word.Table.LeftPadding" /> propiedad para toda la tabla.</para>
-          <para />
-        </remarks>
+        <remarks><para>El valor de la <see cref="P:Microsoft.Office.Interop.Word.Cell.LeftPadding" /> propiedad de una sola celda anula el valor de la <see cref="P:Microsoft.Office.Interop.Word.Table.LeftPadding" /> propiedad para toda la tabla.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Merge">
@@ -496,10 +476,8 @@
       <Docs>
         <param name="MergeTo">Celda con la que va a combinarse.</param>
         <summary>Combina la celda de la tabla especificada con otra.</summary>
-        <remarks>
-          <para>El resultado de la llamada a esta propiedad es una celda de tabla.</para>
-          <para />
-        </remarks>
+        <remarks><para>El resultado de llamar a esta propiedad es una sola celda de tabla.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NestingLevel">
@@ -527,10 +505,8 @@
       <Docs>
         <summary>Devuelve el nivel de anidamiento de la celda especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La tabla más exterior tiene un nivel de anidamiento de 1. El nivel de anidamiento de cada tabla anidada sucesivamente es superior de la tabla anterior en uno.</para>
-          <para />
-        </remarks>
+        <remarks><para>La tabla más exterior tiene un nivel 1 de anidamiento. El nivel de anidamiento de cada tabla sucesivamente anidada es superior en uno al de la tabla anterior.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -702,7 +678,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa la parte de un documento que está incluida en el objeto especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa la parte de un documento incluida en el objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -733,12 +709,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la cantidad de espacio (en puntos) para agregar a la derecha del contenido de una celda.</summary>
+        <summary>Devuelve o establece la cantidad de espacio (en puntos) que se va a agregar a la derecha del contenido de una celda.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El valor de la propiedad <b>RightPadding</b> para una sola celda anula el valor de la <see cref="P:Microsoft.Office.Interop.Word.Table.RightPadding" /> propiedad para toda la tabla.</para>
-          <para />
-        </remarks>
+        <remarks><para>El valor de la propiedad <b>RightPadding</b> para una sola celda anula el valor de la <see cref="P:Microsoft.Office.Interop.Word.Table.RightPadding" /> propiedad para toda la tabla.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Row">
@@ -764,7 +738,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Row</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Row" /> object que representa la fila que contiene la celda especificada.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Row" /> objeto que representa la fila que contiene la celda especificada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -819,10 +793,8 @@
       <Parameters />
       <Docs>
         <summary>Selecciona el objeto especificado.</summary>
-        <remarks>
-          <para>Después de utilizar este método, utilice el <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> (propiedad) para trabajar con los elementos seleccionados.</para>
-          <para />
-        </remarks>
+        <remarks><para>Después de utilizar este método, utilice <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> la propiedad para trabajar con los elementos seleccionados.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetHeight">
@@ -852,10 +824,8 @@
         <param name="RowHeight">Alto de la fila, en puntos.</param>
         <param name="HeightRule">La regla que determinará el alto de la celda especificada.</param>
         <summary>Establece el alto de una celda de tabla.</summary>
-        <remarks>
-          <para>Establecer la propiedad <b>SetHeight</b> de un <see cref="T:Microsoft.Office.Interop.Word.Cell" /> objeto establece automáticamente la propiedad para toda la fila.</para>
-          <para />
-        </remarks>
+        <remarks><para>Al establecer la propiedad <b>SetHeight</b> de <see cref="T:Microsoft.Office.Interop.Word.Cell" /> un objeto, se establece automáticamente la propiedad de toda la fila.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetWidth">
@@ -882,13 +852,11 @@
         <Parameter Name="RulerStyle" Type="Microsoft.Office.Interop.Word.WdRulerStyle" />
       </Parameters>
       <Docs>
-        <param name="ColumnWidth">El ancho de la columna especificada, en puntos.</param>
-        <param name="RulerStyle">Controla la manera en que Microsoft Word ajusta el ancho de la celda.</param>
+        <param name="ColumnWidth">Ancho de la columna especificada, en puntos.</param>
+        <param name="RulerStyle">Controla la forma en que Microsoft Word ajusta el ancho de la celda.</param>
         <summary>Establece el ancho de una celda de una tabla.</summary>
-        <remarks>
-          <para>El <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" /> comportamiento descrito anteriormente se aplica a tablas alineado a la izquierda. El comportamiento de <b>WdRulerStyle</b> para tablas centradas o alineadas a la derecha puede ser inesperado; en estos casos, el <see cref="M:Microsoft.Office.Interop.Word.Cell.SetWidth(System.Single,Microsoft.Office.Interop.Word.WdRulerStyle)" /> método se debe utilizar con cuidado.</para>
-          <para />
-        </remarks>
+        <remarks><para>El <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" /> comportamiento descrito anteriormente se aplica a las tablas alineadas a la izquierda. El comportamiento de <b>WdRulerStyle</b> para tablas centradas o alineadas a la derecha puede ser inesperado; en estos casos, el <see cref="M:Microsoft.Office.Interop.Word.Cell.SetWidth(System.Single,Microsoft.Office.Interop.Word.WdRulerStyle)" /> método debe usarse con cuidado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shading">
@@ -942,8 +910,8 @@
         <Parameter Name="NumColumns" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NumRows">El número de filas en que va a dividirse la celda.</param>
-        <param name="NumColumns">El número de columnas en que va a dividirse la celda.</param>
+        <param name="NumRows">Número de filas en que se va a dividir la celda.</param>
+        <param name="NumColumns">Número de columnas en que se va a dividir la celda.</param>
         <summary>Divide una celda de tabla en varias celdas.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -971,7 +939,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Tables</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Tables" /> colección que representa todas las tablas de la celda especificada.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.Tables" /> colección que representa todas las tablas de la celda especificada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1004,10 +972,8 @@
       <Docs>
         <summary>Devuelve o establece la cantidad de espacio (en puntos) para agregar por encima del contenido de una sola celda o de todas las celdas de una tabla.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El valor de la propiedad <b>TopPadding</b> para una sola celda anula el valor de la <see cref="P:Microsoft.Office.Interop.Word.Table.TopPadding" /> propiedad para toda la tabla.</para>
-          <para />
-        </remarks>
+        <remarks><para>El valor de la propiedad <b>TopPadding</b> para una sola celda anula el valor de la <see cref="P:Microsoft.Office.Interop.Word.Table.TopPadding" /> propiedad para toda la tabla.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalAlignment">
@@ -1098,7 +1064,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor que indica si Microsoft Word ajusta el texto en varias líneas y aumenta la longitud de la celda para que el ancho de la celda sigue siendo la misma.</summary>
+        <summary>Devuelve o establece un valor que indica si Microsoft Word ajusta el texto en varias líneas y alarga la celda para que el ancho de la celda permanezca igual.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

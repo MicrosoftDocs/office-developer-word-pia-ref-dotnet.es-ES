@@ -1,13 +1,5 @@
 <Type Name="UndoRecord" FullName="Microsoft.Office.Interop.Word.UndoRecord">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="cad0a001261dae8c6e1145efa4c99df630fc70b1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675057" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface UndoRecord" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dccd67ac1bae806d140ca00b07a8119ac1166895" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143794" /></Metadata><TypeSignature Language="C#" Value="public interface UndoRecord" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UndoRecord" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.UndoRecord" />
   <TypeSignature Language="VB.NET" Value="Public Interface UndoRecord" />
@@ -54,11 +46,9 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa la aplicación Microsoft Word 2010.</summary>
-        <value>Un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa la aplicación Microsoft Word 2010.</value>
-        <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
-        </remarks>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Application" /> Objeto que representa la aplicación Microsoft Word 2010.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -85,13 +75,11 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
-        <value>Un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</value>
-        <remarks>
-          <para>Sólo lectura de <b>tipo long</b>. Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Esta propiedad se ha diseñado principalmente para usarse en Apple Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Word tiene el código de creador MSWD.</para>
+        <value>Entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</value>
+        <remarks><para><b>Long</b>de sólo lectura. Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Esta propiedad se diseñó principalmente para usarse en Apple Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Word tiene el código de creador MSWD.</para>
           <para>
-            <b>Precaución</b>: este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
-          <para />
-        </remarks>
+            <b>PRECAUCIÓN</b>: este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomRecordLevel">
@@ -117,12 +105,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un valor que especifica el número de llamadas de la acción de deshacer personalizada que están activas actualmente.</summary>
-        <value>Especifica el número de llamadas de la acción de deshacer personalizada que están activas actualmente.</value>
-        <remarks>
-          <para>Es de sólo lectura. Si no hay acción de deshacer personalizada está activa, esta propiedad se establece en cero.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene un valor que especifica el número de llamadas de acción de deshacer personalizadas que están activas actualmente.</summary>
+        <value>Especifica el número de llamadas de acción de deshacer personalizadas que están activas actualmente.</value>
+        <remarks><para>Solo lectura. Si no hay ninguna acción de deshacer personalizada activa, esta propiedad se establece en cero.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomRecordName">
@@ -148,12 +134,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene una cadena que especifica la entrada que aparece en la pila de deshacer cuando han completado todas las acciones de deshacer personalizado.</summary>
-        <value>Especifica la entrada que aparece en la pila de deshacer cuando han completado todas las acciones de deshacer personalizado.</value>
-        <remarks>
-          <para>Es de sólo lectura. Si los registros de deshacer personalizados están anidados dentro de otros registros de deshacer personalizado, esta propiedad especifica qué cadena aparece en la pila de deshacer personalizada después de todo han completado las acciones de deshacer. Si varias llamadas a la <see cref="M:Microsoft.Office.Interop.Word.UndoRecord.StartCustomRecord" /> método están anidados, la cadena especificada por la primera llamada es devuelto por esta propiedad. Si ninguna acción está activa, la propiedad devuelve una cadena vacía.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene una cadena que especifica la entrada que aparece en la pila de deshacer cuando se han completado todas las acciones de deshacer personalizadas.</summary>
+        <value>Especifica la entrada que aparece en la pila de deshacer cuando se completan todas las acciones de deshacer personalizadas.</value>
+        <remarks><para>Solo lectura. Si los registros de Deshacer personalizados están anidados en otros registros de Deshacer personalizados, esta propiedad especifica qué cadena aparece en la pila de Deshacer personalizada después de que todas las acciones de Deshacer se hayan completado. Si varias llamadas al <see cref="M:Microsoft.Office.Interop.Word.UndoRecord.StartCustomRecord" /> método están anidadas, esta propiedad devuelve la cadena especificada por la primera llamada. Si no hay ninguna acción activa, la propiedad devuelve una cadena vacía.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndCustomRecord">
@@ -205,12 +189,9 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene si se está grabando una acción de deshacer personalizada.</summary>
-        <value>
-          <b>true</b> si se está grabando una acción de deshacer personalizada; en caso contrario, <b>false</b>.</value>
-        <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
-        </remarks>
+        <value><b>true</b> si se está grabando una acción de deshacer personalizada; de lo contrario, <b>false</b>.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -236,8 +217,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:System.Object" /> que representa el objeto primario del especificado <see cref="T:Microsoft.Office.Interop.Word.UndoRecord" /> objeto.</summary>
-        <value>Un <see cref="T:System.Object" /> que representa el objeto primario del especificado <see cref="T:Microsoft.Office.Interop.Word.UndoRecord" /> objeto.</value>
+        <summary>Obtiene un <see cref="T:System.Object" /> objeto que representa el objeto primario del objeto <see cref="T:Microsoft.Office.Interop.Word.UndoRecord" /> especificado.</summary>
+        <value>Un <see cref="T:System.Object" /> que representa el objeto primario del objeto especificado <see cref="T:Microsoft.Office.Interop.Word.UndoRecord" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,11 +246,9 @@
       <Docs>
         <param name="Name">Especifica el nombre del registro de deshacer personalizado. Esta cadena está limitada a 64 caracteres. Si se proporciona una cadena más larga, la cadena se trunca a 64 caracteres.</param>
         <summary>Inicia la creación de un registro de Deshacer personalizado.</summary>
-        <remarks>
-          <para>Si el <paramref name="Name" /> parámetro se omite o es una cadena vacía, Word 2010 usa el nombre del primer comando ejecutado como el nombre del registro de deshacer.</para>
-          <para>Este método comienza la creación de un registro de deshacer personalizado, que registra todas las acciones realizadas a la aplicación mientras está activa en un registro definido por su nombre.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si se <paramref name="Name" /> omite el parámetro o es una cadena vacía, Word 2010 utiliza el nombre del primer comando ejecutado como nombre del registro de deshacer.</para>
+          <para>Este método comienza la creación de un registro de deshacer personalizado, que registra todas las acciones realizadas en la aplicación mientras está activa en un registro definido por el nombre.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

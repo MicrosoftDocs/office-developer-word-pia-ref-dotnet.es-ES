@@ -1,13 +1,5 @@
 <Type Name="ListTemplate" FullName="Microsoft.Office.Interop.Word.ListTemplate">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6ee663e8d8d86e765adeb286114c48281180a479" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674879" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListTemplate" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1139c365cea882b428ac0f0075b3c20e4756cad2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144508" /></Metadata><TypeSignature Language="C#" Value="public interface ListTemplate" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListTemplate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListTemplate" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListTemplate" />
@@ -27,17 +19,15 @@
   </Attributes>
   <Docs>
     <summary>Representa una sola plantilla de lista que incluye todo el formato que define una lista.</summary>
-    <remarks>
-      <para>El objeto <b>ListTemplate</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> colección. Cada uno de los siete formatos (excluido Ninguno) encontrado en cada una de las tres fichas viñetas y numeración de cuadro de diálogo corresponde a un objeto de plantilla de lista. Se pueden tener acceso a estas plantillas de lista predefinidas desde los tres <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> objetos en el <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> colección. Plantillas y documentos también pueden contener colecciones de plantillas de lista.</para>
-      <para>Uso <b>ListTemplates</b>(<paramref name="index" />), donde <paramref name="index" /> es un número comprendido entre 1 y 7, para devolver una sola plantilla de lista desde una galería de listas.</para>
+    <remarks><para>El objeto <b>ListTemplate</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> colección. Cada uno de los siete formatos (excluido Ninguno) existentes en cada una de las tres fichas del cuadro de diálogo Numeración y viñetas corresponde a un objeto de una plantilla de lista. Se puede tener acceso a estas plantillas de lista predefinidas <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> desde los tres <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> objetos de la colección. Los documentos y las plantillas también pueden contener colecciones de plantillas de lista.</para>
+      <para>Use <b>ListTemplates</b>(<paramref name="index" />), donde <paramref name="index" /> es un número del 1 al 7, para devolver una sola plantilla de lista desde una galería de listas.</para>
       <para>
-        <b>Nota</b>: algunas propiedades y métodos: <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> y <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />, por ejemplo, no funcionarán con las plantillas de lista que se acceden desde una galería de listas. Puede modificar estas plantillas de lista, pero no se puede cambiar el tipo de galería de lista (<b>wdBulletGallery</b>, <b>wdNumberGallery</b>o <b>wdOutlineNumberGallery</b>).</para>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" /> método para agregar una plantilla de lista a la colección de plantillas de lista en un documento o plantilla.</para>
-      <para>Para ver si la plantilla de lista especificada contiene el formato integrado de Microsoft Word, use la <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> propiedad con el objeto <b>ListGallery</b> . Para restablecer el formato para el formato de lista original, use el <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> (método) para el objeto <b>ListGallery</b> .</para>
-      <para>Después de haber devuelto un objeto <b>ListTemplate</b> , utilice <b>ListLevels</b>(<paramref name="index" />), donde <paramref name="index" /> es un número comprendido entre 1 y 9, para devolver un solo <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> objeto. Con un objeto <b>ListLevel</b> , tiene acceso a todas las propiedades de formato para el nivel de lista especificado, como <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />, y <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />.</para>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> método para convertir una plantilla de lista de varios niveles a una plantilla de un solo nivel.</para>
-      <para />
-    </remarks>
+        <b>Nota</b>: algunas propiedades y métodos, <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> y <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />, por ejemplo, no funcionarán con las plantillas de lista a las que se obtiene acceso desde una galería de listas. Puede modificar estas plantillas, pero no puede cambiar el tipo de galería de lista (<b>wdBulletGallery</b>, <b>wdNumberGallery</b> o <b>wdOutlineNumberGallery</b>).</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" /> método para agregar una plantilla de lista a la colección de plantillas de lista de un documento o una plantilla.</para>
+      <para>Para ver si la plantilla de lista especificada contiene el formato integrado en Microsoft Word, utilice <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> la propiedad con el objeto <b>ListGallery</b> . Para restablecer el formato al formato de lista original, utilice <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> el método para el objeto <b>ListGallery</b> .</para>
+      <para>Una vez que haya devuelto un objeto <b>ListTemplate</b> , use<paramref name="index" /> <b>ListLevels</b>() <paramref name="index" /> , donde es un número del 1 al 9, para devolver <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> un único objeto. Con un objeto <b>ListLevel</b> , tiene acceso a todas las propiedades de formato para el nivel de lista especificado, como <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />, y <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />.</para>
+      <para>Use el <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> método para convertir una plantilla de lista de varios niveles en una plantilla de un solo nivel.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -63,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,14 +80,11 @@
         <Parameter Name="Level" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Level">
-          <b>Objeto</b>de opcional. Nivel que va a utilizarse para dar formato a la nueva lista. Al convertir una lista de varios niveles en una lista de un solo nivel, este argumento puede ser un número del 1 al 9. Al realizar la conversión de forma inversa, el único valor válido es 1. Si se omite este argumento, el valor predeterminado es 1.</param>
+        <param name="Level"><b>Objeto</b>opcional. Nivel que va a utilizarse para dar formato a la nueva lista. Al convertir una lista de varios niveles en una lista de un solo nivel, este argumento puede ser un número del 1 al 9. Al realizar la conversión de forma inversa, el único valor válido es 1. Si se omite este argumento, el valor predeterminado es 1.</param>
         <summary>Convierte una lista de varios niveles en una lista de un solo nivel o viceversa.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>No se puede usar el método <b>Convert</b> en una plantilla de lista que se deriva de la <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> colección.</para>
-          <para />
-        </remarks>
+        <remarks><para>No se puede usar el método <b>Convert</b> en una plantilla de lista que se deriva <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> de la colección.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -125,9 +112,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListLevels">
@@ -153,7 +140,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListLevels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> colección que representa todos los niveles para especificado <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> colección que representa todos los niveles de la especificada <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -215,14 +202,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el texto especificado <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> objeto es esquema numerado.</summary>
+        <summary><b>True</b> si el objeto <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> especificado tiene el esquema numerado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Al establecer esta propiedad en <b>False</b> convierte la plantilla de lista a una lista de un solo nivel que utiliza el formato del primer nivel.</para>
-          <para>No se puede establecer esta propiedad para un objeto <b>ListTemplate</b> devuelto desde un <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> objeto.</para>
-          <para />
-        </remarks>
+        <remarks><para>Al establecer esta propiedad en <b>False</b>, convierte la plantilla de lista a una lista de un solo nivel que utiliza el formato del primer nivel.</para>
+          <para>No se puede establecer esta propiedad para un objeto <b>ListTemplate</b> devuelto <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> desde un objeto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

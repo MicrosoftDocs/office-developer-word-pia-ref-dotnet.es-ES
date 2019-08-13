@@ -1,13 +1,5 @@
 <Type Name="ShadowFormat" FullName="Microsoft.Office.Interop.Word.ShadowFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0b6412510f201bbd4e881c10ec66518079051e6b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675712" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ShadowFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="eb5a077942f8ab29b6ab8f08c82918caf0ad8bea" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147651" /></Metadata><TypeSignature Language="C#" Value="public interface ShadowFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShadowFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ShadowFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ShadowFormat" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Representa el formato de sombreado de una forma.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.Shape.Shadow" /> propiedad para devolver un <see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" /> objeto.</para>
-      <para />
-    </remarks>
+    <remarks><para>Use la <see cref="P:Microsoft.Office.Interop.Word.Shape.Shadow" /> propiedad para devolver un <see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" /> objeto.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +46,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,10 +77,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor <b>Single</b> que representa el nivel de desenfoque para un formato de sombra. Lectura y escritura.</summary>
-        <value>
-          <b>Single</b>
-        </value>
+        <summary>Devuelve o establece un valor <b>Single</b> que representa el nivel de desenfoque para un formato de sombra. Lectura/escritura.</summary>
+        <value><b>Single</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,9 +107,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -147,7 +135,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.ColorFormat" /> object que representa el color de primer plano de la sombra.</summary>
+        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.ColorFormat" /> objeto que representa el color de primer plano de la sombra.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -175,13 +163,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>Single</b>requerido. Especifica cuánto se va a mover el desplazamiento de la sombra horizontalmente, en puntos. Un valor positivo mueve la sombra a la derecha y uno negativo, a la izquierda.</param>
-        <summary>Cambia el desplazamiento horizontal de la sombra según el número de puntos especificados.</summary>
-        <remarks>
-          <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.ShadowFormat.OffsetX" /> (propiedad) para establecer el desplazamiento horizontal absoluto de la sombra.</para>
-          <para />
-        </remarks>
+        <param name="Increment"><b>Single</b>requerido. Especifica cuánto se moverá el desplazamiento de la sombra horizontalmente, en puntos. Un valor positivo mueve la sombra hacia la derecha; un valor negativo la mueve hacia la izquierda.</param>
+        <summary>Cambia el desplazamiento horizontal de la sombra el número de puntos especificado.</summary>
+        <remarks><para>Use la <see cref="P:Microsoft.Office.Interop.Word.ShadowFormat.OffsetX" /> propiedad para establecer el desplazamiento horizontal absoluto de la sombra.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementOffsetY">
@@ -207,13 +192,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>Single</b>requerido. Especifica cuánto se va a mover el desplazamiento de la sombra verticalmente, en puntos. Un valor positivo mueve la sombra hacia abajo y uno negativo, hacia arriba.</param>
+        <param name="Increment"><b>Single</b>requerido. Especifica cuánto se va a mover el desplazamiento de la sombra verticalmente, en puntos. Un valor positivo mueve la sombra hacia abajo y uno negativo, hacia arriba.</param>
         <summary>Cambia el desplazamiento vertical de la sombra según el número de puntos especificados.</summary>
-        <remarks>
-          <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.ShadowFormat.OffsetY" /> (propiedad) para establecer el desplazamiento vertical absoluto de la sombra.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use la <see cref="P:Microsoft.Office.Interop.Word.ShadowFormat.OffsetY" /> propiedad para establecer el desplazamiento vertical absoluto de la sombra.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Obscured">
@@ -242,29 +224,26 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>MsoTrue</b> si la sombra de la forma especificada aparece rellena y está oscurecida por la forma, aunque la forma no tiene relleno. <b>MsoFalse</b> si la sombra no tiene relleno y el contorno de la sombra es visible a través de la forma, si la forma no tiene relleno.</summary>
+        <summary><b>MsoTrue</b> si la sombra de la forma especificada aparece rellena y está oscurecida por la forma, aunque la forma no tiene relleno. <b>MsoFalse</b> si la sombra no tiene relleno y el contorno de la sombra es visible a través de la forma, si la forma no tiene relleno.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Core.MsoTriState" />puede ser una de estas constantes <b>MsoTriState</b> . </para>
           <para>
-            <b>msoCTrue </b>
+            <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse </b>
+            <b>msoFalse</b>
           </para>
           <para>
-            <b>msoTriStateMixed </b>
+            <b>msoTriStateMixed</b>
           </para>
           <para>
-            <b>msoTriStateToggle </b>
+            <b>msoTriStateToggle</b>
           </para>
           <para>
             <b>msoTrue</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OffsetX">
@@ -295,10 +274,8 @@
       <Docs>
         <summary>Devuelve o establece el desplazamiento horizontal (en puntos) de la sombra de la forma especificada. Un valor positivo desplaza la sombra a la derecha de la forma; un valor negativo, desplaza hacia la izquierda.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si desea empujar una sombra horizontal o verticalmente desde su posición actual sin tener que especificar una posición absoluta, utilice el <see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetX(System.Single)" /> o <see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetY(System.Single)" /> (método).</para>
-          <para />
-        </remarks>
+        <remarks><para>Si desea empujar una sombra horizontal o verticalmente desde su posición actual sin tener que especificar una posición absoluta, use el <see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetX(System.Single)" /> método or. <see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetY(System.Single)" /></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OffsetY">
@@ -329,10 +306,8 @@
       <Docs>
         <summary>Devuelve o establece el desplazamiento vertical (en puntos) de la sombra de la forma especificada. Un valor positivo desplaza la sombra debajo de la forma; un valor negativo, desplaza por encima de la forma.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si desea empujar una sombra horizontal o verticalmente desde su posición actual sin tener que especificar una posición absoluta, utilice el <see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetX(System.Single)" /> o <see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetY(System.Single)" /> (método).</para>
-          <para />
-        </remarks>
+        <remarks><para>Si desea empujar una sombra horizontal o verticalmente desde su posición actual sin tener que especificar una posición absoluta, use el <see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetX(System.Single)" /> método or. <see cref="M:Microsoft.Office.Interop.Word.ShadowFormat.IncrementOffsetY(System.Single)" /></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -389,10 +364,8 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Core.MsoTriState" /> que representa si se gira la sombra al girar la forma. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoTriState" />
-        </value>
+        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Core.MsoTriState" /> que representa si se gira la sombra al girar la forma. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoTriState" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -422,10 +395,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor <b>Single</b> que representa el ancho de la sombra. Lectura y escritura.</summary>
-        <value>
-          <b>Single</b>
-        </value>
+        <summary>Devuelve o establece un valor <b>Single</b> que representa el ancho de la sombra. Lectura/escritura.</summary>
+        <value><b>Single</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -455,10 +426,8 @@
         <ReturnType>Microsoft.Office.Core.MsoShadowStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Core.MsoShadowType" /> que representa el tipo de formato para aplicar a una forma de sombra. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoShadowType" />
-        </value>
+        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Core.MsoShadowType" /> que representa el tipo de formato de sombreado que se va a aplicar a una forma. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoShadowType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -521,74 +490,72 @@
       <Docs>
         <summary>Devuelve o establece el tipo de sombra de la forma.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Core.MsoShadowType" />puede ser una de estas constantes <b>MsoShadowType</b> . </para>
           <para>
-            <b>msoShadow10 </b>
+            <b>msoShadow10</b>
           </para>
           <para>
-            <b>msoShadow12 </b>
+            <b>msoShadow12</b>
           </para>
           <para>
-            <b>msoShadow14 </b>
+            <b>msoShadow14</b>
           </para>
           <para>
-            <b>msoShadow16 </b>
+            <b>msoShadow16</b>
           </para>
           <para>
-            <b>msoShadow18 </b>
+            <b>msoShadow18</b>
           </para>
           <para>
-            <b>msoShadow2 </b>
+            <b>msoShadow2</b>
           </para>
           <para>
-            <b>msoShadow3 </b>
+            <b>msoShadow3</b>
           </para>
           <para>
-            <b>msoShadow5 </b>
+            <b>msoShadow5</b>
           </para>
           <para>
-            <b>msoShadow7 </b>
+            <b>msoShadow7</b>
           </para>
           <para>
             <b>msoShadow9</b>
           </para>
           <para>
-            <b> msoShadow1 </b>
+            <b>msoShadow1</b>
           </para>
           <para>
-            <b>msoShadow11 </b>
+            <b>msoShadow11</b>
           </para>
           <para>
-            <b>msoShadow13 </b>
+            <b>msoShadow13</b>
           </para>
           <para>
-            <b>msoShadow15 </b>
+            <b>msoShadow15</b>
           </para>
           <para>
-            <b>msoShadow17 </b>
+            <b>msoShadow17</b>
           </para>
           <para>
-            <b>msoShadow19 </b>
+            <b>msoShadow19</b>
           </para>
           <para>
-            <b>msoShadow20 </b>
+            <b>msoShadow20</b>
           </para>
           <para>
-            <b>msoShadow4 </b>
+            <b>msoShadow4</b>
           </para>
           <para>
-            <b>msoShadow6 </b>
+            <b>msoShadow6</b>
           </para>
           <para>
             <b>msoShadow8</b>
           </para>
           <para>
-            <b> msoShadowMixed</b>
+            <b>msoShadowMixed</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -619,27 +586,25 @@
       <Docs>
         <summary>True si el objeto especificado o el formato aplicado, está visible.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Core.MsoTriState" />puede ser una de estas constantes <b>MsoTriState</b> . </para>
           <para>
-            <b>msoCTrue </b>
+            <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse </b>
+            <b>msoFalse</b>
           </para>
           <para>
-            <b>msoTriStateMixed </b>
+            <b>msoTriStateMixed</b>
           </para>
           <para>
-            <b>msoTriStateToggle </b>
+            <b>msoTriStateToggle</b>
           </para>
           <para>
             <b>msoTrue</b>
           </para>
-          <para>cualquier objeto, algunos métodos y propiedades pueden no estar para no está disponibles si la propiedad <b>Visible</b> es <b>False</b>.</para>
-          <para />
-        </remarks>
+          <para>Para los objetos, algunos métodos y propiedades no esté disponibles si la propiedad <b>Visible</b> es <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

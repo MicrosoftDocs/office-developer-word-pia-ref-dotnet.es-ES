@@ -1,13 +1,5 @@
 <Type Name="CoAuthLock" FullName="Microsoft.Office.Interop.Word.CoAuthLock">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="60e38fdacba2a46adfe9f5062c855a6e94317926" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675949" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CoAuthLock" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6aaadd2e6d6106e1de5d69cd13baf0beed987346" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142239" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthLock" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CoAuthLock" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CoAuthLock" />
   <TypeSignature Language="VB.NET" Value="Public Interface CoAuthLock" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Representa un bloqueo dentro del documento. El objeto <b>CoAuthLock</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> colección.</summary>
-    <remarks>
-      <para>Es de sólo lectura. Usar <b>bloquea</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un objeto <b>CoAuthLock</b> . Cuando se agrega un objeto <b>CoAuthLock</b> , use el <see cref="T:Microsoft.Office.Interop.Word.WdLockType" /> (enumeración) para especificar el tipo de bloqueo.</para>
-      <para />
-    </remarks>
+    <remarks><para>Solo lectura. Use <b></b>Locks<paramref name="index" />(), <paramref name="index" /> donde es el número de índice, para devolver un objeto <b>CoAuthLock</b> . Al agregar un objeto <b>CoAuthLock</b> , use la <see cref="T:Microsoft.Office.Interop.Word.WdLockType" /> enumeración para especificar el tipo de bloqueo.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,12 +46,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
-        <value>A <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto.</value>
-        <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa la aplicación Microsoft Word.</summary>
+        <value>Un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -89,10 +77,8 @@
       <Docs>
         <summary>Obtiene un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>Indica la aplicación en la que se creó el objeto especificado.</value>
-        <remarks>
-          <para>Sólo lectura de <b>tipo long</b>. Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Esta propiedad se ha diseñado principalmente para usarse en Apple Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Word tiene el código de creador MSWD.</para>
-          <para />
-        </remarks>
+        <remarks><para><b>Long</b>de sólo lectura. Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Esta propiedad se diseñó principalmente para usarse en Apple Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Word tiene el código de creador MSWD.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderFooter">
@@ -118,13 +104,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene si el bloqueo es el bloqueo de encabezado/pie de página para el documento.</summary>
-        <value>
-          <b>true</b> si el bloqueo es el bloqueo de encabezado/pie de página para el documento; en caso contrario, <b>false</b>.</value>
-        <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene si el bloqueo es el bloqueo de pie de página de encabezado para el documento.</summary>
+        <value><b>true</b> si el bloqueo es el bloqueo de pie de página de encabezado para el documento; de lo contrario, <b>false</b>.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Owner">
@@ -151,8 +134,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene el <b>coautor</b> que posee el bloqueo especificado.</summary>
-        <value>
-          <b>Coautor</b> que posee el bloqueo especificado.</value>
+        <value>El <b></b> coautor que posee el bloqueo especificado.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,8 +161,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:System.Object" /> que representa el objeto primario del especificado <see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" /> objeto.</summary>
-        <value>Un <see cref="T:System.Object" /> que representa el objeto primario del especificado <see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" /> objeto.</value>
+        <summary>Obtiene un <see cref="T:System.Object" /> objeto que representa el objeto primario del objeto <see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" /> especificado.</summary>
+        <value>Un <see cref="T:System.Object" /> que representa el objeto primario del objeto especificado <see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,12 +189,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa la parte de un documento que está incluida en el objeto especificado.</summary>
-        <value>A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa la parte de un documento que está incluida en el objeto especificado.</value>
-        <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa la parte de un documento incluida en el objeto especificado.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Range" /> Objeto que representa la parte de un documento incluida en el objeto especificado.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -238,8 +218,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLockType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Word.WdLockType" /> constante que especifica el tipo de bloqueo.</summary>
-        <value>A <see cref="T:Microsoft.Office.Interop.Word.WdLockType" /> constante que especifica el tipo de bloqueo.</value>
+        <summary>Obtiene una <see cref="T:Microsoft.Office.Interop.Word.WdLockType" /> constante que especifica el tipo de bloqueo.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdLockType" /> Constante que especifica el tipo de bloqueo.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,10 +245,8 @@
       <Parameters />
       <Docs>
         <summary>Desbloquea el bloqueo especificado.</summary>
-        <remarks>
-          <para>Este método desbloquea el bloqueo especificado incluso si pertenece a un usuario distinto al actual.</para>
-          <para />
-        </remarks>
+        <remarks><para>Este método desbloquea el bloqueo especificado incluso si pertenece a un usuario que no es el actual.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

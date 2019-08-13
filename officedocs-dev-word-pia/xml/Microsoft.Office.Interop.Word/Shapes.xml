@@ -1,13 +1,5 @@
 <Type Name="Shapes" FullName="Microsoft.Office.Interop.Word.Shapes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="596f5d04825cbd4362b47c3e2b57a588a0ededd6" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675844" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Shapes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="506dc8db411e6aa61f256a8814911ed5db3523da" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144060" /></Metadata><TypeSignature Language="C#" Value="public interface Shapes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Shapes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Shapes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Shapes&#xA;Implements IEnumerable" />
@@ -30,8 +22,19 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objetos que representan todas las formas en un documento o todas las formas de todos los encabezados y pies de página en un documento.</summary>
-    <remarks>&lt;b0&gt;Cada objeto &lt;b1&gt;Shape&lt;/b1&gt; representa un objeto en la capa de dibujo, como una autoforma, una forma libre, un objeto OLE o una imagen.&lt;/b0&gt; &lt;b2&gt; &lt;b3&gt;Nota&lt;/b3&gt; si desea trabajar con un subconjunto de las formas en un documento — por ejemplo, para hacer algo únicamente con las autoformas del documento o sólo las formas seleccionadas, debe construir un &lt;b4&gt;&lt;/b4&gt; colección que contiene las formas que desea trabajar con. &lt; / C2 &gt;&lt;b5&gt;usar la &lt;b6&gt;&lt;/b6&gt; propiedad para devolver la colección &lt;b7&gt;Shapes&lt;/b7&gt; .&lt;/b5&gt; &lt;b8&gt; &lt;b9&gt;Nota&lt;/b9&gt; si desea hacer algo (como eliminar o establecer una propiedad) a todas las formas de un documento al mismo tiempo, utilice la &lt;b10&gt;&lt;/b10&gt; método para crear un objeto &lt;b11&gt;ShapeRange&lt;/b11&gt; que contiene todas las formas de la colección &lt;b12&gt;Shapes&lt;/b12&gt; , y a continuación, aplicar el método o propiedad correspondiente al objeto &lt;b13&gt;ShapeRange&lt;/b13&gt; .&lt;/b8&gt; &lt;b14&gt;, Utilice uno de los siguientes métodos de la colección &lt;b15&gt;Shapes&lt;/b15&gt; : &lt;b16&gt; &lt;/b16&gt;, &lt;b17&gt; &lt;/b17&gt;, &lt;b18&gt; &lt;/b18&gt;, &lt;b19&gt; &lt;/b19&gt;, &lt;b20&gt; &lt;/b20&gt;, &lt;b21&gt; &lt;/b21&gt;, &lt;b22&gt; &lt;/b22&gt;, &lt;b23&gt; &lt;/b23&gt;, &lt;b24&gt; &lt;/b24&gt;, &lt;b25&gt; &lt;/b25&gt;, o &lt;b26&gt;&lt;/b26&gt; para agregar una forma a un documento y devolver un objeto &lt;b27&gt;Shape&lt;/b27&gt; que representa la forma creada recientemente.&lt;/b14&gt; &lt;b28&gt;Usar &lt;b29&gt;las formas&lt;/b29&gt;(&lt;b30&gt;&lt;/b30&gt;), donde &lt;b31&gt;&lt;/b31&gt; es el nombre o el número de índice, para devolver un solo objeto &lt;b32&gt;Shape&lt;/b32&gt; .&lt;/b28&gt; &lt;b33&gt;Cada forma se le asigna un nombre predeterminado cuando se crea. Por ejemplo, si agrega tres formas distintas a un documento, es posible que se denominada "Rectangle 2", "TextBox 3" y "Oval 4". Para dar a una forma un nombre más descriptivo, establezca la &lt;b34&gt;&lt;/b34&gt; (propiedad).&lt;/b33&gt; No incluye &lt;b35&gt;colección Shapes el &lt;b36&gt;&lt;/b36&gt; objetos. Los objetos &lt;b37&gt;InlineShape&lt;/b37&gt; se tratan y se colocan como caracteres dentro de una línea de texto. En los objetos &lt;b38&gt;Shape&lt;/b38&gt; están delimitadas con relación a un intervalo de texto, pero son objetos flotantes y pueden situarse en cualquier lugar de la página. Puede usar el &lt;b39&gt;&lt;/b39&gt; (método) y el &lt;b40&gt;&lt;/b40&gt; (método) para convertir las formas de un tipo a otro. Se pueden convertir sólo las imágenes, objetos OLE y controles ActiveX en formas entre líneas.&lt;/b35&gt; &lt;b41&gt;El &lt;b42&gt;&lt;/b42&gt; (propiedad) para esta colección de un documento devuelve el número de elementos sólo del artículo principal. Para contar las formas de todos los encabezados y pies de página, utilice la colección &lt;b43&gt;Shapes&lt;/b43&gt; con cualquier &lt;b44&gt;&lt;/b44&gt; objeto.&lt;/b41&gt;&lt;/b2&gt;&lt;b45&gt;&lt;/b45&gt;</remarks>
+    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objetos que representan todas las formas de un documento o todas las formas de todos los encabezados y pies de página de un documento.</summary>
+    <remarks><para>Cada objeto <b>Shape</b> representa un objeto en la capa de dibujo, como una autoforma, una forma libre, un objeto OLE o una imagen.</para>
+      <para>
+        <b>Nota:</b>  Si desea trabajar con un subconjunto de las formas de un documento (por ejemplo, para hacer algo sólo con las autoformas del documento o sólo con las formas seleccionadas), debe crear una <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> colección que contenga las formas con las que desea trabajar.</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word._Document.Shapes" /> propiedad para devolver la <b></b> colección Shapes.</para>
+      <para>
+        <b>Nota:</b>  Si quiere hacer algo (como eliminar o establecer una propiedad) en todas las formas de un documento a la vez, utilice el <see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" /> método para crear un objeto <b>ShapeRange</b> que contenga todas las formas de la colección <b>Shapes</b> y, a continuación, aplique el correspondiente propiedad o método al objeto <b>ShapeRange</b> .</para>
+      <para>Use uno de los siguientes métodos de la <b></b> colección Shapes <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCallout(Microsoft.Office.Core.MsoCalloutType,System.Single,System.Single,System.Single,System.Single,System.Object@)" />: <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCurve(System.Object@,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddLabel(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddLine(System.Single,System.Single,System.Single,System.Single,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEControl(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddPolyline(System.Object@,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddShape(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddTextbox(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single,System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddTextEffect(Microsoft.Office.Core.MsoPresetTextEffect,System.String,System.String,System.Single,Microsoft.Office.Core.MsoTriState,Microsoft.Office.Core.MsoTriState,System.Single,System.Single,System.Object@)" />,, o <see cref="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> para agregar una forma a un documento y devolver una <b>forma</b> objeto que representa la forma que se acaba de crear.</para>
+      <para>Use <b></b>Shapes<paramref name="index" />(), <paramref name="index" /> donde es el nombre o el número de índice, para devolver un único objeto <b>Shape</b> .</para>
+      <para>Cada forma recibe un nombre predeterminado al crearla. Por ejemplo, si agrega tres formas distintas a un documento, podrían denominarse: "Rectángulo 2", "CuadroTexto 3" y "Elipse 4". Para dar un nombre más significativo a una forma, establezca <see cref="P:Microsoft.Office.Interop.Word.Shape.Name" /> la propiedad.</para>
+      <para>La colección Shapes no incluye <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objetos. Los objetos <b>InlineShape</b> se tratan y se colocan como caracteres dentro de una línea de texto. Los objetos <b>Shape</b> se fijan a un intervalo de texto, pero son objetos flotantes y pueden situarse en cualquier lugar de la página. Puede usar el <see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" /> método y el <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" /> método para convertir formas de un tipo a otro. Puede convertir sólo imágenes, objetos OLE y controles ActiveX en formas entre líneas.</para>
+      <para>La <see cref="P:Microsoft.Office.Interop.Word.Shapes.Count" /> propiedad de esta colección de un documento devuelve el número de elementos solo del artículo principal. Para contar las formas de todos los encabezados y pies de página, utilice la <b></b> colección Shapes con <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> cualquier objeto.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddCallout">
@@ -61,23 +64,16 @@
         <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Type">Requiere <see cref="T:Microsoft.Office.Core.MsoCalloutType" />. El tipo de llamada. <b>MsoCalloutType</b> puede ser una de estas constantes. <b>msoCalloutOne</b> – posiciones la línea de llamada seria hacia abajo a lo largo del borde izquierdo del cuadro de la llamada. <b>msoCalloutTwo</b> – coloca la línea de llamada diagonalmente hacia abajo y alejado del borde izquierdo del cuadro de la llamada. <b>msoCalloutThree</b> – línea de llamada de posiciones out y, a continuación, diagonalmente hacia abajo y ausente desde el borde izquierdo del cuadro de la llamada. <b>msoCalloutFour</b> – coloca la línea de llamada a lo largo del borde izquierdo del cuadro de texto de llamada. <b>msoCalloutMixed</b> – un valor devuelto que indica que existe más de un <b>MsoCalloutType</b> en un intervalo o selección.</param>
-        <param name="Left">
-          <b>Single</b>requerido. La posición, en puntos, del borde izquierdo del cuadro de límite de la llamada.</param>
-        <param name="Top">
-          <b>Single</b>requerido. La posición, en puntos, del borde superior del cuadro de límite de la llamada.</param>
-        <param name="Width">
-          <b>Single</b>requerido. El ancho, en puntos, del cuadro de límite de la llamada.</param>
-        <param name="Height">
-          <b>Single</b>requerido. El alto, en puntos, del cuadro de límite de la llamada.</param>
-        <param name="Anchor">
-          <b>Objeto</b>de opcional. A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa el texto al que está enlazada la llamada. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si se omite este argumento, el intervalo de fijación se selecciona automáticamente y la llamada se sitúa en relación con los bordes superiores e izquierdo de la página.</param>
-        <summary>Agrega una llamada de línea sin borde a un documento. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto que representa la llamada y lo agrega a la <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> colección.</summary>
+        <param name="Type">Es <see cref="T:Microsoft.Office.Core.MsoCalloutType" />obligatorio. Tipo de llamada. <b>MsoCalloutType</b> puede ser una de estas constantes. <b>msoCalloutOne</b> – coloca una línea de llamada recta a lo largo del borde izquierdo del cuadro de la llamada. <b>msoCalloutTwo</b> – coloca la línea de llamada diagonalmente hacia abajo y alejándose del borde izquierdo del cuadro de la llamada. <b>msoCalloutThree</b> – coloca la línea de llamada recta y, a continuación, en diagonalmente hacia abajo y alejándose del borde izquierdo del cuadro de la llamada. <b>msoCalloutFour</b> – coloca una línea de llamada a lo largo del borde izquierdo del cuadro de texto de la llamada. <b>msoCalloutMixed</b> : un valor devuelto que indica que existe más de un <b>MsoCalloutType</b> en un intervalo o selección.</param>
+        <param name="Left"><b>Single</b>requerido. La posición, en puntos, del borde izquierdo del cuadro de límite de la llamada.</param>
+        <param name="Top"><b>Single</b>requerido. La posición, en puntos, del borde superior del cuadro de límite de la llamada.</param>
+        <param name="Width"><b>Single</b>requerido. El ancho, en puntos, del cuadro de límite de la llamada.</param>
+        <param name="Height"><b>Single</b>requerido. El alto, en puntos, del cuadro de límite de la llamada.</param>
+        <param name="Anchor"><b>Objeto</b>opcional. <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objeto que representa el texto al que está enlazado el globo. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si se omite este argumento, el intervalo de fijación se selecciona automáticamente y la llamada se coloca en relación con los bordes superior e izquierdo de la página.</param>
+        <summary>Agrega una llamada con línea sin borde a un documento. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto Object que representa la llamada y la agrega a <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> la colección.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Puede insertar una mayor variedad de llamadas, por ejemplo, globos y nubes, utilizando el <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddShape(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Object@)" /> (método).</para>
-          <para />
-        </remarks>
+        <remarks><para>Puede insertar una mayor variedad de llamadas, como globos y nubes, usando el <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddShape(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Object@)" /> método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddCanvas">
@@ -106,17 +102,12 @@
         <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Left">
-          <b>Single</b>requerido. Posición, en puntos, del borde izquierdo del lienzo de dibujo, con respecto al delimitador.</param>
-        <param name="Top">
-          <b>Single</b>requerido. Posición, en puntos, del borde superior del lienzo de dibujo, con respecto al delimitador.</param>
-        <param name="Width">
-          <b>Single</b>requerido. Ancho, en puntos, del lienzo de dibujo.</param>
-        <param name="Height">
-          <b>Single</b>requerido. Alto, en puntos, del lienzo de dibujo.</param>
-        <param name="Anchor">
-          <b>Objeto</b>de opcional. A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa el texto al que está unido el lienzo. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si se omite este argumento, el intervalo de fijación se selecciona automáticamente y el lienzo se sitúa con relación a los bordes superiores e izquierdo de la página.</param>
-        <summary>Agrega un lienzo de dibujo a un documento. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object que representa el lienzo de dibujo y lo agrega a la <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> colección.</summary>
+        <param name="Left"><b>Single</b>requerido. Posición, en puntos, del borde izquierdo del lienzo de dibujo, con respecto al delimitador.</param>
+        <param name="Top"><b>Single</b>requerido. Posición, en puntos, del borde superior del lienzo de dibujo, con respecto al delimitador.</param>
+        <param name="Width"><b>Single</b>requerido. Ancho, en puntos, del lienzo de dibujo.</param>
+        <param name="Height"><b>Single</b>requerido. Alto, en puntos, del lienzo de dibujo.</param>
+        <param name="Anchor"><b>Objeto</b>opcional. <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objeto que representa el texto al que está enlazado el lienzo. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si no se especifica este argumento, el intervalo se selecciona automáticamente y el lienzo se sitúa con relación a los bordes superior e izquierdo de la página.</param>
+        <summary>Agrega un lienzo de dibujo a un documento. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto Object que representa el lienzo de dibujo y lo agrega <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> a la colección.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -157,14 +148,10 @@
         <param name="Width">To be added.</param>
         <param name="Height">To be added.</param>
         <param name="Anchor">To be added.</param>
-        <summary>[!PRECAUCIóN] Este objeto, miembro o enumeración está en desuso y no debería usarse en el código.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.Shape" />
-        </returns>
+        <summary>Este objeto, miembro o enumeración está en desuso y no debería usarse en el código.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.Shape" /></returns>
         <remarks>To be added.</remarks>
-        <example>
-          <para>En este ejemplo se crea un nuevo gráfico de columnas 3D y se agrega al documento activo.</para>
-        </example>
+        <example><para>En este ejemplo se crea un nuevo gráfico de columnas 3D y se agrega al documento activo.</para></example>
       </Docs>
     </Member>
     <Member MemberName="AddChart2">
@@ -196,14 +183,14 @@
         <Parameter Name="NewLayout" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Style">El estilo de gráfico.</param>
+        <param name="Style">Estilo del gráfico.</param>
         <param name="Type">Tipo de gráfico.</param>
-        <param name="Left">La posición, en puntos, del borde izquierdo del gráfico, con respecto al delimitador.</param>
-        <param name="Top">La posición, en puntos, del borde superior del gráfico, con respecto al delimitador.</param>
-        <param name="Width">El ancho, en puntos, del gráfico.</param>
-        <param name="Height">El alto, en puntos, del gráfico.</param>
-        <param name="Anchor">Si <paramref name="NewLayout" /> es true, se insertará en el gráfico mediante el uso de las nuevas reglas de formato dinámicas (título es en y leyenda es en sólo si hay varias series).</param>
-        <param name="NewLayout">Si <paramref name="NewLayout" /> es true, se inserta el gráfico mediante el uso de las nuevas reglas de formato dinámicas (título es en y leyenda es en sólo si hay varias series).</param>
+        <param name="Left">Posición, en puntos, del borde izquierdo del gráfico con relación al delimitador.</param>
+        <param name="Top">Posición, en puntos, del borde superior del gráfico con relación al delimitador.</param>
+        <param name="Width">Ancho, en puntos, del gráfico.</param>
+        <param name="Height">Alto, en puntos, del gráfico.</param>
+        <param name="Anchor">Si <paramref name="NewLayout" /> es true, el gráfico se insertará con las nuevas reglas de formato dinámico (el título es activado y la leyenda sólo se activa si hay varias series).</param>
+        <param name="NewLayout">Si <paramref name="NewLayout" /> es true, el gráfico se inserta con las nuevas reglas de formato dinámico (el título es activado y la leyenda está activada sólo si hay varias series).</param>
         <summary>Agrega un gráfico al documento. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto que representa un gráfico y lo agrega a la colección especificada.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -272,10 +259,8 @@
         <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="SafeArrayOfPoints">
-          <b>Objeto</b>requerido. Una matriz de pares de coordenadas que especifica los vértices y puntos de control de la curva. El primer punto especificado es el vértice inicial y los dos puntos siguientes son puntos de control para el primer segmento de Bézier. A continuación, para cada segmento adicional de la curva, especifique un vértice y dos puntos de control. El último punto que especifique es el vértice final de la curva. Tenga en cuenta que debe especificar siempre 3n + 1 puntos, donde n es el número de segmentos de la curva.</param>
-        <param name="Anchor">
-          <b>Objeto</b>de opcional. A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa el texto al que está enlazada la curva. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si se omite este argumento, el intervalo de fijación se selecciona automáticamente y la curva se sitúa en relación con los bordes superiores e izquierdo de la página.</param>
+        <param name="SafeArrayOfPoints"><b>Objeto</b>requerido. Matriz de pares de coordenadas que especifica los vértices y los puntos de control de la curva. El primer punto que especifica es el vértice inicial, y los siguientes dos puntos son los puntos de control del primer segmento de la curva Bézier. A continuación, por cada segmento adicional de la curva, define un vértice y dos puntos de control. El último punto que especifica es el vértice final de la curva. Observe que debe especificar siempre 3n + 1 puntos, donde n es el número de segmentos de la curva.</param>
+        <param name="Anchor"><b>Objeto</b>opcional. <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objeto que representa el texto al que está enlazada la curva. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si se omite este argumento, el intervalo de fijación se selecciona automáticamente y la curva se coloca en relación con los bordes superior e izquierdo de la página.</param>
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto que representa una curva Bézier en un documento.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -311,17 +296,12 @@
         <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Type">Requiere <see cref="T:Microsoft.Office.Core.MsoDiagramType" />. <b>MsoDiagramType</b> puede ser una de estas constantes. <b>msoDiagramCycle</b> – muestra un proceso con un ciclo continuo. <b>msoDiagramMixed</b> – la que no se utiliza con este método. <b>msoDiagramOrgChart</b> – muestra las relaciones jerárquicas. <b>msoDiagramPyramid</b> – muestra las relaciones en función de foundation. <b>msoDiagramRadial</b> – muestra las relaciones de un elemento principal. <b>msoDiagramTarget</b> – muestra los pasos para lograr un objetivo. <b>msoDiagramVenn</b> – muestra las áreas de superposición entre elementos.</param>
-        <param name="Left">
-          <b>Single</b>requerido. La posición, medida en puntos, del borde izquierdo del cuadro de límite del diagrama con respecto al delimitador.</param>
-        <param name="Top">
-          <b>Single</b>requerido. La posición, medida en puntos, del borde superior del cuadro de límite del diagrama con respecto al delimitador.</param>
-        <param name="Width">
-          <b>Single</b>requerido. El ancho, medido en puntos, del cuadro de límite del diagrama.</param>
-        <param name="Height">
-          <b>Single</b>requerido. El alto, medido en puntos, del cuadro de límite del diagrama.</param>
-        <param name="Anchor">
-          <b>Objeto</b>de opcional. A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa el texto al que está enlazado el diagrama. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si se omite este argumento, el intervalo de fijación se selecciona automáticamente y el diagrama se sitúa con relación a los bordes superiores e izquierdo de la página.</param>
+        <param name="Type">Es <see cref="T:Microsoft.Office.Core.MsoDiagramType" />obligatorio. <b>MsoDiagramType</b> puede ser una de estas constantes. <b>msoDiagramCycle</b> : muestra un proceso con un ciclo continuo. <b>msoDiagramMixed</b> : no se usa con este método. <b>msoDiagramOrgChart</b> : muestra las relaciones jerárquicas. <b>msoDiagramPyramid</b> – muestra las relaciones basadas en cimientos. <b>msoDiagramRadial</b> : muestra las relaciones de un elemento principal. <b>msoDiagramTarget</b> : muestra los pasos hacia un objetivo. <b>msoDiagramVenn</b> – muestra áreas de superposición entre elementos.</param>
+        <param name="Left"><b>Single</b>requerido. Posición, medida en puntos, del borde izquierdo del cuadro de límite del diagrama con relación al delimitador.</param>
+        <param name="Top"><b>Single</b>requerido. Posición, medida en puntos, del borde superior del cuadro de límite del diagrama con relación al delimitador.</param>
+        <param name="Width"><b>Single</b>requerido. El ancho, medido en puntos, del cuadro de límite del diagrama.</param>
+        <param name="Height"><b>Single</b>requerido. Alto, medido en puntos, del cuadro de límite del diagrama.</param>
+        <param name="Anchor"><b>Objeto</b>opcional. <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objeto que representa el texto al que está enlazado el diagrama. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si se omite este argumento, el intervalo de fijación se selecciona automáticamente y el diagrama se coloca en relación con los bordes superior e izquierdo de la página.</param>
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto que representa un diagrama recién creado en un documento.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -354,18 +334,13 @@
         <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Orientation">Requiere <see cref="T:Microsoft.Office.Core.MsoTextOrientation" />. La orientación del texto. <b>MsoTextOrientation</b> puede ser una de las siguientes constantes: <b>msoTextOrientationDownward </b><b>msoTextOrientationHorizontal </b><b>msoTextOrientationHorizontalRotatedFarEast </b><b>msoTextOrientationMixed</b><b> msoTextOrientationUpward </b><b>msoTextOrientationVertical </b><b>msoTextOrientationVerticalFarEast </b>algunas de estas constantes no estén disponibles, según la compatibilidad con el idioma que ha seleccionado (por ejemplo, inglés, Estados Unidos) o instalado.</param>
-        <param name="Left">
-          <b>Single</b>requerido. La posición, medida en puntos, del borde izquierdo de la etiqueta con relación al delimitador.</param>
-        <param name="Top">
-          <b>Single</b>requerido. La posición, medida en puntos, del borde superior de la etiqueta con relación al delimitador.</param>
-        <param name="Width">
-          <b>Single</b>requerido. Ancho del rótulo, en puntos.</param>
-        <param name="Height">
-          <b>Single</b>requerido. Alto del rótulo, en puntos.</param>
-        <param name="Anchor">
-          <b>Objeto</b>de opcional. A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa el texto al que está enlazada la etiqueta. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si se omite este argumento, el intervalo de fijación se selecciona automáticamente y se coloca la etiqueta con relación a los bordes superiores e izquierdo de la página.</param>
-        <summary>Agrega una etiqueta de texto a un documento. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto que representa la etiqueta de texto y lo agrega a la <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> colección.</summary>
+        <param name="Orientation">Es <see cref="T:Microsoft.Office.Core.MsoTextOrientation" />obligatorio. Orientación del texto. <b>MsoTextOrientation</b> puede ser una de las siguientes constantes: <b>msoTextOrientationDownward </b> <b>msoTextOrientationHorizontal </b> <b>msoTextOrientationHorizontalRotatedFarEast </b> <b>msoTextOrientationMixed</b> <b> msoTextOrientationUpward </b> <b>msoTextOrientationVertical </b> <b>msoTextOrientationVerticalFarEast </b>algunas de estas constantes pueden no estar disponibles, según la compatibilidad con el idioma (por ejemplo, Inglés americano) que haya seleccionado o instalada.</param>
+        <param name="Left"><b>Single</b>requerido. Posición, medida en puntos, del borde izquierdo de la etiqueta con relación al delimitador.</param>
+        <param name="Top"><b>Single</b>requerido. Posición, medida en puntos, del borde superior de la etiqueta con relación al delimitador.</param>
+        <param name="Width"><b>Single</b>requerido. Ancho del rótulo, en puntos.</param>
+        <param name="Height"><b>Single</b>requerido. Alto del rótulo, en puntos.</param>
+        <param name="Anchor"><b>Objeto</b>opcional. <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objeto que representa el texto al que está enlazada la etiqueta. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si se omite este argumento, el intervalo de fijación se selecciona automáticamente y la etiqueta se coloca en relación con los bordes superior e izquierdo de la página.</param>
+        <summary>Agrega una etiqueta de texto a un documento. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto Object que representa la etiqueta de texto y la agrega <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> a la colección.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -396,22 +371,15 @@
         <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="BeginX">
-          <b>Single</b>requerido. La posición horizontal, medida en puntos, del extremo inicial de la línea, con respecto al delimitador.</param>
-        <param name="BeginY">
-          <b>Single</b>requerido. La posición vertical, medida en puntos, del extremo inicial de la línea, con respecto al delimitador.</param>
-        <param name="EndX">
-          <b>Single</b>requerido. La posición horizontal, medida en puntos, del punto final de la línea, con respecto al delimitador.</param>
-        <param name="EndY">
-          <b>Single</b>requerido. La posición vertical, medida en puntos, del punto final de la línea, con respecto al delimitador.</param>
-        <param name="Anchor">
-          <b>Objeto</b>de opcional. A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa el texto al que está enlazada la etiqueta. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si se omite este argumento, el intervalo de fijación se selecciona automáticamente y se coloca la etiqueta con relación a los bordes superiores e izquierdo de la página.</param>
-        <summary>Agrega una línea a un documento. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto que representa la línea y lo agrega a la <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCallout(Microsoft.Office.Core.MsoCalloutType,System.Single,System.Single,System.Single,System.Single,System.Object@)" /> colección.</summary>
+        <param name="BeginX"><b>Single</b>requerido. Posición horizontal, medida en puntos, del punto inicial de la línea con relación al delimitador.</param>
+        <param name="BeginY"><b>Single</b>requerido. Posición vertical, medida en puntos, del punto de inicio de la línea con relación al delimitador.</param>
+        <param name="EndX"><b>Single</b>requerido. Posición horizontal, medida en puntos, del punto final de la línea con relación al delimitador.</param>
+        <param name="EndY"><b>Single</b>requerido. Posición vertical, medida en puntos, del punto final de la línea con relación al delimitador.</param>
+        <param name="Anchor"><b>Objeto</b>opcional. <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objeto que representa el texto al que está enlazada la etiqueta. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si se omite este argumento, el intervalo de fijación se selecciona automáticamente y la etiqueta se coloca en relación con los bordes superior e izquierdo de la página.</param>
+        <summary>Agrega una línea a un documento. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto Object que representa la línea y la agrega a <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCallout(Microsoft.Office.Core.MsoCalloutType,System.Single,System.Single,System.Single,System.Single,System.Object@)" /> la colección.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Para crear una flecha, utilice la <see cref="P:Microsoft.Office.Interop.Word.Shape.Line" /> propiedad para dar formato a una línea.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para crear una flecha, utilice la <see cref="P:Microsoft.Office.Interop.Word.Shape.Line" /> propiedad para dar formato a una línea.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddOLEControl">
@@ -441,19 +409,13 @@
         <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ClassType">
-          <b>Objeto</b>de opcional. Identificador programático del control ActiveX que se va a crear.</param>
-        <param name="Left">
-          <b>Objeto</b>de opcional. La posición (en puntos) del borde izquierdo del nuevo objeto con relación al delimitador.</param>
-        <param name="Top">
-          <b>Objeto</b>de opcional. La posición (en puntos) del borde superior del nuevo objeto con relación al delimitador.</param>
-        <param name="Width">
-          <b>Objeto</b>de opcional. El ancho del control de ActiveX, en puntos.</param>
-        <param name="Height">
-          <b>Objeto</b>de opcional. El alto del control ActiveX, en puntos.</param>
-        <param name="Anchor">
-          <b>Objeto</b>de opcional. El intervalo al que está enlazado el control ActiveX. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si se omite este argumento, sin embargo, el delimitador se coloca de forma automática y el control ActiveX se sitúa en relación con los bordes superiores e izquierdo de la página.</param>
-        <summary>Crea un control ActiveX (anteriormente denominado control OLE). Devuelve el <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object que representa el nuevo control ActiveX.</summary>
+        <param name="ClassType"><b>Objeto</b>opcional. Identificador programático del control ActiveX que se va a crear.</param>
+        <param name="Left"><b>Objeto</b>opcional. Posición, en puntos, del borde izquierdo del nuevo objeto con relación al delimitador.</param>
+        <param name="Top"><b>Objeto</b>opcional. Posición, en puntos, del borde superior del nuevo objeto con relación al delimitador.</param>
+        <param name="Width"><b>Objeto</b>opcional. Ancho del control ActiveX, en puntos.</param>
+        <param name="Height"><b>Objeto</b>opcional. Alto del control ActiveX, en puntos.</param>
+        <param name="Anchor"><b>Objeto</b>opcional. Intervalo al que está enlazado el control ActiveX. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Sin embargo, si se omite este argumento, el delimitador se coloca automáticamente y el control ActiveX se coloca en relación con los bordes superior e izquierdo de la página.</param>
+        <summary>Crea un control ActiveX (anteriormente denominado control OLE). Devuelve el <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto que representa el nuevo control ActiveX.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -491,31 +453,19 @@
         <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ClassType">
-          <b>Objeto</b>de opcional. Nombre de la aplicación utilizada para activar el objeto OLE especificado.</param>
-        <param name="FileName">
-          <b>Objeto</b>de opcional. Archivo desde el que se creará el objeto. Si se omite este argumento, se utilizará la carpeta actual. Debe especificar el <paramref name="ClassType" /> o <paramref name="FileName" /> argumento para el objeto, pero no ambos.</param>
-        <param name="LinkToFile">
-          <b>Objeto</b>de opcional. <b>True</b> para vincular el objeto OLE al archivo desde el que se creó. <b>False</b> para que el objeto sea una copia independiente del archivo de OLE. Si ha especificado un valor para <paramref name="ClassType" />, el <paramref name="LinkToFile" /> el argumento debe ser <b>False</b>. El valor predeterminado es <b>False</b>.</param>
-        <param name="DisplayAsIcon">
-          <b>Objeto</b>de opcional. <b>True</b> para mostrar el objeto OLE como un icono. El valor predeterminado es <b>False</b>.</param>
-        <param name="IconFileName">
-          <b>Objeto</b>de opcional. Archivo que incluye el icono que va a mostrarse.</param>
-        <param name="IconIndex">
-          <b>Objeto</b>de opcional. El número de índice del icono dentro de <paramref name="IconFileName" />. El orden de los iconos en el archivo especificado corresponde al orden en que los iconos aparecen en el cuadro de diálogo Cambiar icono (menú Insertar, cuadro de diálogo objeto) cuando se selecciona la casilla de verificación icono Mostrar como. El primer icono en el archivo tiene el número de índice 0 (cero). Si no existe ningún icono con el número de índice especificado en <paramref name="IconFileName" />, se utiliza el icono con el número de índice 1 (el segundo icono en el archivo). El valor predeterminado es 0 (cero).</param>
-        <param name="IconLabel">
-          <b>Objeto</b>de opcional. Etiqueta o título que se mostrará debajo del icono.</param>
-        <param name="Left">
-          <b>Objeto</b>de opcional. La posición (en puntos) del borde izquierdo del nuevo objeto con relación al delimitador.</param>
-        <param name="Top">
-          <b>Objeto</b>de opcional. La posición (en puntos) del borde superior del nuevo objeto con relación al delimitador.</param>
-        <param name="Width">
-          <b>Objeto</b>de opcional. El ancho del objeto OLE, en puntos.</param>
-        <param name="Height">
-          <b>Objeto</b>de opcional. El alto del objeto OLE, en puntos.</param>
-        <param name="Anchor">
-          <b>Objeto</b>de opcional. El intervalo al que está enlazado el objeto OLE. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si <paramref name="Anchor" /> no se especifica, el delimitador se coloca de forma automática y el objeto OLE se sitúa en relación con los bordes superiores e izquierdo de la página.</param>
-        <summary>Crea un objeto OLE. Devuelve el <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object que representa el nuevo objeto OLE.</summary>
+        <param name="ClassType"><b>Objeto</b>opcional. Nombre de la aplicación utilizada para activar el objeto OLE especificado.</param>
+        <param name="FileName"><b>Objeto</b>opcional. Archivo desde el que se creará el objeto. Si se omite este argumento, se utilizará la carpeta actual. Debe especificar el o <paramref name="ClassType" /> <paramref name="FileName" /> el argumento para el objeto, pero no ambos.</param>
+        <param name="LinkToFile"><b>Objeto</b>opcional. <b>True</b> para vincular el objeto OLE al archivo desde el que se creó. <b>False</b> para que el objeto sea una copia independiente del archivo de OLE. Si especificó un valor para <paramref name="ClassType" />, el <paramref name="LinkToFile" /> argumento debe ser <b>false</b>. El valor predeterminado es <b>False</b>.</param>
+        <param name="DisplayAsIcon"><b>Objeto</b>opcional. <b>True</b> para mostrar el objeto OLE como un icono. El valor predeterminado es <b>False</b>.</param>
+        <param name="IconFileName"><b>Objeto</b>opcional. Archivo que contiene el icono que se debe mostrar.</param>
+        <param name="IconIndex"><b>Objeto</b>opcional. Número de índice del icono en <paramref name="IconFileName" />. El orden de los iconos del archivo especificado corresponde al orden en el que aparecen en el cuadro de diálogo Cambiar icono (menú Insertar, cuadro de diálogo objeto) cuando está activada la casilla de verificación Mostrar como icono. El primer icono en el archivo tiene el número de índice 0 (cero). Si no existe ningún icono con el número de <paramref name="IconFileName" />índice especificado, se usa el icono con el número de índice 1 (el segundo icono del archivo). El valor predeterminado es 0 (cero).</param>
+        <param name="IconLabel"><b>Objeto</b>opcional. Etiqueta o título que se mostrará debajo del icono.</param>
+        <param name="Left"><b>Objeto</b>opcional. Posición, en puntos, del borde izquierdo del nuevo objeto con relación al delimitador.</param>
+        <param name="Top"><b>Objeto</b>opcional. Posición, en puntos, del borde superior del nuevo objeto con relación al delimitador.</param>
+        <param name="Width"><b>Objeto</b>opcional. Ancho del objeto OLE, en puntos.</param>
+        <param name="Height"><b>Objeto</b>opcional. Alto del objeto OLE, en puntos.</param>
+        <param name="Anchor"><b>Objeto</b>opcional. El intervalo al que está enlazado el objeto OLE. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si <paramref name="Anchor" /> no se especifica, el delimitador se coloca automáticamente y el objeto OLE se coloca en relación con los bordes superior e izquierdo de la página.</param>
+        <summary>Crea un objeto OLE. Devuelve el <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto que representa el nuevo objeto OLE.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -549,23 +499,15 @@
         <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>String</b> requerida. Ruta de acceso y nombre del archivo de la imagen.</param>
-        <param name="LinkToFile">
-          <b>Objeto</b>de opcional. <b>True</b> para vincular la imagen al archivo desde el que se creó. <b>False</b> para que la imagen sea una copia independiente del archivo. El valor predeterminado es <b>False</b>.</param>
-        <param name="SaveWithDocument">
-          <b>Objeto</b>de opcional. <b>True</b> para guardar la imagen vinculada con el documento. El valor predeterminado es <b>False</b>.</param>
-        <param name="Left">
-          <b>Objeto</b>de opcional. La posición, medida en puntos, del borde izquierdo de la nueva imagen con relación al delimitador.</param>
-        <param name="Top">
-          <b>Objeto</b>de opcional. La posición, medida en puntos, del borde superior de la nueva imagen con relación al delimitador.</param>
-        <param name="Width">
-          <b>Objeto</b>de opcional. Ancho de la imagen, en puntos.</param>
-        <param name="Height">
-          <b>Objeto</b>de opcional. Alto de la imagen, en puntos.</param>
-        <param name="Anchor">
-          <b>Objeto</b>de opcional. El intervalo al que está enlazada la imagen. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si se omite este argumento, sin embargo, el delimitador se coloca de forma automática y la imagen se sitúa en relación con los bordes superiores e izquierdo de la página.</param>
-        <summary>Agrega una imagen a un documento. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto que representa la imagen y la agrega a la <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> colección.</summary>
+        <param name="FileName"><b>String</b> requerida. Ruta de acceso y nombre del archivo de la imagen.</param>
+        <param name="LinkToFile"><b>Objeto</b>opcional. <b>True</b> para vincular la imagen al archivo desde el que se creó. <b>False</b> para que la imagen sea una copia independiente del archivo. El valor predeterminado es <b>False</b>.</param>
+        <param name="SaveWithDocument"><b>Objeto</b>opcional. <b>True</b> para guardar la imagen vinculada con el documento. El valor predeterminado es <b>False</b>.</param>
+        <param name="Left"><b>Objeto</b>opcional. La posición, medida en puntos, del borde izquierdo de la nueva imagen con relación al delimitador.</param>
+        <param name="Top"><b>Objeto</b>opcional. La posición, medida en puntos, del borde superior de la nueva imagen con relación al delimitador.</param>
+        <param name="Width"><b>Objeto</b>opcional. Ancho de la imagen, en puntos.</param>
+        <param name="Height"><b>Objeto</b>opcional. Alto de la imagen, en puntos.</param>
+        <param name="Anchor"><b>Objeto</b>opcional. El intervalo al que está enlazada la imagen. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Sin embargo, si se omite este argumento, el delimitador se coloca automáticamente y la imagen se coloca en relación con los bordes superiores e izquierdos de la página.</param>
+        <summary>Agrega una imagen a un documento. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto Object que representa la imagen y la agrega a <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> la colección.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -593,16 +535,12 @@
         <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="SafeArrayOfPoints">
-          <b>Objeto</b>requerido. Matriz de pares de coordenadas que especifica los vértices de dibujo de la polilínea.</param>
-        <param name="Anchor">
-          <b>Objeto</b>de opcional. A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa el texto al que está enlazada la polilínea. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si se omite este argumento, el intervalo de fijación se selecciona automáticamente y se coloca la línea con relación a los bordes superiores e izquierdo de la página.</param>
-        <summary>Agrega un polígono abierto o cerrado a un documento. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object que representa el polígono y lo agrega a la <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> colección.</summary>
+        <param name="SafeArrayOfPoints"><b>Objeto</b>requerido. Matriz de pares de coordenadas que especifica los vértices de dibujo de la polilínea.</param>
+        <param name="Anchor"><b>Objeto</b>opcional. <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objeto que representa el texto al que está enlazada la polilínea. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si se omite este argumento, el intervalo de fijación se selecciona automáticamente y la línea se coloca en relación con los bordes superior e izquierdo de la página.</param>
+        <summary>Agrega un polígono abierto o cerrado a un documento. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto Object que representa el polígono y lo agrega a <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> la colección.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Para formar un polígono cerrado, asigne a las mismas coordenadas a los vértices primeros y últimos en el dibujo de la polilínea.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para formar un polígono cerrado, asigne las mismas coordenadas a los vértices inicial y final del dibujo del polígono.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddShape">
@@ -632,24 +570,16 @@
         <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Type">
-          <b>Integer</b>requerido. El tipo de forma que se va a devolver. Puede ser cualquier <see cref="T:Microsoft.Office.Core.MsoAutoShapeType" /> constante.</param>
-        <param name="Left">
-          <b>Single</b>requerido. La posición, medida en puntos, del borde izquierdo de la autoforma.</param>
-        <param name="Top">
-          <b>Single</b>requerido. La posición, medida en puntos, del borde superior de la autoforma.</param>
-        <param name="Width">
-          <b>Single</b>requerido. El ancho, medido en puntos, de la autoforma.</param>
-        <param name="Height">
-          <b>Single</b>requerido. El alto, medido en puntos, de la autoforma.</param>
-        <param name="Anchor">
-          <b>Objeto</b>de opcional. A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa el texto al que está enlazada la autoforma. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si se omite este argumento, el intervalo de fijación se selecciona automáticamente y se coloca la autoforma con relación a los bordes superiores e izquierdo de la página.</param>
-        <summary>Agrega una autoforma a un documento. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto que representa la autoforma y lo agrega a la <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> colección.</summary>
+        <param name="Type">Required <b>Integer</b>. El tipo de forma que se va a devolver. Puede ser cualquier <see cref="T:Microsoft.Office.Core.MsoAutoShapeType" /> constante.</param>
+        <param name="Left"><b>Single</b>requerido. La posición, medida en puntos, del borde izquierdo de la autoforma.</param>
+        <param name="Top"><b>Single</b>requerido. La posición, medida en puntos, del borde superior de la autoforma.</param>
+        <param name="Width"><b>Single</b>requerido. El ancho, medido en puntos, de la autoforma.</param>
+        <param name="Height"><b>Single</b>requerido. El alto, medido en puntos, de la autoforma.</param>
+        <param name="Anchor"><b>Objeto</b>opcional. <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objeto que representa el texto al que está enlazada la autoforma. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si se omite este argumento, el intervalo de fijación se selecciona automáticamente y la autoforma se coloca en relación con los bordes superior e izquierdo de la página.</param>
+        <summary>Agrega una autoforma a un documento. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto Object que representa la autoforma y la agrega a <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> la colección.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Para cambiar el tipo de una autoforma que ha agregado, establezca la <see cref="P:Microsoft.Office.Interop.Word.Shape.AutoShapeType" /> (propiedad).</para>
-          <para />
-        </remarks>
+        <remarks><para>Para cambiar el tipo de una autoforma que ha agregado, establezca la <see cref="P:Microsoft.Office.Interop.Word.Shape.AutoShapeType" /> propiedad.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddSmartArt">
@@ -679,14 +609,14 @@
         <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Layout">A <see cref="T:Microsoft.Office.Core.SmartArtLayout" /> objeto que especifica el diseño para el gráfico SmartArt.</param>
+        <param name="Layout"><see cref="T:Microsoft.Office.Core.SmartArtLayout" /> Objeto que especifica el diseño para el gráfico SmartArt.</param>
         <param name="Left">Distancia, en puntos, desde el borde izquierdo de la diapositiva al borde izquierdo del elemento gráfico SmartArt.</param>
         <param name="Top">Distancia, en puntos, desde el borde superior de la diapositiva al borde superior del elemento gráfico SmartArt.</param>
         <param name="Width">El ancho del elemento gráfico SmartArt.</param>
         <param name="Height">La altura del elemento gráfico SmartArt.</param>
-        <param name="Anchor">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa el texto al que está enlazado el elemento gráfico SmartArt. Si se especifica Anchor, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si se omite este parámetro, el intervalo de fijación se selecciona automáticamente y se coloca el gráfico SmartArt con respecto a los bordes superiores e izquierdo de la página.</param>
+        <param name="Anchor"><see cref="T:Microsoft.Office.Interop.Word.Range" /> Objeto que representa el texto al que está enlazado el gráfico SmartArt. Si se especifica Anchor, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si se omite este parámetro, el intervalo de fijación se selecciona automáticamente y el elemento gráfico SmartArt se coloca en relación con los bordes superior e izquierdo de la página.</param>
         <summary>Inserta el elemento gráfico SmartArt especificado en el documento activo.</summary>
-        <returns>A <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto.</returns>
+        <returns>Un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -717,18 +647,13 @@
         <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Orientation">Requiere <see cref="T:Microsoft.Office.Core.MsoTextOrientation" />. La orientación del texto. Algunas de estas constantes pueden no estar disponibles, según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.).</param>
-        <param name="Left">
-          <b>Single</b>requerido. La posición, medida en puntos, del borde izquierdo del cuadro de texto.</param>
-        <param name="Top">
-          <b>Single</b>requerido. La posición, medida en puntos, del borde superior del cuadro de texto.</param>
-        <param name="Width">
-          <b>Single</b>requerido. El ancho, medido en puntos, del cuadro de texto.</param>
-        <param name="Height">
-          <b>Single</b>requerido. El alto, medido en puntos, del cuadro de texto.</param>
-        <param name="Anchor">
-          <b>Objeto</b>de opcional. A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa el texto al que está enlazado el cuadro de texto. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si se omite este argumento, el intervalo de fijación se selecciona automáticamente y el cuadro de texto se sitúa en relación con los bordes superiores e izquierdo de la página.</param>
-        <summary>Agrega un cuadro de texto a un documento. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object que representa el cuadro de texto y lo agrega a la <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> colección.</summary>
+        <param name="Orientation">Es <see cref="T:Microsoft.Office.Core.MsoTextOrientation" />obligatorio. La orientación del texto. Es posible que algunas de estas constantes no estén disponibles, dependiendo de la compatibilidad con el idioma que se haya seleccionado o instalado (inglés de Estados Unidos, por ejemplo).</param>
+        <param name="Left"><b>Single</b>requerido. La posición, medida en puntos, del borde izquierdo del cuadro de texto.</param>
+        <param name="Top"><b>Single</b>requerido. La posición, medida en puntos, del borde superior del cuadro de texto.</param>
+        <param name="Width"><b>Single</b>requerido. El ancho, medido en puntos, del cuadro de texto.</param>
+        <param name="Height"><b>Single</b>requerido. El alto, medido en puntos, del cuadro de texto.</param>
+        <param name="Anchor"><b>Objeto</b>opcional. <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objeto que representa el texto al que está enlazado el cuadro de texto. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si se omite este argumento, el intervalo de fijación se selecciona automáticamente y el cuadro de texto se coloca en relación con los bordes superior e izquierdo de la página.</param>
+        <summary>Agrega un cuadro de texto a un documento. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto Object que representa el cuadro de texto y lo agrega <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> a la colección.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -763,27 +688,19 @@
         <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="PresetTextEffect">Requiere <see cref="T:Microsoft.Office.Core.MsoPresetTextEffect" />. Un efecto de texto preestablecido. Los valores de las constantes <b>MsoPresetTextEffect</b> corresponden a los formatos que aparecen en el cuadro de diálogo Galería de WordArt (numerado de izquierda a derecha y de arriba a abajo).</param>
-        <param name="Text">
-          <b>String</b> requerida. Texto del objeto WordArt.</param>
-        <param name="FontName">
-          <b>String</b> requerida. Nombre de la fuente usada en el objeto WordArt.</param>
-        <param name="FontSize">
-          <b>Single</b>requerido. El tamaño, en puntos, de la fuente utilizada en el WordArt.</param>
-        <param name="FontBold">Requiere <see cref="T:Microsoft.Office.Core.MsoTriState" />. <b>MsoTrue</b> para poner en negrita la fuente de WordArt.</param>
-        <param name="FontItalic">Requiere <see cref="T:Microsoft.Office.Core.MsoTriState" />. <b>MsoTrue</b> para poner en cursiva la fuente de WordArt.</param>
-        <param name="Left">
-          <b>Single</b>requerido. La posición, medida en puntos, del borde izquierdo de la forma de WordArt con relación al delimitador.</param>
-        <param name="Top">
-          <b>Single</b>requerido. La posición, medida en puntos, del borde superior de la forma de WordArt con relación al delimitador.</param>
-        <param name="Anchor">
-          <b>Objeto</b>de opcional. A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa el texto al que está enlazado el objeto de WordArt. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si se omite este argumento, el intervalo de fijación se selecciona automáticamente y se coloca el objeto WordArt con relación a los bordes superiores e izquierdo de la página.</param>
-        <summary>Agrega una forma de WordArt a un documento. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object que representa el WordArt y lo agrega a la <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> colección.</summary>
+        <param name="PresetTextEffect">Es <see cref="T:Microsoft.Office.Core.MsoPresetTextEffect" />obligatorio. Un efecto de texto preestablecido. Los valores de las constantes <b>MsoPresetTextEffect</b> corresponden a los formatos que aparecen en el cuadro de diálogo Galería de WordArt (numerado de izquierda a derecha y de arriba a abajo).</param>
+        <param name="Text"><b>String</b> requerida. Texto del objeto WordArt.</param>
+        <param name="FontName"><b>String</b> requerida. Nombre de la fuente utilizada en el objeto WordArt.</param>
+        <param name="FontSize"><b>Single</b>requerido. Tamaño, en puntos, de la fuente utilizada en el WordArt.</param>
+        <param name="FontBold">Es <see cref="T:Microsoft.Office.Core.MsoTriState" />obligatorio. <b>MsoTrue</b> para poner en negrita la fuente de WordArt.</param>
+        <param name="FontItalic">Es <see cref="T:Microsoft.Office.Core.MsoTriState" />obligatorio. <b>MsoTrue</b> para poner en cursiva la fuente de WordArt.</param>
+        <param name="Left"><b>Single</b>requerido. Posición, medida en puntos, del borde izquierdo de la forma de WordArt con relación al delimitador.</param>
+        <param name="Top"><b>Single</b>requerido. La posición, medida en puntos, del borde superior de la forma de WordArt con relación al delimitador.</param>
+        <param name="Anchor"><b>Objeto</b>opcional. <see cref="T:Microsoft.Office.Interop.Word.Range" /> Objeto que representa el texto al que está enlazado el WordArt. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si se omite este argumento, el intervalo de fijación se selecciona automáticamente y el WordArt se coloca en relación con los bordes superior e izquierdo de la página.</param>
+        <summary>Agrega una forma de WordArt a un documento. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto Object que representa el WordArt y lo agrega a <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> la colección.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Cuando se agrega un WordArt a un documento, el alto y el ancho del WordArt se establecen automáticamente según el tamaño y la cantidad de texto especificado.</para>
-          <para />
-        </remarks>
+        <remarks><para>Al agregar un objeto WordArt a un documento, el alto y el ancho se establecen automáticamente según el tamaño y cantidad de texto especificado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddWebVideo">
@@ -817,16 +734,16 @@
         <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="EmbedCode">El código HTML para incrustar.</param>
-        <param name="VideoWidth">Un entero que representa el ancho de la web de vídeo en píxeles.</param>
-        <param name="VideoHeight">Un entero que representa el alto de la web de vídeo en píxeles.</param>
-        <param name="PosterFrameImage">Una cadena que apunta al archivo que se utilizará como el marco de póster para el sitio web de vídeo.</param>
-        <param name="Url">Una cadena que contiene la dirección URL de la web de vídeo.</param>
+        <param name="EmbedCode">Código HTML que se va a insertar.</param>
+        <param name="VideoWidth">Un entero que representa el ancho del vídeo web en píxeles.</param>
+        <param name="VideoHeight">Un entero que representa el alto del vídeo web en píxeles.</param>
+        <param name="PosterFrameImage">Una cadena que apunta al archivo que se va a usar como marco de póster para el vídeo web.</param>
+        <param name="Url">Una cadena que contiene la dirección URL del vídeo web.</param>
         <param name="Left">La posición, medida en puntos, del borde izquierdo del marco de póster desde el borde del documento.</param>
         <param name="Top">La posición, medida en puntos, del borde superior del marco de póster desde el borde del documento.</param>
-        <param name="Width">El ancho, medido en puntos, del marco de póster en el documento.</param>
-        <param name="Height">El alto, medido en puntos, del marco de póster en el documento.</param>
-        <param name="Anchor">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa el texto al que está enlazado el vídeo web. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si se omite este argumento, el intervalo de fijación se selecciona automáticamente y el vídeo se sitúa en relación con los bordes superiores e izquierdo de la página.</param>
+        <param name="Width">El ancho, medido en puntos, del marco del póster en el documento.</param>
+        <param name="Height">El alto, medido en puntos, del marco del póster en el documento.</param>
+        <param name="Anchor"><see cref="T:Microsoft.Office.Interop.Word.Range" /> Objeto que representa el texto al que está enlazado el vídeo web. Si <paramref name="Anchor" /> se especifica, el delimitador se sitúa al principio del primer párrafo del intervalo de fijación. Si se omite este argumento, el intervalo de fijación se selecciona automáticamente y el vídeo se coloca en relación con los bordes superior e izquierdo de la página.</param>
         <summary>Agrega un nuevo vídeo web al documento.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -855,7 +772,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -885,17 +802,13 @@
         <Parameter Name="Y1" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="EditingType">Propiedad de edición del primer nodo. Requiere <see cref="T:Microsoft.Office.Core.MsoEditingType" />. <b>MsoEditingType</b> puede ser una de estas constantes (no puede ser <b>msoEditingSmooth</b> ni <b>msoEditingSymmetric</b>). <b>msoEditingAuto</b><b>msoEditingCorner</b></param>
-        <param name="X1">
-          <b>Single</b>requerido. Posición, en puntos, del primer nodo del dibujo de forma libre con relación a la esquina superior izquierda del documento.</param>
-        <param name="Y1">
-          <b>Single</b>requerido. Posición, en puntos, del primer nodo del dibujo de forma libre con relación a la esquina superior izquierda del documento.</param>
-        <summary>Crea un objeto de forma libre. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.FreeformBuilder" /> de objeto que representa la forma libre que se está generando.</summary>
+        <param name="EditingType">Propiedad de edición del primer nodo. Es <see cref="T:Microsoft.Office.Core.MsoEditingType" />obligatorio. <b>MsoEditingType</b> puede ser cualquiera de estas constantes (no puede ser <b>msoEditingSmooth</b> ni <b>msoEditingSymmetric</b>). <b>msoEditingAuto</b> <b>msoEditingCorner</b></param>
+        <param name="X1"><b>Single</b>requerido. Posición, en puntos, del primer nodo del dibujo de forma libre con relación a la esquina superior izquierda del documento.</param>
+        <param name="Y1"><b>Single</b>requerido. Posición, en puntos, del primer nodo del dibujo de forma libre con relación a la esquina superior izquierda del documento.</param>
+        <summary>Genera un objeto de forma libre. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.FreeformBuilder" /> objeto que representa la forma libre que se está creando.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> método para agregar segmentos a la forma libre. Después de haber agregado al menos un segmento a la forma libre, puede utilizar el <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" /> método para convertir el objeto <b>FreeformBuilder</b> en un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto que tenga la descripción geométrica que ha definido en el objeto <b>FreeformBuilder</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> método para agregar segmentos a la forma libre. Una vez que haya agregado al menos un segmento a la forma libre, puede usar <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" /> el método para convertir el objeto <b>FreeformBuilder</b> en <see cref="T:Microsoft.Office.Interop.Word.Shape" /> un objeto que tenga la descripción geométrica que ha definido en el objeto <b>FreeformBuilder</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -951,9 +864,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -1014,7 +927,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>objeto</b> que indica la posición ordinal o una cadena que representa el nombre del objeto individual.</param>
+        <param name="Index"><b>Objeto</b> que indica la posición ordinal o una cadena que representa el nombre del objeto individual.</param>
         <summary>Devuelve un objeto individual de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1071,13 +984,14 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>requerido. Indica qué formas se incluirán en el intervalo especificado. Puede ser un entero que especifica el número de índice de una forma dentro de la <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> colección, una cadena que especifica el nombre de una forma o una matriz de <b>objetos</b> que contiene números enteros o cadenas.</param>
+        <param name="Index"><b>Objeto</b>requerido. Indica qué formas se incluirán en el intervalo especificado. Puede ser un entero que especifica el número de índice de una forma dentro de <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> la colección, una cadena que especifica el nombre de una forma o una matriz de <b>objetos</b> que contiene enteros o cadenas.</param>
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Los valores de posición de carácter comienzan con 0 (cero) al principio del documento. Se cuentan todos los caracteres, incluidos los caracteres no imprimibles. Los caracteres ocultos se cuentan incluso si no se muestran. Si no especifica las posiciones de carácter para el método <b>Range</b> inicial y final, se devuelve el documento completo como un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto.</para> Los objetos 
-          <para><b>ShapeRange</b> no incluyen <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objetos. Un objeto <b>InlineShape</b> equivale a un carácter y se sitúa como tal dentro de un intervalo de texto. <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objetos están delimitadas con relación a un intervalo de texto (la selección, de forma predeterminada), pero pueden situarse en cualquier lugar de la página. Un objeto <b>Shape</b> siempre aparecerá en la misma página que el intervalo al que se fija.</para><para>La mayoría de las operaciones que se puede hacer con un objeto <b>Shape</b> también puede hacer con un objeto <b>ShapeRange</b> que contenga una única forma. Algunas operaciones, cuando se realizan en un objeto <b>ShapeRange</b> que contiene varias formas, producen un error.</para><para /></remarks>
+        <remarks><para>Los valores de posición de carácter comienzan por 0 (cero) al principio del documento. Se cuentan todos los caracteres, incluidos los no imprimibles. Aunque no se muestren en pantalla, también se cuentan los caracteres ocultos. Si no se especifican las posiciones de carácter inicial y final para el método <b>Range</b> , se devuelve el documento <see cref="T:Microsoft.Office.Interop.Word.Range" /> completo como un objeto.</para>
+          <para>Los objetos 
+            <b>ShapeRange</b> no <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> incluyen objetos. Un objeto <b>InlineShape</b> equivale a un carácter y se sitúa como tal dentro de un intervalo de texto. <see cref="T:Microsoft.Office.Interop.Word.Shape" />los objetos se fijan a un intervalo de texto (de forma predeterminada, la selección), pero pueden situarse en cualquier lugar de la página. Un objeto <b>Shape</b> siempre aparecerá en la misma página que el intervalo al que está anclado.</para>
+          <para>[!NOTA] Casi todas las operaciones que se pueden hacer con un objeto <b>Shape</b> también puede hacer con un objeto <b>ShapeRange</b> que contenga una única forma. Algunas operaciones, cuando se realizan en un objeto <b>ShapeRange</b> que contiene varias formas, producen un error.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectAll">
@@ -1101,11 +1015,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Selecciona todas las formas del artículo principal, en un lienzo o en los encabezados y pies de página de un documento.</summary>
-        <remarks>
-          <para>Este método no selecciona <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> objetos.</para>
-          <para />
-        </remarks>
+        <summary>Selecciona todas las formas del artículo principal, de un lienzo o de los encabezados y pies de página de un documento.</summary>
+        <remarks><para>Este método no selecciona <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> objetos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

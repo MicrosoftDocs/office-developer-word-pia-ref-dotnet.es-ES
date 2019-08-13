@@ -1,13 +1,5 @@
 <Type Name="ApplicationEvents4_Event" FullName="Microsoft.Office.Interop.Word.ApplicationEvents4_Event">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e8fc8679de3e808303fc2750b432e5243a2d864f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675308" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ApplicationEvents4_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5a8775d8e740f980588b7c678e2c9ffe63481ea2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144837" /></Metadata><TypeSignature Language="C#" Value="public interface ApplicationEvents4_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ApplicationEvents4_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ApplicationEvents4_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface ApplicationEvents4_Event" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Interfaz de eventos para Word<see cref="T:Microsoft.Office.Interop.Excel.Application" /> eventos de objetos. Ésta es una interfaz de .NET que se crean cuando se procesa una coclase COM que requiere código administrado para la interoperabilidad con el objeto COM correspondiente. Esta interfaz implementa todos los eventos de interfaces anteriores y los nuevos eventos adicionales. Use esta interfaz sólo cuando el evento que desea usar comparte el mismo nombre que un método del objeto COM; en este caso, se convierte en esta interfaz para conectar con el evento y convierte en la interfaz principal para llamar al método. De lo contrario, use la interfaz de .NET que se deriva de la coclase COM para tener acceso a los métodos, propiedades y eventos del objeto COM.</summary>
+    <summary>Interfaz de eventos para<see cref="T:Microsoft.Office.Interop.Excel.Application" /> eventos de objetos de Word. Se trata de una interfaz .NET creada al procesar una coclase COM que es necesaria para el código administrado para la interoperabilidad con el objeto COM correspondiente. Esta interfaz implementa todos los eventos de las interfaces anteriores y todos los eventos nuevos adicionales. Use esta interfaz únicamente cuando el evento que desee usar comparta el mismo nombre que un método del objeto COM; en este caso, realice la conversión a esta interfaz para conectar al evento, y realice la conversión a la interfaz principal para llamar al método. En caso contrario, use la interfaz .NET que se deriva de la coclase COM para obtener acceso a los métodos, propiedades y eventos del objeto COM.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,7 +40,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ApplicationEvents4_DocumentBeforeCloseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Tiene lugar inmediatamente antes de que se cierre un documento.</summary>
+        <summary>Este evento se produce antes de que se cierre cualquier documento.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -201,10 +193,8 @@
       </ReturnValue>
       <Docs>
         <summary>Este evento se produce cuando un usuario hace clic en el botón Propiedades de franqueo electrónico (cuadro de diálogo Sobres y etiquetas) o en el botón de la barra de herramientas Imprimir franqueo electrónico.</summary>
-        <remarks>
-          <para>Este evento permite que una aplicación de software de otro fabricante intercepte y muestre su cuadro de diálogo Propiedades.</para>
-          <para />
-        </remarks>
+        <remarks><para>Este evento permite que una aplicación de software de otro fabricante intercepte y muestre su cuadro de diálogo de propiedades.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailMergeAfterMerge">
@@ -318,10 +308,8 @@
       </ReturnValue>
       <Docs>
         <summary>Tiene lugar cuando un usuario, para comprobar la dirección, hace clic en Validar del cuadro de diálogo Destinatarios de combinar correspondencia .</summary>
-        <remarks>
-          <para>Si no tiene instalado en su equipo el software de comprobación de direcciones, el evento <b>MailMergeDataSourceValidate</b> permite crear rutinas de filtrado simples como recorrer los registros para comprobar los códigos postales y quitar los que son que no sean de Estados Unidos</para>
-          <para />
-        </remarks>
+        <remarks><para>Si no tiene instalado el software de comprobación de direcciones en el equipo, el evento <b>MailMergeDataSourceValidate</b> le permite crear rutinas de filtrado sencillas, como recorrer en bucle los registros para comprobar los códigos postales y quitar los que están no de Estados Unidos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailMergeDataSourceValidate2">
@@ -339,14 +327,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.ApplicationEvents4_MailMergeDataSourceValidate2EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-		Este evento se produce cuando un usuario valida a los destinatarios de combinar correspondencia haciendo clic en el botón de vínculo Validar direcciones del cuadro de diálogo Destinatarios de combinar correspondencia.</summary>
-        <remarks>
-          <para>Si no tiene instalado en su equipo el software de comprobación de direcciones, el evento <b>MailMergeDataSourceValidate2</b> permite crear rutinas de filtrado simples como recorrer los registros para comprobar los códigos postales y quitar los que son que no sean de Estados Unidos</para>
+        <summary>Este evento se produce cuando un usuario valida a los destinatarios de combinar correspondencia haciendo clic en el botón de vínculo Validar direcciones del cuadro de diálogo Destinatarios de combinar correspondencia.</summary>
+        <remarks><para>Si no tiene instalado el software de comprobación de direcciones en el equipo, el evento <b>MailMergeDataSourceValidate2</b> permite crear rutinas de filtrado sencillas, como realizar bucles en los registros para comprobar los códigos postales y quitar los que no pertenezcan a EE.UU.</para>
           <para>
-            <b>Nota</b>: no se puede provocar este evento desde dentro de un Microsoft proyecto Visual Basic para aplicaciones (VBA).  Este evento sólo funciona correctamente en complementos administrados y aplicaciones externas. Para los complementos COM, utilice la <see cref="E:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.MailMergeDataSourceValidate" /> evento.</para>
-          <para />
-        </remarks>
+            <b>Nota</b>: no puede generar este evento desde un proyecto de Microsoft Visual Basic para aplicaciones (VBA).  Este evento funciona correctamente en complementos administrados y en aplicaciones externas. Para complementos COM, use el <see cref="E:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.MailMergeDataSourceValidate" /> evento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailMergeWizardSendToCustom">
@@ -364,11 +349,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.ApplicationEvents4_MailMergeWizardSendToCustomEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produce cuando se hace clic en el botón personalizado en el paso seis del Asistente de combinación de correspondencia.</summary>
-        <remarks>
-          <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.MailMerge.ShowSendToCustom" /> (propiedad) para crear un botón personalizado en el sexto paso del Asistente para combinar correspondencia.</para>
-          <para />
-        </remarks>
+        <summary>Se produce cuando se hace clic en el botón personalizado del paso seis del Asistente para combinar correspondencia.</summary>
+        <remarks><para>Use la <see cref="P:Microsoft.Office.Interop.Word.MailMerge.ShowSendToCustom" /> propiedad para crear un botón personalizado en el sexto paso del Asistente para combinar correspondencia.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailMergeWizardStateChange">
@@ -519,7 +502,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ApplicationEvents4_ProtectedViewWindowSizeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se produce cuando se mueve o se cambia el tamaño de una ventana de vista protegida.</summary>
+        <summary>Se produce cuando se mueve o se cambia de tamaño una ventana de vista protegida.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -614,7 +597,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ApplicationEvents4_WindowBeforeRightClickEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Este evento se produce al hacer clic con el botón secundario del mouse (ratón) en el área de modificación de una ventana de documento, antes de la acción predeterminada.</summary>
+        <summary>Occurs when the editing area of a document window is right-clicked, before the default right-click action.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

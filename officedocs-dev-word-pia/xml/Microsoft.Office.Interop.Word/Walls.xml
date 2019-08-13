@@ -1,13 +1,5 @@
 <Type Name="Walls" FullName="Microsoft.Office.Interop.Word.Walls">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="be26cb420d5ce19f16e8cf73223d816797bf7492" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674539" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Walls" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="51dba4c84d258a55d188312fa9ea49fc33c66368" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143717" /></Metadata><TypeSignature Language="C#" Value="public interface Walls" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Walls" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Walls" />
   <TypeSignature Language="VB.NET" Value="Public Interface Walls" />
@@ -28,9 +20,7 @@
   <Docs>
     <summary>Representa los planos de un gráfico 3D. Este objeto no es una colección. Ningún objeto representa un plano individual; deben devolverse todos los planos como una sola unidad.</summary>
     <remarks>To be added.</remarks>
-    <example>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.Chart.Walls" /> propiedad para devolver el <see cref="T:Microsoft.Office.Interop.Word.Walls" /> objeto. En el ejemplo siguiente se establece la trama en las paredes del primer gráfico del documento activo. Si el gráfico no es un gráfico 3D, en este ejemplo se producirá un error.</para>
-    </example>
+    <example><para>Use la <see cref="P:Microsoft.Office.Interop.Word.Chart.Walls" /> propiedad para devolver el <see cref="T:Microsoft.Office.Interop.Word.Walls" /> objeto. En el siguiente ejemplo se establece la trama en las paredes del primer gráfico del documento activo. El ejemplo devuelve un error si el gráfico no es 3D.</para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,9 +46,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa la aplicación Microsoft Word. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto). Solo lectura.</summary>
-        <value>
-          <b>Aplicación</b> (vea lo anterior)</value>
+        <summary>Cuando se usa sin un calificador de objeto, esta <see cref="T:Microsoft.Office.Interop.Word._Application" /> propiedad devuelve un objeto que representa la aplicación Microsoft Word. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto). Solo lectura.</summary>
+        <value><b>Aplicación</b> (vea más arriba)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,10 +77,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Border" /> object que representa el borde del objeto.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Border" /> objeto Object que representa el borde del objeto.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,9 +104,7 @@
       <Parameters />
       <Docs>
         <summary>Borra el formato del objeto.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <returns><b>Objeto</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,14 +131,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. <b>Integer</b> de sólo lectura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, el <see cref="P:Microsoft.Office.Interop.Word.Walls.Creator" /> (propiedad) devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, consulte la referencia del lenguaje de ayuda que se incluye con Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. <b>Integer</b> de solo lectura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Si el objeto se creó en Microsoft Word, la <see cref="P:Microsoft.Office.Interop.Word.Walls.Creator" /> propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -182,10 +163,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> objeto para un gráfico especificado que contiene las propiedades para el gráfico de formato de relleno.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> objeto para un gráfico especificado que contiene las propiedades de formato de relleno del gráfico.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -213,10 +192,8 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve la línea, relleno y efecto de formato para el objeto.
-Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+De sólo <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,10 +223,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>Microsoft.Office.Interop.Word.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Interior" /> object que representa el interior del objeto especificado.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Interior" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Interior" /> objeto Object que representa el interior del objeto especificado.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -277,9 +252,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Devuelve un valor de <b>tipo String</b> que representa el nombre del objeto.</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -307,9 +280,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Devuelve al objeto primario del objeto especificado. Read-only <b>objeto</b>.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -335,10 +306,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       <Parameters />
       <Docs>
         <summary>Pega una imagen del Portapapeles en las paredes del gráfico especificado.</summary>
-        <remarks>
-          <para>Este método puede usarse en la columna, barra, línea o gráficos radiales.</para>
-          <para />
-        </remarks>
+        <remarks><para>Este método puede usarse en gráficos de columnas, de barras, de líneas o radiales.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PictureType">
@@ -367,14 +336,10 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor de <b>objeto</b> que representa la manera en que se muestran las imágenes en los planos laterales y las caras de un gráfico 3D.</summary>
-        <value>
-          <b>Object</b>
-        </value>
-        <remarks>
-          <para>Esta propiedad se puede establecer en uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" /> constantes: <see cref="F:Microsoft.Office.Interop.Excel.XlChartPictureType.xlStack" /> o <see cref="F:Microsoft.Office.Interop.Excel.XlChartPictureType.xlStretch" />.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece un valor de tipo <b>Object</b> que representa el modo en que se muestran las imágenes en los planos laterales y las caras de un gráfico 3D.</summary>
+        <value><b>Objeto</b></value>
+        <remarks><para>Esta propiedad se puede establecer en una de las siguientes <see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" /> constantes: <see cref="F:Microsoft.Office.Interop.Excel.XlChartPictureType.xlStack" /> o <see cref="F:Microsoft.Office.Interop.Excel.XlChartPictureType.xlStretch" />.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PictureUnit">
@@ -403,10 +368,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la unidad de cada imagen del gráfico si el <see cref="P:Microsoft.Office.Interop.Word.Walls.PictureType" /> propiedad está establecida en <see cref="F:Microsoft.Office.Interop.Excel.XlChartPictureType.xlStackScale" /> (si no, esta propiedad se omite). <b>Integer</b> de lectura y escritura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Devuelve o establece la unidad de cada imagen del gráfico si la <see cref="P:Microsoft.Office.Interop.Word.Walls.PictureType" /> propiedad se establece en <see cref="F:Microsoft.Office.Interop.Excel.XlChartPictureType.xlStackScale" /> (si no es así, esta propiedad se omite). Valor <b>Entero</b> de lectura y escritura.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -432,9 +395,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       <Parameters />
       <Docs>
         <summary>Selecciona el objeto.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <returns><b>Objeto</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -464,14 +425,10 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <b>entero</b> que especifica el grosor de la pared. Lectura y escritura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Utilice esta propiedad para establecer el grosor de las paredes de un gráfico.  El valor predeterminado es cero (0).</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece un <b>valor de tipo Integer</b> que especifica el grosor de la pared. Lectura/escritura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Use esta propiedad para establecer el grosor de los planos laterales de un gráfico.  El valor predeterminado es cero (0).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

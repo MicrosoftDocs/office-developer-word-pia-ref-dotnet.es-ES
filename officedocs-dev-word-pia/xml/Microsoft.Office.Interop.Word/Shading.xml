@@ -1,13 +1,5 @@
 <Type Name="Shading" FullName="Microsoft.Office.Interop.Word.Shading">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="67aec3acf3c8a1f2042293fe765480fe2dcdbb9a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674422" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Shading" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6831b5971a688c2ff5d4e9beba114f83c16bb157" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144018" /></Metadata><TypeSignature Language="C#" Value="public interface Shading" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Shading" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Shading" />
   <TypeSignature Language="VB.NET" Value="Public Interface Shading" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Contiene los atributos de sombreado de un objeto.</summary>
-    <remarks>
-      <para>Utilice la propiedad <b>Shading</b> para devolver el objeto <b>Shading</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>Utilice la propiedad <b>Shading</b> para devolver el objeto <b>Shading</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +46,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,7 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el color de 24 bits que se aplica al fondo de la <see cref="T:Microsoft.Office.Interop.Word.Shading" /> objeto. Puede ser cualquier <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> constante o un valor devuelto por la función RGB de Visual Basic.</summary>
+        <summary>Devuelve o establece el color de 24 bits que se aplica al fondo del <see cref="T:Microsoft.Office.Interop.Word.Shading" /> objeto. Puede ser cualquier constante <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> válida o un valor devuelto por la función RGB de Visual Basic.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,13 +108,12 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el color que se aplica al fondo de la <see cref="T:Microsoft.Office.Interop.Word.Shading" /> objeto.</summary>
+        <summary>Devuelve o establece el color que se aplica al fondo del <see cref="T:Microsoft.Office.Interop.Word.Shading" /> objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Word.WdColorIndex" />puede ser una de estas constantes <b>WdColorIndex</b> .</para>
           <para>
-            <b>wdYellow</b>
+            <b>wdAuto</b>
           </para>
           <para>
             <b>wdBlack</b>
@@ -180,8 +169,7 @@
           <para>
             <b>wdYellow</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -209,9 +197,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ForegroundPatternColor">
@@ -240,7 +228,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el color de 24 bits que se aplica al primer plano de la <see cref="T:Microsoft.Office.Interop.Word.Shading" /> objeto. Este color se aplica a los puntos y las líneas de la trama de sombreado. Puede ser cualquier <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> constante o un valor devuelto por la función <b>RGB</b> de Visual Basic.</summary>
+        <summary>Devuelve o establece el color de 24 bits que se aplica al primer plano del <see cref="T:Microsoft.Office.Interop.Word.Shading" /> objeto. Este color se aplica a los puntos y las líneas de la trama de sombreado. Puede ser cualquier constante <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> válida o un valor devuelto por la función <b>RGB</b> de Visual Basic.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -271,70 +259,68 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el color que se aplica al primer plano de la <see cref="T:Microsoft.Office.Interop.Word.Shading" /> objeto. Este color se aplica a los puntos y las líneas de la trama de sombreado.</summary>
+        <summary>Devuelve o establece el color que se aplica al primer plano del <see cref="T:Microsoft.Office.Interop.Word.Shading" /> objeto. Este color se aplica a los puntos y las líneas de la trama de sombreado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Word.WdColorIndex" />puede ser una de estas constantes <b>WdColorIndex</b> . </para>
           <para>
-            <b>wdYellow </b>
+            <b>wdAuto</b>
           </para>
           <para>
-            <b>wdBlack </b>
+            <b>wdBlack</b>
           </para>
           <para>
-            <b>wdBlue </b>
+            <b>wdBlue</b>
           </para>
           <para>
-            <b>wdBrightGreen </b>
+            <b>wdBrightGreen</b>
           </para>
           <para>
-            <b>wdByAuthor </b>
+            <b>wdByAuthor</b>
           </para>
           <para>
-            <b>wdDarkBlue </b>
+            <b>wdDarkBlue</b>
           </para>
           <para>
-            <b>wdDarkRed </b>
+            <b>wdDarkRed</b>
           </para>
           <para>
-            <b>wdDarkYellow </b>
+            <b>wdDarkYellow</b>
           </para>
           <para>
-            <b>wdGray25 </b>
+            <b>wdGray25</b>
           </para>
           <para>
-            <b>wdGray50 </b>
+            <b>wdGray50</b>
           </para>
           <para>
             <b>wdGreen</b>
           </para>
           <para>
-            <b> wdNoHighlight </b>
+            <b>wdNoHighlight</b>
           </para>
           <para>
-            <b>wdPink </b>
+            <b>wdPink</b>
           </para>
           <para>
-            <b>wdRed </b>
+            <b>wdRed</b>
           </para>
           <para>
-            <b>wdTeal </b>
+            <b>wdTeal</b>
           </para>
           <para>
-            <b>wdTurquoise </b>
+            <b>wdTurquoise</b>
           </para>
           <para>
-            <b>wdViolet </b>
+            <b>wdViolet</b>
           </para>
           <para>
-            <b>wdWhite </b>
+            <b>wdWhite</b>
           </para>
           <para>
             <b>wdYellow</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

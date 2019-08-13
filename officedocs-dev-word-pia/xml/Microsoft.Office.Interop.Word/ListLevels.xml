@@ -1,13 +1,5 @@
 <Type Name="ListLevels" FullName="Microsoft.Office.Interop.Word.ListLevels">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="345ec8cf35045c8f363788631d6ef1e1f1353dda" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675091" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListLevels : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="09f3bd00422a681e4357da47dfe50d934788f98e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144494" /></Metadata><TypeSignature Language="C#" Value="public interface ListLevels : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListLevels implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListLevels" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListLevels&#xA;Implements IEnumerable" />
@@ -30,15 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> objetos que representa todos los niveles de lista de una plantilla de lista, ya sea el único nivel de una lista numerada o con viñetas o uno de los nueve niveles de una lista de esquema numerado.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.ListTemplate.ListLevels" /> (propiedad) para devolver la colección <b>ListLevels</b> .</para>
-      <para>Uso <b>ListLevels</b>(<paramref name="index" />), donde <paramref name="index" /> es un número comprendido entre 1 y 9, para devolver un solo objeto <b>ListLevel</b> .</para>
+    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> objetos que representa todos los niveles de lista de una plantilla de lista, ya sea el único nivel de una lista con viñetas o numerada, o bien uno de los nueve niveles de una lista de esquema numerado.</summary>
+    <remarks><para>Use la <see cref="P:Microsoft.Office.Interop.Word.ListTemplate.ListLevels" /> propiedad para devolver la colección <b>ListLevels</b> .</para>
+      <para>Use <b>ListLevels</b>(<paramref name="index" />), donde <paramref name="index" /> es un número del 1 al 9, para devolver un solo objeto <b>ListLevel</b> .</para>
       <para>
-        <b>Nota</b>: no se puede agregar nuevos niveles a una plantilla de lista.</para>
-      <para>Para aplicar un nivel de lista, en primer lugar identifique el intervalo o la lista y, a continuación, usar el <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> (método). Cada ficha al principio del párrafo se traduce en un nivel de lista. Por ejemplo, un párrafo que empieza con tres tabulaciones se convertirá en un párrafo de lista de nivel tres después de utiliza el método <b>ApplyListTemplate</b> .</para>
-      <para />
-    </remarks>
+        <b>Nota</b>: no se pueden agregar nuevos niveles a una plantilla de lista.</para>
+      <para>Para aplicar un nivel de lista, primero identifique el intervalo o la lista y, a <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> continuación, use el método. Cada ficha al principio del párrafo se traduce a un nivel de lista. Por ejemplo, un párrafo que empieza con tres tabulaciones se convertirá en un párrafo de lista de nivel tres después de utiliza el método <b>ApplyListTemplate</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -64,7 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -122,9 +112,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -185,7 +175,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entero</b> que indica la posición ordinal del objeto individual.</param>
+        <param name="Index"><b>Entero</b> que indica la posición ordinal del objeto individual.</param>
         <summary>Devuelve un objeto individual de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

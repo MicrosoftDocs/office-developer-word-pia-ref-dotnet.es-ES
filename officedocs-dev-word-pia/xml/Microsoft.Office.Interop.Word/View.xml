@@ -1,13 +1,5 @@
 <Type Name="View" FullName="Microsoft.Office.Interop.Word.View">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c735dc24605c2be9a7ca3d58b9f0bc399f7d9a08" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674441" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface View" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5f9e0c4e9f7ec1021964e80672f2867a5ad16420" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143724" /></Metadata><TypeSignature Language="C#" Value="public interface View" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract View" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.View" />
   <TypeSignature Language="VB.NET" Value="Public Interface View" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Incluye los atributos de vista (mostrar todo, sombreado de campo, cuadrículas de tabla, etc.) de una ventana o panel.</summary>
-    <remarks>
-      <para>Utilice la propiedad <b>View</b> de un <see cref="T:Microsoft.Office.Interop.Word.Window" /> o <see cref="T:Microsoft.Office.Interop.Word.Pane" /> objeto para devolver el objeto <b>View</b> .</para>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.View.Type" /> (propiedad) para cambiar la vista.</para>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.Zoom.Percentage" /> (propiedad) para cambiar el tamaño del texto en pantalla.</para>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.View.SeekView" /> (propiedad) para ver comentarios, notas al final, notas al pie, o el encabezado del documento o el pie de página.</para>
-      <para />
-    </remarks>
+    <remarks><para>Utilice la propiedad <b>View</b> de un <see cref="T:Microsoft.Office.Interop.Word.Window" /> objeto <see cref="T:Microsoft.Office.Interop.Word.Pane" /> o para devolver el objeto <b>View</b> .</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.View.Type" /> propiedad para cambiar la vista.</para>
+      <para>Use la <see cref="P:Microsoft.Office.Interop.Word.Zoom.Percentage" /> propiedad para cambiar el tamaño del texto en pantalla.</para>
+      <para>Use la <see cref="P:Microsoft.Office.Interop.Word.View.SeekView" /> propiedad para ver comentarios, notas al final, notas al pie o el encabezado o pie de página del documento.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -123,10 +113,8 @@
       <Parameters />
       <Docs>
         <summary>Contrae todos los títulos del documento.</summary>
-        <remarks>
-          <para>Este método corresponde al comando <b>Contraer todos los títulos</b> en el submenú de <b>Expandir o contraer</b> del menú contextual que aparece cuando haga clic en un encabezado.</para>
-          <para />
-        </remarks>
+        <remarks><para>Este método corresponde al comando <b>contraer todos los títulos</b> en el submenú <b>expandir o contraer</b> del menú contextual que aparece al hacer clic con el botón secundario en un encabezado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CollapseOutline">
@@ -151,13 +139,11 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Opcional <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. Intervalo de párrafos que contraer. Si se omite este argumento, se contraerá toda la selección.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> opcional. Intervalo de párrafos que contraer. Si se omite este argumento, se contraerá toda la selección.</param>
         <summary>Contrae un nivel de título el texto de la selección o del intervalo especificado.</summary>
-        <remarks>
-          <para>
-            <b>Nota</b>  Si el documento no está en la vista Esquema o documento maestro, se produce un error.</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>Nota:</b>  Si el documento no está en la vista esquema o documento maestro, se produce un error.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ColumnWidth">
@@ -217,13 +203,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece si el documento está en vista de modo de conflicto.</summary>
-        <value>
-          <b>true</b> si el documento está en vista de modo de conflicto; en caso contrario, <b>false</b>.</value>
-        <remarks>
-          <para>Lectura y escritura.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene o establece si el documento está en la vista de modo de conflicto.</summary>
+        <value><b>true</b> si el documento está en vista de modo de conflicto; de lo contrario, <b>false</b>.</value>
+        <remarks><para>Lectura/escritura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -251,9 +234,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayBackgrounds">
@@ -284,10 +267,8 @@
       <Docs>
         <summary>Devuelve o establece un <b>valor Boolean</b> que indica si las imágenes y los colores de fondo se muestran cuando se visualiza un documento en la vista Diseño de impresión.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>DisplayBackgrounds</b> corresponde a los colores de fondo y las imágenes de opción (sólo en la vista impresión) que se encuentra en la ficha Ver del cuadro de diálogo Opciones.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propiedad <b>DisplayBackgrounds</b> corresponde a la opción colores e imágenes de fondo (sólo en la vista impresión) que se encuentra en la ficha ver del cuadro de diálogo Opciones.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayPageBoundaries">
@@ -316,13 +297,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> para mostrar los márgenes superior e inferior (espacio blanco) y el gris área (espacio gris) entre las páginas de un documento. <b>False</b> para ocultar los espacios blanco y gris para que las páginas formen una sola página larga. El valor predeterminado es <b>True</b>.</summary>
+        <summary><b>True</b> para mostrar los márgenes superior e inferior (espacio blanco) y el gris área (espacio gris) entre las páginas de un documento. <b>False</b> para ocultar los espacios blanco y gris para que las páginas formen una sola página larga. El valor predeterminado es <b>True</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta característica solo está disponible en la vista Diseño de impresión y afecta sólo al espacio gris en la parte superior e inferior de la página, no los lados izquierdo y derecho de una página. Esta configuración afecta al documento en el en la ventana especificada. Cuando se guarda el documento, el estado de esta configuración se guarda con él.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta función está disponible únicamente en la vista Diseño de impresión y afecta sólo al espacio gris en la parte inferior y superior de una página y no a la parte izquierda ni derecha de la página. Esta configuración afecta al documento de la ventana especificada. Al guardar el documento, se guarda también el estado de esta configuración.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplaySmartTags">
@@ -357,13 +335,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> para que Microsoft Word muestre las etiquetas inteligentes subrayadas en un documento.</summary>
+        <summary><b>True</b> para que Microsoft Word muestre las etiquetas inteligentes subrayadas en un documento.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se marcan las etiquetas inteligentes en documentos con un subrayado de guiones. Si se establece la propiedad <b>DisplaySmartTags</b> en <b>False</b> no quita las etiquetas inteligentes. sólo se desactiva el subrayado.</para>
-          <para />
-        </remarks>
+        <remarks><para>Las etiquetas inteligentes se marcan con un subrayado discontinuo. Si establece la propiedad <b>DisplaySmartTags</b> en <b>False</b>, deshabilita el subrayado, pero no quita las etiquetas inteligentes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Draft">
@@ -392,8 +367,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si se muestra todo el texto en una ventana de la misma fuente sans serif con un formato mínimo para acelerar la presentación.</summary>
+        <summary><b>True</b> si se muestra todo el texto en una ventana de la misma fuente sans serif con un formato mínimo para acelerar la presentación.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -457,10 +431,8 @@
       <Parameters />
       <Docs>
         <summary>Expande todos los títulos del documento.</summary>
-        <remarks>
-          <para>Este método corresponde al comando <b>Expandir todos los títulos</b> en el submenú de <b>Expandir o contraer</b> del menú contextual que aparece cuando haga clic en un encabezado.</para>
-          <para />
-        </remarks>
+        <remarks><para>Este método corresponde al comando <b>expandir todos los títulos</b> en el submenú <b>expandir o contraer</b> del menú contextual que aparece al hacer clic con el botón secundario en un encabezado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpandOutline">
@@ -485,13 +457,11 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Opcional <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. Intervalo de párrafos que va a expandirse. Si se omite este argumento, se expandirá toda la selección.</param>
-        <summary>Expande el texto de la selección o del intervalo especificado por un nivel de título.</summary>
-        <remarks>
-          <para>
-            <b>Nota</b>  Si el documento no está en la vista Esquema o documento maestro, se produce un error.</para>
-          <para />
-        </remarks>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> opcional. Intervalo de párrafos que va a expandirse. Si se omite este argumento, se expandirá toda la selección.</param>
+        <summary>Expande un nivel de título el texto que se encuentra debajo de la selección o el intervalo especificado.</summary>
+        <remarks><para>
+            <b>Nota:</b>  Si el documento no está en la vista esquema o documento maestro, se produce un error.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FieldShading">
@@ -522,20 +492,18 @@
       <Docs>
         <summary>Devuelve o establece el sombreado en pantalla de los campos de formulario.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Word.WdFieldShading" />puede ser una de estas constantes <b>WdFieldShading</b> : </para>
           <para>
-            <b>wdFieldShadingAlways </b>
+            <b>wdFieldShadingAlways</b>
           </para>
           <para>
-            <b>wdFieldShadingNever </b>
+            <b>wdFieldShadingNever</b>
           </para>
           <para>
             <b>wdFieldShadingWhenSelected</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FullScreen">
@@ -564,8 +532,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la ventana está en vista de pantalla completa.</summary>
+        <summary><b>True</b> si la ventana está en la vista de pantalla completa.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -596,13 +563,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el puntero se muestra como una lupa en vista preliminar, que indica que el usuario puede hacer clic para acercar un área determinada de la página o alejar para ver una página entera o varias páginas.</summary>
+        <summary><b>True</b> si el puntero se muestra como una lupa en vista preliminar, que indica que el usuario puede hacer clic para acercar un área determinada de la página o alejar para ver una página entera o varias páginas.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad genera un error si la vista no es Vista preliminar.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta propiedad genera un error si la vista no es Vista preliminar.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailMergeDataView">
@@ -631,13 +595,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si se muestran los datos de combinación de correspondencia en lugar de campos de combinación de correspondencia en la ventana especificada.</summary>
+        <summary><b>True</b> si se muestran los datos de combinación de correspondencia en lugar de campos de combinación de correspondencia en la ventana especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si la ventana especificada no es un documento principal, se produce un error.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la ventana especificada no es un documento principal, se producirá un error.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MarkupMode">
@@ -666,10 +627,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionsMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsMode" /> constante que representa el modo de presentación de los cambios realizados. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsMode" />
-        </value>
+        <summary>Devuelve o establece una <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsMode" /> constante que representa el modo de presentación de las marcas de revisión. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdRevisionsMode" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -694,12 +653,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Si la selección está en un encabezado, este método se desplaza al siguiente encabezado de la sección actual (por ejemplo, de un encabezado impar a un encabezado par) o al primer encabezado en la siguiente sección. Si la selección está en un pie de página, este método se desplaza al siguiente pie.</summary>
-        <remarks>
-          <para>
-            <b>Nota</b>  Si la selección se encuentra en el último encabezado o pie de página de la última sección del documento, o si no es un encabezado o pie de página, se produce un error.</para>
-          <para />
-        </remarks>
+        <summary>Si la selección se encuentra en un encabezado, este método se desplaza al siguiente encabezado de la sección actual (por ejemplo, de un encabezado impar a un encabezado par) o al primer encabezado de la siguiente sección. Si la selección se encuentra en un pie de página, este método se desplaza al siguiente pie de página.</summary>
+        <remarks><para>
+            <b>Nota:</b>  Si la selección se encuentra en el último encabezado o pie de página de la última sección del documento, o si no está en ningún encabezado o pie de página, se produce un error.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageColor">
@@ -728,7 +685,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPageColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve y establece el color de la página en modo lectura. Lectura y escritura <see cref="T:Microsoft.Office.Interop.Word.WdPageColor" />.</summary>
+        <summary>Devuelve y establece el color de página en modo de lectura. Lectura y escritura <see cref="T:Microsoft.Office.Interop.Word.WdPageColor" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -759,14 +716,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <b>valor Boolean</b> que representa si Microsoft Office Word está en modo panorámico. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>El modo panorámico cambia el puntero del mouse (ratón) a una mano y permite al usuario presionar y arrastrar el documento para desplazarse por las páginas.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece un <b>valor Boolean</b> que indica si Microsoft Office Word está en modo panorámico. Lectura/escritura.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Panning mode changes the mouse pointer to a hand and enables the user to press and drag the document to scroll through the pages.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -818,12 +771,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Si la selección está en un encabezado, este método desplaza al encabezado anterior de la sección actual (por ejemplo, de un encabezado par a un encabezado impar) o bien al último encabezado en la sección anterior. Si la selección está en un pie de página, este método se desplaza al pie de página anterior.</summary>
-        <remarks>
-          <para>
-            <b>Nota</b>  Si la selección se encuentra en el primer encabezado o pie de página de la primera sección del documento, o si no es un encabezado o pie de página, se produce un error.</para>
-          <para />
-        </remarks>
+        <summary>Si la selección se encuentra en un encabezado, este método se desplaza al encabezado anterior de la sección actual (por ejemplo, de un encabezado par a un encabezado impar) o al último encabezado de la sección anterior. Si la selección se encuentra en un pie de página, este método se desplaza al pie de página anterior.</summary>
+        <remarks><para>
+            <b>Nota:</b>  Si la selección se encuentra en el primer encabezado o pie de página de la primera sección del documento, o si no está en ningún encabezado o pie de página, se produce un error.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadingLayout">
@@ -852,13 +803,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Establece o devuelve un <b>valor Boolean</b> que representa si un documento se muestra en la vista Diseño de lectura.</summary>
+        <summary>Establece o devuelve un <b>valor Boolean</b> que representa si un documento se visualiza en la vista Diseño de lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>True</b> cambia el documento a la vista Diseño de lectura. <b>False</b> cierra la vista Diseño de lectura.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadingLayoutActualView">
@@ -889,10 +838,8 @@
       <Docs>
         <summary>Establece o devuelve un <b>valor Boolean</b> que indica si las páginas visualizadas en la vista Diseño de lectura se muestran con el mismo diseño que las páginas impresas.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>En la vista de diseño de lectura, las páginas no se muestran con todo el contenido en las páginas impresas, tal y como se pueden ver en la vista normal o en la vista Diseño de impresión. En su lugar se muestran en pantallas. Cuando la propiedad <b>ReadingLayoutActualView</b> está establecida en <b>True</b>, se muestra el documento tal como aparecería impreso. En monitores más pequeños, esto requiere un nivel de zoom que dificulta la lectura del documento, pero está bien para los monitores más grandes.</para>
-          <para />
-        </remarks>
+        <remarks><para>En la vista de diseño de lectura, las páginas no se muestran con todo el contenido en las páginas impresas, como se podría ver en la vista normal o en la vista Diseño de impresión. En su lugar se muestran en pantallas. Cuando la propiedad <b>ReadingLayoutActualView</b> está establecida en <b>True</b>, se muestra el documento tal como aparecería impreso. En monitores más pequeños, esto requiere un nivel de zoom que dificulta la lectura del documento, pero funciona bien con monitores más grandes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadingLayoutAllowEditing">
@@ -927,7 +874,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>[!PRECAUCIóN] Este objeto, miembro o enumeración está en desuso y no debería usarse en el código.</summary>
+        <summary>Este objeto, miembro o enumeración está en desuso y no debería usarse en el código.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -964,7 +911,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>[!PRECAUCIóN] Este objeto, miembro o enumeración está en desuso y no debería usarse en el código.</summary>
+        <summary>Este objeto, miembro o enumeración está en desuso y no debería usarse en el código.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -995,10 +942,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdReadingLayoutMargin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.WdReadingLayoutMargin" /> constante que representa si los márgenes se ven o se ocultan cuando un documento se ve en la vista lectura a pantalla completa. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdReadingLayoutMargin" />
-        </value>
+        <summary>Devuelve o establece una <see cref="T:Microsoft.Office.Interop.Word.WdReadingLayoutMargin" /> constante que representa si los márgenes se ven o se ocultan cuando se ve un documento en la vista lectura de pantalla completa. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdReadingLayoutMargin" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1028,7 +973,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Reviewers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>[!PRECAUCIóN] Este objeto, miembro o enumeración está en desuso y no debería usarse en el código.</summary>
+        <summary>Este objeto, miembro o enumeración está en desuso y no debería usarse en el código.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1059,8 +1004,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> para que Microsoft Word muestre líneas de conexión desde el texto a los globos de comentario y revisión.</summary>
+        <summary><b>True</b> para que Microsoft Word muestre líneas de conexión desde el texto a los globos de comentario y revisión.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1091,19 +1035,17 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionsBalloonMargin</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Establece o devuelve una constante que especifica si Microsoft Word muestra globos de revisión en el margen izquierdo o derecho en un documento.</summary>
+        <summary>Establece o devuelve una constante que especifica si Microsoft Word muestra globos de revisión en el margen izquierdo o derecho de un documento.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsBalloonMargin" />puede ser una de estas constantes <b>WdRevisionsBalloonMargin</b> : </para>
           <para>
-            <b>wdLeftMargin </b>
+            <b>wdLeftMargin</b>
           </para>
           <para>
             <b>wdRightMargin</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RevisionsBalloonWidth">
@@ -1132,12 +1074,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Establece o devuelve un valor <b>Single</b> que representa la configuración global de Microsoft Word que especifica el ancho de los globos de revisión.</summary>
+        <summary>Establece o devuelve un valor <b>Single</b> que representa la configuración global de Microsoft Word y especifica el ancho de los globos de revisión.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El ancho de los globos de revisión incluye un relleno de media pulgada entre el margen del documento y el borde del globo y un octavo de pulgada entre el borde del globo y el borde del papel. Microsoft Word agrega espacio a lo largo del borde izquierdo o derecho del papel. Este ancho se extiende hasta el margen y no cambia el ancho del tamaño de papel o documento. Usar el <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsBalloonWidthType" /> (propiedad) para especificar la medida que se utilizarán al establecer la propiedad <b>RevisionsBalloonWidth</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>El ancho de los globos de revisión incluye un relleno de 1/2 pulgada entre el margen del documento y el borde del globo y un octavo de pulgada entre el borde del globo y el borde del papel. Microsoft Word agrega espacio a lo largo del borde izquierdo o derecho del papel. Este ancho se extiende hasta el margen y no modifica el ancho del documento ni el tamaño del papel. Use la <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsBalloonWidthType" /> propiedad para especificar la medida que se va a usar al establecer la propiedad <b>RevisionsBalloonWidth</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RevisionsBalloonWidthType">
@@ -1166,18 +1106,16 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionsBalloonWidthType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Establece o devuelve una constante que representa la configuración global que especifica cómo mide Microsoft Word el ancho de los globos de revisión.</summary>
+        <summary>Establece o devuelve una constante que representa la configuración global que especifica el modo en que Microsoft Word mide el ancho de los globos de revisión.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsBalloonWidthType" />puede ser una de estas constantes <b>WdRevisionsBalloonWidthType (</b> : </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsBalloonWidthType" />puede ser una de estas constantes <b>WdRevisionsBalloonWidthType</b> : </para>
+            <b>wdBalloonWidthPercent</b> : se mide como un porcentaje del ancho del documento. </para>
           <para>
-            <b>wdBalloonWidthPercent</b> – se mide como un porcentaje del ancho del documento.</para>
-          <para>
-            <b>wdBalloonWidthPoints</b> – medido en puntos.</para>
-          <para>La propiedad <b>RevisionsBalloonWidthType</b> establece la unidad de medida que se utilizarán al establecer el <see cref="P:Microsoft.Office.Interop.Word.View.RevisionsBalloonWidth" /> (propiedad).</para>
-          <para />
-        </remarks>
+            <b>wdBalloonWidthPoints</b> : se mide en puntos. </para>
+          <para>La propiedad <b>RevisionsBalloonWidthType</b> establece la unidad de medida que se va a <see cref="P:Microsoft.Office.Interop.Word.View.RevisionsBalloonWidth" /> usar al establecer la propiedad.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RevisionsFilter">
@@ -1203,7 +1141,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.RevisionsFilter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una instancia de un objeto <b>RevisionsFilter</b> . Es de solo lectura</summary>
+        <summary>Devuelve una instancia de un objeto <b>RevisionsFilter</b> . Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1240,17 +1178,15 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionsMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Establece o devuelve una constante que representa la configuración global que especifica si Microsoft Word muestra globos en el margen o en línea con el texto del documento.</summary>
+        <summary>Establece o devuelve una constante que representa la opción global que especifica si Microsoft Word muestra globos en el margen o en línea con el texto del documento.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Word.WdRevisionsMode" />puede ser una de estas constantes <b>WdRevisionsMode</b> : </para>
           <para>
-            <b>wdBalloonRevisions</b> – muestra las revisiones en globos que aparecen en el margen izquierdo o derecho.</para>
+            <b>wdBalloonRevisions</b> – muestra las revisiones en globos en el margen izquierdo o derecho. </para>
           <para>
-            <b>wdInLineRevisions</b> – muestra las revisiones dentro del texto con tachado para eliminaciones y anteriores de Word. Ésta es la configuración predeterminada para las versiones anteriores de Word.</para>
-          <para />
-        </remarks>
+            <b>wdInLineRevisions</b> : muestra las revisiones dentro del texto con tachado para las eliminaciones y el subrayado de las inserciones. Éste es el valor predeterminado en las versiones anteriores de Word.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RevisionsView">
@@ -1285,7 +1221,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionsView</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>[!PRECAUCIóN] Este objeto, miembro o enumeración está en desuso y no debería usarse en el código.</summary>
+        <summary>Este objeto, miembro o enumeración está en desuso y no debería usarse en el código.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1318,45 +1254,43 @@
       <Docs>
         <summary>Devuelve o establece el elemento de documento que se muestra en la vista Diseño de impresión.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Word.WdSeekView" />puede ser una de estas constantes <b>WdSeekView</b> : </para>
           <para>
-            <b>wdSeekCurrentPageFooter </b>
+            <b>wdSeekCurrentPageFooter</b>
           </para>
           <para>
-            <b>wdSeekCurrentPageHeader </b>
+            <b>wdSeekCurrentPageHeader</b>
           </para>
           <para>
-            <b>wdSeekEndnotes </b>
+            <b>wdSeekEndnotes</b>
           </para>
           <para>
-            <b>wdSeekEvenPagesFooter </b>
+            <b>wdSeekEvenPagesFooter</b>
           </para>
           <para>
-            <b>wdSeekEvenPagesHeader </b>
+            <b>wdSeekEvenPagesHeader</b>
           </para>
           <para>
-            <b>wdSeekFirstPageFooter </b>
+            <b>wdSeekFirstPageFooter</b>
           </para>
           <para>
-            <b>wdSeekFirstPageHeader </b>
+            <b>wdSeekFirstPageHeader</b>
           </para>
           <para>
-            <b>wdSeekFootnotes </b>
+            <b>wdSeekFootnotes</b>
           </para>
           <para>
-            <b>wdSeekMainDocument </b>
+            <b>wdSeekMainDocument</b>
           </para>
           <para>
-            <b>wdSeekPrimaryFooter </b>
+            <b>wdSeekPrimaryFooter</b>
           </para>
           <para>
             <b>wdSeekPrimaryHeader</b>
           </para>
-          <para>esta propiedad genera un error si la vista no es vista Diseño de impresión.</para>
-          <para />
-        </remarks>
+          <para>Esta propiedad genera un error si la vista no es la vista Diseño de impresión.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShadeEditableRanges">
@@ -1385,12 +1319,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <b>entero</b> que indica si se aplica sombreado a los intervalos de un documento para que los usuarios tienen permiso para modificar. <b>True</b> aplica sombreado a los intervalos de un documento que los usuarios pueden modificar.</summary>
+        <summary>Devuelve o establece un <b>valor de tipo Integer</b> que indica si se aplica sombreado a los rangos de un documento para los que los usuarios tienen permiso de edición. <b>True</b> aplica sombra en los intervalos del documento que los usuarios pueden modificar.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Sombreado está activado de forma predeterminada. Cuando el sombreado de intervalos está activado, o cuando se establece la propiedad en <b>True</b>, la propiedad <b>ShadeEditableRanges</b> devuelve un valor de 65535. Cuando se establece la propiedad <b>ShadeEditableRanges</b> en <b>False</b> devuelve un valor de 0. Los valores no tienen ningún significado más allá que indica si la propiedad es <b>True</b> o <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>El sombreado de intervalos está activado de forma predeterminada. Cuando el sombreado de intervalos está activado, o cuando la propiedad se establece como <b>True</b>, <b>ShadeEditableRanges</b> devuelve un valor de 65.535. Cuando <b>ShadeEditableRanges</b> se establece como <b>False</b>, la propiedad devuelve un valor de 0. Los valores solo indican que la propiedad es <b>True</b> o <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowAll">
@@ -1419,8 +1351,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si se muestran todos los caracteres no imprimibles (como texto oculto, marcas de tabulación, marcas de espacios y marcas de párrafo).</summary>
+        <summary><b>True</b> si se muestran todos los caracteres no imprimibles (como texto oculto, marcas de tabulación, marcas de espacios y marcas de párrafo).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1446,12 +1377,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Alterna entre mostrar todo el texto (títulos y texto independiente) y sólo los títulos.</summary>
-        <remarks>
-          <para>
-            <b>Nota</b>  Este método genera un error si la vista no es vista Esquema o documento maestro.</para>
-          <para />
-        </remarks>
+        <summary>Alterna entre mostrar todo el texto (títulos y texto independiente) y mostrar solo los títulos.</summary>
+        <remarks><para>
+            <b>Nota:</b>  Este método genera un error si la vista no es la vista esquema o la vista de documento maestro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowAnimation">
@@ -1486,7 +1415,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>[!PRECAUCIóN] Este objeto, miembro o enumeración está en desuso y no debería usarse en el código.</summary>
+        <summary>Este objeto, miembro o enumeración está en desuso y no debería usarse en el código.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1517,8 +1446,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si se muestran corchetes al principio y al final de cada marcador.</summary>
+        <summary><b>True</b> si se muestran corchetes al principio y al final de cada marcador.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1549,13 +1477,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> para que Microsoft Word muestre los comentarios en un documento.</summary>
+        <summary><b>True</b> para que Microsoft Word muestre los comentarios en un documento.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si las marcas de revisión se muestran en globos que aparecen en el margen derecho o izquierdo, los comentarios se muestran en globos. Si las marcas de revisión están alineadas que se muestra, el texto al que se aplican los comentarios está rodeado por todo el ángulo entre corchetes; Cuando un usuario coloca el puntero del mouse sobre el texto dentro de los corchetes, se muestra el comentario relacionado en un globo cuadrado justo encima del puntero del mouse.</para>
-          <para />
-        </remarks>
+        <remarks><para>If revision marks are displayed in balloons in the right or left margin, comments are displayed in balloons. If revision marks are displayed inline, the text to which comments apply is surrounded by wide-angled square brackets; when a user places the mouse pointer over the text within the brackets, the related comment is displayed in a square balloon directly above the mouse pointer.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowCropMarks">
@@ -1585,15 +1510,11 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece un <b>valor Boolean</b> que representa si se va a mostrar las marcas de recorte en las esquinas de las páginas para indicar dónde están los márgenes. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Mostrar las marcas de recorte no permite al usuario cambiar los márgenes arrastrando las marcas de recorte. Sólo se muestran las marcas de recorte para indicar dónde se encuentran los márgenes en la página. Esta propiedad corresponde a la casilla de verificación de las marcas de recorte de la ficha Avanzadas del cuadro de diálogo Opciones de Word.</para>
+        <value><b>Boolean</b></value>
+        <remarks><para>Cuando se muestran las marcas de recorte, el usuario no puede cambiar los márgenes arrastrando dichas marcas. Las marcas de recorte sólo se muestran para indicar el lugar de la página donde se encuentran los márgenes. Esta propiedad corresponde a la casilla Marcas de recorte en la ficha Avanzadas del cuadro de diálogo Opciones de Word.</para>
           <para>
             <b>Nota</b>: las marcas de recorte se muestran de forma predeterminada en idiomas del este asiático y están desactivadas de forma predeterminada en todos los demás idiomas.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowDrawings">
@@ -1622,8 +1543,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si se muestran los objetos creados con las herramientas de dibujo en la vista Diseño de impresión.</summary>
+        <summary><b>True</b> si los objetos creados con las herramientas de dibujo se presentan en la vista Diseño de impresión.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1654,8 +1574,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si se muestran los códigos de campo.</summary>
+        <summary><b>True</b> si se muestran los códigos de campo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1686,13 +1605,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si sólo la primera línea de texto independiente se muestra en la vista esquema.</summary>
+        <summary><b>True</b> si sólo la primera línea de texto independiente se muestra en la vista esquema.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad genera un error si la vista no es vista Esquema o documento maestro.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta propiedad genera un error si la vista no es la vista Esquema o Documento maestro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowFormat">
@@ -1721,13 +1637,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el formato de carácter está visible en la vista esquema.</summary>
+        <summary><b>True</b> si el formato de carácter está visible en la vista esquema.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad genera un error si la vista no es vista Esquema o documento maestro.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta propiedad genera un error si la vista no es la vista Esquema o Documento maestro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowFormatChanges">
@@ -1756,13 +1669,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el formato de carácter está visible en la vista esquema.</summary>
+        <summary><b>True</b> si el formato de carácter está visible en la vista esquema.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad genera un error si la vista no es vista Esquema o documento maestro.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta propiedad genera un error si la vista no es la vista Esquema o Documento maestro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowHeading">
@@ -1788,14 +1698,11 @@
         <Parameter Name="Level" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Level">
-          <b>Integer</b>requerido. Nivel del título del esquema (un número del 1 al 9).</param>
+        <param name="Level">Required <b>Integer</b>. Nivel del título del esquema (un número del 1 al 9).</param>
         <summary>Muestra todos los títulos hasta el nivel especificado y oculta los títulos subordinados y el texto independiente.</summary>
-        <remarks>
-          <para>
-            <b>Nota</b>  Este método genera un error si la vista no es vista Esquema o documento maestro.</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>Nota:</b>  Este método genera un error si la vista no es la vista esquema o la vista de documento maestro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowHiddenText">
@@ -1824,8 +1731,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si se muestra el texto con formato de texto oculto.</summary>
+        <summary><b>True</b> si se muestra el texto al que se ha dado formato como texto oculto.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1856,8 +1762,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el formato de resaltado se muestra y se imprime con un documento.</summary>
+        <summary><b>True</b> si el formato de resaltado se muestra y se imprime con un documento.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1888,8 +1793,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si se muestran guiones opcionales. Un guión opcional indica dónde dividir una palabra cuando se encuentra al final de una línea.</summary>
+        <summary><b>True</b> si se muestran guiones opcionales. Un guión opcional indica dónde dividir una palabra cuando se encuentra al final de una línea.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1920,12 +1824,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <b>valor Boolean</b> que muestra u oculta anotaciones manuscritas. <b>True</b> muestra las anotaciones manuscritas. <b>False</b> oculta anotaciones manuscritas.</summary>
+        <summary>Devuelve o establece un <b>valor Boolean</b> que muestra u oculta las anotaciones manuscritas. <b>True</b> muestra las anotaciones manuscritas. <b>False</b> oculta anotaciones manuscritas.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para trabajar con anotaciones manuscritas, debe ejecutar Microsoft Word en un tablet PC.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para trabajar con anotaciones manuscritas, debe ejecutar Microsoft Word en un tablet PC.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowInsertionsAndDeletions">
@@ -1954,8 +1856,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> para que Microsoft Word muestre las inserciones y eliminaciones que se han realizado en un documento con control de cambios habilitada.</summary>
+        <summary><b>True</b> para que Microsoft Word muestre las inserciones y eliminaciones que se han realizado en un documento con control de cambios habilitada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1986,13 +1887,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el texto del documento especificado está visible cuando se muestran las áreas de encabezado y pie de página.</summary>
+        <summary><b>True</b> si el texto del documento especificado está visible cuando se muestran las áreas de encabezado y pie de página.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>ShowMainTextLayer</b> es equivalente al botón Mostrar u ocultar texto del documento en la barra de herramientas Encabezado y pie de página.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propiedad <b>ShowMainTextLayer</b> es equivalente al botón Mostrar u ocultar texto del documento de la barra de herramientas de encabezado y pie de página.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowMarkupAreaHighlight">
@@ -2028,13 +1926,9 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece un <b>Boolean</b> que indica si el área de revisiones que muestra los globos de comentario y revisión está sombreado. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Esta propiedad corresponde a la opción Resaltar área con marcas del menú Mostrar marcas en la cinta de opciones de revisión.</para>
-          <para />
-        </remarks>
+        <value><b>Boolean</b></value>
+        <remarks><para>Esta propiedad corresponde a la opción resaltar área con marcas del menú Mostrar marcas de la cinta de opciones revisar.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowObjectAnchors">
@@ -2063,8 +1957,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si los marcadores de objeto se muestran junto a elementos se puedan colocar en la vista Diseño de impresión.</summary>
+        <summary><b>True</b> si los marcadores de objeto se muestran junto a elementos se puedan colocar en la vista Diseño de impresión.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2095,8 +1988,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si Microsoft Word muestra opcional saltos de línea.</summary>
+        <summary><b>True</b> si Microsoft Word muestra los saltos de línea opcionales.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2127,13 +2019,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece si la presencia de los otros autores debe estar visible en el documento.</summary>
-        <value>
-          <b>true</b> si la presencia de los otros autores debe estar visible en el documento; en caso contrario, <b>false</b>.</value>
-        <remarks>
-          <para>Boolean de lectura y escritura. Utilice esta propiedad para alternar que muestra la presencia de los otros autores durante la co-autoría.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene o establece si la presencia de otros autores debe estar visible en el documento.</summary>
+        <value><b>true</b> si la presencia de otros autores debe estar visible en el documento; de lo contrario, <b>false</b>.</value>
+        <remarks><para>Lectura y escritura Boolean. Use esta propiedad para alternar la visualización de la presencia de otros autores durante la co-autoría.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowParagraphs">
@@ -2162,8 +2051,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si se muestran las marcas de párrafo.</summary>
+        <summary><b>True</b> si se muestran las marcas de párrafo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2194,8 +2082,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si se muestran los cuadros en blanco como marcadores de posición de imágenes.</summary>
+        <summary><b>True</b> si se muestran los cuadros en blanco como marcadores de posición de imágenes.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2226,8 +2113,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> para que Microsoft Word muestre las revisiones y comentarios realizados en un documento con control de cambios habilitada.</summary>
+        <summary><b>True</b> para que Microsoft Word muestre las revisiones y comentarios realizados en un documento con control de cambios habilitada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2258,8 +2144,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si se muestran los caracteres de espacio.</summary>
+        <summary><b>True</b> si se muestran los caracteres de espacio.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2290,8 +2175,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si se muestran los caracteres de tabulación.</summary>
+        <summary><b>True</b> si se muestran las tabulaciones.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2322,8 +2206,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si se muestran líneas de puntos alrededor de los márgenes de página, las columnas de texto, objetos y marcos en la vista Diseño de impresión.</summary>
+        <summary><b>True</b> si se muestran líneas de puntos alrededor de los márgenes de página, las columnas de texto, objetos y marcos en la vista Diseño de impresión.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2354,13 +2237,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> que representa si se pueden ver las etiquetas XML en un documento.</summary>
+        <summary>Devuelve un <b>entero</b> que indica si las etiquetas XML se ven en un documento.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>True</b> indica que las etiquetas están visibles. <b>False</b> indica que están ocultas. <b>wdToggle</b> permite alternar entre mostrar y ocultar el marcado XML.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SplitSpecial">
@@ -2391,59 +2272,58 @@
       <Docs>
         <summary>Devuelve o establece el panel de la ventana activa.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Word.WdSpecialPane" />puede ser una de las siguientes constantes <b>WdSpecialPane</b> :</para>
           <para>
-            <b>wdPaneComments </b>
+            <b>wdPaneComments</b>
           </para>
           <para>
-            <b>wdPaneCurrentPageFooter </b>
+            <b>wdPaneCurrentPageFooter</b>
           </para>
           <para>
-            <b>wdPaneCurrentPageHeader </b>
+            <b>wdPaneCurrentPageHeader</b>
           </para>
           <para>
-            <b>wdPaneEndnoteContinuationNotice </b>
+            <b>wdPaneEndnoteContinuationNotice</b>
           </para>
           <para>
-            <b>wdPaneEndnoteContinuationSeparator </b>
+            <b>wdPaneEndnoteContinuationSeparator</b>
           </para>
           <para>
-            <b>wdPaneEndnotes </b>
+            <b>wdPaneEndnotes</b>
           </para>
           <para>
-            <b>wdPaneEndnoteSeparator </b>
+            <b>wdPaneEndnoteSeparator</b>
           </para>
           <para>
-            <b>wdPaneEvenPagesFooter </b>
+            <b>wdPaneEvenPagesFooter</b>
           </para>
           <para>
-            <b>wdPaneEvenPagesHeader </b>
+            <b>wdPaneEvenPagesHeader</b>
           </para>
           <para>
-            <b>wdPaneFirstPageFooter </b>
+            <b>wdPaneFirstPageFooter</b>
           </para>
           <para>
             <b>wdPaneFirstPageHeader</b>
           </para>
           <para>
-            <b> wdPaneFootnoteContinuationNotice </b>
+            <b>wdPaneFootnoteContinuationNotice</b>
           </para>
           <para>
-            <b>wdPaneFootnoteContinuationSeparator </b>
+            <b>wdPaneFootnoteContinuationSeparator</b>
           </para>
           <para>
-            <b>wdPaneFootnotes </b>
+            <b>wdPaneFootnotes</b>
           </para>
           <para>
-            <b>wdPaneFootnoteSeparator </b>
+            <b>wdPaneFootnoteSeparator</b>
           </para>
           <para>
-            <b>wdPaneNone </b>
+            <b>wdPaneNone</b>
           </para>
           <para>
-            <b>wdPanePrimaryFooter </b>
+            <b>wdPanePrimaryFooter</b>
           </para>
           <para>
             <b>wdPanePrimaryHeader</b>
@@ -2451,8 +2331,7 @@
           <para>
             <b>wdPaneRevisions</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TableGridlines">
@@ -2481,8 +2360,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si se muestran las cuadrículas de tabla.</summary>
+        <summary><b>True</b> si se muestran las cuadrículas de tabla.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2515,34 +2393,32 @@
       <Docs>
         <summary>Devuelve o establece el tipo de vista.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Word.WdViewType" />puede ser una de estas constantes <b>WdViewType</b> : </para>
           <para>
-            <b>wdMasterView </b>
+            <b>wdMasterView</b>
           </para>
           <para>
-            <b>wdOutlineView </b>
+            <b>wdOutlineView</b>
           </para>
           <para>
-            <b>wdPrintView </b>
+            <b>wdPrintView</b>
           </para>
           <para>
-            <b>wdNormalView </b>
+            <b>wdNormalView</b>
           </para>
           <para>
-            <b>wdPrintPreview </b>
+            <b>wdPrintPreview</b>
           </para>
           <para>
-            <b>wdWebView </b>
+            <b>wdWebView</b>
           </para>
           <para>
             <b>wdReadingView</b>
           </para>
-          <para>el <b>tipo de</b> propiedad devuelve <b>wdMasterView</b> para todos los documentos que la vista actual es un esquema o documento maestro. La vista actual nunca devolverá <b>wdOutlineView</b> a menos que se establezca explícitamente en código.</para>
-          <para>Para comprobar si el documento actual es un esquema, utilice la propiedad <b>Type</b> y la <see cref="T:Microsoft.Office.Interop.Word.Subdocuments" /> la colección de <see cref="P:Microsoft.Office.Interop.Word.Subdocuments.Count" /> (propiedad). Si la propiedad <b>Type</b> devuelve un <b>valor wdOutlineView</b> o <b>wdMasterView</b> y la propiedad <b>Count</b> devuelve cero, el documento es un esquema.</para>
-          <para />
-        </remarks>
+          <para>La propiedad <b>Type</b> devuelve <b>un valor wdMasterView</b> para todos los documentos en la vista actual es un esquema o documento maestro. La vista actual nunca devolverá <b>wdOutlineView</b> a menos que se establezca explícitamente en código.</para>
+          <para>Para comprobar si el documento actual es un esquema, use la propiedad <b>Type</b> y la <see cref="T:Microsoft.Office.Interop.Word.Subdocuments" /> propiedad de <see cref="P:Microsoft.Office.Interop.Word.Subdocuments.Count" /> la colección. Si la propiedad <b>Type</b> devuelve un <b>valor wdOutlineView</b> o <b>wdMasterView</b> y la propiedad <b>Count</b> devuelve cero, el documento es un esquema.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WrapToWindow">
@@ -2571,8 +2447,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si las líneas se ajustan en el borde derecho de la ventana de documento en lugar de en el margen derecho o al borde derecho de columna.</summary>
+        <summary><b>True</b> si las líneas se ajustan al borde derecho de la ventana del documento en lugar de al margen derecho o al borde derecho de columna.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2600,7 +2475,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Zoom</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Zoom" /> object que representa la ampliación de la vista especificada.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Zoom" /> objeto Object que representa la ampliación de la vista especificada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

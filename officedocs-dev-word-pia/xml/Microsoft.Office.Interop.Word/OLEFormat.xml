@@ -1,13 +1,5 @@
 <Type Name="OLEFormat" FullName="Microsoft.Office.Interop.Word.OLEFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="67318725a843161eb77654b732cf7c9e63c73493" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675168" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OLEFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="209f601ba96966afbaf1e2c89c3e30b339f7d58f" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144410" /></Metadata><TypeSignature Language="C#" Value="public interface OLEFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OLEFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OLEFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface OLEFormat" />
@@ -27,11 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Representa las características OLE, excepto las de vinculación, de un campo, control ActiveX u objeto OLE.</summary>
-    <remarks>
-      <para>Utilice la propiedad <b>OLEFormat</b> para un <see cref="T:Microsoft.Office.Interop.Word.Shape" />, <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />, o <see cref="T:Microsoft.Office.Interop.Word.Field" /> objeto para devolver el objeto <b>OLEFormat</b> .</para>
-      <para>No todos los tipos de formas, formas entre líneas y campos tienen capacidades OLE. Utilice la propiedad <b>Type</b> para los objetos <b>Shape</b> e <b>InlineShape</b> para determinar en qué categoría de la forma especificada o la forma entre líneas entre. La propiedad <b>Type</b> de un objeto <b>Field</b> devuelve el tipo de campo.</para>
-      <para>Se puede usar el <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.Activate" />, <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.Edit" />, <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.Open" />, y <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.DoVerb(System.Object@)" /> métodos para automatizar un objeto OLE.</para> Uso de 
-      <para>la <see cref="P:Microsoft.Office.Interop.Word.OLEFormat.Object" /> propiedad para devolver un objeto object que representa un control ActiveX o un objeto OLE. Con este objeto, puede usar las propiedades y métodos de la aplicación contenedora o el control ActiveX.</para><para /></remarks>
+    <remarks><para>Utilice la propiedad <b>OLEFormat</b> para un <see cref="T:Microsoft.Office.Interop.Word.Shape" />objeto <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />,, <see cref="T:Microsoft.Office.Interop.Word.Field" /> o, para devolver el objeto <b>OLEFormat</b> .</para>
+      <para>No todos los tipos de formas, formas entre líneas y campos pueden funcionar como objetos OLE. Utilice la propiedad <b>Type</b> de los objetos <b>Shape</b> e <b>InlineShape</b> para determinar en qué categoría se incluye la forma o forma entre líneas especificada. La propiedad <b>Type</b> de un objeto <b>Field</b> devuelve el tipo de campo.</para>
+      <para>Puede usar los <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.Activate" />métodos, <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.Edit" /> <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.Open" />, y <see cref="M:Microsoft.Office.Interop.Word.OLEFormat.DoVerb(System.Object@)" /> para automatizar un objeto OLE.</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.OLEFormat.Object" /> propiedad para devolver un objeto que representa un control ActiveX o un objeto OLE. Con este objeto, pueden utilizarse las propiedades y los métodos de la aplicación contenedora o el control ActiveX.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -82,8 +74,7 @@
         <Parameter Name="ClassType" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ClassType">
-          <b>String</b> requerida. El nombre de la aplicación en la que se abre un objeto OLE. Para ver una lista de tipos de objeto que se puede activar el objeto OLE como, haga clic en el objeto y, a continuación, abra el cuadro de diálogo Convertir (menú Edición, submenú objeto). Puede encontrar el <paramref name="ClassType" /> cadena mediante la inserción de un objeto como una forma entre líneas y, a continuación, ver los códigos de campo. El tipo de clase del objeto sigue a la palabra "EMBED" o la palabra "Vínculo".</param>
+        <param name="ClassType"><b>String</b> requerida. El nombre de la aplicación en la que se abre un objeto OLE. Para ver una lista de los tipos de objeto que puede activar el objeto OLE, haga clic en el objeto y, a continuación, abra el cuadro de diálogo convertir (menú Edición, submenú objeto). Puede encontrar la <paramref name="ClassType" /> cadena insertando un objeto como una forma entre líneas y, a continuación, viendo los códigos de campo. El tipo de clase del objeto sigue a la palabra "EMBED" o la palabra "Vínculo".</param>
         <summary>Establece el valor de registro de Windows que determina la aplicación predeterminada que se utiliza para activar el objeto OLE especificado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -111,7 +102,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -144,11 +135,9 @@
       <Docs>
         <summary>Devuelve o establece el tipo de clase para el objeto OLE, imagen o campo.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad es de sólo lectura para objetos vinculados distintos vínculos DDE.</para>
-          <para>Puede ver una lista de las aplicaciones disponibles en el cuadro Tipo de objeto en la ficha Crear nuevo en el cuadro de diálogo objeto (menú Insertar). Puede encontrar el <paramref name="ClassType" /> cadena mediante la inserción de un objeto como una forma entre líneas y, a continuación, ver los códigos de campo. El tipo de clase del objeto sigue a la palabra "EMBED" o la palabra "Vínculo".</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta propiedad es de sólo lectura para objetos vinculados distintos de los vínculos DDE.</para>
+          <para>Puede ver la lista de las aplicaciones disponibles en el cuadro Tipo de objeto, en la ficha Crear nuevo del cuadro de diálogo Objeto (menú Insertar). Puede encontrar la <paramref name="ClassType" /> cadena insertando un objeto como una forma entre líneas y, a continuación, viendo los códigos de campo. El tipo de clase del objeto sigue a la palabra "EMBED" o la palabra "Vínculo".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -177,17 +166,12 @@
         <Parameter Name="IconLabel" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ClassType">
-          <b>Objeto</b>de opcional. El nombre de la aplicación utilizada para activar el objeto OLE. Puede ver una lista de las aplicaciones disponibles en el cuadro Tipo de objeto en la ficha Crear nuevo en el cuadro de diálogo objeto (menú Insertar). Puede encontrar el <paramref name="ClassType" /> cadena mediante la inserción de un objeto como una forma entre líneas y, a continuación, ver los códigos de campo. El tipo de clase del objeto sigue a la palabra "EMBED" o la palabra "Vínculo".</param>
-        <param name="DisplayAsIcon">
-          <b>Objeto</b>de opcional. <b>True</b> para mostrar el objeto OLE como un icono. El valor predeterminado es <b>False</b>.</param>
-        <param name="IconFileName">
-          <b>Objeto</b>de opcional. Archivo que incluye el icono que va a mostrarse.</param>
-        <param name="IconIndex">
-          <b>Objeto</b>de opcional. El número de índice del icono dentro de <paramref name="IconFileName" />. El orden de los iconos en el archivo especificado corresponde al orden en que los iconos aparecen en el cuadro de diálogo Cambiar icono (menú Insertar, cuadro de diálogo objeto) cuando se selecciona la casilla de verificación icono Mostrar como. El primer icono en el archivo tiene el número de índice 0 (cero). Si no existe ningún icono con el número de índice especificado en <paramref name="IconFileName" />, se utiliza el icono con el número de índice 1 (el segundo icono en el archivo). El valor predeterminado es 0 (cero).</param>
-        <param name="IconLabel">
-          <b>Objeto</b>de opcional. Etiqueta o título que se mostrará debajo del icono.</param>
-        <summary>Convierte el objeto OLE especificado de una clase a otra, lo que permite editar el objeto en una aplicación de servidor diferente o cambiar cómo se muestra el objeto en el documento.</summary>
+        <param name="ClassType"><b>Objeto</b>opcional. El nombre de la aplicación utilizada para activar el objeto OLE. Puede ver la lista de las aplicaciones disponibles en el cuadro Tipo de objeto, en la ficha Crear nuevo del cuadro de diálogo Objeto (menú Insertar). Puede encontrar la <paramref name="ClassType" /> cadena insertando un objeto como una forma entre líneas y, a continuación, viendo los códigos de campo. El tipo de clase del objeto sigue a la palabra "EMBED" o la palabra "Vínculo".</param>
+        <param name="DisplayAsIcon"><b>Objeto</b>opcional. <b>True</b> para mostrar el objeto OLE como un icono. El valor predeterminado es <b>False</b>.</param>
+        <param name="IconFileName"><b>Objeto</b>opcional. Archivo que contiene el icono que se debe mostrar.</param>
+        <param name="IconIndex"><b>Objeto</b>opcional. Número de índice del icono en <paramref name="IconFileName" />. El orden de los iconos del archivo especificado corresponde al orden en el que aparecen en el cuadro de diálogo Cambiar icono (menú Insertar, cuadro de diálogo objeto) cuando está activada la casilla de verificación Mostrar como icono. El primer icono en el archivo tiene el número de índice 0 (cero). Si no existe ningún icono con el número de <paramref name="IconFileName" />índice especificado, se usa el icono con el número de índice 1 (el segundo icono del archivo). El valor predeterminado es 0 (cero).</param>
+        <param name="IconLabel"><b>Objeto</b>opcional. Etiqueta o título que se mostrará debajo del icono.</param>
+        <summary>Convierte el objeto OLE especificado de una clase a otra, lo que permite modificar el objeto en una aplicación de servidor diferente o cambiar la forma en que se muestra el objeto en el documento.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,9 +200,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayAsIcon">
@@ -247,8 +231,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el objeto especificado se muestra como un icono.</summary>
+        <summary><b>True</b> si el objeto especificado se muestra como icono.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -275,9 +258,8 @@
         <Parameter Name="VerbIndex" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="VerbIndex">
-          <b>Objeto</b>de opcional. El verbo que debe realizar el objeto OLE. Si se omite este argumento, se envía el verbo predeterminado. Si el objeto OLE no admite el verbo solicitado, se producirá un error. Puede ser cualquier <see cref="T:Microsoft.Office.Interop.Word.WdOLEVerb" /> constante.</param>
-        <summary>Solicita que un objeto OLE ejecute uno de sus verbos disponibles, las acciones que realiza un objeto OLE para activar su contenido. Cada objeto OLE contiene un conjunto de verbos correspondientes al objeto.</summary>
+        <param name="VerbIndex"><b>Objeto</b>opcional. El verbo que debe realizar el objeto OLE. Si se omite este argumento, se envía el verbo predeterminado. Si el objeto OLE no admite el verbo solicitado, se producirá un error. Puede ser cualquier <see cref="T:Microsoft.Office.Interop.Word.WdOLEVerb" /> constante.</param>
+        <summary>Solicita que un objeto OLE ejecute uno de sus verbos disponibles, es decir, las acciones que realiza un objeto OLE para activar su contenido. Cada objeto OLE contiene un conjunto de verbos correspondientes al objeto.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -332,7 +314,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el icono que se utiliza cuando la <see cref="P:Microsoft.Office.Interop.Word.OLEFormat.DisplayAsIcon" /> propiedad es <b>True</b>: 0 (cero) corresponde al primer icono, 1 corresponde al segundo icono y así sucesivamente. Si se omite este argumento, se usa el primer icono (predeterminado).</summary>
+        <summary>Devuelve o establece el icono que se utiliza cuando la <see cref="P:Microsoft.Office.Interop.Word.OLEFormat.DisplayAsIcon" /> propiedad es <b>true</b>: 0 (cero) corresponde al primer icono, 1 corresponde al segundo icono y así sucesivamente. Si se omite este argumento, se usa el primer icono (predeterminado).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -450,12 +432,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una cadena que se usa para identificar la parte del archivo de origen que se vincula. Por ejemplo, si el archivo de origen es un libro de Microsoft Excel, la propiedad <b>Label</b> puede devolver "Workbook1! F3C1: F4C2 "si el objeto OLE sólo contiene algunas celdas desde la hoja de cálculo.</summary>
+        <summary>Devuelve una cadena que se usa para identificar la parte del archivo de origen que se vincula. Por ejemplo, si el archivo de origen es un libro de Microsoft Excel, la propiedad <b>Label</b> puede devolver "Workbook1! R3C1: F4C2 "si el objeto OLE sólo contiene algunas celdas de la hoja de cálculo.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad sólo funciona para las formas, formas entre líneas o campos que sean objetos OLE vinculados.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta propiedad sólo es válida para formas, formas entre líneas o campos que sean objetos OLE vinculados.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Object">
@@ -565,13 +545,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> conserva el formato aplicado en Microsoft Word a un objeto OLE vinculado como, por ejemplo, una tabla vinculada a una hoja de cálculo de Microsoft Excel.</summary>
+        <summary><b>True</b> conserva el formato aplicado en Microsoft Word a un objeto OLE vinculado como, por ejemplo, una tabla vinculada a una hoja de cálculo de Microsoft Excel.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cuando <b>PreserveFormattingOnUpdate</b> está establecida en <b>True</b>, los cambios de formato realizados al objeto en Word se conservan cuando se actualiza el objeto. Word actualiza sólo el contenido en el objeto vinculado.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cuando <b>PreserveFormattingOnUpdate</b> está establecida en <b>True</b>, se conserva el formato de los cambios realizados en el objeto de Word cuando se actualiza el objeto. Word actualiza sólo el contenido en el objeto vinculado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ProgID">
@@ -599,9 +576,10 @@
       <Docs>
         <summary>Devuelve el identificador de programación (ProgID) del objeto OLE especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El <b>ProgID</b> y <see cref="P:Microsoft.Office.Interop.Word.OLEFormat.ClassType" /> propiedades (de forma predeterminada) devolverá la misma cadena. Sin embargo, puede cambiar la propiedad <b>ClassType</b> para vínculos DDE.</para> Intercambio de 
-          <para><b>seguridad</b> dinámico de datos (DDE) es una tecnología antigua que no es segura. Si es posible, utilice una alternativa más segura a la DDE.</para><para /></remarks>
+        <remarks><para>El <b>ProgID</b> y <see cref="P:Microsoft.Office.Interop.Word.OLEFormat.ClassType" /> las propiedades devolverán la misma cadena (de forma predeterminada). Sin embargo, se puede cambiar la propiedad <b>ClassType</b> para vínculos DDE.</para>
+          <para>
+            <b>Seguridad</b> de  El intercambio dinámico de datos (DDE) es una tecnología antigua que no es segura. Si es posible, use una alternativa más segura a DDE.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

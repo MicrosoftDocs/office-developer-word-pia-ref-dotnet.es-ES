@@ -1,13 +1,5 @@
 <Type Name="CaptionLabel" FullName="Microsoft.Office.Interop.Word.CaptionLabel">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3910a1d1780d4a134f92e6516dde30d553dd761c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674556" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CaptionLabel" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9c27d8bb814948f3d36bbc6c5dfd5bf35bef5652" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142351" /></Metadata><TypeSignature Language="C#" Value="public interface CaptionLabel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CaptionLabel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CaptionLabel" />
   <TypeSignature Language="VB.NET" Value="Public Interface CaptionLabel" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Representa una sola etiqueta de título.</summary>
-    <remarks>
-      <para>El objeto <b>CaptionLabel</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.CaptionLabels" /> colección. Los elementos de la colección <b>CaptionLabels</b> aparecen en el cuadro de etiqueta en el cuadro de diálogo Título (menú Insertar).</para>
-      <para>Uso <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.CaptionLabels" />(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la etiqueta de título o el número de índice, para devolver un solo objeto <b>CaptionLabel</b> .</para>
-      <para>El número de índice representa la posición de la etiqueta de título de la colección <b>CaptionLabels</b> .</para>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Word.CaptionLabels.Add(System.String)" /> método para agregar una etiqueta de título personalizada.</para>
-      <para />
-    </remarks>
+    <remarks><para>El objeto <b>CaptionLabel</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.CaptionLabels" /> colección. Los elementos de la colección <b>CaptionLabels</b> aparecen en el cuadro etiqueta del cuadro de diálogo título (menú Insertar).</para>
+      <para>Use <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.CaptionLabels" />(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la etiqueta de título o número de índice, para devolver un solo objeto <b>CaptionLabel</b> .</para>
+      <para>El número de índice representa la posición de la etiqueta del título del conjunto <b>CaptionLabels</b>.</para>
+      <para>Use el <see cref="M:Microsoft.Office.Interop.Word.CaptionLabels.Add(System.String)" /> método para agregar una etiqueta de título personalizada.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,12 +77,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un valor que indica si el objeto especificado es uno de los estilos integrados o las etiquetas de título en Microsoft Word.</summary>
+        <summary>Devuelve un valor que indica si el objeto especificado es uno de los estilos integrados o de las etiquetas de título en Microsoft Word.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Puede especificar los estilos integrados en todos los idiomas mediante el uso de la <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constantes o dentro de un idioma mediante el nombre de estilo para la versión de idioma de Word.</para>
-          <para />
-        </remarks>
+        <remarks><para>Puede especificar estilos integrados en todos los idiomas mediante las <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constantes o en un idioma mediante el nombre de estilo de la versión de idioma de Word. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChapterStyleLevel">
@@ -123,11 +111,9 @@
       <Docs>
         <summary>Devuelve o establece el estilo de título que marca un nuevo capítulo cuando se incluyen números de capítulo con la etiqueta de título especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El número devuelto 1 corresponde al título 1, 2 corresponde a título 2 y así sucesivamente.</para>
-          <para>El <see cref="P:Microsoft.Office.Interop.Word.CaptionLabel.IncludeChapterNumber" /> (propiedad) se debe establecer en <b>True</b> para los números de capítulo que se incluyan con las etiquetas de título.</para>
-          <para />
-        </remarks>
+        <remarks><para>El número 1 que se devuelve corresponde a Heading 1, 2 corresponde a Heading 2 y así sucesivamente.</para>
+          <para>La <see cref="P:Microsoft.Office.Interop.Word.CaptionLabel.IncludeChapterNumber" /> propiedad debe establecerse en <b>true</b> para que los números de capítulo se incluyan con las etiquetas de título.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -155,9 +141,9 @@
       <Docs>
         <summary>Devuelve un valor que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -208,7 +194,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCaptionLabelID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un valor que representa el tipo de la etiqueta de título especificada si la <see cref="P:Microsoft.Office.Interop.Word.CaptionLabel.BuiltIn" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Word.CaptionLabel" /> object es <b>True</b>.</summary>
+        <summary>Devuelve un valor que representa el tipo de la etiqueta de título especificada si <see cref="P:Microsoft.Office.Interop.Word.CaptionLabel.BuiltIn" /> la propiedad del <see cref="T:Microsoft.Office.Interop.Word.CaptionLabel" /> objeto es <b>true</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -239,7 +225,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor que indica si un número de capítulo se incluye con los números de página o una etiqueta de título.</summary>
+        <summary>Devuelve o establece un valor que indica si un número de capítulo se incluye con números de página o una etiqueta de título.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -298,7 +284,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCaptionNumberStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el estilo de número para el <see cref="T:Microsoft.Office.Interop.Word.CaptionLabel" /> objeto.</summary>
+        <summary>Devuelve o establece el estilo de número para <see cref="T:Microsoft.Office.Interop.Word.CaptionLabel" /> el objeto.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

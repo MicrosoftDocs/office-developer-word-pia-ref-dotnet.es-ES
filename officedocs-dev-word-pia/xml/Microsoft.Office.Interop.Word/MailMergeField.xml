@@ -1,13 +1,5 @@
 <Type Name="MailMergeField" FullName="Microsoft.Office.Interop.Word.MailMergeField">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3826a46a79d1953bf36de88c393620df167dba62" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674290" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMergeField" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="740faaaa800da0c930fd0ad3e0101c4ed0cd4585" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144466" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeField" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMergeField" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMergeField" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMergeField" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Representa un campo de combinación de correspondencia único en un documento.</summary>
-    <remarks>
-      <para>El objeto <b>MailMergeDataField</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.MailMergeDataFields" /> colección. La colección <b>MailMergeDataFields</b> incluye todos los la combinación de correspondencia relacionados con los campos en un documento.</para>
-      <para>Utilice los <b>campos</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un solo objeto <b>MailMergeField</b> .</para>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" /> método para agregar un campo de combinación a la colección <b>MailMergeFields</b> .</para>
+    <remarks><para>El objeto <b>MailMergeDataField</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.MailMergeDataFields" /> colección. La colección <b>MailMergeDataFields</b> incluye todos los elementos de correspondencia campos relacionados de un documento.</para>
+      <para>Utilice <b></b>Fields<paramref name="index" />(), <paramref name="index" /> donde es el número de índice, para devolver un solo objeto <b>MailMergeField</b> .</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" /> método para agregar un campo de combinación a la colección <b>MailMergeFields</b> .</para>
       <para>La colección <b>MailMergeFields</b> tiene métodos adicionales, como <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> y <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />, para agregar campos relacionados con una operación de combinación de correspondencia.</para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,12 +80,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa un código de campo.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto Object que representa el código de un campo.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El código de un campo es todo lo que se encierra entre los caracteres de campo (<b>{}</b>), incluidos los caracteres de espacio finales y a la izquierda. Puede tener acceso a un código de campo sin cambiar la vista de los resultados del campo.</para>
-          <para />
-        </remarks>
+        <remarks><para>El código de un campo es todo lo que se encierra entre los caracteres de campo (<b>{ }</b>), incluidos los caracteres de espacio inicial y final. Puede obtener acceso al código de un campo sin cambiar la vista de resultados de campo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -148,9 +136,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -229,8 +217,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el campo especificado está bloqueado. Cuando un campo está bloqueado, no podrá actualizar sus resultados.</summary>
+        <summary><b>True</b> si el campo especificado está bloqueado. Cuando un campo está bloqueado, no podrá actualizar sus resultados.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -341,10 +328,8 @@
       <Parameters />
       <Docs>
         <summary>Selecciona el objeto especificado.</summary>
-        <remarks>
-          <para>Después de utilizar este método, utilice el <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> (propiedad) para trabajar con los elementos seleccionados.</para>
-          <para />
-        </remarks>
+        <remarks><para>Después de utilizar este método, utilice <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> la propiedad para trabajar con los elementos seleccionados.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -372,10 +357,8 @@
       <Docs>
         <summary>Devuelve el tipo de campo.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>Type</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdFieldType" /> constantes.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propiedad <b>Type</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdFieldType" /> constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

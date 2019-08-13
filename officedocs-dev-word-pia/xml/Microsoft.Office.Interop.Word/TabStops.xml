@@ -1,13 +1,5 @@
 <Type Name="TabStops" FullName="Microsoft.Office.Interop.Word.TabStops">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3a15278e484f9b51a873b81126ea32a88e51e5ce" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675338" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TabStops : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5dccca7a808f17210ed911b946b4012c04f38708" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143906" /></Metadata><TypeSignature Language="C#" Value="public interface TabStops : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TabStops implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TabStops" />
   <TypeSignature Language="VB.NET" Value="Public Interface TabStops&#xA;Implements IEnumerable" />
@@ -30,11 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> objetos que representan personalizados tabulaciones y predeterminadas de un párrafo o grupo de párrafos.</summary>
-    <remarks>
-      <para>Utilice la propiedad <b>TabStops</b> para devolver la colección <b>TabStops</b> .</para>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Word.TabStops.Add(System.Single,System.Object@,System.Object@)" /> método para agregar una tabulación.</para>
-      <para>También puede agregar una tabulación especificando una ubicación con la propiedad <b>TabStops</b> .</para> Use <b>TabStops</b><para>(<paramref name="index" />), donde <paramref name="index" /> es la ubicación de la tabulación (en puntos) o el número de índice, para devolver un solo objeto <b>TabStop</b> . Las tabulaciones se indizan numéricamente de izquierda a derecha a lo largo de la regla.</para><para>Cuando se trabaja con el <see cref="T:Microsoft.Office.Interop.Word.Paragraphs" /> colección (o un intervalo con varios párrafos), deberá modificar cada párrafo de la colección individualmente si las tabulaciones no son idénticas en todos los párrafos.</para><para /></remarks>
+    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> objetos que representan las tabulaciones personalizadas y predeterminadas de un párrafo o grupo de párrafos.</summary>
+    <remarks><para>Utilice la propiedad <b>TabStops</b> para devolver la colección <b>TabStops</b>.</para>
+      <para>Use el <see cref="M:Microsoft.Office.Interop.Word.TabStops.Add(System.Single,System.Object@,System.Object@)" /> método para agregar una tabulación.</para>
+      <para>También puede agregar una tabulación especificando una posición con la propiedad <b>TabStops</b>.</para>
+      <para>Utilice <b>TabStops</b>(<paramref name="index" />), donde <paramref name="index" /> es la ubicación de la tabulación (en puntos) o el número de índice, para devolver un solo objeto <b>TabStop</b> . Las tabulaciones se indizan numéricamente de izquierda a derecha a lo largo de la regla.</para>
+      <para>Al trabajar con la <see cref="T:Microsoft.Office.Interop.Word.Paragraphs" /> colección, o con un intervalo con varios párrafos, debe modificar cada párrafo de la colección individualmente si las tabulaciones no son idénticas en todos los párrafos.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -61,12 +55,9 @@
         <Parameter Name="Leader" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Position">
-          <b>Single</b>requerido. Posición de la tabulación (en puntos) con respecto al margen izquierdo.</param>
-        <param name="Alignment">
-          <b>Objeto</b>de opcional. La alineación de la tabulación. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.WdTabAlignment" /> constantes: <b>wdAlignTabBar</b>, <b>wdAlignTabCenter</b>, <b>wdAlignTabDecimal</b>, <b>wdAlignTabLeft</b>, <b>wdAlignTabList</b>o <b>wdAlignTabRight</b>. Si se omite este argumento, se utiliza el <b>valor wdAlignTabLeft</b> .</param>
-        <param name="Leader">
-          <b>Objeto</b>de opcional. El tipo de relleno de la tabulación. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" /> constantes: <b>wdTabLeaderDashes</b>, <b>wdTabLeaderDots</b>, <b>wdTabLeaderHeavy</b>, <b>wdTabLeaderLines</b>, <b>wdTabLeaderMiddleDot</b>o <b>wdTabLeaderSpaces</b>. Si se omite este argumento, se utiliza el <b>valor wdTabLeaderSpaces</b> .</param>
+        <param name="Position"><b>Single</b>requerido. Posición de la tabulación (en puntos) con respecto al margen izquierdo.</param>
+        <param name="Alignment"><b>Objeto</b>opcional. Alineación de la tabulación. Puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdTabAlignment" /> constantes: <b>wdAlignTabBar</b>, <b>wdAlignTabCenter</b>, <b>wdAlignTabDecimal</b>, <b>wdAlignTabLeft</b>, <b>wdAlignTabList</b>o <b>wdAlignTabRight</b>. Si se omite este argumento, se utiliza <b>wdAlignTabLeft</b> .</param>
+        <param name="Leader"><b>Objeto</b>opcional. El tipo de relleno de la tabulación. Puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" /> constantes: <b>wdTabLeaderDashes</b>, <b>wdTabLeaderDots</b>, <b>wdTabLeaderHeavy</b>, <b>wdTabLeaderLines</b>, <b>wdTabLeaderMiddleDot</b>o <b>wdTabLeaderSpaces</b>. Si se omite este argumento, se utiliza el valor <b>wdTabLeaderSpaces</b>.</param>
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> objeto que representa una tabulación personalizada agregada a un documento.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -95,9 +86,8 @@
         <Parameter Name="Position" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Position">
-          <b>Single</b>requerido. Posición de la regla, en puntos.</param>
-        <summary>Devuelve el siguiente <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> objeto a la derecha del <paramref name="Position" />.</summary>
+        <param name="Position"><b>Single</b>requerido. Posición de la regla, en puntos.</param>
+        <summary>Devuelve el siguiente <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> objeto a la derecha de <paramref name="Position" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -125,7 +115,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -153,9 +143,8 @@
         <Parameter Name="Position" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Position">
-          <b>Single</b>requerido. Posición de la regla, en puntos.</param>
-        <summary>Devuelve el siguiente <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> objeto a la izquierda del <paramref name="Position" />.</summary>
+        <param name="Position"><b>Single</b>requerido. Posición de la regla, en puntos.</param>
+        <summary>Devuelve el siguiente <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> objeto a la izquierda de <paramref name="Position" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -182,10 +171,8 @@
       <Parameters />
       <Docs>
         <summary>Borra todas las tabulaciones personalizadas de los párrafos especificados.</summary>
-        <remarks>
-          <para>Para borrar una tabulación individual, utilice la <see cref="M:Microsoft.Office.Interop.Word.TabStop.Clear" /> (método) de la <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> objeto. El método <b>ClearAll</b> no borra el valor predeterminado tabulaciones. Para manipular la pestaña predeterminada se detiene, use la <see cref="P:Microsoft.Office.Interop.Word._Document.DefaultTabStop" /> (propiedad) para el documento.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para borrar una tabulación individual, utilice el <see cref="M:Microsoft.Office.Interop.Word.TabStop.Clear" /> método del <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> objeto. El método <b>ClearAll</b> no borra el valor predeterminado tabulaciones. Para manipular las tabulaciones predeterminadas, use <see cref="P:Microsoft.Office.Interop.Word._Document.DefaultTabStop" /> la propiedad del documento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -241,9 +228,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -304,7 +291,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>objeto</b> que indica la posición ordinal o una cadena que representa el nombre del objeto individual.</param>
+        <param name="Index"><b>Objeto</b> que indica la posición ordinal o una cadena que representa el nombre del objeto individual.</param>
         <summary>Devuelve un objeto individual de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

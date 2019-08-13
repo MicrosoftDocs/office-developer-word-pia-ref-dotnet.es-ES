@@ -1,13 +1,5 @@
 <Type Name="EmailSignature" FullName="Microsoft.Office.Interop.Word.EmailSignature">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="487c351a1c820ffc35f9a29cfb139805967bf5cc" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675765" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface EmailSignature" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f8fa72f41d1c7b3b628bdb1bf116b5317693ce9e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144529" /></Metadata><TypeSignature Language="C#" Value="public interface EmailSignature" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract EmailSignature" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.EmailSignature" />
   <TypeSignature Language="VB.NET" Value="Public Interface EmailSignature" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Contiene información acerca de las firmas de correo electrónico que utiliza Microsoft Word cuando se crean o modifican mensajes o respuestas de correo electrónico.</summary>
-    <remarks>
-      <para>No hay ninguna colección EmailSignatures; cada <see cref="T:Microsoft.Office.Interop.Word.EmailOptions" /> objeto contiene sólo un objeto <b>EmailSignature</b> .</para>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.EmailOptions.EmailSignature" /> (propiedad) para devolver el objeto <b>EmailSignature</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>No hay ninguna colección EmailSignatures; cada <see cref="T:Microsoft.Office.Interop.Word.EmailOptions" /> objeto contiene un solo objeto <b>EmailSignature</b> .</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.EmailOptions.EmailSignature" /> propiedad para devolver el objeto <b>EmailSignature</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,9 +77,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EmailSignatureEntries">
@@ -115,12 +105,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.EmailSignatureEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.EmailSignatureEntries" /> object que representa las entradas de firma de correo electrónico en Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.EmailSignatureEntries" /> objeto Object que representa las entradas de firma de correo electrónico en Microsoft Word.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Una firma de correo electrónico es un texto estándar que finaliza un mensaje de correo electrónico, como su nombre y número de teléfono. Utilice la propiedad <b>EmailSignatureEntries</b> para crear y administrar una colección de firmas de correo electrónico que Word utilizará al crear mensajes de correo electrónico.</para>
-          <para />
-        </remarks>
+        <remarks><para>Una firma de correo electrónico es un texto estándar que finaliza un mensaje de correo electrónico, como su nombre y número de teléfono. Utilice la propiedad <b>EmailSignatureEntries</b> para crear y administrar una colección de firmas de correo electrónico que Word utilizará al crear mensajes de correo electrónico.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NewMessageSignature">
@@ -151,10 +139,8 @@
       <Docs>
         <summary>Devuelve o establece la firma que Microsoft Word anexa a los nuevos mensajes de correo electrónico.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Al establecer esta propiedad, debe usar el nombre de una firma de correo electrónico que haya creado en el cuadro de diálogo Opciones de correo electrónico, disponible en la ficha General del cuadro de diálogo Opciones (menú Herramientas).</para>
-          <para />
-        </remarks>
+        <remarks><para>Al establecer esta propiedad, se debe usar el nombre de una firma de correo electrónico que se haya creado en el cuadro de diálogo Opciones de correo electrónico, disponible en la ficha General del cuadro de diálogo Opciones (menú Herramientas).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -213,10 +199,8 @@
       <Docs>
         <summary>Devuelve o establece la firma que Microsoft Word anexa a las respuestas de mensajes de correo electrónico.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Al establecer esta propiedad, debe usar el nombre de una firma de correo electrónico que haya creado en el cuadro de diálogo Opciones de correo electrónico, disponible en la ficha General del cuadro de diálogo Opciones (menú Herramientas).</para>
-          <para />
-        </remarks>
+        <remarks><para>Al establecer esta propiedad, se debe usar el nombre de una firma de correo electrónico que se haya creado en el cuadro de diálogo Opciones de correo electrónico, disponible en la ficha General del cuadro de diálogo Opciones (menú Herramientas).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

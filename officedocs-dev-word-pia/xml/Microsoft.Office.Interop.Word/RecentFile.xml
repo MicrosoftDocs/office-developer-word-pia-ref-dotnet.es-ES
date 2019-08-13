@@ -1,13 +1,5 @@
 <Type Name="RecentFile" FullName="Microsoft.Office.Interop.Word.RecentFile">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1e434d3e1e088bc212d7bbc10abf5c431e2964b4" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675324" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface RecentFile" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5a818ea88a0f5d83922bdd03f47dd18ee09e79b4" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147707" /></Metadata><TypeSignature Language="C#" Value="public interface RecentFile" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RecentFile" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.RecentFile" />
   <TypeSignature Language="VB.NET" Value="Public Interface RecentFile" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Representa un archivo utilizado recientemente.</summary>
-    <remarks>
-      <para>El objeto <b>RecentFile</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.RecentFiles" /> colección. La colección <b>RecentFiles</b> incluye todos los archivos que se han utilizado recientemente. Los elementos de la colección <b>RecentFiles</b> se muestran en la parte inferior del menú archivo.</para>
-      <para>Uso <b>RecentFiles</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un solo objeto <b>RecentFile</b> . El número de índice representa la posición del archivo en el menú <b>archivo</b> .</para>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Word.RecentFiles.Add(System.Object@,System.Object@)" /> método para agregar un archivo a la colección <b>RecentFiles</b> .</para>
-      <para>La <see cref="M:Microsoft.Office.Interop.Word._Document.SaveAs(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> y <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> métodos incluyen un <paramref name="AddToRecentFiles" /> argumento que controla si se agrega un archivo a la lista de archivos utilizados recientemente al abrir o guardar el archivo.</para>
-      <para />
-    </remarks>
+    <remarks><para>El objeto <b>RecentFile</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.RecentFiles" /> colección. La colección <b>RecentFiles</b> incluye todos los archivos que se han utilizado recientemente. Los elementos de la colección <b>RecentFiles</b> se muestran en la parte inferior del menú archivo.</para>
+      <para>Use <b>RecentFiles</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un solo objeto <b>RecentFile</b> . El número de índice representa la posición del archivo en el menú <b>archivo</b>.</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.RecentFiles.Add(System.Object@,System.Object@)" /> método para agregar un archivo a la colección <b>RecentFiles</b> .</para>
+      <para>Los <see cref="M:Microsoft.Office.Interop.Word._Document.SaveAs(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> métodos <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> y incluyen un <paramref name="AddToRecentFiles" /> argumento que controla si se agrega un archivo a la lista de archivos usados recientemente al abrir o guardar el archivo.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,9 +79,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -196,7 +186,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Abre el objeto especificado. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto que representa el objeto abierto.</summary>
+        <summary>Abre el objeto especificado. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto Object que representa el objeto abierto.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -254,12 +244,10 @@
       <Docs>
         <summary>Devuelve el disco o la ruta de acceso Web al objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La ruta de acceso no incluye un carácter final, por ejemplo, "C:\MSOffice" o "http://MyServer". Usar el <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> (propiedad) para agregar el carácter que separa carpetas y letras de unidad. Utilice la propiedad <b>Name</b> para devolver el nombre de archivo sin la ruta de acceso.</para>
+        <remarks><para>La ruta de acceso no incluye un carácter final, por ejemplo, "C:\MSOffice" o "http://MyServer". Use la <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> propiedad para agregar el carácter que separa carpetas y Letras de unidad. Utilice la propiedad <b>Name</b> para devolver el nombre de archivo sin la ruta de acceso.</para>
           <para>
-            <b>Nota</b> puede utilizar la propiedad <b>PathSeparator</b> para crear direcciones Web aunque contengan barras diagonales (/) y la propiedad <b>PathSeparator</b> el valor predeterminado es una barra diagonal inversa (\).</para>
-          <para />
-        </remarks>
+            <b>Nota:</b>  Puede usar la propiedad <b>PathSeparator</b> para crear direcciones web, aunque contengan barras diagonales (/) y el valor predeterminado de la propiedad <b>PathSeparator</b> sea una barra\)diagonal inversa (.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadOnly">
@@ -288,8 +276,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si los cambios realizados en el documento no pueden guardarse en el documento original.</summary>
+        <summary><b>True</b> si los cambios realizados en el documento no pueden guardarse en el documento original.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

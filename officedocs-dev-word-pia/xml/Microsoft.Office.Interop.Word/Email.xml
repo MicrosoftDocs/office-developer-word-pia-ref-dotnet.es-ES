@@ -1,13 +1,5 @@
 <Type Name="Email" FullName="Microsoft.Office.Interop.Word.Email">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5490d134b584ad0a6172166515fb7d04bb29c823" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674861" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Email" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="15c528c26f8c33d5f5502be2e9d2ed0cca952a66" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144550" /></Metadata><TypeSignature Language="C#" Value="public interface Email" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Email" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Email" />
   <TypeSignature Language="VB.NET" Value="Public Interface Email" />
@@ -27,9 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Representa un mensaje de correo electrónico.</summary>
-    <remarks>
-      <para>No hay ninguna colección de mensajes de correo electrónico; cada <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto contiene sólo un objeto <b>Email</b> .</para> Uso de 
-      <para>el <see cref="P:Microsoft.Office.Interop.Word._Document.Email" /> (propiedad) para devolver el objeto de <b>correo electrónico</b> . El objeto <b>Email</b> y sus propiedades sólo son válidas si el documento activo es un avance no enviado, respuesta o nuevo mensaje de correo electrónico.</para><para /></remarks>
+    <remarks><para>No hay ninguna colección emails; cada <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto contiene un solo objeto <b>email</b> .</para>
+      <para>Use la <see cref="P:Microsoft.Office.Interop.Word._Document.Email" /> propiedad para devolver el objeto <b>email</b> . El objeto <b>Email</b> y sus propiedades sólo son válidos si el documento activo es un mensaje de correo electrónico de reenvío, respuesta o nuevo que no ha sido enviado.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -55,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,9 +77,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentEmailAuthor">
@@ -113,7 +105,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.EmailAuthor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.EmailAuthor" /> object que representa al autor del mensaje de correo electrónico actual.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.EmailAuthor" /> objeto Object que representa al autor del mensaje de correo electrónico actual.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

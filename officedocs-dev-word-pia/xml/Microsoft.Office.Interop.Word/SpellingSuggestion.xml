@@ -1,13 +1,5 @@
 <Type Name="SpellingSuggestion" FullName="Microsoft.Office.Interop.Word.SpellingSuggestion">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5fe2c90e77f52f8bb71fe5c38cbf1f360709dd6e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675217" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SpellingSuggestion" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3413abdc0c5278bcc151a8955fa3d96176ddd8d3" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143955" /></Metadata><TypeSignature Language="C#" Value="public interface SpellingSuggestion" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SpellingSuggestion" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SpellingSuggestion" />
   <TypeSignature Language="VB.NET" Value="Public Interface SpellingSuggestion" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Representa una sola sugerencia para una palabra escrita incorrectamente.</summary>
-    <remarks>
-      <para>El objeto <b>SpellingSuggestion</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.SpellingSuggestions" /> colección. La colección <b>SpellingSuggestions</b> incluye todas las sugerencias para una palabra especificada o para la primera palabra del intervalo especificado.</para>
-      <para>Uso <b>SpellingSuggestions</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un solo objeto <b>SpellingSuggestion</b> .</para>
-      <para>La <see cref="P:Microsoft.Office.Interop.Word.SpellingSuggestions.Count" /> propiedad del objeto <b>SpellingSuggestions</b> devuelve 0 (cero) si la palabra es correcta o si no existen sugerencias.</para>
-      <para />
-    </remarks>
+    <remarks><para>El objeto <b>SpellingSuggestion</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.SpellingSuggestions" /> colección. La colección <b>SpellingSuggestions</b> incluye todas las sugerencias para una palabra especificada o para la primera palabra del intervalo especificado.</para>
+      <para>Use <b>SpellingSuggestions</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un solo objeto <b>SpellingSuggestion</b> .</para>
+      <para>La <see cref="P:Microsoft.Office.Interop.Word.SpellingSuggestions.Count" /> propiedad del objeto <b>SpellingSuggestions</b> devuelve 0 (cero) si la palabra está escrita correctamente o si no hay sugerencias.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,9 +78,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">

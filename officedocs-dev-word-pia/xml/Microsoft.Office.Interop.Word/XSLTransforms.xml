@@ -1,13 +1,5 @@
 <Type Name="XSLTransforms" FullName="Microsoft.Office.Interop.Word.XSLTransforms">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="de29b43f46f2692a2b0d2a38cc3c95ef7c260389" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674288" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XSLTransforms : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="80575a845a8b4cdb5dae2ad29be77f4a4dcf8029" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142622" /></Metadata><TypeSignature Language="C#" Value="public interface XSLTransforms : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XSLTransforms implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XSLTransforms" />
   <TypeSignature Language="VB.NET" Value="Public Interface XSLTransforms&#xA;Implements IEnumerable" />
@@ -30,12 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.XSLTransform" /> objetos que representan todas las transformaciones Extensible Stylesheet Language (XSL) para un determinado espacio de nombres XML.</summary>
-    <remarks>
-      <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.XSLTransforms.Add(System.String,System.Object@,System.Boolean)" /> método para agregar un objeto <b>XSLTransform</b> individual a la colección de transformaciones XSLT de un esquema.</para>
-      <para>Usar la <see cref="P:Microsoft.Office.Interop.Word.XSLTransforms.Item(System.Object@)" /> propiedad para devolver un único objeto <b>XSLTransform</b> .</para>
-      <para />
-    </remarks>
+    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.XSLTransform" /> objetos que representan todas las transformaciones XSL (Extensible Stylesheet Language Transformation) para un espacio de nombres XML específico.</summary>
+    <remarks><para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.XSLTransforms.Add(System.String,System.Object@,System.Boolean)" /> método para agregar un objeto <b>XslTransform</b> individual a la colección de transformaciones XSL de un esquema.</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.XSLTransforms.Item(System.Object@)" /> propiedad para devolver un único objeto <b>XslTransform</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -62,13 +52,10 @@
         <Parameter Name="InstallForAllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Location">
-          <b>String</b> requerida. La ruta de acceso y el nombre de la transformación XSLT. Esto puede ser una ruta de acceso de archivo local, una ruta de acceso de red o una dirección de Internet.</param>
-        <param name="Alias">
-          <b>String</b> opcional.  Nombre de la transformación XSLT tal y como aparece en la Biblioteca de esquemas.</param>
-        <param name="InstallForAllUsers">
-          <b>Boolean</b> opcional.  <b>True</b> si todos los usuarios que inicie sesión en un equipo puede tener acceso y usar el nuevo esquema. El valor predeterminado es <b>False</b>.</param>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.XSLTransform" /> objeto que representa una transformación de lenguaje de hojas de estilos Extensible (XSLT) agregada a la colección de transformaciones XSLT de un esquema específico.</summary>
+        <param name="Location"><b>String</b> requerida. Ruta de acceso y nombre de archivo de la transformación XSLT. Puede ser una ruta local, de red o una dirección de Internet.</param>
+        <param name="Alias"><b>String</b> opcional. Nombre de la transformación XSLT tal y como aparece en la Biblioteca de esquemas.</param>
+        <param name="InstallForAllUsers"><b>Boolean</b> opcional. <b>True</b> si todos los usuarios que inician sesión en un equipo pueden tener acceso al nuevo esquema y utilizarlo. El valor predeterminado es <b>False</b>.</param>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.XSLTransform" /> objeto que representa una transformación XSL (Extensible Stylesheet Language Transformation) agregada a la colección de transformaciones XSL para un esquema especificado.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -96,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,9 +141,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -217,7 +204,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>objeto</b> que indica la posición ordinal o una cadena que representa el nombre del objeto individual.</param>
+        <param name="Index"><b>Objeto</b> que indica la posición ordinal o una cadena que representa el nombre del objeto individual.</param>
         <summary>Devuelve un objeto individual de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

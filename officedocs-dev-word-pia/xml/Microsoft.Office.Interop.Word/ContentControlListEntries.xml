@@ -1,13 +1,5 @@
 <Type Name="ContentControlListEntries" FullName="Microsoft.Office.Interop.Word.ContentControlListEntries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a961b46486a0ec821d76f588800bb27c7ac81740" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674968" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ContentControlListEntries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2a65daa51ebf37c0bb3b93d5a9f9094e1b8a6931" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147287" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControlListEntries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ContentControlListEntries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ContentControlListEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface ContentControlListEntries&#xA;Implements IEnumerable" />
@@ -30,11 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>El <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> colección contiene <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> control de contenido de objetos que representan los elementos de un cuadro de lista o un control combinado de lista desplegable.</summary>
-    <remarks>
-      <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Add(System.String,System.String,System.Int32)" /> método para agregar un elemento a un cuadro de lista o un control combinado de lista desplegable. </para>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntries.Item(System.Int32)" /> (método) o el <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" /> (propiedad) de un <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> objeto para tener acceso a un elemento de lista individuales dentro de una colección.</para> Uso de 
-      <para>la <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Clear" /> método para quitar todos los elementos de un cuadro de lista o un control combinado de lista desplegable. En el ejemplo siguiente se borra todos los elementos del primer control de contenido del documento activo.</para><para /></remarks>
+    <summary>La <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> colección contiene <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> objetos que representan los elementos de un control de contenido de lista desplegable o de cuadro combinado.</summary>
+    <remarks><para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Add(System.String,System.String,System.Int32)" /> método para agregar un elemento a una lista desplegable o un cuadro combinado. </para>
+      <para>Utilice el <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntries.Item(System.Int32)" /> método o la <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" /> propiedad de un <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> objeto para tener acceso a un elemento de lista individual dentro de una colección. </para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Clear" /> método para quitar todos los elementos de una lista desplegable o de un cuadro combinado. En el siguiente ejemplo se borran todos los elementos del primer control de contenido del documento activo.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -61,17 +53,13 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Text">Especifica el texto para mostrar para el elemento de lista. Corresponde a la <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> (propiedad) para un <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> objeto.</param>
-        <param name="Value">Especifica el valor del elemento de lista.  Corresponde a la <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> (propiedad) para un <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> objeto. Si se omite, el <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> (propiedad) es igual a la <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> (propiedad).</param>
+        <param name="Text">Especifica el texto para mostrar para el elemento de lista. Corresponde a la <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> propiedad de un <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> objeto.</param>
+        <param name="Value">Especifica el valor del elemento de lista.  Corresponde a la <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> propiedad de un <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> objeto. Si se omite, <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> la propiedad es igual a <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> la propiedad.</param>
         <param name="Index">Especifica la posición ordinal del nuevo elemento en la lista. Si existe un elemento en la posición especificada, éste retrocede una posición en la lista. Si se omite, el nuevo elemento se agrega al final de la lista.</param>
-        <summary>Agrega un nuevo elemento de lista a un lista desplegable lista de control o cuadro combinado contenido y devuelve una <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> objeto.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" />
-        </returns>
-        <remarks>
-          <para>Entradas de la lista deben tener nombres para mostrar únicos.  Si se intenta agregar un elemento de lista que ya existe, genera un error en tiempo de ejecución.</para>
-          <para />
-        </remarks>
+        <summary>Agrega un nuevo elemento de lista a un control de contenido de lista desplegable o de cuadro combinado <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> y devuelve un objeto.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /></returns>
+        <remarks><para>[!NOTA] Entradas de la lista deben tener nombres de presentación únicos.  Intenta agregar un elemento de lista que ya existe, genera un error en tiempo de ejecución.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -97,10 +85,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa la aplicación Microsoft Word.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,10 +138,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el número de elementos en el <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> colección. Es de solo lectura</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Devuelve el número de elementos de la <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> colección. Solo lectura.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,16 +166,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el complemento. Es de solo lectura</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, la propiedad <b>Creator</b> devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el complemento. Solo lectura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Si el objeto se creó en Microsoft Word, la propiedad <b>Creator</b> devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
           <para>
-            <b>Nota</b>: este valor también puede representarse mediante la constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
-          <para />
-        </remarks>
+            <b>Nota</b>: este valor también puede representarse mediante la <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />constante.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -254,9 +234,7 @@
       <Docs>
         <param name="Index">Especifica la posición ordinal del objeto dentro de la colección.</param>
         <summary>Devuelve el elemento especificado de la colección.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,10 +261,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario del especificado <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> objeto.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve el objeto primario del objeto especificado <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> .</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

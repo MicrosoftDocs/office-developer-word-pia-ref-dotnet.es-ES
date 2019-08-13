@@ -1,13 +1,5 @@
 <Type Name="Template" FullName="Microsoft.Office.Interop.Word.Template">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="534019c643dbd50c521e73ede295686eb260edbc" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674668" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Template" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ab6c90166c80860b2142f0d365e15d418af64385" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143857" /></Metadata><TypeSignature Language="C#" Value="public interface Template" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Template" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Template" />
   <TypeSignature Language="VB.NET" Value="Public Interface Template" />
@@ -27,10 +19,26 @@
   </Attributes>
   <Docs>
     <summary>Representa una plantilla de documento.</summary>
-    <remarks>
-      <para>El objeto <b>Template</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Templates" /> colección. La colección <b>Templates</b> incluye todos los objetos <b>Template</b> disponibles.</para>
-      <para>Usar <b>plantillas</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la plantilla o el número de índice, para devolver un solo objeto <b>Template</b> . El número de índice representa la posición de la plantilla de la colección <b>Templates</b> .</para> Método 
-      <para>el <b>complemento</b> no está disponible para <b>plantillas</b> de la colección. En su lugar, puede agregar una plantilla a la colección de <b>plantillas</b> mediante cualquiera de los siguientes:</para><list type="bullet"><item><para>mediante el <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método con el <see cref="T:Microsoft.Office.Interop.Word.Documents" /> colección que se va a abrir un documento basado en una plantilla o una plantilla de</para></item><item><para>con el <see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" />método con la colección <b>Documents</b> para abrir un nuevo documento basado en una plantilla</para></item><item><para>mediante el <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> método con el <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> colección que se va a cargar una plantilla global</para></item><item><para>mediante el <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> (propiedad) con el <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto que se va a adjuntar una plantilla a un documento</para></item></list><para>usar la <see cref="P:Microsoft.Office.Interop.Word._Application.NormalTemplate" /> propiedad para devolver un objeto template que hace referencia a la plantilla Normal. Usar el <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> propiedad para devolver la plantilla adjunta al documento especificado.</para><para>Usar el <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" /> (propiedad) para devolver o establecer la ubicación de las plantillas de usuario o grupo de trabajo (es decir, la carpeta donde desea almacenar estas plantillas).</para><para /></remarks>
+    <remarks><para>El objeto <b>Template</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Templates" /> colección. La colección <b>Templates</b> incluye todos los objetos <b>Template</b> disponibles.</para>
+      <para>Use <b>plantillas</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la plantilla o el número de índice, para devolver un solo objeto <b>Template</b> . El número de índice representa la posición de la plantilla de la colección de <b>plantillas</b>.</para>
+      <para>No hay ningún método <b>Add</b> disponible para la colección <b>Templates</b>. En su lugar, puede agregar una plantilla al conjunto <b>Templates</b> realizando cualquiera de las siguientes acciones:</para>
+      <list type="bullet">
+        <item>
+          <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método con la <see cref="T:Microsoft.Office.Interop.Word.Documents" /> colección para abrir un documento basado en una plantilla o una plantilla</para>
+        </item>
+        <item>
+          <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" /> método con la <b></b> colección Documents para abrir un nuevo documento basado en una plantilla</para>
+        </item>
+        <item>
+          <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> método con la <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> colección para cargar una plantilla global</para>
+        </item>
+        <item>
+          <para>Uso de <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> la propiedad con <see cref="T:Microsoft.Office.Interop.Word.Document" /> el objeto para adjuntar una plantilla a un documento</para>
+        </item>
+      </list>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word._Application.NormalTemplate" /> propiedad para devolver un objeto template que haga referencia a la plantilla normal. Use la <see cref="P:Microsoft.Office.Interop.Word._Document.AttachedTemplate" /> propiedad para devolver la plantilla adjunta al documento especificado.</para>
+      <para>Use la <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultFilePath(Microsoft.Office.Interop.Word.WdDefaultFilePath)" /> propiedad para devolver o establecer la ubicación de las plantillas de usuario o grupo de trabajo (es decir, la carpeta en la que desea almacenar estas plantillas).</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +64,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,7 +95,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.AutoTextEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" /> colección que representa todas las entradas de Autotexto de la plantilla especificada.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" /> colección que representa todos los elementos de Autotexto de la plantilla especificada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -115,10 +123,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlockEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> colección que representa la colección de entradas de bloque de creación en una plantilla. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />
-        </value>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> colección que representa la colección de entradas de bloques de creación en una plantilla. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,10 +151,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlockTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> colección que representa la colección de tipos de bloque de creación que están contenidos en una plantilla. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" />
-        </value>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> colección que representa la colección de los tipos de bloques de creación que contiene una plantilla. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,14 +179,12 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Core.DocumentProperties" /> colección que representa todas las propiedades integradas del documento para el documento especificado.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Core.DocumentProperties" /> colección que representa todas las propiedades integradas del documento para el documento especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para devolver un solo <see cref="T:Microsoft.Office.Core.DocumentProperty" /> objeto que representa una propiedad de documento integrada específica, utilice <b>BuiltinDocumentProperties</b>(<paramref name="index" />), donde <paramref name="index" /> es una <see cref="T:Microsoft.Office.Interop.Word.WdBuiltInProperty" /> constante.</para>
-          <para>Si Microsoft Word no define un valor para una de las propiedades de documento integradas, leer el <see cref="P:Microsoft.Office.Interop.Word.CustomProperty.Value" /> (propiedad) para esa propiedad de documento genera un error.</para>
-          <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.Template.CustomDocumentProperties" /> (propiedad) para devolver la colección de propiedades de documento personalizadas.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para devolver un único <see cref="T:Microsoft.Office.Core.DocumentProperty" /> objeto que represente una propiedad de documento integrada específica, use <b>BuiltInDocumentProperties</b>(<paramref name="index" />), donde <paramref name="index" /> es una <see cref="T:Microsoft.Office.Interop.Word.WdBuiltInProperty" /> constante.</para>
+          <para>Si Microsoft Word no define un valor para una de las propiedades de documento integradas, al leer <see cref="P:Microsoft.Office.Interop.Word.CustomProperty.Value" /> la propiedad de esa propiedad de documento se genera un error.</para>
+          <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.Template.CustomDocumentProperties" /> propiedad para devolver la colección de propiedades de documento personalizadas.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -210,9 +212,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomDocumentProperties">
@@ -238,12 +240,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Core.DocumentProperties" /> colección que representa todas las propiedades de documento personalizadas para el documento especificado.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Core.DocumentProperties" /> colección que representa todas las propiedades de documento personalizadas para el documento especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.Template.BuiltInDocumentProperties" /> (propiedad) para devolver la colección de propiedades de documento integradas.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.Template.BuiltInDocumentProperties" /> propiedad para devolver la colección de propiedades de documento integradas.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FarEastLineBreakLanguage">
@@ -274,8 +274,7 @@
       <Docs>
         <summary>Devuelve o establece el idioma del este asiático a utilizarse al dividir líneas de texto en el documento o plantilla especificados.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLanguageID" />puede ser una de estas constantes <b>WdFarEastLineBreakLanguageID</b> :</para>
           <para>
             <b>wdLineBreakJapanese</b>
@@ -289,8 +288,7 @@
           <para>
             <b>wdLineBreakTraditionalChinese</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FarEastLineBreakLevel">
@@ -321,10 +319,9 @@
       <Docs>
         <summary>Devuelve o establece el nivel de control de salto de línea para el documento especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad se omite si la <see cref="P:Microsoft.Office.Interop.Word.Paragraph.FarEastLineBreakControl" /> propiedad está establecida en <b>False</b>.</para>
+        <remarks><para>Esta propiedad se omite si la <see cref="P:Microsoft.Office.Interop.Word.Paragraph.FarEastLineBreakControl" /> propiedad está establecida en <b>false</b>.</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLevel" /> puede ser una de estas constantes <b>WdFarEastLineBreakLevel</b> :</para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdFarEastLineBreakLevel" />puede ser una de estas constantes <b>WdFarEastLineBreakLevel</b> :</para>
           <para>
             <b>wdFarEastLineBreakLevelCustom</b>
           </para>
@@ -334,8 +331,7 @@
           <para>
             <b>wdFarEastLineBreakLevelStrict</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FullName">
@@ -363,10 +359,8 @@
       <Docs>
         <summary>Especifica el nombre de una plantilla, incluida la unidad o ruta de acceso Web.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Uso de esta propiedad es equivalente a usar el <see cref="P:Microsoft.Office.Interop.Word.Template.Path" />, <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />, y <see cref="P:Microsoft.Office.Interop.Word.Template.Name" /> propiedades en secuencia.</para>
-          <para />
-        </remarks>
+        <remarks><para>Usar esta propiedad es equivalente a usar las <see cref="P:Microsoft.Office.Interop.Word.Template.Path" />propiedades <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />, y <see cref="P:Microsoft.Office.Interop.Word.Template.Name" /> en Sequence.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="JustificationMode">
@@ -397,8 +391,7 @@
       <Docs>
         <summary>Devuelve o establece el ajuste del espacio entre caracteres de la plantilla especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Word.WdJustificationMode" />puede ser una de estas constantes <b>WdJustificationMode</b> :</para>
           <para>
             <b>wdJustificationModeCompress</b>
@@ -409,8 +402,7 @@
           <para>
             <b>wdJustificationModeExpand</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KerningByAlgorithm">
@@ -439,8 +431,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si Microsoft Word ajusta los caracteres latinos de un byte y las marcas de puntuación del documento especificado.</summary>
+        <summary><b>True</b> si Microsoft Word ajusta los caracteres latinos de un byte y las marcas de puntuación del documento especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -473,11 +464,9 @@
       <Docs>
         <summary>Devuelve o establece el idioma del objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes.</para>
-          <para>Algunas de las constantes <b>WdLanguageID</b> no estén disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
-          <para />
-        </remarks>
+        <remarks><para>Puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes.</para>
+          <para>Es posible que algunas de las constantes <b>WdLanguageID</b> no estén disponibles para usted, según la compatibilidad con el idioma (por ejemplo, Inglés estadounidense) que haya seleccionado o instalado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageIDFarEast">
@@ -508,11 +497,9 @@
       <Docs>
         <summary>Devuelve o establece un idioma del este asiático para el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes.</para>
-          <para>Esta es la manera recomendada para devolver o establecer el idioma del texto del este asiático en un documento creado en una versión del este asiático de Microsoft Word.</para>
-          <para />
-        </remarks>
+        <remarks><para>Puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes.</para>
+          <para>Esta es la manera recomendada de devolver o establecer el idioma del Este Asiático del texto de un documento creado en una versión de Microsoft Word para el Este Asiático.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListTemplates">
@@ -538,7 +525,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> colección que representa la lista de todos los formatos de la plantilla especificada.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> colección que representa todos los formatos de lista de la plantilla especificada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -659,8 +646,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el corrector ortográfico y gramatical omite los documentos basados en esta plantilla.</summary>
+        <summary><b>True</b> si el corrector ortográfico y gramatical omite los documentos basados en esta plantilla.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -686,12 +672,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Se abre la plantilla especificada como un documento y devuelve un <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto.</summary>
+        <summary>Abre la plantilla especificada como un documento y devuelve un <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Abrir una plantilla como un documento permite al usuario editar el contenido de la plantilla. Esto puede ser necesario si una propiedad o método (el <see cref="P:Microsoft.Office.Interop.Word._Document.Styles" /> (propiedad), por ejemplo) no está disponible desde el <see cref="T:Microsoft.Office.Interop.Word.Template" /> objeto.</para>
-          <para />
-        </remarks>
+        <remarks><para>Abrir una plantilla como un documento, permite al usuario editar el contenido de la plantilla. Esto puede ser necesario si una propiedad o un método ( <see cref="P:Microsoft.Office.Interop.Word._Document.Styles" /> por ejemplo, la propiedad) no está disponible <see cref="T:Microsoft.Office.Interop.Word.Template" /> en el objeto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -747,12 +731,10 @@
       <Docs>
         <summary>Devuelve el disco o la ruta de acceso Web al objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La ruta de acceso no incluye un carácter final, por ejemplo, "C:\MSOffice" o "http://MyServer". Usar el <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> (propiedad) para agregar el carácter que separa carpetas y letras de unidad. Usar el <see cref="P:Microsoft.Office.Interop.Word.Template.Name" /> (propiedad) para devolver el nombre de archivo sin la ruta de acceso y el uso del <see cref="P:Microsoft.Office.Interop.Word.Template.FullName" /> propiedad para devolver el nombre de archivo y la ruta de acceso conjuntamente.</para>
+        <remarks><para>La ruta de acceso no incluye un carácter final, por ejemplo, "C:\MSOffice" o "http://MyServer". Use la <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> propiedad para agregar el carácter que separa carpetas y Letras de unidad. Utilice la <see cref="P:Microsoft.Office.Interop.Word.Template.Name" /> propiedad para devolver el nombre de archivo sin la ruta de acceso <see cref="P:Microsoft.Office.Interop.Word.Template.FullName" /> y use la propiedad para devolver juntos el nombre de archivo y la ruta de acceso.</para>
           <para>
-            <b>Nota</b> puede utilizar la propiedad <b>PathSeparator</b> para crear direcciones Web aunque contengan barras diagonales (/) y la propiedad <b>PathSeparator</b> el valor predeterminado es una barra diagonal inversa (\).</para>
-          <para />
-        </remarks>
+            <b>Nota:</b>  Puede usar la propiedad <b>PathSeparator</b> para crear direcciones web, aunque contengan barras diagonales (/) y el valor predeterminado de la propiedad <b>PathSeparator</b> sea una barra\)diagonal inversa (.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -777,10 +759,8 @@
       <Parameters />
       <Docs>
         <summary>Guarda el documento o plantilla especificados.</summary>
-        <remarks>
-          <para>Si el documento o la plantilla no se ha guardado antes, el cuadro de diálogo Guardar como pide al usuario un nombre de archivo.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si el documento o plantilla no se ha guardado antes, el cuadro de diálogo Guardar como solicita al usuario que indique un nombre de archivo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Saved">
@@ -809,8 +789,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el documento o plantilla especificado no se ha modificado desde la última vez que se guardó. <b>False</b> si Microsoft Word muestra un símbolo del sistema para guardar los cambios cuando se cierra el documento.</summary>
+        <summary><b>True</b> si el documento o plantilla especificados no han cambiado desde la última vez que se guardó. <b>False</b> si Microsoft Word muestra un símbolo del sistema para guardar los cambios cuando se cierra el documento.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -840,8 +819,7 @@
       <Docs>
         <summary>Devuelve el tipo de plantilla.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Word.WdTemplateType" />puede ser una de estas constantes <b>WdTemplateType</b> :</para>
           <para>
             <b>wdAttachedTemplate</b>
@@ -852,8 +830,7 @@
           <para>
             <b>wdNormalTemplate</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VBProject">
@@ -881,11 +858,9 @@
       <Docs>
         <summary>Devuelve el objeto <b>VBProject</b> de la plantilla especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Usar esta propiedad para obtener acceso a módulos de código y formularios de usuario.</para>
-          <para>Para ver el objeto <b>VBProject</b> en el Examinador de objetos, debe seleccionar el Microsoft Visual Basic para extensibilidad de aplicaciones de casilla de verificación en el cuadro de diálogo Referencias (menú Herramientas) en el Editor de Visual Basic.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta propiedad se utiliza para obtener acceso a módulos de código y formularios de usuario.</para>
+          <para>Para ver el objeto <b>VBProject</b> en el examinador de objetos, debe activar la casilla de verificación Microsoft Visual Basic para extensibilidad de aplicaciones en el cuadro de diálogo referencias (menú herramientas) en el editor de Visual Basic.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

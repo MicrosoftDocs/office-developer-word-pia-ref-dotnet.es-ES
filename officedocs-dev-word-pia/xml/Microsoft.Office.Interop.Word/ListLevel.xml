@@ -1,13 +1,5 @@
 <Type Name="ListLevel" FullName="Microsoft.Office.Interop.Word.ListLevel">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="40804d3d1c4f0bf8f247c8b34546720ff5855ffd" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674306" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListLevel" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bba67b72f79c6b6f79e34d7a683261fcb43b7fc0" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144501" /></Metadata><TypeSignature Language="C#" Value="public interface ListLevel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListLevel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListLevel" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListLevel" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Representa un solo nivel de lista, ya sea el único nivel de una lista numerada o con viñetas, o bien uno de los nueve niveles de una lista de esquema numerado.</summary>
-    <remarks>
-      <para>El objeto <b>ListLevel</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> colección.</para>
-      <para>Uso <b>ListLevels</b>(<paramref name="index" />), donde <paramref name="index" /> es un número comprendido entre 1 y 9, para devolver un solo objeto <b>ListLevel</b> .</para>
-      <para>El objeto <b>ListLevel</b> proporciona el acceso a todas las propiedades de formato para el nivel de lista especificado, como el <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />, y <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" /> propiedades.</para>
-      <para>Para aplicar un nivel de lista, en primer lugar identifique el intervalo o la lista y, a continuación, usar el <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> (método). Cada ficha al principio del párrafo se traduce en un nivel de lista. Por ejemplo, un párrafo que empieza con tres tabulaciones se convertirá en un párrafo de lista de nivel tres después de utiliza el método <b>ApplyListTemplate</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>El objeto <b>ListLevel</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> colección.</para>
+      <para>Use <b>ListLevels</b>(<paramref name="index" />), donde <paramref name="index" /> es un número del 1 al 9, para devolver un solo objeto <b>ListLevel</b> .</para>
+      <para>El <b>objeto ListLevel</b> proporciona acceso a todas las propiedades de formato para el nivel de lista especificado, como las <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />propiedades <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />, y <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" /> .</para>
+      <para>Para aplicar un nivel de lista, primero identifique el intervalo o la lista y, a <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> continuación, use el método. Cada ficha al principio del párrafo se traduce a un nivel de lista. Por ejemplo, un párrafo que empieza con tres tabulaciones se convertirá en un párrafo de lista de nivel tres después de utiliza el método <b>ApplyListTemplate</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alignment">
@@ -62,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdListLevelAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.WdListLevelAlignment" /> constante que representa la alineación del nivel de lista de la plantilla de lista.</summary>
+        <summary>Devuelve o establece una <see cref="T:Microsoft.Office.Interop.Word.WdListLevelAlignment" /> constante que representa la alineación del nivel de lista de la plantilla de lista.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,8 +108,7 @@
         <Parameter Name="FileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>String</b> requerida. Ruta de acceso y nombre de archivo del archivo de imagen.</param>
+        <param name="FileName"><b>String</b> requerida. Ruta de acceso y nombre de archivo del archivo de imagen.</param>
         <summary>Aplica el formato de viñeta de imagen a un párrafo o un intervalo de párrafos.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -150,9 +139,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -181,12 +170,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.Font" /> object que representa el formato de carácter del objeto especificado.</summary>
+        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.Font" /> objeto Object que representa el formato de carácter del objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para establecer esta propiedad, especifique una expresión que devuelve un objeto <b>Font</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Para establecer esta propiedad, especifique una expresión que devuelva un objeto <b>Font</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -212,7 +199,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> que representa la posición de un elemento de una colección.</summary>
+        <summary>Devuelve un <b>entero</b> que representa la posición de un elemento en una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -243,7 +230,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el nombre del estilo que ha vinculado a especificado <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> objeto.</summary>
+        <summary>Devuelve o establece el nombre del estilo que está vinculado al objeto especificado <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> .</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -276,11 +263,9 @@
       <Docs>
         <summary>Devuelve o establece el formato de número para el nivel de lista especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El signo de porcentaje (%) seguido de cualquier número comprendido entre 1 y 9 representa el estilo de número desde el nivel de lista respectivo. Por ejemplo, si desea que el formato del primer nivel sea "Artículo I", "Artículo II", y así sucesivamente, la cadena para la propiedad <b>NumberFormat</b> será "Artículo %1" y el <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" /> la propiedad se establecerá en <b>wdListNumberStyleUpperCaseRoman</b>.</para>
-          <para>Si se establece la propiedad <b>NumberStyle</b> en <b>wdListNumberStyleBullet</b>, la cadena para la propiedad <b>NumberFormat</b> sólo puede contener un carácter.</para>
-          <para />
-        </remarks>
+        <remarks><para>El signo de porcentaje (%) seguido de cualquier número del 1 al 9 representa el estilo de número del nivel de lista correspondiente. Por ejemplo, si desea que el formato del primer nivel sea "ARTICLE I", "artículo II", etc., la cadena de la propiedad <b>NumberFormat</b> será "article% 1" y la <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" /> propiedad se establecerá en <b>wdListNumberStyleUpperCaseRoman</b>.</para>
+          <para>Si se establece la propiedad <b>NumberStyle</b> en <b>wdListNumberStyleBullet</b>, la cadena de la propiedad <b>NumberFormat</b> sólo puede contener un carácter.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberPosition">
@@ -309,12 +294,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la posición (en puntos) del número o viñeta para especificado <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> objeto.</summary>
+        <summary>Devuelve o establece la posición (en puntos) del número o de la viñeta del objeto <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para cada nivel de lista, puede establecer la posición del número o viñeta, la posición de la ficha y la posición del texto que se ajusta.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para cada nivel de lista, puede establecer la posición del número o de la viñeta, la posición de la tabulación y la del texto que se ajusta a la línea siguiente.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberStyle">
@@ -343,12 +326,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdListNumberStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el estilo de número para el <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> objeto.</summary>
+        <summary>Devuelve o establece el estilo de número para <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> el objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>NumberStyle</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdListNumberStyle" /> constantes. Es posible que algunas de estas constantes no estén disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
-          <para />
-        </remarks>
+        <remarks><para>La propiedad <b>NumberStyle</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdListNumberStyle" /> constantes. Algunas de estas constantes pueden no estar disponibles, según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -433,12 +414,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Establece o devuelve el nivel de lista que debe aparecer antes de que el nivel de lista especificado reinicia la numeración a partir de 1. <b>False</b> si la numeración continúa la secuencia cada vez que el nivel de lista que aparece.</summary>
+        <summary>Establece o devuelve el nivel de lista que debe aparecer antes de que el nivel de lista especificado reinicia la numeración a partir de 1. <b>False</b> si la numeración sigue secuencialmente cada vez que aparece el nivel de lista.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta característica permite que las listas se puedan intercalar, manteniendo la secuencia numérica. No se puede establecer la propiedad <b>ResetOnHigher</b> de una lista de nivel en un valor mayor o igual que el índice de la <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> colección.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta característica permite que las listas se puedan intercalar, manteniendo la secuencia numérica. No se puede establecer la propiedad <b>ResetOnHigher</b> de un nivel de lista en un valor mayor o igual que el índice de <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> la colección.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetOnHigherOld">
@@ -504,7 +483,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el número inicial de especificado <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> objeto.</summary>
+        <summary>Devuelve o establece el número inicial para el objeto <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -535,7 +514,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la posición de tabulación para especificado <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> objeto.</summary>
+        <summary>Devuelve o establece la posición de tabulación para <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> el objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -566,7 +545,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la posición (en puntos) de la segunda línea de texto ajustado para especificado <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> objeto.</summary>
+        <summary>Devuelve o establece la posición (en puntos) de la segunda línea de texto ajustado para el objeto <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -599,10 +578,8 @@
       <Docs>
         <summary>Devuelve o establece el carácter insertado después del número en el nivel de lista especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>TrailingCharacter</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdTrailingCharacter" /> constantes.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propiedad <b>TrailingCharacter</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdTrailingCharacter" /> constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
