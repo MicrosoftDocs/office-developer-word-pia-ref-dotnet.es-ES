@@ -1,13 +1,5 @@
 <Type Name="Table" FullName="Microsoft.Office.Interop.Word.Table">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e8878a4fb89408285d1a8a902af29eeab3b182e4" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674536" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Table" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a161a05ebe7d9b8e31b8365dde2fe1d8c22bd4d7" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146048" /></Metadata><TypeSignature Language="C#" Value="public interface Table" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Table" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Table" />
   <TypeSignature Language="VB.NET" Value="Public Interface Table" />
@@ -27,9 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Representa una tabla.</summary>
-    <remarks>
-      <para>El objeto <b>Table</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Tables" /> colección. La colección <b>Tables</b> incluye todas las tablas de la selección especificada, el intervalo o documento.</para> Utilice <b>tablas</b>de 
-      <para>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un solo objeto <b>Table</b> . El número de índice representa la posición de la tabla en la selección, intervalo o documento.</para><para>Usar la <see cref="M:Microsoft.Office.Interop.Word.Tables.Add(Microsoft.Office.Interop.Word.Range,System.Int32,System.Int32,System.Object@,System.Object@)" /> método para agregar una tabla al intervalo especificado.</para><para /></remarks>
+    <remarks><para>El objeto <b>TABLE</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Tables" /> colección. La colección <b>Tables</b> incluye todas las tablas de la selección, el intervalo o el documento especificados.</para>
+      <para>Use <b></b>tables<paramref name="index" />(), <paramref name="index" /> donde es el número de índice, para devolver un solo objeto <b>TABLE</b> . El número de índice representa la posición de la tabla en la selección, el intervalo o el documento.</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.Tables.Add(Microsoft.Office.Interop.Word.Range,System.Int32,System.Int32,System.Object@,System.Object@)" /> método para agregar una tabla al intervalo especificado.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AllowAutoFit">
@@ -58,7 +51,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Permite a Microsoft Word cambia automáticamente el tamaño de las celdas de una tabla para ajustar su contenido.</summary>
+        <summary>Permite a Microsoft Word cambiar automáticamente el tamaño de las celdas de una tabla para ajustarlo al contenido.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -123,7 +116,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,10 +147,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor <b>Boolean</b> que indica si se deben aplicar bandas de estilo a las columnas de una tabla si se ha aplicado un estilo de tabla preestablecido que proporciona bandas de estilo para las columnas. Lectura o escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Devuelve o establece un valor <b>Boolean</b> que indica si se deben aplicar bandas de estilo a las columnas de una tabla si se aplicó un estilo de tabla preestablecido que proporciona bandas de estilo para las columnas. Lectura/escritura.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,13 +206,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> para que Microsoft Word para que aplique el formato de primera columna a la primera columna de la tabla especificada.</summary>
+        <summary><b>True</b> para que Microsoft Word para que aplique el formato de primera columna a la primera columna de la tabla especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El estilo de tabla especificado debe contener el formato de primera columna para aplicar este formato a una tabla.</para>
-          <para />
-        </remarks>
+        <remarks><para>El estilo de tabla especificado debe contener el formato de la primera columna para aplicar este formato a una tabla.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyStyleHeadingRows">
@@ -250,13 +238,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> para que Microsoft Word aplicar formato de fila de títulos a la primera fila de la tabla seleccionada.</summary>
+        <summary><b>True</b> para que Microsoft Word aplicar formato de fila de títulos a la primera fila de la tabla seleccionada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El estilo de tabla especificado debe contener el formato de fila de títulos para aplicar este formato a una tabla.</para>
-          <para />
-        </remarks>
+        <remarks><para>El estilo de tabla especificado debe contener el formato de fila de títulos para aplicar este formato a una tabla.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyStyleLastColumn">
@@ -285,13 +270,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> para que Microsoft Word aplicar formato a la última columna de la tabla especificada de última columna.</summary>
+        <summary><b>True</b> para que Microsoft Word aplique el formato de última columna a la última columna de la tabla especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El estilo de tabla especificado debe contener el formato de última columna para aplicar este formato a una tabla.</para>
-          <para />
-        </remarks>
+        <remarks><para>El estilo de tabla especificado debe contener el formato de última columna para aplicar este formato a una tabla.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyStyleLastRow">
@@ -320,13 +302,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> para que Microsoft Word para que aplique formato a la última fila de la tabla especificada de última fila.</summary>
+        <summary><b>True</b> para que Microsoft Word para que aplique formato a la última fila de la tabla especificada de última fila.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El estilo de tabla especificado debe contener el formato de última fila para aplicar este formato a una tabla.</para>
-          <para />
-        </remarks>
+        <remarks><para>El estilo de tabla especificado debe contener el formato de última fila para aplicar este formato a una tabla.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyStyleRowBands">
@@ -356,9 +335,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece un <b>valor Boolean</b> que representa si se va a aplicar bandas de estilo a las filas de una tabla si un estilo de tabla preestablecido aplicado proporciona bandas de estilo para las filas. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -385,13 +362,11 @@
         <Parameter Name="Behavior" Type="Microsoft.Office.Interop.Word.WdAutoFitBehavior" />
       </Parameters>
       <Docs>
-        <param name="Behavior">Requiere <see cref="T:Microsoft.Office.Interop.Word.WdAutoFitBehavior" />. Se usa cómo Word cambia el tamaño de la tabla especificada con la función Autoajuste. Puede ser una de estas constantes <b>WdAutoFitBehavior</b> : <b>wdAutoFitContent</b><b>wdAutoFitWindow</b><b>wdAutoFitFixed</b></param>
+        <param name="Behavior">Es <see cref="T:Microsoft.Office.Interop.Word.WdAutoFitBehavior" />obligatorio. Se usa la forma en que Word cambia el tamaño de la tabla especificada con la característica autoajuste. Puede ser una de estas constantes <b>WdAutoFitBehavior</b> : <b>wdAutoFitContent</b><b>wdAutoFitWindow</b><b>wdAutoFitFixed</b></param>
         <summary>Determina la forma en que Microsoft Word cambia el tamaño de una tabla cuando se utiliza la función Autoajuste.</summary>
-        <remarks>
-          <para>Word puede cambiar el tamaño de la tabla según el contenido de las celdas de tabla o el ancho de la ventana de documento. También puede utilizar este método para desactivar AutoFit para que el tamaño de la tabla es fijo, independientemente del contenido de la celda o el ancho de la ventana.</para>
-          <para>Definir el comportamiento AutoFit como <b>wdAutoFitContent</b> o <b>wdAutoFitWindow se</b> establece la <see cref="P:Microsoft.Office.Interop.Word.Table.AllowAutoFit" /> propiedad en <b>True</b> si actualmente es <b>False</b>. Del mismo modo, si se establece el comportamiento de Autoajuste en <b>wdAutoFitFixed</b> establece la propiedad <b>AllowAutoFit</b> en <b>False</b> si es <b>True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Word puede cambiar el tamaño de la tabla basándose en el contenido de las celdas o en el ancho de la ventana de documento. También puede utilizar este método para desactivar la característica Autoajuste para que el tamaño de la tabla sea fijo, con independencia del contenido de las celdas o del ancho de la ventana.</para>
+          <para>Si se establece el comportamiento AutoFit en <b>wdAutoFitContent</b> o <b>wdAutoFitWindow</b> , la <see cref="P:Microsoft.Office.Interop.Word.Table.AllowAutoFit" /> propiedad se establece en <b>true</b> si es <b>false</b>actualmente. Del mismo modo, si se establece el comportamiento AutoFit en <b>wdAutoFitFixed</b> , se establece la propiedad <b>AllowAutoFit</b> en <b>false</b> si su valor actual es <b>true</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormat">
@@ -425,31 +400,19 @@
         <Parameter Name="AutoFit" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Format">
-          <b>Objeto</b>de opcional.</param>
-        <param name="ApplyBorders">
-          <b>Objeto</b>de opcional. <b>True</b> para aplicar las propiedades de borde del formato especificado. El valor predeterminado es <b>True</b>.</param>
-        <param name="ApplyShading">
-          <b>Objeto</b>de opcional. <b>True</b> para aplicar las propiedades de sombreado del formato especificado. El valor predeterminado es <b>True</b>.</param>
-        <param name="ApplyFont">
-          <b>Objeto</b>de opcional. <b>True</b> para aplicar las propiedades de fuente del formato especificado. El valor predeterminado es <b>True</b>.</param>
-        <param name="ApplyColor">
-          <b>Objeto</b>de opcional. <b>True</b> para aplicar las propiedades de color del formato especificado. El valor predeterminado es <b>True</b>.</param>
-        <param name="ApplyHeadingRows">
-          <b>Objeto</b>de opcional. <b>True</b> para aplicar las propiedades de fila de títulos del formato especificado. El valor predeterminado es <b>True</b>.</param>
-        <param name="ApplyLastRow">
-          <b>Objeto</b>de opcional. <b>True</b> para aplicar las propiedades de última fila del formato especificado. El valor predeterminado es <b>False</b>.</param>
-        <param name="ApplyFirstColumn">
-          <b>Objeto</b>de opcional. <b>True</b> para aplicar las propiedades de primera columna del formato especificado. El valor predeterminado es <b>True</b>.</param>
-        <param name="ApplyLastColumn">
-          <b>Objeto</b>de opcional. <b>True</b> para aplicar las propiedades de última columna del formato especificado. El valor predeterminado es <b>False</b>.</param>
-        <param name="AutoFit">
-          <b>Objeto</b>de opcional. <b>True</b> para reducir el ancho de las columnas de tabla tanto como sea posibles sin cambiar el texto de la forma se ajusta en las celdas. El valor predeterminado es <b>True</b>.</param>
+        <param name="Format"><b>Objeto</b>opcional.</param>
+        <param name="ApplyBorders"><b>Objeto</b>opcional. <b>True</b> para aplicar las propiedades de borde del formato especificado. El valor predeterminado es <b>True</b>.</param>
+        <param name="ApplyShading"><b>Objeto</b>opcional. <b>True</b> para aplicar las propiedades de sombreado del formato especificado. El valor predeterminado es <b>True</b>.</param>
+        <param name="ApplyFont"><b>Objeto</b>opcional. <b>True</b> para aplicar las propiedades de fuente del formato especificado. El valor predeterminado es <b>True</b>.</param>
+        <param name="ApplyColor"><b>Objeto</b>opcional. <b>True</b> para aplicar las propiedades de color del formato especificado. El valor predeterminado es <b>True</b>.</param>
+        <param name="ApplyHeadingRows"><b>Objeto</b>opcional. <b>True</b> para aplicar las propiedades de fila de títulos del formato especificado. El valor predeterminado es <b>True</b>.</param>
+        <param name="ApplyLastRow"><b>Objeto</b>opcional. <b>True</b> para aplicar las propiedades de última fila del formato especificado. El valor predeterminado es <b>False</b>.</param>
+        <param name="ApplyFirstColumn"><b>Objeto</b>opcional. <b>True</b> para aplicar las propiedades de primera columna del formato especificado. El valor predeterminado es <b>True</b>.</param>
+        <param name="ApplyLastColumn"><b>Objeto</b>opcional. <b>True</b> para aplicar las propiedades de última columna del formato especificado. El valor predeterminado es <b>False</b>.</param>
+        <param name="AutoFit"><b>Objeto</b>opcional. <b>True</b> para reducir el ancho de las columnas de tabla tanto como sea posibles sin cambiar el texto de la forma se ajusta en las celdas. El valor predeterminado es <b>True</b>.</param>
         <summary>Aplica una presentación previamente definida a una tabla.</summary>
-        <remarks>
-          <para>Los argumentos de este método corresponden a las opciones en el cuadro de diálogo Autoformato de tablas (menú tabla).</para>
-          <para />
-        </remarks>
+        <remarks><para>Los argumentos para este método corresponden a las opciones en el cuadro de diálogo Autoformato de tablas (menú tabla).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFormatType">
@@ -477,11 +440,9 @@
       <Docs>
         <summary>Devuelve el tipo de formato automático que se ha aplicado a la tabla especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>AutoFormatType</b> puede ser cualquiera <see cref="T:Microsoft.Office.Interop.Word.WdTableFormat" /> constante.</para>
-          <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.Table.AutoFormat(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> (método) para aplicar formato automático a una tabla.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propiedad <b>AutoFormatType</b> puede ser cualquier <see cref="T:Microsoft.Office.Interop.Word.WdTableFormat" /> constante.</para>
+          <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.Table.AutoFormat(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para aplicar formato automático a una tabla.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Borders">
@@ -510,7 +471,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Borders" /> colección que representa todos los bordes del objeto especificado.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.Borders" /> colección que representa todos los bordes del objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -543,10 +504,8 @@
       <Docs>
         <summary>Devuelve o establece la cantidad de espacio (en puntos) que se agrega bajo el contenido de una sola celda o de todas las celdas de una tabla.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El valor de la propiedad <b>BottomPadding</b> para una sola celda anula el valor de la propiedad <b>BottomPadding</b> para toda la tabla.</para>
-          <para />
-        </remarks>
+        <remarks><para>El valor de la propiedad <b>BottomPadding</b> para una sola celda anula el valor de la propiedad <b>BottomPadding</b> para toda la tabla.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cell">
@@ -573,11 +532,9 @@
         <Parameter Name="Column" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Row">
-          <b>Integer</b>requerido. Número de la fila de la tabla que va a devolverse. Puede ser un número entero comprendido entre 1 y el número de filas de la tabla.</param>
-        <param name="Column">
-          <b>Integer</b>requerido. Número de la celda de la tabla que va a devolverse. Puede ser un número entero comprendido entre 1 y el número de columnas de la tabla.</param>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Cell" /> objeto que representa una celda de una tabla.</summary>
+        <param name="Row">Required <b>Integer</b>. Número de la fila de la tabla que va a devolverse. Puede ser un número entero comprendido entre 1 y el número de filas de la tabla.</param>
+        <param name="Column">Required <b>Integer</b>. Número de la celda de la tabla que va a devolverse. Puede ser un número entero comprendido entre 1 y el número de columnas de la tabla.</param>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Cell" /> objeto Object que representa una celda de una tabla.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -605,7 +562,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Columns</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Columns" /> colección que representa todas las columnas de tabla en la tabla.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.Columns" /> colección que representa todas las columnas de tabla de la tabla.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -633,11 +590,9 @@
         <Parameter Name="NestedTables" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Separator">
-          <b>Objeto</b>de opcional. El carácter que delimita las columnas convertidas (las marcas de párrafo delimitan las filas convertidas). Puede ser cualquier siguiente <see cref="T:Microsoft.Office.Interop.Word.WdTableFieldSeparator" /> constantes. <b>wdSeparateByCommas</b><b>wdSeparateByDefaultListSeparator</b><b>wdSeparateByParagraphs</b><b>wdSeparateByTabs</b><paramref name="Default" /><b>.</b></param>
-        <param name="NestedTables">
-          <b>Objeto</b>de opcional. <b>True</b> si las tablas anidadas se convierten en texto. Este argumento se omite si <paramref name="Separator" /> no es <b>wdSeparateByParagraphs</b>. El valor predeterminado es <b>True</b>.</param>
-        <summary>Convierte una tabla en texto y devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa el texto delimitado.</summary>
+        <param name="Separator"><b>Objeto</b>opcional. El carácter que delimita las columnas convertidas (las marcas de párrafo delimitan las filas convertidas). Puede ser cualquiera de <see cref="T:Microsoft.Office.Interop.Word.WdTableFieldSeparator" /> las siguientes constantes. <b>wdSeparateByCommas</b> <b>wdSeparateByDefaultListSeparator</b> <b>wdSeparateByParagraphs</b> <b>wdSeparateByTabs</b> <paramref name="Default" /><b>.</b></param>
+        <param name="NestedTables"><b>Objeto</b>opcional. <b>True</b> si las tablas anidadas se convierten en texto. Este argumento se omite si <paramref name="Separator" /> no es <b>wdSeparateByParagraphs</b>. El valor predeterminado es <b>True</b>.</param>
+        <summary>Convierte una tabla en texto y devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa el texto delimitado.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -698,11 +653,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>. </para>
-          <para>El <b>creador</b> (propiedad) se ha diseñado principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>. </para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -756,14 +709,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece un valor de tipo string que contiene una descripción para la tabla especificada.</summary>
-        <value>Una descripción para la tabla especificada.</value>
-        <remarks>
-          <para>De lectura y escritura. Utilice esta propiedad para proporcionar una descripción de texto alternativo para una tabla. Esta propiedad agrega texto al cuadro de texto Descripción en la ficha texto alternativo del cuadro de diálogo Propiedades de la tabla de Microsoft Word 2010.</para>
+        <summary>Obtiene o establece una cadena que contiene una descripción de la tabla especificada.</summary>
+        <value>Descripción de la tabla especificada.</value>
+        <remarks><para>Lectura/escritura. Utilice esta propiedad para proporcionar una descripción de texto alternativa para una tabla. Esta propiedad agrega texto al cuadro de texto Descripción en la ficha texto alternativo del cuadro de diálogo Propiedades de tabla en Microsoft Word 2010.</para>
           <para>
-            <b>Precaución</b>: los exploradores Web muestran texto alternativo mientras se cargan las tablas o si se han perdido. Motores de búsqueda Web utilizan el texto alternativo para ayudar a encontrar páginas Web. El texto alternativo también se usa para prestar asistencia a discapacidades.</para>
-          <para />
-        </remarks>
+            <b>PRECAUCIÓN</b>: los exploradores Web muestran texto alternativo mientras las tablas se cargan o si faltan. Los motores de búsqueda web usan texto alternativo para facilitar la búsqueda de páginas web. También se usa texto alternativo como ayuda para personas con discapacidades.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -794,10 +745,8 @@
       <Docs>
         <summary>Devuelve o establece la etiqueta de identificación para el objeto especificado cuando se guarda el documento actual como una página Web.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Con la excepción de la <see cref="T:Microsoft.Office.Interop.Word.Editor" /> de objetos, puede utilizar una etiqueta como referencia de hipervínculo desde otras páginas Web o desde dentro del documento actual.</para>
-          <para />
-        </remarks>
+        <remarks><para>Con la excepción del <see cref="T:Microsoft.Office.Interop.Word.Editor" /> objeto, puede usar un rótulo como referencia de hipervínculo desde otras páginas web o desde el documento actual.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LeftPadding">
@@ -828,10 +777,8 @@
       <Docs>
         <summary>Devuelve o establece la cantidad de espacio (en puntos) para agregar a la izquierda del contenido de una sola celda o de todas las celdas de una tabla.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El valor de la propiedad <b>LeftPadding</b> para una sola celda anula el valor de la propiedad <b>LeftPadding</b> para toda la tabla.</para>
-          <para />
-        </remarks>
+        <remarks><para>El valor de la propiedad <b>LeftPadding</b> para una sola celda anula el valor de la propiedad <b>LeftPadding</b> para toda la tabla.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NestingLevel">
@@ -859,10 +806,8 @@
       <Docs>
         <summary>Devuelve el nivel de anidamiento de la tabla especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La tabla más exterior tiene un nivel de anidamiento de 1. El nivel de anidamiento de cada tabla anidada sucesivamente es superior de la tabla anterior en uno.</para>
-          <para />
-        </remarks>
+        <remarks><para>La tabla más exterior tiene un nivel 1 de anidamiento. El nivel de anidamiento de cada tabla sucesivamente anidada es superior en uno al de la tabla anterior.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -919,12 +864,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el ancho preferido (en puntos o como un porcentaje del ancho de la ventana) de la celda especificada, celdas, columnas o tabla.</summary>
+        <summary>Devuelve o establece el ancho preferido (en puntos o como un porcentaje del ancho de la ventana) de la celda, celdas, columnas o tabla especificadas.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el <see cref="P:Microsoft.Office.Interop.Word.Table.PreferredWidthType" /> (propiedad) está establecida en <b>wdPreferredWidthPoints</b>, la propiedad <b>PreferredWidth</b> Devuelve o establece el ancho en puntos. Si la propiedad <b>PreferredWidthType</b> está establecida en <b>wdPreferredWidthPercent</b>, la propiedad <b>PreferredWidth</b> Devuelve o establece el ancho como un porcentaje del ancho de la ventana.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la <see cref="P:Microsoft.Office.Interop.Word.Table.PreferredWidthType" /> propiedad se establece en <b>wdPreferredWidthPoints</b>, la propiedad <b>PreferredWidth</b> devuelve o establece el ancho en puntos. Si la propiedad <b>PreferredWidthType</b> está establecida en <b>wdPreferredWidthPercent</b>, la propiedad <b>PreferredWidth</b> Devuelve o establece el ancho como un porcentaje del ancho de la ventana.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PreferredWidthType">
@@ -955,8 +898,7 @@
       <Docs>
         <summary>Devuelve o establece la unidad de medida preferida que se debe utilizar para el ancho de la tabla especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Word.WdPreferredWidthType" />puede ser una de estas constantes <b>WdPreferredWidthType</b> :</para>
           <para>
             <b>wdPreferredWidthAuto</b>
@@ -967,8 +909,7 @@
           <para>
             <b>wdPreferredWidthPoints</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Range">
@@ -994,12 +935,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa la parte de un documento que está incluida en el objeto especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa la parte de un documento incluida en el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para obtener información acerca de la devolución de un intervalo de un documento o la devolución de un intervalo de formas de una colección de formas, vea el <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> (método).</para>
-          <para />
-        </remarks>
+        <remarks><para>Para obtener información sobre la devolución de un intervalo de un documento o la devolución de un intervalo de formas de una <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> colección de formas, vea el método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RightPadding">
@@ -1030,10 +969,8 @@
       <Docs>
         <summary>Devuelve o establece la cantidad de espacio (en puntos) para agregar a la derecha del contenido de una sola celda o de todas las celdas de una tabla.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El valor de la propiedad <b>RightPadding</b> para una sola celda anula el valor de la propiedad <b>RightPadding</b> para toda la tabla.</para>
-          <para />
-        </remarks>
+        <remarks><para>El valor de la propiedad <b>RightPadding</b> para una sola celda anula el valor de la propiedad <b>RightPadding</b> para toda la tabla.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Rows">
@@ -1059,7 +996,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Rows</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Rows" /> colección que representa todas las filas de tabla en una tabla.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.Rows" /> colección que representa todas las filas de tabla de una tabla.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1086,10 +1023,8 @@
       <Parameters />
       <Docs>
         <summary>Selecciona el objeto especificado.</summary>
-        <remarks>
-          <para>Después de utilizar este método, utilice el <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> (propiedad) para trabajar con los elementos seleccionados.</para>
-          <para />
-        </remarks>
+        <remarks><para>Después de utilizar este método, utilice <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> la propiedad para trabajar con los elementos seleccionados.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shading">
@@ -1158,40 +1093,23 @@
         <Parameter Name="LanguageID" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ExcludeHeader">
-          <b>Objeto</b>de opcional. <b>True</b> para excluir el primer encabezado de fila o párrafo de la operación de ordenación. El valor predeterminado es <b>False</b>.</param>
-        <param name="FieldNumber">
-          <b>Objeto</b>de opcional. Los campos para ordenar por. Microsoft Word ordena por <paramref name="FieldNumber" />, a continuación, por <paramref name="FieldNumber2" />y, a continuación, por <paramref name="FieldNumber3" />.</param>
-        <param name="SortFieldType">
-          <b>Objeto</b>de opcional. El criterio de ordenación respectivo tipos para <paramref name="FieldNumber" />, <paramref name="FieldNumber2" />, y <paramref name="FieldNumber3" />. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" /> constantes. <b>UU</b><b>wdSortFieldDate</b><b>wdSortFieldJapanJIS</b><b>wdSortFieldKoreaKS</b><b>wdSortFieldNumeric</b><b>wdSortFieldStroke</b><b>wdSortFieldSyllable</b></param>
-        <param name="SortOrder">
-          <b>Objeto</b>de opcional. El criterio de ordenación a utilizar al ordenar <paramref name="FieldNumber" />, <paramref name="FieldNumber2" />, y <paramref name="FieldNumber3" />. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" /> constantes. <b>wdSortOrderAscending</b><paramref name="default" /><b>wdSortOrderDescending</b></param>
-        <param name="FieldNumber2">
-          <b>Objeto</b>de opcional. Los campos para ordenar por. Word ordena por <paramref name="FieldNumber" />, a continuación, por <paramref name="FieldNumber2" />y, a continuación, por <paramref name="FieldNumber3" />.</param>
-        <param name="SortFieldType2">
-          <b>Objeto</b>de opcional. El criterio de ordenación respectivo tipos para <paramref name="FieldNumber" />, <paramref name="FieldNumber2" />, y <paramref name="FieldNumber3" />. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" /> constantes. <b>UU</b><b>wdSortFieldDate</b><b>wdSortFieldJapanJIS</b><b>wdSortFieldKoreaKS</b><b>wdSortFieldNumeric</b><b>wdSortFieldStroke</b><b>wdSortFieldSyllable</b></param>
-        <param name="SortOrder2">
-          <b>Objeto</b>de opcional. El criterio de ordenación a utilizar al ordenar <paramref name="FieldNumber" />, <paramref name="FieldNumber2" />, y <paramref name="FieldNumber3" />. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" /> constantes. <b>wdSortOrderAscending</b><paramref name="default" /><b>wdSortOrderDescending</b></param>
-        <param name="FieldNumber3">
-          <b>Objeto</b>de opcional. Los campos para ordenar por. Microsoft Word ordena por <paramref name="FieldNumber" />, a continuación, por <paramref name="FieldNumber2" />y, a continuación, por <paramref name="FieldNumber3" />.</param>
-        <param name="SortFieldType3">
-          <b>Objeto</b>de opcional. El criterio de ordenación respectivo tipos para <paramref name="FieldNumber" />, <paramref name="FieldNumber2" />, y <paramref name="FieldNumber3" />. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" /> constantes:<b>UU </b><b>wdSortFieldDate </b><b>wdSortFieldJapanJIS </b><b>wdSortFieldKoreaKS </b><b>wdSortFieldNumeric </b><b>wdSortFieldStroke</b><b> wdSortFieldSyllable</b></param>
-        <param name="SortOrder3">
-          <b>Objeto</b>de opcional. El criterio de ordenación a utilizar al ordenar <paramref name="FieldNumber" />, <paramref name="FieldNumber2" />, y <paramref name="FieldNumber3" />. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" /> constantes. <b>wdSortOrderAscending</b><paramref name="default" /><b>wdSortOrderDescending</b></param>
-        <param name="CaseSensitive">
-          <b>Objeto</b>de opcional. <b>True</b> para ordenar entre mayúsculas y minúsculas. El valor predeterminado es <b>False</b>.</param>
-        <param name="BidiSort">
-          <b>Objeto</b>de opcional. <b>True</b> para ordenar basándose en las reglas de idioma de derecha a izquierda. Este argumento puede no estar disponible, según la compatibilidad con el idioma, por ejemplo, inglés (EE.UU.), que se haya seleccionado o instalado.</param>
-        <param name="IgnoreThe">
-          <b>Objeto</b>de opcional. <b>True</b> para omitir el carácter árabe <paramref name="alef lam" /> al ordenar texto de idiomas de derecha a izquierda. Este argumento puede no estar disponible, según la compatibilidad con el idioma, por ejemplo, inglés (EE.UU.), que se haya seleccionado o instalado.</param>
-        <param name="IgnoreKashida">
-          <b>Objeto</b>de opcional. <b>True</b> para omitir las kashidas al ordenar texto de idiomas de derecha a izquierda. Este argumento puede no estar disponible, según la compatibilidad con el idioma, por ejemplo, inglés (EE.UU.), que se haya seleccionado o instalado.</param>
-        <param name="IgnoreDiacritics">
-          <b>Objeto</b>de opcional. <b>True</b> para omitir caracteres de control bidireccionales al ordenar texto de idiomas de derecha a izquierda. Este argumento puede no estar disponible, según la compatibilidad con el idioma, por ejemplo, inglés (EE.UU.), que se haya seleccionado o instalado.</param>
-        <param name="IgnoreHe">
-          <b>Objeto</b>de opcional. <b>True</b> para omitir el carácter hebreo <paramref name="he" /> al ordenar texto de idiomas de derecha a izquierda. Este argumento puede no estar disponible, según la compatibilidad con el idioma, por ejemplo, inglés (EE.UU.), que se haya seleccionado o instalado.</param>
-        <param name="LanguageID">
-          <b>Objeto</b>de opcional. Especifica el idioma de ordenación. Puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes.</param>
+        <param name="ExcludeHeader"><b>Objeto</b>opcional. <b>True</b> para excluir el primer encabezado de fila o párrafo de la operación de ordenación. El valor predeterminado es <b>False</b>.</param>
+        <param name="FieldNumber"><b>Objeto</b>opcional. Campos por los que se va a ordenar. Microsoft Word ordena por <paramref name="FieldNumber" />, luego por <paramref name="FieldNumber2" />y, a continuación <paramref name="FieldNumber3" />, por.</param>
+        <param name="SortFieldType"><b>Objeto</b>opcional. Los tipos de ordenación <paramref name="FieldNumber" />respectivos <paramref name="FieldNumber2" />para, <paramref name="FieldNumber3" />y. Puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" /> constantes. <b>wdSortFieldAlphanumeric</b> <b>wdSortFieldDate</b> <b>wdSortFieldJapanJIS</b> <b>wdSortFieldKoreaKS</b> <b>wdSortFieldNumeric</b> <b>wdSortFieldStroke</b> <b>wdSortFieldSyllable</b></param>
+        <param name="SortOrder"><b>Objeto</b>opcional. El criterio de ordenación que se va a <paramref name="FieldNumber" />usar <paramref name="FieldNumber2" />al ordenar <paramref name="FieldNumber3" />, y. Puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" /> constantes. <b>wdSortOrderAscending</b> <paramref name="default" /> <b>wdSortOrderDescending</b></param>
+        <param name="FieldNumber2"><b>Objeto</b>opcional. Campos por los que se va a ordenar. Word ordena por <paramref name="FieldNumber" />, luego por <paramref name="FieldNumber2" />y, a continuación <paramref name="FieldNumber3" />, por.</param>
+        <param name="SortFieldType2"><b>Objeto</b>opcional. Los tipos de ordenación <paramref name="FieldNumber" />respectivos <paramref name="FieldNumber2" />para, <paramref name="FieldNumber3" />y. Puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" /> constantes. <b>wdSortFieldAlphanumeric</b> <b>wdSortFieldDate</b> <b>wdSortFieldJapanJIS</b> <b>wdSortFieldKoreaKS</b> <b>wdSortFieldNumeric</b> <b>wdSortFieldStroke</b> <b>wdSortFieldSyllable</b></param>
+        <param name="SortOrder2"><b>Objeto</b>opcional. El criterio de ordenación que se va a <paramref name="FieldNumber" />usar <paramref name="FieldNumber2" />al ordenar <paramref name="FieldNumber3" />, y. Puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" /> constantes. <b>wdSortOrderAscending</b> <paramref name="default" /> <b>wdSortOrderDescending</b></param>
+        <param name="FieldNumber3"><b>Objeto</b>opcional. Campos por los que se va a ordenar. Microsoft Word ordena por <paramref name="FieldNumber" />, luego por <paramref name="FieldNumber2" />y, a continuación <paramref name="FieldNumber3" />, por.</param>
+        <param name="SortFieldType3"><b>Objeto</b>opcional. Los tipos de ordenación <paramref name="FieldNumber" />respectivos <paramref name="FieldNumber2" />para, <paramref name="FieldNumber3" />y. Puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" /> constantes:<b>wdSortFieldAlphanumeric </b> <b>wdSortFieldDate </b> <b>wdSortFieldJapanJIS </b> <b>wdSortFieldKoreaKS </b> <b>wdSortFieldNumeric </b> <b>wdSortFieldStroke</b> <b> wdSortFieldSyllable</b></param>
+        <param name="SortOrder3"><b>Objeto</b>opcional. El criterio de ordenación que se va a <paramref name="FieldNumber" />usar <paramref name="FieldNumber2" />al ordenar <paramref name="FieldNumber3" />, y. Puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" /> constantes. <b>wdSortOrderAscending</b> <paramref name="default" /> <b>wdSortOrderDescending</b></param>
+        <param name="CaseSensitive"><b>Objeto</b>opcional. <b>True</b> para ordenar entre mayúsculas y minúsculas. El valor predeterminado es <b>False</b>.</param>
+        <param name="BidiSort"><b>Objeto</b>opcional. <b>True</b> para ordenar basándose en las reglas de idioma de derecha a izquierda. Este argumento puede no estar disponible, según la compatibilidad con el idioma, por ejemplo, inglés (EE.UU.), que se haya seleccionado o instalado.</param>
+        <param name="IgnoreThe"><b>Objeto</b>opcional. <b>True</b> para omitir el carácter <paramref name="alef lam" /> árabe al ordenar texto de idiomas de derecha a izquierda. Este argumento puede no estar disponible, según la compatibilidad con el idioma, por ejemplo, inglés (EE.UU.), que se haya seleccionado o instalado.</param>
+        <param name="IgnoreKashida"><b>Objeto</b>opcional. <b>True</b> para omitir las kashidas al ordenar texto de idiomas de derecha a izquierda. Este argumento puede no estar disponible, según la compatibilidad con el idioma, por ejemplo, inglés (EE.UU.), que se haya seleccionado o instalado.</param>
+        <param name="IgnoreDiacritics"><b>Objeto</b>opcional. <b>True</b> para omitir caracteres de control bidireccionales al ordenar texto de idiomas de derecha a izquierda. Este argumento puede no estar disponible, según la compatibilidad con el idioma, por ejemplo, inglés (EE.UU.), que se haya seleccionado o instalado.</param>
+        <param name="IgnoreHe"><b>Objeto</b>opcional. <b>True</b> para omitir el carácter <paramref name="he" /> hebreo al ordenar texto de idiomas de derecha a izquierda. Este argumento puede no estar disponible, según la compatibilidad con el idioma, por ejemplo, inglés (EE.UU.), que se haya seleccionado o instalado.</param>
+        <param name="LanguageID"><b>Objeto</b>opcional. Especifica el idioma de ordenación. Puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes.</param>
         <summary>Ordena la tabla especificada.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1217,13 +1135,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ordena las filas de una tabla orden alfanumérico ascendente.</summary>
-        <remarks>
-          <para>La primera fila de la tabla se considera un registro de encabezado y no está incluida en el criterio de ordenación. Usar el <see cref="M:Microsoft.Office.Interop.Word.Table.Sort(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> (método) para incluir el registro de encabezado en una ordenación.</para>
+        <summary>Ordena las filas de la tabla en orden alfanumérico ascendente.</summary>
+        <remarks><para>La primera fila de la tabla se considera un registro de encabezado y no está incluida en el criterio de ordenación. Use el <see cref="M:Microsoft.Office.Interop.Word.Table.Sort(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para incluir el registro de encabezado en una ordenación.</para>
           <para>
-            <b>Nota</b> este método proporciona un formulario simplificado de ordenación diseñado para orígenes de datos de combinación de correspondencia que contienen columnas de datos. Para la mayoría de las tareas de ordenación, utilice la <see cref="M:Microsoft.Office.Interop.Word.Table.Sort(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método.</para>
-          <para />
-        </remarks>
+            <b>Nota:</b>  Este método proporciona un formulario simplificado de ordenación diseñado para orígenes de datos de combinación de correspondencia que contienen columnas de datos. Para la mayoría de las tareas de ordenación, use el <see cref="M:Microsoft.Office.Interop.Word.Table.Sort(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SortDescending">
@@ -1248,12 +1164,10 @@
       <Parameters />
       <Docs>
         <summary>Ordena las filas de una tabla en orden alfanumérico descendente.</summary>
-        <remarks>
-          <para>La primera fila de tabla o párrafo se considera un registro de encabezado y no está incluida en el criterio de ordenación. Usar el <see cref="M:Microsoft.Office.Interop.Word.Table.Sort(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> (método) para incluir el registro de encabezado en una ordenación.</para>
+        <remarks><para>La primera fila de párrafo o tabla se considera un registro de encabezado y no se incluye en la ordenación. Use el <see cref="M:Microsoft.Office.Interop.Word.Table.Sort(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para incluir el registro de encabezado en una ordenación.</para>
           <para>
-            <b>Nota</b> este método proporciona un formulario simplificado de ordenación diseñado para orígenes de datos de combinación de correspondencia que contienen columnas de datos. Para la mayoría de las tareas de ordenación, utilice la <see cref="M:Microsoft.Office.Interop.Word.Table.Sort(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método.</para>
-          <para />
-        </remarks>
+            <b>Nota:</b>  Este método proporciona un formulario simplificado de ordenación diseñado para orígenes de datos de combinación de correspondencia que contienen columnas de datos. Para la mayoría de las tareas de ordenación, use el <see cref="M:Microsoft.Office.Interop.Word.Table.Sort(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SortOld">
@@ -1362,9 +1276,8 @@
         <Parameter Name="BeforeRow" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="BeforeRow">
-          <b>Objeto</b>requerido. La fila que se va a dividir antes de la tabla. Puede ser un número de fila o un <see cref="T:Microsoft.Office.Interop.Word.Row" /> objeto.</param>
-        <summary>Inserta un párrafo vacío inmediatamente sobre la fila especificada de la tabla y devuelve un <see cref="T:Microsoft.Office.Interop.Word.Table" /> objeto que contiene la fila especificada y las filas que la siguen.</summary>
+        <param name="BeforeRow"><b>Objeto</b>requerido. La fila que se va a dividir antes de la tabla. Puede ser un número de fila o <see cref="T:Microsoft.Office.Interop.Word.Row" /> un objeto.</param>
+        <summary>Inserta un párrafo vacío inmediatamente sobre la fila especificada en la tabla y devuelve un <see cref="T:Microsoft.Office.Interop.Word.Table" /> objeto que contiene la fila especificada y las filas que la siguen.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1397,10 +1310,8 @@
       <Docs>
         <summary>Devuelve o establece el estilo para el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para establecer esta propiedad, especifique el nombre local del estilo, un número entero, un <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constante o un valor object que representa el estilo.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para establecer esta propiedad, especifique el nombre local del estilo, un número entero, una <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constante o un objeto Object que representa el estilo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TableDirection">
@@ -1431,18 +1342,16 @@
       <Docs>
         <summary>Devuelve o establece la dirección en que Microsoft Word ordena las celdas en la tabla especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTableDirection" /> puede ser una de las siguientes constantes:</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTableDirection" />puede ser una de las siguientes constantes:</para>
           <para>
             <b>wdTableDirectionLtr</b>
           </para>
           <para>
-            <b>wdTableDirectionRtl</b>
+            <b>Wdtabledirectionltr</b>
           </para>
           <para>Si la propiedad <b>TableDirection</b> se establece en <b>wdTableDirectionLtr</b>, las filas seleccionadas se colocan con la primera columna en la posición más a la izquierda. Si la propiedad <b>TableDirection</b> se establece en <b>wdTableDirectionLtr</b>, las filas seleccionadas se colocan con la primera columna en la posición más a la derecha.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Tables">
@@ -1468,7 +1377,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Tables</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Tables" /> colección que representa todas las tablas de la tabla especificada.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.Tables" /> colección que representa todas las tablas de la tabla especificada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1499,14 +1408,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece un valor de tipo string que contiene un título para la tabla especificada.</summary>
+        <summary>Obtiene o establece una cadena que contiene un título para la tabla especificada.</summary>
         <value>Un título para la tabla especificada.</value>
-        <remarks>
-          <para>De lectura y escritura. Utilice esta propiedad para proporcionar un título de texto alternativo para una tabla. Esta propiedad agrega el texto del título para el cuadro de texto de título en la ficha texto alternativo del cuadro de diálogo Propiedades de la tabla de Microsoft Word 2010.</para>
+        <remarks><para>Lectura/escritura. Utilice esta propiedad para proporcionar un título de texto alternativo para una tabla. Esta propiedad agrega texto de título al cuadro de texto título en la ficha texto alternativo del cuadro de diálogo Propiedades de tabla en Microsoft Word 2010.</para>
           <para>
-            <b>Precaución</b>: los exploradores Web muestran texto alternativo mientras se cargan las tablas o si se han perdido. Motores de búsqueda Web utilizan el texto alternativo para ayudar a encontrar páginas Web. El texto alternativo también se usa para prestar asistencia a discapacidades.</para>
-          <para />
-        </remarks>
+            <b>PRECAUCIÓN</b>: los exploradores Web muestran texto alternativo mientras las tablas se cargan o si faltan. Los motores de búsqueda web usan texto alternativo para facilitar la búsqueda de páginas web. También se usa texto alternativo como ayuda para personas con discapacidades.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TopPadding">
@@ -1537,10 +1444,8 @@
       <Docs>
         <summary>Devuelve o establece la cantidad de espacio (en puntos) para agregar por encima del contenido de una sola celda o de todas las celdas de una tabla.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El valor de la propiedad <b>TopPadding</b> para una sola celda anula el valor de la propiedad <b>TopPadding</b> para toda la tabla.</para>
-          <para />
-        </remarks>
+        <remarks><para>El valor de la propiedad <b>TopPadding</b> para una sola celda anula el valor de la propiedad <b>TopPadding</b> para toda la tabla.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Uniform">
@@ -1566,8 +1471,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si todas las filas de una tabla tienen el mismo número de columnas.</summary>
+        <summary><b>True</b> si todas las filas de una tabla tienen el mismo número de columnas.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1594,10 +1498,8 @@
       <Parameters />
       <Docs>
         <summary>Actualiza la tabla con las características de un formato de tabla predefinido.</summary>
-        <remarks>
-          <para>Si se aplica un formato de tabla con <see cref="M:Microsoft.Office.Interop.Word.Table.AutoFormat(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> y, a continuación, inserta filas y columnas, en la tabla ya no puede coincidir con el aspecto predefinido. <b>UpdateAutoFormat</b> restaura el formato.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si aplica un formato de tabla con <see cref="M:Microsoft.Office.Interop.Word.Table.AutoFormat(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> y, a continuación, inserta filas y columnas, es posible que la tabla ya no contenga el aspecto predefinido. <b>UpdateAutoFormat</b> restaura el formato.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

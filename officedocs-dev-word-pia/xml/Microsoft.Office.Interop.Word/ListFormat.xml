@@ -1,13 +1,5 @@
 <Type Name="ListFormat" FullName="Microsoft.Office.Interop.Word.ListFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="bedc659e05e0c224f2395785ec902aa8914376ed" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674991" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4ae3a6e1fbf76ffb21d88db92775f307cfb0ece9" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146580" /></Metadata><TypeSignature Language="C#" Value="public interface ListFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListFormat" />
@@ -27,15 +19,13 @@
   </Attributes>
   <Docs>
     <summary>Representa los atributos de formato de lista que pueden aplicarse a los párrafos de un intervalo.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.Range.ListFormat" /> propiedad para devolver el <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objeto para un intervalo.</para>
-      <para>Es una forma sencilla de aplicar el formato de lista usar el <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyBulletDefault(System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyNumberDefault(System.Object@)" />, y <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyOutlineNumberDefault(System.Object@)" /> métodos que corresponden, respectivamente, al primer formato de lista (excluido Ninguno) de cada ficha viñetas y cuadro de diálogo Numeración.</para>
-      <para>Para aplicar un formato que no sea el predeterminado, utilice la <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> método, que le permite especificar el formato de lista (plantilla de lista) que desea aplicar.</para>
-      <para>Usar la <see cref="P:Microsoft.Office.Interop.Word.ListFormat.List" /> o <see cref="P:Microsoft.Office.Interop.Word.ListFormat.ListTemplate" /> propiedad para devolver la lista o la plantilla de lista desde el primer párrafo del intervalo especificado.</para>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.Range.ListFormat" /> (propiedad) de un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto para tener acceso a la lista de propiedades y métodos disponibles para el intervalo especificado de formato.</para>
-      <para>Sin embargo, si ya hay una lista definida en el documento, se puede tener acceso a un objeto de lista mediante el uso de la <see cref="P:Microsoft.Office.Interop.Word._Document.Lists" /> (propiedad).</para>
-      <para />
-    </remarks>
+    <remarks><para>Use la <see cref="P:Microsoft.Office.Interop.Word.Range.ListFormat" /> propiedad para devolver el <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objeto de un intervalo.</para>
+      <para>Una manera fácil de aplicar el formato de lista es usar <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyBulletDefault(System.Object@)" />los <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyNumberDefault(System.Object@)" />métodos, <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyOutlineNumberDefault(System.Object@)" /> y, que corresponden, respectivamente, al primer formato de lista (excluido ninguno) de cada ficha en el cuadro de diálogo Numeración y viñetas.</para>
+      <para>Para aplicar un formato que no sea el predeterminado, use el <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> método, que permite especificar el formato de lista (plantilla de lista) que desea aplicar.</para>
+      <para>Use la <see cref="P:Microsoft.Office.Interop.Word.ListFormat.List" /> propiedad <see cref="P:Microsoft.Office.Interop.Word.ListFormat.ListTemplate" /> o para devolver la lista o la plantilla de lista desde el primer párrafo del intervalo especificado.</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.Range.ListFormat" /> propiedad de un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto para tener acceso a las propiedades y los métodos de formato de lista disponibles para el intervalo especificado.</para>
+      <para>Sin embargo, si ya hay una lista definida en el documento, puede tener acceso a un objeto List mediante la <see cref="P:Microsoft.Office.Interop.Word._Document.Lists" /> propiedad.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,9 +78,8 @@
         <Parameter Name="DefaultListBehavior" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="DefaultListBehavior">
-          <b>Objeto</b>de opcional. Establece un valor que especifica si Microsoft Word utiliza el formato orientado al Web es nueva para una mejor presentación de lista. Puede ser cualquiera de las siguientes constantes: <b>wdWord8ListBehavior</b> (formato compatible con Microsoft Word 97) o <b>wdWord9ListBehavior</b> (formato orientado al Web). Por motivos de compatibilidad, la constante predeterminada es <b>wdWord8ListBehavior</b>, pero en nuevos procedimientos que se debe utilizar <b>wdWord9ListBehavior</b> para aprovechar orientado al Web formato mejorado con sangría y de varios niveles listas.</param>
-        <summary>Agrega viñetas y formato a los párrafos del intervalo especificado <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objeto. Si a los párrafos ya se les ha dado formato con viñetas, este método quita las viñetas y el formato.</summary>
+        <param name="DefaultListBehavior"><b>Objeto</b>opcional. Establece un valor que especifica si Microsoft Word utiliza el formato orientado al Web es nueva para una mejor presentación de lista. Puede ser cualquiera de las siguientes constantes: <b>wdWord8ListBehavior</b> (formato compatible con Microsoft Word 97) o <b>wdWord9ListBehavior</b> (formato orientado al Web). Por motivos de compatibilidad, la constante predeterminada es <b>wdWord8ListBehavior</b>, pero en nuevos procedimientos que se debe utilizar <b>wdWord9ListBehavior</b> para aprovechar orientado al Web formato mejorado con sangría y de varios niveles listas.</param>
+        <summary>Agrega viñetas y formato a los párrafos del intervalo del objeto especificado <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> . Si a los párrafos ya se les ha dado formato con viñetas, este método quita las viñetas y el formato.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,14 +135,11 @@
         <Parameter Name="DefaultListBehavior" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ListTemplate">Requiere <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> objeto. Plantilla de lista que se va a aplicar.</param>
-        <param name="ContinuePreviousList">
-          <b>Objeto</b>de opcional. <b>True</b> para continuar la numeración de la lista anterior; <b>False</b> para iniciar una nueva lista.</param>
-        <param name="ApplyTo">
-          <b>Objeto</b>de opcional. La parte de la lista que se pueden aplicar a la plantilla de lista. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.WdListApplyTo" /> constantes: <b>wdListApplyToSelection</b>, <b>wdListApplyToWholeList</b>o <b>wdListApplyToThisPointForward</b>.</param>
-        <param name="DefaultListBehavior">
-          <b>Objeto</b>de opcional. Establece un valor que especifica si Microsoft Word utiliza el formato orientado al Web es nueva para una mejor presentación de lista. Puede ser cualquiera de las siguientes constantes: <b>wdWord8ListBehavior</b> (formato compatible con Microsoft Word 97) o <b>wdWord9ListBehavior</b> (formato orientado al Web). Por motivos de compatibilidad, la constante predeterminada es <b>wdWord8ListBehavior</b>, pero en nuevos procedimientos que se debe utilizar <b>wdWord9ListBehavior</b> para aprovechar orientado al Web formato mejorado con sangría y de varios niveles listas.</param>
-        <summary>Se aplica un conjunto de características de formato de lista especificado <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objeto.</summary>
+        <param name="ListTemplate">Objeto <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> requerido. Plantilla de lista que se va a aplicar.</param>
+        <param name="ContinuePreviousList"><b>Objeto</b>opcional. <b>True</b> para continuar la numeración de la lista anterior; <b>False</b> para iniciar una nueva lista.</param>
+        <param name="ApplyTo"><b>Objeto</b>opcional. La parte de la lista que se pueden aplicar a la plantilla de lista. Puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdListApplyTo" /> constantes: <b>wdListApplyToSelection</b>, <b>wdListApplyToWholeList</b>o <b>wdListApplyToThisPointForward</b>.</param>
+        <param name="DefaultListBehavior"><b>Objeto</b>opcional. Establece un valor que especifica si Microsoft Word utiliza el formato orientado al Web es nueva para una mejor presentación de lista. Puede ser cualquiera de las siguientes constantes: <b>wdWord8ListBehavior</b> (formato compatible con Microsoft Word 97) o <b>wdWord9ListBehavior</b> (formato orientado al Web). Por motivos de compatibilidad, la constante predeterminada es <b>wdWord8ListBehavior</b>, pero en nuevos procedimientos que se debe utilizar <b>wdWord9ListBehavior</b> para aprovechar orientado al Web formato mejorado con sangría y de varios niveles listas.</param>
+        <summary>Aplica un conjunto de características de formato de lista al objeto <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> especificado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,10 +202,9 @@
       </Parameters>
       <Docs>
         <param name="ListTemplate">Plantilla de lista que se va a aplicar.</param>
-        <param name="ContinuePreviousList">
-          <b>True</b> para continuar la numeración de la lista anterior; <b>False</b> para iniciar una nueva lista.</param>
-        <param name="ApplyTo">La parte de la lista que se pueden aplicar a la plantilla de lista. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.WdListApplyTo" /> constantes: <see cref="F:Microsoft.Office.Interop.Word.WdListApplyTo.wdListApplyToSelection" />, <see cref="F:Microsoft.Office.Interop.Word.WdListApplyTo.wdListApplyToThisPointForward" />, o <see cref="F:Microsoft.Office.Interop.Word.WdListApplyTo.wdListApplyToWholeList" />.</param>
-        <param name="DefaultListBehavior">Establece un valor que especifica si Microsoft Word utiliza el formato orientado al Web es nueva para una mejor presentación de lista. Puede ser cualquiera de los siguientes <see cref="T:Microsoft.Office.Interop.Word.WdDefaultListBehavior" /> constantes: <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" /> (utilizar formato compatible con Microsoft Word 97) o <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> (usar formato orientado al Web). Por motivos de compatibilidad, la constante predeterminada es <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" />, pero en nuevos procedimientos que se debe usar <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> para aprovechar el formato mejorado orientado al Web con listas de respeto para aplicar sangría y de varios niveles.</param>
+        <param name="ContinuePreviousList"><b>True</b> para continuar la numeración de la lista anterior; <b>False</b> para iniciar una nueva lista.</param>
+        <param name="ApplyTo">La parte de la lista que se pueden aplicar a la plantilla de lista. Puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdListApplyTo" /> constantes: <see cref="F:Microsoft.Office.Interop.Word.WdListApplyTo.wdListApplyToSelection" />, <see cref="F:Microsoft.Office.Interop.Word.WdListApplyTo.wdListApplyToThisPointForward" />o. <see cref="F:Microsoft.Office.Interop.Word.WdListApplyTo.wdListApplyToWholeList" /></param>
+        <param name="DefaultListBehavior">Establece un valor que especifica si Microsoft Word utiliza el formato orientado al Web es nueva para una mejor presentación de lista. Puede ser cualquiera de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdDefaultListBehavior" /> constantes: <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" /> (usar formato compatible con Microsoft Word 97) o <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> (usar formato orientado al Web). Por motivos de compatibilidad, la constante predeterminada <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord8ListBehavior" />es, pero en nuevos procedimientos debe usarse <see cref="F:Microsoft.Office.Interop.Word.WdDefaultListBehavior.wdWord9ListBehavior" /> para aprovechar el formato orientado al Web mejorado con respecto a las sangrías y las listas multinivel.</param>
         <param name="ApplyLevel">Nivel al que se aplica la plantilla de lista.</param>
         <summary>Aplica un conjunto de características de formato de listas; opcionalmente para un nivel especificado.</summary>
         <remarks>To be added.</remarks>
@@ -247,9 +232,8 @@
         <Parameter Name="DefaultListBehavior" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="DefaultListBehavior">
-          <b>Objeto</b>de opcional. Establece un valor que especifica si Microsoft Word utiliza el formato orientado al Web es nueva para una mejor presentación de lista. Puede ser cualquiera de las siguientes constantes: <b>wdWord8ListBehavior</b> (formato compatible con Microsoft Word 97) o <b>wdWord9ListBehavior</b> (formato orientado al Web). Por motivos de compatibilidad, la constante predeterminada es <b>wdWord8ListBehavior</b>, pero en nuevos procedimientos que se debe utilizar <b>wdWord9ListBehavior</b> para aprovechar orientado al Web formato mejorado con sangría y de varios niveles listas.</param>
-        <summary>Agrega el valor predeterminado la numeración de esquema a los párrafos del intervalo especificado <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objeto. Si los párrafos ya tienen formato de lista numerada, este método quita los números y el formato.</summary>
+        <param name="DefaultListBehavior"><b>Objeto</b>opcional. Establece un valor que especifica si Microsoft Word utiliza el formato orientado al Web es nueva para una mejor presentación de lista. Puede ser cualquiera de las siguientes constantes: <b>wdWord8ListBehavior</b> (formato compatible con Microsoft Word 97) o <b>wdWord9ListBehavior</b> (formato orientado al Web). Por motivos de compatibilidad, la constante predeterminada es <b>wdWord8ListBehavior</b>, pero en nuevos procedimientos que se debe utilizar <b>wdWord9ListBehavior</b> para aprovechar orientado al Web formato mejorado con sangría y de varios niveles listas.</param>
+        <summary>Agrega el esquema de numeración predeterminado a los párrafos del intervalo del objeto especificado <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> . Si los párrafos ya tienen formato de lista numerada, este método quita los números y el formato.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,13 +287,10 @@
         <Parameter Name="DefaultListBehavior" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="DefaultListBehavior">
-          <b>Objeto</b>de opcional. Establece un valor que especifica si Microsoft Word utiliza el formato orientado al Web es nueva para una mejor presentación de lista. Puede ser cualquiera de las siguientes constantes: <b>wdWord8ListBehavior</b> (formato compatible con Microsoft Word 97) o <b>wdWord9ListBehavior</b> (formato orientado al Web). Por motivos de compatibilidad, la constante predeterminada es <b>wdWord8ListBehavior</b>, pero en nuevos procedimientos que se debe utilizar <b>wdWord9ListBehavior</b> para aprovechar orientado al Web formato mejorado con sangría y de varios niveles listas.</param>
-        <summary>Agrega el esquema numerado predeterminado a los párrafos del intervalo especificado <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objeto. Si los párrafos ya tienen el formato de lista de esquema numerado, este método quita los números y el formato.</summary>
-        <remarks>
-          <para>Este método no quita estilos de título integrados que se han aplicado a los párrafos.</para>
-          <para />
-        </remarks>
+        <param name="DefaultListBehavior"><b>Objeto</b>opcional. Establece un valor que especifica si Microsoft Word utiliza el formato orientado al Web es nueva para una mejor presentación de lista. Puede ser cualquiera de las siguientes constantes: <b>wdWord8ListBehavior</b> (formato compatible con Microsoft Word 97) o <b>wdWord9ListBehavior</b> (formato orientado al Web). Por motivos de compatibilidad, la constante predeterminada es <b>wdWord8ListBehavior</b>, pero en nuevos procedimientos que se debe utilizar <b>wdWord9ListBehavior</b> para aprovechar orientado al Web formato mejorado con sangría y de varios niveles listas.</param>
+        <summary>Agrega el esquema numerado predeterminado a los párrafos del intervalo del objeto especificado <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> . Si los párrafos ya tienen el formato de lista de esquema numerado, este método quita los números y el formato.</summary>
+        <remarks><para>Este método no quita los estilos de títulos integrados que hayan sido aplicados a los párrafos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyOutlineNumberDefaultOld">
@@ -362,13 +343,11 @@
         <Parameter Name="ListTemplate" Type="Microsoft.Office.Interop.Word.ListTemplate" />
       </Parameters>
       <Docs>
-        <param name="ListTemplate">Requiere <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> objeto. Plantilla de lista que se ha aplicado a los párrafos anteriores del documento.</param>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.WdContinue" /> constante (<b>wdContinueDisabled</b>, <b>wdResetList</b>o <b>wdContinueList</b>) que indica si se puede continuar con el formato de la lista anterior.</summary>
+        <param name="ListTemplate">Objeto <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> requerido. Plantilla de lista que se ha aplicado a los párrafos anteriores del documento.</param>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.WdContinue" /> constante (<b>wdContinueDisabled</b>, <b>wdResetList</b>o <b>wdContinueList</b>) que indica si se puede continuar con el formato de la lista anterior.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Este método devuelve el estado de la continuar la lista anterior y reiniciar opciones de numeración de las viñetas y numeración de cuadro de diálogo para un formato de lista especificado. Para cambiar la configuración de estas opciones, establezca la <paramref name="ContinuePreviousList" /> argumento de la <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> (método).</para>
-          <para />
-        </remarks>
+        <remarks><para>Este método devuelve el estado de las opciones continuar la lista anterior y reiniciar la numeración en el cuadro de diálogo Numeración y viñetas para un formato de lista especificado. Para cambiar la configuración de estas opciones, establezca el <paramref name="ContinuePreviousList" /> argumento del <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertNumbersToText">
@@ -393,15 +372,12 @@
         <Parameter Name="NumberType" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NumberType">
-          <b>Objeto</b>de opcional. El tipo de número que se va a convertir. Puede ser cualquiera de los <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> constantes.</param>
-        <summary>Cambia los números de lista y los campos LISTNUM especificado <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objeto al texto.</summary>
-        <remarks>
-          <para>Hay dos tipos de números: números (<b>wdNumberParagraph</b>), que puede agregar a los párrafos seleccionando una plantilla de viñetas y numeración de cuadro de diálogo; preestablecidos y campos LISTNUM (<b>wdNumberListNum</b>), que le permiten agregar más de un número por párrafo.</para>
-          <para>El método <b>ConvertNumbersToText</b> es útil si desea trabajar con un documento en otra aplicación y esa aplicación no reconoce el formato de lista ni los campos LISTNUM.</para>
-          <para>Después de convertir números de lista al texto, puede manipular ellos ya no está en una lista.</para>
-          <para />
-        </remarks>
+        <param name="NumberType"><b>Objeto</b>opcional. Tipo de número que se va a convertir. Puede ser cualquiera de las <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> constantes.</param>
+        <summary>Cambia a texto los números de lista y los campos <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> LISTNUM del objeto especificado.</summary>
+        <remarks><para>Hay dos tipos de números: números preestablecidos (<b>wdNumberParagraph</b>), que se pueden agregar a los párrafos seleccionando una plantilla en el cuadro de diálogo Numeración y viñetas; y campos LISTNUM (<b>wdNumberListNum</b>), que permiten agregar más de un número por párrafo.</para>
+          <para>El método <b>ConvertNumbersToText</b> es útil si desea trabajar con un documento en otra aplicación y esa aplicación no reconoce el formato de lista o los campos LISTNUM.</para>
+          <para>Una vez que haya convertido números de lista en texto, ya no podrá manipularlos en una lista.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CountNumberedItems">
@@ -427,17 +403,13 @@
         <Parameter Name="Level" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NumberType">
-          <b>Objeto</b>de opcional. El tipo de números a contarse. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> constantes: <b>wdNumberParagraph</b>, <b>wdNumberListNum</b>o <b>wdNumberAllNumbers</b>. El valor predeterminado es <b>wdNumberAllNumbers</b>.</param>
-        <param name="Level">
-          <b>Objeto</b>de opcional. Un número que corresponde en el nivel de numeración que desea contar. Si este argumento se omite, se cuentan todos los niveles.</param>
+        <param name="NumberType"><b>Objeto</b>opcional. El tipo de números a contarse. Puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" /> constantes: <b>wdNumberParagraph</b>, <b>wdNumberListNum</b>o <b>wdNumberAllNumbers</b>. El valor predeterminado es <b>wdNumberAllNumbers</b>.</param>
+        <param name="Level"><b>Objeto</b>opcional. Un número que corresponde en el nivel de numeración que desea contar. Si este argumento se omite, se cuentan todos los niveles.</param>
         <summary>Devuelve el número de elementos con viñetas o números y campos LISTNUM del objeto <b>ListFormat</b> especificado.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Los elementos con viñetas se cuentan cuando se especifica <b>wdNumberParagraph</b> o <b>wdNumberAllNumbers</b> (el valor predeterminado) para <paramref name="NumberType" />.</para>
-          <para>Hay dos tipos de números: números preestablecidos (<b>wdNumberParagraph</b>), que puede agregar a los párrafos seleccionando una plantilla de viñetas y numeración de cuadro de diálogo; y los campos LISTNUM (<b>wdNumberListNum</b>), que le permiten agregar más de uno número por párrafo.</para>
-          <para />
-        </remarks>
+        <remarks><para>Los elementos con viñetas se cuentan cuando se especifica <b>wdNumberParagraph</b> o <b>wdNumberAllNumbers</b> (el valor predeterminado <paramref name="NumberType" />) para.</para>
+          <para>Hay dos tipos de números: números preestablecidos (<b>wdNumberParagraph</b>), que se pueden agregar a los párrafos seleccionando una plantilla en el cuadro de diálogo Numeración y viñetas; y campos LISTNUM (<b>wdNumberListNum</b>), que permiten agregar más de un número por párrafo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -465,9 +437,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="List">
@@ -493,12 +465,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.List</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.List" /> object que representa la primera lista con formato contenida en el especificado <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objeto.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.List" /> objeto que representa la primera lista con formato contenida en <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el primer párrafo del intervalo del objeto <b>ListFormat</b> no tiene el formato de una lista, la propiedad <b>List</b> devuelve nothing.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si el primer párrafo del intervalo del objeto <b>ListFormat</b> no tiene formato de lista, la propiedad <b>List</b> no devuelve nada.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListIndent">
@@ -522,7 +492,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Aumenta el nivel de lista de los párrafos del intervalo especificado <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objeto, en incrementos de un nivel.</summary>
+        <summary>Aumenta el nivel de lista de los párrafos del intervalo del objeto especificado <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> , en incrementos de un nivel.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -552,7 +522,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el nivel de lista para el primer párrafo del documento especificado <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objeto.</summary>
+        <summary>Devuelve o establece el nivel de lista para el primer párrafo del objeto <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -578,7 +548,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Disminuye el nivel de lista de los párrafos del intervalo especificado <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objeto, en incrementos de un nivel.</summary>
+        <summary>Reduce el nivel de lista de los párrafos del intervalo del objeto especificado <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> , en incrementos de un nivel.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -605,7 +575,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto que representa la imagen utilizada como viñeta en una lista con viñetas de imagen.</summary>
+        <summary>Devuelve el <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto que representa la imagen utilizada como viñeta en una lista de viñetas de imagen.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -633,13 +603,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una <b>cadena</b> que representa la apariencia del valor de lista del primer párrafo del intervalo especificado <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objeto. Por ejemplo, el segundo párrafo de una lista alfabética devolvería B.</summary>
+        <summary>Devuelve una <b>cadena</b> que representa la apariencia del valor de lista del primer párrafo del intervalo del objeto especificado <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> . Por ejemplo, el segundo párrafo de una lista alfabética devolvería B.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para obtener una lista con viñetas, deberá aplicar la fuente correcta para ver la cadena. La mayoría de las viñetas utiliza la fuente Symbol o Wingdings.</para>
-          <para>Usar la <see cref="P:Microsoft.Office.Interop.Word.ListFormat.ListValue" /> propiedad para devolver el valor numérico del párrafo.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para una lista con viñetas, tendrá que aplicar la fuente correcta para ver la cadena. La mayoría de las viñetas utilizan la fuente Symbol o Wingdings.</para>
+          <para>Use la <see cref="P:Microsoft.Office.Interop.Word.ListFormat.ListValue" /> propiedad para devolver el valor numérico del párrafo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListTemplate">
@@ -665,13 +633,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object que representa el formato especificado de la lista <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objeto.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> objeto Object que representa el formato de lista para <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Una plantilla de lista incluye todo el formato que define una lista determinada. Cada uno de los siete formatos (excluido Ninguno) encontrado en cada una de las fichas de las viñetas y numeración de cuadro de diálogo (menú Formato) corresponde a una plantilla de lista. Plantillas y documentos también pueden contener colecciones de plantillas de lista.</para>
+        <remarks><para>Una plantilla de lista incluye todo el formato que define una lista concreta. Cada uno de los siete formatos (excepto Ninguno) que se encuentra en cada una de las fichas del cuadro de diálogo Numeración y viñetas (menú Formato) corresponde a una plantilla de lista. Los documentos y las plantillas también pueden contener colecciones de plantillas de lista.</para>
           <para>Si el primer párrafo del intervalo del objeto <b>ListFormat</b> no tiene el formato de una lista, la propiedad <b>ListTemplate</b> devuelve <b>Nothing</b>.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListType">
@@ -697,12 +663,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdListType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el tipo de listas incluidas en el intervalo especificado <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objeto.</summary>
+        <summary>Devuelve el tipo de listas que se encuentran en el intervalo del objeto especificado <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> .</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>ListType</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdListType" /> constantes. La constante <b>wdListListNumOnly</b> hace referencia a campos LISTNUM, que son los campos que se pueden agregar al texto de un párrafo.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propiedad <b>ListType</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdListType" /> constantes. La constante <b>wdListListNumOnly</b> hace referencia a campos LISTNUM, que son campos que pueden agregarse al texto de un párrafo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListValue">
@@ -728,15 +692,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el valor numérico del primer párrafo del intervalo especificado <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objeto. Por ejemplo, la propiedad <b>ListValue</b> aplicada al segundo párrafo de una lista alfabética devolvería 2.</summary>
+        <summary>Devuelve el valor numérico del primer párrafo del intervalo para el objeto especificado <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> . Por ejemplo, la propiedad <b>ListValue</b> que se aplica al segundo párrafo de una lista alfabética devolverá un 2.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.ListFormat.ListString" /> (propiedad) para devolver una cadena que representa el valor de la lista.</para>
+        <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.ListFormat.ListString" /> propiedad para devolver una cadena que representa el valor de lista.</para>
           <para>Si el objeto <b>ListFormat</b> se aplica a una lista con viñetas, la propiedad <b>ListValue</b> devuelve 1.</para>
-          <para>Si el objeto <b>ListFormat</b> se aplica a una lista de esquema numerado, la propiedad <b>ListValue</b> devuelve el valor numérico del primer párrafo que se produce en la secuencia de párrafos en el mismo nivel. Por ejemplo, si el primer párrafo de un objeto <b>ListFormat</b> especificado está numerado como "A.2", <b>ListValue</b> devolverá un 2.</para>
-          <para>Esta propiedad no devolverá el valor de un campo LISTNUM.</para>
-          <para />
-        </remarks>
+          <para>Si el objeto <b>ListFormat</b> se aplica a una lista de esquema numerado, la propiedad <b>ListValue</b> devuelve el valor numérico del primer párrafo de forma que aparece en la secuencia de párrafos en el mismo nivel. Por ejemplo, si el primer párrafo de un objeto <b>ListFormat</b> especificado se ha numerado como "a. 2", <b>ListValue</b> devolverá 2.</para>
+          <para>Esta propiedad no devolverá el valor de ningún campo LISTNUM.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -790,11 +752,9 @@
       </Parameters>
       <Docs>
         <param name="NumberType">Opcional <see cref="T:Microsoft.Office.Interop.Word.WdNumberType" />. Tipo de número que va a quitarse.</param>
-        <summary>Quita los números o viñetas de especificado <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objeto.</summary>
-        <remarks>
-          <para>Cuando se aplica este método a una <see cref="T:Microsoft.Office.Interop.Word.List" /> de objetos, quita los números sólo de los párrafos de la lista especificada, salta cualquier de los números intercalados de otras listas. Si este método se aplica al objeto <b>ListFormat</b> para un intervalo de texto, se quitan todos los números de todas las listas del intervalo.</para>
-          <para />
-        </remarks>
+        <summary>Quita los números o viñetas del <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objeto especificado.</summary>
+        <remarks><para>Cuando se aplica este método a un <see cref="T:Microsoft.Office.Interop.Word.List" /> objeto, se quitan los números sólo de los párrafos de la lista especificada y se omiten los números intercalados de otras listas. Si este método se aplica al objeto <b>ListFormat</b> para un intervalo de texto, se quitan todos los números de todas las listas del intervalo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SingleList">
@@ -820,8 +780,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el texto especificado <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objeto sólo contiene una lista.</summary>
+        <summary><b>True</b> si el objeto <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> especificado contiene una sola lista.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -849,8 +808,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si todo el <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objeto utiliza la misma plantilla de lista.</summary>
+        <summary><b>True</b> si el objeto <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> completo utiliza la misma plantilla de lista.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="LegendEntry" FullName="Microsoft.Office.Interop.Word.LegendEntry">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a77193ef54e946d0aa957ead0685d6bff35e8048" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675599" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface LegendEntry" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="059f71dc3edd40069b1147fe21cabdefa3e8042d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146629" /></Metadata><TypeSignature Language="C#" Value="public interface LegendEntry" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LegendEntry" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.LegendEntry" />
   <TypeSignature Language="VB.NET" Value="Public Interface LegendEntry" />
@@ -27,12 +19,14 @@
   </Attributes>
   <Docs>
     <summary>Representa una entrada de leyenda de un gráfico.</summary>
-    <remarks>
-      <para>El <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> objeto es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> colección. El <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> colección contiene todos los <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> objetos de la leyenda.</para>
-      <para>Cada entrada de leyenda consta de dos partes: el texto de la entrada, que es el nombre de la serie asociada con la entrada de leyenda; y un marcador de entrada, que conecta visualmente la entrada de leyenda con su serie o línea de tendencia en el gráfico. Propiedades de formato para el marcador de entrada y su serie o línea de tendencia están contenidas en el <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> objeto.</para> No se puede cambiar 
-      <para>el texto de un elemento de leyenda. <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> los objetos admiten formato de fuente y pueden eliminarse. Ningún formato de trama es compatible con las entradas de leyenda. La posición y el tamaño de las entradas es fija.</para><para>No hay ninguna forma directa de devolver la serie o línea de tendencia correspondiente a la entrada de leyenda.</para><para>Después de que se han eliminado las entradas de leyenda, el único modo de restaurarlas es quitar y volver a crear la leyenda que las contenía, estableciendo la <see cref="P:Microsoft.Office.Interop.Word.Chart.HasLegend" /> (propiedad) para el gráfico en <b>False</b> y, a continuación, volver a <b>True</b>.</para><para /></remarks>
-    <example>Uso de <para><see cref="T:Microsoft.Office.Interop.Word.LegendEntries" />(<paramref name="index" />), donde <paramref name="index" /> es el número de índice de entrada de leyenda, para devolver un solo <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> objeto. No se puede devolver las entradas de leyenda por nombre.</para> Número de 
-      <para>el índice representa la posición de la entrada de leyenda de la leyenda. LegendEntries (1) está en la parte superior de la leyenda y LegendEntries (LegendEntries.Count) está en la parte inferior. </para></example>
+    <remarks><para>El <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> objeto es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> colección. La <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> colección contiene todos los <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> objetos de la leyenda.</para>
+      <para>Cada entrada de leyenda consta de dos partes: el texto de la entrada, que es el nombre de la serie correspondiente a la entrada de leyenda; y un marcador de entrada, que conecta visualmente la entrada de leyenda con la serie o línea de tendencia correspondiente del gráfico. Las propiedades de formato del marcador de entrada y su serie o línea de tendencia correspondiente <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> están contenidas en el objeto.</para>
+      <para>No se puede cambiar el texto de un elemento de leyenda. <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />los objetos admiten el formato de fuente y pueden eliminarse. Ningún formato de trama se admite para las entradas de leyenda. La posición y el tamaño de las entradas son fijos.</para>
+      <para>No hay una forma directa de devolver la serie o la línea de tendencia correspondiente a la entrada de leyenda.</para>
+      <para>Después de eliminar las entradas de leyenda, la única forma de restaurarlas es quitar y volver a crear la leyenda que las contenía, <see cref="P:Microsoft.Office.Interop.Word.Chart.HasLegend" /> estableciendo la propiedad del gráfico en <b>false</b> y, a continuación, otra vez en <b>true</b>.</para>
+      <para> </para></remarks>
+    <example><para>Use <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" />(<paramref name="index" />), donde <paramref name="index" /> es el número de índice de la entrada de leyenda, <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> para devolver un solo objeto. No se puede devolver las entradas de leyenda por nombre.</para>
+      <para>El número de índice representa la posición de la entrada en la leyenda. LegendEntries(1) está en la parte superior de la leyenda y LegendEntries(LegendEntries.Count) está en la parte inferior. </para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,10 +52,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa la aplicación Microsoft Word. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto). Solo lectura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Cuando se usa sin un calificador de objeto, esta <see cref="T:Microsoft.Office.Interop.Word._Application" /> propiedad devuelve un objeto que representa la aplicación Microsoft Word. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto). Solo lectura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,11 +89,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el texto del objeto cambia el tamaño de fuente cuando cambia el tamaño del objeto. El valor predeterminado es <b>True</b>.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary><b>True</b> si el tamaño de la fuente de texto del objeto cambia cuando cambia el tamaño del objeto. El valor predeterminado es <b>True</b>.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,14 +117,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. <b>Integer</b> de sólo lectura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, la propiedad <b>Creator</b> devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, consulte la referencia del lenguaje de ayuda que se incluye con Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. <b>Integer</b> de solo lectura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Si el objeto se creó en Microsoft Word, la propiedad <b>Creator</b> devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -160,9 +145,7 @@
       <Parameters />
       <Docs>
         <summary>Elimina el objeto.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <returns><b>Objeto</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,10 +172,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ChartFont" /> object que representa la fuente del objeto especificado.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFont" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ChartFont" /> objeto Object que representa la fuente del objeto especificado.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFont" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,10 +201,8 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve la línea, relleno y efecto de formato para el objeto.
-Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+De sólo <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,9 +230,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Devuelve un valor de tipo <b>Double</b> que representa el alto, en puntos, del objeto.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Doble</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -281,9 +258,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Devuelve el número de índice del objeto contenido en el conjunto de objetos similares.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -311,9 +286,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Devuelve un valor de tipo <b>Double</b> que representa la distancia, en puntos, desde el borde izquierdo del objeto hasta el borde izquierdo del área del gráfico.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Doble</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -340,10 +313,8 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
         <ReturnType>Microsoft.Office.Interop.Word.LegendKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> object que representa la clave de leyenda asociada con la entrada.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.LegendKey" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> objeto Object que representa la clave de leyenda asociada a la entrada.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.LegendKey" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -371,9 +342,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Devuelve al objeto primario del objeto especificado. Read-only <b>objeto</b>.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -399,9 +368,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       <Parameters />
       <Docs>
         <summary>Selecciona el objeto.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <returns><b>Objeto</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -429,9 +396,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Devuelve un valor de tipo <b>Double</b> que representa la distancia, en puntos, desde el borde superior del objeto hasta la parte superior de la fila 1 (en una hoja de cálculo) o hasta la parte superior del área del gráfico (en un gráfico).</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Doble</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -459,9 +424,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Devuelve un valor de <b>tipo Double</b> que representa el ancho, en puntos, del objeto.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Doble</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

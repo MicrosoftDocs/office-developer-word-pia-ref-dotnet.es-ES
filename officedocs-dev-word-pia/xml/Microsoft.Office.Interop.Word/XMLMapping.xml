@@ -1,13 +1,5 @@
 <Type Name="XMLMapping" FullName="Microsoft.Office.Interop.Word.XMLMapping">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="789b346ac01d9a48554f8869d1aadad7ba53b43b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675730" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XMLMapping" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9c7faf4f3e3ffccb270c1cc125874ce43681ee78" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142643" /></Metadata><TypeSignature Language="C#" Value="public interface XMLMapping" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLMapping" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLMapping" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLMapping" />
@@ -27,8 +19,7 @@
   </Attributes>
   <Docs>
     <summary>Representa la asignación XML en un <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> objeto entre código XML personalizado y un control de contenido. Una asignación XML es un vínculo entre el texto de un control de contenido y un elemento XML del almacén de datos XML personalizado para este documento.</summary>
-    <remarks>
-      <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> método para agregar o cambiar la asignación XML para un control de contenido mediante una cadena XPath. En el ejemplo siguiente se establece la propiedad de documento integrada para el autor del documento, se inserta un nuevo control de contenido en el documento activo y, a continuación, Establece la asignación XML para el control a la propiedad de documento integrada.</para>
+    <remarks><para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> método para agregar o cambiar la asignación XML para un control de contenido mediante una cadena XPath. En el ejemplo siguiente, se establece la propiedad de documento integrada del autor del documento, se inserta un nuevo control de contenido en el documento activo y, a continuación, se establece la asignación XML para el control en la propiedad de documento integrada.</para>
       <code>&lt;span class="label"&gt;Dim objcc As ContentControl
 
 
@@ -1822,7 +1813,7 @@ If blnMap = False Then
 
 
 End If&lt;/span&gt;</code>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> método para agregar o cambiar la asignación XML para un control de contenido mediante un objeto <b>CustomXMLNode</b> . En el ejemplo siguiente se hace lo mismo que el ejemplo anterior, pero utiliza el método <b>SetMappingByNode</b> .</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> método para agregar o cambiar la asignación XML para un control de contenido mediante un objeto <b>CustomXMLNode</b> . En el siguiente ejemplo, se realiza la misma acción que en el ejemplo anterior, pero se usa el método <b>SetMappingByNode</b> .</para>
       <code>&lt;span class="label"&gt;Dim objcc As ContentControl
 
 
@@ -3744,7 +3735,7 @@ Set objMap = objcc.XMLMapping
 
 
 blnMap = objMap.SetMappingByNode(objNode)&lt;/span&gt;</code>
-      <para>En el ejemplo siguiente se crea un nuevo objeto <b>CustomXMLPart</b> , carga XML personalizado en él y, a continuación, crea dos nuevos controles de contenido y asigna cada uno a un elemento XML distinto dentro del XML personalizado.</para>
+      <para>El ejemplo siguiente crea un nuevo objeto <b>CustomXMLPart</b>, carga XML personalizados en él y, a continuación, crea dos nuevos controles de contenido y asigna cada uno a un elemento XML distinto dentro del XML personalizado.</para>
       <code>&lt;span class="label"&gt;Dim objRange As Range
 
 
@@ -7842,7 +7833,7 @@ objCustomControl.XMLMapping.SetMappingByNode objCustomNode
 
 
 MsgBox objCustomControl.XMLMapping.IsMapped&lt;/span&gt;</code>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.Delete" /> método para quitar la asignación XML para un control de contenido.  Al eliminar la asignación XML para un control de contenido, elimina sólo la conexión entre el control de contenido y los datos XML.  El control de contenido y los datos XML permanecen en el documento.  El siguiente ejemplo elimina la asignación XML de todos los controles de contenido del documento activo que se encuentran asociados actualmente.</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.Delete" /> método para quitar la asignación XML para un control de contenido.  Tenga en cuenta que, si elimina la asignación XML para un control de contenido, sólo se eliminará la conexión entre éste y los datos XML.  Tanto el control de contenido como los datos XML permanecerán en el documento.  En el siguiente ejemplo, se elimina la asignación XML de todos los controles de contenido del documento activo que se encuentran asociados actualmente.</para>
       <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -8612,7 +8603,7 @@ For Each objCC In ActiveDocument.ContentControls
 
 
 Next&lt;/span&gt;</code>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.IsMapped" /> (propiedad) para determinar si un control de contenido está asignado a un nodo XML en el almacén de datos del documento. El siguiente ejemplo elimina la asignación XML para todos los controles de contenido en el documento activo de asignadas.</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.IsMapped" /> propiedad para determinar si un control de contenido está asignado a un nodo XML en el almacén de datos del documento. En el siguiente ejemplo, se elimina la asignación XML para todos los controles de contenido asignados en el documento activo.</para>
       <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -9382,9 +9373,8 @@ For Each objCC In ActiveDocument.ContentControls
 
 
 Next&lt;/span&gt;</code>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" /> (propiedad) para obtener acceso al nodo XML al que se asigna un control de contenido. Usar el <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" /> parte de propiedad para tener acceso el código XML al que se asigna un control de contenido. Para obtener más información acerca de cómo trabajar con los objetos <b>CustomXMLNode</b> y <b>CustomXMLPart</b> , vea los temas de objetos respectivos.</para>
-      <para />
-    </remarks>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" /> propiedad para tener acceso al nodo XML al que se asigna un control de contenido. Utilice la <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" /> propiedad para tener acceso al elemento XML al que se asigna un control de contenido. Para obtener más información sobre cómo trabajar con <b>CustomXMLNode</b> y objetos <b>CustomXMLPart</b>, vea los temas de objetos respectivos.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -9410,7 +9400,7 @@ Next&lt;/span&gt;</code>
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9440,12 +9430,10 @@ Next&lt;/span&gt;</code>
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el complemento. De sólo lectura de <b>tipo Long</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, la propiedad <b>Creator</b> devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para>
+        <remarks><para>Si el objeto se creó en Microsoft Word, la propiedad <b>Creator</b> devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
           <para>
             <b>Nota</b>: este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomXMLNode">
@@ -9474,8 +9462,7 @@ Next&lt;/span&gt;</code>
         <summary>Devuelve un objeto <b>CustomXMLNode</b> que representa el nodo XML personalizado del almacén de datos al que se asigna el control de contenido del documento.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>En el ejemplo siguiente se inserta un nuevo control de contenido y un fragmento XML personalizado en el documento activo, se asigna el control de contenido a un nodo en el fragmento XML personalizado y, a continuación, Establece el valor del nodo XML asignado.</para>
+        <example><para>En el siguiente ejemplo, se inserta un nuevo control de contenido y un fragmento XML personalizado en el documento activo, se asigna el control de contenido a un nodo de dicho fragmento y, a continuación, se establece el valor del nodo XML asignado.</para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -11142,8 +11129,7 @@ objMap.SetMapping "/books/book/author", , objPart
 
 Set objNode = objMap.&lt;/span&gt;
 &lt;span class="label"&gt;CustomXMLNode&lt;/span&gt;
-&lt;span class="label"&gt;objNode.Text = "Matt Hink"objCC.Range.Text = objNode.Text&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;objNode.Text = "Matt Hink"objCC.Range.Text = objNode.Text&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="CustomXMLPart">
@@ -11172,10 +11158,9 @@ Set objNode = objMap.&lt;/span&gt;
         <summary>Devuelve un objeto <b>CustomXMLPart</b> que representa el fragmento XML personalizado al que se asigna el control de contenido del documento.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>En el ejemplo siguiente se obtiene acceso al primer control de contenido en el documento activo y el fragmento XML personalizado al que se asigna y a continuación, Establece el valor de texto de uno de los nodos XML incluidos en el parte de XML personalizado.</para>
+        <example><para>En el siguiente ejemplo, se tiene acceso al primer control de contenido del documento activo y al fragmento XML personalizado al que está asignado y, a continuación, se establece el valor de texto de uno de los nodos XML incluidos en el fragmento XML personalizado.</para>
           <para>
-            <b>Nota</b>: en este ejemplo se da por supuesto que al menos un control de contenido del documento activo está asignado a un elemento XML personalizado que contiene los nodos XML especificados en la cadena XPath.</para>
+            <b>Nota</b>: en este ejemplo se supone que al menos un control de contenido del documento activo está asignado a un fragmento XML personalizado que contiene los nodos XML especificados en la cadena XPath.</para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -11818,8 +11803,7 @@ Set objCC = ActiveDocument.ContentControls(1)
 
 Set objPart = objCC.XMLMapping.&lt;/span&gt;
 &lt;span class="label"&gt;CustomXMLPart&lt;/span&gt;
-&lt;span class="label"&gt;Set objNode = objPart.SelectSingleNode("/books/book/title")objNode.Text = "Mystery of the Empty Chair"&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;Set objNode = objPart.SelectSingleNode("/books/book/title")objNode.Text = "Mystery of the Empty Chair"&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -11844,12 +11828,9 @@ Set objPart = objCC.XMLMapping.&lt;/span&gt;
       <Parameters />
       <Docs>
         <summary>Elimina la asignación XML del control de contenido principal.</summary>
-        <remarks>
-          <para>Esta operación quita la asignación XML.  Los datos XML y el control de contenido permanecen en el documento.</para>
-          <para />
-        </remarks>
-        <example>
-          <para>El siguiente ejemplo elimina la asignación XML para todos los controles de contenido del documento activo que se encuentran asociados actualmente.</para>
+        <remarks><para>Esta operación elimina la asignación XML.  Tanto los datos XML como el control de contenido permanecen en el documento.</para>
+          <para> </para></remarks>
+        <example><para>En el siguiente ejemplo, se elimina la asignación XML de todos los controles de contenido del documento activo que se encuentran asociados actualmente.</para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -12364,8 +12345,7 @@ For Each objCC In ActiveDocument.ContentControls
 
         objCC.XMLMapping.&lt;/span&gt;
 &lt;span class="label"&gt;Delete&lt;/span&gt;
-&lt;span class="label"&gt;End IfNext&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;End IfNext&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="IsMapped">
@@ -12391,11 +12371,10 @@ For Each objCC In ActiveDocument.ContentControls
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un valor de tipo <b>Boolean</b> que indica si el control de contenido del documento está asignado a un nodo XML del almacén de datos XML del documento. Sólo lectura.</summary>
+        <summary>Devuelve un valor de tipo <b>Boolean</b> que indica si el control de contenido del documento está asignado a un nodo XML del almacén de datos XML del documento. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>El siguiente ejemplo elimina la asignación XML para todos los controles de contenido del documento activo que se encuentran asociados actualmente.</para>
+        <example><para>En el siguiente ejemplo, se elimina la asignación XML de todos los controles de contenido del documento activo que se encuentran asociados actualmente.</para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -12782,8 +12761,7 @@ For Each objCC In ActiveDocument.ContentControls
 
     If objCC.XMLMapping.&lt;/span&gt;
 &lt;span class="label"&gt;IsMapped&lt;/span&gt;
-&lt;span class="label"&gt;Then        objCC.XMLMapping.Delete    End IfNext&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;Then        objCC.XMLMapping.Delete    End IfNext&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -12839,10 +12817,8 @@ For Each objCC In ActiveDocument.ContentControls
       <Docs>
         <summary>Devuelve una <b>cadena</b> que representa las asignaciones de prefijo utilizadas para evaluar la expresión de XPath de la asignación XML actual. Es de sólo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para establecer la asignación de un control de contenido, use la <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> método o el <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> (método).</para>
-          <para />
-        </remarks>
+        <remarks><para>Para establecer la asignación de un control de contenido, <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> use el método <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> o el método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetMapping">
@@ -12870,19 +12846,16 @@ For Each objCC In ActiveDocument.ContentControls
       </Parameters>
       <Docs>
         <param name="XPath">Especifica una cadena XPath que representa el nodo XML al que se asignará el control de contenido. Si la cadena XPath no es válida, se producirá un error en tiempo de ejecución.</param>
-        <param name="PrefixMapping">Especifica las asignaciones de prefijo que se utilizarán al consultar la expresión proporcionada en el <paramref name="XPath" /> parámetro. Si se omite, Word utilizará el conjunto de asignaciones de prefijo del fragmento XML personalizado especificado del documento actual.</param>
+        <param name="PrefixMapping">Especifica las asignaciones de prefijo que se deben usar al consultar la expresión proporcionada <paramref name="XPath" /> en el parámetro. Si se omite, Word utilizará el conjunto de asignaciones de prefijo del fragmento XML personalizado especificado del documento actual.</param>
         <param name="Source">Especifica los datos XML personalizados deseados al que se asignará el control de contenido. Si se omite este parámetro, se evalúa la expresión XPath con todo el código XML personalizado en el documento actual, y la asignación se establece con el primer <b>objeto CustomXMLPart</b> en la que XPath se resuelve en un nodo XML. </param>
-        <summary>Permite crear o cambiar la asignación XML en un control de contenido. Devuelve <b>True</b> si Microsoft Office Word asigna el control de contenido a un nodo XML personalizado en el almacén de datos XML personalizado del documento.</summary>
-        <returns>Boolean</returns>
-        <remarks>
-          <para>Si el código XML asignación ya existe, Word reemplaza la asignación existente de XML y el contenido del nuevo nodo XML asignado reemplaza el texto del control de contenido. Si la expresión XPath especificada no se evalúa como un nodo XML en el elemento XML personalizado especificado o elementos, se puede especificar la asignación y se creará uno. Esta asignación automáticamente vínculos cuando se evalúe la expresión XPath especificada en un nodo XML de los elementos XML personalizados especificados.</para>
+        <summary>Permite crear o cambiar la asignación XML en un control de contenido. Devuelve <b>true</b> si Microsoft Office Word asigna el control de contenido a un nodo XML personalizado en el almacén de datos XML personalizado del documento.</summary>
+        <returns>Booleano</returns>
+        <remarks><para>Si ya existe la asignación XML, Word la reemplaza y el contenido del nuevo nodo XML asignado reemplaza el texto del control de contenido. Si el parámetro XPath especificado no se evalúa en un nodo XML de los fragmentos XML personalizados especificados, se puede especificar la asignación para crear uno. Esta asignación se vincula automáticamente cuando el parámetro XPath especificado se evalúe en un nodo XML de los fragmentos XML personalizados especificados.</para>
           <para>Vea también el <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> método.</para>
           <para>
-            <b>Nota</b>: creación de una asignación para un error en tiempo de ejecución hace que un control de contenido de texto enriquecido.</para>
-          <para />
-        </remarks>
-        <example>
-          <para>En el ejemplo siguiente se inserta un elemento XML personalizado y establece el código XML para el elemento personalizado y, a continuación, inserta dos controles de contenido al principio del documento y asigna el contenido de los controles al contenido de elementos XML en el elemento personalizado.</para>
+            <b>Nota</b>: Si crea una asignación para un control de contenido de texto enriquecido, se producirá un error en tiempo de ejecución.</para>
+          <para> </para></remarks>
+        <example><para>En el siguiente ejemplo, se inserta un fragmento XML personalizado, se establece el código XML correspondiente y, a continuación, se insertan dos controles de contenido al principio del documento y se asigna el contenido de los controles al contenido de elementos XML del fragmento personalizado.</para>
           <code>&lt;span class="label"&gt;Dim objRange As Range
 
 
@@ -15319,8 +15292,7 @@ objCustomControl.XMLMapping.&lt;/span&gt;
 &lt;span class="label"&gt;SetMapping&lt;/span&gt;
 &lt;span class="label"&gt;_    "/books/book/title", , objCustomPartobjRange.InsertParagraphAfterSet objRange = ActiveDocument.Paragraphs(2).RangeSet objCustomControl = ActiveDocument.ContentControls _    .Add(wdContentControlText, objRange)objCustomControl.XMLMapping.&lt;/span&gt;
 &lt;span class="label"&gt;SetMapping&lt;/span&gt;
-&lt;span class="label"&gt;_    "/books/book/abstract", , objCustomPart&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;_    "/books/book/abstract", , objCustomPart&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="SetMappingByNode">
@@ -15347,16 +15319,13 @@ objCustomControl.XMLMapping.&lt;/span&gt;
       </Parameters>
       <Docs>
         <param name="Node">Especifica el nodo XML al que se asignará el control de contenido actual.</param>
-        <summary>Permite crear o cambiar la asignación de datos XML en un control de contenido. Devuelve <b>True</b> si Microsoft Office Word asigna el control de contenido a un nodo XML personalizado en el almacén de datos XML personalizado del documento.</summary>
-        <returns>Boolean</returns>
-        <remarks>
-          <para>Si la asignación XML ya existe, a continuación, Word reemplaza la asignación existente de XML y el contenido del nuevo nodo XML asignado reemplaza el texto del control de contenido. Vea también el <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> método.</para>
+        <summary>Permite crear o cambiar la asignación de datos XML en un control de contenido. Devuelve <b>true</b> si Microsoft Office Word asigna el control de contenido a un nodo XML personalizado en el almacén de datos XML personalizado del documento.</summary>
+        <returns>Booleano</returns>
+        <remarks><para>Si ya existe la asignación XML, Word la reemplazará, y el contenido del nuevo nodo XML asignado reemplazará el texto del control de contenido. Vea también el <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> método.</para>
           <para>
-            <b>Nota</b>: creación de una asignación para un error en tiempo de ejecución hace que un control de contenido de texto enriquecido.</para>
-          <para />
-        </remarks>
-        <example>
-          <para>En el ejemplo siguiente se establece la propiedad de documento integrada para el autor del documento, se inserta un nuevo control de contenido en el documento activo y, a continuación, Establece la asignación XML para el control a la propiedad de documento integrada.</para>
+            <b>Nota</b>: Si crea una asignación para un control de contenido de texto enriquecido, se producirá un error en tiempo de ejecución.</para>
+          <para> </para></remarks>
+        <example><para>En el ejemplo siguiente, se establece la propiedad de documento integrada del autor del documento, se inserta un nuevo control de contenido en el documento activo y, a continuación, se establece la asignación XML para el control en la propiedad de documento integrada.</para>
           <code>&lt;span class="label"&gt;Dim objcc As ContentControl
 
 
@@ -17278,7 +17247,7 @@ Set objMap = objcc.XMLMapping
 
 
 blnMap = objMap.SetMappingByNode(objNode)&lt;/span&gt;</code>
-          <para>En el ejemplo siguiente se crea un fragmento XML personalizado y, a continuación, crea dos controles de contenido y asigna cada control de contenido a un nodo específico dentro del XML personalizado.</para>
+          <para>En el ejemplo siguiente se crea código XML personalizado y, a continuación, se crean dos controles de contenido y se asigna cada uno de ellos a un nodo específico dentro del código XML personalizado.</para>
           <code>&lt;span class="label"&gt;Dim objRange As Range
 
 
@@ -19843,8 +19812,7 @@ objCustomControl.XMLMapping.&lt;/span&gt;
 &lt;span class="label"&gt;SetMappingByNode&lt;/span&gt;
 &lt;span class="label"&gt;objCustomNodeobjRange.InsertParagraphAfterSet objRange = ActiveDocument.Paragraphs(2).RangeSet objCustomNode = objCustomPart.SelectSingleNode _    ("/books/book/abstract")Set objCustomControl = ActiveDocument.ContentControls _    .Add(wdContentControlText, objRange)objCustomControl.XMLMapping.&lt;/span&gt;
 &lt;span class="label"&gt;SetMappingByNode&lt;/span&gt;
-&lt;span class="label"&gt;objCustomNode&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;objCustomNode&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="XPath">
@@ -19870,14 +19838,11 @@ objCustomControl.XMLMapping.&lt;/span&gt;
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una <b>cadena</b> que representa la expresión XPath para la asignación XML, que da como resultado el nodo XML actualmente asignado. Es de sólo lectura.</summary>
+        <summary>Devuelve una <b>cadena</b> que representa la expresión XPath para la asignación XML, que da como resultado el nodo XML actualmente asignado. Solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para establecer la asignación de un control de contenido, use la <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> método o el <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> (método). Si la asignación no está activa, el uso de esta propiedad devuelve un error.</para>
-          <para />
-        </remarks>
-        <example>
-          <para>En el ejemplo siguiente se comprueba si el primer control de contenido del documento activo es un control de fecha y si se establece la cadena XPath a una propiedad de documento integrada específica. A continuación, Establece la asignación al control, si no coincide con la expresión XPath y el control es un control de fecha.</para>
+        <remarks><para>Para establecer la asignación de un control de contenido, <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> use el método <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> o el método. Si la asignación no está activa, el uso de esta propiedad devuelve un error.</para>
+          <para> </para></remarks>
+        <example><para>En el siguiente ejemplo, se comprueba si el primer control de contenido del documento activo es un control de fecha y si la cadena XPath se ha establecido en una propiedad de documento integrada específica. A continuación, se establece la asignación al control, si la cadena XPath no coincide y el control es un control de fecha.</para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -20776,8 +20741,7 @@ Set objMap = objCC.XMLMapping
 
 If (objCC.Type = wdContentControlDate) And (objMap.&lt;/span&gt;
 &lt;span class="label"&gt;XPath&lt;/span&gt;
-&lt;span class="label"&gt;&amp;lt;&amp;gt; _        "/ns1:coreProperties[1]/ns0:createdate[1]") Then    blnMap = objMap.SetMapping(XPath:="/ns1:coreProperties[1]/ns0:createdate[1]")    If blnMap = False Then        MsgBox "Unable to map the content control."    End IfEnd If&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;&amp;lt;&amp;gt; _        "/ns1:coreProperties[1]/ns0:createdate[1]") Then    blnMap = objMap.SetMapping(XPath:="/ns1:coreProperties[1]/ns0:createdate[1]")    If blnMap = False Then        MsgBox "Unable to map the content control."    End IfEnd If&lt;/span&gt;</code></example>
       </Docs>
     </Member>
   </Members>

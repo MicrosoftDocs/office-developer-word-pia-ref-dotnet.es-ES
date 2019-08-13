@@ -1,13 +1,5 @@
 <Type Name="HTMLDivisions" FullName="Microsoft.Office.Interop.Word.HTMLDivisions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="28896873e2658bb7fdc695f17420fa74ec5aca73" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674526" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface HTMLDivisions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c52a948104a42d913fb69b854f16407eab688443" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148008" /></Metadata><TypeSignature Language="C#" Value="public interface HTMLDivisions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HTMLDivisions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.HTMLDivisions" />
   <TypeSignature Language="VB.NET" Value="Public Interface HTMLDivisions&#xA;Implements IEnumerable" />
@@ -30,11 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.HTMLDivision" /> objetos que representa las divisiones HTML que hay en un documento Web.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.HTMLDivision.HTMLDivisions" /> (propiedad) para devolver la colección <b>HTMLDivisions</b> . Usar el <see cref="M:Microsoft.Office.Interop.Word.HTMLDivisions.Add(System.Object@)" /> método para agregar una división HTML a un documento Web.</para>
-      <para />
-    </remarks>
+    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.HTMLDivision" /> objetos que representa las divisiones HTML que existen en un documento Web.</summary>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.HTMLDivision.HTMLDivisions" /> propiedad para devolver la colección <b>HTMLDivisions</b> . Utilice el <see cref="M:Microsoft.Office.Interop.Word.HTMLDivisions.Add(System.Object@)" /> método para agregar una división HTML a un documento Web.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -59,9 +49,8 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">
-          <b>Objeto</b>de opcional. División HTML existente alrededor de la que se coloca la nueva división HTML.</param>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.HTMLDivision" /> objeto que representa una nueva división HTML agregada a un documento Web.</summary>
+        <param name="Range"><b>Objeto</b>opcional. División HTML existente alrededor de la que se coloca la nueva división HTML.</param>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.HTMLDivision" /> objeto Object que representa una nueva división HTML agregada a un documento Web.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,9 +136,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -210,7 +199,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entero</b> que indica la posición ordinal del objeto individual.</param>
+        <param name="Index"><b>Entero</b> que indica la posición ordinal del objeto individual.</param>
         <summary>Devuelve un objeto individual de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -239,12 +228,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el nivel de anidamiento de las divisiones de HTML especificados.</summary>
+        <summary>Devuelve el nivel de anidamiento de las divisiones HTML especificadas.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La tabla más exterior tiene un nivel de anidamiento de 1. El nivel de anidamiento de cada tabla anidada sucesivamente es superior de la tabla anterior en uno.</para>
-          <para />
-        </remarks>
+        <remarks><para>La tabla más exterior tiene un nivel 1 de anidamiento. El nivel de anidamiento de cada tabla sucesivamente anidada es superior en uno al de la tabla anterior.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

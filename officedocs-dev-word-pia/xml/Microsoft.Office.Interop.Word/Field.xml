@@ -1,13 +1,5 @@
 <Type Name="Field" FullName="Microsoft.Office.Interop.Word.Field">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5633f7ec58f8562a12268258d5304e52105599f0" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674437" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Field" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="eb89b13b172f6bebe2a7acf4902ad5ae662af0d8" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146860" /></Metadata><TypeSignature Language="C#" Value="public interface Field" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Field" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Field" />
   <TypeSignature Language="VB.NET" Value="Public Interface Field" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Representa un campo. El objeto <b>Field</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Fields" /> colección. La colección <b>Fields</b> representa los campos de un documento, selección o intervalo.</summary>
-    <remarks>
-      <para>Usar <b>campos</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un único objeto de <b>campo</b> . El número de índice representa la posición del campo en la selección, intervalo o documento.</para>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /> método para agregar un campo a la colección <b>Fields</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>Use <b></b>Fields<paramref name="index" />(), <paramref name="index" /> donde es el número de índice, para devolver un solo objeto <b>Field</b> . El número de índice representa la posición del campo en la selección, el intervalo o el documento.</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /> método para agregar un campo a la <b></b> colección Fields.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,12 +78,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa un código de campo.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto Object que representa el código de un campo.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El código de un campo es todo lo que se encierra entre los caracteres de campo ({}), incluidos los caracteres de espacio finales y a la izquierda. Puede tener acceso a un código de campo sin cambiar la vista de los resultados del campo.</para>
-          <para />
-        </remarks>
+        <remarks><para>El código de un campo es todo lo que se encierra entre los caracteres de campo ({ }), incluidos los caracteres de espacio inicial y final. Puede obtener acceso al código de un campo sin cambiar la vista de resultados de campo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -146,9 +134,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -204,10 +192,8 @@
       <Docs>
         <summary>Devuelve o establece los datos en un campo ADDIN.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Los datos no están visibles en el código de campo o el resultado; sólo es accesible devolviendo el valor de la propiedad de <b>datos</b> . Si el campo no es un campo ADDIN, esta propiedad provocará un error.</para>
-          <para />
-        </remarks>
+        <remarks><para>Los datos no están visibles en el código de campo o el resultado; sólo es accesible devolviendo el valor de la propiedad de <b>datos</b>. Si el campo no es un campo ADDIN, esta propiedad provocará un error.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -257,10 +243,8 @@
       <Parameters />
       <Docs>
         <summary>Hace clic en el campo especificado.</summary>
-        <remarks>
-          <para>Si el campo es un campo GOTOBUTTON, este método mueve el punto de inserción a la ubicación especificada o selecciona el marcador especificado. Si el campo es un campo MACROBUTTON, este método ejecuta la macro especificada. Si el campo es un campo hipervínculo, este método se salta a la ubicación de destino.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si el campo es un campo GOTOBUTTON, este método mueve el punto de inserción a la posición especificada o selecciona el marcador especificado. Si el campo es un campo MACROBUTTON, este método ejecuta la macro especificada. Si el campo es un campo HYPERLINK, este método salta a la posición de destino.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -286,7 +270,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> que representa la posición de un elemento de una colección.</summary>
+        <summary>Devuelve un <b>entero</b> que representa la posición de un elemento en una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -314,12 +298,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto que representa la imagen, el objeto OLE o el control ActiveX que es el resultado de un campo INCLUDEPICTURE o EMBED.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto Object que representa la imagen, el objeto OLE o el control ActiveX que es el resultado de un campo INCLUDEPICTURE o embed.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Un objeto <b>InlineShape</b> se trata como un carácter y se sitúa como tal dentro de una línea de texto.</para>
-          <para />
-        </remarks>
+        <remarks><para>Un objeto <b>InlineShape</b> se trata como un carácter y se sitúa como tal dentro de una línea de texto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Kind">
@@ -347,16 +329,16 @@
       <Docs>
         <summary>Devuelve el tipo de vínculo para un <see cref="T:Microsoft.Office.Interop.Word.Field" /> objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.WdFieldKind" /> constantes:</para>
+        <remarks><para>Puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdFieldKind" /> constantes:</para>
           <para>
-            <b>wdFieldKindCold</b> un campo que no tiene un resultado, por ejemplo, un índice de campo XE (entrada), tabla de contenido (TC) o campo privado.</para>
+            <b>wdFieldKindCold</b> Un campo que no tiene ningún resultado, por ejemplo, una entrada de índice (XE), una entrada de tabla de contenido (TC) o un campo privado.</para>
           <para>
-            <b>wdFieldKindHot</b> un campo que se actualiza automáticamente cada vez que se muestra o cada vez que se vuelve a dar formato a la página, pero que también se puede actualizar manualmente (por ejemplo, INCLUDEPICTURE o FORMDROPDOWN).</para>
+            <b>wdFieldKindHot</b> Un campo que se actualiza automáticamente cada vez que se muestra o cada vez que se vuelve a formatear la página, pero que también se puede actualizar manualmente (por ejemplo, INCLUDEPICTURE o FORMDROPDOWN).</para>
           <para>
-            <b>wdFieldKindNone</b> un campo no válido (por ejemplo, un par de caracteres de campo con nothing dentro).</para> campo de 
-            <b>wdFieldKindWarm</b> A 
-          <para>que puede actualizarse y tiene un resultado. Este tipo incluye los campos que se actualizan automáticamente cuando cambia el origen, así como los campos que pueden actualizarse manualmente (por ejemplo, fecha o INCLUDETEXT).</para><para /></remarks>
+            <b>wdFieldKindNone</b> Un campo no válido (por ejemplo, un par de caracteres de campo con el contenido en blanco).</para>
+          <para>
+            <b>wdFieldKindWarm</b> Un campo que se puede actualizar y tiene un resultado. Este tipo incluye los campos que se actualizan automáticamente cuando cambia el origen, así como los campos que se pueden actualizar manualmente (por ejemplo, DATE o INCLUDETEXT).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkFormat">
@@ -382,7 +364,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.LinkFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.LinkFormat" /> objeto que representa las opciones de vínculo del campo especificado, la forma entre líneas o la forma que está vinculada a un archivo.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.LinkFormat" /> objeto que representa las opciones de vínculo del campo, la forma entre líneas o la forma especificada vinculada a un archivo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -415,10 +397,8 @@
       <Docs>
         <summary>Determina si el campo especificado está bloqueado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad devuelve <b>True</b> si el campo especificado está bloqueado y <b>False</b> si no. Cuando un campo está bloqueado, no se pueden actualizar los resultados del campo.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta propiedad devuelve <b>true</b> si el campo especificado está bloqueado y <b>false</b> en caso contrario. Cuando un campo está bloqueado, no podrá actualizar sus resultados.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -472,7 +452,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.OLEFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.OLEFormat" /> object que representa las características OLE (excepto las de vinculación) para el campo especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.OLEFormat" /> objeto que representa las características OLE (excepto las de vinculación) para el campo especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -559,12 +539,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa el resultado de un campo.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto Object que representa el resultado de un campo.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Puede tener acceso a un resultado de campo sin cambiar la vista de códigos de campo. Usar el <see cref="P:Microsoft.Office.Interop.Word.Range.Text" /> (propiedad) para devolver texto de un objeto <b>Range</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Puede tener acceso a un resultado de campo sin cambiar la vista de códigos de campo. Utilice la <see cref="P:Microsoft.Office.Interop.Word.Range.Text" /> propiedad para devolver texto de un objeto <b>Range</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -589,10 +567,8 @@
       <Parameters />
       <Docs>
         <summary>Selecciona el objeto especificado.</summary>
-        <remarks>
-          <para>Después de utilizar este método, utilice el <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> (propiedad) para trabajar con los elementos seleccionados.</para>
-          <para />
-        </remarks>
+        <remarks><para>Después de utilizar este método, utilice <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> la propiedad para trabajar con los elementos seleccionados.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowCodes">
@@ -621,12 +597,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina si se muestran los códigos de campo para el campo especificado en lugar de los resultados del campo.</summary>
+        <summary>Determina si se muestran los códigos de campo para el campo especificado en lugar de los resultados de campo.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad devuelve <b>True</b> si se muestran los códigos de campo para el campo especificado en lugar de los resultados del campo y <b>False</b> si no se muestran los códigos de campo.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta propiedad devuelve <b>true</b> si se muestran los códigos de campo para el campo especificado en lugar de los resultados de campo, y <b>false</b> si no se muestran los códigos de campo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -654,10 +628,8 @@
       <Docs>
         <summary>Devuelve el tipo de campo.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Intercambio dinámico de datos (DDE) es una tecnología antigua que no es segura. Si es posible, utilice una alternativa a DDE más segura.</para>
-          <para />
-        </remarks>
+        <remarks><para>El intercambio dinámico de datos (DDE) es una tecnología más antigua que no es segura. Si es posible, use una alternativa más segura a DDE.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Unlink">
@@ -682,10 +654,8 @@
       <Parameters />
       <Docs>
         <summary>Reemplaza el campo especificado por su resultado más reciente.</summary>
-        <remarks>
-          <para>Al desvincular un campo, su resultado actual se convierte en texto o un gráfico y ya no se puede actualizar automáticamente. Tenga en cuenta que algunos campos, como los campos XE (entrada de índice) y los campos SEQ (secuencia): no puede ser no vinculados.</para>
-          <para />
-        </remarks>
+        <remarks><para>Al desvincular un campo, el resultado actual se convierte en texto o en un gráfico y ya no se puede actualizar automáticamente. Tenga en cuenta que algunos campos, como campos XE (entrada de índice) y campos SEQ (secuencia), no se pueden desvincular.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -709,7 +679,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Actualiza el resultado del objeto field.</summary>
+        <summary>Actualiza el resultado del objeto Field.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -736,10 +706,8 @@
       <Parameters />
       <Docs>
         <summary>Guarda los cambios realizados en los resultados de un campo INCLUDETEXT en el documento de origen.</summary>
-        <remarks>
-          <para>El documento de origen debe tener el formato como un documento de Microsoft Word.</para>
-          <para />
-        </remarks>
+        <remarks><para>El documento de origen debe tener el formato de un documento de Microsoft Word.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

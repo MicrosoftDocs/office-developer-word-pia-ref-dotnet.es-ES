@@ -1,13 +1,5 @@
 <Type Name="Index" FullName="Microsoft.Office.Interop.Word.Index">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="29a048bd50da4b799253e2ded2f3f3740fa51959" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675089" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Index" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ea0b3d6991ec86522b62224092f8f026d7c830fe" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146699" /></Metadata><TypeSignature Language="C#" Value="public interface Index" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Index" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Index" />
   <TypeSignature Language="VB.NET" Value="Public Interface Index" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Representa un índice único.</summary>
-    <remarks>
-      <para>El objeto <b>Index</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Indexes" /> colección. La colección <b>Indexes</b> incluye todos los índices del documento especificado.</para>
-      <para>Usar <b>índices</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un solo objeto <b>Index</b> . El número de índice representa la posición del objeto <b>Index</b> en el documento.</para>
-      <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.Indexes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> (método) para crear un índice y agregarlo a la colección <b>Indexes</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>El objeto <b>index</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Indexes" /> colección. La colección <b>Indexes</b> incluye todos los índices del documento especificado.</para>
+      <para>Use <b>Indexes</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un único objeto <b>index</b> . El número de índice representa la posición del objeto <b>Index</b> en el documento.</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.Indexes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para crear un índice y agregarlo a la <b></b> colección Indexes.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AccentedLetters">
@@ -61,8 +51,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el índice especificado incluyen títulos diferentes para las letras acentuadas (por ejemplo, las palabras que comiencen con "À" están bajo un encabezado y las palabras que comiencen con "A" se encuentran en el otro).</summary>
+        <summary><b>True</b> si el índice especificado incluyen títulos diferentes para las letras acentuadas (por ejemplo, las palabras que comiencen con "À" están bajo un encabezado y las palabras que comiencen con "A" se encuentran en el otro).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,9 +109,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -176,12 +165,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdIndexFilter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor que especifica cómo clasifica Microsoft Word el primer carácter de entradas en el índice especificado.</summary>
+        <summary>Devuelve o establece un valor que especifica cómo clasifica Microsoft Word el primer carácter de las entradas en el índice especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>Filter</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdIndexFilter" /> constantes.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propiedad <b>Filter</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdIndexFilter" /> constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HeadingSeparator">
@@ -210,12 +197,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdHeadingSeparator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el texto entre grupos alfabéticos (elementos que comienzan con la misma letra) en el índice. Corresponde al modificador \h de un campo de índice.</summary>
+        <summary>Devuelve o establece el texto entre los grupos alfabéticos (las entradas que comienzan con la misma letra) del índice. Corresponde al modificador \h de un campo INDEX.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>HeadingSeparator</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdHeadingSeparator" /> constantes.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propiedad <b>HeadingSeparator</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdHeadingSeparator" /> constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IndexLanguage">
@@ -244,12 +229,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el idioma de ordenación que se usará para el índice especificado.</summary>
+        <summary>Devuelve o establece el idioma de ordenación que se va a usar para el índice especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>IndexLanguage</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes. Es posible que algunas de estas constantes no estén disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
-          <para />
-        </remarks>
+        <remarks><para>La propiedad <b>IndexLanguage</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes. [!NOTA] Algunas de estas constantes pueden no estar disponibles según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberOfColumns">
@@ -280,10 +263,8 @@
       <Docs>
         <summary>Establece o devuelve el número de columnas de cada página de un índice.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Al especificar 0 (cero), se establece el número de columnas en el índice en el mismo número como se muestra en el documento.</para>
-          <para />
-        </remarks>
+        <remarks><para>Al especificar 0 (cero) se establece el número de columnas del índice para que sea igual que el del documento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -337,12 +318,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa la parte de un documento que está incluida en el objeto especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa la parte de un documento incluida en el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para obtener información acerca de la devolución de un intervalo de un documento o la devolución de un intervalo de formas de una colección de formas, vea el método <b>Range</b> de un <see cref="T:Microsoft.Office.Interop.Word.Document" /> o <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> objeto.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para obtener información sobre la devolución de un intervalo de un documento o la devolución de un intervalo de formas de una colección de formas, <see cref="T:Microsoft.Office.Interop.Word.Document" /> vea <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> el método <b>Range</b> de un objeto o.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RightAlignPageNumbers">
@@ -371,8 +350,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si los números de página se alinean con el margen derecho en un índice.</summary>
+        <summary><b>True</b> si los números de página se alinean con el margen derecho en un índice.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -405,10 +383,8 @@
       <Docs>
         <summary>Devuelve o establece el criterio de ordenación para el índice especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>SortBy</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdIndexSortBy" /> constantes.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propiedad <b>sortBy</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdIndexSortBy" /> constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TabLeader">
@@ -439,10 +415,8 @@
       <Docs>
         <summary>Devuelve o establece el carácter entre las entradas y sus números de página en un índice.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>TabLeader</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" /> constantes.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propiedad <b>TabLeader</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" /> constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -473,10 +447,8 @@
       <Docs>
         <summary>Devuelve o establece el tipo de índice.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>Type</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdIndexType" /> constantes.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propiedad <b>Type</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdIndexType" /> constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">

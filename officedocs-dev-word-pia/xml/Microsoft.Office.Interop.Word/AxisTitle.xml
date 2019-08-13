@@ -1,13 +1,5 @@
 <Type Name="AxisTitle" FullName="Microsoft.Office.Interop.Word.AxisTitle">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ab60484b6d253ed008fcdee715c36b3337fc0c01" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675039" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AxisTitle" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f3a91664c50782d2c51df16bb1c1e182169cdaae" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146307" /></Metadata><TypeSignature Language="C#" Value="public interface AxisTitle" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AxisTitle" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AxisTitle" />
   <TypeSignature Language="VB.NET" Value="Public Interface AxisTitle" />
@@ -26,8 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <b>True</b> si el título del eje ocupará el espacio de diseño del gráfico cuando un diseño de gráfico se determine. El valor predeterminado es <b>True</b>. Es de lectura y escritura.</summary>
+    <summary><b>True</b> si el título del eje ocupará el espacio de diseño del gráfico cuando un diseño de gráfico se determine. El valor predeterminado es <b>True</b>. Lectura y escritura</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -54,10 +45,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa la aplicación Microsoft Word. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa el creador del objeto especificado (puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto). Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Cuando se usa sin un calificador de objeto, esta <see cref="T:Microsoft.Office.Interop.Word._Application" /> propiedad devuelve un objeto que representa la aplicación Microsoft Word. Cuando se utiliza con un calificador de objeto, esta <see cref="T:Microsoft.Office.Interop.Word._Application" /> propiedad devuelve un objeto que representa al creador del objeto especificado (puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto). Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,11 +82,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el texto del objeto cambia el tamaño de fuente cuando cambia el tamaño del objeto. El valor predeterminado es <b>True</b>.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>True</b> si el tamaño de la fuente de texto del objeto cambia cuando cambia el tamaño del objeto. El valor predeterminado es <b>True</b>.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,9 +114,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve el borde del objeto.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Border" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Border" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,9 +145,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece el texto del título del eje.</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,15 +177,11 @@
       </Parameters>
       <Docs>
         <param name="Start">Primer carácter que se devolverá. Si el argumento es 1 o se omite, la propiedad devuelve un rango de caracteres que empieza con el primer carácter.</param>
-        <param name="Length">Número de caracteres que se devolverá. Si se omite este argumento, esta propiedad devuelve el resto de la cadena (todo el contenido después de la <paramref name="Start" /> caracteres).</param>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" /> objeto que representa un rango de caracteres del texto del objeto. Puede usar el <see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" /> objeto a formato de caracteres dentro de una cadena de texto.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" />
-        </value>
-        <remarks>
-          <para>El <see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" /> objeto no es una colección.</para>
-          <para />
-        </remarks>
+        <param name="Length">Número de caracteres que se devolverá. Si se omite este argumento, esta propiedad devuelve el resto de la cadena (todo lo que <paramref name="Start" /> esté después del carácter).</param>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" /> objeto que representa un rango de caracteres dentro del texto del objeto. Puede usar el <see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" /> objeto para dar formato a caracteres dentro de una cadena de texto.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" /></value>
+        <remarks><para>El <see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" /> objeto no es una colección.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -229,14 +207,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. Es de solo lectura</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, el <see cref="P:Microsoft.Office.Interop.Word.AxisTitle.Creator" /> (propiedad) devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, consulte la referencia del lenguaje de ayuda que se incluye con Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. Solo lectura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Si el objeto se creó en Microsoft Word, la <see cref="P:Microsoft.Office.Interop.Word.AxisTitle.Creator" /> propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -261,9 +235,7 @@
       <Parameters />
       <Docs>
         <summary>Elimina el objeto.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <returns><b>Objeto</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -293,10 +265,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objeto que contiene las propiedades para el gráfico especificado del formato de relleno.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> objeto que contiene las propiedades de formato de relleno para el gráfico especificado.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -327,9 +297,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve la fuente del objeto especificado.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Font" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Font" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -357,10 +325,8 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve la línea, relleno y efecto de formato para el objeto.
-Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -391,11 +357,9 @@ Es de solo lectura</summary>
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece un valor de <b>tipo String</b> que representa la fórmula del objeto mediante la notación de estilo A1, en inglés.</summary>
-        <value>Representa la fórmula del objeto mediante la notación de estilo A1, en inglés</value>
-        <remarks>
-          <para>Lectura y escritura.</para>
-          <para />
-        </remarks>
+        <value>Representa la fórmula del objeto mediante la notación de estilo a1, en inglés.</value>
+        <remarks><para>Lectura/escritura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaLocal">
@@ -424,14 +388,12 @@ Es de solo lectura</summary>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece la fórmula del objeto, usando referencias de estilo A1 en el idioma del usuario.</summary>
-        <value>La fórmula del objeto, usando referencias de estilo A1 en el idioma del usuario.</value>
-        <remarks>
-          <para>String de lectura y escritura. Si la celda contiene una constante, esta propiedad la devuelve. Si la celda está vacía, la propiedad devuelve una cadena vacía. Si la celda contiene una fórmula, la propiedad devuelve la fórmula como una cadena, en el mismo formato en el que se mostraría en la barra de fórmulas (incluido el signo igual (=)).</para>
-          <para>Si se establece el valor o la fórmula de una celda en una fecha, Microsoft Excel 2010 comprueba si esa celda ya tiene el formato con uno de los formatos numéricos de fecha u hora. Si no, se cambia el formato de número para el formato de número predeterminado de fecha corta.</para>
-          <para>Si define la fórmula de un rango de varias celdas rellena todas las celdas del rango con la fórmula.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene o establece la fórmula para el objeto, utilizando referencias de estilo a1 en el idioma del usuario.</summary>
+        <value>La fórmula del objeto, utilizando referencias de estilo a1 en el idioma del usuario.</value>
+        <remarks><para>String de lectura y escritura. Si la celda contiene una constante, esta propiedad la devolverá. Si está vacía, devolverá una cadena vacía. Si la celda contiene una fórmula, la propiedad devolverá la fórmula en forma de cadena, con el mismo formato en que se presentaría en la barra de fórmulas (incluido el signo igual (=)).</para>
+          <para>Si se establece el valor o la fórmula de una celda como una fecha, Microsoft Excel 2010 comprobará si la celda ya tiene el formato de uno de los formatos numéricos de fecha u hora. De lo contrario, cambia el formato numérico al formato numérico de fecha corto predeterminado.</para>
+          <para>Si se define la fórmula de un rango de varias celdas, se llenan todas las celdas del rango con la fórmula.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaR1C1">
@@ -460,14 +422,12 @@ Es de solo lectura</summary>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece la fórmula para el objeto, mediante la notación de estilo F1C1 en el idioma de la macro.</summary>
-        <value>La fórmula para el objeto, mediante la notación de estilo F1C1 en el idioma de la macro.</value>
-        <remarks>
-          <para>String de lectura y escritura. Si la celda contiene una constante, esta propiedad devuelve la constante. Si la celda está vacía, la propiedad devuelve una cadena vacía. Si la celda contiene una fórmula, la propiedad devuelve la fórmula como una cadena, en el mismo formato en el que se mostraría en la barra de fórmulas (incluido el signo igual (=)).</para>
-          <para>Si se establece el valor o la fórmula de una celda en una fecha, Microsoft Excel 2010 comprueba si esa celda ya tiene el formato con uno de los formatos numéricos de fecha u hora. Si no, se cambia el formato de número para el formato de número predeterminado de fecha corta.</para>
-          <para>Si define la fórmula de un rango de varias celdas rellena todas las celdas del rango con la fórmula.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene o establece la fórmula para el objeto, utilizando la notación de estilo F1C1 en el lenguaje de la macro.</summary>
+        <value>La fórmula para el objeto, utilizando la notación de estilo F1C1 en el lenguaje de la macro.</value>
+        <remarks><para>String de lectura y escritura. Si la celda contiene una constante, esta propiedad la devolverá. Si está vacía, devolverá una cadena vacía. Si la celda contiene una fórmula, la propiedad devolverá la fórmula en forma de cadena, con el mismo formato en que se presentaría en la barra de fórmulas (incluido el signo igual (=)).</para>
+          <para>Si se establece el valor o la fórmula de una celda como una fecha, Microsoft Excel 2010 comprobará si la celda ya tiene el formato de uno de los formatos numéricos de fecha u hora. De lo contrario, cambia el formato numérico al formato numérico de fecha corto predeterminado.</para>
+          <para>Si se define la fórmula de un rango de varias celdas, se llenan todas las celdas del rango con la fórmula.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaR1C1Local">
@@ -496,8 +456,8 @@ Es de solo lectura</summary>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece la fórmula para el objeto, mediante la notación de estilo F1C1 en el idioma del usuario.</summary>
-        <value>Cadena de lectura y escritura. La fórmula para el objeto, mediante la notación de estilo F1C1 en el idioma del usuario.</value>
+        <summary>Obtiene o establece la fórmula para el objeto, utilizando la notación de estilo F1C1 en el idioma del usuario.</summary>
+        <value>String de lectura y escritura. La fórmula para el objeto, utilizando la notación de estilo F1C1 en el idioma del usuario.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -526,10 +486,8 @@ Es de solo lectura</summary>
       <Docs>
         <summary>Obtiene el alto, en puntos, del objeto.</summary>
         <value>Alto del objeto, en puntos.</value>
-        <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
-        </remarks>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlignment">
@@ -559,11 +517,8 @@ Es de solo lectura</summary>
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece la alineación horizontal del objeto especificado.</summary>
-        <value>
-          <b>Object</b>
-        </value>
-        <remarks>
-          <para>El valor de esta propiedad puede establecerse en uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.XlConstants" /> valores de enumeración:</para>
+        <value><b>Objeto</b></value>
+        <remarks><para>El valor de esta propiedad se puede establecer en uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.XlConstants" /> valores de enumeración:</para>
           <list type="table">
             <item>
               <description>
@@ -591,9 +546,8 @@ Es de solo lectura</summary>
               </description>
             </item>
           </list>
-          <para>algunas de estas constantes pueden no estar disponibles para usted, dependiendo de la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
-          <para />
-        </remarks>
+          <para>[!NOTA] Algunas de estas constantes pueden no estar disponibles según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncludeInLayout">
@@ -622,15 +576,10 @@ Es de solo lectura</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el título del eje ocupará el espacio de diseño del gráfico cuando un diseño de gráfico se determine. El valor predeterminado es <b>True</b>. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Esta propiedad no afecta a si un gráfico está en modo de Autodiseño o no.  Si el usuario agrega un título usando el comando encima de gráfico, el gráfico se cambia de tamaño más pequeño, como se muestra en Microsoft Office Excel 2003.  Si el usuario, a continuación, quita el título o selecciona una de las opciones de título de la superposición, el gráfico cambiará de tamaño más grande, como si el título no estuviera sobre el gráfico.</para>
-          <para />
-        </remarks>
+        <summary><b>True</b> si el título del eje ocupará el espacio de diseño del gráfico cuando un diseño de gráfico se determine. El valor predeterminado es <b>True</b>. Lectura y escritura.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Esta propiedad no afecta a que un gráfico esté o no en modo de autodiseño.  Si el usuario agrega un título usando el comando Encima del gráfico, se cambiará el tamaño del gráfico para hacerlo menor, como ocurre en Microsoft Office Excel 2003.  Si el usuario quita después el título o selecciona una de las opciones de superposición del título, el tamaño del gráfico se volverá mayor, como si el título no estuviera sobre el gráfico.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -660,9 +609,7 @@ Es de solo lectura</summary>
       </ReturnValue>
       <Docs>
         <summary>Devuelve el interior del objeto especificado.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Interior" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -693,9 +640,7 @@ Es de solo lectura</summary>
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece la distancia, en puntos, desde el borde izquierdo del objeto hasta el borde izquierdo del área del gráfico.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Doble</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -723,9 +668,7 @@ Es de solo lectura</summary>
       </ReturnValue>
       <Docs>
         <summary>Devuelve el nombre del objeto.</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -755,14 +698,10 @@ Es de solo lectura</summary>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor <b>entero</b> que representa la orientación del texto.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>El valor de esta propiedad puede ser un valor entero entre – 90 y 90 grados o en uno de los <see cref="T:Microsoft.Office.Interop.Word.XlOrientation" /> valores de enumeración.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece un valor de <b>tipo Integer</b> que representa la orientación del texto.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>El valor de esta propiedad puede ser un valor entero comprendido entre-90 y 90 grados o uno de <see cref="T:Microsoft.Office.Interop.Word.XlOrientation" /> los valores de enumeración.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -788,10 +727,8 @@ Es de solo lectura</summary>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve al objeto primario del objeto especificado. Es de solo lectura</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve al objeto primario del objeto especificado. Solo lectura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -821,10 +758,8 @@ Es de solo lectura</summary>
         <ReturnType>Microsoft.Office.Interop.Word.XlChartElementPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la posición del título del eje en el gráfico. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlChartElementPosition" />
-        </value>
+        <summary>Devuelve o establece la posición del título del eje en el gráfico. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlChartElementPosition" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -854,10 +789,8 @@ Es de solo lectura</summary>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.XlReadingOrder" /> valor de enumeración que representa el orden de lectura para el objeto especificado. Lectura y escritura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.XlReadingOrder" /> valor de enumeración que representa el orden de lectura para el objeto especificado. Lectura/escritura.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -883,9 +816,7 @@ Es de solo lectura</summary>
       <Parameters />
       <Docs>
         <summary>Selecciona el objeto.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <returns><b>Objeto</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -916,9 +847,7 @@ Es de solo lectura</summary>
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece un valor <b>Boolean</b> que determina si el objeto tiene una sombra.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -948,10 +877,8 @@ Es de solo lectura</summary>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el texto del objeto especificado. Lectura y escritura.</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <summary>Devuelve o establece el texto del objeto especificado. Lectura/escritura.</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -982,9 +909,7 @@ Es de solo lectura</summary>
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece la distancia, en puntos, desde el borde superior del objeto hasta la parte superior de la fila 1 (en una hoja de cálculo) o la parte superior del área del gráfico (en un gráfico).</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Doble</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1015,11 +940,8 @@ Es de solo lectura</summary>
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece la alineación vertical del objeto especificado.</summary>
-        <value>
-          <b>Object</b>
-        </value>
-        <remarks>
-          <para>El valor de esta propiedad puede establecerse en uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.XlConstants" /> valores de enumeración:</para>
+        <value><b>Objeto</b></value>
+        <remarks><para>El valor de esta propiedad se puede establecer en uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.XlConstants" /> valores de enumeración:</para>
           <list type="table">
             <item>
               <description>
@@ -1047,8 +969,7 @@ Es de solo lectura</summary>
               </description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -1075,11 +996,9 @@ Es de solo lectura</summary>
       </ReturnValue>
       <Docs>
         <summary>Obtiene el ancho, en puntos, del objeto.</summary>
-        <value>El ancho del objeto en puntos.</value>
-        <remarks>
-          <para>Es de sólo lectura.</para>
-          <para />
-        </remarks>
+        <value>El ancho del objeto, en puntos.</value>
+        <remarks><para>Solo lectura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="GroupShapes" FullName="Microsoft.Office.Interop.Word.GroupShapes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5afad17fa25d53e9102518b0c3d3e09a72fa53bd" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675503" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface GroupShapes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0be8e003f7a4f84b8581f6749296fd54551f5d79" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148022" /></Metadata><TypeSignature Language="C#" Value="public interface GroupShapes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract GroupShapes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.GroupShapes" />
   <TypeSignature Language="VB.NET" Value="Public Interface GroupShapes&#xA;Implements IEnumerable" />
@@ -31,9 +23,9 @@
   </Attributes>
   <Docs>
     <summary>Representa las formas individuales de una forma agrupada.</summary>
-    <remarks>
-      <para>Cada forma está representada por un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto. Uso de la <see cref="P:Microsoft.Office.Interop.Word.GroupShapes.Item(System.Object@)" /> método con este objeto, puede trabajar con las formas individuales dentro de un grupo sin tener que ellos Desagrupar.</para> Uso de 
-      <para>el <see cref="P:Microsoft.Office.Interop.Word.Shape.GroupItems" /> (propiedad) para devolver la colección <b>GroupShapes</b> . Utilice la <b>sintaxis GroupItems</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de la forma individual dentro de la forma agrupada, para devolver una sola forma de la colección <b>GroupShapes</b> .</para><para /></remarks>
+    <remarks><para>Cada forma está representada <see cref="T:Microsoft.Office.Interop.Word.Shape" /> por un objeto. Con el <see cref="P:Microsoft.Office.Interop.Word.GroupShapes.Item(System.Object@)" /> método con este objeto, puede trabajar con formas individuales de un grupo sin tener que desagruparlas.</para>
+      <para>Use la <see cref="P:Microsoft.Office.Interop.Word.Shape.GroupItems" /> propiedad para devolver la colección <b>GroupShapes</b> . Use <b>GroupItems</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de la forma individual dentro de la forma agrupada, para devolver una sola forma de la colección <b>GroupShapes</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,9 +109,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -180,7 +172,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>objeto</b> que indica la posición ordinal o una cadena que representa el nombre del objeto individual.</param>
+        <param name="Index"><b>Objeto</b> que indica la posición ordinal o una cadena que representa el nombre del objeto individual.</param>
         <summary>Devuelve un objeto individual de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -237,16 +229,13 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>requerido. Indica qué formas se incluirán en el intervalo especificado. Puede ser un entero que especifica el número de índice de una forma dentro de la <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> colección, una cadena que especifica el nombre de una forma o una matriz de <b>objetos</b> que contiene números enteros o cadenas.</param>
+        <param name="Index"><b>Objeto</b>requerido. Indica qué formas se incluirán en el intervalo especificado. Puede ser un entero que especifica el número de índice de una forma dentro de <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> la colección, una cadena que especifica el nombre de una forma o una matriz de <b>objetos</b> que contiene enteros o cadenas.</param>
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Los objetos 
-            <b>ShapeRange</b> no incluyen <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objetos. Un objeto <b>InlineShape</b> equivale a un carácter y se sitúa como tal dentro de un intervalo de texto. <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objetos están delimitadas con relación a un intervalo de texto (la selección, de forma predeterminada), pero pueden situarse en cualquier lugar de la página. Un objeto <b>Shape</b> siempre aparecerá en la misma página que el intervalo al que se fija.</para>
-          <para>La mayoría de las operaciones que se puede hacer con un objeto <b>Shape</b> también puede hacer con un objeto <b>ShapeRange</b> que contenga una única forma. Algunas operaciones, cuando se realizan en un objeto <b>ShapeRange</b> que contiene varias formas, producen un error.</para>
-          <para />
-        </remarks>
+        <remarks><para>Los objetos 
+            <b>ShapeRange</b> no <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> incluyen objetos. Un objeto <b>InlineShape</b> equivale a un carácter y se sitúa como tal dentro de un intervalo de texto. <see cref="T:Microsoft.Office.Interop.Word.Shape" />los objetos se fijan a un intervalo de texto (de forma predeterminada, la selección), pero pueden situarse en cualquier lugar de la página. Un objeto <b>Shape</b> siempre aparecerá en la misma página que el intervalo al que está anclado.</para>
+          <para>[!NOTA] Casi todas las operaciones que se pueden hacer con un objeto <b>Shape</b> también puede hacer con un objeto <b>ShapeRange</b> que contenga una única forma. Algunas operaciones, cuando se realizan en un objeto <b>ShapeRange</b> que contiene varias formas, producen un error.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

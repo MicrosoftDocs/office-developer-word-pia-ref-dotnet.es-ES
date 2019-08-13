@@ -1,13 +1,5 @@
 <Type Name="OMathNary" FullName="Microsoft.Office.Interop.Word.OMathNary">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5131483c9155c458e904980a5155768ea9b23242" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674884" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OMathNary" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="05967caf7afd8d7f04187c02216d56fe874729d5" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147773" /></Metadata><TypeSignature Language="C#" Value="public interface OMathNary" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMathNary" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMathNary" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMathNary" />
@@ -26,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa el objeto n matemático, formado por un <paramref name="n" />-objeto n, una base (u operando) y opcionales límites superiores e inferiores.</summary>
+    <summary>Representa el objeto n matemático, formado por un <paramref name="n" />objeto ario, una base (u operando) y límites superiores e inferiores opcionales.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,10 +45,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa la aplicación Microsoft Word.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,10 +76,8 @@
         <ReturnType>System.Int16</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece una <b>breve</b> que representa un carácter usado como el <paramref name="n" />-operador. Lectura y escritura.</summary>
-        <value>
-          <b>Breve</b>
-        </value>
+        <summary>Devuelve o establece un <b>Short</b> que representa un carácter usado como el <paramref name="n" />operador-ario. Lectura/escritura.</summary>
+        <value><b>Short</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,14 +104,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> de 32 bits que indica la aplicación en la que el complemento que se creó. Es de solo lectura</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, el <see cref="P:Microsoft.Office.Interop.Word.OMathNary.Creator" /> (propiedad) devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Este valor también puede representarse mediante la constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />. Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, consulte la referencia del lenguaje de ayuda que se incluye con Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve un <b>entero</b> de 32 bits que indica la aplicación en la que se creó el complemento. Solo lectura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Si el objeto se creó en Microsoft Word, la <see cref="P:Microsoft.Office.Interop.Word.OMathNary.Creator" /> propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Este valor también puede representarse mediante la <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />constante. Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="E">
@@ -149,10 +133,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.OMath</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.OMath" /> object que representa la base del objeto de ecuación especificado. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.OMath" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.OMath" /> objeto Object que representa la base del objeto de ecuación especificado. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.OMath" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,10 +164,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <b>valor Boolean</b> que representa si <paramref name="n" />-operadores aumentan a la altura completa de los argumentos que contienen. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Devuelve o establece un <b>valor Boolean</b> que representa <paramref name="n" />si los operadores-arios aumentan para el alto completo de los argumentos que contienen. Lectura/escritura.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,10 +195,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <b>valor Boolean</b> que representa si se oculta el límite inferior de un <paramref name="n" />-operador. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Devuelve o establece un <b>valor Boolean</b> que representa si se oculta el límite inferior de <paramref name="n" />un operador-ario. Lectura/escritura.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,10 +226,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <b>valor Boolean</b> que representa si se oculta el límite superior de un <paramref name="n" />-operador. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Devuelve o establece un <b>valor Boolean</b> que representa si se oculta el límite superior de <paramref name="n" />un operador-ario. Lectura/escritura.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,10 +254,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario del especificado <see cref="T:Microsoft.Office.Interop.Word.OMathNary" /> objeto.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve el objeto primario del objeto especificado <see cref="T:Microsoft.Office.Interop.Word.OMathNary" /> .</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,10 +282,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.OMath</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.OMath" /> object que representa el límite inferior de un <paramref name="n" />-operador. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.OMath" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.OMath" /> objeto Object que representa el límite inferior de <paramref name="n" />un operador-ario. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.OMath" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -341,10 +313,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <b>valor Boolean</b> que representa la posición de <paramref name="n" />-arios límites en la posición de superíndice o superior del límite. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Devuelve o establece un <b>valor Boolean</b> que representa el posicionamiento <paramref name="n" />de los límites de operador en el subíndice-superíndice o en la posición de límite superior inferior. Lectura/escritura.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -371,10 +341,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.OMath</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.OMath" /> object que representa el límite superior de un <paramref name="n" />-operador. Es de solo lectura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.OMath" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.OMath" /> objeto Object que representa el límite superior de <paramref name="n" />un operador-ario. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.OMath" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

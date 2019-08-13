@@ -1,13 +1,5 @@
 <Type Name="BuildingBlockType" FullName="Microsoft.Office.Interop.Word.BuildingBlockType">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f2365b8a7364baba0b764d8d527d7c87519b569d" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675800" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface BuildingBlockType" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e98fe9144c59325006f66bdcbaa3a460c1f43761" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146195" /></Metadata><TypeSignature Language="C#" Value="public interface BuildingBlockType" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract BuildingBlockType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.BuildingBlockType" />
   <TypeSignature Language="VB.NET" Value="Public Interface BuildingBlockType" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Representa un tipo de bloque de creación. Cada <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /> objeto es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> colección.</summary>
-    <remarks>
-      <para>Microsoft Office Word utiliza tipos y categorías para organizar los bloques de creación. Cada tipo de bloque de creación está representado por un <see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" /> constante. Usar el <see cref="P:Microsoft.Office.Interop.Word.BuildingBlockType.Categories" /> (propiedad) a las categorías de acceso para un tipo de bloque de creación específicos. Para obtener más información sobre bloques de creación, vea <a href="HV10120827">trabajar con bloques de creación</a></para>
-      <para />
-    </remarks>
+    <remarks><para>Microsoft Office Word usa tipos y categorías para organizar bloques de creación. Cada tipo de bloque de creación está representado <see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" /> por una constante. Utilice la <see cref="P:Microsoft.Office.Interop.Word.BuildingBlockType.Categories" /> propiedad para tener acceso a las categorías de un tipo de bloque de creación específico. Para obtener más información acerca de los bloques de creación, vea <a href="HV10120827">trabajar con bloques de creación</a></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,10 +46,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa la aplicación Microsoft Word.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,10 +74,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Categories</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una colección que representa las categorías de un tipo de bloque de creación. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Categories" />
-        </value>
+        <summary>Devuelve una colección que representa las categorías de un tipo de bloque de creación. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Categories" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,15 +102,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> de 32 bits que indica la aplicación en la que el complemento que se creó. Es de solo lectura</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, el <see cref="P:Microsoft.Office.Interop.Word.BuildingBlockType.Creator" /> (propiedad) devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Este valor también puede representarse mediante la constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />. </para>
-          <para>Esta propiedad se ha diseñado principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve un <b>entero</b> de 32 bits que indica la aplicación en la que se creó el complemento. Solo lectura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Si el objeto se creó en Microsoft Word, la <see cref="P:Microsoft.Office.Interop.Word.BuildingBlockType.Creator" /> propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Este valor también puede representarse mediante la <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />constante. </para>
+          <para>Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -150,10 +132,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> que representa la posición de un elemento de una colección. Es de solo lectura</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Devuelve un <b>entero</b> que representa la posición de un elemento en una colección. Solo lectura.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,10 +160,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el nombre localizado de un tipo de bloque de creación. Es de solo lectura</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <summary>Devuelve el nombre localizado de un tipo de bloque de creación. Solo lectura.</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,10 +188,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario del especificado <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /> objeto.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve el elemento primario del objeto <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /> especificado.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

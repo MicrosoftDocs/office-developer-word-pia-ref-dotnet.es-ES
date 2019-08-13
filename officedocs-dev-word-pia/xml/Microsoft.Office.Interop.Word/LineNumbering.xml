@@ -1,13 +1,5 @@
 <Type Name="LineNumbering" FullName="Microsoft.Office.Interop.Word.LineNumbering">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="19268d70b2273750e89a9e9736b6fb7e0290ed9f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674870" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface LineNumbering" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="447ca72d9089f4505bd8a5cea8ccb95ec880c18c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146573" /></Metadata><TypeSignature Language="C#" Value="public interface LineNumbering" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LineNumbering" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.LineNumbering" />
   <TypeSignature Language="VB.NET" Value="Public Interface LineNumbering" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Representa los números de línea en el margen izquierdo o a la izquierda de cada columna de estilo periodístico.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.PageSetup.LineNumbering" /> (propiedad) para devolver el objeto <b>LineNumbering</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.LineNumbering" /> propiedad para devolver el objeto <b>LineNumbering</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Active">
@@ -59,8 +49,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la numeración de líneas está activa para el documento especificado, sección o secciones.</summary>
+        <summary><b>True</b> si la numeración de líneas está activa para el documento especificado, sección o secciones.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,7 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,13 +108,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el incremento numérico de los números de línea. Por ejemplo, si se establece la propiedad <b>CountBy</b> en 5, cada cinco líneas mostrará el número de línea.</summary>
+        <summary>Devuelve o establece el incremento numérico de los números de línea. Por ejemplo, si la propiedad <b>CountBy</b> está establecida en 5, cada cinco líneas mostrará el número de línea.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Números de línea sólo se muestran en la vista Diseño de impresión y vista previa de impresión.</para>
-          <para>Esta propiedad no tiene ningún efecto a menos que el <see cref="P:Microsoft.Office.Interop.Word.LineNumbering.Active" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Word.LineNumbering" /> objeto se establece en <b>True</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Números de línea sólo se muestran en la vista Diseño de impresión y vista previa de impresión.</para>
+          <para>Esta propiedad no tiene ningún efecto a <see cref="P:Microsoft.Office.Interop.Word.LineNumbering.Active" /> menos que la <see cref="T:Microsoft.Office.Interop.Word.LineNumbering" /> propiedad del objeto se establezca en <b>true</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -153,9 +140,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistanceFromText">
@@ -243,12 +230,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdNumberingRule</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la numeración de líneas de manera, es decir, si se inicia a través de al principio de una nueva página o una sección o se ejecuta de forma continua.</summary>
+        <summary>Devuelve o establece la forma en que se ejecuta la numeración de líneas, es decir, si comienza de nuevo al principio de una nueva página o sección o se ejecuta de forma continua.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Debe estar en la vista Diseño de impresión para ver la numeración de líneas.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para ver la numeración de líneas es necesario estar en la vista Diseño de impresión.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StartingNumber">
@@ -279,10 +264,8 @@
       <Docs>
         <summary>Devuelve o establece el número de línea de inicio.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Debe estar en la vista Diseño de impresión para ver la numeración de líneas.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para ver la numeración de líneas es necesario estar en la vista Diseño de impresión.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

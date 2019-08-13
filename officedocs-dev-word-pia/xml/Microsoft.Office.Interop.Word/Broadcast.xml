@@ -1,13 +1,5 @@
 <Type Name="Broadcast" FullName="Microsoft.Office.Interop.Word.Broadcast">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="98d790daa433768bcb289537f5925f957d798e48" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675265" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Broadcast" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0d509697e025a0a6da57a59ccf0c2e2d3d1b050a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146216" /></Metadata><TypeSignature Language="C#" Value="public interface Broadcast" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Broadcast" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Broadcast" />
   <TypeSignature Language="VB.NET" Value="Public Interface Broadcast" />
@@ -54,13 +46,11 @@
         <Parameter Name="notesWacUrl" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="notesUrl">Especifica la dirección URL donde se almacenan las notas de la reunión compartida, para los asistentes que utilicen al cliente enriquecido de OneNote.</param>
-        <param name="notesWacUrl">Especifica la dirección URL donde se almacenan las notas de la reunión compartida, para los asistentes mediante el cliente de OneNote en línea.</param>
-        <summary>Agrega notas de reuniones compartidas para la difusión especificada que puede tener acceso a los asistentes que utilicen el cliente enriquecido de OneNote 2013 o aplicación web.</summary>
-        <remarks>
-          <para>Si no se pasa una cadena para cualquiera de los dos parámetros, el método <b>AddMeetingNotes</b> devuelve un error de parámetro no válido. Si por cualquier motivo se produce un error de la llamada al método, Word devuelve un error genérico de difusión.</para>
-          <para />
-        </remarks>
+        <param name="notesUrl">Especifica la dirección URL en la que se almacenan las notas de la reunión compartida, para los asistentes que usen el cliente enriquecido de OneNote.</param>
+        <param name="notesWacUrl">Especifica la dirección URL en la que se almacenan las notas de la reunión compartida, para los asistentes que usen el cliente de OneNote online.</param>
+        <summary>Agrega notas de la reunión compartida para la difusión especificada que son accesibles para los asistentes que usan una aplicación web o cliente enriquecido de OneNote 2013.</summary>
+        <remarks><para>Si no pasa una cadena para ninguno de los dos parámetros, el método <b>AddMeetingNotes</b> devuelve un error de parámetro no válido. Si, por algún motivo, se produce un error en la llamada al método, Word devuelve un error de difusión genérico.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -86,7 +76,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -114,12 +104,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Si hay una difusión en curso, devuelve una <b>cadena</b> (<b>cadena</b> en C#) que representa la dirección URL del vínculo del asistente. Es de solo lectura</summary>
+        <summary>Si hay una difusión en curso, devuelve una <b>cadena</b> (<b>String</b> en C#) que representa la dirección URL del vínculo del asistente. Solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si no está en curso una difusión, <b>AttendeeUrl</b> devuelve una cadena vacía.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si una difusión no está en curso, <b>AttendeeUrl</b> devuelve una cadena vacía.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Capabilities">
@@ -145,36 +133,34 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>UInteger</b> (<b>uint</b> en C#) que representa las funciones de la difusión especificada. Es de solo lectura</summary>
+        <summary>Devuelve un <b>UInteger</b> (<b>uint</b> en C#) que representa las funciones de la difusión especificada. Solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>capacidades</b> puede devolver los siguientes valores:</para>
+        <remarks><para>La propiedad <b>Capabilities</b> puede devolver los valores siguientes:</para>
           <list type="table">
             <item>
               <description>
                 <b>MSOBroadcastCapFileSizeLimited</b>
               </description>
-              <description>1</description>
-              <description>tamaño del archivo limitado</description>
+              <description>1 </description>
+              <description>Tamaño de archivo limitado</description>
             </item>
             <item>
               <description>
                 <b>MSOBroadcastCapSupportsMeetingNotes</b>
               </description>
-              <description>2</description>
-              <description>admite notas de la reunión</description>
+              <description>2 </description>
+              <description>Admite notas de la reunión</description>
             </item>
             <item>
               <description>
                 <b>MSOBroadcastCapSupportsUpdateDoc</b>
               </description>
-              <description>4</description>
-              <description>documento admite actualizar</description>
+              <description>4 </description>
+              <description>Admite la actualización de documentos</description>
             </item>
           </list>
-          <para>los valores devueltos se corresponden con puede ser Microsoft Office 2013 o difundir presentación de Microsoft Office 2010 capacidades de servicio de presentación.</para>
-          <para />
-        </remarks>
+          <para>Los valores devueltos corresponden a las capacidades del servicio de presentación de difusión de Microsoft Office 2013 o Microsoft Office 2010.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="End">
@@ -199,11 +185,9 @@
       <Parameters />
       <Docs>
         <summary>Finaliza la sesión de difusión especificada.</summary>
-        <remarks>
-          <para>Llamar al método <b>End</b> finaliza la sesión de difusión sin mostrar un mensaje de confirmación al usuario. También se establece el valor de la <see cref="P:Microsoft.Office.Interop.Word.Broadcast.AttendeeUrlproperty" /> en una cadena vacía.</para>
-          <para>Si no se emite el documento, el método devuelve el error de tiempo de ejecución 4702.</para>
-          <para />
-        </remarks>
+        <remarks><para>Al llamar al método <b>End</b> finaliza la sesión de difusión sin mostrar una solicitud de confirmación al usuario. También se establece el valor de <see cref="P:Microsoft.Office.Interop.Word.Broadcast.AttendeeUrlproperty" /> en una cadena vacía.</para>
+          <para>Si el documento no se está difundiendo, el método devuelve el error de tiempo de ejecución 4702.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -229,7 +213,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>objeto</b> que representa el objeto primario del objeto <b>de difusión</b></summary>
+        <summary>Devuelve un <b>objeto Object</b> que representa el objeto primario del objeto <b>Broadcast</b> especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -256,10 +240,8 @@
       <Parameters />
       <Docs>
         <summary>Pausa la difusión especificada.</summary>
-        <remarks>
-          <para>Si la difusión especificada no está en curso, <b>Pausa</b> devuelve el error de tiempo de ejecución 4702.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la difusión especificada no está en curso, <b>PAUSE</b> devuelve el error en tiempo de ejecución 4702.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PresenterServiceUrl">
@@ -285,12 +267,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Si hay una difusión en curso, devuelve una <b>cadena</b> (<b>cadena</b> en C#) que representa la dirección URL del servicio de moderador que hospeda la difusión. Es de solo lectura</summary>
+        <summary>Si hay una difusión en curso, devuelve una <b>cadena</b> (<b>String</b> en C#) que representa la dirección URL del servicio moderador que hospeda la difusión. Solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si no está en curso una difusión, <b>PresenterServiceUrl</b> devuelve una cadena vacía.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si una difusión no está en curso, <b>PresenterServiceUrl</b> devuelve una cadena vacía.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Resume">
@@ -315,10 +295,8 @@
       <Parameters />
       <Docs>
         <summary>Reanuda la difusión especificada.</summary>
-        <remarks>
-          <para>El método <b>Resume</b> devuelve un error (#4700) si el documento está protegido con DRM, ya se emite (#4698), no se emite en todos los (#4702), o que tenga las modificaciones en conflicto (está en modo de combinación, #4701).</para>
-          <para />
-        </remarks>
+        <remarks><para>El <b></b> método resume devuelve un error (#4700) si el documento está protegido mediante DRM, si ya se está difundiendo (#4698), no se está difundiendo (#4702) o tiene cambios conflictivos (está en modo de combinación, #4701).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SessionID">
@@ -344,12 +322,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Si hay una difusión en curso, devuelve una <b>cadena</b> (<b>cadena</b> en C#) que especifica el identificador de la sesión. Es de solo lectura</summary>
+        <summary>Si hay una difusión en curso, devuelve una <b>cadena</b> (<b>String</b> en C#) que especifica el identificador de la sesión. Solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si no está en curso una difusión, <b>SessionID</b> devuelve una cadena vacía.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si una difusión no está en curso, <b>SessionID</b> devuelve una cadena vacía.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -377,11 +353,9 @@
       <Docs>
         <param name="serverUrl">La dirección URL del servidor de difusión.</param>
         <summary>Inicia la sesión de difusión especificada.</summary>
-        <remarks>
-          <para>Llamar al método <b>Iniciar</b> configura el servidor, autentica al usuario y carga la presentación.</para>
-          <para>Si el valor que se pasa para <paramref name="serverUrl" /> tiene no válido devuelve formato, <b>Iniciar</b> un error "Parámetro no válido". Además, el método devuelve un error si el documento está protegido, con DRM ya se emite o tiene modificaciones conflictivas (está en modo de combinación).</para>
-          <para />
-        </remarks>
+        <remarks><para>Si se llama al método <b>Start</b> , se configura el servidor, se autentica al usuario y se carga la presentación.</para>
+          <para>Si el valor que se <paramref name="serverUrl" /> ha pasado para tiene un formato no válido, <b>Start</b> devuelve un error "parámetro no válido". Además, el método devuelve un error si el documento está protegido mediante DRM, si ya se está difundiendo o tiene cambios conflictivos (está en modo de combinación).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -407,23 +381,21 @@
         <ReturnType>Microsoft.Office.Core.MsoBroadcastState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve una constante <b>MSOBroadcastState</b> que describe el estado actual de difusión. Es de solo lectura</summary>
+        <summary>Devuelve una constante <b>MSOBroadcastState</b> que describe el estado actual de la difusión. Solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>State</b> puede devolver uno de los tres estados siguientes:</para>
+        <remarks><para>La propiedad <b>State</b> puede devolver uno de los tres Estados siguientes:</para>
           <list type="bullet">
             <item>
-              <para>difusión no inicial (1)</para>
+              <para>Sin difusión (0)</para>
             </item>
             <item>
-              <para>(0) se difunde</para>
+              <para>Difusión iniciada (1)</para>
             </item>
             <item>
-              <para>difusión en pausa (2)</para>
+              <para>Difusión en pausa (2)</para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

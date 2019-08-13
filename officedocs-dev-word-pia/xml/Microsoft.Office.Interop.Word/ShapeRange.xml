@@ -1,13 +1,5 @@
 <Type Name="ShapeRange" FullName="Microsoft.Office.Interop.Word.ShapeRange">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a7eccde26cae7df7de66e89f8bf37cc6115cc8d8" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675263" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ShapeRange : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c0f3e7f22555a874e2197ff4def4b0e9d86e9c77" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146146" /></Metadata><TypeSignature Language="C#" Value="public interface ShapeRange : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShapeRange implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ShapeRange" />
   <TypeSignature Language="VB.NET" Value="Public Interface ShapeRange&#xA;Implements IEnumerable" />
@@ -30,16 +22,18 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa un rango de formas, que es un conjunto de formas en un documento.</summary>
-    <remarks>
-      <para>Un intervalo de formas puede contener tan sólo una forma o como máximo todas las formas del documento. Puede incluir las formas que desee, elegidas entre todas las formas del documento o todas las formas de la selección, para construir un intervalo de formas. Por ejemplo, podría construir una colección <b>ShapeRange</b> que contenga las tres primeras formas en un documento, todas las formas seleccionadas en un documento o todas las formas libres de un documento.</para>
-      <b>Nota</b>
-      <para>mayoría de las operaciones que se puede hacer con un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> de objetos, también puede hacer con un objeto <b>ShapeRange</b> que contiene sólo una forma. Algunas operaciones, cuando se realizan en un objeto <b>ShapeRange</b> que contiene más de una forma, producirán un error.</para>
-      <para>Uso <b>Shapes.Range</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre o número de índice de la forma o una matriz que contiene los nombres o números de índice de formas, para devolver una colección <b>ShapeRange</b> que representa un conjunto de formas de un documento. Mediante programación, puede usar una matriz para construir una matriz de nombres o números de índice.</para>
-      <para>Aunque se puede usar el <see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" /> método para devolver cualquier número de formas, es más sencillo utilizar el <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Item(System.Object@)" /> (método) si desea devolver sólo un miembro de la colección. Por ejemplo, Shapes (1) es más sencillo que Shapes.Range (1).</para>
-      <para>Use <b>Selection.ShapeRange</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre o el número de índice, para devolver un objeto <b>Shape</b> que representa una forma dentro de una selección.</para>
-      <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Align(Microsoft.Office.Core.MsoAlignCmd,System.Int32)" />, <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Distribute(Microsoft.Office.Core.MsoDistributeCmd,System.Int32)" />, o <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" /> método para colocar un conjunto de formas con relación entre sí el documento o.</para> Uso de 
-      <para>el <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Group" />, <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Regroup" />, o <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Ungroup" /> (método) para crear y trabajar con una sola forma formado a partir de un intervalo de formas. El <see cref="P:Microsoft.Office.Interop.Word.Shape.GroupItems" /> propiedad para un objeto Shape devuelve el <see cref="T:Microsoft.Office.Interop.Word.GroupShapes" /> objeto, que representa todas las formas que estaban agrupadas para crear una sola forma.</para><para>La grabadora siempre utiliza la <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> (propiedad) para grabar formas.</para><para>Un objeto <b>ShapeRange</b> no incluye <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objetos.</para><para /></remarks>
+    <summary>Representa un intervalo de formas, que es un conjunto de formas de un documento.</summary>
+    <remarks><para>Un intervalo de formas puede contener una o varias formas, o incluso todas las formas del documento. Puede incluir las formas que desee, elegidas entre todas las formas del documento o todas las formas de la selección, para construir un intervalo de formas. Por ejemplo, podría construir una colección <b>ShapeRange</b> que contenga las tres primeras formas en un documento, todas las formas seleccionadas o todas las formas libres de un documento.</para>
+      <para>
+        <b>Nota:</b>  La mayoría de las operaciones que se pueden <see cref="T:Microsoft.Office.Interop.Word.Shape" /> realizar con un objeto, también se pueden realizar con un objeto <b>ShapeRange</b> que contenga una sola forma. Algunas operaciones, cuando se realizan en un objeto <b>ShapeRange</b> que contenga más de una forma, producirán un error.</para>
+      <para>Use <b>Shapes. Range</b>(<paramref name="index" />), <paramref name="index" /> donde es el nombre o número de índice de la forma o una matriz que contenga los nombres o números de índice de las formas, para devolver una colección <b>ShapeRange</b> que represente un conjunto de formas de un documento. Puede usar mediante programación una matriz para construir una matriz de nombres o números de índice.</para>
+      <para>Aunque puede utilizar el <see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" /> método para devolver cualquier número de formas, es más sencillo usar el <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Item(System.Object@)" /> método si desea devolver sólo un miembro de la colección. Por ejemplo, Shapes(1) es más sencillo que Shapes.Range(1).</para>
+      <para>Utilice <b>Selection. ShapeRange</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre o el número de índice, para devolver un objeto <b>Shape</b> que representa una forma en una selección.</para>
+      <para>Use el <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Align(Microsoft.Office.Core.MsoAlignCmd,System.Int32)" />método <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Distribute(Microsoft.Office.Core.MsoDistributeCmd,System.Int32)" />, o <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" /> para colocar un conjunto de formas entre sí o con relación al documento.</para>
+      <para>Use el <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Group" />método <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Regroup" />, o <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Ungroup" /> para crear y trabajar con una sola forma formada desde un intervalo de formas. La <see cref="P:Microsoft.Office.Interop.Word.Shape.GroupItems" /> propiedad de un objeto Shape devuelve el <see cref="T:Microsoft.Office.Interop.Word.GroupShapes" /> objeto, que representa todas las formas que estaban agrupadas para crear una forma.</para>
+      <para>La grabadora siempre usa <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> la propiedad al grabar formas.</para>
+      <para>Un objeto <b>ShapeRange</b> no incluye <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objetos.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -93,7 +87,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Adjustments</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Adjustments" /> objeto que contiene valores de ajuste de todos los ajustes de especificado <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> objeto que representa una autoforma o WordArt.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Adjustments" /> objeto que contiene los valores de ajuste de todos los ajustes del <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> objeto especificado que representa una Autoforma o WordArt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -122,9 +116,8 @@
         <Parameter Name="RelativeTo" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Align">Requiere <see cref="T:Microsoft.Office.Core.MsoAlignCmd" />. Especifica la manera van a alinear las formas en el intervalo de formas especificado. <b>MsoAlignCmd</b> puede ser una de las siguientes constantes:<b>msoAlignCenters</b><b>msoAlignMiddles</b><b>msoAlignTops</b><b>msoAlignBottoms</b><b>msoAlignLefts</b><b>msoAlignRights</b></param>
-        <param name="RelativeTo">
-          <b>Integer</b>requerido. <b>True</b> para alinear las formas con relación al borde del documento. <b>False</b> para alinear las formas entre sí.</param>
+        <param name="Align">Es <see cref="T:Microsoft.Office.Core.MsoAlignCmd" />obligatorio. Especifica la manera en que se alinearán las formas del intervalo de formas especificado. <b>Las msoaligncmd</b> puede ser una de las siguientes constantes:<b>msoAlignCenters</b><b>msoAlignMiddles</b><b>msoAlignTops</b><b>msoAlignBottoms</b><b>msoAlignLefts</b><b>msoAlignRights</b></param>
+        <param name="RelativeTo">Required <b>Integer</b>. <b>True</b> para alinear las formas con relación al borde del documento. <b>False</b> para alinear las formas entre sí.</param>
         <summary>Alinea las formas del intervalo especificado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -183,7 +176,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa el intervalo de fijación para el intervalo de formas especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto Object que representa el intervalo de fijación del intervalo de formas especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -211,7 +204,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -237,11 +230,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Se aplica a la forma especificada el formato que se ha copiado mediante el <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.PickUp" /> (método).</summary>
-        <remarks>
-          <para>Si el formato de la <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> objeto no se ha copiado previamente con el método <b>PickUp</b> , utilizando <b>Aplicar</b> el método genera un error.</para>
-          <para />
-        </remarks>
+        <summary>Se aplica a la forma especificada el formato que se ha copiado con el <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.PickUp" /> método.</summary>
+        <remarks><para>Si el formato del <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> objeto no se ha copiado previamente con el método <b>pickup</b> , al utilizar el método <b>Apply</b> se generará un error.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoShapeType">
@@ -270,7 +261,7 @@
         <ReturnType>Microsoft.Office.Core.MsoAutoShapeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el tipo de forma para especificado <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> objeto, que debe representar una autoforma que no sea una línea o dibujo de forma libre.</summary>
+        <summary>Devuelve o establece el tipo de forma para el <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> objeto especificado, que debe representar una autoforma que no sea una línea o dibujo de forma libre.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -301,12 +292,10 @@
         <ReturnType>Microsoft.Office.Core.MsoBackgroundStyleIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece el estilo de fondo de las formas en el intervalo de formas especificado.</summary>
-        <value>El estilo de fondo de las formas en el intervalo de formas especificado.</value>
-        <remarks>
-          <para>Lectura y escritura <see cref="T:Microsoft.Office.Core.MsoBackgroundStyleIndex" />.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene o establece el estilo de fondo de las formas del intervalo de formas especificado.</summary>
+        <value>Estilo de fondo de las formas del intervalo de formas especificado.</value>
+        <remarks><para>Lectura y escritura <see cref="T:Microsoft.Office.Core.MsoBackgroundStyleIndex" />.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Callout">
@@ -332,7 +321,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.CalloutFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.CalloutFormat" /> objeto que contiene las propiedades de especificado del formato de llamada <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> object que representa las llamadas.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.CalloutFormat" /> objeto que contiene las propiedades de formato de llamada <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> del objeto especificado que representa las llamadas.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -360,13 +349,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>Single</b>requerido. La cantidad en puntos porcentuales del alto de un lienzo de dibujo que desea que quede después de que el lienzo haya sido recortado. Si se introduce 0,9 como el incremento, se recorta el diez por ciento del alto del lienzo desde la parte inferior. Si se introduce 0,1, se recorta noventa por ciento del alto del lienzo desde la parte inferior.</param>
+        <param name="Increment"><b>Single</b>requerido. La cantidad en puntos porcentuales del alto de un lienzo de dibujo que desea que quede después de que el lienzo haya sido recortado. Si se introduce 0,9 como el incremento, se recorta el diez por ciento del alto del lienzo desde la parte inferior. Si se introduce 0,1, se recorta noventa por ciento del alto del lienzo desde la parte inferior.</param>
         <summary>Recorta un porcentaje del alto de un lienzo de dibujo desde la parte inferior del lienzo.</summary>
-        <remarks>
-          <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropTop(System.Single)" /> (método) para recortar en la parte superior.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use el <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropTop(System.Single)" /> método para recortar desde la parte superior.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CanvasCropLeft">
@@ -392,13 +378,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>Single</b>requerido. La cantidad en puntos porcentuales del ancho del lienzo de dibujo que desea que quede después de que el lienzo haya sido recortado. Si se introduce 0,9 como el incremento, se recorta el diez por ciento del ancho del lienzo desde la izquierda. Si se introduce 0,1, se recorta noventa por ciento del ancho del lienzo desde la izquierda.</param>
+        <param name="Increment"><b>Single</b>requerido. La cantidad en puntos porcentuales del ancho del lienzo de dibujo que desea que quede después de que el lienzo haya sido recortado. Si se introduce 0,9 como el incremento, se recorta el diez por ciento del ancho del lienzo desde la izquierda. Si se introduce 0,1, se recorta noventa por ciento del ancho del lienzo desde la izquierda.</param>
         <summary>Recorta un porcentaje del ancho de un lienzo de dibujo desde el lado izquierdo del lienzo.</summary>
-        <remarks>
-          <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropRight(System.Single)" /> (método) para recortar desde el lado derecho de un lienzo de dibujo.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropRight(System.Single)" /> método para recortar en el lado derecho de un lienzo de dibujo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CanvasCropRight">
@@ -424,13 +407,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>Single</b>requerido. La cantidad en puntos porcentuales del ancho del lienzo que desea que quede después de que el lienzo haya sido recortado. Si se introduce 0,9 como el incremento, se recorta el diez por ciento del ancho del lienzo desde la derecha. Si se introduce 0,1, se recorta noventa por ciento del ancho del lienzo desde la derecha.</param>
+        <param name="Increment"><b>Single</b>requerido. La cantidad en puntos porcentuales del ancho del lienzo que desea que quede después de que el lienzo haya sido recortado. Si se introduce 0,9 como el incremento, se recorta el diez por ciento del ancho del lienzo desde la derecha. Si se introduce 0,1, se recorta noventa por ciento del ancho del lienzo desde la derecha.</param>
         <summary>Recorta un porcentaje del ancho de un lienzo de dibujo desde el lado derecho del lienzo.</summary>
-        <remarks>
-          <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropLeft(System.Single)" /> (método) para recortar desde el lado izquierdo de un lienzo de dibujo.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropLeft(System.Single)" /> método para recortar en el lado izquierdo de un lienzo de dibujo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CanvasCropTop">
@@ -456,13 +436,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>Single</b>requerido. La cantidad en puntos porcentuales del alto de un lienzo de dibujo que desea que quede después de que el lienzo haya sido recortado. Si se introduce 0,9 como el incremento, se recorta el diez por ciento del alto del lienzo desde la parte superior. Si se introduce 0,1, se recorta noventa por ciento del alto del lienzo desde la parte superior.</param>
+        <param name="Increment"><b>Single</b>requerido. La cantidad en puntos porcentuales del alto de un lienzo de dibujo que desea que quede después de que el lienzo haya sido recortado. Si se introduce 0,9 como el incremento, se recorta el diez por ciento del alto del lienzo desde la parte superior. Si se introduce 0,1, se recorta noventa por ciento del alto del lienzo desde la parte superior.</param>
         <summary>Recorta un porcentaje del ancho de un lienzo de dibujo desde la parte superior del lienzo.</summary>
-        <remarks>
-          <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropBottom(System.Single)" /> (método) para recortar en la parte inferior.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use el <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.CanvasCropBottom(System.Single)" /> método para recortar desde la parte inferior.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CanvasItems">
@@ -516,7 +493,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>True si todas las formas en un intervalo de formas son secundarias de la misma forma primaria.</summary>
+        <summary>True si todas las formas de un intervalo de formas son formas secundarias de la misma forma primaria.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -547,7 +524,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Reservado para uso interno.</summary>
+        <summary>Reservado para uso interno. </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -638,14 +615,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Convierte la forma especificada en un marco. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Frame" /> object que representa el nuevo marco.</summary>
+        <summary>Convierte la forma especificada en un marco. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Frame" /> objeto Object que representa el nuevo marco.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Las formas que no admiten texto adjunto no puede convertirse en marcos. Para imágenes, objetos OLE y controles ActiveX, use la <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ConvertToInlineShape" /> método.</para>
-          <para>Si se utiliza este método en un objeto <b>ShapeRange</b> que contiene más de una forma, se produce un error.</para>
-          <para>En Microsoft Word 97 y versiones posterior, los marcos se han sustituido por cuadros de texto.</para>
-          <para />
-        </remarks>
+        <remarks><para>Las formas que no admiten texto adjunto no pueden ser convertidas en marcos. Para imágenes, objetos OLE y controles ActiveX, use el <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ConvertToInlineShape" /> método.</para>
+          <para>Si utiliza este método en un objeto <b>ShapeRange</b> que contiene más de una forma, se produce un error.</para>
+          <para>En Microsoft Word 97 y versiones posteriores, los marcos se han reemplazado por cuadros de texto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertToInlineShape">
@@ -669,14 +644,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Convierte la forma especificada en la capa de dibujo de un documento en una forma integrada en la capa de texto. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object que representa la imagen u objeto OLE.</summary>
+        <summary>Convierte la forma especificada en la capa de dibujo de un documento en una forma integrada en la capa de texto. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto Object que representa la imagen o el objeto OLE.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Puede convertir sólo las formas que representan imágenes, objetos OLE, o los controles ActiveX.</para>
-          <para>Las formas que admiten texto adjunto no puede convertirse en formas entre líneas. Para estas formas, utilice la <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ConvertToFrame" /> método.</para>
-          <para>Si se utiliza este método en un objeto <b>ShapeRange</b> que contiene más de una forma, se produce un error.</para>
-          <para />
-        </remarks>
+        <remarks><para>Solamente se pueden convertir las formas que representan imágenes, objetos OLE o controles ActiveX.</para>
+          <para>Las formas que admiten texto adjunto no se puede convertir en formas entre líneas. Para estas formas, use el <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ConvertToFrame" /> método.</para>
+          <para>Si utiliza este método en un objeto <b>ShapeRange</b> que contiene más de una forma, se produce un error.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -732,9 +705,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -819,7 +792,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.DiagramNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> objeto que representa un nodo en un diagrama.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> objeto Object que representa un nodo de un diagrama.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -848,14 +821,11 @@
         <Parameter Name="RelativeTo" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Distribute">Requiere <see cref="T:Microsoft.Office.Core.MsoDistributeCmd" />. <b>MsoDistributeCmd</b> puede ser una de las siguientes constantes:<b>msoDistributeHorizontally</b><b>msoDistributeVertically</b></param>
-        <param name="RelativeTo">
-          <b>Integer</b>requerido. <b>True</b> para distribuir las formas uniformemente por todo el espacio horizontal o vertical de la página. <b>False</b> para distribuirlas dentro del espacio horizontal o vertical que ocupa inicialmente el intervalo de formas.</param>
+        <param name="Distribute">Es <see cref="T:Microsoft.Office.Core.MsoDistributeCmd" />obligatorio. <b>MsoDistributeCmd</b> puede ser una de las siguientes constantes:<b>msoDistributeHorizontally</b><b>msoDistributeVertically</b></param>
+        <param name="RelativeTo">Required <b>Integer</b>. <b>True</b> para distribuir las formas uniformemente por todo el espacio horizontal o vertical de la página. <b>False</b> para distribuirlas en el espacio horizontal o vertical que ocupa el intervalo de formas originalmente.</param>
         <summary>Distribuye uniformemente las formas del intervalo especificado.</summary>
-        <remarks>
-          <para>Puede especificar si desea distribuir las formas horizontal o verticalmente y si desea distribuirlas en toda la página o sólo en el espacio que ocupan originalmente.</para>
-          <para />
-        </remarks>
+        <remarks><para>Puede especificar si desea distribuir las formas horizontal o verticalmente y si desea distribuirlas en toda la página o sólo en el espacio que ocupan originalmente.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Duplicate">
@@ -879,7 +849,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Crea un duplicado del especificado <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> de objeto, se agrega el nuevo intervalo de formas a la <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> colección con un desplazamiento estándar de las formas originales y, a continuación, devuelve el nuevo <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto.</summary>
+        <summary>Crea un duplicado del objeto <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> especificado, agrega el nuevo intervalo de formas a la <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> colección con un desplazamiento estándar de las formas originales y, a continuación, devuelve <see cref="T:Microsoft.Office.Interop.Word.Shape" /> el nuevo objeto.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -907,7 +877,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.FillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> objeto que contiene las propiedades de la forma especificada el formato de relleno.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> objeto que contiene las propiedades de formato de relleno de la forma especificada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -935,7 +905,7 @@
         <Parameter Name="FlipCmd" Type="Microsoft.Office.Core.MsoFlipCmd" />
       </Parameters>
       <Docs>
-        <param name="FlipCmd">Requiere <see cref="T:Microsoft.Office.Core.MsoFlipCmd" />. Orientación del volteo. <b>MsoFlipCmd</b> puede ser una de las siguientes constantes:<b>msoFlipHorizontal</b><b>msoFlipVertical</b></param>
+        <param name="FlipCmd">Es <see cref="T:Microsoft.Office.Core.MsoFlipCmd" />obligatorio. Orientación de volteo. <b>MsoFlipCmd</b> puede ser una de las siguientes constantes:<b>msoFlipHorizontal</b><b>msoFlipVertical</b></param>
         <summary>Voltea una forma horizontal o verticalmente.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -995,10 +965,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.GlowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.GlowFormat" /> object que representa el formato de resplandor de un intervalo de formas. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.GlowFormat" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.GlowFormat" /> objeto que representa el formato de iluminado de un intervalo de formas. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.GlowFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1023,12 +991,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Agrupa las formas del intervalo especificado. Devuelve las formas agrupadas como un único <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto.</summary>
+        <summary>Agrupa las formas del intervalo especificado. Devuelve las formas agrupadas como un solo <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Debido a que un grupo de formas se trata como una sola forma, agrupar y desagrupar las formas cambia el número de elementos en el <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> colección y cambia los números de índice de los elementos que siguen a los elementos afectados de la colección.</para>
-          <para />
-        </remarks>
+        <remarks><para>Debido a que un grupo de formas se trata como una única forma, al agrupar y desagrupar formas cambia el número de <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> elementos de la colección y cambia los números de índice de los elementos que siguen a los elementos afectados de la colección.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GroupItems">
@@ -1054,12 +1020,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.GroupShapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.GroupShapes" /> object que representa las formas individuales en especificado <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> formas agrupadas de objeto que representa.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.GroupShapes" /> objeto Object que representa las formas individuales del objeto <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> especificado que representa las formas agrupadas.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.GroupShapes.Item(System.Object@)" /> método del objeto <b>GroupShapes</b> para devolver una sola forma desde el grupo.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilice el <see cref="P:Microsoft.Office.Interop.Word.GroupShapes.Item(System.Object@)" /> método del objeto <b>GroupShapes</b> para devolver una única forma del grupo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasDiagram">
@@ -1088,8 +1052,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>MsoTrue</b> si una forma es un diagrama.</summary>
+        <summary><b>MsoTrue</b> si la forma es un diagrama.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1120,8 +1083,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>MsoTrue</b> si una forma es un nodo de diagrama.</summary>
+        <summary><b>MsoTrue</b> si la forma es un nodo de diagrama.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1183,14 +1145,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor de tipo <b>Single</b> que indica el porcentaje de la forma de destino respecto al que se ajusta el tamaño del intervalo de formas. Lectura y escritura.</summary>
-        <value>
-          <b>Single</b>
-        </value>
-        <remarks>
-          <para>Utilice esta propiedad con el <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalSize" /> (propiedad). Cuando se establece en <b>wdShapeSizeRelativeNone</b> (-999999) (vea la <see cref="T:Microsoft.Office.Interop.Word.WdShapeSizeRelative" /> (enumeración)), esta propiedad se debe omitir porque la forma no utiliza tamaños por porcentaje. El alto sólo viene determinado por la <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Height" /> (propiedad).</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece un valor de tipo <b>Single</b> que indica el porcentaje de la forma de destino respecto al que se ajusta el tamaño del intervalo de formas. Lectura/escritura.</summary>
+        <value><b>Single</b></value>
+        <remarks><para>Utilice esta propiedad con la <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalSize" /> propiedad. Cuando se establece en <b>wdShapeSizeRelativeNone</b> (-999999) (vea <see cref="T:Microsoft.Office.Interop.Word.WdShapeSizeRelative" /> la enumeración), esta propiedad se debe omitir porque la forma no utiliza el tamaño porcentual. La altura sólo viene determinada por la <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Height" /> propiedad.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalFlip">
@@ -1244,12 +1202,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Hyperlink</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.WdShapePosition" /> object que representa el hipervínculo asociado al objeto <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> objeto.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.WdShapePosition" /> objeto Object que representa el hipervínculo asociado con <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si no hay ningún hipervínculo asociado a la forma especificada, se produce un error.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si no hay un hipervínculo asociado a la forma especificada, se produce un error.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -1303,8 +1259,7 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>Single</b>requerido. Especifica cuánto se moverá la forma horizontalmente, en puntos. Un valor positivo mueve la forma hacia la derecha; un valor negativo la mueve hacia la izquierda.</param>
+        <param name="Increment"><b>Single</b>requerido. Especifica cuánto se moverá la forma horizontalmente, en puntos. Un valor positivo mueve la forma hacia la derecha; un valor negativo la mueve hacia la izquierda.</param>
         <summary>Mueve la forma horizontalmente el número de puntos especificado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1332,14 +1287,11 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>Single</b>requerido. Especifica cuánto girará horizontalmente la forma, en grados. Un valor positivo gira la forma en el sentido de las agujas del reloj; un valor negativo la gira en sentido contrario a las agujas del reloj.</param>
+        <param name="Increment"><b>Single</b>requerido. Especifica cuánto girará horizontalmente la forma, en grados. Un valor positivo gira la forma en el sentido de las agujas del reloj; un valor negativo la gira en sentido contrario a las agujas del reloj.</param>
         <summary>Cambia el giro de la forma alrededor del eje Z el número especificado de grados.</summary>
-        <remarks>
-          <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Rotation" /> (propiedad) para establecer el giro absoluto de la forma.</para>
-          <para>Para girar una forma tridimensional alrededor del eje x o del eje y, use el <see cref="M:Microsoft.Office.Interop.Word.ThreeDFormat.IncrementRotationX(System.Single)" /> (método) o la <see cref="M:Microsoft.Office.Interop.Word.ThreeDFormat.IncrementRotationY(System.Single)" /> método.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Rotation" /> propiedad para establecer el giro absoluto de la forma.</para>
+          <para>Para girar una forma tridimensional alrededor del eje x o del eje y, use el <see cref="M:Microsoft.Office.Interop.Word.ThreeDFormat.IncrementRotationX(System.Single)" /> método o el <see cref="M:Microsoft.Office.Interop.Word.ThreeDFormat.IncrementRotationY(System.Single)" /> método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementTop">
@@ -1365,8 +1317,7 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>Single</b>requerido. Especifica cuánto se moverá la forma verticalmente, en puntos. Un valor positivo mueve la forma hacia abajo; un valor negativo la mueve hacia arriba.</param>
+        <param name="Increment"><b>Single</b>requerido. Especifica cuánto se moverá la forma verticalmente, en puntos. Un valor positivo mueve la forma hacia abajo; un valor negativo la mueve hacia arriba.</param>
         <summary>Mueve la forma verticalmente el número de puntos especificado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1397,7 +1348,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>objeto</b> que indica la posición ordinal o una cadena que representa el nombre del objeto individual.</param>
+        <param name="Index"><b>Objeto</b> que indica la posición ordinal o una cadena que representa el nombre del objeto individual.</param>
         <summary>Devuelve un objeto individual de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1429,14 +1380,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> que indica si una forma de una tabla se muestra dentro o fuera de la tabla. <b>True</b> indica que una imagen especificada se muestra dentro de la tabla. <b>False</b> indica que se muestra la imagen especificada fuera de la tabla.</summary>
+        <summary>Devuelve un <b>entero</b> que indica si una forma de una tabla se muestra dentro o fuera de la tabla. <b>True</b> indica que se debe mostrar la imagen especificada en la tabla. <b>False</b> indica que la imagen especificada se muestra fuera de la tabla.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Nota</b>  Al establecer la propiedad <b>LayoutInCell</b> surtirán efecto únicamente si el <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" /> objeto se establece en algo que no sea <b>wdWrapTypeInline</b> ni <b>wdWrapTypeNone</b>.</para>
-          <para>La propiedad <b>LayoutInCell</b> corresponde a la opción diseño en tabla celda en el cuadro de diálogo Diseño avanzado para el formato de imagen.</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>Nota:</b>  El establecimiento de la propiedad <b>LayoutInCell</b> sólo tendrá efecto si <see cref="P:Microsoft.Office.Interop.Word.WrapFormat.Type" /> la propiedad del <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" /> objeto está establecida en un valor distinto de <b>wdWrapTypeInline</b> o <b>wdWrapTypeNone</b>.</para>
+          <para>La propiedad <b>LayoutInCell</b> corresponde a la opción Diseño en celda de tabla en el cuadro de diálogo Diseño avanzado para el formato de imagen.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -1465,13 +1414,11 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor <b>Single</b> que representa la posición horizontal, medida en puntos, del intervalo de formas especificado. También puede ser cualquier válido <see cref="T:Microsoft.Office.Interop.Word.WdShapePosition" /> constante.</summary>
+        <summary>Devuelve o establece un valor <b>Single</b> que representa la posición horizontal, medida en puntos, del intervalo de formas especificado. También puede ser cualquier constante <see cref="T:Microsoft.Office.Interop.Word.WdShapePosition" /> válida.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La posición de una forma se mide desde la esquina superior izquierda del cuadro delimitador de la forma de delimitador de la forma. El <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> propiedad controla si el delimitador está colocado al lado de un carácter, columna, margen o el borde de la página.</para>
+        <remarks><para>La posición de una forma se mide desde la esquina superior izquierda del cuadro de límite de la forma al delimitador de la forma. La <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> propiedad controla si el delimitador está colocado al lado de un carácter, una columna, un margen o el borde de la página.</para>
           <para>Para un <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> objeto que contiene más de una forma, la propiedad Left establece la posición horizontal de cada forma.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LeftRelative">
@@ -1500,14 +1447,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor <b>Single</b> que representa la posición izquierda relativa de un intervalo de formas. Lectura y escritura.</summary>
-        <value>
-          <b>Single</b>
-        </value>
-        <remarks>
-          <para>Utilice esta propiedad con el <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeHorizontalPosition" /> (propiedad). Cuando se establece en <b>wdShapePositionRelativeNone</b> (-999999) (vea la <see cref="T:Microsoft.Office.Interop.Word.WdShapePositionRelative" /> (enumeración)), debe ignorarse esta propiedad dado que la forma no utiliza el posicionamiento por porcentaje. La posición horizontal sólo viene determinada por la <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Left" /> (propiedad).</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece un valor <b>Single</b> que representa la posición izquierda relativa de un intervalo de formas. Lectura/escritura.</summary>
+        <value><b>Single</b></value>
+        <remarks><para>Utilice esta propiedad con la <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeHorizontalPosition" /> propiedad. Cuando se establece en <b>wdShapePositionRelativeNone</b> (-999999) (vea <see cref="T:Microsoft.Office.Interop.Word.WdShapePositionRelative" /> la enumeración), esta propiedad se debe omitir porque la forma no utiliza la posición porcentual. La posición horizontal sólo está determinada por la <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Left" /> propiedad.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Line">
@@ -1533,12 +1476,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.LineFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.LineFormat" /> objeto que contiene las propiedades de la forma especificada el formato de línea.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.LineFormat" /> objeto que contiene las propiedades de formato de línea de la forma especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para una línea, el objeto <b>LineFormat</b> representa la línea en Sí; para una forma con borde, el objeto <b>LineFormat</b> representa el borde.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para una línea, el objeto <b>LineFormat</b> representa la línea en Sí; para una forma con borde, el objeto <b>LineFormat</b> representa el borde.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LockAnchor">
@@ -1567,14 +1508,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el texto especificado <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> delimitador del objeto está bloqueado para el intervalo de fijación.</summary>
+        <summary><b>True</b> si el delimitador del objeto especificado <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> está bloqueado para el intervalo de fijación.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cuando una forma tiene un delimitador bloqueado, no se puede mover el delimitador de la forma arrastrándolo (el delimitador no se mueve al mover la forma).</para>
-          <para>A <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto se delimita en un intervalo de texto, pero se puede colocar en cualquier lugar en la página. La forma se fija al principio del primer párrafo que contiene el intervalo de fijación. La forma siempre permanecerá en la misma página que su delimitador.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cuando una forma tiene un delimitador bloqueado, no se puede mover el delimitador de la forma arrastrándolo (el delimitador no se mueve a medida que se mueve la forma).</para>
+          <para>Un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto se delimita en un intervalo de texto, pero se puede colocar en cualquier lugar de la página. La forma se fija al principio del primer párrafo que contiene el intervalo de fijación. La forma siempre permanecerá en la misma página que su delimitador.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LockAspectRatio">
@@ -1603,8 +1541,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>MsoTrue</b> si la forma especificada mantiene sus proporciones originales cuando se cambia el tamaño. <b>MsoFalse</b> si se pueden cambiar el alto y el ancho de la forma de manera independiente entre sí cuando se cambia el tamaño.</summary>
+        <summary><b>MsoTrue</b> si la forma especificada mantiene sus proporciones originales cuando se cambia el tamaño. <b>MsoFalse</b> si se pueden cambiar el alto y el ancho de la forma de manera independiente entre sí cuando se cambia el tamaño.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1663,7 +1600,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ShapeNodes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ShapeNodes" /> colección que representa la descripción geométrica de la forma especificada.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.ShapeNodes" /> colección que representa la descripción geométrica de la forma especificada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1719,7 +1656,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object que representa la forma primaria común de un intervalo de formas secundarias.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto que representa la forma primaria común de un intervalo de formas secundarias.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1746,10 +1683,8 @@
       <Parameters />
       <Docs>
         <summary>Copia el formato de la forma especificada.</summary>
-        <remarks>
-          <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Apply" /> (método) para aplicar el formato copiado a otra forma.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.Apply" /> método para aplicar el formato copiado a otra forma.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PictureFormat">
@@ -1775,7 +1710,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.PictureFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.PictureFormat" /> objeto que contiene las propiedades de la forma especificada el formato de imagen <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> objeto que representa una imagen u objeto OLE.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.PictureFormat" /> objeto que contiene las propiedades de formato de imagen <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> para el objeto especificado que representa una imagen o un objeto OLE.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1803,10 +1738,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ReflectionFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" /> object que representa el formato de reflejo de un intervalo de formas. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" /> objeto Object que representa el formato de reflejo de un intervalo de formas. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1836,7 +1769,9 @@
       <Docs>
         <summary>Vuelve a agrupar el grupo al que pertenecía anteriormente el intervalo de formas especificado. Devuelve las formas reagrupadas como un único <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>Método <para>el <b>Regroup</b> sólo restaura el grupo para la primera forma se encuentre en el especificado anteriormente agrupada <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> colección. Por lo tanto, si el intervalo de formas especificado contiene formas que anteriormente pertenecían a grupos diferentes, sólo uno de los grupos se restaurarán.</para><para>Tenga en cuenta que debido a que un grupo de formas se trata como una sola forma, agrupar y desagrupar formas cambia el número de elementos de la colección Shapes y cambian los números de índice de los elementos que siguen a los elementos afectados de la colección.</para><para /></remarks>
+        <remarks><para>El <b></b> método Regroup solo restaura el grupo de la primera forma agrupada anteriormente que encuentra en la colección especificada <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> . Por lo tanto, si el intervalo de formas especificado contiene formas que anteriormente pertenecían a grupos diferentes, sólo uno de los grupos se almacenará.</para>
+          <para>Tenga en cuenta, debido a que un grupo de formas se trata como una sola forma, al agrupar y desagrupar formas cambia el número de elementos de la colección Shapes y cambia los números de índice de los elementos que siguen a los elementos afectados de la colección.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RelativeHorizontalPosition">
@@ -1865,7 +1800,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRelativeHorizontalPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Especifica a qué es relativa la posición horizontal de un intervalo de formas.</summary>
+        <summary>Especifica con relación a qué es la posición horizontal de un intervalo de formas.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1896,14 +1831,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRelativeHorizontalSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.WdRelativeHorizontalSize" /> constante que representa el objeto al que es relativo un intervalo de formas. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdRelativeHorizontalSize" />
-        </value>
-        <remarks>
-          <para>Utilice esta propiedad con el <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.WidthRelative" /> (propiedad).</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece una <see cref="T:Microsoft.Office.Interop.Word.WdRelativeHorizontalSize" /> constante que representa el objeto al que es relativo un intervalo de formas. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdRelativeHorizontalSize" /></value>
+        <remarks><para>Utilice esta propiedad con la <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.WidthRelative" /> propiedad.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RelativeVerticalPosition">
@@ -1932,7 +1863,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRelativeVerticalPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Especifica a qué es relativa la posición vertical de un intervalo de formas.</summary>
+        <summary>Especifica con relación a qué es la posición vertical de un intervalo de formas.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1963,14 +1894,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRelativeVerticalSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.WdRelativeVerticalSize" /> constante que representa el objeto al que es relativo un intervalo de formas. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdRelativeVerticalSize" />
-        </value>
-        <remarks>
-          <para>Utilice esta propiedad con el <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.HeightRelative" /> (propiedad).</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece una <see cref="T:Microsoft.Office.Interop.Word.WdRelativeVerticalSize" /> constante que representa el objeto al que es relativo un intervalo de formas. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdRelativeVerticalSize" /></value>
+        <remarks><para>Utilice esta propiedad con la <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.HeightRelative" /> propiedad.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RerouteConnections">
@@ -2029,10 +1956,8 @@
       <Docs>
         <summary>Devuelve o establece el número de grados que gira la forma especificada alrededor del eje z. Un valor positivo indica un giro hacia la derecha; un valor negativo indica un giro hacia la izquierda.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para establecer el giro de una forma tridimensional alrededor del eje x o del eje y, use el <see cref="P:Microsoft.Office.Interop.Word.ThreeDFormat.RotationX" /> (propiedad) o el <see cref="P:Microsoft.Office.Interop.Word.ThreeDFormat.RotationY" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /> objeto.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para establecer el giro de una forma tridimensional alrededor del eje x o del eje y, utilice la <see cref="P:Microsoft.Office.Interop.Word.ThreeDFormat.RotationX" /> propiedad o la <see cref="P:Microsoft.Office.Interop.Word.ThreeDFormat.RotationY" /> propiedad del <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /> objeto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RTF">
@@ -2090,15 +2015,12 @@
         <Parameter Name="Scale" Type="Microsoft.Office.Core.MsoScaleFrom" />
       </Parameters>
       <Docs>
-        <param name="Factor">
-          <b>Single</b>requerido. Especifica la proporción entre el alto de la forma después de cambiar su tamaño y el alto original o actual. Por ejemplo, para aumentar en un 50% el tamaño de un rectángulo, especifique 1,5 para este argumento.</param>
-        <param name="RelativeToOriginalSize">Requiere <see cref="T:Microsoft.Office.Core.MsoTriState" />. <b>True</b> para escalar la forma respecto a su tamaño original. False para cambiarlo con relación a su tamaño actual. Puede especificar True para este argumento sólo si la forma especificada es una imagen o un objeto OLE. <b>MsoTriState</b> puede ser una de las siguientes constantes:<b>msoCTrue</b><b>msoFalse</b><b>msoTriStateMixed</b><b>msoTriStateToggle</b><b>msoTrue</b></param>
-        <param name="Scale">Opcional <see cref="T:Microsoft.Office.Core.MsoScaleFrom" />. La parte de la forma que mantiene su posición cuando se ajusta la forma. <b>MsoScaleFrom</b> puede ser una de las siguientes constantes:<b>msoScaleFromBottomRight</b><b>msoScaleFromTopLeft</b> predeterminada<b>msoScaleFromMiddle</b></param>
-        <summary>Aplica una escala al alto de la forma con el factor especificado.</summary>
-        <remarks>
-          <para>Para imágenes y objetos OLE, puede indicar si desea que el tamaño de la forma con relación al tamaño original o con relación al tamaño actual. El tamaño de las formas que no son imágenes y objetos OLE siempre se cambia respecto a su alto actual.</para>
-          <para />
-        </remarks>
+        <param name="Factor"><b>Single</b>requerido. Especifica la relación entre el alto de la forma después de cambiar su tamaño y el alto original o actual. Por ejemplo, para crear un rectángulo un 50 por ciento más grande, especifique el valor 1,5 en este argumento.</param>
+        <param name="RelativeToOriginalSize">Es <see cref="T:Microsoft.Office.Core.MsoTriState" />obligatorio. <b>True</b> para escalar la forma respecto a su tamaño original. False para cambiarlo con relación a su tamaño actual. Puede especificar True para este argumento sólo si la forma especificada es una imagen o un objeto OLE. <b>MsoTriState</b> puede ser una de las siguientes constantes:<b>msoCTrue</b><b>msoFalse</b><b>msoTriStateMixed</b><b>msoTriStateToggle</b><b>msoTrue</b></param>
+        <param name="Scale">Opcional <see cref="T:Microsoft.Office.Core.MsoScaleFrom" />. Parte de la forma que conserva su posición cuando se aplica una escala a la forma. <b>MsoScaleFrom</b> puede ser una de las siguientes constantes:<b>MsoScaleFromBottomRight</b><b>msoScaleFromTopLeft</b> predeterminada<b>msoScaleFromMiddle</b></param>
+        <summary>Cambia el alto de la forma en un factor especificado.</summary>
+        <remarks><para>Para imágenes y objetos OLE, puede indicar si desea ajustar el tamaño de la forma con relación al tamaño original o al tamaño actual. El tamaño de las formas distintas de imágenes y objetos OLE siempre se ajusta en relación con su alto actual.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScaleWidth">
@@ -2125,15 +2047,12 @@
         <Parameter Name="Scale" Type="Microsoft.Office.Core.MsoScaleFrom" />
       </Parameters>
       <Docs>
-        <param name="Factor">
-          <b>Single</b>requerido. Especifica la proporción entre el ancho de la forma después de cambiar su tamaño y el ancho original o actual. Por ejemplo, para aumentar en un 50% el tamaño de un rectángulo, especifique 1,5 para este argumento.</param>
-        <param name="RelativeToOriginalSize">Requiere <see cref="T:Microsoft.Office.Core.MsoTriState" />. <b>True</b> para escalar la forma respecto a su tamaño original. False para cambiarlo con relación a su tamaño actual. Puede especificar True para este argumento sólo si la forma especificada es una imagen o un objeto OLE. <b>MsoTriState</b> puede ser una de las siguientes constantes:<b>msoCTrue</b><b>msoFalse</b><b>msoTriStateMixed</b><b>msoTriStateToggle</b><b>msoTrue</b></param>
-        <param name="Scale">Opcional <see cref="T:Microsoft.Office.Core.MsoScaleFrom" />. La parte de la forma que mantiene su posición cuando se ajusta la forma. <b>MsoScaleFrom</b> puede ser una de las siguientes constantes:<b>msoScaleFromBottomRight</b><b>msoScaleFromTopLeft</b> predeterminada<b>msoScaleFromMiddle</b></param>
-        <summary>Aplica una escala al ancho de la forma con el factor especificado.</summary>
-        <remarks>
-          <para>Para imágenes y objetos OLE, puede indicar si desea que el tamaño de la forma con relación al tamaño original o con relación al tamaño actual. El tamaño de las formas que no son imágenes y objetos OLE siempre se cambia respecto a su ancho actual.</para>
-          <para />
-        </remarks>
+        <param name="Factor"><b>Single</b>requerido. Especifica la relación entre el ancho de la forma después de cambiar su tamaño y el ancho original o actual. Por ejemplo, para hacer que un triángulo sea un 50 por ciento más grande, especifique 1,5 para este argumento.</param>
+        <param name="RelativeToOriginalSize">Es <see cref="T:Microsoft.Office.Core.MsoTriState" />obligatorio. <b>True</b> para escalar la forma respecto a su tamaño original. False para cambiarlo con relación a su tamaño actual. Puede especificar True para este argumento sólo si la forma especificada es una imagen o un objeto OLE. <b>MsoTriState</b> puede ser una de las siguientes constantes:<b>msoCTrue</b><b>msoFalse</b><b>msoTriStateMixed</b><b>msoTriStateToggle</b><b>msoTrue</b></param>
+        <param name="Scale">Opcional <see cref="T:Microsoft.Office.Core.MsoScaleFrom" />. Parte de la forma que conserva su posición cuando se aplica una escala a la forma. <b>MsoScaleFrom</b> puede ser una de las siguientes constantes:<b>MsoScaleFromBottomRight</b><b>msoScaleFromTopLeft</b> predeterminada<b>msoScaleFromMiddle</b></param>
+        <summary>Cambia el ancho de la forma en un factor especificado.</summary>
+        <remarks><para>Para imágenes y objetos OLE, puede indicar si desea ajustar el tamaño de la forma con relación al tamaño original o al tamaño actual. El tamaño de las formas distintas de imágenes y objetos OLE siempre se ajusta con relación a su ancho actual.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -2158,8 +2077,7 @@
         <Parameter Name="Replace" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Replace">
-          <b>Objeto</b>de opcional. Si agrega una forma, <b>True</b> reemplaza la selección. <b>False</b> agrega la nueva forma a la selección.</param>
+        <param name="Replace"><b>Objeto</b>opcional. Si agrega una forma, <b>True</b> reemplaza la selección. <b>False</b> agrega la nueva forma a la selección.</param>
         <summary>Selecciona el objeto especificado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2185,11 +2103,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Aplica el formato de la forma especificada a una forma predeterminada de ese documento. Las nuevas formas heredan muchos de sus atributos de forma predeterminada.</summary>
-        <remarks>
-          <para>Uso de este método es equivalente al uso del comando valores predeterminados de autoforma en el menú Dibujo en la barra de herramientas de dibujo.</para>
-          <para />
-        </remarks>
+        <summary>Aplica el formato de la forma especificada a una forma predeterminada para ese documento. Las nuevas formas heredan muchos de sus atributos de la forma predeterminada.</summary>
+        <remarks><para>El uso de este método es equivalente al uso del comando valores predeterminados de Autoforma en el menú dibujo de la barra de herramientas Dibujo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shadow">
@@ -2215,7 +2131,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ShadowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" /> object que representa el formato sombra de la forma especificada.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" /> objeto Object que representa el formato de sombreado de la forma especificada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2246,12 +2162,10 @@
         <ReturnType>Microsoft.Office.Core.MsoShapeStyleIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece el estilo de la forma de las formas en el intervalo de formas especificado.</summary>
-        <value>El estilo de la forma de las formas en el intervalo de formas especificado.</value>
-        <remarks>
-          <para>Lectura y escritura <see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" />.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene o establece el estilo de forma de las formas del intervalo de formas especificado.</summary>
+        <value>Estilo de forma de las formas del intervalo de formas especificado.</value>
+        <remarks><para>Lectura y escritura <see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" />.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SoftEdge">
@@ -2277,10 +2191,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.SoftEdgeFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.SoftEdgeFormat" /> object que representa el formato de borde suave de un intervalo de formas. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.SoftEdgeFormat" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.SoftEdgeFormat" /> objeto que representa el formato de borde suave de un intervalo de formas. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.SoftEdgeFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2307,7 +2219,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextEffectFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.TextEffectFormat" /> objeto que contiene propiedades de formato de efecto de texto para especificado <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> object que representa el WordArt.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.TextEffectFormat" /> objeto que contiene las propiedades de formato de efecto de texto <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> del objeto especificado que representa WordArt.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2363,10 +2275,8 @@
         <ReturnType>Microsoft.Office.Core.TextFrame2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Core.TextFrame2" /> objeto que contiene el texto para el intervalo de formas especificado. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.TextFrame2" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Core.TextFrame2" /> objeto que contiene el texto del intervalo de formas especificado. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Core.TextFrame2" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2393,7 +2303,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ThreeDFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /> objeto que contiene las propiedades de la forma especificada el formato de efectos 3D.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /> objeto que contiene las propiedades de formato de efecto 3D de la forma especificada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2424,12 +2334,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece un valor de tipo string que contiene un título para las formas en el intervalo de formas especificado.</summary>
-        <value>una cadena que contiene un título para las formas en el intervalo de formas especificado.</value>
-        <remarks>
-          <para>Lectura y escritura. Utilice esta propiedad para proporcionar un título de texto alternativo para una forma. Esta propiedad agrega texto del título para el cuadro de texto de título en el panel de texto alternativo del cuadro de diálogo Formato de forma de Microsoft Word 2010.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene o establece una cadena que contiene un título para las formas del intervalo de formas especificado.</summary>
+        <value>una cadena que contiene un título para las formas del intervalo de formas especificado.</value>
+        <remarks><para>Lectura/escritura. Utilice esta propiedad para proporcionar un título de texto alternativo para una forma. Esta propiedad agrega texto de título al cuadro de texto título en el panel de texto alternativo del cuadro de diálogo formato de forma en Microsoft Word 2010.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -2460,11 +2368,9 @@
       <Docs>
         <summary>Devuelve o establece la posición vertical del intervalo de formas especificado en puntos.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La posición de una forma se mide desde la esquina superior izquierda del cuadro delimitador de la forma de delimitador de la forma. El <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalPosition" /> propiedad controla si el delimitador de la forma está colocado al lado de la línea, el párrafo, el margen o el borde de la página.</para>
-          <para>Para un <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> objeto que contiene más de una forma, la propiedad <b>Top</b> establece la posición vertical de cada forma.</para>
-          <para />
-        </remarks>
+        <remarks><para>La posición de una forma se mide desde la esquina superior izquierda del cuadro de límite de la forma al delimitador de la forma. La <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalPosition" /> propiedad controla si el delimitador de la forma está colocado a lo largo de la línea, el párrafo, el margen o el borde de la página.</para>
+          <para>Para un <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> objeto que contiene más de una forma, la propiedad <b>Top</b> establece la posición vertical de cada una de las formas.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TopRelative">
@@ -2493,14 +2399,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor <b>Single</b> que representa la posición superior relativa de un intervalo de formas. Lectura y escritura.</summary>
-        <value>
-          <b>Single</b>
-        </value>
-        <remarks>
-          <para>Utilice esta propiedad con el <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalPosition" /> (propiedad). Cuando se establece en <b>wdShapePositionRelativeNone</b> (-999999) (vea la <see cref="T:Microsoft.Office.Interop.Word.WdShapePositionRelative" /> (enumeración)), debe ignorarse esta propiedad dado que la forma no utiliza el posicionamiento por porcentaje. La posición vertical sólo viene determinada por la <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Top" /> (propiedad).</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece un valor <b>Single</b> que representa la posición superior relativa de un intervalo de formas. Lectura/escritura.</summary>
+        <value><b>Single</b></value>
+        <remarks><para>Utilice esta propiedad con la <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeVerticalPosition" /> propiedad. Cuando se establece en <b>wdShapePositionRelativeNone</b> (-999999) (vea <see cref="T:Microsoft.Office.Interop.Word.WdShapePositionRelative" /> la enumeración), esta propiedad se debe omitir porque la forma no utiliza la posición porcentual. La posición vertical sólo está determinada por la <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Top" /> propiedad.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -2552,12 +2454,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Desagrupa las formas agrupadas en la forma especificada o intervalo de formas. Separa las imágenes y objetos OLE dentro de la forma especificada o intervalo de formas. Devuelve las formas desagrupadas como un único <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> objeto.</summary>
+        <summary>Desagrupa las formas agrupadas en la forma especificada o intervalo de formas. Separa las imágenes y objetos OLE dentro de la forma especificada o intervalo de formas. Devuelve las formas desagrupadas como un solo <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Debido a que un grupo de formas se trata como un único objeto, agrupar y desagrupar las formas cambia el número de elementos en el <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> colección y cambia los números de índice de los elementos que siguen a los elementos afectados de la colección.</para>
-          <para />
-        </remarks>
+        <remarks><para>Debido a que un grupo de formas se trata como un único objeto, al agrupar y desagrupar las formas cambia el número <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> de elementos de la colección y cambian los números de índice de los elementos que siguen a los elementos afectados de la colección.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalFlip">
@@ -2583,8 +2483,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la forma especificada está volteada alrededor del eje vertical.</summary>
+        <summary><b>True</b> si la forma especificada está volteada alrededor del eje vertical.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2612,39 +2511,37 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve las coordenadas de los vértices del dibujo forma libre especificado (y los puntos de control para curvas Bézier) como una serie de pares de coordenadas.</summary>
+        <summary>Devuelve las coordenadas de los vértices del dibujo de forma libre especificado, y los puntos de control de las curvas Bézier, como una serie de pares de coordenadas.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Puede usar la matriz devuelta por esta propiedad como un argumento para el <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCurve(System.Object@,System.Object@)" /> o <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddPolyline(System.Object@,System.Object@)" /> método.</para>
-          <para>En la tabla siguiente se muestra cómo la propiedad <b>Vertices</b> asocia los valores de la matriz vertArray() con las coordenadas de los vértices del triángulo.</para>
+        <remarks><para>Puede usar la matriz devuelta por esta propiedad como un argumento para el <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCurve(System.Object@,System.Object@)" /> método <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddPolyline(System.Object@,System.Object@)" /> or.</para>
+          <para>En la siguiente tabla se muestra <b></b> cómo la propiedad vertices asocia los valores de la matriz vertArray () con las coordenadas de los vértices de un triángulo.</para>
           <list type="table">
             <item>
               <description>vertArray (1, 1)</description>
-              <description>la distancia horizontal desde el primer vértice hasta el lado izquierdo del documento.</description>
+              <description>La distancia horizontal desde el primer vértice hasta el lado izquierdo del documento.</description>
             </item>
             <item>
               <description>vertArray (1, 2)</description>
-              <description>la distancia vertical desde el primer vértice hasta la parte superior del documento.</description>
+              <description>La distancia vertical desde el primer vértice hasta la parte superior del documento.</description>
             </item>
             <item>
               <description>vertArray (2, 1)</description>
-              <description>la distancia horizontal desde el segundo vértice hasta el lado izquierdo del documento.</description>
+              <description>La distancia horizontal desde el segundo vértice hasta el lado izquierdo del documento.</description>
             </item>
             <item>
               <description>vertArray (2, 2)</description>
-              <description>la distancia vertical desde el segundo vértice hasta la parte superior del documento.</description>
+              <description>La distancia vertical desde el segundo vértice hasta la parte superior del documento.</description>
             </item>
             <item>
               <description>vertArray (3, 1)</description>
-              <description>la distancia horizontal desde el tercer vértice hasta el lado izquierdo del documento.</description>
+              <description>La distancia horizontal desde el tercer vértice hasta el lado izquierdo del documento.</description>
             </item>
             <item>
               <description>vertArray (3, 2)</description>
-              <description>la distancia vertical desde el tercer vértice hasta la parte superior del documento.</description>
+              <description>La distancia vertical desde el tercer vértice hasta la parte superior del documento.</description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -2675,10 +2572,8 @@
       <Docs>
         <summary>True si el objeto especificado o el formato aplicado, está visible.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para cualquier objeto, algunos métodos y propiedades pueden ser no está disponibles si la propiedad <b>Visible</b> es <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para los objetos, algunos métodos y propiedades no esté disponibles si la propiedad <b>Visible</b> es <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -2738,14 +2633,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor <b>Single</b> que representa el ancho relativo de un intervalo de formas. Lectura y escritura.</summary>
-        <value>
-          <b>Single</b>
-        </value>
-        <remarks>
-          <para>Utilice esta propiedad con el <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeHorizontalSize" /> (propiedad). Cuando se establece en <b>wdShapeSizeRelativeNone</b> (-999999) (vea la <see cref="T:Microsoft.Office.Interop.Word.WdShapeSizeRelative" /> (enumeración)), esta propiedad se debe omitir porque la forma no utiliza tamaños por porcentaje. El ancho sólo viene determinado por la <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Width" /> (propiedad).</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece un valor <b>Single</b> que representa el ancho relativo de un intervalo de formas. Lectura/escritura.</summary>
+        <value><b>Single</b></value>
+        <remarks><para>Utilice esta propiedad con la <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.RelativeHorizontalSize" /> propiedad. Cuando se establece en <b>wdShapeSizeRelativeNone</b> (-999999) (vea <see cref="T:Microsoft.Office.Interop.Word.WdShapeSizeRelative" /> la enumeración), esta propiedad se debe omitir porque la forma no utiliza el tamaño porcentual. El ancho sólo viene determinado por la <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.Width" /> propiedad.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WrapFormat">
@@ -2771,7 +2662,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WrapFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" /> objeto que contiene las propiedades para ajustar el texto alrededor del intervalo de formas especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.WrapFormat" /> objeto que contiene las propiedades de ajuste de texto alrededor del intervalo de formas especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2799,12 +2690,10 @@
         <Parameter Name="ZOrderCmd" Type="Microsoft.Office.Core.MsoZOrderCmd" />
       </Parameters>
       <Docs>
-        <param name="ZOrderCmd">Requiere <see cref="T:Microsoft.Office.Core.MsoZOrderCmd" />. Especifica dónde se moverá la forma especificada con respecto a las otras formas. <b>MsoZOrderCmd</b> puede ser una de las siguientes constantes:<b>msoBringForward</b><b>msoBringInFrontOfText</b><b>msoBringToFront</b><b>msoSendBackward</b><b>msoSendBehindText</b><b>msoSendToBack</b></param>
-        <summary>Desplaza la forma especificada delante o detrás de otras formas del conjunto (es decir, cambia la posición de la forma en el orden z).</summary>
-        <remarks>
-          <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.ZOrderPosition" /> (propiedad) para determinar la posición actual de una forma en el orden z.</para>
-          <para />
-        </remarks>
+        <param name="ZOrderCmd">Es <see cref="T:Microsoft.Office.Core.MsoZOrderCmd" />obligatorio. Especifica el lugar al que mover la forma especificada con relación a las otras formas. <b>MsoZOrderCmd</b> puede ser una de las siguientes constantes:<b>msoBringForward</b><b>las</b><b>msoBringToFront</b><b>msoSendBackward</b><b>msoSendBehindText</b><b>msoSendToBack</b></param>
+        <summary>Mueve la forma especificada delante o detrás de otras formas de la colección (es decir, cambia la posición de la forma en el orden z).</summary>
+        <remarks><para>Use la <see cref="P:Microsoft.Office.Interop.Word.ShapeRange.ZOrderPosition" /> propiedad para determinar la posición actual de una forma en el orden z.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ZOrderPosition">
@@ -2832,9 +2721,10 @@
       <Docs>
         <summary>Devuelve la posición de la forma especificada en el orden Z.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para establecer la posición de la forma en el orden z, use la <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ZOrder(Microsoft.Office.Core.MsoZOrderCmd" /> método.</para> Posición del 
-          <para>una forma en el orden z corresponde al número de índice de la forma en la colección <b>Shapes</b> . Por ejemplo, si hay cuatro formas en myDocument, la myDocument.Shapes (1) expresión devuelve la forma en la parte posterior del orden z y la myDocument.Shapes (4) expresión devuelve la forma en la parte delantera del orden z.</para><para>Siempre que agregue una forma nueva a una colección, se agrega a la parte delantera del orden z de forma predeterminada.</para><para /></remarks>
+        <remarks><para>Para establecer la posición de la forma en el orden z, use el <see cref="M:Microsoft.Office.Interop.Word.ShapeRange.ZOrder(Microsoft.Office.Core.MsoZOrderCmd" /> método.</para>
+          <para>La posición de una forma en el orden z corresponde al número de índice de la forma de la colección <b>Shapes</b>. Por ejemplo, si hay cuatro formas en myDocument, la expresión myDocument.Shapes(1) devuelve la forma en la parte posterior del orden Z, y la expresión myDocument.Shapes(4) devuelve la forma en la parte delantera del orden Z.</para>
+          <para>Cuando se agrega una nueva forma a una colección, se agrega de forma predeterminada al frente del orden z.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

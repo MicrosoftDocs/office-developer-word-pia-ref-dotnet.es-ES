@@ -1,13 +1,5 @@
 <Type Name="BuildingBlockEntries" FullName="Microsoft.Office.Interop.Word.BuildingBlockEntries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="abc6cc3cc628e4cde8f306b8c3dc0aba2056ea9f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674698" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface BuildingBlockEntries" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f20213a0d0e97c32a29545ab30cbcb6982e5f4ec" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146209" /></Metadata><TypeSignature Language="C#" Value="public interface BuildingBlockEntries" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract BuildingBlockEntries" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface BuildingBlockEntries" />
@@ -26,15 +18,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa una colección de todos los <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objetos en una plantilla.</summary>
-    <remarks>
-      <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> (método) para crear un nuevo bloque de creación y agregarlo a una plantilla. </para>
-      <para>a diferencia de la <see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Add(System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> método para el <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> colección, debe especificar el tipo y categoría cuando agrega un bloque de creación mediante el <see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Add(System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> (método) de la <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> colección. Esto es debido a que los bloques de creación se organizan mediante el uso de tipos y categorías. Al usar el <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> colección, tiene acceso a toda la colección de bloques de una plantilla; de creación Sin embargo, cuando se utiliza el <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> colección, tiene acceso a la colección de bloques de un tipo y categoría específicos de una plantilla de creación.</para>
+    <summary>Representa una colección de todos <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> los objetos de una plantilla.</summary>
+    <remarks><para>Use el <see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> método para crear un nuevo bloque de creación y agregarlo a una plantilla. </para>
+      <para>A diferencia del <see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Add(System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> método de la <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> colección, debe especificar el tipo y la categoría al agregar un bloque de creación mediante el <see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Add(System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> método de la <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> colección. Esto es porque los bloques de creación se organizan por tipos y categorías. Cuando se usa la <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> colección, se tiene acceso a toda la colección de bloques de creación en una plantilla; sin embargo, cuando se usa <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> la colección, se tiene acceso a la colección de bloques de creación para un tipo y una categoría específicos en una plantilla.</para>
       <para>
-        <b>Nota</b>: uso de la <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" /> y <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" /> las propiedades de la <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objeto permite determinar la categoría y el tipo de un bloque de creación.</para>
-      <para>Para obtener más información sobre bloques de creación, vea <a href="HV10120827">trabajar con bloques de creación</a></para>
-      <para />
-    </remarks>
+        <b>Nota</b>: el uso <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" /> de <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" /> las propiedades y <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> del objeto permite determinar la categoría y el tipo de un bloque de creación.</para>
+      <para>Para obtener más información acerca de los bloques de creación, vea <a href="HV10120827">trabajar con bloques de creación</a></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,16 +53,14 @@
         <Parameter Name="InsertOptions" Type="Microsoft.Office.Interop.Word.WdDocPartInsertOptions" />
       </Parameters>
       <Docs>
-        <param name="Name">Especifica el nombre de la entrada de bloque de creación.  Corresponde a la <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objeto.</param>
-        <param name="Type">Especifica el tipo de bloque de creación para crear. Corresponde a la <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objeto.</param>
-        <param name="Category">Especifica la categoría de la nueva entrada de bloque de creación. Corresponde a la <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objeto.</param>
-        <param name="Range">Especifica el valor de la entrada de bloque básico. Corresponde a la <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objeto.</param>
-        <param name="Description">Especifica la descripción de la entrada de bloque básico. Corresponde a la <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" /> (propiedad) de la <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objeto.</param>
-        <param name="InsertOptions">Especifica si la entrada de bloque de creación se inserta como una página, un párrafo o en línea. Si se omite, el valor predeterminado es <see cref="F:Microsoft.Office.Interop.Word.WdDocPartInsertOptions.wdInsertContent" />. Corresponde a la <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" /> (propiedad) para la <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objeto.</param>
-        <summary>Crea una nueva entrada de bloque de creación en una plantilla y devuelve un <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> object que representa la nueva entrada de bloque de creación.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />
-        </returns>
+        <param name="Name">Especifica el nombre de la entrada de bloque de creación.  Corresponde a la <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" /> propiedad del <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objeto.</param>
+        <param name="Type">Especifica el tipo de bloque de creación para crear. Corresponde a la <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" /> propiedad del <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objeto.</param>
+        <param name="Category">Especifica la categoría de la nueva entrada de bloque de creación. Corresponde a la <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" /> propiedad del <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objeto.</param>
+        <param name="Range">Especifica el valor de la entrada de bloque básico. Corresponde a la <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" /> propiedad del <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objeto.</param>
+        <param name="Description">Especifica la descripción de la entrada de bloque básico. Corresponde a la <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" /> propiedad del <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objeto.</param>
+        <param name="InsertOptions">Especifica si la entrada de bloque de creación se inserta como una página, un párrafo o en línea. Si se omite, el valor predeterminado <see cref="F:Microsoft.Office.Interop.Word.WdDocPartInsertOptions.wdInsertContent" />es. Corresponde a la <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" /> propiedad del <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objeto.</param>
+        <summary>Crea una nueva entrada de bloque de creación en una plantilla y <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> devuelve un objeto que representa la nueva entrada de bloque de creación.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,10 +87,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa la aplicación Microsoft Word.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,10 +115,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el número de elementos en el <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> colección. Es de solo lectura</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Devuelve el número de elementos de la <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> colección. Solo lectura.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,16 +143,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el complemento. Es de solo lectura</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, la propiedad <b>Creator</b> devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el complemento. Solo lectura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Si el objeto se creó en Microsoft Word, la propiedad <b>Creator</b> devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
           <para>
-            <b>Nota</b>: este valor también puede representarse mediante la constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
-          <para />
-        </remarks>
+            <b>Nota</b>: este valor también puede representarse mediante la <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />constante.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -196,9 +176,7 @@
       <Docs>
         <param name="Index">Especifica una <b>cadena</b> o <b>entero</b> que representa el nombre o la posición ordinal del objeto en la colección.</param>
         <summary>Devuelve el elemento especificado de la colección.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />
-        </returns>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,10 +203,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario del especificado <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> objeto.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve el objeto primario del objeto especificado <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> .</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

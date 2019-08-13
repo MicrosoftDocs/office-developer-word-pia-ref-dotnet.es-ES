@@ -1,13 +1,5 @@
 <Type Name="ErrorBars" FullName="Microsoft.Office.Interop.Word.ErrorBars">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3db8e65975f4978dcea8b8d7027746a2e159deeb" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675092" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ErrorBars" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="88cdf7f8cb961ec7b78e5d647fecf890c430bbd0" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146867" /></Metadata><TypeSignature Language="C#" Value="public interface ErrorBars" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ErrorBars" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ErrorBars" />
   <TypeSignature Language="VB.NET" Value="Public Interface ErrorBars" />
@@ -27,14 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Representa las barras de error de una serie del gráfico.</summary>
-    <remarks>
-      <para>Las barras de error indican el grado de incertidumbre de los datos del gráfico. Sólo una serie de área, barra, columna, línea y grupos de dispersión en un gráfico 2D puede tener barras de error. Puede tener sólo una serie de grupos de dispersión x e y barras de error. Este objeto no es una colección. No hay ningún objeto que represente una sola barra de error; bien x barras de error o barras de error y activadas para todos los puntos de una serie o ellos desactivados.</para>
-      <para>La <see cref="M:Microsoft.Office.Interop.Word.Series.ErrorBar(Microsoft.Office.Interop.Word.XlErrorBarDirection,Microsoft.Office.Interop.Word.XlErrorBarInclude,Microsoft.Office.Interop.Word.XlErrorBarType,System.Object,System.Object)" /> método cambia el error de formato y el tipo de barra.</para>
-      <para />
-    </remarks>
-    <example>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.Series.ErrorBars" /> propiedad para devolver el <see cref="T:Microsoft.Office.Interop.Word.ErrorBars" /> objeto. En el siguiente ejemplo activa las barras de error para la serie uno del primer gráfico del documento activo y, a continuación, Establece el estilo final de las barras de error.</para>
-    </example>
+    <remarks><para>Las barras de error indican el grado de imprecisión de los datos del gráfico. Solamente pueden tener barras de error los grupos de áreas, barras, columnas, líneas y dispersión de un gráfico 2D. Solamente pueden tener barras de error X e Y las series de los grupos de dispersión. Este objeto no es una colección. Ningún objeto representa una barra de error individual; las barras de error X o Y se activan o se desactivan para todos los puntos de una serie.</para>
+      <para>El <see cref="M:Microsoft.Office.Interop.Word.Series.ErrorBar(Microsoft.Office.Interop.Word.XlErrorBarDirection,Microsoft.Office.Interop.Word.XlErrorBarInclude,Microsoft.Office.Interop.Word.XlErrorBarType,System.Object,System.Object)" /> método cambia el formato y el tipo de la barra de error.</para>
+      <para> </para></remarks>
+    <example><para>Use la <see cref="P:Microsoft.Office.Interop.Word.Series.ErrorBars" /> propiedad para devolver el <see cref="T:Microsoft.Office.Interop.Word.ErrorBars" /> objeto. En el siguiente ejemplo se activan las barras de error para la serie uno del primer gráfico del documento activo y, a continuación, se establece el estilo final de las barras de error.</para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,10 +48,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa la aplicación Microsoft Word. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto). Solo lectura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Cuando se usa sin un calificador de objeto, esta <see cref="T:Microsoft.Office.Interop.Word._Application" /> propiedad devuelve un objeto que representa la aplicación Microsoft Word. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto). Solo lectura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,10 +76,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> object que representa el borde del objeto. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> objeto Object que representa el borde del objeto. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,9 +103,7 @@
       <Parameters />
       <Docs>
         <summary>Borra el formato del objeto.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <returns><b>Objeto</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,14 +130,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. <b>Integer</b> de sólo lectura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, el <see cref="P:Microsoft.Office.Interop.Word.ErrorBars.Creator" /> (propiedad) devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, consulte la referencia del lenguaje de ayuda que se incluye con Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. <b>Integer</b> de solo lectura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Si el objeto se creó en Microsoft Word, la <see cref="P:Microsoft.Office.Interop.Word.ErrorBars.Creator" /> propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -180,9 +158,7 @@
       <Parameters />
       <Docs>
         <summary>Elimina el objeto.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <returns><b>Objeto</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,10 +188,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlEndStyleCap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el estilo final de las barras de error. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.XlEndStyleCap" /> constantes: <see cref="F:Microsoft.Office.Interop.Word.XlEndStyleCap.xlCap" /> o <see cref="F:Microsoft.Office.Interop.Word.XlEndStyleCap.xlNoCap" />. Es de lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlEndStyleCap" />
-        </value>
+        <summary>Devuelve o establece el estilo final de las barras de error. Puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Word.XlEndStyleCap" /> constantes: <see cref="F:Microsoft.Office.Interop.Word.XlEndStyleCap.xlCap" /> o <see cref="F:Microsoft.Office.Interop.Word.XlEndStyleCap.xlNoCap" />. Lectura y escritura</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlEndStyleCap" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,10 +217,8 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve la línea, relleno y efecto de formato para el objeto.
-Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+De sólo <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,9 +246,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Devuelve un valor de <b>tipo String</b> que representa el nombre del objeto.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -304,9 +274,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Devuelve al objeto primario del objeto especificado. Read-only <b>objeto</b>.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -332,9 +300,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       <Parameters />
       <Docs>
         <summary>Selecciona el objeto.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <returns><b>Objeto</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

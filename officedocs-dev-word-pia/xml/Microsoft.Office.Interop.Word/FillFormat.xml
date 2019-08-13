@@ -1,13 +1,5 @@
 <Type Name="FillFormat" FullName="Microsoft.Office.Interop.Word.FillFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3af31c574b589a1351974da01aa005e85e0d51af" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674877" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FillFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4807b5d76d632efebdfc8390e89b52ff7e61eae6" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146874" /></Metadata><TypeSignature Language="C#" Value="public interface FillFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FillFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FillFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface FillFormat" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Representa el formato de relleno de una forma. Una forma puede tener un relleno sólido, degradado, de textura, de entramado, de imagen o semitransparente.</summary>
-    <remarks>
-      <para>Utilice la propiedad <b>Fill</b> de un <see cref="T:Microsoft.Office.Interop.Word.Shape" />, <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />, o <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto para devolver un objeto <b>FillFormat</b> .</para>
-      <para>Muchas de las propiedades del objeto <b>FillFormat</b> son de sólo lectura. Para establecer una de estas propiedades, se debe aplicar el método correspondiente.</para>
-      <para />
-    </remarks>
+    <remarks><para>Utilice la propiedad <b>Fill</b> de un <see cref="T:Microsoft.Office.Interop.Word.Shape" />objeto <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />, o <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> para devolver un objeto <b>FillFormat</b> .</para>
+      <para>Muchas de las propiedades del objeto <b>FillFormat</b> son de sólo lectura. Para establecer una de estas propiedades, deberá aplicar el método correspondiente.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,7 +75,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.ColorFormat" /> object que representa el color de fondo para el relleno especificado o la línea de entramado.</summary>
+        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.ColorFormat" /> objeto que representa el color de fondo para el relleno especificado o la línea de entramado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -143,9 +133,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -171,7 +161,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.ColorFormat" /> object que representa el color de primer plano para el relleno.</summary>
+        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.ColorFormat" /> objeto que representa el color de primer plano del relleno.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -202,12 +192,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece el ángulo del relleno de degradado para el formato de relleno especificado.</summary>
-        <value>Ángulo del relleno de degradado para el formato de relleno especificado.</value>
-        <remarks>
-          <para>Lectura y escritura. Un relleno de degradado pueden especificarse en el formato para los distintos elementos (formas) en un gráfico. Por ejemplo, puede usar el cuadro de diálogo Formato de serie de datos para dar formato a las columnas en un gráfico de columnas en un relleno de degradado. En este caso, esta propiedad corresponde a la configuración de la casilla ángulo en la categoría de relleno del cuadro de diálogo Formato de serie de datos. El intervalo válido de valores de esta propiedad es de cero a través de 359.9.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene o establece el ángulo del relleno degradado para el formato de relleno especificado.</summary>
+        <value>El ángulo del relleno degradado para el formato de relleno especificado.</value>
+        <remarks><para>Lectura/escritura. Un relleno de degradado pueden especificarse en el formato para los distintos elementos (formas) en un gráfico. Por ejemplo, puede usar el cuadro de diálogo Formato de serie de datos para dar formato a las columnas de un gráfico de columnas en un relleno de degradado. En este caso, esta propiedad se corresponde con el valor del cuadro ángulo de la categoría relleno del cuadro de diálogo formato de serie de datos. El intervalo válido de valores para esta propiedad es de cero a 359,9.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GradientColorType">
@@ -235,10 +223,8 @@
       <Docs>
         <summary>Devuelve el tipo de color de degradado para el relleno especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />, <see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" />, o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> método para establecer el tipo de degradado del relleno.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use el <see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />método <see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" />, o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> para establecer el tipo de degradado para el relleno.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GradientDegree">
@@ -266,11 +252,9 @@
       <Docs>
         <summary>Devuelve un valor que indica lo oscuro o claro que tiene un relleno de degradado de un color es.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Un valor de 0 (cero) significa que negro se mezcla con el primer plano de la forma de colores para formar el degradado; un valor de 1 significa que se mezcla el blanco; y valores comprendidos entre 0 y 1 significan que una sombra más oscura o más clara del color de primer plano es mixto pda.</para>
-          <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> (método) para establecer el grado de degradado del relleno.</para>
-          <para />
-        </remarks>
+        <remarks><para>Un valor 0 (cero) indica que el color de primer plano de la forma está mezclado con negro para formar el degradado; un valor 1 indica que está mezclado con blanco y los valores comprendidos entre 0 y 1 indican que está mezclado con una sombra más clara o más oscura.</para>
+          <para>Use el <see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> método para establecer el grado de degradado del relleno.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GradientStops">
@@ -296,12 +280,10 @@
         <ReturnType>Microsoft.Office.Core.GradientStops</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el <see cref="T:Microsoft.Office.Core.GradientStops" /> colección asociada con el formato de relleno especificado.</summary>
-        <value>El <see cref="T:Microsoft.Office.Core.GradientStops" /> colección asociada con el formato de relleno especificado.</value>
-        <remarks>
-          <para>Lectura y escritura. Degradados son una transición sin problemas desde un estado de color a otro. Los extremos de estas secciones se denominan punto de degradado. Puede usar el <b>hipervínculo "ms-help://AstroNS2/WINWORD. DEV/content/ms-help/HV10343554.htm"GradientStops.Insert</b> método para agregar delimitadores de degradado a la colección <b>GradientStops</b> para el objeto especificado.</para>
-          <para />
-        </remarks>
+        <summary>Obtiene la <see cref="T:Microsoft.Office.Core.GradientStops" /> colección asociada con el formato de relleno especificado.</summary>
+        <value>La <see cref="T:Microsoft.Office.Core.GradientStops" /> colección asociada con el formato de relleno especificado.</value>
+        <remarks><para>Lectura/escritura. Un degradado es una transición sin problemas desde un estado de color a otro. Los extremos de estas secciones se denominan punto de degradado. Puede usar el <b>hipervínculo "MS-Help://AstroNS2/Winword. DEV/content/ms-help/HV10343554.htm "GradientStops. Insert</b> (método) para agregar puntos de degradado a la colección <b>GradientStops</b> para el objeto especificado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GradientStyle">
@@ -329,11 +311,9 @@
       <Docs>
         <summary>Devuelve el estilo de degradado del relleno especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> método para establecer el estilo de degradado para el relleno.</para>
-          <para>Si se intenta devolver esta propiedad para un relleno que no tiene un degradado genera un error. Usar el <see cref="P:Microsoft.Office.Interop.Word.FillFormat.Type" /> (propiedad) para determinar si el relleno tiene un degradado.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> método <see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> or para establecer el estilo de degradado del relleno.</para>
+          <para>Si se intenta devolver esta propiedad para un relleno que no tiene ningún degradado, se genera un error. Utilice la <see cref="P:Microsoft.Office.Interop.Word.FillFormat.Type" /> propiedad para determinar si el relleno tiene un degradado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GradientVariant">
@@ -361,11 +341,9 @@
       <Docs>
         <summary>Devuelve la variante de degradado del relleno especificado como valor entero de 1 a 4 para la mayoría de los rellenos de degradado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el estilo de degradado es <b>msoGradientFromCenter</b>, esta propiedad devuelve 1 o 2. Los valores de esta propiedad corresponden a las variantes de degradado (numeradas de izquierda a derecha y de arriba a abajo) en la ficha Degradado en el cuadro de diálogo efectos de relleno.</para>
-          <para>Esta propiedad es de sólo lectura. Usar el <see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> (método) para establecer la variante de degradado para el relleno.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si el estilo de degradado es <b>msoGradientFromCenter</b>, esta propiedad devuelve 1 ó 2. Los valores de esta propiedad corresponden a las variantes de degradado (numeradas de izquierda a derecha y de arriba a abajo) en la ficha degradado en el cuadro de diálogo Efectos de relleno.</para>
+          <para>Esta propiedad es de sólo lectura. Use el <see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> método <see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> or para establecer la variante de degradado del relleno.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OneColorGradient">
@@ -393,12 +371,10 @@
         <Parameter Name="Degree" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Style">Requiere <see cref="T:Microsoft.Office.Core.MsoGradientStyle" />. Estilo del degradado.</param>
-        <param name="Variant">
-          <b>Integer</b>requerido. La variante de degradado. Puede ser un valor de 1 a 4, correspondiente a las cuatro variantes en la ficha degradado en el cuadro de diálogo Efectos de relleno. Si <paramref name="Style" /> es <b>msoGradientFromCenter</b>, este argumento puede ser 1 ó 2.</param>
-        <param name="Degree">
-          <b>Single</b>requerido. Grado de degradado. Puede ser un valor entre 0,0 (oscuro) y 1,0 (claro).</param>
-        <summary>Establece un degradado de un color para el relleno especificado.</summary>
+        <param name="Style">Es <see cref="T:Microsoft.Office.Core.MsoGradientStyle" />obligatorio. El estilo de degradado.</param>
+        <param name="Variant">Required <b>Integer</b>. La variante de degradado. Puede ser un valor de 1 a 4, correspondiente a las cuatro variantes en la ficha degradado en el cuadro de diálogo Efectos de relleno. Si <paramref name="Style" /> es <b>msoGradientFromCenter</b>, este argumento puede ser 1 ó 2.</param>
+        <param name="Degree"><b>Single</b>requerido. Grado del degradado. Puede ser un valor de 0,0 (oscuro) a 1,0 (claro).</param>
+        <summary>Establece el degradado de un color para el relleno especificado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -455,11 +431,9 @@
       <Docs>
         <summary>Devuelve un valor que representa la trama aplicada al relleno especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>También puede usar el <see cref="M:Microsoft.Office.Interop.Word.FillFormat.Patterned(Microsoft.Office.Core.MsoPatternType)" /> (método) para establecer la trama del relleno.</para>
-          <para>Usar la <see cref="P:Microsoft.Office.Interop.Word.FillFormat.BackColor" /> y <see cref="P:Microsoft.Office.Interop.Word.FillFormat.ForeColor" /> propiedades para establecer los colores utilizados en la trama.</para>
-          <para />
-        </remarks>
+        <remarks><para>También puede usar el <see cref="M:Microsoft.Office.Interop.Word.FillFormat.Patterned(Microsoft.Office.Core.MsoPatternType)" /> método para establecer la trama para el relleno.</para>
+          <para>Use las <see cref="P:Microsoft.Office.Interop.Word.FillFormat.BackColor" /> propiedades <see cref="P:Microsoft.Office.Interop.Word.FillFormat.ForeColor" /> y para establecer los colores usados en la trama.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Patterned">
@@ -485,12 +459,10 @@
         <Parameter Name="Pattern" Type="Microsoft.Office.Core.MsoPatternType" />
       </Parameters>
       <Docs>
-        <param name="Pattern">Requiere <see cref="T:Microsoft.Office.Core.MsoPatternType" />. Trama que se va a utilizar para el relleno especificado.</param>
+        <param name="Pattern">Es <see cref="T:Microsoft.Office.Core.MsoPatternType" />obligatorio. Trama que va a utilizarse para el relleno especificado.</param>
         <summary>Establece una trama para el relleno especificado.</summary>
-        <remarks>
-          <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.FillFormat.BackColor" /> y <see cref="P:Microsoft.Office.Interop.Word.FillFormat.ForeColor" /> propiedades para establecer los colores utilizados en la trama.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use las <see cref="P:Microsoft.Office.Interop.Word.FillFormat.BackColor" /> propiedades <see cref="P:Microsoft.Office.Interop.Word.FillFormat.ForeColor" /> y para establecer los colores usados en la trama.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PictureEffects">
@@ -517,11 +489,9 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene un <see cref="T:Microsoft.Office.Core.PictureEffects" /> objeto que se puede usar para aplicar efectos de imagen al formato de relleno especificado.</summary>
-        <value>A <see cref="T:Microsoft.Office.Core.PictureEffects" /> objeto que se puede usar para aplicar efectos de imagen al formato de relleno especificado.</value>
-        <remarks>
-          <para>Es de sólo lectura. Usar el <see cref="M:Microsoft.Office.Core.PictureEffects.Insert" /> (método) de la <see cref="T:Microsoft.Office.Core.PictureEffects" /> objeto se aplican los efectos de imagen. <b>Insertar</b> toma un <see cref="T:Microsoft.Office.Core.MsoPictureEffectType" /> constante de la enumeración como un argumento para especificar qué tipo de efecto de imagen que se va a aplicar.</para>
-          <para />
-        </remarks>
+        <value><see cref="T:Microsoft.Office.Core.PictureEffects" /> Objeto que se puede usar para aplicar efectos de imagen al formato de relleno especificado.</value>
+        <remarks><para>Solo lectura. Use el <see cref="M:Microsoft.Office.Core.PictureEffects.Insert" /> método del <see cref="T:Microsoft.Office.Core.PictureEffects" /> objeto para aplicar efectos de imagen. <b>Insert</b> toma una <see cref="T:Microsoft.Office.Core.MsoPictureEffectType" /> constante de enumeración como argumento para especificar el tipo de efecto de imagen que se va a aplicar.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PresetGradient">
@@ -549,10 +519,9 @@
         <Parameter Name="PresetGradientType" Type="Microsoft.Office.Core.MsoPresetGradientType" />
       </Parameters>
       <Docs>
-        <param name="Style">Requiere <see cref="T:Microsoft.Office.Core.MsoGradientStyle" />. Estilo del degradado.</param>
-        <param name="Variant">
-          <b>Integer</b>requerido. La variante de degradado. Puede ser un valor de 1 a 4, correspondiente a las cuatro variantes en la ficha degradado en el cuadro de diálogo Efectos de relleno. Si <paramref name="Style" /> es <b>msoGradientFromCenter</b>, este argumento puede ser 1 ó 2.</param>
-        <param name="PresetGradientType">Requiere <see cref="T:Microsoft.Office.Core.MsoPresetGradientType" />. Tipo de degradado.</param>
+        <param name="Style">Es <see cref="T:Microsoft.Office.Core.MsoGradientStyle" />obligatorio. El estilo de degradado.</param>
+        <param name="Variant">Required <b>Integer</b>. La variante de degradado. Puede ser un valor de 1 a 4, correspondiente a las cuatro variantes en la ficha degradado en el cuadro de diálogo Efectos de relleno. Si <paramref name="Style" /> es <b>msoGradientFromCenter</b>, este argumento puede ser 1 ó 2.</param>
+        <param name="PresetGradientType">Es <see cref="T:Microsoft.Office.Core.MsoPresetGradientType" />obligatorio. Tipo de degradado.</param>
         <summary>Establece un degradado preestablecido para el relleno especificado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -582,10 +551,8 @@
       <Docs>
         <summary>Devuelve el tipo de color de degradado para el relleno especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" /> (método) para establecer el tipo de degradado preestablecido para el relleno.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use el <see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" /> método para establecer el tipo de degradado preestablecido para el relleno.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PresetTexture">
@@ -613,10 +580,8 @@
       <Docs>
         <summary>Devuelve la textura preestablecida para el relleno especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" /> (método) para especificar el tipo de textura preestablecida para el relleno.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use el <see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" /> método para especificar la textura preestablecida para el relleno.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PresetTextured">
@@ -642,7 +607,7 @@
         <Parameter Name="PresetTexture" Type="Microsoft.Office.Core.MsoPresetTexture" />
       </Parameters>
       <Docs>
-        <param name="PresetTexture">Requiere <see cref="T:Microsoft.Office.Core.MsoPresetTexture" />. Textura preestablecida.</param>
+        <param name="PresetTexture">Es <see cref="T:Microsoft.Office.Core.MsoPresetTexture" />obligatorio. Textura preestablecida.</param>
         <summary>Establece una textura preestablecida para el relleno especificado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -674,26 +639,24 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece si el relleno gira con la forma especificada.</summary>
-        <value>A <see cref="T:Microsoft.Office.Core.MsoTriState" /> objeto.</value>
-        <remarks>
-          <para>Lectura y escritura. El valor devuelto por esta propiedad puede ser una de las <see cref="T:Microsoft.Office.Core.MsoTriState" /> constantes enumeran en la siguiente tabla.</para>
+        <value>Un <see cref="T:Microsoft.Office.Core.MsoTriState" /> objeto.</value>
+        <remarks><para>Lectura/escritura. El valor devuelto por esta propiedad puede ser una de <see cref="T:Microsoft.Office.Core.MsoTriState" /> las constantes que aparecen en la tabla siguiente.</para>
           <list type="table">
             <item>
               <description>
                 <b>msoFalse</b>
               </description>
-              <description>el relleno no gira con la forma.</description>
+              <description>El relleno no gira con la forma.</description>
             </item>
             <item>
               <description>
                 <b>msoTrue</b>
               </description>
-              <description>el relleno gira con la forma.</description>
+              <description>El relleno gira con la forma.</description>
             </item>
           </list>
-          <para>El valor de esta propiedad corresponde a la opción de girar con el cuadro de la forma en el panel de relleno del cuadro de diálogo Formato de imagen en la interfaz de usuario de Microsoft Word 2010 (en herramientas de dibujo, en la ficha Formato, en el grupo Estilos de forma, haga clic en formato de forma.) </para>
-          <para />
-        </remarks>
+          <para>El valor de esta propiedad se corresponde con el valor de la casilla girar con forma del panel relleno del cuadro de diálogo formato de imagen en la interfaz de usuario de Microsoft Word 2010 (en herramientas de dibujo, en la ficha formato, en el grupo estilos de forma, haga clic en formato de forma).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Solid">
@@ -717,7 +680,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Establece un color uniforme para el relleno especificado. Utilice este método para convertir de nuevo en un relleno sólido un relleno degradado, de textura, de trama o de fondo.</summary>
+        <summary>Establece el relleno especificado en un color uniforme. Utilice este método para convertir de nuevo en un relleno sólido un relleno de degradado, de textura, de trama o de fondo.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -747,10 +710,9 @@
         <ReturnType>Microsoft.Office.Core.MsoTextureAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece la alineación (el origen de la cuadrícula de coordenadas) del mosaico de relleno con textura.</summary>
-        <value>La alineación (el origen de la cuadrícula de coordenadas) del mosaico de relleno con textura.</value>
-        <remarks>
-          <para>Lectura y escritura. El valor devuelto por esta propiedad puede ser uno de los siguientes <see cref="T:Microsoft.Office.Core.MsoTextureAlignment" /> constantes:</para>
+        <summary>Obtiene o establece la alineación (el origen de la cuadrícula de coordenadas) del mosaico del relleno con textura.</summary>
+        <value>Alineación (el origen de la cuadrícula de coordenadas) del mosaico del relleno con textura.</value>
+        <remarks><para>Lectura/escritura. El valor devuelto por esta propiedad puede ser una de las <see cref="T:Microsoft.Office.Core.MsoTextureAlignment" /> siguientes constantes:</para>
           <list type="bullet">
             <item>
               <para>
@@ -779,7 +741,7 @@
             </item>
             <item>
               <para>
-                <b> msoTextureRight</b>
+                <b>msoTextureRight</b>
               </para>
             </item>
             <item>
@@ -798,9 +760,8 @@
               </para>
             </item>
           </list>
-          <para>el valor de esta propiedad corresponde a la configuración del cuadro de alineación en las opciones de formato de mosaico en el panel de relleno de la imagen de formato cuadro de diálogo en la interfaz de usuario de Microsoft Word (en herramientas de dibujo, en la ficha Formato, expanda el grupo Estilos de forma.)</para>
-          <para />
-        </remarks>
+          <para>La configuración de esta propiedad se corresponde con la configuración del cuadro alineación en opciones de mosaico en el panel relleno del cuadro de diálogo formato de imagen en la interfaz de usuario de Microsoft Word (en herramientas de dibujo, en la ficha formato, expanda el grupo estilos de forma).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextureHorizontalScale">
@@ -829,12 +790,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece un valor que especifica el factor de escala horizontal para el relleno con textura.</summary>
+        <summary>Obtiene o establece un valor que especifica el factor de escala horizontal para el relleno de textura.</summary>
         <value>Especifica el factor de escala horizontal para el relleno con textura.</value>
-        <remarks>
-          <para>Lectura y escritura. El valor de esta propiedad corresponde a la configuración de la casilla escala X en las opciones de formato de mosaico en el panel de relleno del cuadro de diálogo Formato de imagen en la interfaz de usuario de Microsoft Word (en herramientas de dibujo, en la ficha Formato, expanda el grupo Estilos de forma.)</para>
-          <para />
-        </remarks>
+        <remarks><para>Lectura/escritura. La configuración de esta propiedad se corresponde con la configuración del cuadro escala X en opciones de mosaico en el panel relleno del cuadro de diálogo formato de imagen en la interfaz de usuario de Microsoft Word (en herramientas de dibujo, en la ficha formato, expanda el grupo estilos de forma).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextureName">
@@ -862,10 +821,8 @@
       <Docs>
         <summary>Devuelve el nombre de archivo de la textura personalizada para el relleno especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" /> (método) para establecer el archivo de textura para el relleno.</para>
-          <para />
-        </remarks>
+        <remarks><para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" /> método para establecer el archivo de textura para el relleno.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextureOffsetX">
@@ -896,11 +853,9 @@
       <Docs>
         <summary>Obtiene o establece un valor que especifica el desplazamiento horizontal de la textura desde el origen en puntos.</summary>
         <value>Especifica el desplazamiento horizontal de la textura desde el origen en puntos.</value>
-        <remarks>
-          <para>De lectura y escritura. La posición del origen está determinada por la configuración de la <see cref="P:Microsoft.Office.interop.Word.FillFormat.TextureAlignment" /> (propiedad).</para>
-          <para>El valor de esta propiedad corresponde a la configuración del cuadro de desplazamiento X bajo Opciones de mosaico en el panel de relleno del cuadro de diálogo Formato de imagen en la interfaz de usuario de Microsoft Word (en herramientas de dibujo, en la ficha Formato, expanda el grupo Estilos de forma.)</para>
-          <para />
-        </remarks>
+        <remarks><para>Lectura/escritura. La posición del origen está determinada por la configuración de la <see cref="P:Microsoft.Office.interop.Word.FillFormat.TextureAlignment" /> propiedad.</para>
+          <para>La configuración de esta propiedad se corresponde con la configuración del cuadro desplazamiento X en opciones de mosaico en el panel relleno del cuadro de diálogo formato de imagen en la interfaz de usuario de Microsoft Word (en herramientas de dibujo, en la ficha formato, expanda el grupo estilos de forma).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextureOffsetY">
@@ -931,11 +886,9 @@
       <Docs>
         <summary>Obtiene o establece un valor que especifica el desplazamiento vertical de la textura desde el origen en puntos.</summary>
         <value>Especifica el desplazamiento vertical de la textura desde el origen en puntos.</value>
-        <remarks>
-          <para>De lectura y escritura. La posición del origen está determinada por la configuración de la <see cref="P:Microsoft.Office.Interop.Word.FillFormat.TextureAlignment" /> (propiedad).</para>
-          <para>El valor de esta propiedad corresponde a la configuración del cuadro de desplazamiento Y en Opciones de mosaico en el panel de relleno del cuadro de diálogo Formato de imagen en la interfaz de usuario de Microsoft Word (en herramientas de dibujo, en la ficha Formato, expanda el grupo Estilos de forma.)</para>
-          <para />
-        </remarks>
+        <remarks><para>Lectura/escritura. La posición del origen está determinada por la configuración de la <see cref="P:Microsoft.Office.Interop.Word.FillFormat.TextureAlignment" /> propiedad.</para>
+          <para>El valor de esta propiedad se corresponde con el valor del cuadro desplazamiento Y de opciones de mosaico del panel relleno del cuadro de diálogo formato de imagen en la interfaz de usuario de Microsoft Word (en herramientas de dibujo, en la ficha formato, expanda el grupo estilos de forma).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextureTile">
@@ -964,27 +917,25 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece si el relleno con textura está en mosaico o centrado.</summary>
-        <value>A <see cref="T:Microsoft.Office.Core.MsoTriState" /> objeto.</value>
-        <remarks>
-          <para>Lectura y escritura. El valor devuelto por esta propiedad puede ser una de las <see cref="T:Microsoft.Office.Core.MsoTriState" /> constantes que se describen en la siguiente tabla.</para>
+        <summary>Obtiene o establece si el relleno con textura es centrado o en mosaico.</summary>
+        <value>Un <see cref="T:Microsoft.Office.Core.MsoTriState" /> objeto.</value>
+        <remarks><para>Lectura/escritura. El valor devuelto por esta propiedad puede ser una de <see cref="T:Microsoft.Office.Core.MsoTriState" /> las constantes descritas en la siguiente tabla.</para>
           <list type="table">
             <item>
               <description>
                 <b>msoFalse</b>
               </description>
-              <description>se centra el relleno con textura.</description>
+              <description>El relleno con textura es un relleno centrado.</description>
             </item>
             <item>
               <description>
                 <b>msoTrue</b>
               </description>
-              <description>se coloca como mosaico del relleno con textura.</description>
+              <description>El relleno con textura es un relleno en mosaico.</description>
             </item>
           </list>
-          <para>El valor de esta propiedad corresponde a la configuración de la imagen de icono como cuadro de textura en las opciones de formato de mosaico en el panel de relleno del cuadro de diálogo Formato de imagen en la interfaz de usuario de Microsoft Word (en herramientas de dibujo, en la ficha Formato, expanda los estilos de forma grupo.)</para>
-          <para />
-        </remarks>
+          <para>El valor de esta propiedad se corresponde con el valor de la casilla de la imagen de mosaico como textura en opciones de mosaico en el panel relleno del cuadro de diálogo formato de imagen en la interfaz de usuario de Microsoft Word (en herramientas de dibujo, en la ficha formato, expanda el grupo estilos de forma).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextureType">
@@ -1012,10 +963,8 @@
       <Docs>
         <summary>Devuelve el tipo de textura para el relleno especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" />, <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserPicture(System.String)" />, o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" /> método para establecer el tipo de textura para el relleno.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use el <see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" />método <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserPicture(System.String)" />, o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" /> para establecer el tipo de textura para el relleno.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextureVerticalScale">
@@ -1046,10 +995,8 @@
       <Docs>
         <summary>Obtiene o establece un valor que especifica el factor de escala vertical para el relleno con textura.</summary>
         <value>Especifica el factor de escala vertical para el relleno con textura.</value>
-        <remarks>
-          <para>Lectura y escritura. El valor de esta propiedad corresponde a la configuración del cuadro de escala Y en Opciones de mosaico en el panel de relleno del cuadro de diálogo Formato de imagen en la interfaz de usuario de Microsoft Word (en herramientas de dibujo, en la ficha Formato, expanda el grupo Estilos de forma.)</para>
-          <para />
-        </remarks>
+        <remarks><para>Lectura/escritura. El valor de esta propiedad se corresponde con el valor del cuadro escala Y en opciones de mosaico del panel relleno del cuadro de diálogo formato de imagen en la interfaz de usuario de Microsoft Word (en herramientas de dibujo, en la ficha formato, expanda el grupo estilos de forma).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Transparency">
@@ -1078,12 +1025,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el grado de transparencia del relleno especificado como un valor entre 0,0 (opaco) y 1,0 (transparente).</summary>
+        <summary>Devuelve o establece el grado de transparencia del relleno especificado como un valor entre 0,0 (opaco) y 1,0 (claro).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El valor de esta propiedad afecta a la apariencia de los rellenos de color sólido y líneas solamente; no tiene ningún efecto en el aspecto de las líneas de entramado o de entramado, degradado, imagen o rellenos con textura.</para>
-          <para />
-        </remarks>
+        <remarks><para>El valor de esta propiedad afecta sólo al aspecto de los rellenos y líneas de color sólido; no tiene efecto en el aspecto de las líneas de entramado ni de rellenos con tramas, degradados, imágenes o texturas.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TwoColorGradient">
@@ -1110,10 +1055,9 @@
         <Parameter Name="Variant" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Style">Requiere <see cref="T:Microsoft.Office.Core.MsoGradientStyle" />. Estilo del degradado.</param>
-        <param name="Variant">
-          <b>Integer</b>requerido. La variante de degradado. Puede ser un valor de 1 a 4, correspondiente a las cuatro variantes en la ficha degradado en el cuadro de diálogo Efectos de relleno. Si <paramref name="Style" /> es <b>msoGradientFromCenter</b>, este argumento puede ser 1 ó 2.</param>
-        <summary>Establece un degradado de dos colores para el relleno especificado.</summary>
+        <param name="Style">Es <see cref="T:Microsoft.Office.Core.MsoGradientStyle" />obligatorio. El estilo de degradado.</param>
+        <param name="Variant">Required <b>Integer</b>. La variante de degradado. Puede ser un valor de 1 a 4, correspondiente a las cuatro variantes en la ficha degradado en el cuadro de diálogo Efectos de relleno. Si <paramref name="Style" /> es <b>msoGradientFromCenter</b>, este argumento puede ser 1 ó 2.</param>
+        <summary>Establece el valor del relleno especificado en un degradado de dos colores.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1168,13 +1112,10 @@
         <Parameter Name="PictureFile" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="PictureFile">
-          <b>String</b> requerida. Nombre del archivo de imagen.</param>
+        <param name="PictureFile"><b>String</b> requerida. Nombre del archivo de la imagen.</param>
         <summary>Rellena la forma especificada con una imagen grande.</summary>
-        <remarks>
-          <para>Si desea rellenar la forma con mosaicos pequeños de una imagen, use el <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" /> (método).</para>
-          <para />
-        </remarks>
+        <remarks><para>Si desea rellenar la forma con mosaicos pequeños de una imagen, use el <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" /> método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UserTextured">
@@ -1200,13 +1141,10 @@
         <Parameter Name="TextureFile" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="TextureFile">
-          <b>String</b> requerida. Nombre del archivo de imagen.</param>
+        <param name="TextureFile"><b>String</b> requerida. Nombre del archivo de la imagen.</param>
         <summary>Rellena la forma especificada con mosaicos pequeños de una imagen.</summary>
-        <remarks>
-          <para>Si desea rellenar la forma con una imagen grande, utilice el <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserPicture(System.String)" /> (método).</para>
-          <para />
-        </remarks>
+        <remarks><para>Si desea rellenar la forma con una imagen grande, use el <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserPicture(System.String)" /> método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -1235,13 +1173,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el objeto especificado o el formato aplicado, está visible.</summary>
+        <summary><b>True</b> si el objeto especificado o el formato aplicado, está visible.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Algunos métodos y propiedades no estén disponibles si la propiedad <b>Visible</b> es <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Algunos métodos y propiedades no esté disponibles si la propiedad <b>Visible</b> es <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

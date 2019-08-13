@@ -1,13 +1,5 @@
 <Type Name="Tables" FullName="Microsoft.Office.Interop.Word.Tables">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0295eb260914340962417034fdb652888fbf97c0" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674533" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Tables : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="73c9bbc17f2a0e8f243a1e02441a94bc43b4d4be" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146034" /></Metadata><TypeSignature Language="C#" Value="public interface Tables : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Tables implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Tables" />
   <TypeSignature Language="VB.NET" Value="Public Interface Tables&#xA;Implements IEnumerable" />
@@ -31,10 +23,11 @@
   </Attributes>
   <Docs>
     <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.Table" /> objetos que representan las tablas de una selección, intervalo o documento.</summary>
-    <remarks>
-      <para>Utilice la propiedad <b>Tables</b> para devolver la colección <b>Tables</b> .</para>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Word.Tables.Add(Microsoft.Office.Interop.Word.Range,System.Int32,System.Int32,System.Object@,System.Object@)" /> método para agregar una tabla al intervalo especificado.</para> Utilice <b>tablas</b>de 
-      <para>(<paramref name="index" />), donde índice es el <paramref name="index" /> número, para devolver un solo objeto <b>Table</b> . El número de índice representa la posición de la tabla en la selección, intervalo o documento.</para><para>El <see cref="P:Microsoft.Office.Interop.Word.Tables.Count" /> (propiedad) para esta colección de un documento devuelve el número de elementos sólo del artículo principal. Para contar los elementos de otros contenidos utilice la colección con el <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto.</para><para /></remarks>
+    <remarks><para>Utilice la propiedad <b>Tables</b> para devolver la colección de <b>tablas</b>.</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.Tables.Add(Microsoft.Office.Interop.Word.Range,System.Int32,System.Int32,System.Object@,System.Object@)" /> método para agregar una tabla al intervalo especificado.</para>
+      <para>Use <b></b>tables<paramref name="index" />(), donde index es <paramref name="index" /> el número, para devolver un solo objeto <b>TABLE</b> . El número de índice representa la posición de la tabla en la selección, el intervalo o el documento.</para>
+      <para>La <see cref="P:Microsoft.Office.Interop.Word.Tables.Count" /> propiedad de esta colección de un documento devuelve el número de elementos solo del artículo principal. Para contar los elementos de otros artículos, use la colección <see cref="T:Microsoft.Office.Interop.Word.Range" /> con el objeto.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -62,16 +55,12 @@
         <Parameter Name="AutoFitBehavior" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Requiere <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. Intervalo donde desea que aparezca la tabla. La tabla reemplazará al intervalo, si éste no está contraído.</param>
-        <param name="NumRows">
-          <b>Integer</b>requerido. Número de filas que desea incluir en la tabla.</param>
-        <param name="NumColumns">
-          <b>Integer</b>requerido. Número de columnas que desea incluir en la tabla.</param>
-        <param name="DefaultTableBehavior">
-          <b>Objeto</b>de opcional. Establece un valor que especifica si Word cambia automáticamente el tamaño de las celdas de tablas para ajustarlo al contenido (Autoajuste). Puede ser cualquiera de las siguientes constantes: <b>wdWord8TableBehavior</b> (Autoajuste deshabilitado) o <b>wdWord9TableBehavior</b> (Autoajuste habilitado). La constante predeterminada es <b>wdWord8TableBehavior</b>.</param>
-        <param name="AutoFitBehavior">
-          <b>Objeto</b>de opcional. Establece las reglas de Autoajuste para cómo Microsoft Word cambia el tamaño de las tablas. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.WdAutoFitBehavior" /> constantes: <b>wdAutoFitContent</b>, <b>wdAutoFitFixed</b>o <b>wdAutoFitWindow</b>. Si <paramref name="DefaultTableBehavior" /> se establece en <b>wdWord8TableBehavior</b>, se omite este argumento.</param>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Table" /> objeto que representa una tabla vacía agregada a un documento.</summary>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> requerido. Intervalo donde desea que aparezca la tabla. La tabla reemplazará al intervalo, si éste no está contraído.</param>
+        <param name="NumRows">Required <b>Integer</b>. Número de filas que desea incluir en la tabla.</param>
+        <param name="NumColumns">Required <b>Integer</b>. Número de columnas que desea incluir en la tabla.</param>
+        <param name="DefaultTableBehavior"><b>Objeto</b>opcional. Establece un valor que especifica si Word cambia automáticamente el tamaño de las celdas de las tablas para ajustar el contenido de las celdas (Autoajuste). Puede ser una de las siguientes constantes: <b>wdWord8TableBehavior</b> (Autoajuste deshabilitado) o <b>wdWord9TableBehavior</b> (Autoajuste habilitado). La constante predeterminada es <b>wdWord8TableBehavior</b>.</param>
+        <param name="AutoFitBehavior"><b>Objeto</b>opcional. Establece las reglas de autoajuste para el modo en que Microsoft Word cambia el tamaño de las tablas. Puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdAutoFitBehavior" /> constantes: <b>wdAutoFitContent</b>, <b>wdAutoFitFixed</b>o <b>wdAutoFitWindow</b>. Si <paramref name="DefaultTableBehavior" /> se establece en <b>wdWord8TableBehavior</b>, se omite este argumento.</param>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Table" /> objeto que representa una nueva tabla vacía agregada a un documento.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -134,7 +123,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -192,9 +181,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -255,7 +244,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entero</b> que indica la posición ordinal del objeto individual.</param>
+        <param name="Index"><b>Entero</b> que indica la posición ordinal del objeto individual.</param>
         <summary>Devuelve un objeto individual de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -286,10 +275,8 @@
       <Docs>
         <summary>Devuelve el nivel de anidamiento de las tablas especificadas.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La tabla más exterior tiene un nivel de anidamiento de 1. El nivel de anidamiento de cada tabla anidada sucesivamente es superior de la tabla anterior en uno.</para>
-          <para />
-        </remarks>
+        <remarks><para>La tabla más exterior tiene un nivel 1 de anidamiento. El nivel de anidamiento de cada tabla sucesivamente anidada es superior en uno al de la tabla anterior.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

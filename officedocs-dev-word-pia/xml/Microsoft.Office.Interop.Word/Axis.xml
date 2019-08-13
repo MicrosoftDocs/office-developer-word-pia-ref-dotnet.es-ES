@@ -1,13 +1,5 @@
 <Type Name="Axis" FullName="Microsoft.Office.Interop.Word.Axis">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e115ab6d558d77be64097aab21728ba4f3177288" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675951" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Axis" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2f5b94214994050a115a3869226d27e456c70e7f" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146314" /></Metadata><TypeSignature Language="C#" Value="public interface Axis" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Axis" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Axis" />
   <TypeSignature Language="VB.NET" Value="Public Interface Axis" />
@@ -27,9 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Representa un solo eje de un gráfico.</summary>
-    <remarks>
-      <para>El <see cref="T:Microsoft.Office.Interop.Word.Axis" /> objeto es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Axes" /> colección.</para> Uso de 
-      <para><see cref="T:Microsoft.Office.Interop.Word.Axes" /> (<paramref name="Type" />, <paramref name="AxisGroup" />) donde <paramref name="Type" /> es el tipo de eje y <paramref name="AxisGroup" /> es el grupo de ejes para devolver un solo <see cref="T:Microsoft.Office.Interop.Word.Axis" /> objeto. <paramref name="Type" /> puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" /> constantes: <see cref="F:Microsoft.Office.Interop.Word.XlAxisType.xlCategory" />, <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlSeries" />, o <see cref="F:Microsoft.Office.Interop.Word.XlAxisType.xlValue" />. <paramref name="AxisGroup" /> puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /> constantes: <see cref="F:Microsoft.Office.Interop.Word.XlAxisGroup.xlPrimary" /> o <see cref="F:Microsoft.Office.Interop.Word.XlAxisGroup.xlSecondary" />. Para obtener más información, vea el <see cref="M:Microsoft.Office.Interop.Word.Chart.Axes(System.Object,Microsoft.Office.Interop.Word.XlAxisGroup)" /> método.</para><para /><para /></remarks>
+    <remarks><para>El <see cref="T:Microsoft.Office.Interop.Word.Axis" /> objeto es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Axes" /> colección.</para>
+      <para>Use <see cref="T:Microsoft.Office.Interop.Word.Axes" /> (<paramref name="Type" />, <paramref name="AxisGroup" />) donde <paramref name="Type" /> es el tipo de eje <paramref name="AxisGroup" /> y es el grupo de ejes para devolver <see cref="T:Microsoft.Office.Interop.Word.Axis" /> un solo objeto. <paramref name="Type" />puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" /> constantes: <see cref="F:Microsoft.Office.Interop.Word.XlAxisType.xlCategory" />, <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlSeries" />o. <see cref="F:Microsoft.Office.Interop.Word.XlAxisType.xlValue" /> <paramref name="AxisGroup" />puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /> constantes: <see cref="F:Microsoft.Office.Interop.Word.XlAxisGroup.xlPrimary" /> o <see cref="F:Microsoft.Office.Interop.Word.XlAxisGroup.xlSecondary" />. Para obtener más información, vea <see cref="M:Microsoft.Office.Interop.Word.Chart.Axes(System.Object,Microsoft.Office.Interop.Word.XlAxisGroup)" /> el método.</para>
+      <para> </para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -55,10 +48,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa la aplicación Microsoft Word. Cuando se utiliza con un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa el creador del objeto especificado (puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto). Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Cuando se usa sin un calificador de objeto, esta <see cref="T:Microsoft.Office.Interop.Word._Application" /> propiedad devuelve un objeto que representa la aplicación Microsoft Word. Cuando se utiliza con un calificador de objeto, esta <see cref="T:Microsoft.Office.Interop.Word._Application" /> propiedad devuelve un objeto que representa al creador del objeto especificado (puede utilizar esta propiedad con un objeto de automatización OLE para devolver la aplicación de dicho objeto). Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,15 +79,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el eje de valores cruza al eje de categorías entre categorías. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Esta propiedad se aplica únicamente a los ejes de categorías y no se aplica a gráficos 3D.</para>
-          <para />
-        </remarks>
+        <summary><b>True</b> si el eje de valores cruza al eje de categorías entre categorías. Lectura/escritura.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Esta propiedad se aplica solamente a los ejes de categorías; no se aplica a los gráficos 3D.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AxisGroup">
@@ -122,10 +108,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlAxisGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el tipo de grupo de ejes. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" />
-        </value>
+        <summary>Devuelve el tipo de grupo de ejes. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,10 +136,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.AxisTitle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el título del eje especificado. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.AxisTitle" />
-        </value>
+        <summary>Devuelve el título del eje especificado. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.AxisTitle" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -185,15 +167,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlTimeUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la unidad base del eje de categorías especificado. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlTimeUnit" />
-        </value>
-        <remarks>
-          <para>Al establecer esta propiedad no tiene ningún efecto visible si la <see cref="P:Microsoft.Office.Interop.Word.Axis.CategoryType" /> propiedad para el eje especificado está establecida en <see cref="F:Microsoft.Office.Interop.Word.XlCategoryType.xlCategoryScale" />. El valor establecido se conserva, sin embargo, y tiene efecto cuando la <see cref="P:Microsoft.Office.Interop.Word.Axis.CategoryType" /> propiedad está establecida en <see cref="F:Microsoft.Office.Interop.Word.XlCategoryType.xlTimeScale" />.</para>
-          <para>No se puede establecer esta propiedad para un eje de valores.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece la unidad base del eje de categorías especificado. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlTimeUnit" /></value>
+        <remarks><para>El valor de esta propiedad no tiene ningún efecto <see cref="P:Microsoft.Office.Interop.Word.Axis.CategoryType" /> visible si la propiedad del eje especificado está <see cref="F:Microsoft.Office.Interop.Word.XlCategoryType.xlCategoryScale" />establecida en. Sin embargo, el valor establecido se conserva y surte efecto cuando la <see cref="P:Microsoft.Office.Interop.Word.Axis.CategoryType" /> propiedad se establece en <see cref="F:Microsoft.Office.Interop.Word.XlCategoryType.xlTimeScale" />.</para>
+          <para>Esta propiedad no se puede establecer para un eje de valores.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseUnitIsAuto">
@@ -222,15 +200,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si Microsoft Word elige las unidades de base apropiadas para el eje de categorías especificado. El valor predeterminado es <b>True</b>. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>No se puede establecer esta propiedad para un eje de valores.</para>
-          <para />
-        </remarks>
+        <summary><b>True</b> si Microsoft Word elige las unidades de base apropiadas para el eje de categorías especificado. El valor predeterminado es <b>True</b>. Lectura y escritura.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Esta propiedad no se puede establecer para un eje de valores.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -256,10 +229,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el borde del objeto. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>Devuelve el borde del objeto. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -289,10 +260,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece todos los nombres de categoría para el eje especificado, como una matriz de texto.  Lectura y escritura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve o establece todos los nombres de categorías del eje especificado, en forma de matriz de texto.  Lectura/escritura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -322,14 +291,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlCategoryType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el tipo del eje de categorías. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlCategoryType" />
-        </value>
-        <remarks>
-          <para>No se puede establecer esta propiedad para un eje de valores.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece el tipo de eje de categoría. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlCategoryType" /></value>
+        <remarks><para>Esta propiedad no se puede establecer para un eje de valores.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -355,14 +320,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. Es de solo lectura</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, el <see cref="P:Microsoft.Office.Interop.Word.Axis.Creator" /> (propiedad) devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, consulte la referencia del lenguaje de ayuda que se incluye con Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. Solo lectura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Si el objeto se creó en Microsoft Word, la <see cref="P:Microsoft.Office.Interop.Word.Axis.Creator" /> propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Crosses">
@@ -391,16 +352,12 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlAxisCrosses</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el punto en el eje especificado donde se cruza el otro eje. Lectura y escritura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Esta propiedad no está disponible para gráficos radiales. Para gráficos 3D, esta propiedad sólo se puede aplicar al eje de valores y se indica que el plano definido por el eje de categorías cruza el eje de valores.</para>
-          <para>Esta propiedad se puede usar para los ejes de categorías y valores. En el eje de categorías, <see cref="F:Microsoft.Office.Interop.Word.XlConstants.xlMinimum" /> establece el eje de valores cruce en la primera categoría, y <see cref="F:Microsoft.Office.Interop.Word.XlConstants.xlMaximum" /> establece el eje de valores cruce en la última categoría.</para>
-          <para>Tenga en cuenta que <see cref="F:Microsoft.Office.Interop.Word.XlConstants.xlMinimum" /> y <see cref="F:Microsoft.Office.Interop.Word.XlConstants.xlMaximum" /> pueden tener diferentes significados, dependiendo del eje.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece el punto en el eje especificado donde se cruza el otro eje. Lectura/escritura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Esta propiedad no está disponible para los gráficos radiales. Para gráficos 3D, esta propiedad sólo se puede aplicar al eje de valores e indica el lugar en el que el plano definido por el eje de categorías cruza el eje de valores.</para>
+          <para>Esta propiedad puede emplearse para los ejes de categorías y para los de valores. En el eje de categorías <see cref="F:Microsoft.Office.Interop.Word.XlConstants.xlMinimum" /> , se establece que el eje de valores se cruce en la <see cref="F:Microsoft.Office.Interop.Word.XlConstants.xlMaximum" /> primera categoría y se establece que el eje de valores se cruce en la última categoría.</para>
+          <para>Tenga en <see cref="F:Microsoft.Office.Interop.Word.XlConstants.xlMinimum" /> cuenta <see cref="F:Microsoft.Office.Interop.Word.XlConstants.xlMaximum" /> que, y que pueden tener diferentes significados, dependiendo del eje.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CrossesAt">
@@ -429,15 +386,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el punto del eje de valores donde se cruza el eje de categorías. Se aplica sólo al eje de valores. Lectura y escritura.</summary>
-        <value>
-          <b>Double</b>
-        </value>
-        <remarks>
-          <para>Si se establece esta propiedad, el <see cref="P:Microsoft.Office.Interop.Word.Axis.Crosses" /> (propiedad) para cambiar a <see cref="F:Microsoft.Office.Interop.Word.XlAxisCrosses.xlAxisCrossesCustom" />.</para>
-          <para>No se puede usar esta propiedad para gráficos radiales. Para gráficos 3D, esta propiedad indica que el plano definido por el eje de categorías cruza el eje de valores.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece el punto del eje de valores donde se cruza el eje de categorías. Se aplica sólo al eje de valores. Lectura/escritura.</summary>
+        <value><b>Doble</b></value>
+        <remarks><para>Si se establece esta propiedad <see cref="P:Microsoft.Office.Interop.Word.Axis.Crosses" /> , la propiedad cambia <see cref="F:Microsoft.Office.Interop.Word.XlAxisCrosses.xlAxisCrossesCustom" />a.</para>
+          <para>Esta propiedad no está disponible para gráficos radiales. Para gráficos 3D, esta propiedad indica el lugar en el que el plano definido por el eje de categorías cruza el eje de valores.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -462,9 +415,7 @@
       <Parameters />
       <Docs>
         <summary>Elimina el objeto.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <returns><b>Objeto</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -494,14 +445,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlDisplayUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el rótulo de unidades del eje de valores.  Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlDisplayUnit" />
-        </value>
-        <remarks>
-          <para>Uso de etiquetas de unidad cuando para representar valores grandes facilita las graduación rótulos de marcas de más fácil de leer. Por ejemplo, si etiqueta el eje de valores en unidades de cientos, miles o millones, puede usar valores numéricos más pequeños en las marcas de graduación en el eje.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece el rótulo de unidades del eje de valores.  Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlDisplayUnit" /></value>
+        <remarks><para>La utilización de rótulos de unidades cuando se representan valores grandes facilita la lectura de las marcas de graduación. Por ejemplo, si se especifican unidades de centenas, millares o millones para el eje de valores, se pueden utilizar valores numéricos más pequeños en las marcas de graduación del eje.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayUnitCustom">
@@ -530,14 +477,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Si el valor de la <see cref="P:Microsoft.Office.Interop.Word.Axis.DisplayUnit" /> propiedad es <see cref="F:Microsoft.Office.Interop.Word.XlConstants.xlCustom" />, el <see cref="P:Microsoft.Office.Interop.Word.Axis.DisplayUnitCustom" /> propiedad devuelve o establece el valor de las unidades mostradas. El valor debe ser entre 0 y 10E307. Lectura y escritura.</summary>
-        <value>
-          <b>Double</b>
-        </value>
-        <remarks>
-          <para>Uso de etiquetas de unidad cuando para representar valores grandes facilita las graduación rótulos de marcas de más fácil de leer. Por ejemplo, si etiqueta el eje de valores en unidades de cientos, miles o millones, puede usar valores numéricos más pequeños en las marcas de graduación en el eje.</para>
-          <para />
-        </remarks>
+        <summary>Si el valor de la <see cref="P:Microsoft.Office.Interop.Word.Axis.DisplayUnit" /> propiedad es <see cref="F:Microsoft.Office.Interop.Word.XlConstants.xlCustom" />, la <see cref="P:Microsoft.Office.Interop.Word.Axis.DisplayUnitCustom" /> propiedad devuelve o establece el valor de las unidades mostradas. El valor debe estar entre 0 y 10E307. Lectura/escritura.</summary>
+        <value><b>Doble</b></value>
+        <remarks><para>La utilización de rótulos de unidades cuando se representan valores grandes facilita la lectura de las marcas de graduación. Por ejemplo, si se especifican unidades de centenas, millares o millones para el eje de valores, se pueden utilizar valores numéricos más pequeños en las marcas de graduación del eje.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayUnitLabel">
@@ -563,10 +506,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.DisplayUnitLabel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el <see cref="T:Microsoft.Office.Interop.Word.DisplayUnitLabel" /> objeto para el eje especificado. Devuelve <b>Nothing</b> si el <see cref="P:Microsoft.Office.Interop.Word.Axis.HasDisplayUnitLabel" /> propiedad está establecida en <b>False</b>. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.DisplayUnitLabel" />
-        </value>
+        <summary>Devuelve el <see cref="T:Microsoft.Office.Interop.Word.DisplayUnitLabel" /> objeto del eje especificado. Devuelve <b>Nothing</b> si la <see cref="P:Microsoft.Office.Interop.Word.Axis.HasDisplayUnitLabel" /> propiedad está establecida en <b>false</b>. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.DisplayUnitLabel" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -594,10 +535,8 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve la línea, relleno y efecto de formato para el objeto.
-Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -627,11 +566,8 @@ Es de solo lectura</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la etiqueta especificada por el <see cref="P:Microsoft.Office.Interop.Word.Axis.DisplayUnit" /> o <see cref="P:Microsoft.Office.Interop.Word.Axis.DisplayUnitCustom" /> (propiedad) se muestra en el eje especificado. El valor predeterminado es <b>True</b>. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>True</b> si la etiqueta especificada por la <see cref="P:Microsoft.Office.Interop.Word.Axis.DisplayUnit" /> propiedad <see cref="P:Microsoft.Office.Interop.Word.Axis.DisplayUnitCustom" /> or se muestra en el eje especificado. El valor predeterminado es <b>True</b>. Lectura y escritura.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -661,11 +597,8 @@ Es de solo lectura</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el eje tiene líneas de división principales. Solo los ejes del grupo de ejes primarios pueden tener líneas de la cuadrícula. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>True</b> si el eje tiene líneas de división principales. Sólo los ejes del grupo de ejes primarios pueden tener líneas de división. Lectura/escritura.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -695,11 +628,8 @@ Es de solo lectura</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el eje tiene líneas de división secundarias. Solo los ejes del grupo de ejes primarios pueden tener líneas de la cuadrícula. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>True</b> si el eje tiene líneas de división secundarias. Solo los ejes del grupo de ejes primarios pueden tener líneas de la cuadrícula. Lectura/escritura.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -729,15 +659,10 @@ Es de solo lectura</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el eje o el gráfico tiene un título visible. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Título de un eje está representado por un <see cref="T:Microsoft.Office.Interop.Word.AxisTitle" /> objeto.</para>
-          <para />
-        </remarks>
+        <summary><b>True</b> si el eje o el gráfico tiene un título visible. Lectura/escritura.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Un <see cref="T:Microsoft.Office.Interop.Word.AxisTitle" /> objeto representa un título de eje.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -763,10 +688,8 @@ Es de solo lectura</summary>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el alto, en puntos, del objeto.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>Devuelve el alto del objeto especificado, en puntos.</summary>
+        <value><b>Doble</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -794,9 +717,7 @@ Es de solo lectura</summary>
       </ReturnValue>
       <Docs>
         <summary>Devuelve la distancia, en puntos, desde el borde izquierdo del objeto hasta el borde izquierdo del área del gráfico.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Doble</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -826,14 +747,10 @@ Es de solo lectura</summary>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la base del logaritmo cuando se utiliza la escala de registro. Lectura y escritura.</summary>
-        <value>
-          <b>Double</b>
-        </value>
-        <remarks>
-          <para>Si se intenta establecer esta propiedad en un valor menor o igual que cero (0), producirá un error. El valor predeterminado es 10.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece la base del logaritmo cuando se utiliza la escala de registro. Lectura/escritura.</summary>
+        <value><b>Doble</b></value>
+        <remarks><para>Al intentar establecer esta propiedad en un valor menor o igual que cero (0), se produce un error. El valor predeterminado es 10.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MajorGridlines">
@@ -859,10 +776,8 @@ Es de solo lectura</summary>
         <ReturnType>Microsoft.Office.Interop.Word.Gridlines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve las líneas de la cuadrícula principales para el eje especificado. Solo los ejes del grupo de ejes primarios pueden tener líneas de la cuadrícula. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Gridlines" />
-        </value>
+        <summary>Devuelve las líneas de la cuadrícula principales para el eje especificado. Solo los ejes del grupo de ejes primarios pueden tener líneas de cuadrícula. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Gridlines" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -923,15 +838,11 @@ Es de solo lectura</summary>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece las unidades principales para el eje de valores. Lectura y escritura.</summary>
-        <value>
-          <b>Double</b>
-        </value>
-        <remarks>
-          <para>Establece esta propiedad la <see cref="P:Microsoft.Office.Interop.Word.Axis.MajorUnitIsAuto" /> propiedad en <b>False</b>.</para>
-          <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.Axis.TickMarkSpacing" /> (propiedad) para establecer las marcas de graduación en el eje de categorías.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece las unidades principales para el eje de valores. Lectura/escritura.</summary>
+        <value><b>Doble</b></value>
+        <remarks><para>Al establecer esta propiedad, <see cref="P:Microsoft.Office.Interop.Word.Axis.MajorUnitIsAuto" /> la propiedad se establece en <b>false</b>.</para>
+          <para>Use la <see cref="P:Microsoft.Office.Interop.Word.Axis.TickMarkSpacing" /> propiedad para establecer el espaciado de las marcas de graduación en el eje de categorías.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MajorUnitIsAuto">
@@ -960,15 +871,10 @@ Es de solo lectura</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si Microsoft Word calcula las unidades principales del eje de valores. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Configuración de la <see cref="P:Microsoft.Office.Interop.Word.Axis.MajorUnit" /> (propiedad) establece esta propiedad en <b>False</b>.</para>
-          <para />
-        </remarks>
+        <summary><b>True</b> si Microsoft Word calcula las unidades principales del eje de valores. Lectura/escritura.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Si se <see cref="P:Microsoft.Office.Interop.Word.Axis.MajorUnit" /> establece la propiedad, esta propiedad se establece en <b>false</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MajorUnitScale">
@@ -997,10 +903,8 @@ Es de solo lectura</summary>
         <ReturnType>Microsoft.Office.Interop.Word.XlTimeUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el valor de la escala de unidades principales del eje de categorías cuando la <see cref="P:Microsoft.Office.Interop.Word.Axis.CategoryType" /> propiedad está establecida en <see cref="F:Microsoft.Office.Interop.Word.XlCategoryType.xlTimeScale" />.  Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlTimeUnit" />
-        </value>
+        <summary>Devuelve o establece el valor de la escala de unidades principales del eje de <see cref="P:Microsoft.Office.Interop.Word.Axis.CategoryType" /> categorías cuando la propiedad <see cref="F:Microsoft.Office.Interop.Word.XlCategoryType.xlTimeScale" />se establece en.  Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlTimeUnit" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1030,14 +934,10 @@ Es de solo lectura</summary>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el valor máximo del eje de valores. Lectura y escritura.</summary>
-        <value>
-          <b>Double</b>
-        </value>
-        <remarks>
-          <para>Establece esta propiedad la <see cref="P:Microsoft.Office.Interop.Word.Axis.MaximumScaleIsAuto" /> propiedad en <b>False</b>.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece el valor máximo del eje de valores. Lectura/escritura.</summary>
+        <value><b>Doble</b></value>
+        <remarks><para>Al establecer esta propiedad, <see cref="P:Microsoft.Office.Interop.Word.Axis.MaximumScaleIsAuto" /> la propiedad se establece en <b>false</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MaximumScaleIsAuto">
@@ -1066,15 +966,10 @@ Es de solo lectura</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si Microsoft Word calcula el valor máximo del eje de valores. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Configuración de la <see cref="P:Microsoft.Office.Interop.Word.Axis.MaximumScale" /> (propiedad) establece esta propiedad en <b>False</b>.</para>
-          <para />
-        </remarks>
+        <summary><b>True</b> si Microsoft Word calcula el valor máximo del eje de valores. Lectura/escritura.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Si se <see cref="P:Microsoft.Office.Interop.Word.Axis.MaximumScale" /> establece la propiedad, esta propiedad se establece en <b>false</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MinimumScale">
@@ -1103,14 +998,10 @@ Es de solo lectura</summary>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el valor mínimo del eje de valores. Lectura y escritura.</summary>
-        <value>
-          <b>Double</b>
-        </value>
-        <remarks>
-          <para>Establece esta propiedad la <see cref="P:Microsoft.Office.Interop.Word.Axis.MinimumScaleIsAuto" /> propiedad en <b>False</b>.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece el valor mínimo del eje de valores. Lectura/escritura.</summary>
+        <value><b>Doble</b></value>
+        <remarks><para>Al establecer esta propiedad, <see cref="P:Microsoft.Office.Interop.Word.Axis.MinimumScaleIsAuto" /> la propiedad se establece en <b>false</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MinimumScaleIsAuto">
@@ -1139,15 +1030,10 @@ Es de solo lectura</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si Microsoft Word calcula el valor mínimo del eje de valores. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Configuración de la <see cref="P:Microsoft.Office.Interop.Word.Axis.MinimumScale" /> (propiedad) establece esta propiedad en <b>False</b>.</para>
-          <para />
-        </remarks>
+        <summary><b>True</b> si Microsoft Word calcula el valor mínimo del eje de valores. Lectura/escritura.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Si se <see cref="P:Microsoft.Office.Interop.Word.Axis.MinimumScale" /> establece la propiedad, esta propiedad se establece en <b>false</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MinorGridlines">
@@ -1173,10 +1059,8 @@ Es de solo lectura</summary>
         <ReturnType>Microsoft.Office.Interop.Word.Gridlines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve las líneas de cuadrícula secundarias para el eje especificado. Solo los ejes del grupo de ejes primarios pueden tener líneas de la cuadrícula. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Gridlines" />
-        </value>
+        <summary>Devuelve las líneas de cuadrícula secundarias para el eje especificado. Solo los ejes del grupo de ejes primarios pueden tener líneas de cuadrícula. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Gridlines" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1206,10 +1090,8 @@ Es de solo lectura</summary>
         <ReturnType>Microsoft.Office.Interop.Word.XlTickMark</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el tipo de marcas de graduación principales del eje especificado. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlTickMark" />
-        </value>
+        <summary>Devuelve o establece el tipo de marcas de graduación principales del eje especificado. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlTickMark" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1239,15 +1121,11 @@ Es de solo lectura</summary>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece las unidades secundarias del eje de valores. Lectura y escritura.</summary>
-        <value>
-          <b>Double</b>
-        </value>
-        <remarks>
-          <para>Establece esta propiedad la <see cref="P:Microsoft.Office.Interop.Word.Axis.MinorUnitIsAuto" /> propiedad en <b>False</b>.</para>
-          <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.Axis.TickLabelSpacing" /> (propiedad) para establecer las marcas de graduación en el eje de categorías.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece las unidades secundarias del eje de valores. Lectura/escritura.</summary>
+        <value><b>Doble</b></value>
+        <remarks><para>Al establecer esta propiedad, <see cref="P:Microsoft.Office.Interop.Word.Axis.MinorUnitIsAuto" /> la propiedad se establece en <b>false</b>.</para>
+          <para>Use la <see cref="P:Microsoft.Office.Interop.Word.Axis.TickLabelSpacing" /> propiedad para establecer el espaciado de las marcas de graduación en el eje de categorías.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MinorUnitIsAuto">
@@ -1276,15 +1154,10 @@ Es de solo lectura</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si Microsoft Word calcula las unidades secundarias del eje de valores. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Configuración de la <see cref="P:Microsoft.Office.Interop.Word.Axis.MinorUnit" /> (propiedad) establece esta propiedad en <b>False</b>.</para>
-          <para />
-        </remarks>
+        <summary><b>True</b> si Microsoft Word calcula las unidades secundarias del eje de valores. Lectura/escritura.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Si se <see cref="P:Microsoft.Office.Interop.Word.Axis.MinorUnit" /> establece la propiedad, esta propiedad se establece en <b>false</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MinorUnitScale">
@@ -1313,10 +1186,8 @@ Es de solo lectura</summary>
         <ReturnType>Microsoft.Office.Interop.Word.XlTimeUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el valor de la escala de unidades secundarias del eje de categorías cuando la <see cref="P:Microsoft.Office.Interop.Word.Axis.CategoryType" /> propiedad está establecida en <see cref="F:Microsoft.Office.Interop.Word.XlCategoryType.xlTimeScale" />.  Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlTimeUnit" />
-        </value>
+        <summary>Devuelve o establece el valor de la escala de unidades secundarias del eje <see cref="P:Microsoft.Office.Interop.Word.Axis.CategoryType" /> de categorías cuando la <see cref="F:Microsoft.Office.Interop.Word.XlCategoryType.xlTimeScale" />propiedad se establece en.  Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlTimeUnit" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1343,10 +1214,8 @@ Es de solo lectura</summary>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve al objeto primario del objeto especificado. Es de solo lectura</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve al objeto primario del objeto especificado. Solo lectura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1376,15 +1245,10 @@ Es de solo lectura</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si Microsoft Word trace datos puntos desde el último al primero. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Esta propiedad no se puede usar para gráficos radiales.</para>
-          <para />
-        </remarks>
+        <summary><b>True</b> si Microsoft Word trace datos puntos desde el último al primero. Lectura/escritura.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Esta propiedad no está disponible para gráficos radiales.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScaleType">
@@ -1413,10 +1277,8 @@ Es de solo lectura</summary>
         <ReturnType>Microsoft.Office.Interop.Word.XlScaleType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el tipo de escala del eje de valores. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlScaleType" />
-        </value>
+        <summary>Devuelve o establece el tipo de escala del eje de valores. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlScaleType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1442,9 +1304,7 @@ Es de solo lectura</summary>
       <Parameters />
       <Docs>
         <summary>Selecciona el objeto.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <returns><b>Objeto</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1474,10 +1334,8 @@ Es de solo lectura</summary>
         <ReturnType>Microsoft.Office.Interop.Word.XlTickLabelPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Describe la posición de los rótulos de marca de graduación en el eje especificado. Lectura y escritura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlTickLabelPosition" />
-        </value>
+        <summary>Describe la posición de los rótulos de marca de graduación en el eje especificado. Lectura/escritura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlTickLabelPosition" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1504,10 +1362,8 @@ Es de solo lectura</summary>
         <ReturnType>Microsoft.Office.Interop.Word.TickLabels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve rótulos de marca de graduación para el eje especificado. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.TickLabels" />
-        </value>
+        <summary>Devuelve rótulos de marca de graduación para el eje especificado. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.TickLabels" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1537,14 +1393,10 @@ Es de solo lectura</summary>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el número de categorías o series entre los rótulos de marcas de graduación. Se aplica sólo a los ejes de categorías y series. Puede ser un valor comprendido entre 1 y 31999. Lectura y escritura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Microsoft Word siempre calcula la separación de los rótulos de marcas de graduación en el eje de valores.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece el numero de categorías o series entre rótulos de marcas de graduación. Se aplica sólo a los ejes de categorías y series. Puede ser un valor comprendido entre 1 y 31999. Lectura/escritura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Microsoft Word siempre calcula el espaciado de las etiquetas de marcas de graduación en el eje de valores.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TickLabelSpacingIsAuto">
@@ -1573,14 +1425,10 @@ Es de solo lectura</summary>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el espaciado de rótulos de graduación sea o no automático. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>El <see cref="P:Microsoft.Office.Interop.Word.Axis.TickMarkSpacing" /> (propiedad) devuelve el espaciado de rótulos de graduación actual, si puede o no la configuración automática.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece si el espaciado de las marcas de graduación es automático. Lectura/escritura.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>La <see cref="P:Microsoft.Office.Interop.Word.Axis.TickMarkSpacing" /> propiedad devuelve el espaciado de la etiqueta de graduación actual, independientemente de si la configuración es automática o no.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TickMarkSpacing">
@@ -1609,14 +1457,10 @@ Es de solo lectura</summary>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el número de categorías o series entre las marcas de graduación. Se aplica sólo a los ejes de categorías y series. Puede ser un valor comprendido entre 1 y 31999. Lectura y escritura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.Axis.MajorUnit" /> y <see cref="P:Microsoft.Office.Interop.Word.Axis.MinorUnit" /> para establecer las propiedades de marcas de graduación en el eje de valores.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece el número de categorías o series existentes entre las marcas de graduación. Se aplica sólo a los ejes de categorías y series. Puede ser un valor comprendido entre 1 y 31999. Lectura/escritura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Use las <see cref="P:Microsoft.Office.Interop.Word.Axis.MajorUnit" /> propiedades <see cref="P:Microsoft.Office.Interop.Word.Axis.MinorUnit" /> y para establecer el espaciado de las marcas de graduación en el eje de valores.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -1643,9 +1487,7 @@ Es de solo lectura</summary>
       </ReturnValue>
       <Docs>
         <summary>Devuelve la distancia, en puntos, desde el borde superior del objeto hasta la parte superior de la fila 1 (en una hoja de cálculo) o la parte superior del área del gráfico (en un gráfico).</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <value><b>Doble</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1676,13 +1518,9 @@ Es de solo lectura</summary>
       </ReturnValue>
       <Docs>
         <summary>Devuelve el tipo de eje.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" />
-        </value>
-        <remarks>
-          <para>Cuando se usa esta propiedad para el eje horizontal de gráficos de dispersión, <see cref="F:Microsoft.Office.Interop.Word.XlAxisType.xlCategory" /> se devolverán como el tipo de eje.</para>
-          <para />
-        </remarks>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlAxisType" /></value>
+        <remarks><para>Cuando se usa esta propiedad para el eje horizontal de gráficos de <see cref="F:Microsoft.Office.Interop.Word.XlAxisType.xlCategory" /> dispersión, se devuelve como tipo de eje.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -1708,10 +1546,8 @@ Es de solo lectura</summary>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el ancho, en puntos, del objeto.</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>Devuelve el ancho del objeto especificado en puntos.</summary>
+        <value><b>Doble</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

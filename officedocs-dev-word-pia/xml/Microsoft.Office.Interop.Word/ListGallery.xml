@@ -1,13 +1,5 @@
 <Type Name="ListGallery" FullName="Microsoft.Office.Interop.Word.ListGallery">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="966516dad1e0dd08ab38c58e333200e586d28db7" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675789" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListGallery" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5bd7ff965569856360b744ab132d1fadf6ac4b2d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147889" /></Metadata><TypeSignature Language="C#" Value="public interface ListGallery" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListGallery" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListGallery" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListGallery" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Representa una sola galería de formatos de lista.</summary>
-    <remarks>
-      <para>El objeto <b>ListGallery</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> colección. Cada objeto <b>ListGallery</b> representa una de las tres fichas viñetas y cuadro de diálogo Numeración.</para>
-      <para>Uso <b>ListGalleries</b>(<paramref name="index" />), donde <paramref name="index" /> es <b>wdBulletGallery</b>, <b>wdNumberGallery</b>o <b>wdOutlineNumberGallery</b>, para devolver un solo objeto <b>ListGallery</b> .</para>
-      <para>Para ver si la plantilla de lista especificada contiene el formato integrado de Microsoft Word, use la <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> (propiedad) para el objeto <b>ListGallery</b> . Para restablecer el formato para el formato de lista original, use el <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> (método) para el objeto <b>ListGallery</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>El objeto <b>ListGallery</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> colección. Cada objeto <b>ListGallery</b> representa una de las tres fichas en el cuadro de diálogo Numeración y viñetas.</para>
+      <para>Use <b>ListGalleries</b>(<paramref name="index" />), donde <paramref name="index" /> es <b>wdBulletGallery</b>, <b>wdNumberGallery</b>o <b>wdOutlineNumberGallery</b>, para devolver un solo objeto <b>ListGallery</b> .</para>
+      <para>Para ver si la plantilla de lista especificada contiene el formato integrado en Microsoft Word, utilice <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> la propiedad del objeto <b>ListGallery</b> . Para restablecer el formato al formato de lista original, utilice <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> el método para el objeto <b>ListGallery</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,9 +78,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListTemplates">
@@ -116,7 +106,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> colección que representa la lista de todos los formatos de la Galería de lista especificado.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> colección que representa todos los formatos de lista de la galería de lista especificada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,15 +137,11 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>requerido. Un número del 1 al 7 que corresponde a la posición de la plantilla de viñetas y cuadro de diálogo Numeración (menú Formato). Excluye la opción Ninguno, las plantillas se numeran de izquierda a derecha, empezando por la fila superior.</param>
-        <summary>
-          <b>True</b> si la plantilla de lista especificada no es la plantilla de lista integrada para esa posición de la Galería de listas.</summary>
+        <param name="Index">Required <b>Integer</b>. Un número del 1 al 7 que corresponde a la posición de la plantilla en el cuadro de diálogo Numeración y viñetas (menú Formato). Sin incluir la opción ninguno, las plantillas se numeran de izquierda a derecha, empezando por la fila superior.</param>
+        <summary><b>True</b> si la plantilla de lista especificada no es la plantilla de lista integrada para esa posición de la Galería de listas.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> (método) para establecer una plantilla de lista de una galería de lista en la plantilla de lista integrada.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use el <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> método para volver a establecer una plantilla de lista de una galería de listas en la plantilla de lista integrada.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -209,9 +195,8 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>requerido.</param>
-        <summary>Restablece la plantilla de lista especificada para la Galería de listas en el formato de plantilla de lista integrado.</summary>
+        <param name="Index">Required <b>Integer</b>.</param>
+        <summary>Restablece la plantilla de lista especificada para la galería de listas en el formato de plantilla de lista integrado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

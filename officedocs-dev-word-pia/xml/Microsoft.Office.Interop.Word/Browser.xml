@@ -1,13 +1,5 @@
 <Type Name="Browser" FullName="Microsoft.Office.Interop.Word.Browser">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c18b65be5315eb887b20a09a73c5232d9123f4d5" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674552" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Browser" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e5e86aacf7d033fcc00092f89397514c1330f141" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146204" /></Metadata><TypeSignature Language="C#" Value="public interface Browser" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Browser" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Browser" />
   <TypeSignature Language="VB.NET" Value="Public Interface Browser" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Representa la herramienta del explorador utilizada para mover el punto de inserción hasta los objetos de un documento.</summary>
-    <remarks>
-      <para>La herramienta de explorador se compone de los tres botones situados en la parte inferior de la barra de desplazamiento vertical.</para>
-      <para>Usar la <see cref="P:Microsoft.Office.Interop.Word._Application.Browser" /> propiedad para devolver el objeto <b>Browser</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>La herramienta del explorador consta de los tres botones situados en la parte inferior de la barra de desplazamiento vertical.</para>
+      <para>Use la <see cref="P:Microsoft.Office.Interop.Word._Application.Browser" /> propiedad para devolver el objeto <b>Browser</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,9 +77,9 @@
       <Docs>
         <summary>Devuelve un valor que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -114,10 +104,8 @@
       <Parameters />
       <Docs>
         <summary>Mueve la selección al siguiente elemento indicado por el destino del Examinador.</summary>
-        <remarks>
-          <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.Browser.Target" /> (propiedad) para cambiar el destino del Examinador.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use la <see cref="P:Microsoft.Office.Interop.Word.Browser.Target" /> propiedad para cambiar el destino del examinador.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -169,11 +157,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Para el <see cref="T:Microsoft.Office.Interop.Word.Browser" /> de objetos, se mueve la selección al anterior elemento indicado por el destino del Examinador.</summary>
-        <remarks>
-          <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.Browser.Target" /> (propiedad) para cambiar el destino del Examinador.</para>
-          <para />
-        </remarks>
+        <summary>Para el <see cref="T:Microsoft.Office.Interop.Word.Browser" /> objeto, mueve la selección al elemento anterior indicado por el destino del explorador.</summary>
+        <remarks><para>Use la <see cref="P:Microsoft.Office.Interop.Word.Browser.Target" /> propiedad para cambiar el destino del examinador.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -202,7 +188,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdBrowseTarget</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el elemento de documento que el <see cref="M:Microsoft.Office.Interop.Word.Browser.Previous" /> y <see cref="M:Microsoft.Office.Interop.Word.Browser.Next" /> busque métodos.</summary>
+        <summary>Devuelve o establece el elemento de documento que <see cref="M:Microsoft.Office.Interop.Word.Browser.Previous" /> los <see cref="M:Microsoft.Office.Interop.Word.Browser.Next" /> métodos y encuentran.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

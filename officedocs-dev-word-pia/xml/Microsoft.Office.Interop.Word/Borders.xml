@@ -1,13 +1,5 @@
 <Type Name="Borders" FullName="Microsoft.Office.Interop.Word.Borders">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5d7f32a44fa68cba8d47c482f1ef6e072fecb59e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675781" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Borders : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ad36491c761b9b9237c3b6b768cb3c389e6e7842" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146244" /></Metadata><TypeSignature Language="C#" Value="public interface Borders : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Borders implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Borders" />
   <TypeSignature Language="VB.NET" Value="Public Interface Borders&#xA;Implements IEnumerable" />
@@ -31,10 +23,11 @@
   </Attributes>
   <Docs>
     <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.Border" /> objetos que representan los bordes de un objeto.</summary>
-    <remarks>
-      <para>Use la propiedad <b>Borders</b> para devolver la colección <b>Borders</b> .</para> No se puede agregar objetos 
-      <para><b>borde</b> a la colección <b>Borders</b> . El número de miembros de la colección <b>Borders</b> es finito y varía en función del tipo de objeto. Por ejemplo, una tabla tiene seis elementos en la colección <b>Borders</b> , mientras que un párrafo tiene cuatro.</para> Utilice <b>bordes</b>de 
-      <para>(<paramref name="index" />), donde <paramref name="index" /> identifica el borde, para devolver un solo objeto <b>Border</b> . <paramref name="Index" /> puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.WdBorderType" /> constantes: <b>wdBorderBottom</b>, <b>wdBorderDiagonalDown</b>, <b>wdBorderDiagonalUp</b>, <b>wdBorderHorizontal</b>, <b>wdBorderLeft</b>, <b>wdBorderRight</b>, <b>wdBorderTop</b>o <b>wdBorderVertical</b>. Es posible que algunas de estas constantes no estén disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos). Usar el <see cref="P:Microsoft.Office.Interop.Word.Border.LineStyle" /> (propiedad) para aplicar una línea de borde a un objeto <b>Border</b> .</para><para /></remarks>
+    <remarks><para>Utilice la propiedad <b>Borders</b> para devolver la colección <b>Borders</b>.</para>
+      <para>Objetos 
+        <b>Border</b> no pueden agregarse al conjunto <b>Borders</b>. El número de miembros en la colección <b>Borders</b> es finito y varía en función del tipo de objeto. Por ejemplo, una tabla tiene seis elementos en la colección <b>Borders</b>, mientras que un párrafo tiene cuatro.</para>
+      <para>Utilice <b></b>Borders<paramref name="index" />(), <paramref name="index" /> donde identifica el borde, para devolver un solo objeto <b>Border</b> . <paramref name="Index" />puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdBorderType" /> constantes: <b>wdBorderBottom</b>, <b>wdBorderDiagonalDown</b>, <b>wdBorderDiagonalUp</b>, <b>wdBorderHorizontal</b>, <b>wdBorderLeft</b>, <b>wdBorderRight</b>, <b>wdBorderTop</b>o <b> wdBorderVertical</b>. Algunas de estas constantes pueden no estar disponibles, según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.). Utilice la <see cref="P:Microsoft.Office.Interop.Word.Border.LineStyle" /> propiedad para aplicar una línea de borde a un objeto <b>Border</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AlwaysInFront">
@@ -91,7 +84,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -174,9 +167,9 @@
       <Docs>
         <summary>Devuelve un valor que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistanceFrom">
@@ -238,10 +231,8 @@
       <Docs>
         <summary>Devuelve o establece el espacio (en puntos) entre el texto y el borde inferior.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Uso de esta propiedad con un borde de página, puede establecer el espacio entre el texto y el borde inferior de la página o el espacio entre el borde inferior de la página y el borde inferior de la página. Desde donde se mide la distancia depende del valor de la <see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" /> (propiedad).</para>
-          <para />
-        </remarks>
+        <remarks><para>Uso de esta propiedad con un borde de página, puede establecer el espacio entre el texto y el borde inferior de la página o el espacio entre el borde inferior de la página y el borde inferior de la página. El lugar desde donde se mide la distancia depende del valor de <see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" /> la propiedad.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistanceFromLeft">
@@ -272,10 +263,8 @@
       <Docs>
         <summary>Devuelve o establece el espacio (en puntos) entre el texto y el borde izquierdo.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Uso de esta propiedad con un borde de página, puede establecer el espacio entre el texto y el borde de página izquierdo o el espacio entre el borde izquierdo de la página y el borde de página izquierdo. Desde donde se mide la distancia depende del valor de la <see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" /> (propiedad).</para>
-          <para />
-        </remarks>
+        <remarks><para>Uso de esta propiedad con un borde de página, puede establecer el espacio entre el texto y el borde de página izquierdo o el espacio entre el borde izquierdo de la página y el borde de página izquierdo. El lugar desde donde se mide la distancia depende del valor de <see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" /> la propiedad.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistanceFromRight">
@@ -306,10 +295,8 @@
       <Docs>
         <summary>Devuelve o establece el espacio (en puntos) entre el borde derecho del texto y el borde derecho.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Uso de esta propiedad con un borde de página, puede establecer el espacio entre el texto y el borde derecho o el espacio entre el borde derecho de la página y el borde derecho. Desde donde se mide la distancia depende del valor de la <see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" /> (propiedad).</para>
-          <para />
-        </remarks>
+        <remarks><para>Uso de esta propiedad con un borde de página, puede establecer el espacio entre el texto y el borde derecho o el espacio entre el borde derecho de la página y el borde derecho. El lugar desde donde se mide la distancia depende del valor de <see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" /> la propiedad.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DistanceFromTop">
@@ -340,10 +327,8 @@
       <Docs>
         <summary>Devuelve o establece el espacio (en puntos) entre el texto y el borde superior.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Uso de esta propiedad con un borde de página, puede establecer el espacio entre el texto y el borde de página superior o el espacio entre el borde superior de la página y el borde de página superior. Desde donde se mide la distancia depende del valor de la <see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" /> (propiedad).</para>
-          <para />
-        </remarks>
+        <remarks><para>Si se aplica esta propiedad a un borde de página, puede establecerse el espacio entre el texto y el borde de página superior o el espacio entre el borde superior de la página y el borde de página superior. El lugar desde donde se mide la distancia depende del valor de <see cref="P:Microsoft.Office.Interop.Word.Borders.DistanceFrom" /> la propiedad.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Enable">
@@ -372,15 +357,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el borde de formato para el objeto especificado.</summary>
+        <summary>Devuelve o establece el formato de borde para el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad devuelve <b>True</b> o <b>wdUndefined</b> si se aplica el formato de borde a todo o parte del objeto especificado. Se puede establecer en <b>True</b>, <b>False</b>, o un <see cref="T:Microsoft.Office.Interop.Word.WdLineStyle" /> constante.</para>
-          <para>El <b>Habilitar la</b> propiedad se aplica a todos los bordes del objeto especificado. <b>True</b> establece el estilo de línea en el estilo de línea predeterminado y se establece el ancho de línea en el ancho de línea predeterminado. Se puede establecer el ancho de línea y de estilo de línea predeterminado mediante el <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineWidth" /> y <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineStyle" /> propiedades.</para>
-          <para>Para quitar todos los bordes de un objeto, establezca la propiedad <b>Enable</b> en <b>False</b>.</para>
-          <para>Para quitar o aplicar un solo borde, utilice <b>Borders</b>(<paramref name="index" />), donde <paramref name="index" /> es una <see cref="T:Microsoft.Office.Interop.Word.WdBorderType" /> constante, para devolver un solo borde y, a continuación, establezca el <see cref="P:Microsoft.Office.Interop.Word.Border.LineStyle" /> (propiedad).</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta propiedad devuelve <b>true</b> o <b>wdUndefined</b> si el formato de borde se aplica a todo el objeto especificado o a parte del mismo. Puede establecerse en <b>true</b>, <b>false</b>o una <see cref="T:Microsoft.Office.Interop.Word.WdLineStyle" /> constante.</para>
+          <para>La propiedad <b>Enable</b> se aplica a todos los bordes del objeto especificado. <b>True</b> establece el estilo de línea para el estilo de línea predeterminado y el ancho de línea con el ancho de línea predeterminado. Se pueden establecer el estilo de línea y el ancho de línea <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineWidth" /> predeterminados mediante las propiedades y <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineStyle" /> .</para>
+          <para>Para quitar todos los bordes de un objeto, establezca la <b></b> propiedad enable en <b>false</b>.</para>
+          <para>Para quitar o aplicar un solo borde, use <b>bordes</b>(<paramref name="index" />), donde <paramref name="index" /> es una <see cref="T:Microsoft.Office.Interop.Word.WdBorderType" /> constante, para devolver un solo borde y, a continuación, <see cref="P:Microsoft.Office.Interop.Word.Border.LineStyle" /> establezca la propiedad.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableFirstPageInSection">
@@ -409,7 +392,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor que indica si los bordes de página están habilitados para la primera página en la sección.</summary>
+        <summary>Devuelve o establece un valor que indica si los bordes de página están habilitados para la primera página de la sección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -530,10 +513,8 @@
       <Docs>
         <summary>Devuelve un valor que indica si se puede aplicar un borde vertical al objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Bordes verticales pueden aplicarse a rangos de celdas de dos o más columnas de una tabla.</para>
-          <para />
-        </remarks>
+        <remarks><para>Los bordes verticales pueden aplicarse a rangos de celdas de dos o más filas de una tabla.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsideColor">
@@ -562,13 +543,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor que indica el color de 24 bits del interior bordes.</summary>
+        <summary>Devuelve o establece un valor que indica el color de 24 bits de los bordes interiores.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Puede ser cualquier <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> constante o un valor devuelto por la función RGB de Visual Basic.</para>
-          <para>Si el <see cref="P:Microsoft.Office.Interop.Word.Borders.InsideLineStyle" /> propiedad está establecida en cualquier <b>wdLineStyleNone</b> o <b>False</b>, establecer esta propiedad no tiene ningún efecto.</para>
-          <para />
-        </remarks>
+        <remarks><para>Puede ser cualquier constante <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> válida o un valor devuelto por la función RGB de Visual Basic.</para>
+          <para>Si la <see cref="P:Microsoft.Office.Interop.Word.Borders.InsideLineStyle" /> propiedad se establece en <b>wdLineStyleNone</b> o <b>false</b>, establecer esta propiedad no tiene ningún efecto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsideColorIndex">
@@ -599,10 +578,8 @@
       <Docs>
         <summary>Devuelve o establece el color del interior bordes.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el <see cref="P:Microsoft.Office.Interop.Word.Borders.InsideLineStyle" /> propiedad está establecida en cualquier <b>wdLineStyleNone</b> o <b>False</b>, establecer esta propiedad no tiene ningún efecto.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la <see cref="P:Microsoft.Office.Interop.Word.Borders.InsideLineStyle" /> propiedad se establece en <b>wdLineStyleNone</b> o <b>false</b>, establecer esta propiedad no tiene ningún efecto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsideLineStyle">
@@ -633,12 +610,10 @@
       <Docs>
         <summary>Devuelve o establece el borde interior del objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad puede establecerse en <b>True</b>, <b>False</b>, o un <see cref="T:Microsoft.Office.Interop.Word.WdLineStyle" /> constante. Devuelve <b>wdUndefined</b> si más de un tipo de borde se aplica al objeto especificado; de lo contrario, <b>False</b> o una constante <b>WdLineStyle</b> .</para>
-          <para>a 
-            <b>true</b> , se establece el estilo de línea en el estilo de línea predeterminado y el ancho de línea con el ancho de línea predeterminado. Se puede establecer el ancho de línea y de estilo de línea predeterminado mediante el <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineWidth" /> y <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineStyle" /> propiedades.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta propiedad puede establecerse en <b>true</b>, <b>false</b>o en una <see cref="T:Microsoft.Office.Interop.Word.WdLineStyle" /> constante. Devuelve <b>wdUndefined</b> si se aplica más de un tipo de borde al objeto especificado; de lo contrario, <b>false</b> o una constante <b>WdLineStyle</b> .</para>
+          <para>
+            <b>Es true</b>, se establece el estilo de línea en el estilo de línea predeterminado y el ancho de línea con el ancho de línea predeterminado. Se pueden establecer el estilo de línea y el ancho de línea <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineWidth" /> predeterminados mediante las propiedades y <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineStyle" /> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsideLineWidth">
@@ -667,12 +642,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLineWidth</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el ancho de línea del interior borde de un objeto.</summary>
+        <summary>Devuelve o establece el ancho de línea del borde interior de un objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad se puede establecer en <b>True</b>, <b>False</b>o uno de los <see cref="T:Microsoft.Office.Interop.Word.WdLineWidth" /> constantes. Devuelve <b>wdUndefined</b> si el objeto tiene bordes interiores con varios anchos de línea; de lo contrario, <b>False</b> o una constante <b>WdLineWidth</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta propiedad puede establecerse en <b>true</b>, <b>false</b>o en una de las <see cref="T:Microsoft.Office.Interop.Word.WdLineWidth" /> constantes. Devuelve <b>wdUndefined</b> si el objeto tiene bordes interiores con más de un ancho de línea; de lo contrario, <b>false</b> o una constante <b>WdLineWidth</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -702,7 +675,7 @@
       </Parameters>
       <Docs>
         <param name="Index">Expresión que devuelve un <see cref="T:Microsoft.Office.Interop.Word.Borders" /> objeto.</param>
-        <summary>Devuelve un valor que indica si se quitan los bordes verticales en los bordes de los párrafos y las tablas para que los bordes horizontales puedan conectarse al borde de página.</summary>
+        <summary>Devuelve un valor que indica si se quitan los bordes verticales de los bordes de los párrafos y tablas para que los bordes horizontales puedan conectarse al borde de la página.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -733,7 +706,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor que indica si se quitan los bordes verticales en los bordes de los párrafos y las tablas para que los bordes horizontales puedan conectarse al borde de página.</summary>
+        <summary>Devuelve o establece un valor que indica si se quitan los bordes verticales en los bordes de los párrafos y tablas para que los bordes horizontales puedan conectarse al borde de la página.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -766,11 +739,9 @@
       <Docs>
         <summary>Devuelve o establece el color de 24 bits de los bordes exteriores.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El valor devuelto puede ser cualquier <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> constante o un valor devuelto por la función RGB de Visual Basic.</para>
-          <para>Si el <see cref="P:Microsoft.Office.Interop.Word.Borders.OutsideLineStyle" /> propiedad está establecida en cualquier <b>wdLineStyleNone</b> o <b>False</b>, establecer esta propiedad no tiene ningún efecto.</para>
-          <para />
-        </remarks>
+        <remarks><para>El valor devuelto puede ser cualquier <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> constante válida o un valor devuelto por la función RGB de Visual Basic.</para>
+          <para>Si la <see cref="P:Microsoft.Office.Interop.Word.Borders.OutsideLineStyle" /> propiedad se establece en <b>wdLineStyleNone</b> o <b>false</b>, establecer esta propiedad no tiene ningún efecto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OutsideColorIndex">
@@ -801,10 +772,8 @@
       <Docs>
         <summary>Devuelve o establece el color de los bordes exteriores.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el <see cref="P:Microsoft.Office.Interop.Word.Borders.OutsideLineStyle" /> propiedad está establecida en cualquier <b>wdLineStyleNone</b> o <b>False</b>, establecer esta propiedad no tiene ningún efecto.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si la <see cref="P:Microsoft.Office.Interop.Word.Borders.OutsideLineStyle" /> propiedad se establece en <b>wdLineStyleNone</b> o <b>false</b>, establecer esta propiedad no tiene ningún efecto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OutsideLineStyle">
@@ -835,12 +804,10 @@
       <Docs>
         <summary>Devuelve o establece el borde exterior del objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad puede establecerse en <b>True</b>, <b>False</b>, o un <see cref="T:Microsoft.Office.Interop.Word.WdLineStyle" /> constante. Devuelve <b>wdUndefined</b> si más de un tipo de borde se aplica al objeto especificado; de lo contrario, <b>False</b> o una constante <b>WdLineStyle</b> .</para>
-          <para>a 
-            <b>true</b> , se establece el estilo de línea en el estilo de línea predeterminado y el ancho de línea con el ancho de línea predeterminado. El estilo de línea predeterminado y el ancho se pueden establecer utilizando la <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineWidth" /> y <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineStyle" /> propiedades.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta propiedad puede establecerse en <b>true</b>, <b>false</b>o en una <see cref="T:Microsoft.Office.Interop.Word.WdLineStyle" /> constante. Devuelve <b>wdUndefined</b> si se aplica más de un tipo de borde al objeto especificado; de lo contrario, <b>false</b> o una constante <b>WdLineStyle</b> .</para>
+          <para>
+            <b>Es true</b>, se establece el estilo de línea en el estilo de línea predeterminado y el ancho de línea con el ancho de línea predeterminado. El estilo de línea predeterminado y el ancho se pueden establecer <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineWidth" /> mediante <see cref="P:Microsoft.Office.Interop.Word.Options.DefaultBorderLineStyle" /> las propiedades y.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OutsideLineWidth">
@@ -871,10 +838,8 @@
       <Docs>
         <summary>Devuelve o establece el ancho de línea del borde exterior de un objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad puede establecerse en <b>True</b>, <b>False</b>, o un <see cref="T:Microsoft.Office.Interop.Word.WdLineWidth" /> constante. Devuelve <b>wdUndefined</b> si el objeto tiene bordes exteriores con varios anchos de línea; de lo contrario, <b>False</b> o una constante <b>WdLineWidth</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta propiedad puede establecerse en <b>true</b>, <b>false</b>o en una <see cref="T:Microsoft.Office.Interop.Word.WdLineWidth" /> constante. Devuelve <b>wdUndefined</b> si el objeto tiene bordes exteriores con más de un ancho de línea; de lo contrario, <b>false</b> o una constante <b>WdLineWidth</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -931,7 +896,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor que indica si el borde especificado tiene formato de sombreado.</summary>
+        <summary>Devuelve o establece un valor que indica si el borde especificado tiene el formato de sombreado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -962,7 +927,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor que indica si un borde de página incluye el pie de página de documento.</summary>
+        <summary>Devuelve o establece un valor que indica si el borde de la página incluye el pie de página del documento.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -993,7 +958,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor que indica si un borde de página incluye el encabezado del documento.</summary>
+        <summary>Devuelve o establece un valor que indica si el borde de la página incluye el encabezado del documento.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

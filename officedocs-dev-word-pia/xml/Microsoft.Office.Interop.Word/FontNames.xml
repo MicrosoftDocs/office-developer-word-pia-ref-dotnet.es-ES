@@ -1,13 +1,5 @@
 <Type Name="FontNames" FullName="Microsoft.Office.Interop.Word.FontNames">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="85626960f130b0ac176af9fed5a8c2b65596999b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675642" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FontNames : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="aaeaa8eb417f394aecf77c7d4bde8759dd22e74c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146804" /></Metadata><TypeSignature Language="C#" Value="public interface FontNames : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FontNames implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FontNames" />
   <TypeSignature Language="VB.NET" Value="Public Interface FontNames&#xA;Implements IEnumerable" />
@@ -31,12 +23,10 @@
   </Attributes>
   <Docs>
     <summary>Representa una lista de los nombres de todas las fuentes disponibles.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word._Application.FontNames" />, <see cref="P:Microsoft.Office.Interop.Word._Application.LandscapeFontNames" />, o <see cref="P:Microsoft.Office.Interop.Word._Application.PortraitFontNames" /> propiedad para devolver el objeto <b>FontNames</b> .</para>
-      <para>Uso <b>FontNames</b>(index), donde index es el número de índice, para devolver el nombre de una fuente.</para>
-      <para>No se puede agregar ni quitar nombres de la lista de nombres de fuentes disponibles.</para>
-      <para />
-    </remarks>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Word._Application.FontNames" />propiedad <see cref="P:Microsoft.Office.Interop.Word._Application.LandscapeFontNames" />, o <see cref="P:Microsoft.Office.Interop.Word._Application.PortraitFontNames" /> para devolver el objeto <b>FontNames</b> .</para>
+      <para>Utilice <b>FontNames</b>(index), donde index es el número de índice, para devolver el nombre de una fuente.</para>
+      <para>[!NOTA] No se puede agregar ni quitar nombres de la lista de nombres de fuentes disponibles.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,9 +110,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el creador principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad Creator se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -183,7 +173,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entero</b> que indica la posición ordinal del objeto individual.</param>
+        <param name="Index"><b>Entero</b> que indica la posición ordinal del objeto individual.</param>
         <summary>Devuelve un objeto individual de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

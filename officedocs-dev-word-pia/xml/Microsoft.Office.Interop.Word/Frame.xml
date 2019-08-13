@@ -1,13 +1,5 @@
 <Type Name="Frame" FullName="Microsoft.Office.Interop.Word.Frame">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="93685f2efab8eeb1f85d85951ceaf3df016bd8a9" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674986" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Frame" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fb0b4e93fe0bae1fe610e0ade71e1764cb1b13bb" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146783" /></Metadata><TypeSignature Language="C#" Value="public interface Frame" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Frame" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Frame" />
   <TypeSignature Language="VB.NET" Value="Public Interface Frame" />
@@ -26,10 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa un marco en una selección, intervalo o documento.</summary>
-    <remarks>
-      <para>El objeto <b>Frame</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Frames" /> colección. La colección <b>Frames</b> incluye todos los marcos de una selección, intervalo o documento.</para> Usar <b>marcos</b>de 
-      <para>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un solo objeto <b>Frame</b> . El número de índice representa la posición del marco en la selección, intervalo o documento.</para><para>Usar la <see cref="M:Microsoft.Office.Interop.Word.Frames.Add(Microsoft.Office.Interop.Word.Range)" /> método para agregar un marco alrededor de un rango.</para><para /></remarks>
+    <summary>Representa un marco de una selección, intervalo o documento.</summary>
+    <remarks><para>El objeto <b>Frame</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Frames" /> colección. La colección <b>Frames</b> incluye todos los marcos de una selección, intervalo o documento.</para>
+      <para>Use <b></b>frames<paramref name="index" />(), <paramref name="index" /> donde es el número de índice, para devolver un solo objeto <b>Frame</b> . El número de índice representa la posición del marco en la selección, intervalo o documento.</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.Frames.Add(Microsoft.Office.Interop.Word.Range)" /> método para agregar un marco alrededor de un intervalo.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -55,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Borders" /> colección que representa todos los bordes del objeto especificado.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.Borders" /> colección que representa todos los bordes del objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -141,9 +134,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -315,12 +308,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la distancia horizontal entre el borde del marco y el elemento especificado por el <see cref="P:Microsoft.Office.Interop.Word.Frame.RelativeHorizontalPosition" /> (propiedad).</summary>
+        <summary>Devuelve o establece la distancia horizontal entre el borde del marco y el elemento especificado por la <see cref="P:Microsoft.Office.Interop.Word.Frame.RelativeHorizontalPosition" /> propiedad.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>HorizontalPosition</b> puede ser un número que indica una medida en puntos, o puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.WdFramePosition" /> constantes: <b>wdFrameLeft</b>, <b>wdFrameRight</b>, <b>wdFrameCenter</b>, <b>wdFrameInside</b>o <b> wdFrameOutside</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>La <b>propiedad HorizontalPosition</b> puede ser un número que indica una medida en puntos, o bien una <see cref="T:Microsoft.Office.Interop.Word.WdFramePosition" /> de las siguientes constantes: <b>wdFrameLeft</b>, <b>wdFrameRight</b>, <b>wdFrameCenter</b>, <b>wdFrameInside</b>o <b> wdFrameOutside</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LockAnchor">
@@ -349,13 +340,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el marco especificado está bloqueado.</summary>
+        <summary><b>True</b> si el marco especificado está bloqueado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El delimitador del marco indica dónde aparecerá el marco en la vista Normal. No se puede cambiar la posición de un delimitador de marco bloqueado.</para>
-          <para />
-        </remarks>
+        <remarks><para>El delimitador del marco establece dónde aparecerá el marco en la vista Normal. No se puede cambiar la posición del delimitador de un marco bloqueado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -409,12 +397,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa la parte de un documento que está incluida en el objeto especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa la parte de un documento incluida en el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para obtener información acerca de la devolución de un intervalo de un documento o la devolución de un intervalo de formas de una colección de formas, vea el <see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" /> (método).</para>
-          <para />
-        </remarks>
+        <remarks><para>Para obtener información sobre la devolución de un intervalo de un documento o la devolución de un intervalo de formas de una <see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" /> colección de formas, vea el método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RelativeHorizontalPosition">
@@ -443,7 +429,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRelativeHorizontalPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Especifica a qué la posición horizontal de un marco es relativa.</summary>
+        <summary>Especifica con relación a qué es la posición horizontal de un marco.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -474,7 +460,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRelativeVerticalPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Especifica a qué la posición vertical de un marco es relativa.</summary>
+        <summary>Especifica con relación a qué es la posición vertical de un marco.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -501,10 +487,8 @@
       <Parameters />
       <Docs>
         <summary>Selecciona el objeto especificado.</summary>
-        <remarks>
-          <para>Después de utilizar este método, utilice el <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> (propiedad) para trabajar con los elementos seleccionados.</para>
-          <para />
-        </remarks>
+        <remarks><para>Después de utilizar este método, utilice <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> la propiedad para trabajar con los elementos seleccionados.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shading">
@@ -561,8 +545,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el texto del documento se ajusta alrededor del marco especificado.</summary>
+        <summary><b>True</b> si el texto del documento se ajusta alrededor del marco especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -624,12 +607,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la distancia vertical entre el borde del marco y el elemento especificado por el <see cref="P:Microsoft.Office.Interop.Word.Frame.RelativeVerticalPosition" /> (propiedad).</summary>
+        <summary>Devuelve o establece la distancia vertical entre el borde del marco y el elemento especificado por la <see cref="P:Microsoft.Office.Interop.Word.Frame.RelativeVerticalPosition" /> propiedad.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>VerticalPosition</b> puede ser un número que indica una medida en puntos, o puede ser cualquier <see cref="T:Microsoft.Office.Interop.Word.WdFramePosition" /> constante.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propiedad <b>VerticalPosition</b> puede ser un número que indica una medida en puntos, o bien una constante válida <see cref="T:Microsoft.Office.Interop.Word.WdFramePosition" /> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">

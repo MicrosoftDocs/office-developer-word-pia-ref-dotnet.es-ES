@@ -1,13 +1,5 @@
 <Type Name="FirstLetterException" FullName="Microsoft.Office.Interop.Word.FirstLetterException">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d471bbc02a21b87dfe03d212e18b23ef9c5542ad" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675161" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FirstLetterException" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4ae232b80e55fea218975f3d9714a8531449d4ef" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146839" /></Metadata><TypeSignature Language="C#" Value="public interface FirstLetterException" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FirstLetterException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FirstLetterException" />
   <TypeSignature Language="VB.NET" Value="Public Interface FirstLetterException" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Representa una abreviatura excluida de la corrección automática.</summary>
-    <remarks>
-      <para>El objeto <b>FirstLetterException</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.FirstLetterExceptions" /> colección. La colección <b>FirstLetterExceptions</b> incluye todas las abreviaturas excluidas. El primer carácter después de un período es automáticamente en mayúsculas cuando el <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.CorrectSentenceCaps" /> propiedad está establecida en <b>True</b>. El carácter que escriba a continuación un elemento en la colección <b>FirstLetterExceptions</b> no se pone en mayúsculas.</para>
-      <para>Uso <b>FirstLetterExceptions</b>(<paramref name="index" />), donde <paramref name="index" /> corresponde a la abreviatura o el número de índice, para devolver un solo objeto <b>FirstLetterException</b> .</para>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Word.FirstLetterExceptions.Add(System.String)" /> método para agregar una abreviatura a la lista de excepciones de primera letra.</para>
-      <para />
-    </remarks>
+    <remarks><para>El objeto <b>FirstLetterException</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.FirstLetterExceptions" /> colección. La colección <b>FirstLetterExceptions</b> incluye todas las abreviaturas excluidas. El primer carácter después de un punto se pone automáticamente en mayúsculas cuando la <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.CorrectSentenceCaps" /> propiedad se establece en <b>true</b>. El carácter que escriba a continuación de un elemento de la colección <b>FirstLetterExceptions</b> no se pone en mayúsculas.</para>
+      <para>Use <b>FirstLetterExceptions</b>(<paramref name="index" />), donde <paramref name="index" /> es la abreviatura o el número de índice, para devolver un solo objeto <b>FirstLetterException</b> .</para>
+      <para>Use el <see cref="M:Microsoft.Office.Interop.Word.FirstLetterExceptions.Add(System.String)" /> método para agregar una abreviatura a la lista de excepciones de primera letra.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,9 +78,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -141,7 +131,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> que representa la posición de un elemento de una colección.</summary>
+        <summary>Devuelve un <b>entero</b> que representa la posición de un elemento en una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

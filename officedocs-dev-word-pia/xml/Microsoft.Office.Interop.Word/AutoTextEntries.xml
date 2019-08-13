@@ -1,13 +1,5 @@
 <Type Name="AutoTextEntries" FullName="Microsoft.Office.Interop.Word.AutoTextEntries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a31d1e907d820a2005c896aa46cf04f2089738e1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675777" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AutoTextEntries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="616542cb10e6c23af21a1d1d91f287e037699d61" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146279" /></Metadata><TypeSignature Language="C#" Value="public interface AutoTextEntries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoTextEntries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AutoTextEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoTextEntries&#xA;Implements IEnumerable" />
@@ -30,12 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" /> objetos que representan las entradas de Autotexto en una plantilla.</summary>
-    <remarks>
-      <para>La colección <b>AutoTextEntries</b> incluye todas las entradas que aparecen en la ficha Autotexto en el cuadro de diálogo Autocorrección (menú Herramientas).</para>
-      <para>Usar la <see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" /> propiedad para devolver la colección <b>AutoTextEntries</b> .</para>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Word.AutoTextEntries.Add(System.String,Microsoft.Office.Interop.Word.Range)" /> método para agregar un elemento de Autotexto a la colección <b>AutoTextEntries</b> .</para> Uso de 
-      <para><see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" />(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la entrada de Autotexto o número de índice, para devolver un solo <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" /> objeto. Deben coincidir exactamente con la ortografía (pero no necesariamente las mayúsculas y minúsculas) del nombre, como se muestra en la ficha Autotexto en el cuadro de diálogo Autocorrección.</para><para /></remarks>
+    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" /> objetos que representan los elementos de Autotexto en una plantilla.</summary>
+    <remarks><para>La colección <b>AutoTextEntries</b> incluye todas las entradas que aparecen en la ficha Autotexto en el cuadro de diálogo Autocorrección (menú herramientas).</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" /> propiedad para devolver la colección <b>AutoTextEntries</b> .</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.AutoTextEntries.Add(System.String,Microsoft.Office.Interop.Word.Range)" /> método para agregar un elemento de Autotexto a la colección <b>AutoTextEntries</b> .</para>
+      <para>Use <see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" />(<paramref name="index" />), donde <paramref name="index" /> es el nombre del elemento de Autotexto o el número de índice, <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" /> para devolver un único objeto. Debe coincidir exactamente con la ortografía (pero no necesariamente las mayúsculas y minúsculas) del nombre, como se muestra en la ficha Autotexto en el cuadro de diálogo Autocorrección.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -61,9 +53,9 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Name">Un intervalo de texto que se insertará cada vez que <paramref name="Name" /> está escrito.</param>
+        <param name="Name">Intervalo de texto que se insertará cada vez <paramref name="Name" /> que se escriba.</param>
         <param name="Range">Texto que, cuando se escribe, inicia un elemento de Autotexto.</param>
-        <summary>Agrega un elemento de Autotexto a la lista de elementos de Autotexto disponible.</summary>
+        <summary>Agrega un elemento de Autotexto a la lista de elementos de Autotexto disponibles.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,10 +85,8 @@
         <param name="Range">Intervalo que se elimina y anexa al elemento Especial.</param>
         <summary>Elimina el intervalo especificado y agrega el contenido del intervalo al elemento especial (integrado de Autotexto).</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>El método <b>AppendToSpike</b> sólo es válido para la <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" /> colección en la plantilla Normal.</para>
-          <para />
-        </remarks>
+        <remarks><para>El método <b>AppendToSpike</b> sólo es válido para la <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" /> colección de la plantilla normal.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -122,7 +112,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -180,9 +170,9 @@
       <Docs>
         <summary>Devuelve un valor que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -243,7 +233,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">El nombre del objeto individual que se va a devolver.</param>
+        <param name="Index">Nombre del objeto individual que se va a devolver.</param>
         <summary>Devuelve un objeto individual de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

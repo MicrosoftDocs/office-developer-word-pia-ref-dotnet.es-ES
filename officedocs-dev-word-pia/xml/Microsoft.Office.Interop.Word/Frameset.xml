@@ -1,13 +1,5 @@
 <Type Name="Frameset" FullName="Microsoft.Office.Interop.Word.Frameset">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a153326e0a463fab1ea2191a5ff18e8f268d65d4" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675075" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Frameset : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a60060da0b1c4ff85a021ce286850c649ffa86e1" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146811" /></Metadata><TypeSignature Language="C#" Value="public interface Frameset : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Frameset implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Frameset" />
   <TypeSignature Language="VB.NET" Value="Public Interface Frameset&#xA;Implements IEnumerable" />
@@ -31,9 +23,9 @@
   </Attributes>
   <Docs>
     <summary>Representa una página de marcos entera o un solo marco en una página de marcos.</summary>
-    <remarks>
-      <para>No hay ninguna colección de <b>conjuntos de marcos</b> ; cada <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto o <see cref="T:Microsoft.Office.Interop.Word.Pane" /> objeto contiene sólo un objeto <b>Frameset</b> .</para> Propiedad 
-      <para>usar el <b>conjunto de marcos</b> de un objeto <b>Document</b> o <b>Pane</b> para devolver el objeto <b>Frameset</b> . Para propiedades o métodos que afectan a todos los marcos de una página de marcos, utilice el objeto <b>Frameset</b> desde el objeto <b>Document</b> . Para propiedades o métodos que afectan a marcos individuales de una página de marcos, utilice el objeto <b>Frameset</b> desde el objeto <b>Pane</b> .</para><para /></remarks>
+    <remarks><para>No hay una <b></b> colección framesets; cada <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto o <see cref="T:Microsoft.Office.Interop.Word.Pane" /> objeto contiene sólo un objeto <b>FRAMESET</b> .</para>
+      <para>Utilice la propiedad <b>FRAMESET</b> de un objeto <b>Document</b> o <b>pane</b> para devolver el objeto <b>FRAMESET</b> . Para propiedades o métodos que afectan a todos los marcos de una página de Marcos, utilice el objeto <b>FRAMESET</b> desde el objeto <b>Document</b> . Para propiedades o métodos que afectan a marcos individuales de una página de Marcos, utilice el objeto <b>FRAMESET</b> desde el objeto <b>pane</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNewFrame">
@@ -59,7 +51,7 @@
         <Parameter Name="Where" Type="Microsoft.Office.Interop.Word.WdFramesetNewFrameLocation" />
       </Parameters>
       <Docs>
-        <param name="Where">Requiere <see cref="T:Microsoft.Office.Interop.Word.WdFramesetNewFrameLocation" />. Establece la ubicación donde debe agregarse el nuevo marco respecto al marco especificado.</param>
+        <param name="Where">Es <see cref="T:Microsoft.Office.Interop.Word.WdFramesetNewFrameLocation" />obligatorio. Establece la ubicación donde debe agregarse el nuevo marco respecto al marco especificado.</param>
         <summary>Agrega un nuevo marco a una página de marcos.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -88,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -116,12 +108,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el número de secundarios <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> objetos asociados con el objeto <b>Frameset</b> especificado.</summary>
+        <summary>Devuelve el número de objetos <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> secundarios asociados con el objeto <b>FRAMESET</b> especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad se aplica únicamente a objetos <b>Frameset</b> de tipo <b>wdFramesetTypeFrameset</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta propiedad se aplica únicamente a objetos <b>Frameset</b> de tipo <b>wdFramesetTypeFrameset</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChildFramesetItem">
@@ -150,14 +140,11 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>requerido. El número de índice del marco especificado.</param>
-        <summary>Devuelve el <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> object que representa el objeto <b>Frameset</b> secundario especificado.</summary>
+        <param name="Index">Required <b>Integer</b>. El número de índice del marco especificado.</param>
+        <summary>Devuelve el <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> objeto que representa el objeto de conjunto de <b>Marcos</b> secundario especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad se aplica únicamente a objetos <b>Frameset</b> de tipo <b>wdFramesetTypeFrameset</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta propiedad se aplica únicamente a objetos <b>Frameset</b> de tipo <b>wdFramesetTypeFrameset</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -185,9 +172,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -272,8 +259,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si se muestran los bordes de marcos en la página de marcos especificada.</summary>
+        <summary><b>True</b> si se muestran los bordes de marcos en la página de marcos especificada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -304,8 +290,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si la página Web u otro documento especificado por el <see cref="P:Microsoft.Office.Interop.Word.Frameset.FrameDefaultURL" /> (propiedad) es un archivo externo a la que Microsoft Word sólo mantiene un vínculo desde el marco especificado.</summary>
+        <summary><b>True</b> si la página web u otro documento especificado mediante la <see cref="P:Microsoft.Office.Interop.Word.Frameset.FrameDefaultURL" /> propiedad es un archivo externo con el que Microsoft Word sólo mantiene un vínculo desde el marco especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -336,7 +321,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el nombre del marco especificado en una página de marcos.</summary>
+        <summary>Devuelve o establece el nombre del marco especificado de una página de marcos.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -367,8 +352,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el usuario puede cambiar el tamaño del marco especificado cuando se ve la página de marcos en un explorador Web.</summary>
+        <summary><b>True</b> si el usuario puede cambiar el tamaño del marco especificado cuando se ve la página de marcos en un explorador Web.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -399,7 +383,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdScrollbarType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece si las barras de desplazamiento están disponibles en el marco especificado al mostrar su página de marcos en un explorador Web.</summary>
+        <summary>Devuelve o establece cuándo van a estar disponibles las barras de desplazamiento en el marco especificado al visualizar la página de marcos en un explorador web.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -430,7 +414,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el color de los bordes de marco de la página de marcos especificada. Puede ser cualquiera de los <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> constantes.</summary>
+        <summary>Devuelve o establece el color de los bordes de marco de la página de marcos especificada. Puede ser cualquiera de las <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> constantes.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -524,12 +508,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el alto del especificado <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> objeto.</summary>
+        <summary>Devuelve o establece el alto del objeto especificado <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> .</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El <see cref="P:Microsoft.Office.Interop.Word.Frameset.HeightType" /> propiedad determina el tipo de unidad en que se expresa este valor.</para>
-          <para />
-        </remarks>
+        <remarks><para>La <see cref="P:Microsoft.Office.Interop.Word.Frameset.HeightType" /> propiedad determina el tipo de unidad en que se expresa este valor.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HeightType">
@@ -614,7 +596,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Frameset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> object que representa el objeto primario del objeto <b>Frameset</b> especificado en una página de marcos.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> objeto Object que representa el objeto primario del objeto <b>FRAMESET</b> especificado en una página de Marcos.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -673,12 +655,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el ancho del especificado <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> objeto.</summary>
+        <summary>Devuelve o establece el ancho del objeto especificado <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> .</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El <see cref="P:Microsoft.Office.Interop.Word.Frameset.WidthType" /> propiedad determina el tipo de unidad en que se expresa este valor.</para>
-          <para />
-        </remarks>
+        <remarks><para>La <see cref="P:Microsoft.Office.Interop.Word.Frameset.WidthType" /> propiedad determina el tipo de unidad en que se expresa este valor.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WidthType">
@@ -707,7 +687,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdFramesetSizeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el tipo de ancho del especificado <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> objeto.</summary>
+        <summary>Devuelve o establece el tipo de ancho del objeto <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

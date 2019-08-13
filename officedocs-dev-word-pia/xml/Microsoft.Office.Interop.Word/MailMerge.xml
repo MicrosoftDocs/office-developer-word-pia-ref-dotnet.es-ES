@@ -1,13 +1,5 @@
 <Type Name="MailMerge" FullName="Microsoft.Office.Interop.Word.MailMerge">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f5bb8ad4de7fc159ec30e1c17d9fcf1851962f01" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675658" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMerge" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6af9ade1b4ba89c72ee01b49396483c2c4e1bb64" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146188" /></Metadata><TypeSignature Language="C#" Value="public interface MailMerge" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMerge" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMerge" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMerge" />
@@ -26,11 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa la funcionalidad de combinación de correspondencia en Microsoft Word.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word._Document.MailMerge" /> (propiedad) para devolver el objeto <b>MailMerge</b> . El objeto <b>MailMerge</b> siempre está disponible independientemente de si ha comenzado la operación de combinación de correspondencia. Usar el <see cref="P:Microsoft.Office.Interop.Word.MailMerge.State" /> (propiedad) para determinar el estado de la operación de combinación de correspondencia.</para>
-      <para />
-    </remarks>
+    <summary>Representa la funcionalidad de combinación de correspondencia de Microsoft Word.</summary>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Word._Document.MailMerge" /> propiedad para devolver el objeto <b>MailMerge</b> . El objeto <b>MailMerge</b> siempre está disponible independientemente de si ha empezado la operación de combinación de correspondencia. Utilice la <see cref="P:Microsoft.Office.Interop.Word.MailMerge.State" /> propiedad para determinar el estado de la operación de combinación de correspondencia.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +46,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -116,30 +106,19 @@
         <Parameter Name="LinkToSource" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>Objeto</b>de opcional. La ruta de acceso y el nombre de archivo del nuevo origen de datos.</param>
-        <param name="PasswordDocument">
-          <b>Objeto</b>de opcional. La contraseña requerida para abrir el nuevo origen de datos.</param>
-        <param name="WritePasswordDocument">
-          <b>Objeto</b>de opcional. La contraseña requerida para guardar cambios realizados en el origen de datos.</param>
-        <param name="HeaderRecord">
-          <b>Objeto</b>de opcional. Nombres de campo para el registro inicial. Si se omite este argumento, se usa el registro inicial estándar: "título, nombre, apellido, puesto, compañía, dirección1, dirección2, ciudad, estado, código postal, país, teléfono particular, teléfono laboral". Para separar nombres de campo, se debe usar el separador de lista especificado en Configuración regional en el Panel de control.</param>
-        <param name="MSQuery">
-          <b>Objeto</b>de opcional. <b>True</b> para iniciar Microsoft Query, si está instalado. El <paramref name="Name" />, <paramref name="PasswordDocument" />, y <paramref name="HeaderRecord" /> se omiten los argumentos.</param>
-        <param name="SQLStatement">
-          <b>Objeto</b>de opcional. Define las opciones de consulta para recuperar datos.</param>
-        <param name="SQLStatement1">
-          <b>Objeto</b>de opcional. Si la cadena de consulta tiene más de 255 caracteres, <paramref name="SQLStatement" /> especifica la primera parte de la cadena, y <paramref name="SQLStatement1" /> especifica la segunda parte.</param>
-        <param name="Connection">
-          <b>Objeto</b>de opcional. Un intervalo dentro del cual la consulta especificada por <paramref name="SQLStatement" /> se llevará a cabo. Cómo especificar el intervalo depende de cómo se recuperan los datos. Para ejemplo: cuando la recuperación de datos a través de ODBC, especifique una cadena de conexión. Al recuperar datos de Microsoft Excel mediante el intercambio dinámico de datos (DDE), especifique un rango con nombre. <b>Seguridad</b>  Intercambio dinámico de datos (DDE) es una tecnología antigua que no es segura. Si es posible, utilice una alternativa a DDE más segura. Al recuperar datos desde Microsoft Access, especifique la palabra "Tabla" o "Consulta" seguida del nombre de una tabla o consulta.</param>
-        <param name="LinkToSource">
-          <b>Objeto</b>de opcional. <b>True</b> para realizar la consulta especificada por <paramref name="Connection" /> y <paramref name="SQLStatement" /> cada vez que se abre el documento principal.</param>
+        <param name="Name"><b>Objeto</b>opcional. La ruta de acceso y el nombre de archivo del nuevo origen de datos.</param>
+        <param name="PasswordDocument"><b>Objeto</b>opcional. La contraseña requerida para abrir el nuevo origen de datos.</param>
+        <param name="WritePasswordDocument"><b>Objeto</b>opcional. La contraseña requerida para guardar cambios realizados en el origen de datos.</param>
+        <param name="HeaderRecord"><b>Objeto</b>opcional. Nombres de campo para el registro inicial. Si se omite este argumento, se usa el registro inicial estándar: "título, nombre, apellido, puesto, compañía, dirección1, dirección2, ciudad, estado, código postal, país, teléfono particular, teléfono laboral". Para separar nombres de campo, se debe usar el separador de lista especificado en Configuración regional en el Panel de control.</param>
+        <param name="MSQuery"><b>Objeto</b>opcional. <b>True</b> para iniciar Microsoft Query, si está instalado. Los <paramref name="Name" />argumentos <paramref name="PasswordDocument" />, y <paramref name="HeaderRecord" /> se omiten.</param>
+        <param name="SQLStatement"><b>Objeto</b>opcional. Define las opciones de consulta para recuperar datos.</param>
+        <param name="SQLStatement1"><b>Objeto</b>opcional. Si la cadena de consulta tiene más de 255 caracteres <paramref name="SQLStatement" /> , especifica la primera parte de la cadena y <paramref name="SQLStatement1" /> especifica la segunda parte.</param>
+        <param name="Connection"><b>Objeto</b>opcional. Un intervalo en el que se realizará <paramref name="SQLStatement" /> la consulta especificada por. El modo en que se especifica el intervalo depende del modo en que se recuperan los datos. Por ejemplo: cuando se recuperan datos a través de ODBC, se especifica una cadena de conexión. Cuando se recuperan datos de Microsoft Excel mediante el intercambio dinámico de datos (DDE), se especifica un rango con nombre. <b>Seguridad</b> de  El intercambio dinámico de datos (DDE) es una tecnología antigua que no es segura. Si es posible, use una alternativa más segura a DDE. Cuando se recuperan datos de Microsoft Access, se especifica la palabra "tabla" o "consulta" seguida del nombre de una tabla o consulta.</param>
+        <param name="LinkToSource"><b>Objeto</b>opcional. <b>True</b> para realizar la consulta especificada por <paramref name="Connection" /> y <paramref name="SQLStatement" /> cada vez que se abre el documento principal.</param>
         <summary>Crea un documento de Microsoft Word que usa una tabla para guardar datos de una combinación de correspondencia.</summary>
-        <remarks>
-          <para>El nuevo origen de datos se adjunta al documento especificado, que se convierte en un documento principal si aún no lo es.</para>
-          <para>Evitar utilizando contraseñas codificado de forma rígida en sus aplicaciones. Si se requiere una contraseña en un procedimiento, solicite al usuario la contraseña, almacenar en una variable y, a continuación, usar la variable en el código.</para>
-          <para />
-        </remarks>
+        <remarks><para>El nuevo origen de datos se adjunta al documento especificado, que se convierte en un documento principal si aún no lo es.</para>
+          <para>Evite usar contraseñas dentro del código en sus aplicaciones. Si se requiere una contraseña en un procedimiento, solicítesela al usuario, almacénela en una variable y utilice la variable en el código.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateHeaderSource">
@@ -167,21 +146,15 @@
         <Parameter Name="HeaderRecord" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>String</b> requerida. La ruta de acceso y el nombre de archivo del nuevo origen inicial.</param>
-        <param name="PasswordDocument">
-          <b>Objeto</b>de opcional. La contraseña requerida para abrir el nuevo registro inicial.</param>
-        <param name="WritePasswordDocument">
-          <b>Objeto</b>de opcional. La contraseña requerida para guardar cambios realizados en el nuevo registro inicial.</param>
-        <param name="HeaderRecord">
-          <b>Objeto</b>de opcional. Una cadena que especifica los nombres de campo para el registro de encabezado. Si se omite este argumento, se usa el registro inicial estándar: "título, nombre, apellido, puesto, compañía, dirección1, dirección2, ciudad, estado, código postal, país, teléfono particular, teléfono laboral". Para separar nombres de campos en Windows, utilice el separador de lista especificado en la configuración Regional en el Panel de Control.</param>
-        <summary>Crea un documento de Microsoft Word que guarda un registro de encabezado que se utiliza en lugar del registro del origen de datos en una combinación de correspondencia.</summary>
-        <remarks>
-          <para>Este método adjunta el nuevo origen del encabezado al documento especificado, que se convierte en un documento principal si aún no lo es.</para>
-          <para>El nuevo origen del encabezado utiliza una tabla para organizar los nombres de campo de combinación de correspondencia.</para>
-          <para>Evitar utilizando contraseñas codificado de forma rígida en sus aplicaciones. Si se requiere una contraseña en un procedimiento, solicite al usuario la contraseña, almacenar en una variable y, a continuación, usar la variable en el código.</para>
-          <para />
-        </remarks>
+        <param name="Name"><b>String</b> requerida. La ruta de acceso y el nombre de archivo del nuevo origen inicial.</param>
+        <param name="PasswordDocument"><b>Objeto</b>opcional. La contraseña requerida para abrir el nuevo registro inicial.</param>
+        <param name="WritePasswordDocument"><b>Objeto</b>opcional. La contraseña requerida para guardar cambios realizados en el nuevo registro inicial.</param>
+        <param name="HeaderRecord"><b>Objeto</b>opcional. Una cadena que especifica los nombres de campo para el registro inicial. Si se omite este argumento, se usa el registro inicial estándar: "título, nombre, apellido, puesto, compañía, dirección1, dirección2, ciudad, estado, código postal, país, teléfono particular, teléfono laboral". Para separar nombres de campo en Windows, use el separador de lista especificado en configuración regional en el panel de control.</param>
+        <summary>Crea un documento de Microsoft Word que almacena un registro de encabezado que se utiliza en vez del registro de encabezado de origen de datos en una combinación de correspondencia.</summary>
+        <remarks><para>Este método adjunta el nuevo origen del encabezado al documento especificado, que se convierte en un documento principal si aún no lo es.</para>
+          <para>El nuevo origen del encabezado usa una tabla para organizar los nombres de los campos de combinación de correspondencia.</para>
+          <para>Evite usar contraseñas dentro del código en sus aplicaciones. Si se requiere una contraseña en un procedimiento, solicítesela al usuario, almacénela en una variable y utilice la variable en el código.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -209,9 +182,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -270,8 +243,7 @@
       <Docs>
         <summary>Devuelve o establece el destino de los resultados de la combinación de correspondencia.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad de <b>destino</b> puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeDestination" /> constantes: </para>
+        <remarks><para>La propiedad <b>Destination</b> puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeDestination" /> constantes: </para>
           <para>
             <b>wdSendToFax</b>
           </para>
@@ -284,8 +256,7 @@
           <para>
             <b>wdSendToNewDocument</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EditDataSource">
@@ -310,10 +281,11 @@
       <Parameters />
       <Docs>
         <summary>Abre o cambia al origen de datos de la combinación de correspondencia.</summary>
-        <remarks>
-          <para>Si el origen de datos es un documento de Microsoft Word, este método abre el origen de datos (o activa el origen de datos si ya está abierto).</para>
-          <para>Word si tiene acceso a los datos a través de intercambio dinámico de datos (DDE), mediante una aplicación como Microsoft Excel o Microsoft Access, este método muestra el origen de datos en esa aplicación.</para> Exchange 
-          <para>dinámico de datos (DDE) es una tecnología antigua que no es segura. Si es posible, utilice una alternativa más segura a la DDE.</para><para>Word si tiene acceso a los datos a través de conectividad abierta de bases de datos (ODBC), este método muestra los datos en un documento de Word. Tenga en cuenta que si está instalado Microsoft Query, aparecerá un mensaje, con la opción para mostrar Microsoft Query en lugar de conversión de datos.</para><para /></remarks>
+        <remarks><para>Si el origen de datos es un documento de Microsoft Word, este método abre el origen de datos (o activa el origen de datos si ya está abierto).</para>
+          <para>Si Word obtiene acceso a los datos a través del intercambio dinámico de datos (DDE), usando una aplicación como Microsoft Excel o Microsoft Access, este método muestra el origen de datos en esa aplicación.</para>
+          <para>El intercambio dinámico de datos (DDE) es una tecnología más antigua que no es segura. Si es posible, use una alternativa más segura a DDE.</para>
+          <para>Si Word obtiene acceso a los datos a través de la conectividad abierta de base de datos (ODBC), este método muestra los datos en un documento de Word. Tenga en cuenta que si tiene instalado Microsoft Query, aparecerá un mensaje que le proporcionará la opción de mostrar Microsoft Query en lugar de convertir los datos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EditHeaderSource">
@@ -337,11 +309,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Se abre el origen de encabezado adjunto a un documento principal de combinación de correspondencia, o activa el origen de registro inicial si ya está abierto.</summary>
-        <remarks>
-          <para>Si el documento principal de combinación de correspondencia no posee origen de encabezado, este método produce un error.</para>
-          <para />
-        </remarks>
+        <summary>Abre el origen de encabezado adjunto a un documento principal de combinación de correspondencia o activa el origen de registro inicial si ya está abierto.</summary>
+        <remarks><para>Si el documento principal de combinación de correspondencia no posee origen de encabezado, este método generará un error.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EditMainDocument">
@@ -366,10 +336,8 @@
       <Parameters />
       <Docs>
         <summary>Activa el documento principal de combinación de correspondencia asociado al documento de origen de datos o de origen de encabezado especificado.</summary>
-        <remarks>
-          <para>Si el documento principal no está abierto, se produce un error. Usar el <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> (método) si no está abierto el documento principal.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si el documento principal no está abierto, se produce un error. Utilice el <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método si el documento principal no está abierto actualmente.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -394,8 +362,7 @@
         <Parameter Name="Pause" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Pause">
-          <b>Objeto</b>de opcional. <b>True</b> para que Microsoft Word pause y muestre un cuadro de diálogo de solución de problemas si se encuentra un error de combinación de correspondencia; <b>False</b> para notificar errores en un documento nuevo.</param>
+        <param name="Pause"><b>Objeto</b>opcional. <b>True</b> para que Microsoft Word para que PAUSE y muestre un cuadro de diálogo de solución de problemas si se encuentra un error en la combinación de correspondencia; <b>False</b> para informar de los errores en un nuevo documento.</param>
         <summary>Realiza la operación de combinación de correspondencia especificada.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -423,7 +390,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.MailMergeFields</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.MailMergeFields" /> colección que representa todas las la combinación de correspondencia relacionados con los campos en el documento especificado.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.MailMergeFields" /> colección que representa todos los campos relacionados de la combinación de correspondencia en el documento especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -454,12 +421,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina si se resaltan los campos de combinación en un documento.</summary>
+        <summary>Determina si se resaltan los campos de combinación de un documento.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad devuelve <b>True</b> si se resaltan los campos de combinación y <b>False</b> si no. Establezca el valor de la propiedad en <b>True</b> o <b>False</b> para habilitar o deshabilitar la funcionalidad.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta propiedad devuelve <b>true</b> si los campos de combinación están resaltados y <b>false</b> en caso contrario. Establezca el valor de la propiedad en <b>true</b> o <b>false</b> para habilitar o deshabilitar la funcionalidad.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailAddressFieldName">
@@ -519,12 +484,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina si los documentos de combinación se envían como datos adjuntos cuando el destino de combinación de correspondencia es un mensaje de correo electrónico o un fax.</summary>
+        <summary>Determina si los documentos de combinación se envían como datos adjuntos cuando el destino de la combinación de correspondencia es un mensaje de correo electrónico o un fax.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad devuelve <b>True</b> si los documentos de combinación se envían como datos adjuntos cuando el destino de combinación de correspondencia es un mensaje de correo electrónico o un fax y <b>False</b> si no. Establezca el valor de la propiedad en <b>True</b> o <b>False</b> para habilitar o deshabilitar la funcionalidad.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta propiedad devuelve <b>true</b> si los documentos de combinación se envían como datos adjuntos cuando el destino de la combinación de correspondencia es un mensaje de correo electrónico o un fax, y <b>false</b> en caso contrario. Establezca el valor de la propiedad en <b>true</b> o <b>false</b> para habilitar o deshabilitar la funcionalidad.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailFormat">
@@ -553,18 +516,16 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdMailMergeMailFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeMailFormat" /> constante que representa el formato utilizado cuando el destino de combinación de correspondencia es un mensaje de correo electrónico.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeMailFormat" /> constante que representa el formato utilizado cuando el destino de combinación de correspondencia es un mensaje de correo electrónico.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>WdMailMergeMailFormat</b> puede ser una de las siguientes constantes <b>WdMailMergeMailFormat</b> :</para>
           <para>
-            <b>wdMailFormatHTML</b> envía documentos de correo electrónico de combinación de correspondencia utilizando el formato HTML.</para>
+            <b>wdMailFormatHTML</b> Envía documentos de correo electrónico de combinación de correspondencia con formato HTML.</para>
           <para>
-            <b>wdMailFormatPlainText</b> envía documentos de correo electrónico de combinación de correspondencia utilizando texto sin formato.</para>
-          <para>La propiedad <b>MailFormat</b> se omite si la <see cref="P:Microsoft.Office.Interop.Word.MailMerge.MailAsAttachment" /> propiedad está establecida en <b>True</b>.</para>
-          <para />
-        </remarks>
+            <b>wdMailFormatPlainText</b> Envía documentos de correo electrónico de combinación de correspondencia usando texto sin formato.</para>
+          <para>La propiedad <b>MailFormat</b> se omite si la <see cref="P:Microsoft.Office.Interop.Word.MailMerge.MailAsAttachment" /> propiedad está establecida en <b>true</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailSubject">
@@ -626,8 +587,7 @@
       <Docs>
         <summary>Devuelve o establece el tipo de documento principal de combinación de correspondencia.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>MainDocumentType</b> puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeMainDocType" /> constantes:</para>
+        <remarks><para>La propiedad <b>MainDocumentType</b> puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeMainDocType" /> constantes:</para>
           <para>
             <b>wdCatalog</b>
           </para>
@@ -653,8 +613,7 @@
             <b>wdNotAMergeDocument</b>
           </para>
           <para>Si se establece esta propiedad para un documento que ya es un documento principal, se quita el origen de datos adjunto.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenDataSource">
@@ -694,66 +653,50 @@
         <Parameter Name="SubType" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>String</b> requerida. El nombre de archivo del origen de datos. Puede especificar un archivo de Microsoft Query (.qry) en lugar de especificar un origen de datos, una cadena de conexión y una cadena de consulta.</param>
-        <param name="Format">
-          <b>Objeto</b>de opcional. El convertidor de archivos que se usó para abrir el documento. Puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> constantes. Para especificar un formato de archivo externo, utilice la <see cref="P:Microsoft.Office.Interop.Word.FileConverter.OpenFormat" /> propiedad con el <see cref="T:Microsoft.Office.Interop.Word.FileConverter" /> objeto para determinar el valor que se debe usar con este argumento. <b>WdOpenFormat</b> puede ser una de las siguientes constantes:<b>wdOpenFormatAllWord</b><b>wdOpenFormatAuto predeterminado.</b><b>wdOpenFormatDocument</b><b>wdOpenFormatEncodedText</b><b>wdOpenFormatRTF</b><b>wdOpenFormatTemplate</b><b>wdOpenFormatText</b><b>wdOpenFormatUnicodeText</b><b>wdOpenFormatWebPages</b><b>wdOpenFormatXML</b></param>
-        <param name="ConfirmConversions">
-          <b>Objeto</b>de opcional. <b>True</b> para mostrar el cuadro de diálogo Convertir archivo si el archivo no está en formato de Microsoft Word.</param>
-        <param name="ReadOnly">
-          <b>Objeto</b>de opcional. <b>True</b> para abrir el origen de datos como de solo lectura.</param>
-        <param name="LinkToSource">
-          <b>Objeto</b>de opcional. <b>True</b> para realizar la consulta especificada por <paramref name="Connection" /> y <paramref name="SQLStatement" /> cada vez que se abre el documento principal.</param>
-        <param name="AddToRecentFiles">
-          <b>Objeto</b>de opcional. <b>True</b> para agregar el nombre de archivo a la lista de archivos usados recientemente en la parte inferior del menú Archivo.</param>
-        <param name="PasswordDocument">
-          <b>Objeto</b>de opcional. La contraseña que usó para abrir el origen de datos. (Ver los comentarios abajo).</param>
-        <param name="PasswordTemplate">
-          <b>Objeto</b>de opcional. La contraseña que usó para abrir la plantilla. (Ver los comentarios abajo).</param>
-        <param name="Revert">
-          <b>Objeto</b>de opcional. Controla lo que ocurre si <paramref name="Name" /> es el nombre de archivo de un documento abierto. <b>True</b> para descargar los cambios no guardados en el documento abierto y volver a abrir el archivo; <b>False</b> para activar el documento abierto.</param>
-        <param name="WritePasswordDocument">
-          <b>Objeto</b>de opcional. La contraseña utilizada para guardar los cambios en el documento. (Ver los comentarios abajo).</param>
-        <param name="WritePasswordTemplate">Objeto opcional. La contraseña que se utiliza para guardar los cambios a la plantilla. (Ver los comentarios abajo).</param>
-        <param name="Connection">
-          <b>Objeto</b>de opcional. Un intervalo dentro del cual la consulta especificada por <paramref name="SQLStatement" /> es que se debe realizar. (Vea la sección comentarios a continuación). Cómo especificar el intervalo depende de cómo se recuperan los datos. Para ejemplo: cuando la recuperación de datos a través de Open Database Connectivity (ODBC), especifique una cadena de conexión. Al recuperar datos de Microsoft Excel mediante el intercambio dinámico de datos (DDE), especifique un rango con nombre. Intercambio dinámico de datos (DDE) es una tecnología antigua que no es segura. Si es posible, utilice una alternativa a DDE más segura. Al recuperar datos desde Microsoft Access, especifique la palabra "Tabla" o "Consulta" seguida del nombre de una tabla o consulta.</param>
-        <param name="SQLStatement">
-          <b>Objeto</b>de opcional. Define las opciones de consulta para recuperar datos. (Ver los comentarios abajo).</param>
-        <param name="SQLStatement1">
-          <b>Objeto</b>de opcional. Si la cadena de consulta tiene más de 255 caracteres, <paramref name="SQLStatement" /> especifica la primera parte de la cadena, y <paramref name="SQLStatement1" /> especifica la segunda parte. (Ver los comentarios abajo).</param>
-        <param name="OpenExclusive">
-          <b>Objeto</b>de opcional. <b>True</b> para abrir exclusivamente.</param>
-        <param name="SubType">
-          <b>Objeto</b>de opcional. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.WdMergeSubType" /> constantes: wdMergeSubTypeAccess 1wdMergeSubTypeOAL 2wdMergeSubTypeOLEDBText 5wdMergeSubTypeOLEDBWord 3wdMergeSubTypeOther 0wdMergeSubTypeOutlook 6wdMergeSubTypeWord 7wdMergeSubTypeWord2000 8wdMergeSubTypeWorks 4</param>
+        <param name="Name"><b>String</b> requerida. El nombre de archivo del origen de datos. Se puede especificar un archivo de Microsoft Query (.qry) en lugar de especificar un origen de datos, una cadena de conexión y una cadena de consulta.</param>
+        <param name="Format"><b>Objeto</b>opcional. El convertidor de archivos que se usó para abrir el documento. Puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> constantes. Para especificar un formato de archivo externo, utilice <see cref="P:Microsoft.Office.Interop.Word.FileConverter.OpenFormat" /> la propiedad con <see cref="T:Microsoft.Office.Interop.Word.FileConverter" /> el objeto para determinar el valor que se va a usar con este argumento. <b>WdOpenFormat</b> puede ser una de las siguientes constantes:<b>wdOpenFormatAllWord</b><b>wdOpenFormatAuto predeterminada.</b> <b>wdOpenFormatDocument</b> <b>wdOpenFormatEncodedText</b> <b>wdOpenFormatRTF</b> <b>wdOpenFormatTemplate</b> <b>wdOpenFormatText</b> <b>wdOpenFormatUnicodeText</b> <b>wdOpenFormatWebPages</b> <b>wdOpenFormatXML</b></param>
+        <param name="ConfirmConversions"><b>Objeto</b>opcional. <b>True</b> para mostrar el cuadro de diálogo Convertir archivo si el archivo no está en formato de Microsoft Word.</param>
+        <param name="ReadOnly"><b>Objeto</b>opcional. <b>True</b> para abrir el origen de datos como de solo lectura.</param>
+        <param name="LinkToSource"><b>Objeto</b>opcional. <b>True</b> para realizar la consulta especificada por <paramref name="Connection" /> y <paramref name="SQLStatement" /> cada vez que se abre el documento principal.</param>
+        <param name="AddToRecentFiles"><b>Objeto</b>opcional. <b>True</b> para agregar el nombre de archivo a la lista de archivos usados recientemente en la parte inferior del menú Archivo.</param>
+        <param name="PasswordDocument"><b>Objeto</b>opcional. La contraseña que se usa para abrir el origen de datos. (Ver los comentarios abajo).</param>
+        <param name="PasswordTemplate"><b>Objeto</b>opcional. La contraseña que se usa para abrir la plantilla. (Ver los comentarios abajo).</param>
+        <param name="Revert"><b>Objeto</b>opcional. Controla lo que ocurre <paramref name="Name" /> si es el nombre de archivo de un documento abierto. <b>True</b> para descargar los cambios no guardados en el documento abierto y volver a abrir el archivo; <b>False</b> para activar el documento abierto.</param>
+        <param name="WritePasswordDocument"><b>Objeto</b>opcional. La cadena que se usa para guardar cambios en el documento. (Ver los comentarios abajo).</param>
+        <param name="WritePasswordTemplate">Objeto opcional. La contraseña que se usa para guardar los cambios realizados en la plantilla. (Ver los comentarios abajo).</param>
+        <param name="Connection"><b>Objeto</b>opcional. Un rango en el que se va a <paramref name="SQLStatement" /> realizar la consulta especificada por. (Vea los comentarios a continuación). La forma en que se especifica el intervalo depende de cómo se recuperan los datos. Por ejemplo: cuando se recuperan datos mediante conectividad abierta de bases de datos (ODBC), se especifica una cadena de conexión. Cuando se recuperan datos de Microsoft Excel mediante el intercambio dinámico de datos (DDE), se especifica un rango con nombre. El intercambio dinámico de datos (DDE) es una tecnología antigua que no es segura. Si es posible, use una alternativa más segura a DDE. Cuando se recuperan datos de Microsoft Access, se especifica la palabra "tabla" o "consulta" seguida del nombre de una tabla o consulta.</param>
+        <param name="SQLStatement"><b>Objeto</b>opcional. Define las opciones de consulta para recuperar datos. (Ver los comentarios abajo).</param>
+        <param name="SQLStatement1"><b>Objeto</b>opcional. Si la cadena de consulta tiene más de 255 caracteres <paramref name="SQLStatement" /> , especifica la primera parte de la cadena y <paramref name="SQLStatement1" /> especifica la segunda parte. (Ver los comentarios abajo).</param>
+        <param name="OpenExclusive"><b>Objeto</b>opcional. <b>True</b> para abrir exclusivamente.</param>
+        <param name="SubType"><b>Objeto</b>opcional. Puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdMergeSubType" /> constantes: WdMergeSubTypeAccess 1WdMergeSubTypeOAL 2WdMergeSubTypeOLEDBText 5WdMergeSubTypeOLEDBWord 3WdMergeSubTypeOther 0WdMergeSubTypeOutlook 6wdMergeSubTypeWord 7wdMergeSubTypeWord2000 8wdMergeSubTypeWorks 4</param>
         <summary>Adjunta un origen de datos al documento especificado, que se convierte en un documento principal si aún no lo es.</summary>
-        <remarks>
-          <para>Para determinar las cadenas de consulta y una conexión ODBC, establezca las opciones de consulta manualmente y utilice la <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.QueryString" /> propiedad para devolver la cadena de conexión. En la siguiente tabla incluye algunas palabras clave SQL usado habitualmente.</para>
+        <remarks><para>Para determinar las cadenas de conexión y de consulta ODBC, establezca las opciones de consulta manualmente <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.QueryString" /> y use la propiedad para devolver la cadena de conexión. La tabla a continuación incluye algunas de las palabras clave de SQL que se usan habitualmente.</para>
           <list type="table">
             <item>
-              <description>El nombre del origen de datos ODBC</description>de 
-              <description>DSN</description></item>
+              <description>DSN</description>
+              <description>El nombre del origen de datos ODBC</description>
+            </item>
             <item>
               <description>UID</description>
-              <description>el identificador de inicio de sesión de usuario</description>
+              <description>El id. de inicio de sesión del usuario</description>
             </item>
             <item>
               <description>PWD</description>
-              <description>la contraseña especificada por el usuario</description>
+              <description>La contraseña especificada por el usuario</description>
             </item>
             <item>
               <description>DBQ</description>
-              <description>el nombre de archivo de base de datos</description>
+              <description>El nombre de archivo de la base de datos</description>
             </item>
             <item>
-              <description>Archivo</description>
+              <description>FIL</description>
               <description>El tipo de archivo</description>
             </item>
           </list>
-          <para>Evitar con la cuenta de inicio de sesión de administrador (sa) de sistema integrado. En su lugar, aumentar la seguridad del sistema los miembros de los administradores de la función fija de servidor sysadmin y que utilicen sus propias cuentas para iniciar la sesión. Utilice sa sólo cuando no hay ninguna otra forma de inicio de sesión. Para impedir el acceso no autorizado a través de la cuenta de inicio de sesión de sa, debe asignar dicha cuenta una contraseña segura y única.</para>
-          <para>Cuando sea posible, utilice la autenticación de Windows (también denominada una conexión de confianza), que usa una cuenta de usuario de Windows para conectarse a SQL Server. Cuando un usuario se conecta a través de una cuenta de usuario de Windows, SQL Server usa información en el sistema operativo Windows para validar el nombre de cuenta y la contraseña. Antes de poder usar la autenticación de Windows, un administrador del servidor debe configurar SQL Server para usar este modo de autenticación. Si la autenticación de Windows no está disponible, evite guardar información de inicio de sesión de los usuarios. Es más seguro para que los usuarios escriban su información de inicio de sesión cada vez que inicien sesión.</para>
-          <para>Evitar utilizando contraseñas codificado de forma rígida en sus aplicaciones. Si se requiere una contraseña en un procedimiento, solicite al usuario la contraseña, almacenar en una variable y, a continuación, usar la variable en el código.</para>
-          <para />
-        </remarks>
+          <para>Evite usar la cuenta de inicio de sesión de administrador del sistema integrada (SA). En lugar de eso, convierta a los administradores del sistema en miembros del rol fijo de servidor sysadmin y pídales que utilicen sus cuentas propias para iniciar sesión. Use las cuentas sa solo cuando no haya otra forma de iniciar sesión. Para impedir el acceso no autorizado con las cuentas de inicio de sesión sa, asigne a esas cuentas una contraseña única y segura.</para>
+          <para>Cuando sea posible, utilice la autenticación de Windows (también conocida como conexión de confianza), que usa una cuenta de usuario de Windows para conectarse a SQL Server. Cuando un usuario se conecta con una cuenta de usuario de Windows, SQL Server usa información del sistema operativo de Windows para validar el nombre de la cuenta y la contraseña. Para poder usar la autenticación de Windows, el administrador del servidor debe configurar SQL Server para utilizar este modo de autenticación. Si no se encontrara disponible la autenticación de Windows, no guarde la información de inicio de sesión de los usuarios. Es más seguro que los usuarios escriban su información de inicio de sesión cada vez que inicien sesión.</para>
+          <para>Evite usar contraseñas dentro del código en sus aplicaciones. Si se requiere una contraseña en un procedimiento, solicítesela al usuario, almacénela en una variable y utilice la variable en el código.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenDataSource2000">
@@ -844,34 +787,21 @@
         <Parameter Name="OpenExclusive" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>String</b> requerida. El nombre de archivo del registro inicial.</param>
-        <param name="Format">
-          <b>Objeto</b>de opcional. El convertidor de archivos que se usó para abrir el documento. Puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> constantes. Para especificar un formato de archivo externo, utilice la <see cref="P:Microsoft.Office.Interop.Word.FileConverter.OpenFormat" /> (propiedad) con un <see cref="T:Microsoft.Office.Interop.Word.FileConverter" /> objeto para determinar el valor que se debe usar con este argumento. <b>WdOpenFormat</b> puede ser una de las siguientes constantes:<b>wdOpenFormatAllWord</b><b>wdOpenFormatAuto predeterminado.</b><b>wdOpenFormatDocument</b><b>wdOpenFormatEncodedText</b><b>wdOpenFormatRTF</b><b>wdOpenFormatTemplate</b><b>wdOpenFormatText</b><b>wdOpenFormatUnicodeText</b><b>wdOpenFormatWebPages</b><b>wdOpenFormatXML</b></param>
-        <param name="ConfirmConversions">
-          <b>Objeto</b>de opcional. <b>True</b> para mostrar el cuadro de diálogo Convertir archivo si el archivo no está en formato de Microsoft Word.</param>
-        <param name="ReadOnly">
-          <b>Objeto</b>de opcional. <b>True</b> para abrir el origen del encabezado en base de sólo lectura.</param>
-        <param name="AddToRecentFiles">
-          <b>Objeto</b>de opcional. <b>True</b> para agregar el nombre de archivo a la lista de archivos usados recientemente en la parte inferior del menú Archivo.</param>
-        <param name="PasswordDocument">
-          <b>Objeto</b>de opcional. La contraseña requerida para abrir el registro inicial. (Ver los comentarios abajo).</param>
-        <param name="PasswordTemplate">
-          <b>Objeto</b>de opcional. La contraseña requerida para abrir la plantilla del registro inicial. (Ver los comentarios abajo).</param>
-        <param name="Revert">
-          <b>Objeto</b>de opcional. Controla lo que ocurre si <paramref name="Name" /> es el nombre de archivo de un documento abierto. <b>True</b> para descargar los cambios no guardados en el documento abierto y volver a abrir el archivo; <b>False</b> para activar el documento abierto.</param>
-        <param name="WritePasswordDocument">
-          <b>Objeto</b>de opcional. La contraseña requerida para guardar los cambios realizados en el registro inicial del documento. (Ver los comentarios abajo).</param>
-        <param name="WritePasswordTemplate">
-          <b>Objeto</b>de opcional. La contraseña requerida para guardar los cambios realizados en la plantilla del registro inicial. (Ver los comentarios abajo).</param>
-        <param name="OpenExclusive">
-          <b>Objeto</b>de opcional. True para abrir exclusivamente.</param>
+        <param name="Name"><b>String</b> requerida. El nombre de archivo del registro inicial.</param>
+        <param name="Format"><b>Objeto</b>opcional. El convertidor de archivos que se usó para abrir el documento. Puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> constantes. Para especificar un formato de archivo externo, utilice <see cref="P:Microsoft.Office.Interop.Word.FileConverter.OpenFormat" /> la propiedad con <see cref="T:Microsoft.Office.Interop.Word.FileConverter" /> un objeto para determinar el valor que se va a usar con este argumento. <b>WdOpenFormat</b> puede ser una de las siguientes constantes:<b>wdOpenFormatAllWord</b><b>wdOpenFormatAuto predeterminada.</b> <b>wdOpenFormatDocument</b> <b>wdOpenFormatEncodedText</b> <b>wdOpenFormatRTF</b> <b>wdOpenFormatTemplate</b> <b>wdOpenFormatText</b> <b>wdOpenFormatUnicodeText</b> <b>wdOpenFormatWebPages</b> <b>wdOpenFormatXML</b></param>
+        <param name="ConfirmConversions"><b>Objeto</b>opcional. <b>True</b> para mostrar el cuadro de diálogo Convertir archivo si el archivo no está en formato de Microsoft Word.</param>
+        <param name="ReadOnly"><b>Objeto</b>opcional. <b>True</b> para abrir el origen del encabezado en base de sólo lectura.</param>
+        <param name="AddToRecentFiles"><b>Objeto</b>opcional. <b>True</b> para agregar el nombre de archivo a la lista de archivos usados recientemente en la parte inferior del menú Archivo.</param>
+        <param name="PasswordDocument"><b>Objeto</b>opcional. La contraseña requerida para abrir el registro inicial. (Ver los comentarios abajo).</param>
+        <param name="PasswordTemplate"><b>Objeto</b>opcional. La contraseña requerida para abrir la plantilla del registro inicial. (Ver los comentarios abajo).</param>
+        <param name="Revert"><b>Objeto</b>opcional. Controla lo que ocurre <paramref name="Name" /> si es el nombre de archivo de un documento abierto. <b>True</b> para descargar los cambios no guardados en el documento abierto y volver a abrir el archivo; <b>False</b> para activar el documento abierto.</param>
+        <param name="WritePasswordDocument"><b>Objeto</b>opcional. La contraseña requerida para guardar los cambios realizados en el registro inicial del documento. (Ver los comentarios abajo).</param>
+        <param name="WritePasswordTemplate"><b>Objeto</b>opcional. La contraseña requerida para guardar los cambios realizados en la plantilla del registro inicial. (Ver los comentarios abajo).</param>
+        <param name="OpenExclusive"><b>Objeto</b>opcional. True para abrir exclusivamente.</param>
         <summary>Adjunta un registro inicial de combinación de correspondencia al documento especificado.</summary>
-        <remarks>
-          <para>Cuando se adjunta un origen de encabezado, el primer registro en el origen de encabezado se usa en lugar del registro inicial en el origen de datos.</para>
-          <para>Evitar utilizando contraseñas codificado de forma rígida en sus aplicaciones. Si se requiere una contraseña en un procedimiento, solicite al usuario la contraseña, almacenar en una variable y, a continuación, usar la variable en el código.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cuando se adjunta un registro inicial, se usa el primer registro en el registro inicial en lugar del registro inicial en el origen de datos.</para>
+          <para>Evite usar contraseñas dentro del código en sus aplicaciones. Si se requiere una contraseña en un procedimiento, solicítesela al usuario, almacénela en una variable y utilice la variable en el código.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenHeaderSource2000">
@@ -978,10 +908,8 @@
       <Docs>
         <summary>Devuelve o establece una <b>cadena</b> correspondiente al título de un botón personalizado en la completar el paso de la combinación (paso 6) del Asistente para combinar correspondencia.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cuando un usuario hace clic en el botón personalizado, se produce el evento <b>MailMergeWizardSendToCustom</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Cuando un usuario hace clic en el botón personalizado, se produce el evento <b>MailMergeWizardSendToCustom</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowWizard">
@@ -1012,20 +940,13 @@
         <Parameter Name="ShowMergeStep" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="InitialState">
-          <b>Objeto</b>requerido. Número de paso del Asistente para combinar correspondencia que se debe mostrar.</param>
-        <param name="ShowDocumentStep">
-          <b>Objeto</b>de opcional. <b>True</b> mantiene el paso "Seleccionar tipo de documento" en la secuencia de pasos de la combinación de correspondencia. <b>False</b> quita el paso uno.</param>
-        <param name="ShowTemplateStep">
-          <b>Objeto</b>de opcional. <b>True</b> mantiene el paso "Seleccione el documento inicial" en la secuencia de pasos de la combinación de correspondencia. <b>False</b> quita el paso dos.</param>
-        <param name="ShowDataStep">
-          <b>Objeto</b>de opcional. <b>True</b> mantiene el paso "Seleccionar destinatarios" en la secuencia de pasos de la combinación de correspondencia. <b>False</b> quita el paso tres.</param>
-        <param name="ShowWriteStep">
-          <b>Objeto</b>de opcional. <b>True</b> mantiene el paso "Escriba la carta" en la secuencia de pasos de la combinación de correspondencia. <b>False</b> quita el paso cuatro.</param>
-        <param name="ShowPreviewStep">
-          <b>Objeto</b>de opcional. <b>True</b> mantiene el paso "Vista previa de las cartas" en la secuencia de pasos de la combinación de correspondencia. <b>False</b> quita el paso cinco.</param>
-        <param name="ShowMergeStep">
-          <b>Objeto</b>de opcional. <b>True</b> mantiene el paso "Completar la combinación" en la secuencia de pasos de la combinación de correspondencia. <b>False</b> quita el paso seis.</param>
+        <param name="InitialState"><b>Objeto</b>requerido. Número de paso del Asistente para combinar correspondencia que se debe mostrar.</param>
+        <param name="ShowDocumentStep"><b>Objeto</b>opcional. <b>True</b> mantiene el paso "Seleccionar tipo de documento" en la secuencia de pasos de la combinación de correspondencia. <b>False</b> quita el paso uno.</param>
+        <param name="ShowTemplateStep"><b>Objeto</b>opcional. <b>True</b> mantiene el paso "seleccionar documento de inicio" en la secuencia de pasos de la combinación de correspondencia; <b>False</b> quita el paso dos.</param>
+        <param name="ShowDataStep"><b>Objeto</b>opcional. <b>True</b> mantiene el paso "seleccionar destinatarios" en la secuencia de pasos de la combinación de correspondencia; <b>False</b> quita el paso tres.</param>
+        <param name="ShowWriteStep"><b>Objeto</b>opcional. <b>True</b> mantiene el paso "escriba la carta" en la secuencia de pasos de la combinación de correspondencia; <b>False</b> quita el paso cuatro.</param>
+        <param name="ShowPreviewStep"><b>Objeto</b>opcional. <b>True</b> mantiene el paso "vista previa de las cartas" en la secuencia de pasos de la combinación de correspondencia; <b>False</b> quita el paso cinco.</param>
+        <param name="ShowMergeStep"><b>Objeto</b>opcional. <b>True</b> mantiene el paso "completar la combinación" en la secuencia de pasos de la combinación de correspondencia; <b>False</b> quita el paso seis.</param>
         <summary>Muestra el Asistente para combinar correspondencia en un documento.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1055,8 +976,7 @@
       <Docs>
         <summary>Devuelve el estado actual de una operación de combinación de correspondencia.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>State</b> puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeState" /> constantes:</para>
+        <remarks><para>La propiedad <b>State</b> puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeState" /> constantes:</para>
           <para>
             <b>wdDataSource</b>
           </para>
@@ -1073,10 +993,9 @@
             <b>wdMainDocumentOnly</b>
           </para>
           <para>
-            <b> wdNormalDocument</b>
+            <b>wdNormalDocument</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SuppressBlankLines">
@@ -1105,12 +1024,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina si se suprimen las líneas en blanco cuando los campos de combinación de correspondencia en un documento principal de combinación de correspondencia están vacíos.</summary>
+        <summary>Determina si se eliminan las líneas en blanco cuando los campos de combinación de correspondencia en un documento principal de combinación de correspondencia están vacíos.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad devuelve <b>True</b> si se eliminan las líneas en blanco y <b>False</b> si no. Establezca el valor de la propiedad en <b>True</b> o <b>False</b> para habilitar o deshabilitar la funcionalidad.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta propiedad devuelve <b>true</b> si se eliminan las líneas en blanco y <b>false</b> en caso contrario. Establezca el valor de la propiedad en <b>true</b> o <b>false</b> para habilitar o deshabilitar la funcionalidad.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseAddressBook">
@@ -1172,11 +1089,9 @@
       <Docs>
         <summary>Determina si se muestran los nombres de campo de combinación en un documento principal de combinación de correspondencia.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad devuelve <b>True</b> si se muestran los nombres de campo de combinación en un documento principal de combinación de correspondencia y <b>False</b> si se muestra la información del registro de datos actual.</para>
-          <para>Si el documento activo no es un documento principal de combinación de correspondencia, esta propiedad produce un error. Para ver los nombres de campo de combinación o sus resultados, establezca la <see cref="P:Microsoft.Office.Interop.Word.View.ShowFieldCodes" /> propiedad en <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta propiedad devuelve <b>true</b> si se muestran los nombres de campo de combinación en un documento principal de combinación de correspondencia y <b>false</b> si se muestra la información del registro de datos actual.</para>
+          <para>Si el documento activo no es un documento principal de combinación de correspondencia, esta propiedad genera un error. Para ver los nombres de los campos de combinación o sus <see cref="P:Microsoft.Office.Interop.Word.View.ShowFieldCodes" /> resultados, establezca la propiedad en <b>false</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WizardState">
@@ -1205,12 +1120,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <b>entero</b> que indica el paso actual del Asistente para combinar correspondencia para un documento.</summary>
+        <summary>Devuelve o establece un <b>valor de tipo Integer</b> que indica el paso del Asistente para combinar correspondencia actual para un documento.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El método <b>WizardState</b> devuelve un número que indica el paso actual del Asistente para combinar correspondencia; un cero (0) significa que el Asistente para combinar correspondencia está cerrado.</para>
-          <para />
-        </remarks>
+        <remarks><para>El método <b>WizardState</b> devuelve un número que equivale al paso actual del Asistente para combinar correspondencia; un cero (0) significa que el Asistente para combinar correspondencia está cerrado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

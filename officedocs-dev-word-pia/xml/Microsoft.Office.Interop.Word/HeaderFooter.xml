@@ -1,13 +1,5 @@
 <Type Name="HeaderFooter" FullName="Microsoft.Office.Interop.Word.HeaderFooter">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3faeda5db3d1edc0e95dabebc04e03aa6a82943f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674289" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface HeaderFooter" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a143517844b5f5cef61ab0c3f18904999b976958" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146734" /></Metadata><TypeSignature Language="C#" Value="public interface HeaderFooter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HeaderFooter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.HeaderFooter" />
   <TypeSignature Language="VB.NET" Value="Public Interface HeaderFooter" />
@@ -27,10 +19,15 @@
   </Attributes>
   <Docs>
     <summary>Representa un solo encabezado o pie de página.</summary>
-    <remarks>
-      <para>El objeto <b>HeaderFooter</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.HeadersFooters" /> colección. La colección <b>HeadersFooters</b> incluye todos los encabezados y pies de página en la sección del documento especificado.</para> Usar <b>encabezados</b>de 
-      <para>(<paramref name="index" />) o <b>pies de página</b>(<paramref name="index" />), donde <paramref name="index" /> es uno de los <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" /> constantes (<b>wdHeaderFooterEvenPages</b>, <b>wdHeaderFooterFirstPage</b>o <b>wdHeaderFooterPrimary</b>), para devolver un único objeto <b>HeaderFooter</b> .</para><para>También puede devolver un solo objeto <b>HeaderFooter</b> mediante el uso de la <see cref="P:Microsoft.Office.Interop.Word.Selection.HeaderFooter" /> (propiedad) con un <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto.</para><para><b>Nota</b>: no se puede agregar objetos <b>HeaderFooter</b> a la colección <b>HeadersFooters</b> .</para><para>Usar la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" /> propiedad con el <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> objeto para especificar una primera página distinta.</para> Uso de 
-      <para>el <see cref="P:Microsoft.Office.Interop.Word.PageSetup.OddAndEvenPagesHeaderFooter" /> (propiedad) con el objeto <b>PageSetup</b> para especificar diferente impar e incluso los encabezados de página y pies de página. Si la propiedad <b>OddAndEvenPagesHeaderFooter</b> es <b>True</b>, puede devolver un encabezado o pie de página utilizando <b>wdHeaderFooterPrimary</b>y puede devolver un encabezado o pie de página par mediante <b>wdHeaderFooterEvenPages</b>.</para><para>Usar la <see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" /> método con el <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> objeto para agregar un número de página a un encabezado o pie de página.</para><para /></remarks>
+    <remarks><para>El objeto <b>HeaderFooter</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.HeadersFooters" /> colección. La colección <b>HeadersFooters</b> incluye todos los encabezados y pies de página en la sección del documento especificado.</para>
+      <para>Use <b>encabezados</b>(<paramref name="index" />) o <b>pies de página</b>(<paramref name="index" />), donde <paramref name="index" /> es una de las <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" /> constantes (<b>wdHeaderFooterEvenPages</b>, <b>wdHeaderFooterFirstPage</b>o <b>wdHeaderFooterPrimary</b>), para devolver un solo <b> Objeto HeaderFooter</b> .</para>
+      <para>También puede devolver un solo objeto <b>HeaderFooter</b> mediante la <see cref="P:Microsoft.Office.Interop.Word.Selection.HeaderFooter" /> propiedad con un <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto.</para>
+      <para>
+        <b>Nota</b>: no puede agregar objetos <b>HeaderFooter</b> a la colección <b>HeadersFooters</b> .</para>
+      <para>Use la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" /> propiedad con el <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> objeto para especificar una primera página diferente.</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.OddAndEvenPagesHeaderFooter" /> propiedad con el objeto <b>PageSetup</b> para especificar los distintos encabezados y pies de página pares e impares. Si la propiedad <b>OddAndEvenPagesHeaderFooter</b> es <b>True</b>, puede devolver un encabezado impar o pie de página utilizando <b>wdHeaderFooterPrimary</b> y puede devolver un encabezado o pie de página par mediante <b>wdHeaderFooterEvenPages</b>.</para>
+      <para>Use el <see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" /> método con el <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> objeto para agregar un número de página a un encabezado o pie de página.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,9 +83,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Exists">
@@ -117,13 +114,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el texto especificado <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> objeto existe.</summary>
+        <summary><b>True</b> si existe el <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El encabezado principal y el pie de página existen en todos los documentos nuevos de forma predeterminada. Use este método para determinar si existe un encabezado de primera página o de página impar o pie de página. También puede usar el <see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" /> o <see cref="P:Microsoft.Office.Interop.Word.PageSetup.OddAndEvenPagesHeaderFooter" /> (propiedad) para devolver o establecer el número de encabezados y pies de página en la sección o del documento especificado.</para>
-          <para />
-        </remarks>
+        <remarks><para>El encabezado principal y el pie de página existan en todos los documentos nuevos de forma predeterminada. Use este método para determinar si existe un encabezado de primera página o de página impar o pie de página. También puede usar la <see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" /> propiedad o <see cref="P:Microsoft.Office.Interop.Word.PageSetup.OddAndEvenPagesHeaderFooter" /> para devolver o establecer el número de encabezados y pies de página de la sección o documento especificado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -149,7 +143,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdHeaderFooterIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" /> constante que representa el encabezado o pie de página de un documento o sección.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" /> constante que representa el encabezado o pie de página especificado en un documento o una sección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -177,8 +171,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el texto especificado <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> objeto es un encabezado.</summary>
+        <summary><b>True</b> si el objeto <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> especificado es un encabezado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -209,14 +202,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el encabezado especificado o el pie de página está vinculado al correspondiente encabezado o pie de página en la sección anterior. Cuando se vincula un encabezado o pie de página, su contenido es los mismos que en el anterior encabezado o pie de página.</summary>
+        <summary><b>True</b> si el encabezado o el pie de página está vinculado al encabezado o pie de página correspondiente de la sección anterior. Cuando un encabezado o un pie de página es vinculado, su contenido es el mismo que el del encabezado o pie de página anterior.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Debido a que la propiedad <b>LinkToPrevious</b> se establece en <b>True</b> de forma predeterminada, puede agregar encabezados, pies de página, y los números de página a todo el documento al trabajar con los encabezados, pies de página y números de página en la primera sección.</para>
-          <para>La <b>LinkToPrevious</b> (propiedad) se aplica individualmente a cada encabezado o pie de página. Por ejemplo, puede establecerse en <b>True</b> la propiedad <b>LinkToPrevious</b> para el encabezado de página numerada, pero en <b>False</b> para el pie de página numerada.</para>
-          <para />
-        </remarks>
+        <remarks><para>Puesto que la propiedad <b>LinkToPrevious</b> está establecida en <b>True</b> de forma predeterminada, puede agregar encabezados, pies de página y números de página a todo el documento al trabajar con todos ellos en la primera sección.</para>
+          <para>La propiedad <b>LinkToPrevious</b> se aplica a cada uno de los encabezados y pies de página individualmente. Por ejemplo, el valor de la propiedad <b>LinkToPrevious</b> podría establecerse en <b>True</b> para el encabezado de las páginas pares, pero en <b>False</b> para los pies de página de dichas páginas.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageNumbers">
@@ -242,7 +232,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.PageNumbers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> colección que representa todos los campos de número de página incluidos en el encabezado o pie de página.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> colección que representa todos los campos de número de página incluidos en el encabezado o pie de página especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -298,12 +288,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa la parte de un documento que está incluida en el objeto especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa la parte de un documento incluida en el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para obtener información acerca de la devolución de un intervalo de un documento o la devolución de un intervalo de formas de una colección de formas, vea el <see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" /> (método).</para>
-          <para />
-        </remarks>
+        <remarks><para>Para obtener información sobre la devolución de un intervalo de un documento o la devolución de un intervalo de formas de una <see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" /> colección de formas, vea el método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shapes">
@@ -329,12 +317,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> colección que representa todos los <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objetos en el encabezado o pie de página. En la colección pueden incluirse dibujos, formas, objetos OLE, controles ActiveX, objetos de texto y llamadas.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> colección que representa todos los <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objetos del encabezado o pie de página especificado. En la colección pueden incluirse dibujos, formas, objetos OLE, controles ActiveX, objetos de texto y llamadas.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cuando se aplica a un <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> de objetos, la propiedad <b>Shapes</b> devuelve todos los objetos de <b>forma</b> que se encuentran en todos los encabezados y pies de página en el documento.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cuando se aplica a <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> un objeto, la propiedad <b>Shapes</b> devuelve todos los objetos <b>Shape</b> encontrados en todos los encabezados y pies de página del documento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

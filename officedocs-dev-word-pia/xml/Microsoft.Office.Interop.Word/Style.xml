@@ -1,13 +1,5 @@
 <Type Name="Style" FullName="Microsoft.Office.Interop.Word.Style">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f00a0a687c5ad4964390a068d041ec8490b3eecf" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675342" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Style" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="74f93bf5a3bfe99659200d0b7c65cb0b82d3670e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146118" /></Metadata><TypeSignature Language="C#" Value="public interface Style" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Style" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Style" />
   <TypeSignature Language="VB.NET" Value="Public Interface Style" />
@@ -27,10 +19,12 @@
   </Attributes>
   <Docs>
     <summary>Representa un solo estilo integrado o definido por el usuario.</summary>
-    <remarks>
-      <para>El objeto <b>Style</b> incluye los atributos de estilo (fuente, estilo de fuente, el espaciado entre párrafos etc.) como propiedades del objeto <b>Style</b> . El objeto <b>Style</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Styles" /> colección. La colección <b>Styles</b> incluye todos los estilos del documento especificado.</para> Usar <b>estilos</b>de 
-      <para>(<paramref name="index" />), donde <paramref name="index" /> es el nombre del estilo, un <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constante o número de índice, para devolver un solo objeto <b>Style</b> . Deben coincidir exactamente con la ortografía y el espaciado del nombre del estilo, pero no necesariamente su capitalización.</para><para>El número de índice del estilo representa la posición del estilo en la lista de nombres de estilo ordenada alfabéticamente.</para><para>Para aplicar un estilo a un intervalo, párrafo o varios párrafos, establezca la propiedad <b>Style</b> en un nombre de estilo integrado o definido por el usuario.</para> Uso de 
-      <para>el <see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" /> (método) para copiar estilos entre documentos y plantillas. Usar el <see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" /> método para actualizar los estilos del documento activo para que coincida con las definiciones de estilo de la plantilla adjunta. Usar el <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> (método) para abrir una plantilla como un documento de modo que puede modificar los estilos de la plantilla.</para><para /></remarks>
+    <remarks><para>El objeto <b>Style</b> incluye los atributos de estilo (fuente, estilo de fuente, espacio entre párrafos, etc.) como propiedades del objeto <b>Style</b> . El objeto <b>Style</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Styles" /> colección. La colección <b>Styles</b> incluye todos los estilos del documento especificado.</para>
+      <para>Use <b></b>Styles<paramref name="index" />(), <paramref name="index" /> donde es el nombre del estilo <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> , una constante o número de índice, para devolver un solo objeto <b>Style</b> . Usted debe coincidir exactamente con la ortografía y el espaciado del nombre del estilo, pero no necesariamente su capitalización.</para>
+      <para>El número de índice del estilo representa la posición del estilo en la lista ordenada alfabéticamente de nombres de estilo.</para>
+      <para>Para aplicar un estilo a un intervalo, párrafo o varios párrafos, establezca el <b>estilo</b> propiedad de un nombre de estilo integrado o definido por el usuario.</para>
+      <para>Use el <see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" /> método para copiar estilos entre documentos y plantillas. Use el <see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" /> método para actualizar los estilos del documento activo para que se ajusten a las definiciones de estilo de la plantilla adjunta. Use el <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> método para abrir una plantilla como un documento para que pueda modificar los estilos de la plantilla.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,13 +81,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si se vuelve a definir automáticamente el estilo basado en la selección. <b>False</b> si Microsoft Word pide confirmación antes de volver a definir el estilo en función de la selección. <b>Boolean</b> de lectura y escritura.</summary>
+        <summary><b>True</b> si se vuelve a definir automáticamente el estilo basado en la selección. <b>False</b> si Microsoft Word pide confirmación antes de volver a definir el estilo basado en la selección. <b>Boolean</b> de lectura y escritura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Un estilo puede volver a definirse cuando se aplica a una selección que tenga el mismo estilo pero distinto formato manual.</para>
-          <para />
-        </remarks>
+        <remarks><para>Un estilo puede volver a definirse cuando se aplica a una selección que tenga el mismo estilo pero distinto formato manual.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseStyle">
@@ -122,12 +113,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un estilo existente en el que se puede basar el formato del estilo de otra. Lectura/Escritura <b>Objeto</b>.</summary>
+        <summary>Devuelve o establece un estilo existente en el que se puede basar el formato del estilo de otra. Lectura/Escritura<b>Objeto</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para establecer esta propiedad, especifique el nombre local del estilo base, un número entero o un <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constante o un valor object que representa el estilo base.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para establecer esta propiedad, especifique el nombre local del estilo base, un número entero o una <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constante, o bien un objeto que represente el estilo base.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Borders">
@@ -156,7 +145,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Borders" /> colección que representa todos los bordes del objeto especificado.</summary>
+        <summary>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.Borders" /> colección que representa todos los bordes del objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -184,13 +173,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el objeto especificado es uno de los estilos integrados o las etiquetas de título en Microsoft Word. <b>Boolean</b> de sólo lectura.</summary>
+        <summary><b>True</b> si el objeto especificado es una de las etiquetas de título o estilos integrados en Microsoft Word. <b>Booleano</b> de solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Puede especificar los estilos integrados en todos los idiomas mediante el uso de la <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constantes o dentro de un idioma mediante el nombre de estilo para la versión de idioma de Microsoft Word.</para>
-          <para />
-        </remarks>
+        <remarks><para>Puede especificar estilos integrados en todos los idiomas mediante las <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constantes o en un lenguaje con el nombre de estilo para la versión de idioma de Microsoft Word.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -216,11 +202,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. <b>Integer</b> de sólo lectura.</summary>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. <b>Integer</b> de solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -271,12 +257,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve la descripción del estilo especificado. <b>String</b> de sólo lectura.</summary>
+        <summary>Devuelve la descripción del estilo especificado. <b>String</b> de solo lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Por ejemplo, una descripción típica del estilo Título 2 podría ser "Normal + fuente: Arial, 12 pto, negrita, cursiva, espacio anterior 12 pto y posterior 3 pto, conservar con el siguiente, nivel 2."</para>
-          <para />
-        </remarks>
+        <remarks><para>Por ejemplo, una descripción típica del estilo título 2 podría ser "normal + font: Arial, 12 PTO, negrita, cursiva, espacio antes de 12 PTO después de 3 PTO, KeepWithNext, nivel 2".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -305,12 +289,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.Font" /> object que representa el formato de carácter del objeto especificado. <b>Font</b> de lectura y escritura.</summary>
+        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.Font" /> objeto Object que representa el formato de carácter del objeto especificado. <b>Font</b> de lectura y escritura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para establecer esta propiedad, especifique una expresión que devuelve un objeto <b>Font</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Para establecer esta propiedad, especifique una expresión que devuelva un objeto <b>Font</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Frame">
@@ -336,7 +318,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Frame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Frame" /> object que representa el formato del marco para el estilo especificado. Es de solo lectura</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Frame" /> objeto Object que representa el formato del marco para el estilo especificado. Solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -401,13 +383,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el estilo especificado es un estilo integrado que se ha modificado o aplicado en el documento o un nuevo estilo que se ha creado en el documento. De sólo lectura <b>Boolean</b>.</summary>
+        <summary><b>True</b> si el estilo especificado es un estilo integrado que se ha modificado o aplicado en el documento o un nuevo estilo que se ha creado en el documento. De sólo lectura <b>Boolean</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad no indica necesariamente si el estilo está aplicado actualmente a cualquier texto del documento. Por ejemplo, si se elimina el texto que se ha dado formato con un estilo, la propiedad <b>InUse</b> del estilo permanece en <b>True</b>. Para obtener información sobre los estilos integrados que nunca se han utilizado en el documento, esta propiedad devuelve <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta propiedad no indica necesariamente si el estilo se aplica actualmente a cualquier texto del documento. Por ejemplo, si se elimina el texto que se ha dado formato con un estilo, la propiedad <b>InUse</b> del estilo permanece en <b>True</b>. Para los estilos integrados que nunca se han utilizado en el documento, esta propiedad devuelve <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageID">
@@ -436,13 +415,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el idioma del objeto especificado. Lectura y escritura.</summary>
+        <summary>Devuelve o establece el idioma del objeto especificado. Lectura/escritura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Puede ser cualquier <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constante.</para>
-          <para>Algunas de las constantes <b>WdLanguageID</b> no estén disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
-          <para />
-        </remarks>
+        <remarks><para>Puede ser cualquier <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constante.</para>
+          <para>Es posible que algunas de las constantes <b>WdLanguageID</b> no estén disponibles para usted, según la compatibilidad con el idioma (por ejemplo, Inglés estadounidense) que haya seleccionado o instalado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageIDFarEast">
@@ -473,11 +450,9 @@
       <Docs>
         <summary>Devuelve o establece un idioma del este asiático para el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Puede ser cualquier <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constante.</para>
-          <para>Esta es la manera recomendada para devolver o establecer el idioma del texto del este asiático en un documento creado en una versión del este asiático de Microsoft Word.</para>
-          <para />
-        </remarks>
+        <remarks><para>Puede ser cualquier <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constante.</para>
+          <para>Esta es la manera recomendada de devolver o establecer el idioma del Este Asiático del texto de un documento creado en una versión de Microsoft Word para el Este Asiático.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Linked">
@@ -503,15 +478,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor <b>Boolean</b> que indica si un estilo es un estilo vinculado que se puede utilizar para el formato de párrafos y de caracteres. Sólo lectura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>
-            <b>True</b> indica que la opción de tipo de estilo en el cuadro de diálogo Modificar estilo se establece como "Vinculado (párrafo y carácter)".</para>
-          <para />
-        </remarks>
+        <summary>Devuelve o establece un valor <b>Boolean</b> que indica si un estilo es un estilo vinculado que se puede usar para el formato de párrafos y de caracteres. Solo lectura.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>
+            <b>True</b> indica que la opción tipo de estilo del cuadro de diálogo Modificar estilo se establece en "vinculado (párrafo y carácter)".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkStyle">
@@ -540,12 +511,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Establece o devuelve un <b>objeto</b> que representa un vínculo entre un párrafo y un estilo de carácter. Lectura y escritura.</summary>
+        <summary>Establece o devuelve un <b>objeto</b> que representa un vínculo entre un párrafo y un estilo de carácter. Lectura/escritura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Cuando un estilo de carácter y un estilo de párrafo están vinculados, ambos estilos toman el mismo formato de carácter.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cuando un estilo de carácter y un estilo de párrafo están vinculados, ambos estilos toman el mismo formato de carácter.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkToListTemplate">
@@ -570,9 +539,8 @@
         <Parameter Name="ListLevelNumber" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ListTemplate">Requiere <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> objeto. Plantilla de lista a la que está vinculado el estilo.</param>
-        <param name="ListLevelNumber">
-          <b>Objeto</b>de opcional. Número entero que corresponde al nivel de lista al que está vinculado el estilo. Si se omite este argumento, se utiliza el nivel del estilo.</param>
+        <param name="ListTemplate">Objeto <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> requerido. Plantilla de lista a la que está vinculado el estilo.</param>
+        <param name="ListLevelNumber"><b>Objeto</b>opcional. Número entero que corresponde al nivel de lista al que está vinculado el estilo. Si se omite este argumento, se utiliza el nivel del estilo.</param>
         <summary>Vincula el estilo especificado a una plantilla de lista para que el formato del estilo pueda aplicarse a las listas.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -600,7 +568,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el nivel de lista para el estilo especificado. <b>Integer</b> de sólo lectura.</summary>
+        <summary>Devuelve el nivel de lista para el estilo especificado. <b>Integer</b> de solo lectura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -628,13 +596,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object que representa el formato especificado de la lista <see cref="T:Microsoft.Office.Interop.Word.Style" /> objeto.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> objeto Object que representa el formato de lista para <see cref="T:Microsoft.Office.Interop.Word.Style" /> el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Una plantilla de lista incluye todo el formato que define una lista determinada. Cada uno de los siete formatos (excluido Ninguno) encontrado en cada una de las fichas de las viñetas y numeración de cuadro de diálogo (menú Formato) corresponde a una plantilla de lista. Plantillas y documentos también pueden contener colecciones de plantillas de lista.</para>
+        <remarks><para>Una plantilla de lista incluye todo el formato que define una lista concreta. Cada uno de los siete formatos (excepto Ninguno) que se encuentra en cada una de las fichas del cuadro de diálogo Numeración y viñetas (menú Formato) corresponde a una plantilla de lista. Los documentos y las plantillas también pueden contener colecciones de plantillas de lista.</para>
           <para>Si el primer párrafo del intervalo del objeto <b>ListFormat</b> no tiene el formato de una lista, la propiedad <b>ListTemplate</b> devuelve <b>Nothing</b>.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Locked">
@@ -663,8 +629,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el estilo especificado está bloqueado.</summary>
+        <summary><b>True</b> si el estilo especificado está bloqueado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -697,10 +662,8 @@
       <Docs>
         <summary>Devuelve el nombre del estilo integrado en el idioma del usuario. <b>String</b> de lectura y escritura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Al establecer esta propiedad se cambia el nombre de un estilo definido por el usuario o agrega un alias al estilo integrado.</para>
-          <para />
-        </remarks>
+        <remarks><para>Al establecer esta propiedad se cambia el nombre del estilo definido por el usuario o se agrega un alias al estilo integrado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NextParagraphStyle">
@@ -729,12 +692,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el estilo que se aplicará automáticamente a un nuevo párrafo insertado después de un párrafo con formato con el estilo especificado. Lectura/Escritura <b>Objeto</b>.</summary>
+        <summary>Devuelve o establece el estilo que se aplicará automáticamente a un nuevo párrafo insertado después de un párrafo con el estilo especificado. Lectura/Escritura<b>Objeto</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para establecer esta propiedad, especifique el nombre local del estilo siguiente, un número entero o un <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constante o un valor object que representa el estilo siguiente.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para establecer esta propiedad, especifique el nombre local del estilo siguiente, un número entero o una <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constante, o bien un objeto que represente el estilo siguiente.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NoProofing">
@@ -763,8 +724,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> si el corrector ortográfico y gramatical omite el texto con formato con este estilo. <b>Integer</b> de lectura y escritura.</summary>
+        <summary><b>True</b> si el corrector ortográfico y gramatical omite el texto que tiene asignado este estilo. Valor <b>Entero</b> de lectura y escritura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -795,8 +755,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> para que Microsoft Word quite el espaciado entre párrafos que se ha dado formato con el mismo estilo. Lectura y escritura de <b>tipo Boolean</b>.</summary>
+        <summary><b>True</b> para que Microsoft Word quite el espaciado entre párrafos que se ha dado formato con el mismo estilo. Lectura y escritura de <b>tipo Boolean</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -827,7 +786,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ParagraphFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> objeto que representa la configuración de párrafo para el estilo especificado. Lectura y escritura.</summary>
+        <summary>Devuelve o establece un <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> objeto que representa la configuración de párrafo del estilo especificado. Lectura/escritura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -886,10 +845,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <b>número entero</b> que representa la prioridad para ordenar los estilos en el panel de tareas Estilos. Lectura y escritura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Devuelve o establece un <b>valor de tipo Integer</b> que representa la prioridad para ordenar los estilos en el panel de tareas estilos. Lectura/escritura.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -920,9 +877,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve o establece un <b>valor Boolean</b> que indica si el estilo corresponde a un estilo rápido disponible. Lectura y escritura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -977,7 +932,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TableStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.TableStyle" /> objeto que representa las propiedades que se pueden aplicar a una tabla utilizando un estilo de tabla.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.TableStyle" /> objeto que representa las propiedades que se pueden aplicar a una tabla mediante un estilo de tabla.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1005,10 +960,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdStyleType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el tipo de estilo. Read-only <see cref="T:Microsoft.Office.Interop.Word.Style" />.</summary>
+        <summary>Devuelve el tipo de estilo. De sólo <see cref="T:Microsoft.Office.Interop.Word.Style" />lectura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>WdStyleType</b> puede ser una de las siguientes constantes:</para>
           <para>
             <b>wdStyleTypeCharacter</b>
@@ -1022,8 +976,7 @@
           <para>
             <b>wdStyleTypeTable</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UnhideWhenUsed">
@@ -1052,8 +1005,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Establecer en <b>True</b> para borrar el <see cref="P:Microsoft.Office.Interop.Word.Style.Hidden" /> (propiedad) cuando se utiliza este estilo.</summary>
-        <value>Boolean</value>
+        <summary>Establezca <b>true</b> para borrar la <see cref="P:Microsoft.Office.Interop.Word.Style.Hidden" /> propiedad cuando se use este estilo.</summary>
+        <value>Booleano</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

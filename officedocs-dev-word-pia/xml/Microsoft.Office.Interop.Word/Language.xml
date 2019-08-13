@@ -1,13 +1,5 @@
 <Type Name="Language" FullName="Microsoft.Office.Interop.Word.Language">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="040fc6fe1bbe3d61841dfc8c2ab0322e89c441c7" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674999" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Language" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6a420e980d31a95af3eadfbd098d98e9a7886930" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146664" /></Metadata><TypeSignature Language="C#" Value="public interface Language" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Language" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Language" />
   <TypeSignature Language="VB.NET" Value="Public Interface Language" />
@@ -27,18 +19,16 @@
   </Attributes>
   <Docs>
     <summary>Representa el idioma utilizado para revisar o dar formato en Microsoft Word.</summary>
-    <remarks>
-      <para>El objeto <b>Language</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Languages" /> colección.</para>
-      <para>Usar <b>idiomas</b>(<paramref name="index" />) para devolver un único objeto <b>Language</b> , donde <paramref name="index" /> puede ser el valor de la <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> (propiedad), el valor de la <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> (propiedad), uno de la <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes o uno de la <see cref="T:Microsoft.Office.Core.MsoLanguageID" /> constantes.</para>
-      <para>El <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> (propiedad) devuelve el nombre de un idioma, mientras que el <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> (propiedad) devuelve el nombre de un idioma en el idioma del usuario.</para>
-      <para>Para cada idioma para el que se instalan las herramientas de corrección, puede usar el <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />, y <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" /> propiedades para devolver el correspondiente <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> objeto.</para>
-      <para>El estilo de escritura es el conjunto de reglas utilizadas por el corrector gramatical. El <see cref="P:Microsoft.Office.Interop.Word.Language.WritingStyleList" /> propiedad devuelve una matriz de cadenas que representan los estilos de escritura disponibles para el idioma especificado.</para>
-      <para>Utilizar el <see cref="P:Microsoft.Office.Interop.Word.Language.DefaultWritingStyle" /> (propiedad) para establecer el estilo de escritura que desea que use Word predeterminado.</para>
-      <para>Se puede invalidar el estilo de escritura predeterminado el <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" /> (propiedad). Esta propiedad se aplica a un documento especificado para texto marcado en un idioma especificado.</para>
-      <para>Debe tener las herramientas de corrección instaladas para cada idioma que se va a comprobar.</para>
+    <remarks><para>El objeto <b>Language</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Languages" /> colección.</para>
+      <para>Use <b></b>Languages<paramref name="index" />() para devolver un solo objeto <b>Language</b> , <paramref name="index" /> donde puede ser el valor de <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> la propiedad, el valor de <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> la propiedad, una de <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> las constantes o una de las <see cref="T:Microsoft.Office.Core.MsoLanguageID" /> constantes.</para>
+      <para>La <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> propiedad devuelve el nombre de un idioma, mientras que <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> la propiedad devuelve el nombre de un idioma en el idioma del usuario.</para>
+      <para>Para cada idioma para el que se instalan las herramientas de corrección, puede <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />usar <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" />las <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />propiedades, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" /> , y para devolver el <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> objeto correspondiente.</para>
+      <para>El estilo de escritura es el conjunto de reglas utilizadas por el corrector gramatical. La <see cref="P:Microsoft.Office.Interop.Word.Language.WritingStyleList" /> propiedad devuelve una matriz de cadenas que representan los estilos de escritura disponibles para el idioma especificado.</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.Language.DefaultWritingStyle" /> propiedad para establecer el estilo de escritura predeterminado que desea usar en Word.</para>
+      <para>Puede invalidar el estilo de escritura predeterminado con <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" /> la propiedad. Esta propiedad se aplica a un documento especificado para texto marcado en un idioma especificado.</para>
+      <para>[!NOTA] Deberá tener instaladas las herramientas de revisión de los idiomas que vaya a revisar.</para>
       <para>Si marca texto como <b>wdNoProofing</b>, Word saltará el texto marcado al ejecutar una revisión ortográfica o gramatical.</para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ActiveGrammarDictionary">
@@ -64,12 +54,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object que representa el diccionario de gramática activo del idioma especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> objeto Object que representa el Diccionario de gramática activo del idioma especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si no hay ningún diccionario de gramática instalado del idioma especificado, esta propiedad devuelve <b>Nothing</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si no hay ningún diccionario de gramática instalado del idioma especificado, esta propiedad devuelve <b>Nothing</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveHyphenationDictionary">
@@ -95,12 +83,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object que representa el diccionario de división de palabras activo del idioma especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> objeto Object que representa el Diccionario de división de palabras activo del idioma especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si no hay ningún diccionario de división de palabras instalado del idioma especificado, esta propiedad devuelve <b>Nothing</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si no hay ningún diccionario de división de palabras instalado del idioma especificado, esta propiedad devuelve <b>Nothing</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveSpellingDictionary">
@@ -126,12 +112,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object que representa el diccionario ortográfico activo para el idioma especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> objeto Object que representa el diccionario ortográfico activo para el idioma especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si no hay ningún diccionario ortográfico instalado del idioma especificado, esta propiedad devuelve <b>Nothing</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si no hay ningún diccionario ortográfico instalado del idioma especificado, esta propiedad devuelve <b>Nothing</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveThesaurusDictionary">
@@ -157,12 +141,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object que representa el diccionario de sinónimos activo para el idioma especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> objeto Object que representa el Diccionario de sinónimos activo para el idioma especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si no hay ningún diccionario de sinónimos instalado del idioma especificado, esta propiedad devuelve <b>Nothing</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Si no hay ningún diccionario de sinónimos instalado del idioma especificado, esta propiedad devuelve <b>Nothing</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -188,7 +170,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -218,9 +200,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultWritingStyle">
@@ -249,13 +231,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el estilo utilizado por el corrector gramatical del idioma especificado de escritura predeterminado. El nombre del estilo de escritura es el nombre localizado del idioma especificado.</summary>
+        <summary>Devuelve o establece el estilo utilizado por el corrector gramatical del idioma especificado de escritura predeterminado. The name of the writing style is the localized name for the specified language.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad controla la configuración global para el estilo de escritura. Al establecer esta propiedad, debe utilizar el nombre exacto que se encuentran en el cuadro Estilo de escritura en la ortografía &amp; ficha de gramática en el cuadro de diálogo Opciones (menú Herramientas).</para>
-          <para>El <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" /> (propiedad) establece el estilo de escritura para cada idioma en un documento. El valor <b>ActiveWritingStyle</b> reemplaza el valor <b>DefaultWritingStyle</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>This property controls the global setting for the writing style. Al establecer esta propiedad, debe usar el nombre exacto que se encuentra en el cuadro estilo de escritura de &amp; la ficha Ortografía y gramática del cuadro de diálogo Opciones (menú herramientas).</para>
+          <para>La <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" /> propiedad establece el estilo de escritura para cada idioma de un documento. El valor <b>ActiveWritingStyle</b> reemplaza el valor <b>DefaultWritingStyle</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -283,10 +263,8 @@
       <Docs>
         <summary>Devuelve un número que identifica el idioma especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>ID</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propiedad <b>ID</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -399,11 +377,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdDictionaryType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el tipo de herramienta de corrección. Lectura y escritura.</summary>
+        <summary>Devuelve o establece el tipo de herramienta de corrección. Lectura/escritura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Puede utilizar esta propiedad para cambiar el diccionario ortográfico activo a uno de los diccionarios complementarios disponibles que funcionan con Microsoft Word. Por ejemplo, existen diccionarios de ortografía legales, médicos y completos que puede utilizar en lugar del diccionario estándar.</para> Propiedad 
-          <para>el <b>SpellingDictionaryType</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" /> constantes. Algunas de estas constantes no estén disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para><para /></remarks>
+        <remarks><para>Puede usar esta propiedad para cambiar el diccionario ortográfico activo por uno de los diccionarios complementarios disponibles que funcionan con Microsoft Word. Por ejemplo, existen diccionarios ortográficos jurídicos, médicos y completos que pueden utilizarse en lugar del diccionario estándar.</para>
+          <para>La propiedad <b>SpellingDictionaryType</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" /> constantes. Algunas de estas constantes pueden no estar disponibles, según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WritingStyleList">

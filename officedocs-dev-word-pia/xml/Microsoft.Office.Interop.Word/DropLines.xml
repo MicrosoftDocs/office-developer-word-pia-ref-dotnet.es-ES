@@ -1,13 +1,5 @@
 <Type Name="DropLines" FullName="Microsoft.Office.Interop.Word.DropLines">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="abaf6263fd0ca93e5a64de2bdeadffed2b987058" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674908" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DropLines" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fe2c1bf2a7003fed3024219636a9c7c6b5fcdbe4" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146916" /></Metadata><TypeSignature Language="C#" Value="public interface DropLines" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DropLines" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DropLines" />
   <TypeSignature Language="VB.NET" Value="Public Interface DropLines" />
@@ -27,7 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Representa las líneas de unión de un grupo de gráficos.</summary>
-    <remarks>Líneas de unión de <para>conectan los puntos en el gráfico con el eje x. Grupos de gráficos de líneas y de áreas sólo pueden tener líneas de unión. Este objeto no es una colección. No hay ningún objeto que represente una línea de unión individual; líneas de unión activadas para todos los puntos de un grupo de gráficos o bien tenerlos desactivados.</para><para>Si el <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasDropLines" /> propiedad es <b>False</b>, la mayoría de las propiedades de la <see cref="T:Microsoft.Office.Interop.Word.DropLines" /> objeto están deshabilitadas.</para><para /></remarks>
+    <remarks><para>Las líneas de unión conectan los puntos del gráfico con el eje x. Solamente los gráficos de líneas y áreas pueden tener líneas de unión. Este objeto no es una colección. Ningún objeto representa una línea de unión individual; las líneas de unión se activan o se desactivan para todos los puntos de un grupo de gráficos.</para>
+      <para>Si la <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasDropLines" /> propiedad es <b>false</b>, se deshabilita la mayoría <see cref="T:Microsoft.Office.Interop.Word.DropLines" /> de las propiedades del objeto.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -53,10 +47,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa la aplicación Microsoft Word. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto). Solo lectura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Cuando se usa sin un calificador de objeto, esta <see cref="T:Microsoft.Office.Interop.Word._Application" /> propiedad devuelve un objeto que representa la aplicación Microsoft Word. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto). Solo lectura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,10 +75,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> object que representa el borde del objeto. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> objeto Object que representa el borde del objeto. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,14 +103,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. <b>Integer</b> de sólo lectura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, el <see cref="P:Microsoft.Office.Interop.Word.DropLines.Creator" /> (propiedad) devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, consulte la referencia del lenguaje de ayuda que se incluye con Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. <b>Integer</b> de solo lectura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Si el objeto se creó en Microsoft Word, la <see cref="P:Microsoft.Office.Interop.Word.DropLines.Creator" /> propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -172,10 +158,8 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve la línea, relleno y efecto de formato para el objeto.
-Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+De sólo <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,9 +187,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Devuelve un valor de <b>tipo String</b> que representa el nombre del objeto.</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,9 +215,7 @@ Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
       </ReturnValue>
       <Docs>
         <summary>Devuelve al objeto primario del objeto especificado. Read-only <b>objeto</b>.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

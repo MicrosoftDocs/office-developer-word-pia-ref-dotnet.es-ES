@@ -1,13 +1,5 @@
 <Type Name="Border" FullName="Microsoft.Office.Interop.Word.Border">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="61a9e103fed3395528d8e87f68453123f0ee4180" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674515" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Border" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bdd51dcf5bee087b8afe2a4b3e9384bb47359ecc" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146328" /></Metadata><TypeSignature Language="C#" Value="public interface Border" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Border" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Border" />
   <TypeSignature Language="VB.NET" Value="Public Interface Border" />
@@ -27,10 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Representa un borde de un objeto.</summary>
-    <remarks>
-      <para>El objeto <b>Border</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Borders" /> colección.</para> Utilice <b>bordes</b>de 
-      <para>(<paramref name="index" />), donde <paramref name="index" /> identifica el borde, para devolver un solo objeto <b>Border</b> . <paramref name="Index" /> puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.WdBorderType" /> constantes: <b>wdBorderBottom</b>, <b>wdBorderDiagonalDown</b>, <b>wdBorderDiagonalUp</b>, <b>wdBorderHorizontal</b>, <b>wdBorderLeft</b>, <b>wdBorderRight</b>, <b> wdBorderTop</b>, o <b>wdBorderVertical</b>. Usar el <see cref="P:Microsoft.Office.Interop.Word.Border.LineStyle" /> (propiedad) para aplicar una línea de borde a un objeto <b>Border</b> .</para> No se puede agregar objetos 
-      <para><b>borde</b> a la colección <b>Borders</b> . El número de miembros de la colección <b>Borders</b> es finito y varía en función del tipo de objeto. Por ejemplo, una tabla tiene seis elementos en la colección <b>Borders</b> , mientras que un párrafo tiene cuatro.</para><para /></remarks>
+    <remarks><para>El objeto <b>Border</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Borders" /> colección.</para>
+      <para>Utilice <b></b>Borders<paramref name="index" />(), <paramref name="index" /> donde identifica el borde, para devolver un solo objeto <b>Border</b> . <paramref name="Index" />puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdBorderType" /> constantes: <b>wdBorderBottom</b>, <b>wdBorderDiagonalDown</b>, <b>wdBorderDiagonalUp</b>, <b>wdBorderHorizontal</b>, <b>wdBorderLeft</b>, <b>wdBorderRight</b>, <b>wdBorderTop</b>o <b> wdBorderVertical</b>. Utilice la <see cref="P:Microsoft.Office.Interop.Word.Border.LineStyle" /> propiedad para aplicar una línea de borde a un objeto <b>Border</b> .</para>
+      <para>Objetos 
+        <b>Border</b> no pueden agregarse al conjunto <b>Borders</b>. El número de miembros en la colección <b>Borders</b> es finito y varía en función del tipo de objeto. Por ejemplo, una tabla tiene seis elementos en la colección <b>Borders</b>, mientras que un párrafo tiene cuatro.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,12 +142,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el color de 24 bits para especificado <see cref="T:Microsoft.Office.Interop.Word.Border" /> objeto.</summary>
+        <summary>Devuelve o establece el color de 24 bits para el objeto <see cref="T:Microsoft.Office.Interop.Word.Border" /> especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Puede ser cualquier <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> constante o un valor devuelto por la función RGB de Visual Basic.</para>
-          <para />
-        </remarks>
+        <remarks><para>Puede ser cualquier constante <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> válida o un valor devuelto por la función RGB de Visual Basic.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ColorIndex">
@@ -183,7 +174,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el color para el objeto border especificado.</summary>
+        <summary>Devuelve o establece el color del objeto Border especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -213,9 +204,9 @@
       <Docs>
         <summary>Devuelve un valor que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Inside">
@@ -241,7 +232,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un interior borde que se puede aplicar al objeto especificado.</summary>
+        <summary>Devuelve un borde interior que puede aplicarse al objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -274,12 +265,10 @@
       <Docs>
         <summary>Devuelve o establece el estilo de línea de borde para el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Establecer la propiedad <b>LineStyle</b> para un intervalo que hace referencia a caracteres o palabras individuales, aplica un borde de carácter.</para>
-          <para>Al establecer la propiedad <b>LineStyle</b> para un párrafo o un intervalo de párrafos aplica un borde de párrafo. Usar el <see cref="P:Microsoft.Office.Interop.Word.Borders.InsideLineStyle" /> (propiedad) para aplicar un borde entre párrafos consecutivos.</para>
-          <para>Establecer la propiedad <b>LineStyle</b> para una sección, aplica un borde de página alrededor de las páginas en la sección.</para>
-          <para />
-        </remarks>
+        <remarks><para>Al establecer la propiedad <b>LineStyle</b> para un intervalo que hace referencia a caracteres individuales o palabras se aplica un borde de carácter.</para>
+          <para>Establece la propiedad <b>LineStyle</b> para un párrafo o un intervalo de párrafos, aplica un borde de párrafo. Utilice la <see cref="P:Microsoft.Office.Interop.Word.Borders.InsideLineStyle" /> propiedad para aplicar un borde entre párrafos consecutivos.</para>
+          <para>Establece la propiedad <b>LineStyle</b> para una sección, aplica un borde de página alrededor de las páginas en la sección.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LineWidth">
@@ -310,11 +299,9 @@
       <Docs>
         <summary>Devuelve o define el ancho de línea del borde de un objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.WdLineWidth" /> constante o <b>wdUndefined</b> si el objeto no tiene bordes o tiene bordes con más de un ancho de línea.</para>
-          <para>Si el ancho de línea especificado no está disponible para el estilo de línea del borde, esta propiedad genera un error. Para determinar los anchos de línea disponibles para un estilo de línea concreto, vea los bordes y sombreado (menú Formato) del cuadro de diálogo.</para>
-          <para />
-        </remarks>
+        <remarks><para>Devuelve una <see cref="T:Microsoft.Office.Interop.Word.WdLineWidth" /> constante o <b>wdUndefined</b> si el objeto no tiene bordes o tiene bordes con más de un ancho de línea.</para>
+          <para>Si el ancho de línea especificado no está disponible para el estilo de línea del borde, esta propiedad genera un error. Para determinar los anchos de línea disponibles para un estilo de línea concreto, vea el cuadro de diálogo Bordes y sombreado (menú Formato).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -371,7 +358,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor que indica si el texto especificado <see cref="T:Microsoft.Office.Interop.Word.Border" /> objeto es visible.</summary>
+        <summary>Devuelve o establece un valor que indica si el objeto <see cref="T:Microsoft.Office.Interop.Word.Border" /> especificado está visible.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

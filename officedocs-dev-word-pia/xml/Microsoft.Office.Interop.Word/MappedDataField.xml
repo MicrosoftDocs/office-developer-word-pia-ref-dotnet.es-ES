@@ -1,13 +1,5 @@
 <Type Name="MappedDataField" FullName="Microsoft.Office.Interop.Word.MappedDataField">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ad9be617499eec01e5a31a469501445354966e87" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675453" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MappedDataField" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dc041533103e222b636ea93cb4c8248a9eb022ba" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147924" /></Metadata><TypeSignature Language="C#" Value="public interface MappedDataField" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MappedDataField" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MappedDataField" />
   <TypeSignature Language="VB.NET" Value="Public Interface MappedDataField" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Representa un campo de datos asignado.</summary>
-    <remarks>
-      <para>El objeto <b>MappedDataField</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.MappedDataFields" /> colección. La colección <b>MappedDataFields</b> incluye todos los campos de datos asignados disponibles en Microsoft Word.</para>
-      <para>Un campo de datos asignado es un campo dentro de Word que se representa con frecuencia utiliza información de nombre o la dirección, como "First Name". Si un origen de datos contiene un campo "Nombre" o una variación (por ejemplo, "Nombre", "FirstName", "Primera" o "FName"), el campo del origen de datos asignará automáticamente el campo de datos asignado correspondiente en Word. Si un documento o plantilla es que va a combinarse con más de un origen de datos, campos de datos asignados lo hacen innecesario volver a escribir los campos en el documento para que coincidan con los nombres de campo en la base de datos.</para>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.MappedDataFields" /> (propiedad) para devolver un objeto <b>MappedDataField</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>El objeto <b>MappedDataField</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.MappedDataFields" /> colección. La colección <b>MappedDataFields</b> incluye todos los campos de datos asignados disponibles en Microsoft Word.</para>
+      <para>Un campo de datos asignado es un campo que se incluye en Word y que representa la información de dirección o nombre que se suele usar, como "First Name". Si el origen de datos contiene un campo "First Name" o una variación (como "First_Name", "FirstName", "First" o "FName"), el campo del origen de datos se asignará automáticamente al campo de datos asignado correspondiente en Word. Si va a combinar un documento o una plantilla con varios orígenes de datos, si utiliza los campos de datos asignados no necesita volver a escribir los campos en el documento para que coincidan con los nombres de los campos de la base de datos.</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.MappedDataFields" /> propiedad para devolver un objeto <b>MappedDataField</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,9 +78,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataFieldIndex">
@@ -119,12 +109,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un <b>número entero</b> que representa el número de campo correspondiente en el origen de datos de combinación de correspondencia al que se asigna un campo de datos asignado.</summary>
+        <summary>Devuelve o establece un <b>valor de tipo Integer</b> que representa el número de campo correspondiente en el origen de datos de combinación de correspondencia al que se asigna un campo de datos asignado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>MappedDataField</b> devuelve cero si el campo de datos especificado no está asignado a un campo de datos asignado.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propiedad <b>MappedDataField</b> devuelve cero si el campo de datos especificado no está asignado a un campo de datos asignado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataFieldName">
@@ -152,10 +140,8 @@
       <Docs>
         <summary>Establece o devuelve una <b>cadena</b> que representa el nombre del campo en el origen de datos de combinación de correspondencia al que se asigna un campo de datos asignado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad DataFieldName devuelve una cadena en blanco si el campo de datos especificado no está asignado a un campo de datos asignado.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propiedad DataFieldName devuelve una cadena en blanco si el campo de datos especificado no está asignado a un campo de datos asignado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -181,7 +167,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> que representa la posición de un elemento de una colección.</summary>
+        <summary>Devuelve un <b>entero</b> que representa la posición de un elemento en una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -267,10 +253,8 @@
       <Docs>
         <summary>Devuelve el contenido del campo de datos de combinación de correspondencia o campo de datos asignado para el registro actual.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.ActiveRecord" /> (propiedad) para establecer el registro activo en un origen de datos de combinación de correspondencia.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use la <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.ActiveRecord" /> propiedad para establecer el registro activo de un origen de datos de combinación de correspondencia.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

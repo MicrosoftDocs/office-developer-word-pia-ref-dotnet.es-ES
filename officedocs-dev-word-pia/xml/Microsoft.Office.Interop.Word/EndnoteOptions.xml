@@ -1,13 +1,5 @@
 <Type Name="EndnoteOptions" FullName="Microsoft.Office.Interop.Word.EndnoteOptions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="56bb9412afa52ca93265ac74042f236306e64bb5" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675181" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface EndnoteOptions" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9b6115c21b97b1da3f0f82fc55f916a693aa07f8" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148099" /></Metadata><TypeSignature Language="C#" Value="public interface EndnoteOptions" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract EndnoteOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.EndnoteOptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface EndnoteOptions" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Representa las propiedades asignadas a un intervalo o una selección de notas al final en un documento.</summary>
-    <remarks>
-      <para>Utilice la propiedad <b>EndnoteOptions</b> de la <see cref="T:Microsoft.Office.Interop.Word.Range" /> o <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto para devolver un objeto <b>EndnoteOptions</b> . Uso del objeto <b>EndnoteOptions</b> , puede asignar propiedades diferentes de nota al final a diferentes áreas de un documento. Por ejemplo, es posible que desee notas al final de la introducción de un documento de tipo long que debe mostrarse como números romanos en minúsculas, mientras que en el resto del documento se muestran como números arábigos.</para>
-      <para />
-    </remarks>
+    <remarks><para>Use la propiedad <b>EndnoteOptions</b> del objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> or <see cref="T:Microsoft.Office.Interop.Word.Selection" /> para devolver un objeto <b>EndnoteOptions</b> . Si usa el objeto <b>EndnoteOptions</b>, puede asignar distintas propiedades de notas al final a diferentes áreas de un documento. Por ejemplo, las notas al final pueden aparecer en minúsculas y en números romanos en la introducción de un documento extenso, mientras que en el resto del documento pueden aparecer en números árabes.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +46,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,9 +76,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -179,12 +169,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdNoteNumberStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el estilo de número para un intervalo o selección de notas al final en un documento.</summary>
+        <summary>Devuelve o establece el estilo de número de un intervalo o de una selección de notas al final en un documento.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>NumberStyle</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdNoteNumberStyle" /> constantes. Es posible que algunas de estas constantes no estén disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
-          <para />
-        </remarks>
+        <remarks><para>La propiedad <b>NumberStyle</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdNoteNumberStyle" /> constantes. Algunas de estas constantes pueden no estar disponibles, según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -241,7 +229,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el número inicial de nota.</summary>
+        <summary>Devuelve o establece el número de nota inicial.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

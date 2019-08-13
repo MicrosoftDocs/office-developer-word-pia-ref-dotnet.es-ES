@@ -1,13 +1,5 @@
 <Type Name="HangulAndAlphabetException" FullName="Microsoft.Office.Interop.Word.HangulAndAlphabetException">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="15a44ef8643c21dfd82bdfdd738d63417785e69e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674981" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface HangulAndAlphabetException" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="29508775b8b882f8fd41a7f2061b0b968937cb4c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146757" /></Metadata><TypeSignature Language="C#" Value="public interface HangulAndAlphabetException" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HangulAndAlphabetException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.HangulAndAlphabetException" />
   <TypeSignature Language="VB.NET" Value="Public Interface HangulAndAlphabetException" />
@@ -26,14 +18,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa un único Hangul o del alfabeto excepciones de Autocorrección.</summary>
-    <remarks>
-      <para>El objeto <b>HangulAndAlphabetException</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.HangulAndAlphabetExceptions" /> colección. La colección <b>HangulAndAlphabetExceptions</b> incluye todas las Hangul y del alfabeto Autocorrección excepciones y corresponde a los elementos que aparecen en la ficha Coreano del cuadro de diálogo excepciones de Autocorrección (comando Autocorrección, herramientas<b />menú).</para>
-      <para>Uso <b>HangulAndAlphabetExceptions</b>(<paramref name="index" />), donde <paramref name="index" /> es el texto Hangul o nombre de excepciones de Autocorrección del alfabeto o el número de índice, para devolver un solo objeto <b>HangulAndAlphabetException</b> .</para>
-      <para>El número de índice representa la posición de la Hangul o del alfabeto excepciones de Autocorrección en la colección <b>HangulAndAlphabetExceptions</b> .</para>
-      <para>Si el valor de la <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.HangulAndAlphabetAutoAdd" /> propiedad es <b>True</b>, las palabras se agregan automáticamente a la lista de Hangul y del alfabeto excepciones de Autocorrección. Usar el <see cref="M:Microsoft.Office.Interop.Word.HangulAndAlphabetExceptions.Add(System.String)" /> método para agregar un elemento a la colección <b>HangulAndAlphabetExceptions</b> .</para>
-      <para />
-    </remarks>
+    <summary>Representa una sola excepción de Autocorrección de hangul o del alfabeto.</summary>
+    <remarks><para>El objeto <b>HangulAndAlphabetException</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.HangulAndAlphabetExceptions" /> colección. La colección <b>HangulAndAlphabetExceptions</b> incluye todas las excepciones de Autocorrección de hangul y del alfabeto y corresponde a los elementos que aparecen en la ficha Coreano en el cuadro de diálogo excepciones<b />de Autocorrección (comando Autocorrección, menú herramientas).</para>
+      <para>Use <b>HangulAndAlphabetExceptions</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la excepción de Autocorrección de hangul o del alfabeto o el número de índice, para devolver un solo objeto <b>HangulAndAlphabetException</b> .</para>
+      <para>El número de índice representa la posición de la excepción de Autocorrección de hangul o del alfabeto en la colección <b>HangulAndAlphabetExceptions</b>.</para>
+      <para>Si el valor de la <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.HangulAndAlphabetAutoAdd" /> propiedad es <b>true</b>, las palabras se agregan automáticamente a la lista de excepciones de Autocorrección de hangul y del alfabeto. Utilice el <see cref="M:Microsoft.Office.Interop.Word.HangulAndAlphabetExceptions.Add(System.String)" /> método para agregar un elemento a la colección <b>HangulAndAlphabetExceptions</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,9 +79,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -142,7 +132,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> que representa la posición de un elemento de una colección.</summary>
+        <summary>Devuelve un <b>entero</b> que representa la posición de un elemento en una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

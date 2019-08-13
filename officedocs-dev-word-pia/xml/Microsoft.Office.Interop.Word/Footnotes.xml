@@ -1,13 +1,5 @@
 <Type Name="Footnotes" FullName="Microsoft.Office.Interop.Word.Footnotes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a1270ec604789e3a9b5487a8698f15fad638a340" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675097" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Footnotes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ddceb8450faffca19e7338fa2807f77d0c4b3148" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148044" /></Metadata><TypeSignature Language="C#" Value="public interface Footnotes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Footnotes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Footnotes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Footnotes&#xA;Implements IEnumerable" />
@@ -30,10 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.Footnote" /> objetos que representan todas las notas al pie en un documento, selección o intervalo.</summary>
-    <remarks>
-      <para>Utilice la propiedad de <b>las notas al pie</b> de un <see cref="T:Microsoft.Office.Interop.Word.Selection" />, <see cref="T:Microsoft.Office.Interop.Word.Range" />, o <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto para devolver la colección <b>Footnotes</b> .</para>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Word.Footnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" /> método para agregar una nota al pie a la colección <b>Footnotes</b> .</para> Usar <b>las notas al pie</b><para>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un único objeto e de <b>Footnot</b>. El número de índice representa la posición de la nota al pie en la selección, intervalo o documento.</para><para>Las notas al pie situadas al final de un documento o una sección se consideran notas al final y se incluyen en el <see cref="T:Microsoft.Office.Interop.Word.Endnotes" /> colección.</para><para /></remarks>
+    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.Footnote" /> objetos que representan todas las notas al pie de la selección, el intervalo o el documento.</summary>
+    <remarks><para>Utilice la propiedad <b>Footnotes</b> de <see cref="T:Microsoft.Office.Interop.Word.Selection" />un objeto, <see cref="T:Microsoft.Office.Interop.Word.Range" />o <see cref="T:Microsoft.Office.Interop.Word.Document" /> para devolver la colección <b>Footnotes</b> .</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.Footnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" /> método para agregar una nota al pie a la colección <b>Footnotes</b> .</para>
+      <para>Use las <b>notas al pie</b>(<paramref name="index" />) <paramref name="index" /> , donde es el número de índice, para devolver un solo objeto <b>Footnot</b>e. El número de índice representa la posición de la nota al pie en la selección, el intervalo o el documento.</para>
+      <para>Las notas al pie situadas al final de un documento o de una sección se consideran notas al final <see cref="T:Microsoft.Office.Interop.Word.Endnotes" /> y se incluyen en la colección.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -60,16 +54,12 @@
       </Parameters>
       <Docs>
         <param name="Range">Objeto <b>Range</b> requerido. Intervalo marcado para la nota al final o la nota al pie. Puede ser un intervalo contraído.</param>
-        <param name="Reference">
-          <b>Objeto</b>de opcional. Texto de la marca de referencia personalizada. Si se omite este argumento, Microsoft Word inserta una marca de referencia numerada automáticamente.</param>
-        <param name="Text">
-          <b>Objeto</b>de opcional. Texto de la nota al pie o al final.</param>
+        <param name="Reference"><b>Objeto</b>opcional. Texto de la marca de referencia personalizada. Si se omite este argumento, Microsoft Word inserta una marca de referencia numerada automáticamente.</param>
+        <param name="Text"><b>Objeto</b>opcional. Texto de la nota al pie o al final.</param>
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Footnote" /> objeto que representa una nota al pie agregada a un intervalo.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Para especificar un símbolo para la <paramref name="Reference" /> argumento, use la sintaxis {<paramref name="FontName CharNum" />}. <paramref name="FontName" /> es el nombre de la fuente que contiene el símbolo. Los nombres de las fuentes decorativas aparecen en el cuadro fuente en el cuadro de diálogo Símbolo (menú Insertar). <paramref name="CharNum" /> es la suma de 31 y el número que corresponde a la posición del símbolo que desea insertar, contando de izquierda a derecha en la tabla de símbolos. Por ejemplo, para especificar un símbolo omega (ω) en la posición 56 de la tabla de símbolos de la fuente Symbol, el argumento sería "{Symbol 87}".</para>
-          <para />
-        </remarks>
+        <remarks><para>Para especificar un símbolo para el <paramref name="Reference" /> argumento, use la sintaxis {<paramref name="FontName CharNum" />}. <paramref name="FontName" />es el nombre de la fuente que contiene el símbolo. Los nombres de las fuentes decorativas aparecen en el cuadro Fuente del cuadro de diálogo Símbolo (menú Insertar). <paramref name="CharNum" />es la suma de 31 y el número correspondiente a la posición del símbolo que desea insertar, contando de izquierda a derecha en la tabla de símbolos. Por ejemplo, para especificar un símbolo Omega (ω) en la posición 56 en la tabla de símbolos de la fuente Symbol, el argumento sería "{Symbol 87}".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -95,7 +85,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -123,7 +113,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa el aviso de continuación de nota al pie.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa el aviso de continuación de nota al pie.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -151,7 +141,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa el separador de continuación de nota al pie.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto Object que representa el separador de continuación de nota al pie.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -177,7 +167,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Convierte las notas al pie en notas al final.</summary>
+        <summary>Convierte notas al pie en notas al final.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,9 +224,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -297,7 +287,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entero</b> que indica la posición ordinal del objeto individual.</param>
+        <param name="Index"><b>Entero</b> que indica la posición ordinal del objeto individual.</param>
         <summary>Devuelve un objeto individual de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -331,10 +321,8 @@
       <Docs>
         <summary>Devuelve o establece la posición de todas las notas al pie.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>Location</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdFootnoteLocation" /> constantes.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propiedad <b>Location</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdFootnoteLocation" /> constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberingRule">
@@ -363,12 +351,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdNumberingRule</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece las notas al pie de manera se numeran después de los saltos de página o saltos de sección.</summary>
+        <summary>Devuelve o establece la forma en que las notas al pie se numeran después de los saltos de página o de sección.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>NumberingRule</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdNumberingRule" /> constantes.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propiedad <b>NumberingRule</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdNumberingRule" /> constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberStyle">
@@ -397,12 +383,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdNoteNumberStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el estilo de número para las notas al pie en un documento, selección o intervalo. Lectura y escritura.</summary>
+        <summary>Devuelve o establece el estilo de número de las notas al pie en un documento, selección o intervalo. Lectura/escritura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>NumberStyle</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdNoteNumberStyle" /> constantes. Es posible que algunas de estas constantes no estén disponibles, según la compatibilidad con el idioma que haya seleccionado o instalado (por ejemplo, inglés, Estados Unidos).</para>
-          <para />
-        </remarks>
+        <remarks><para>La propiedad <b>NumberStyle</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdNoteNumberStyle" /> constantes. Algunas de estas constantes pueden no estar disponibles, según el idioma instalado o seleccionado (por ejemplo, inglés de EE.UU.).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -454,7 +438,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Restablece el aviso de continuación de nota al pie Aviso predeterminado. El aviso predeterminado aparece en blanco; es decir, no contiene texto.</summary>
+        <summary>Restablece el aviso predeterminado de continuación de nota al pie. El aviso predeterminado aparece en blanco; es decir, no contiene texto.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -479,7 +463,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Restablece el separador de continuación de nota al pie para el valor del separador predeterminado. El separador predeterminado es una línea horizontal larga que separa el texto del documento de la continuación de las notas de la página anterior.</summary>
+        <summary>Restablece el separador de continuación de nota al pie en el separador predeterminado. El separador predeterminado es una línea horizontal larga que separa el texto del documento de la continuación de las notas de la página anterior.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -531,7 +515,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa el separador de nota al pie.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto Object que representa el separador de notas al pie.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -562,7 +546,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece el número inicial de nota.</summary>
+        <summary>Devuelve o establece el número de nota inicial.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -588,11 +572,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Convierte todas las notas al pie en un documento en notas al final y viceversa.</summary>
-        <remarks>
-          <para>Para convertir un intervalo de notas al pie en notas al final, use la <see cref="M:Microsoft.Office.Interop.Word.Footnotes.Convert" /> (método).</para>
-          <para />
-        </remarks>
+        <summary>Convierte todas las notas al pie de un documento en notas al final, y viceversa.</summary>
+        <remarks><para>Para convertir un intervalo de notas al pie en notas al final, <see cref="M:Microsoft.Office.Interop.Word.Footnotes.Convert" /> use el método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

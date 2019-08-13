@@ -1,13 +1,5 @@
 <Type Name="LegendEntries" FullName="Microsoft.Office.Interop.Word.LegendEntries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4be1cb0f4c8f23a103f1b55dd2910a9de172e15a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674305" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface LegendEntries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f1b454addfaa2286a2fa2af265ff5ee75f6ba419" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147923" /></Metadata><TypeSignature Language="C#" Value="public interface LegendEntries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LegendEntries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.LegendEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface LegendEntries&#xA;Implements IEnumerable" />
@@ -30,15 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Una colección de todos los <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> objetos en la leyenda del gráfico especificado.</summary>
-    <remarks>
-      <para>Cada entrada de leyenda consta de dos partes: el texto de la entrada, que es el nombre de la serie o línea de tendencia asociada con la entrada de leyenda; y el marcador de entrada, que conecta visualmente la entrada de leyenda con su serie o línea de tendencia en el gráfico. Las propiedades de formato para el marcador de entrada y su serie o línea de tendencia están contenidas en el <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> objeto.</para>
-      <para />
-    </remarks>
-    <example>
-      <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.Legend.LegendEntries(System.Object)" /> método para devolver el <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> colección. En el ejemplo siguiente se recorre la colección de entradas de leyenda para el primer gráfico del documento activo y se cambia su color de fuente.</para> Uso de 
-      <para><see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> (<paramref name="index" />), donde <paramref name="index" /> es el número de índice de entrada de leyenda, para devolver un solo <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> objeto. No se puede devolver las entradas de leyenda por nombre.</para> Número de 
-      <para>el índice representa la posición de la entrada de leyenda de la leyenda. LegendEntries (1) está en la parte superior de la leyenda; LegendEntries (LegendEntries.Count) está en la parte inferior.</para></example>
+    <summary>Colección de todos los <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /> objetos de la leyenda de gráfico especificada.</summary>
+    <remarks><para>Cada entrada de leyenda consta de dos partes: el texto de la entrada, que es el nombre de la serie o línea de tendencia correspondiente a la entrada de leyenda; y el marcador de entrada, que conecta visualmente la entrada de leyenda con la serie o línea de tendencia correspondiente del gráfico. Las propiedades de formato del marcador de entrada y su serie o línea de tendencia correspondiente están <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> contenidas en el objeto.</para>
+      <para> </para></remarks>
+    <example><para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.Legend.LegendEntries(System.Object)" /> método para devolver la <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> colección. En el siguiente ejemplo se recorre la colección de entradas de leyenda para el primer gráfico del documento activo y se cambia su color de fuente.</para>
+      <para>Use <see cref="T:Microsoft.Office.Interop.Word.LegendEntries" /> (<paramref name="index" />), donde <paramref name="index" /> es el número de índice de la entrada de leyenda, <see cref="T:Microsoft.Office.Interop.Word.LegendKey" /> para devolver un solo objeto. No se puede devolver las entradas de leyenda por nombre.</para>
+      <para>El número de índice representa la posición de la entrada en la leyenda. LegendEntries(1) está en la parte superior de la leyenda; LegendEntries(LegendEntries.Count) está en la parte inferior.</para></example>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -96,10 +85,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa la aplicación Microsoft Word. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto). Solo lectura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Cuando se usa sin un calificador de objeto, esta <see cref="T:Microsoft.Office.Interop.Word._Application" /> propiedad devuelve un objeto que representa la aplicación Microsoft Word. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto). Solo lectura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,10 +113,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un valor <b>entero</b> que representa el número de objetos de la colección.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Devuelve un valor de <b>tipo Integer</b> que representa el número de objetos de la colección.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,14 +141,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. <b>Integer</b> de sólo lectura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, el <see cref="P:Microsoft.Office.Interop.Word.LegendEntries.Creator" /> (propiedad) devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, consulte la referencia del lenguaje de ayuda que se incluye con Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. <b>Integer</b> de solo lectura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Si el objeto se creó en Microsoft Word, la <see cref="P:Microsoft.Office.Interop.Word.LegendEntries.Creator" /> propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -224,12 +205,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>requerido. Número de índice o nombre del objeto.</param>
+        <param name="Index"><b>Objeto</b>requerido. Número de índice o nombre del objeto.</param>
         <summary>Devuelve un solo objeto de la colección.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.LegendEntry" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.LegendEntry" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,9 +235,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve al objeto primario del objeto especificado. Read-only <b>objeto</b>.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

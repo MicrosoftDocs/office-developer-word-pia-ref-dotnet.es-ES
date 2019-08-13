@@ -1,13 +1,5 @@
 <Type Name="XMLNamespaces" FullName="Microsoft.Office.Interop.Word.XMLNamespaces">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a28377e4aa15237bf9fa30770fff97380ef9bf73" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674291" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XMLNamespaces : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d9eb0ff72d7f177eb7bd98e5edbe17f3467652a3" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142636" /></Metadata><TypeSignature Language="C#" Value="public interface XMLNamespaces : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLNamespaces implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLNamespaces" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLNamespaces&#xA;Implements IEnumerable" />
@@ -31,9 +23,9 @@
   </Attributes>
   <Docs>
     <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.XMLNamespace" /> objetos que representa la colección completa de esquemas en la biblioteca de esquemas.</summary>
-    <remarks>
-      <para>En Microsoft Word, se puede tener acceso a la biblioteca de esquemas desde la ficha Esquema XML en el cuadro de diálogo Plantillas y complementos. La biblioteca de esquemas representa esquemas instalados en el equipo de un usuario que un usuario ha aplicado a un documento de Word o que un usuario ha agregado explícitamente a la biblioteca de esquemas mediante el cuadro de diálogo Biblioteca de esquemas.</para> Uso de 
-      <para>el <see cref="P:Microsoft.Office.Interop.Word.XMLNamespaces.Item(System.Object@)" /> (propiedad) de la colección <b>XMLNamespaces</b> para devolver un objeto <b>XMLNameSpace</b> individual. El valor de índice de la propiedad <b>Item</b> puede ser un <b>número entero</b>, que indica la posición del esquema en la biblioteca de esquemas, o una <b>cadena</b>que representa el nombre del esquema devuelto al utilizar la <see cref="P:Microsoft.Office.Interop.Word.XMLNamespace.URI" /> (propiedad) (el Valor TargetNamespace definido en el esquema).</para><para /></remarks>
+    <remarks><para>En Microsoft Word, puede tener acceso a la biblioteca de esquemas desde la ficha esquema XML en el cuadro de diálogo Plantillas y complementos. La biblioteca de esquemas representa esquemas instalados en el equipo de un usuario que un usuario ha aplicado a un documento de Word o que un usuario ha agregado explícitamente a la biblioteca de esquemas mediante el cuadro de diálogo biblioteca de esquemas.</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.XMLNamespaces.Item(System.Object@)" /> propiedad de la colección <b>XmlNamespaces</b> para devolver un objeto <b>XMLNameSpace</b> individual. El valor de índice de la propiedad <b>Item</b> puede ser un <b>entero</b>, que indica la posición del esquema en la biblioteca de esquemas o una <b>cadena</b>, que representa el nombre del esquema devuelto mediante la <see cref="P:Microsoft.Office.Interop.Word.XMLNamespace.URI" /> propiedad (el Valor TargetNamespace definido en el esquema).</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -61,15 +53,11 @@
         <Parameter Name="InstallForAllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Path">
-          <b>String</b> requerida. La ruta de acceso y el nombre del esquema. Esto puede ser una ruta de acceso de archivo local, una ruta de acceso de red o una dirección de Internet.</param>
-        <param name="NamespaceURI">
-          <b>String</b> opcional.  El espacio de nombres uniforme de recursos tal como se especifica en el esquema. El <paramref name="NamespaceURI" /> parámetro distingue mayúsculas de minúsculas y debe escribirse exactamente como se especifica en el esquema.</param>
-        <param name="Alias">
-          <b>String</b> opcional.  Nombre del esquema tal como aparece en la ficha Esquemas del cuadro de diálogo Plantillas y complementos.</param>
-        <param name="InstallForAllUsers">
-          <b>Boolean</b> opcional.  <b>True</b> si todos los usuarios que inicie sesión en un equipo puede tener acceso y usar el nuevo esquema. El valor predeterminado es <b>False</b>.</param>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.XMLNamespace" /> objeto que representa un esquema agregado a la biblioteca de esquemas y disponible para los usuarios en Microsoft Word.</summary>
+        <param name="Path"><b>String</b> requerida. Ruta de acceso y nombre de archivo del esquema. Puede ser una ruta local, de red o una dirección de Internet.</param>
+        <param name="NamespaceURI"><b>String</b> opcional. URI del espacio de nombres según está especificado en el esquema. El <paramref name="NamespaceURI" /> parámetro distingue mayúsculas de minúsculas y debe escribirse exactamente como se especifica en el esquema.</param>
+        <param name="Alias"><b>String</b> opcional. Nombre del esquema tal como aparece en la ficha Esquemas del cuadro de diálogo Plantillas y complementos.</param>
+        <param name="InstallForAllUsers"><b>Boolean</b> opcional. <b>True</b> si todos los usuarios que inician sesión en un equipo pueden tener acceso al nuevo esquema y utilizarlo. El valor predeterminado es <b>False</b>.</param>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.XMLNamespace" /> objeto que representa un esquema agregado a la biblioteca de esquemas y puesto a disposición de los usuarios en Microsoft Word.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -97,7 +85,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,9 +143,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -215,15 +203,11 @@
         <Parameter Name="InstallForAllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Path">
-          <b>String</b> requerida. Ruta de acceso y nombre de archivo del paquete de expansión XML.</param>
-        <param name="InstallForAllUsers">
-          <b>Boolean</b> opcional.  <b>Es true</b> , se instala el paquete de expansión XML y se pone a disposición de todos los usuarios en un equipo. <b>False</b> hace que el paquete de expansión XML disponibles para el usuario actual únicamente. Valor predeterminado es <b>False</b>.</param>
-        <summary>Instala el paquete de expansión XML en el equipo del usuario, poniendo una solución de documento inteligente XML a disposición de uno o varios usuarios.</summary>
-        <remarks>
-          <para>Por motivos de seguridad, no se puede instalar un manifiesto sin firmar. Para obtener más información sobre los manifiestos, vea el Kit de desarrollo de Software (SDK) en el sitio Web de Microsoft Developer Network (MSDN).</para>
-          <para />
-        </remarks>
+        <param name="Path"><b>String</b> requerida. Ruta de acceso y nombre de archivo del paquete de expansión XML.</param>
+        <param name="InstallForAllUsers"><b>Boolean</b> opcional. Si es <b>True</b> instala el paquete de expansión XML, que estará disponible para todos los usuarios de un equipo. Si es <b>False</b>, el paquete sólo estará disponible para el usuario actual. Valor predeterminado es <b>False</b>.</param>
+        <summary>Instala el paquete de expansión XML especificado en el equipo del usuario, poniendo a disposición de uno o varios usuarios una solución de documento inteligente de XML.</summary>
+        <remarks><para>Por motivos de seguridad, no se puede instalar un manifiesto sin firmar. Para obtener más información sobre los manifiestos, vea el kit de desarrollo de software (SDK) para documentos inteligentes en el sitio web de Microsoft Developer Network (MSDN).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -252,7 +236,7 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>objeto</b> que indica la posición ordinal o una cadena que representa el nombre del objeto individual.</param>
+        <param name="Index"><b>Objeto</b> que indica la posición ordinal o una cadena que representa el nombre del objeto individual.</param>
         <summary>Devuelve un objeto individual de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

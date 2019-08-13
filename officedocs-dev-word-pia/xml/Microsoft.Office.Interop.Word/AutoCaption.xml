@@ -1,13 +1,5 @@
 <Type Name="AutoCaption" FullName="Microsoft.Office.Interop.Word.AutoCaption">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="31b4ea8bafcfbd501cd64c8d3338f2bc08bbaaf8" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674659" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AutoCaption" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3109344f5a410ce2a910d0c31881fbca7986b697" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146237" /></Metadata><TypeSignature Language="C#" Value="public interface AutoCaption" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoCaption" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AutoCaption" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoCaption" />
@@ -27,14 +19,12 @@
   </Attributes>
   <Docs>
     <summary>Representa un único título que puede agregarse automáticamente al insertar elementos como tablas, imágenes u objetos OLE en un documento.</summary>
-    <remarks>
-      <para>El objeto <b>AutoCaption</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.AutoCaptions" /> colección. La colección <b>AutoCaptions</b> contiene todos los títulos que aparecen en el cuadro de diálogo AutoCaption (menú Insertar).</para>
-      <para>Uso <b>AutoCaptions</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre del título o el número de índice, para devolver un solo objeto <b>AutoCaption</b> . Los nombres de los títulos corresponden a los elementos que aparecen en el cuadro de diálogo AutoCaption (menú Insertar). Deben coincidir exactamente con la ortografía (pero no necesariamente las mayúsculas y minúsculas) del nombre, como se muestra en el cuadro de diálogo AutoCaption.</para>
+    <remarks><para>El <b></b> objeto AutoCaption es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.AutoCaptions" /> colección. La <b></b> colección AutoCaptions contiene todos los títulos que aparecen en el cuadro de diálogo Autotítulo (menú Insertar).</para>
+      <para>Use <b></b>AutoCaptions (<paramref name="index" />), donde <paramref name="index" /> es el nombre del título o número de índice, para devolver un solo objeto AutoCaption. <b></b> Los nombres de los títulos corresponden a los elementos que aparecen en el cuadro de diálogo AutoCaption (menú Insertar). Debe coincidir exactamente con la ortografía (pero no necesariamente las mayúsculas y minúsculas) del nombre, como se muestra en el cuadro de diálogo AutoCaption.</para>
       <para>El número de índice representa la posición del objeto <b>AutoCaption</b> en la lista de elementos en el cuadro de diálogo AutoCaption.</para>
-      <para>Objetos 
-        <b>AutoCaption</b> no se pueden agregar o eliminar de la colección <b>AutoCaptions</b> mediante programación.</para>
-      <para />
-    </remarks>
+      <para>Los objetos 
+        <b>AutoCaption</b> no se agregado a mediante programación o se elimine de la colección <b>AutoCaptions</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un valor que representa un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa el creador del objeto especificado.</summary>
+        <summary>Devuelve un valor que representa un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa al creador del objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,7 +81,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece un valor que indica si un título se agrega automáticamente cuando el elemento se inserta en un documento.</summary>
+        <summary>Devuelve o establece un valor que indica si se agrega un título automáticamente cuando se inserta el elemento en un documento.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -124,10 +114,8 @@
       <Docs>
         <summary>Devuelve o establece el título ("ilustración", "Tabla" o "Ecuación", por ejemplo) de la etiqueta del título especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad se puede establecer en una etiqueta de título o un <see cref="T:Microsoft.Office.Interop.Word.WdCaptionLabelID" /> constante.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta propiedad se puede establecer en una etiqueta de título o <see cref="T:Microsoft.Office.Interop.Word.WdCaptionLabelID" /> una constante.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -155,9 +143,9 @@
       <Docs>
         <summary>Devuelve un valor que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -183,7 +171,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un valor que representa la posición de un elemento de una colección.</summary>
+        <summary>Devuelve un valor que representa la posición de un elemento en una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

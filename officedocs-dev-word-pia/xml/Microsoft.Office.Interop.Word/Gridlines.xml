@@ -1,13 +1,5 @@
 <Type Name="Gridlines" FullName="Microsoft.Office.Interop.Word.Gridlines">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="46e2954651cbcd79fec45fc109c9f6414cd798d8" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674281" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Gridlines" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dfaa6be729fee8db0d7f8dc03acea0656715c6f5" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146769" /></Metadata><TypeSignature Language="C#" Value="public interface Gridlines" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Gridlines" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Gridlines" />
   <TypeSignature Language="VB.NET" Value="Public Interface Gridlines" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Representa las líneas de división principales o secundarias del eje de un gráfico.</summary>
-    <remarks>
-      <para>Las líneas de división extienden las marcas de graduación en el eje de un gráfico para que sea más fácil ver los valores asociados con los marcadores de datos. Este objeto no es una colección. No hay ningún objeto que represente una línea de división única; tienes todas las líneas de la cuadrícula de un eje activado o todos ellos desactivados.</para>
-      <para>Usar la <see cref="P:Microsoft.Office.Interop.Word.Axis.MajorGridlines" /> propiedad para devolver el <see cref="T:Microsoft.Office.Interop.Word.Gridlines" /> object que representa las líneas de división principales del eje. Usar el <see cref="P:Microsoft.Office.Interop.Word.Axis.MinorGridlines" /> propiedad para devolver el <see cref="T:Microsoft.Office.Interop.Word.Gridlines" /> object que representa las líneas de división secundarias. Es posible devolver las líneas de cuadrícula principales y secundarias al mismo tiempo.</para>
-      <para />
-    </remarks>
+    <remarks><para>Las líneas de división extienden las marcas de graduación en el eje de un gráfico para permitir ver mejor los valores asociados con los marcadores de datos. Este objeto no es una colección. Ningún objeto representa una línea de división individual; se activan todas las líneas de división para un eje o bien se desactivan.</para>
+      <para>Use la <see cref="P:Microsoft.Office.Interop.Word.Axis.MajorGridlines" /> propiedad para devolver el <see cref="T:Microsoft.Office.Interop.Word.Gridlines" /> objeto que representa las líneas de cuadrícula principales del eje. Utilice la <see cref="P:Microsoft.Office.Interop.Word.Axis.MinorGridlines" /> propiedad para devolver el <see cref="T:Microsoft.Office.Interop.Word.Gridlines" /> objeto que representa las líneas de división secundarias. Es posible obtener a la vez las líneas de división principales y secundarias.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,10 +47,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve una <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa la aplicación Microsoft Word. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto). Solo lectura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Cuando se usa sin un calificador de objeto, esta <see cref="T:Microsoft.Office.Interop.Word._Application" /> propiedad devuelve un objeto que representa la aplicación Microsoft Word. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto). Solo lectura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,10 +75,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> object que representa el borde del objeto. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> objeto Object que representa el borde del objeto. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -117,14 +103,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. Es de solo lectura</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, el <see cref="P:Microsoft.Office.Interop.Word.Gridlines.Creator" /> (propiedad) devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, consulte la referencia del lenguaje de ayuda que se incluye con Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado. Solo lectura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Si el objeto se creó en Microsoft Word, la <see cref="P:Microsoft.Office.Interop.Word.Gridlines.Creator" /> propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -149,9 +131,7 @@
       <Parameters />
       <Docs>
         <summary>Elimina el objeto.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <returns><b>Objeto</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -178,10 +158,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve la línea, relleno y efecto de formato para el objeto. Es de solo lectura</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+        <summary>Devuelve la línea, relleno y efecto de formato para el objeto. Solo lectura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,9 +187,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve el nombre del objeto.</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,10 +214,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve al objeto primario del objeto especificado. Es de solo lectura</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve al objeto primario del objeto especificado. Solo lectura.</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -267,9 +241,7 @@
       <Parameters />
       <Docs>
         <summary>Selecciona el objeto.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <returns><b>Objeto</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

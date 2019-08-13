@@ -1,13 +1,5 @@
 <Type Name="MailMergeFields" FullName="Microsoft.Office.Interop.Word.MailMergeFields">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="81695bc0d7c2fa5c37720ad879012f8adc13b827" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674320" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMergeFields : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3120d6713fa67507a7ea299781a6f722aba24386" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147882" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeFields : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMergeFields implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMergeFields" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMergeFields&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objetos que representan la combinación de correspondencia relacionados con los campos en un documento.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word.MailMerge.Fields" /> (propiedad) para devolver la colección <b>MailMergeFields</b> .</para>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" /> método para agregar un campo de combinación a la colección <b>MailMergeFields</b> .</para>
-      <para>Utilice los <b>campos</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un solo objeto <b>MailMergeField</b> .</para>
+    <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objetos que representan los campos de combinación de correspondencia relacionados de un documento.</summary>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.MailMerge.Fields" /> propiedad para devolver la colección <b>MailMergeFields</b> .</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" /> método para agregar un campo de combinación a la colección <b>MailMergeFields</b> .</para>
+      <para>Utilice <b></b>Fields<paramref name="index" />(), <paramref name="index" /> donde es el número de índice, para devolver un solo objeto <b>MailMergeField</b> .</para>
       <para>La colección <b>MailMergeFields</b> tiene métodos adicionales, como <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> y <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />, para agregar campos relacionados con una operación de combinación de correspondencia.</para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,10 +53,9 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Range">Requiere <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. Intervalo donde desea que aparezca el campo. El campo reemplazará al intervalo, si éste no está contraído.</param>
-        <param name="Name">
-          <b>String</b> requerida. Nombre del campo.</param>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objeto que representa un campo de combinación de correspondencia agregado al documento de origen de datos.</summary>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> requerido. Intervalo donde desea que aparezca el campo. El campo reemplazará al intervalo, si éste no está contraído.</param>
+        <param name="Name"><b>String</b> requerida. Nombre del campo.</param>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objeto que representa un campo de combinación de correspondencia agregado al documento del origen de datos.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -96,21 +85,15 @@
         <Parameter Name="AskOnce" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Requiere <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. Ubicación del campo ASK.</param>
-        <param name="Name">
-          <b>String</b> requerida. El nombre del marcador que se asigna el texto de respuesta o predeterminado a. Utilice un campo REF con el nombre del marcador para mostrar el resultado en un documento.</param>
-        <param name="Prompt">
-          <b>Objeto</b>de opcional. Texto que se muestra en el cuadro de diálogo.</param>
-        <param name="DefaultAskText">
-          <b>Objeto</b>de opcional. Respuesta predeterminada que aparece en el cuadro de texto cuando se muestra el cuadro de diálogo. Corresponde al modificador \d de un campo ASK.</param>
-        <param name="AskOnce">
-          <b>Objeto</b>de opcional. <b>True</b> para mostrar el cuadro de diálogo una sola vez en lugar de cada vez que se combina un nuevo registro de datos. Corresponde al modificador \o de un campo ASK.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> requerido. Ubicación del campo ASK.</param>
+        <param name="Name"><b>String</b> requerida. Nombre del marcador al que se asigna la respuesta o el texto predeterminado. Utilice un campo REF con el nombre del marcador para mostrar el resultado en un documento.</param>
+        <param name="Prompt"><b>Objeto</b>opcional. Texto que se muestra en el cuadro de diálogo.</param>
+        <param name="DefaultAskText"><b>Objeto</b>opcional. Respuesta predeterminada que aparece en el cuadro de texto cuando se muestra el cuadro de diálogo. Corresponde al modificador \d de un campo ASK.</param>
+        <param name="AskOnce"><b>Objeto</b>opcional. <b>True</b> para mostrar el cuadro de diálogo solo una vez en lugar de cada vez que se combina un nuevo registro de datos. Corresponde al modificador \o de un campo ASK.</param>
         <summary>Agrega un campo ASK a un documento principal de combinación de correspondencia. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Cuando se actualiza, un campo ASK muestra un cuadro de diálogo que solicita texto asignar al marcador especificado.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cuando se actualiza, el campo ASK muestra un cuadro de diálogo en el que se solicita el texto que se va a asignar al marcador especificado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddFillIn">
@@ -137,20 +120,15 @@
         <Parameter Name="AskOnce" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Requiere <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. Ubicación del campo FILLIN.</param>
-        <param name="Prompt">
-          <b>Objeto</b>de opcional. Texto que se muestra en el cuadro de diálogo.</param>
-        <param name="DefaultFillInText">
-          <b>Objeto</b>de opcional. Respuesta predeterminada que aparece en el cuadro de texto cuando se muestra el cuadro de diálogo. Corresponde al modificador \d de un campo FILLIN.</param>
-        <param name="AskOnce">
-          <b>Objeto</b>de opcional. <b>True</b> para mostrar el símbolo del sistema sólo una vez en lugar de cada vez que se combina un nuevo registro de datos. Corresponde al modificador \o de un campo Fill-in. El valor predeterminado es <b>False</b>.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> requerido. Ubicación del campo FILLIN.</param>
+        <param name="Prompt"><b>Objeto</b>opcional. Texto que se muestra en el cuadro de diálogo.</param>
+        <param name="DefaultFillInText"><b>Objeto</b>opcional. Respuesta predeterminada que aparece en el cuadro de texto cuando se muestra el cuadro de diálogo. Corresponde al modificador \d de un campo FILLIN.</param>
+        <param name="AskOnce"><b>Objeto</b>opcional. <b>True</b> para mostrar el mensaje solo una vez en lugar de mostrar cada vez que se combina un nuevo registro de datos. Corresponde al modificador \o de un campo Fill-in. El valor predeterminado es <b>False</b>.</param>
         <summary>Agrega un campo Fill-in a un documento principal de combinación de correspondencia. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Cuando se actualiza, un campo Fill-in muestra un cuadro de diálogo que solicita texto Insertar en el documento en la ubicación del campo Fill-in.</para>
-          <para>Usar la <see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /> método con el <see cref="T:Microsoft.Office.Interop.Word.Fields" /> objeto de colección que se va a agregar un campo FILLIN a un documento que no sea un documento principal de combinación de correspondencia.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cuando se actualiza, un campo Fill-in muestra un cuadro de diálogo que solicita texto Insertar en el documento en la ubicación del campo Fill-in.</para>
+          <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /> método con el <see cref="T:Microsoft.Office.Interop.Word.Fields" /> objeto Collection para agregar un campo FILLIN a un documento que no sea un documento principal de combinación de correspondencia.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddIf">
@@ -181,26 +159,18 @@
         <Parameter Name="FalseText" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Requiere <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. Ubicación del campo IF.</param>
-        <param name="MergeField">
-          <b>String</b> requerida. Nombre del campo de combinación.</param>
-        <param name="Comparison">Requiere <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />. Operador utilizado en la comparación.</param>
-        <param name="CompareTo">
-          <b>Objeto</b>de opcional. Texto que se va a comparar con el contenido de <paramref name="MergeField" />.</param>
-        <param name="TrueAutoText">
-          <b>Objeto</b>de opcional. Elemento de Autotexto que se inserta si la comparación es verdadera. Si se especifica este argumento, <paramref name="TrueText" /> se omite.</param>
-        <param name="TrueText">
-          <b>Objeto</b>de opcional. Texto que se inserta si la comparación es verdadera.</param>
-        <param name="FalseAutoText">
-          <b>Objeto</b>de opcional. Elemento de Autotexto que se inserta si la comparación es falsa. Si se especifica este argumento, <paramref name="FalseText" /> se omite.</param>
-        <param name="FalseText">
-          <b>Objeto</b>de opcional. Texto que se inserta si la comparación es falsa.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> requerido. Ubicación del campo IF.</param>
+        <param name="MergeField"><b>String</b> requerida. Nombre del campo de combinación.</param>
+        <param name="Comparison">Es <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />obligatorio. Operador utilizado en la comparación.</param>
+        <param name="CompareTo"><b>Objeto</b>opcional. Texto que se va a comparar con el <paramref name="MergeField" />contenido de.</param>
+        <param name="TrueAutoText"><b>Objeto</b>opcional. Elemento de Autotexto que se inserta si la comparación es verdadera. Si se especifica este argumento, <paramref name="TrueText" /> se omite.</param>
+        <param name="TrueText"><b>Objeto</b>opcional. Texto que se inserta si la comparación es verdadera.</param>
+        <param name="FalseAutoText"><b>Objeto</b>opcional. Elemento de Autotexto que se inserta si la comparación es falsa. Si se especifica este argumento, <paramref name="FalseText" /> se omite.</param>
+        <param name="FalseText"><b>Objeto</b>opcional. Texto que se inserta si la comparación es falsa.</param>
         <summary>Agrega un campo IF a un documento principal de combinación de correspondencia. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Cuando se actualiza, un campo IF compara un campo de un registro de datos con un valor especificado y, a continuación, inserta el texto apropiado según el resultado de la comparación.</para>
-          <para />
-        </remarks>
+        <remarks><para>Cuando se actualiza, un campo IF compara un campo de un registro de datos con un valor especificado y, a continuación, inserta el texto adecuado según el resultado de la comparación.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddMergeRec">
@@ -225,13 +195,11 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">Requiere <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. Ubicación del campo MERGEREC.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> requerido. Ubicación del campo MERGEREC.</param>
         <summary>Agrega un campo MERGEREC a un documento principal de combinación de correspondencia. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Un campo MERGEREC inserta el número de registro de datos actual (la posición del registro de datos en el resultado de la consulta actual) durante una combinación de correspondencia.</para>
-          <para />
-        </remarks>
+        <remarks><para>Un campo MERGEREC inserta el número del registro de datos actual (la posición del registro de datos en el resultado de la consulta actual) durante una combinación de correspondencia.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddMergeSeq">
@@ -256,13 +224,11 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">Requiere <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. Ubicación del campo MERGESEQ.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> requerido. Ubicación del campo MERGESEQ.</param>
         <summary>Agrega un campo MERGESEQ a un documento principal de combinación de correspondencia. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Un campo MERGESEQ inserta un número basado en la secuencia de los datos que se combinan los registros (por ejemplo, al combinar el registro 50 de los registros 50 a 100, el campo MERGESEQ inserta el número 1).</para>
-          <para />
-        </remarks>
+        <remarks><para>Un campo MERGESEQ inserta un número basado en la secuencia en la que se combinan los registros de datos (por ejemplo, cuando se combina el registro 50 de registros 50 a 100, el campo MERGESEQ inserta el número 1).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddNext">
@@ -287,13 +253,11 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">Requiere <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. Ubicación del campo NEXT.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> requerido. Ubicación del campo NEXT.</param>
         <summary>Agrega un campo NEXT a un documento principal de combinación de correspondencia. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Un campo NEXT avanza hasta el siguiente registro de datos para que se pueden combinar datos de más de un registro en el mismo documento de combinación (por ejemplo, una hoja de etiquetas postales).</para>
-          <para />
-        </remarks>
+        <remarks><para>Un campo NEXT avanza al siguiente registro de datos para que los datos de más de un registro se puedan combinar en el mismo documento de combinación (por ejemplo, una hoja de etiquetas postales).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddNextIf">
@@ -320,18 +284,14 @@
         <Parameter Name="CompareTo" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Requiere <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. Ubicación del campo NEXTIF.</param>
-        <param name="MergeField">
-          <b>String</b> requerida. Nombre del campo de combinación.</param>
-        <param name="Comparison">Requiere <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />. Operador utilizado en la comparación.</param>
-        <param name="CompareTo">
-          <b>String</b> requerida. Texto que se va a comparar con el contenido de <paramref name="MergeField" />.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> requerido. Ubicación del campo NEXTIF.</param>
+        <param name="MergeField"><b>String</b> requerida. Nombre del campo de combinación.</param>
+        <param name="Comparison">Es <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />obligatorio. Operador utilizado en la comparación.</param>
+        <param name="CompareTo"><b>String</b> requerida. Texto que se va a comparar con el <paramref name="MergeField" />contenido de.</param>
         <summary>Agrega un campo NEXTIF a un documento principal de combinación de correspondencia. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>El campo NEXTIF compara dos expresiones y si la comparación es verdadera, el siguiente registro de datos se combina con el documento de combinación actual.</para>
-          <para />
-        </remarks>
+        <remarks><para>Un campo NEXTIF compara dos expresiones y, si la comparación es verdadera, el siguiente registro de datos se combina con el documento de combinación actual.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddSet">
@@ -358,19 +318,14 @@
         <Parameter Name="ValueAutoText" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Requiere <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. Ubicación del campo SET.</param>
-        <param name="Name">
-          <b>String</b> requerida. Nombre del marcador que <paramref name="ValueText" /> está asignado a.</param>
-        <param name="ValueText">
-          <b>Objeto</b>de opcional. El texto asociado con el marcador especificado por el <paramref name="Name" /> argumento.</param>
-        <param name="ValueAutoText">
-          <b>Objeto</b>de opcional. El elemento de Autotexto que incluye texto asociado con el marcador especificado por el <paramref name="Name" /> argumento. Si se especifica este argumento, <paramref name="ValueText" /> se omite.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> requerido. Ubicación del campo SET.</param>
+        <param name="Name"><b>String</b> requerida. Nombre del marcador que <paramref name="ValueText" /> se asigna.</param>
+        <param name="ValueText"><b>Objeto</b>opcional. Texto asociado con el marcador especificado por el <paramref name="Name" /> argumento.</param>
+        <param name="ValueAutoText"><b>Objeto</b>opcional. Elemento de Autotexto que incluye el texto asociado con el marcador especificado por <paramref name="Name" /> el argumento. Si se especifica este argumento, <paramref name="ValueText" /> se omite.</param>
         <summary>Agrega un campo SET a un documento principal de combinación de correspondencia. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>El campo SET define el texto del marcador especificado.</para>
-          <para />
-        </remarks>
+        <remarks><para>El campo SET define el texto del marcador especificado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddSkipIf">
@@ -397,18 +352,14 @@
         <Parameter Name="CompareTo" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Requiere <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. Ubicación del campo SKIPIF.</param>
-        <param name="MergeField">
-          <b>String</b> requerida. Nombre del campo de combinación.</param>
-        <param name="Comparison">Requiere <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />. Operador utilizado en la comparación.</param>
-        <param name="CompareTo">
-          <b>Objeto</b>de opcional. Texto que se va a comparar con el contenido de <paramref name="MergeField" />.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> requerido. Ubicación del campo SKIPIF.</param>
+        <param name="MergeField"><b>String</b> requerida. Nombre del campo de combinación.</param>
+        <param name="Comparison">Es <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />obligatorio. Operador utilizado en la comparación.</param>
+        <param name="CompareTo"><b>Objeto</b>opcional. Texto que se va a comparar con el <paramref name="MergeField" />contenido de.</param>
         <summary>Agrega un campo SKIPIF a un documento principal de combinación de correspondencia. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>El campo SKIPIF compara dos expresiones y si la comparación es verdadera, SKIPIF pasa al siguiente registro de datos en el origen de datos y comienza un nuevo documento de combinación.</para>
-          <para />
-        </remarks>
+        <remarks><para>El campo SKIPIF compara dos expresiones y, si la comparación es verdadera, SKIPIF se desplaza al siguiente registro de datos del origen de datos e inicia un nuevo documento de combinación.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -434,7 +385,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -492,9 +443,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -555,7 +506,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entero</b> que indica la posición ordinal del objeto individual.</param>
+        <param name="Index"><b>Entero</b> que indica la posición ordinal del objeto individual.</param>
         <summary>Devuelve un objeto individual de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

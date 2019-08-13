@@ -1,13 +1,5 @@
 <Type Name="OMathFunctions" FullName="Microsoft.Office.Interop.Word.OMathFunctions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="251e37f0700f852eabe59b08119f35f0842a15eb" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20674302" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OMathFunctions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f9dd73b5c31b36fb270ed019c2844a18dc9255cc" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147791" /></Metadata><TypeSignature Language="C#" Value="public interface OMathFunctions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMathFunctions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMathFunctions" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMathFunctions&#xA;Implements IEnumerable" />
@@ -30,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa una colección de funciones o estructuras admitida por Microsoft Office Word, como fracciones, integrales, sumas y radicales.</summary>
+    <summary>Representa una colección de funciones o estructuras compatibles con Microsoft Office Word, como fracciones, integrales, sumas y radicales.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -58,16 +50,12 @@
         <Parameter Name="NumCols" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Requiere <see cref="T:Microsoft.Office.Interop.Word.Range" /> lugar en el que se debe insertar una ecuación.</param>
-        <param name="Type">Requiere <see cref="T:Microsoft.Office.Interop.Word.WdOMathFunctionType" />el tipo de ecuación que insertar.</param>
-        <param name="NumArgs">
-          <b>Objeto</b> el número de argumentos de la ecuación opcional.</param>
-        <param name="NumCols">
-          <b>Objeto</b> el número de columnas de la ecuación opcional.</param>
-        <summary>Inserta una nueva estructura, como por ejemplo una fracción, en una ecuación en la posición especificada y devuelve un <see cref="T:Microsoft.Office.Interop.Word.OMathFunction" /> object que representa la estructura.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.OMathFunction" />
-        </returns>
+        <param name="Range">Se <see cref="T:Microsoft.Office.Interop.Word.Range" /> requiere el punto en el que se insrt una ecuación.</param>
+        <param name="Type">Necesario <see cref="T:Microsoft.Office.Interop.Word.WdOMathFunctionType" />el tipo de ecuación que se va a insertar.</param>
+        <param name="NumArgs">Optional ( <b>objeto</b> ) el número de argumentos de la ecuación.</param>
+        <param name="NumCols">Optional ( <b>objeto</b> ) el número de columnas de la ecuación.</param>
+        <summary>Inserta una nueva estructura, como una fracción, en una ecuación en la posición especificada y devuelve un <see cref="T:Microsoft.Office.Interop.Word.OMathFunction" /> objeto Object que representa la estructura.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.OMathFunction" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,10 +82,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa la aplicación Microsoft Word.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,10 +110,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el número de elementos en el <see cref="T:Microsoft.Office.Interop.Word.OMathFunctions" /> colección. Es de solo lectura</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Devuelve el número de elementos de la <see cref="T:Microsoft.Office.Interop.Word.OMathFunctions" /> colección. Solo lectura.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,15 +138,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> de 32 bits que indica la aplicación en la que el complemento que se creó. Es de solo lectura</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, el <see cref="P:Microsoft.Office.Interop.Word.OMathFunctions.Creator" /> (propiedad) devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Este valor también puede representarse mediante la constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />. </para>
-          <para>Esta propiedad se ha diseñado principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <summary>Devuelve un <b>entero</b> de 32 bits que indica la aplicación en la que se creó el complemento. Solo lectura.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Si el objeto se creó en Microsoft Word, la <see cref="P:Microsoft.Office.Interop.Word.OMathFunctions.Creator" /> propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Este valor también puede representarse mediante la <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />constante. </para>
+          <para>Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -223,11 +203,9 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Requiere <b>entero</b> especifica la posición ordinal del objeto dentro de la colección.</param>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.OMathFunction" /> object que representa el elemento especificado de la colección.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.OMathFunction" />
-        </value>
+        <param name="Index"><b>Integer</b> requerido especifica la posición ordinal del objeto dentro de la colección.</param>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.OMathFunction" /> objeto Object que representa el elemento especificado de la colección.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.OMathFunction" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -254,10 +232,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el objeto primario del especificado <see cref="T:Microsoft.Office.Interop.Word.OMathFunctions" /> objeto.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Devuelve el objeto primario del objeto especificado <see cref="T:Microsoft.Office.Interop.Word.OMathFunctions" /> .</summary>
+        <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

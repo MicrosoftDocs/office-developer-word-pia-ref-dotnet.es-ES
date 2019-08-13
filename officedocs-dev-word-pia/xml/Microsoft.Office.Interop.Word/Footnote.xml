@@ -1,13 +1,5 @@
 <Type Name="Footnote" FullName="Microsoft.Office.Interop.Word.Footnote">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="45ece3408c4d3718e87d615152a5a54015787e1f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675454" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Footnote" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="50cf85c804e083cb3f2277cf406a348b3a3b6c73" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148057" /></Metadata><TypeSignature Language="C#" Value="public interface Footnote" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Footnote" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Footnote" />
   <TypeSignature Language="VB.NET" Value="Public Interface Footnote" />
@@ -26,13 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa una nota al pie situado en la parte inferior de la página o debajo del texto. El objeto <b>Footnote</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Footnotes" /> colección. <b>Este conjunto</b> representa las notas al pie en un documento, selección o intervalo.</summary>
-    <remarks>
-      <para>Use <b>las notas al pie</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un único objeto de <b>Nota al pie</b> . El número de índice representa la posición de la nota al pie en la selección, intervalo o documento.</para>
-      <para>Usar la <see cref="M:Microsoft.Office.Interop.Word.Footnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" /> método para agregar una nota al pie a la colección <b>Footnotes</b> .</para>
-      <para>Las notas al pie situadas al final de un documento o una sección se consideran notas al final y se incluyen en el <see cref="T:Microsoft.Office.Interop.Word.Endnotes" /> colección.</para>
-      <para />
-    </remarks>
+    <summary>Representa una nota al pie situado en la parte inferior de la página o debajo del texto. El objeto <b>footnote</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Footnotes" /> colección. <b>Este conjunto</b> representa las notas al pie en un documento, selección o intervalo.</summary>
+    <remarks><para>Use las <b>notas al pie</b>(<paramref name="index" />) <paramref name="index" /> , donde es el número de índice, para devolver un solo objeto <b>footnote</b> . El número de índice representa la posición de la nota al pie en la selección, el intervalo o el documento.</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.Footnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" /> método para agregar una nota al pie a la colección <b>Footnotes</b> .</para>
+      <para>Las notas al pie situadas al final de un documento o de una sección se consideran notas al final <see cref="T:Microsoft.Office.Interop.Word.Endnotes" /> y se incluyen en la colección.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,9 +78,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -141,7 +131,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <b>entero</b> que representa la posición de un elemento de una colección.</summary>
+        <summary>Devuelve un <b>entero</b> que representa la posición de un elemento en una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -197,12 +187,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa la parte de un documento que está incluida en el objeto especificado.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa la parte de un documento incluida en el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para obtener información acerca de la devolución de un intervalo de un documento o la devolución de un intervalo de formas de una colección de formas, vea el <see cref="P:Microsoft.Office.Interop.Word.Footnote.Range" /> (método).</para>
-          <para />
-        </remarks>
+        <remarks><para>Para obtener información sobre la devolución de un intervalo de un documento o la devolución de un intervalo de formas de una <see cref="P:Microsoft.Office.Interop.Word.Footnote.Range" /> colección de formas, vea el método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reference">
@@ -228,7 +216,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa una nota al pie, una nota al final o una marca de referencia de comentario.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa una marca de referencia de nota al pie, nota al final o de comentario.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

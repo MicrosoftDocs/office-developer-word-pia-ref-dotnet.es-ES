@@ -1,13 +1,5 @@
 <Type Name="FileConverter" FullName="Microsoft.Office.Interop.Word.FileConverter">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b895588fe75d88bfa9fe9416f0d5c82af0369a00" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675635" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FileConverter" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e5e73be359807266e9514d8b613947bcb2065ec8" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146853" /></Metadata><TypeSignature Language="C#" Value="public interface FileConverter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FileConverter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FileConverter" />
   <TypeSignature Language="VB.NET" Value="Public Interface FileConverter" />
@@ -27,12 +19,12 @@
   </Attributes>
   <Docs>
     <summary>Representa un convertidor de archivos que se utiliza para abrir o guardar archivos.</summary>
-    <remarks>
-      <para>El objeto <b>FileConverter</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.FileConverters" /> colección. La colección <b>FileConverters</b> contiene todos los convertidores de archivos instalados para abrir y guardar archivos.</para>
-      <para>Uso <b>FileConverters</b>(<paramref name="index" />), donde <paramref name="index" /> es un nombre de clase o número de índice, para devolver un solo objeto <b>FileConverter</b> .</para>
-      <para>El número de índice representa la posición del convertidor de archivos de la colección <b>FileConverters</b> .</para>
-      <para>No se puede crear un convertidor de archivos nuevo o agregar uno a la colección <b>FileConverters</b> . Los objetos <b>FileConverter</b> se agregan durante la instalación de Microsoft Office o al instalar convertidores suplementarios. Usar el <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanSave" /> o <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanOpen" /> (propiedad) para determinar si se puede usar un objeto <b>FileConverter</b> para abrir o guardar el documento.</para> Convertidores de 
-      <para>archivo para guardar documentos aparecen en el cuadro de diálogo Guardar como. Convertidores de archivos para abrir documentos aparecen en un cuadro de diálogo si la Confirmar conversiones al abrir casilla de verificación está activada en la ficha General en el cuadro de diálogo Opciones (menú Herramientas).</para><para /></remarks>
+    <remarks><para>El objeto <b>FileConverter</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.FileConverters" /> colección. La colección <b>FileConverters</b> contiene todos los convertidores de archivos instalados para abrir y guardar archivos.</para>
+      <para>Utilice <b>FileConverters</b>(<paramref name="index" />), donde <paramref name="index" /> es un nombre de clase o número de índice, para devolver un solo objeto <b>FileConverter</b> .</para>
+      <para>El número de índice representa la posición del convertidor de archivos en la colección <b>FileConverters</b>.</para>
+      <para>No se puede crear un convertidor de archivos nuevo o agregar uno a la colección <b>FileConverters</b>. Se agregan objetos <b>FileConverter</b> durante la instalación de Microsoft Office o al instalar convertidores suplementarios. Utilice la <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanSave" /> propiedad o <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanOpen" /> para determinar si se puede usar un objeto <b>FileConverter</b> para abrir o guardar el documento.</para>
+      <para>Los convertidores de archivos utilizados para guardar documentos aparecen en el cuadro de diálogo Guardar como. Los convertidores de archivos para abrir documentos aparecen en un cuadro de diálogo si está activada la casilla Confirmar conversiones al abrir en la ficha General del cuadro de diálogo Opciones (menú Herramientas).</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,11 +80,9 @@
       <Docs>
         <summary>Determina si el convertidor de archivos especificado está diseñado para abrir archivos.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propiedad devuelve <b>True</b> si el convertidor de archivos especificado se ha diseñado para abrir archivos y <b>False</b> si no.</para>
-          <para>La <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanSave" /> propiedad devuelve <b>True</b> si el convertidor de archivos especificado se puede usar para guardar (exportar) archivos.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esta propiedad devuelve <b>true</b> si el convertidor de archivos especificado está diseñado para abrir archivos y <b>false</b> en caso contrario.</para>
+          <para>La <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanSave" /> propiedad devuelve <b>true</b> si el convertidor de archivos especificado se puede usar para guardar (exportar) archivos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CanSave">
@@ -120,10 +110,8 @@
       <Docs>
         <summary>Determina si el convertidor de archivos especificado está diseñado para guardar archivos.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanOpen" /> propiedad devuelve <b>True</b> si el convertidor de archivos especificado se puede usar para abrir (importar) archivos.</para>
-          <para />
-        </remarks>
+        <remarks><para>La <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanOpen" /> propiedad devuelve <b>true</b> si el convertidor de archivos especificado se puede usar para abrir (importar) archivos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClassName">
@@ -179,9 +167,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Si el objeto especificado se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Extensions">
@@ -207,7 +195,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el archivo de extensiones de nombre de asociado al objeto <see cref="T:Microsoft.Office.Interop.Word.FileConverter" /> objeto.</summary>
+        <summary>Devuelve las extensiones de nombre de archivo asociadas con <see cref="T:Microsoft.Office.Interop.Word.FileConverter" /> el objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -237,10 +225,8 @@
       <Docs>
         <summary>Devuelve el nombre del convertidor de archivos especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Los nombres de formato aparecen en la operación de guardar como tipo en el cuadro de diálogo Guardar como (menú Archivo).</para>
-          <para />
-        </remarks>
+        <remarks><para>Los nombres de formato aparecen en el cuadro Guardar como tipo del cuadro de diálogo Guardar como (menú Archivo).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -296,10 +282,8 @@
       <Docs>
         <summary>Devuelve el formato de archivo del convertidor de archivos especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>OpenFormat</b> puede ser cualquier <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> constante, o bien puede ser un número único que represente un convertidor de archivos externo.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propiedad <b>OpenFormat</b> puede ser cualquier constante <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> válida o puede ser un número único que representa un convertidor de archivos externo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -355,11 +339,9 @@
       <Docs>
         <summary>Devuelve el disco o la ruta de acceso Web al objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La ruta de acceso no incluye un carácter final, por ejemplo, "C:\MSOffice" o "http://MyServer". Usar el <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> (propiedad) para agregar el carácter que separa carpetas y letras de unidad. Usar el <see cref="P:Microsoft.Office.Interop.Word.FileConverter.Name" /> (propiedad) para devolver el nombre de archivo sin la ruta de acceso.</para>
-          <para>Puede utilizar la propiedad <b>PathSeparator</b> para crear direcciones Web aunque contengan barras diagonales (/) y <b>la propiedad PathSeparator sea una barra diagonal inversa</b> (\).</para>
-          <para />
-        </remarks>
+        <remarks><para>La ruta de acceso no incluye un carácter final, por ejemplo, "C:\MSOffice" o "http://MyServer". Use la <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> propiedad para agregar el carácter que separa carpetas y Letras de unidad. Use la <see cref="P:Microsoft.Office.Interop.Word.FileConverter.Name" /> propiedad para devolver el nombre de archivo sin la ruta de acceso.</para>
+          <para>Puede usar la propiedad <b>PathSeparator</b> para crear direcciones web, aunque contengan barras diagonales (/) y el valor predeterminado de la propiedad <b>PathSeparator</b> sea una barra\)diagonal inversa (.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveFormat">
@@ -387,10 +369,8 @@
       <Docs>
         <summary>Devuelve el formato de archivo del convertidor de archivos especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>El valor devuelto será un número único que especifica un convertidor de archivos externo o una <see cref="T:Microsoft.Office.Interop.Word.WdSaveFormat" /> constante.</para>
-          <para />
-        </remarks>
+        <remarks><para>El valor devuelto será un número único que especifica un convertidor de archivos externo o <see cref="T:Microsoft.Office.Interop.Word.WdSaveFormat" /> una constante.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

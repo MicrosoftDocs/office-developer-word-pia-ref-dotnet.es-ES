@@ -1,13 +1,5 @@
 <Type Name="Indexes" FullName="Microsoft.Office.Interop.Word.Indexes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c47d895ce1ab76c08d23df7218a98cbdbcccf8ed" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="es-ES" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20675780" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Indexes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7b57b53793778d56fdc6da5059ee8398d3e740c4" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147964" /></Metadata><TypeSignature Language="C#" Value="public interface Indexes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Indexes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Indexes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Indexes&#xA;Implements IEnumerable" />
@@ -31,12 +23,10 @@
   </Attributes>
   <Docs>
     <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.Index" /> objetos que representa todos los índices del documento especificado.</summary>
-    <remarks>
-      <para>Usar el <see cref="P:Microsoft.Office.Interop.Word._Document.Indexes" /> propiedad para devolver la colección <b>Indexes</b> .</para>
-      <para>Usar el <see cref="M:Microsoft.Office.Interop.Word.Indexes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> (método) para crear un índice y agregarlo a la colección <b>Indexes</b> .</para>
-      <para>Usar <b>índices</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un solo objeto <b>Index</b> . El número de índice representa la posición del objeto <b>Index</b> en el documento.</para>
-      <para />
-    </remarks>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Word._Document.Indexes" /> propiedad para devolver la <b></b> colección Indexes.</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.Indexes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para crear un índice y agregarlo a la <b></b> colección Indexes.</para>
+      <para>Use <b>Indexes</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un único objeto <b>index</b> . El número de índice representa la posición del objeto <b>Index</b> en el documento.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -68,26 +58,17 @@
       </Parameters>
       <Docs>
         <param name="Range">Objeto <b>Range</b> requerido. Intervalo donde desea que aparezca el índice. El índice reemplazará al intervalo, si éste no está contraído.</param>
-        <param name="HeadingSeparator">
-          <b>Objeto</b>de opcional. El texto entre grupos alfabéticos (elementos que comienzan con la misma letra) en el índice. Puede ser uno de los siguientes <see cref="T:Microsoft.Office.Interop.Word.WdHeadingSeparator" /> constantes: <b>wdHeadingSeparatorBlankLine</b>, <b>wdHeadingSeparatorLetter</b>, <b>wdHeadingSeparatorLetterFull</b>, <b>wdHeadingSeparatorLetterLow</b>o <b>wdHeadingSeparatorNone</b>.</param>
-        <param name="RightAlignPageNumbers">
-          <b>Objeto</b>de opcional. <b>True</b> para alinear los números de página con el margen derecho.</param>
-        <param name="Type">
-          <b>Objeto</b>de opcional. Especifica si las subentradas se encuentran en la misma línea (continua) que la entrada principal o en una línea independiente (con sangría) del elemento principal. Puede ser cualquiera de los siguientes <see cref="T:Microsoft.Office.Interop.Word.WdIndexType" /> constantes: <b>wdIndexIndent</b> o <b>wdIndexRunin</b>.</param>
-        <param name="NumberOfColumns">
-          <b>Objeto</b>de opcional. Número de columnas de cada página del índice. Al especificar 0 (cero) se establece el número de columnas del índice para que sea igual que el del documento.</param>
-        <param name="AccentedLetters">
-          <b>Objeto</b>de opcional. <b>True</b> para incluir en el índice títulos separados para las letras acentuadas; por ejemplo, las palabras que comiencen con "À" y con "A" se incluyen en títulos diferentes.</param>
-        <param name="SortBy">
-          <b>Objeto</b>de opcional. El criterio de ordenación que se usará para el índice especificado. Puede ser cualquiera de los siguientes <see cref="T:Microsoft.Office.Interop.Word.WdIndexSortBy" /> constantes: <b>wdIndexSortByStroke</b> o <b>wdIndexSortBySyllable</b>.</param>
-        <param name="IndexLanguage">
-          <b>Objeto</b>de opcional. El idioma de ordenación que se usará para el índice especificado. Puede ser cualquiera de los <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes.</param>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Index" /> objeto que representa un nuevo índice agregado a un documento.</summary>
+        <param name="HeadingSeparator"><b>Objeto</b>opcional. Texto entre grupos alfabéticos (las entradas que comienzan con la misma letra) del índice. Puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdHeadingSeparator" /> constantes: <b>wdHeadingSeparatorBlankLine</b>, <b>wdHeadingSeparatorLetter</b>, <b>wdHeadingSeparatorLetterFull</b>, <b>wdHeadingSeparatorLetterLow</b>o <b>wdHeadingSeparatorNone</b>.</param>
+        <param name="RightAlignPageNumbers"><b>Objeto</b>opcional. <b>True</b> para alinear los números de página con el margen derecho.</param>
+        <param name="Type"><b>Objeto</b>opcional. Especifica si las subentradas se encuentran en la misma línea (continua) que la entrada principal o en una línea independiente (con sangría) del elemento principal. Puede ser cualquiera de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdIndexType" /> constantes: <b>wdIndexIndent</b> o <b>wdIndexRunin</b>.</param>
+        <param name="NumberOfColumns"><b>Objeto</b>opcional. Número de columnas de cada página del índice. Al especificar 0 (cero) se establece el número de columnas del índice para que sea igual que el del documento.</param>
+        <param name="AccentedLetters"><b>Objeto</b>opcional. <b>True</b> para incluir en el índice títulos separados para las letras acentuadas; por ejemplo, las palabras que comiencen con "À" y con "A" se incluyen en títulos diferentes.</param>
+        <param name="SortBy"><b>Objeto</b>opcional. El criterio de ordenación que se usará para el índice especificado. Puede ser cualquiera de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdIndexSortBy" /> constantes: <b>wdIndexSortByStroke</b> o <b>wdIndexSortBySyllable</b>.</param>
+        <param name="IndexLanguage"><b>Objeto</b>opcional. El idioma de ordenación que se usará para el índice especificado. Puede ser cualquiera de las <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes.</param>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Index" /> objeto Object que representa un nuevo índice agregado a un documento.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Se genera un índice de índice campos XE (entrada) en un documento. Usar el <see cref="M:Microsoft.Office.Interop.Word.Indexes.MarkEntry(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> (método) para marcar las entradas de índice que se deben incluir en un índice.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se genera un índice de índice campos XE (entrada) en un documento. Use el <see cref="M:Microsoft.Office.Interop.Word.Indexes.MarkEntry(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para marcar las entradas de índice que se incluirán en un índice.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddOld">
@@ -153,7 +134,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa la aplicación Microsoft Word.</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -181,13 +162,10 @@
         <Parameter Name="ConcordanceFileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ConcordanceFileName">
-          <b>String</b> requerida. Nombre del archivo de concordancia que incluye una lista de entradas que se van indizar.</param>
+        <param name="ConcordanceFileName"><b>String</b> requerida. Nombre del archivo de concordancia que incluye una lista de entradas que se van indizar.</param>
         <summary>Agrega automáticamente campos XE (entrada de índice) al documento especificado, utilizando las entradas de un archivo de concordancia.</summary>
-        <remarks>
-          <para>Un archivo de concordancia es un documento de Microsoft Word que contiene una tabla de dos columnas, con los términos que el índice en la primera columna y el índice de las entradas de la segunda columna.</para>
-          <para />
-        </remarks>
+        <remarks><para>Un archivo de concordancia es un documento de Microsoft Word que contiene una tabla de dos columnas con los términos que se van a indizar en la primera columna y las entradas de índice en la segunda columna.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -243,9 +221,9 @@
       <Docs>
         <summary>Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Por ejemplo, si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para> Propiedad 
-          <para>el <b>creador</b> principalmente se diseñó para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje ayuda que se incluye con Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Por ejemplo, si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD". [!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</para>
+          <para>La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -276,10 +254,8 @@
       <Docs>
         <summary>Devuelve o establece el formato de los índices del documento especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>La propiedad <b>Format</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdIndexFormat" /> constantes.</para>
-          <para />
-        </remarks>
+        <remarks><para>La propiedad <b>Format</b> puede ser una de las <see cref="T:Microsoft.Office.Interop.Word.WdIndexFormat" /> constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -340,7 +316,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">Un <b>entero</b> que indica la posición ordinal del objeto individual.</param>
+        <param name="Index"><b>Entero</b> que indica la posición ordinal del objeto individual.</param>
         <summary>Devuelve un objeto individual de una colección.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -375,21 +351,14 @@
       </Parameters>
       <Docs>
         <param name="Range">Objeto <b>Range</b> requerido. Intervalo cuyo texto se va a marcar con un campo XE en todo el documento.</param>
-        <param name="Entry">
-          <b>Objeto</b>de opcional. El texto que desea que aparezca en el índice, en el formulario <paramref name="MainEntry[:Subentry]" />.</param>
-        <param name="EntryAutoText">
-          <b>Objeto</b>de opcional. El elemento de Autotexto que contiene el texto que desea que aparezca en el índice (si se especifica este argumento, <paramref name="Entry" /> se pasa por alto).</param>
-        <param name="CrossReference">
-          <b>Objeto</b>de opcional. Referencia cruzada que aparecerá en el índice.</param>
-        <param name="CrossReferenceAutoText">
-          <b>Objeto</b>de opcional. El nombre del elemento de Autotexto que contiene el texto de una referencia cruzada (si se especifica este argumento, <paramref name="CrossReference" /> se pasa por alto).</param>
-        <param name="BookmarkName">
-          <b>Objeto</b>de opcional. Nombre del marcador que indica el intervalo de páginas que desee que aparezca en el índice. Si se omite este argumento, en el índice aparecerá el número de la página que contiene el campo XE.</param>
-        <param name="Bold">
-          <b>Objeto</b>de opcional. <b>True</b> para agregar formato de negrita a los números de página de las entradas de índice.</param>
-        <param name="Italic">
-          <b>Objeto</b>de opcional. <b>True</b> para agregar formato de cursiva a los números de página de las entradas de índice.</param>
-        <summary>Inserta un campo XE (entrada de índice) detrás de las instancias del texto en <paramref name="Range" />.</summary>
+        <param name="Entry"><b>Objeto</b>opcional. Texto que desea que aparezca en el índice, en el formulario <paramref name="MainEntry[:Subentry]" />.</param>
+        <param name="EntryAutoText"><b>Objeto</b>opcional. El elemento de Autotexto que contiene el texto que desea que aparezca en el índice (si se especifica este argumento <paramref name="Entry" /> , se pasa por alto).</param>
+        <param name="CrossReference"><b>Objeto</b>opcional. Referencia cruzada que aparecerá en el índice.</param>
+        <param name="CrossReferenceAutoText"><b>Objeto</b>opcional. El nombre del elemento de Autotexto que contiene el texto de una referencia cruzada (si se especifica este argumento, <paramref name="CrossReference" /> se pasa por alto).</param>
+        <param name="BookmarkName"><b>Objeto</b>opcional. Nombre del marcador que indica el intervalo de páginas que desee que aparezca en el índice. Si se omite este argumento, en el índice aparecerá el número de la página que contiene el campo XE.</param>
+        <param name="Bold"><b>Objeto</b>opcional. <b>True</b> para agregar formato de negrita a los números de página de las entradas de índice.</param>
+        <param name="Italic"><b>Objeto</b>opcional. <b>True</b> para agregar formato de cursiva a los números de página de las entradas de índice.</param>
+        <summary>Inserta un campo XE (entrada de índice) detrás de todas las instancias del texto <paramref name="Range" />en.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -422,24 +391,16 @@
         <Parameter Name="Reading" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Objeto <b>Range</b> requerido. Ubicación del elemento. El campo XE se inserta después de <paramref name="Range" />.</param>
-        <param name="Entry">
-          <b>Objeto</b>de opcional. El texto que aparece en el índice. Para indicar un subelemento, incluya el texto del elemento principal y el del subelemento separados por dos puntos (:), por ejemplo "Introducción: El Producto".</param>
-        <param name="EntryAutoText">
-          <b>Objeto</b>de opcional. El nombre de la entrada de Autotexto que incluye texto para el índice, tabla de ilustraciones o tabla de contenido (<paramref name="Entry" /> se pasa por alto).</param>
-        <param name="CrossReference">
-          <b>Objeto</b>de opcional. Referencia cruzada que va a aparecer en el índice, por ejemplo "Vea Manzanas".</param>
-        <param name="CrossReferenceAutoText">
-          <b>Objeto</b>de opcional. El nombre de la entrada de Autotexto que contiene el texto de una referencia cruzada (<paramref name="CrossReference" /> se pasa por alto).</param>
-        <param name="BookmarkName">
-          <b>Objeto</b>de opcional. El nombre del marcador que marca el intervalo de páginas que desea que aparezca en el índice. Si se omite este argumento, el número de la página que contiene el campo XE aparece en el índice.</param>
-        <param name="Bold">
-          <b>Objeto</b>de opcional. <b>True</b> para agregar formato de negrita a los números de página de los elementos en el índice.</param>
-        <param name="Italic">
-          <b>Objeto</b>de opcional. <b>True</b> para agregar formato de cursiva a los números de página de los elementos en el índice.</param>
-        <param name="Reading">
-          <b>Objeto</b>de opcional. <b>True</b> muestra una entrada de índice en la posición correcta cuando los índices se ordenan fonéticamente (sólo idiomas del Este Asiático).</param>
-        <summary>Inserta un campo XE (entrada de índice) después del intervalo especificado. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Field" /> objeto que representa el campo XE.</summary>
+        <param name="Range">Objeto <b>Range</b> requerido. Ubicación del elemento. El campo XE se inserta después <paramref name="Range" />de.</param>
+        <param name="Entry"><b>Objeto</b>opcional. Texto que aparece en el índice. Para indicar un subelemento, incluya el texto del elemento principal y el del subelemento separados por dos puntos (:), por ejemplo "Introducción: El Producto".</param>
+        <param name="EntryAutoText"><b>Objeto</b>opcional. El nombre del elemento de Autotexto que incluye texto para el índice, la tabla de ilustraciones o la tabla<paramref name="Entry" /> de contenido (se pasa por alto).</param>
+        <param name="CrossReference"><b>Objeto</b>opcional. Referencia cruzada que va a aparecer en el índice, por ejemplo "Vea Manzanas".</param>
+        <param name="CrossReferenceAutoText"><b>Objeto</b>opcional. Nombre del elemento de Autotexto que contiene el texto de una referencia cruzada (<paramref name="CrossReference" /> se pasa por alto).</param>
+        <param name="BookmarkName"><b>Objeto</b>opcional. Nombre del marcador que marca el intervalo de páginas que se desea que aparezcan en el índice. Si se omite este argumento, el número de la página que contiene el campo XE aparece en el índice.</param>
+        <param name="Bold"><b>Objeto</b>opcional. <b>True</b> para agregar formato de negrita a los números de página de los elementos en el índice.</param>
+        <param name="Italic"><b>Objeto</b>opcional. <b>True</b> para agregar formato de cursiva a los números de página de los elementos en el índice.</param>
+        <param name="Reading"><b>Objeto</b>opcional. <b>True</b> muestra una entrada de índice en la posición correcta cuando los índices se ordenan fonéticamente (sólo idiomas del Este Asiático).</param>
+        <summary>Inserta un campo XE (entrada de índice) después del intervalo especificado. Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Field" /> objeto que representa el campo XE.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
