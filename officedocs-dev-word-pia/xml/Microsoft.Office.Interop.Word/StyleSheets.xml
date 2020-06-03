@@ -1,9 +1,10 @@
 <Type Name="StyleSheets" FullName="Microsoft.Office.Interop.Word.StyleSheets">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="f5e7d2970cc046f6ff039df36db9be51e896453e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146062" /></Metadata><TypeSignature Language="C#" Value="public interface StyleSheets : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4f7ccdfe63671b7dc35747624604975042c77d50" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926223" /></Metadata><TypeSignature Language="C#" Value="public interface StyleSheets : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract StyleSheets implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.StyleSheets" />
   <TypeSignature Language="VB.NET" Value="Public Interface StyleSheets&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class StyleSheets : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type StyleSheets = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -23,8 +24,8 @@
   </Attributes>
   <Docs>
     <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.StyleSheet" /> objetos que representa las hojas de estilos en cascada adjuntas a un documento.</summary>
-    <remarks><para>La <b></b> colección Stylesheets incluye todas las hojas de estilo en cascada mostradas en el cuadro de diálogo hojas de estilo CSS vinculadas, a la que se tiene acceso mediante el comando plantillas y complementos (menú herramientas).</para>
-      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word._Document.StyleSheets" /> propiedad para devolver la <b></b> colección Stylesheets. Utilice el <see cref="M:Microsoft.Office.Interop.Word.StyleSheets.Add(System.String,Microsoft.Office.Interop.Word.WdStyleSheetLinkType,System.String,Microsoft.Office.Interop.Word.WdStyleSheetPrecedence)" /> método para agregar una hoja de estilos a <b></b> la colección Stylesheets.</para>
+    <remarks><para>La colección <b>Stylesheets</b> incluye todas las hojas de estilo en cascada mostradas en el cuadro de diálogo hojas de estilo CSS vinculadas, a la que se tiene acceso mediante el comando plantillas y complementos (menú herramientas).</para>
+      <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word._Document.StyleSheets" /> propiedad para devolver la colección <b>Stylesheets</b> . Utilice el <see cref="M:Microsoft.Office.Interop.Word.StyleSheets.Add(System.String,Microsoft.Office.Interop.Word.WdStyleSheetLinkType,System.String,Microsoft.Office.Interop.Word.WdStyleSheetPrecedence)" /> método para agregar una hoja de estilos a la colección <b>Stylesheets</b> .</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.StyleSheets.Add(System.String,Microsoft.Office.Interop.Word.WdStyleSheetLinkType,System.String,Microsoft.Office.Interop.Word.WdStyleSheetPrecedence)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (FileName As String, LinkType As WdStyleSheetLinkType, Title As String, Precedence As WdStyleSheetPrecedence) As StyleSheet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::StyleSheet ^ Add(System::String ^ FileName, Microsoft::Office::Interop::Word::WdStyleSheetLinkType LinkType, System::String ^ Title, Microsoft::Office::Interop::Word::WdStyleSheetPrecedence Precedence);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * Microsoft.Office.Interop.Word.WdStyleSheetLinkType * string * Microsoft.Office.Interop.Word.WdStyleSheetPrecedence -&gt; Microsoft.Office.Interop.Word.StyleSheet" Usage="styleSheets.Add (FileName, LinkType, Title, Precedence)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -55,9 +57,9 @@
       </Parameters>
       <Docs>
         <param name="FileName"><b>String</b> requerida. Ruta de acceso y nombre del archivo de la hoja de estilos en cascada.</param>
-        <param name="LinkType">Es <see cref="T:Microsoft.Office.Interop.Word.WdStyleSheetLinkType" />obligatorio. Indica si la hoja de estilos debe agregarse como un vínculo o importarse al documento Web. Puede ser una de las siguientes constantes: <b>wdStyleSheetLinkTypeImported </b> <b>wdStyleSheetLinkTypeLinked</b><paramref name="default" /></param>
+        <param name="LinkType">Es obligatorio <see cref="T:Microsoft.Office.Interop.Word.WdStyleSheetLinkType" /> . Indica si la hoja de estilos debe agregarse como un vínculo o importarse al documento Web. Puede ser una de las siguientes constantes: <b>wdStyleSheetLinkTypeImported </b> <b>wdStyleSheetLinkTypeLinked</b><paramref name="default" /></param>
         <param name="Title"><b>String</b> requerida. Nombre de la hoja de estilos.</param>
-        <param name="Precedence">Es <see cref="T:Microsoft.Office.Interop.Word.WdStyleSheetPrecedence" />obligatorio. Indica el nivel de importancia comparado con otras hojas de estilos en cascada adjuntas al documento Web. Puede ser una de las siguientes constantes:<b>wdStyleSheetPrecedenceHigher</b><b>wdStyleSheetPrecedenceHighest</b><paramref name="default" /><b>wdStyleSheetPrecedenceLower</b><b>wdStyleSheetPrecedenceLowest</b></param>
+        <param name="Precedence">Es obligatorio <see cref="T:Microsoft.Office.Interop.Word.WdStyleSheetPrecedence" /> . Indica el nivel de importancia comparado con otras hojas de estilos en cascada adjuntas al documento Web. Puede ser una de las siguientes constantes:<b>wdStyleSheetPrecedenceHigher</b><b>wdStyleSheetPrecedenceHighest</b> <paramref name="default" /> <b>wdStyleSheetPrecedenceLower</b><b>wdStyleSheetPrecedenceLowest</b></param>
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.StyleSheet" /> objeto Object que representa una nueva hoja de estilos agregada a un documento Web.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.StyleSheets.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.StyleSheets.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -97,6 +100,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.StyleSheets.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.StyleSheets.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.StyleSheets.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.StyleSheets.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.StyleSheets.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="styleSheets.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.StyleSheets.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As StyleSheet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::StyleSheet ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::StyleSheet ^ get(System::Object ^ % Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.StyleSheet" Usage="Microsoft.Office.Interop.Word.StyleSheets.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -204,7 +211,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.StyleSheet</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Index"><b>Objeto</b> que indica la posición ordinal o una cadena que representa el nombre del objeto individual.</param>
@@ -219,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.StyleSheets.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.StyleSheets.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

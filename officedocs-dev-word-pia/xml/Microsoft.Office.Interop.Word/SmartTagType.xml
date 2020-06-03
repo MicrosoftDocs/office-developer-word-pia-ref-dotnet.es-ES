@@ -1,9 +1,10 @@
 <Type Name="SmartTagType" FullName="Microsoft.Office.Interop.Word.SmartTagType">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="be0009d07ada538632f62700e62de5b182eb910c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143990" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagType" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4dda4b414bab01205c0c91563416a35026dc2a2f" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926300" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagType" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTagType" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagType" />
   <TypeSignature Language="C++ CLI" Value="public interface class SmartTagType" />
+  <TypeSignature Language="F#" Value="type SmartTagType = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -21,8 +22,8 @@
     <summary>Representa un tipo de etiqueta inteligente.</summary>
     <remarks><para>Los tipos de etiqueta inteligente se identifican como elementos aislados en las listas de etiquetas inteligentes. Las listas de etiquetas inteligentes pueden contener varios tipos de etiquetas inteligentes. Por ejemplo, la lista de direcciones de etiquetas inteligentes instalada en sistemas en inglés contiene de manera predeterminada un tipo de etiqueta inteligente de nombre, un tipo de etiqueta inteligente de calle y un tipo de etiqueta inteligente de ciudad, por mencionar sólo algunas.</para>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />, <see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" />y <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> los objetos están relacionados en que cada elemento reconocido por un componente de etiqueta inteligente es un objeto <b>SmartTagType</b> . Por ejemplo, "ciudad" en el componente de etiqueta inteligente Dirección es un objeto <b>SmartTagType</b> específico. El tipo de etiqueta inteligente de ciudad está en relación con objetos <b>SmartTagRecognizer</b> (la parte del componente de etiqueta inteligente que reconoce etiquetas inteligentes del tipo "ciudad" de los documentos) y objetos <b>SmartTagAction</b> (la parte de ese mismo componente que proporciona las acciones relacionadas con el tipo de etiqueta específico, entre las que se puede incluir buscar una ciudad conocida en Microsoft MapPoint en MSN). En pocas palabras, el reconocedor realiza la etiqueta, el controlador de acciones proporciona funciones de usuario final y lo que los une es el tipo de etiqueta inteligente con el que trabajan.</para>
-      <para>Utilice el <see cref="P:Microsoft.Office.Interop.Word.SmartTagTypes.Item(System.Object@)" /> método para devolver un tipo de etiqueta inteligente específico en una colección de tipos de etiquetas inteligentes. A continuación, <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagRecognizers" /> utilice la propiedad para devolver todos los reconocedores de etiquetas inteligentes asociados a un tipo especificado de etiqueta <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagActions" /> inteligente y use la propiedad para devolver todas las acciones de etiquetas inteligentes asociadas a un tipo especificado de etiqueta inteligente.</para>
+        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />, <see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" /> y los <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> objetos están relacionados en que cada elemento reconocido por un componente de etiqueta inteligente es un objeto <b>SmartTagType</b> . Por ejemplo, "ciudad" en el componente de etiqueta inteligente Dirección es un objeto <b>SmartTagType</b> específico. El tipo de etiqueta inteligente de ciudad está en relación con objetos <b>SmartTagRecognizer</b> (la parte del componente de etiqueta inteligente que reconoce etiquetas inteligentes del tipo "ciudad" de los documentos) y objetos <b>SmartTagAction</b> (la parte de ese mismo componente que proporciona las acciones relacionadas con el tipo de etiqueta específico, entre las que se puede incluir buscar una ciudad conocida en Microsoft MapPoint en MSN). En pocas palabras, el reconocedor realiza la etiqueta, el controlador de acciones proporciona funciones de usuario final y lo que los une es el tipo de etiqueta inteligente con el que trabajan.</para>
+      <para>Utilice el <see cref="P:Microsoft.Office.Interop.Word.SmartTagTypes.Item(System.Object@)" /> método para devolver un tipo de etiqueta inteligente específico en una colección de tipos de etiquetas inteligentes. A continuación, utilice la <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagRecognizers" /> propiedad para devolver todos los reconocedores de etiquetas inteligentes asociados a un tipo especificado de etiqueta inteligente y use la <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagActions" /> propiedad para devolver todas las acciones de etiquetas inteligentes asociadas a un tipo especificado de etiqueta inteligente.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.SmartTagType.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.SmartTagType.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.FriendlyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FriendlyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FriendlyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FriendlyName : string" Usage="Microsoft.Office.Interop.Word.SmartTagType.FriendlyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -118,7 +122,7 @@
       <Docs>
         <summary>Devuelve una <b>cadena</b> que representa un nombre descriptivo para un tipo de etiqueta inteligente.</summary>
         <value>To be added.</value>
-        <remarks><para>Los nombres de los tipos de etiquetas inteligentes, <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" /> tal y como se definen en la propiedad, tienen el formato de nombres de recursos uniformes (urn). El nombre descriptivo quita el URN y deja el nombre después del signo de almohadilla (#). Por ejemplo, el tipo de etiqueta inteligente dirección devuelve el siguiente URN para <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" /> la propiedad.</para>
+        <remarks><para>Los nombres de los tipos de etiquetas inteligentes, tal y como se definen en la <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" /> propiedad, tienen el formato de nombres de recursos uniformes (urn). El nombre descriptivo quita el URN y deja el nombre después del signo de almohadilla (#). Por ejemplo, el tipo de etiqueta inteligente dirección devuelve el siguiente URN para la <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" /> propiedad.</para>
           <para>urn: schemas-microsoft-com: Office: SmartTags # dirección</para>
           <para>La propiedad <b>FriendlyName</b> quita todo hasta el signo de almohadilla (#), inclusive, y deja la siguiente <b>cadena</b>:</para>
           <para>address</para>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.Name" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.SmartTagType.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -162,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.SmartTagType.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagActions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SmartTagActions As SmartTagActions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::SmartTagActions ^ SmartTagActions { Microsoft::Office::Interop::Word::SmartTagActions ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmartTagActions : Microsoft.Office.Interop.Word.SmartTagActions" Usage="Microsoft.Office.Interop.Word.SmartTagType.SmartTagActions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -224,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagRecognizers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SmartTagRecognizers As SmartTagRecognizers" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::SmartTagRecognizers ^ SmartTagRecognizers { Microsoft::Office::Interop::Word::SmartTagRecognizers ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmartTagRecognizers : Microsoft.Office.Interop.Word.SmartTagRecognizers" Usage="Microsoft.Office.Interop.Word.SmartTagType.SmartTagRecognizers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

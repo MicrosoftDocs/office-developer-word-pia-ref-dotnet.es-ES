@@ -1,9 +1,10 @@
 <Type Name="TablesOfFigures" FullName="Microsoft.Office.Interop.Word.TablesOfFigures">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="a47dc8aab96b5338c26c58900de20ee909636d5e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146013" /></Metadata><TypeSignature Language="C#" Value="public interface TablesOfFigures : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f31992613919bf04dcd6adbf989bc7efe2716e7f" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926097" /></Metadata><TypeSignature Language="C#" Value="public interface TablesOfFigures : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TablesOfFigures implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TablesOfFigures" />
   <TypeSignature Language="VB.NET" Value="Public Interface TablesOfFigures&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class TablesOfFigures : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type TablesOfFigures = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -25,7 +26,7 @@
     <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.TableOfFigures" /> objetos que representan las tablas de ilustraciones de un documento.</summary>
     <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Word._Document.TablesOfFigures" /> propiedad para devolver la colección <b>TablesOfFigures</b> .</para>
       <para>Use el <see cref="M:Microsoft.Office.Interop.Word.TablesOfFigures.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para agregar una tabla de ilustraciones a un documento. Una tabla de ilustraciones muestra los títulos de ilustraciones en el orden en que aparecen en el documento.</para>
-      <para>Use <b>TablesOfFigures</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un solo objeto <b>TableOfFigures</b> . El número de índice representa la posición de la tabla de ilustraciones del documento.</para>
+      <para>Use <b>TablesOfFigures</b>( <paramref name="index" /> ), donde <paramref name="index" /> es el número de índice, para devolver un solo objeto <b>TableOfFigures</b> . El número de índice representa la posición de la tabla de ilustraciones del documento.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -33,6 +34,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.TableOfFigures Add (Microsoft.Office.Interop.Word.Range Range, ref object Caption, ref object IncludeLabel, ref object UseHeadingStyles, ref object UpperHeadingLevel, ref object LowerHeadingLevel, ref object UseFields, ref object TableID, ref object RightAlignPageNumbers, ref object IncludePageNumbers, ref object AddedStyles, ref object UseHyperlinks, ref object HidePageNumbersInWeb);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.TableOfFigures Add([in]class Microsoft.Office.Interop.Word.Range Range, [in]object&amp; Caption, [in]object&amp; IncludeLabel, [in]object&amp; UseHeadingStyles, [in]object&amp; UpperHeadingLevel, [in]object&amp; LowerHeadingLevel, [in]object&amp; UseFields, [in]object&amp; TableID, [in]object&amp; RightAlignPageNumbers, [in]object&amp; IncludePageNumbers, [in]object&amp; AddedStyles, [in]object&amp; UseHyperlinks, [in]object&amp; HidePageNumbersInWeb) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TablesOfFigures.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Range As Range, Optional ByRef Caption As Object, Optional ByRef IncludeLabel As Object, Optional ByRef UseHeadingStyles As Object, Optional ByRef UpperHeadingLevel As Object, Optional ByRef LowerHeadingLevel As Object, Optional ByRef UseFields As Object, Optional ByRef TableID As Object, Optional ByRef RightAlignPageNumbers As Object, Optional ByRef IncludePageNumbers As Object, Optional ByRef AddedStyles As Object, Optional ByRef UseHyperlinks As Object, Optional ByRef HidePageNumbersInWeb As Object) As TableOfFigures" />
+      <MemberSignature Language="F#" Value="abstract member Add : Microsoft.Office.Interop.Word.Range * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj -&gt; Microsoft.Office.Interop.Word.TableOfFigures" Usage="tablesOfFigures.Add (Range, Caption, IncludeLabel, UseHeadingStyles, UpperHeadingLevel, LowerHeadingLevel, UseFields, TableID, RightAlignPageNumbers, IncludePageNumbers, AddedStyles, UseHyperlinks, HidePageNumbersInWeb)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,25 +51,25 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
-        <Parameter Name="Caption" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="IncludeLabel" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="UseHeadingStyles" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="UpperHeadingLevel" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="LowerHeadingLevel" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="UseFields" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="TableID" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="RightAlignPageNumbers" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="IncludePageNumbers" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="AddedStyles" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="UseHyperlinks" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="HidePageNumbersInWeb" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Caption" Type="System.Object" RefType="ref" />
+        <Parameter Name="IncludeLabel" Type="System.Object" RefType="ref" />
+        <Parameter Name="UseHeadingStyles" Type="System.Object" RefType="ref" />
+        <Parameter Name="UpperHeadingLevel" Type="System.Object" RefType="ref" />
+        <Parameter Name="LowerHeadingLevel" Type="System.Object" RefType="ref" />
+        <Parameter Name="UseFields" Type="System.Object" RefType="ref" />
+        <Parameter Name="TableID" Type="System.Object" RefType="ref" />
+        <Parameter Name="RightAlignPageNumbers" Type="System.Object" RefType="ref" />
+        <Parameter Name="IncludePageNumbers" Type="System.Object" RefType="ref" />
+        <Parameter Name="AddedStyles" Type="System.Object" RefType="ref" />
+        <Parameter Name="UseHyperlinks" Type="System.Object" RefType="ref" />
+        <Parameter Name="HidePageNumbersInWeb" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> requerido. Intervalo donde desea que aparezca la tabla de ilustraciones.</param>
+        <param name="Range"><see cref="T:Microsoft.Office.Interop.Word.Range" />Objeto requerido. Intervalo donde desea que aparezca la tabla de ilustraciones.</param>
         <param name="Caption"><b>Objeto</b>opcional. Etiqueta que identifica los elementos que desea incluir en la tabla de ilustraciones. Equivale al modificador \c de un campo Tabla de contenido (TOC). El valor predeterminado es "Figura".</param>
         <param name="IncludeLabel"><b>Objeto</b>opcional. <b>True</b> para incluir la etiqueta de título y el número de título en la tabla de ilustraciones. El valor predeterminado es <b>True</b>.</param>
         <param name="UseHeadingStyles"><b>Objeto</b>opcional. <b>True</b> para utilizar estilos de título integrados para crear la tabla de ilustraciones. El valor predeterminado es <b>False</b>.</param>
-        <param name="UpperHeadingLevel"><b>Objeto</b>opcional. El nivel de título inicial de la tabla de ilustraciones, <paramref name="UseHeadingStyles" /> si se establece en <b>true</b>. Corresponde al valor inicial utilizado con el modificador \o de un campo tabla de contenido (TOC). El valor predeterminado es 1.</param>
+        <param name="UpperHeadingLevel"><b>Objeto</b>opcional. El nivel de título inicial de la tabla de ilustraciones, si <paramref name="UseHeadingStyles" /> se establece en <b>true</b>. Corresponde al valor inicial utilizado con el modificador \o de un campo tabla de contenido (TOC). El valor predeterminado es 1.</param>
         <param name="LowerHeadingLevel"><b>Objeto</b>opcional. Nivel de título final de la tabla de ilustraciones, si <paramref name="UseHeadingStyles" /> se establece en <b>true</b>. Corresponde al valor final utilizado con el modificador \o de un campo tabla de contenido (TOC). El valor predeterminado es 9.</param>
         <param name="UseFields"><b>Objeto</b>opcional. <b>True</b> para utilizar los campos de tabla de contenido (TC) para crear la tabla de ilustraciones. Use el <see cref="M:Microsoft.Office.Interop.Word.TablesOfFigures.MarkEntry(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para marcar los elementos que desee incluir en la tabla de ilustraciones. El valor predeterminado es <b>False</b>.</param>
         <param name="TableID"><b>Objeto</b>opcional. Identificador de una letra utilizado para generar una tabla de ilustraciones a partir de los campos TC (elemento de tabla de contenido). Equivale al modificador \f de un campo Tabla de contenido (TOC). Por ejemplo, "i" genera una tabla de ilustraciones para una ilustración.</param>
@@ -84,6 +87,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.TableOfFigures AddOld (Microsoft.Office.Interop.Word.Range Range, ref object Caption, ref object IncludeLabel, ref object UseHeadingStyles, ref object UpperHeadingLevel, ref object LowerHeadingLevel, ref object UseFields, ref object TableID, ref object RightAlignPageNumbers, ref object IncludePageNumbers, ref object AddedStyles);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.TableOfFigures AddOld([in]class Microsoft.Office.Interop.Word.Range Range, [in]object&amp; Caption, [in]object&amp; IncludeLabel, [in]object&amp; UseHeadingStyles, [in]object&amp; UpperHeadingLevel, [in]object&amp; LowerHeadingLevel, [in]object&amp; UseFields, [in]object&amp; TableID, [in]object&amp; RightAlignPageNumbers, [in]object&amp; IncludePageNumbers, [in]object&amp; AddedStyles) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TablesOfFigures.AddOld(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddOld (Range As Range, Optional ByRef Caption As Object, Optional ByRef IncludeLabel As Object, Optional ByRef UseHeadingStyles As Object, Optional ByRef UpperHeadingLevel As Object, Optional ByRef LowerHeadingLevel As Object, Optional ByRef UseFields As Object, Optional ByRef TableID As Object, Optional ByRef RightAlignPageNumbers As Object, Optional ByRef IncludePageNumbers As Object, Optional ByRef AddedStyles As Object) As TableOfFigures" />
+      <MemberSignature Language="F#" Value="abstract member AddOld : Microsoft.Office.Interop.Word.Range * obj * obj * obj * obj * obj * obj * obj * obj * obj * obj -&gt; Microsoft.Office.Interop.Word.TableOfFigures" Usage="tablesOfFigures.AddOld (Range, Caption, IncludeLabel, UseHeadingStyles, UpperHeadingLevel, LowerHeadingLevel, UseFields, TableID, RightAlignPageNumbers, IncludePageNumbers, AddedStyles)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -102,16 +107,16 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
-        <Parameter Name="Caption" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="IncludeLabel" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="UseHeadingStyles" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="UpperHeadingLevel" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="LowerHeadingLevel" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="UseFields" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="TableID" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="RightAlignPageNumbers" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="IncludePageNumbers" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="AddedStyles" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Caption" Type="System.Object" RefType="ref" />
+        <Parameter Name="IncludeLabel" Type="System.Object" RefType="ref" />
+        <Parameter Name="UseHeadingStyles" Type="System.Object" RefType="ref" />
+        <Parameter Name="UpperHeadingLevel" Type="System.Object" RefType="ref" />
+        <Parameter Name="LowerHeadingLevel" Type="System.Object" RefType="ref" />
+        <Parameter Name="UseFields" Type="System.Object" RefType="ref" />
+        <Parameter Name="TableID" Type="System.Object" RefType="ref" />
+        <Parameter Name="RightAlignPageNumbers" Type="System.Object" RefType="ref" />
+        <Parameter Name="IncludePageNumbers" Type="System.Object" RefType="ref" />
+        <Parameter Name="AddedStyles" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Range">To be added.</param>
@@ -136,6 +141,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TablesOfFigures.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.TablesOfFigures.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -164,6 +170,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TablesOfFigures.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.TablesOfFigures.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -192,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TablesOfFigures.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.TablesOfFigures.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -222,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TablesOfFigures.Format" />
       <MemberSignature Language="VB.NET" Value="Public Property Format As WdTofFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdTofFormat Format { Microsoft::Office::Interop::Word::WdTofFormat get(); void set(Microsoft::Office::Interop::Word::WdTofFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.Format : Microsoft.Office.Interop.Word.WdTofFormat with get, set" Usage="Microsoft.Office.Interop.Word.TablesOfFigures.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -273,6 +282,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TablesOfFigures.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="tablesOfFigures.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -305,6 +315,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TablesOfFigures.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As TableOfFigures" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TableOfFigures ^ default[int] { Microsoft::Office::Interop::Word::TableOfFigures ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.TableOfFigures" Usage="Microsoft.Office.Interop.Word.TablesOfFigures.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -335,6 +346,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Field MarkEntry (Microsoft.Office.Interop.Word.Range Range, ref object Entry, ref object EntryAutoText, ref object TableID, ref object Level);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Field MarkEntry([in]class Microsoft.Office.Interop.Word.Range Range, [in]object&amp; Entry, [in]object&amp; EntryAutoText, [in]object&amp; TableID, [in]object&amp; Level) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TablesOfFigures.MarkEntry(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MarkEntry (Range As Range, Optional ByRef Entry As Object, Optional ByRef EntryAutoText As Object, Optional ByRef TableID As Object, Optional ByRef Level As Object) As Field" />
+      <MemberSignature Language="F#" Value="abstract member MarkEntry : Microsoft.Office.Interop.Word.Range * obj * obj * obj * obj -&gt; Microsoft.Office.Interop.Word.Field" Usage="tablesOfFigures.MarkEntry (Range, Entry, EntryAutoText, TableID, Level)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -350,15 +363,15 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
-        <Parameter Name="Entry" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="EntryAutoText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="TableID" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Level" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Entry" Type="System.Object" RefType="ref" />
+        <Parameter Name="EntryAutoText" Type="System.Object" RefType="ref" />
+        <Parameter Name="TableID" Type="System.Object" RefType="ref" />
+        <Parameter Name="Level" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> requerido. Ubicación del elemento. El campo TC se inserta después <paramref name="Range" />de.</param>
+        <param name="Range"><see cref="T:Microsoft.Office.Interop.Word.Range" />Objeto requerido. Ubicación del elemento. El campo TC se inserta después de <paramref name="Range" /> .</param>
         <param name="Entry"><b>Objeto</b>opcional. Texto que aparece en la tabla de contenido o tabla de ilustraciones. Para indicar un subelemento, incluya el texto del elemento principal y el del subelemento separados por dos puntos (:), por ejemplo "Introducción: El Producto".</param>
-        <param name="EntryAutoText"><b>Objeto</b>opcional. El nombre del elemento de Autotexto que incluye texto para el índice, la tabla de ilustraciones o la tabla<paramref name="Entry" /> de contenido (se pasa por alto).</param>
+        <param name="EntryAutoText"><b>Objeto</b>opcional. El nombre del elemento de Autotexto que incluye texto para el índice, la tabla de ilustraciones o la tabla de contenido ( <paramref name="Entry" /> se pasa por alto).</param>
         <param name="TableID"><b>Objeto</b>opcional. Identificador de una sola letra del elemento de la tabla de ilustraciones o tabla de contenido, por ejemplo "i" para una "ilustración".</param>
         <param name="Level"><b>Objeto</b>opcional. Nivel para el elemento de la tabla de contenido o tabla de ilustraciones.</param>
         <summary>Inserta un campo TC (tabla de contenido) después del intervalo especificado. El método devuelve un <see cref="T:Microsoft.Office.Interop.Word.Field" /> objeto que representa el campo TC.</summary>
@@ -372,6 +385,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TablesOfFigures.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.TablesOfFigures.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

@@ -1,9 +1,10 @@
 <Type Name="SmartTagRecognizer" FullName="Microsoft.Office.Interop.Word.SmartTagRecognizer">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="4f6682dbac9852e24913ff87211561eae8bef090" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143983" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagRecognizer" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5421b9671ad9d70e69c96f42ca4fdabe6d787136" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926314" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagRecognizer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagRecognizer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagRecognizer" />
   <TypeSignature Language="C++ CLI" Value="public interface class SmartTagRecognizer" />
+  <TypeSignature Language="F#" Value="type SmartTagRecognizer = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -21,7 +22,7 @@
     <summary>Representa componentes instalados que etiquetan texto con tipos de información.</summary>
     <remarks><para>El componente de etiqueta inteligente dirección (Inglés) contiene reconocedores de la calle, ciudad, estado y código postal, entre otros elementos relacionados con la dirección. Cuando un usuario activa un componente instalado, ya sea mediante código o mediante la ficha etiquetas inteligentes en el cuadro de diálogo Autocorrección, Microsoft Word etiqueta el texto que coincide con estos elementos en un documento.</para>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />, <see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" />y <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> los objetos están relacionados en que cada elemento reconocido por un componente de etiqueta inteligente es un objeto <b>SmartTagType</b> . Por ejemplo, "ciudad" en el componente de etiqueta inteligente Dirección es un objeto <b>SmartTagType</b> específico. El tipo de etiqueta inteligente de ciudad está en relación con objetos <b>SmartTagRecognizer</b> (la parte del componente de etiqueta inteligente que reconoce etiquetas inteligentes del tipo "ciudad" de los documentos) y objetos <b>SmartTagAction</b> (la parte de ese mismo componente que proporciona las acciones relacionadas con el tipo de etiqueta específico, entre las que se puede incluir buscar una ciudad conocida en Microsoft MapPoint en MSN). En pocas palabras, el reconocedor realiza la etiqueta, el controlador de acciones proporciona funciones de usuario final y lo que los une es el tipo de etiqueta inteligente con el que trabajan.</para>
+        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />, <see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" /> y los <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> objetos están relacionados en que cada elemento reconocido por un componente de etiqueta inteligente es un objeto <b>SmartTagType</b> . Por ejemplo, "ciudad" en el componente de etiqueta inteligente Dirección es un objeto <b>SmartTagType</b> específico. El tipo de etiqueta inteligente de ciudad está en relación con objetos <b>SmartTagRecognizer</b> (la parte del componente de etiqueta inteligente que reconoce etiquetas inteligentes del tipo "ciudad" de los documentos) y objetos <b>SmartTagAction</b> (la parte de ese mismo componente que proporciona las acciones relacionadas con el tipo de etiqueta específico, entre las que se puede incluir buscar una ciudad conocida en Microsoft MapPoint en MSN). En pocas palabras, el reconocedor realiza la etiqueta, el controlador de acciones proporciona funciones de usuario final y lo que los une es el tipo de etiqueta inteligente con el que trabajan.</para>
       <para>Utilice el <see cref="P:Microsoft.Office.Interop.Word.SmartTagRecognizers.Item(System.Object@)" /> método de la <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizers" /> colección para devolver un solo objeto <b>SmartTagRecognizer</b> . Una vez devuelto un objeto <b>SmartTagRecognizer</b>, puede determinar si los reconocedores de etiquetas inteligentes están habilitados para la aplicación.</para>
       <para> </para></remarks>
   </Docs>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagRecognizer.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.SmartTagRecognizer.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagRecognizer.Caption" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Caption As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Caption { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Caption : string" Usage="Microsoft.Office.Interop.Word.SmartTagRecognizer.Caption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagRecognizer.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.SmartTagRecognizer.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -127,6 +131,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagRecognizer.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="Microsoft.Office.Interop.Word.SmartTagRecognizer.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -164,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagRecognizer.FullName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FullName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FullName : string" Usage="Microsoft.Office.Interop.Word.SmartTagRecognizer.FullName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -195,6 +201,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagRecognizer.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.SmartTagRecognizer.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -226,6 +233,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagRecognizer.ProgID" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property ProgID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProgID : string" Usage="Microsoft.Office.Interop.Word.SmartTagRecognizer.ProgID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
