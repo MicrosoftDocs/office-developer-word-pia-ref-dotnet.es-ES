@@ -1,9 +1,10 @@
 <Type Name="Comments" FullName="Microsoft.Office.Interop.Word.Comments">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="e889768b79d325f4fa4910b0f457ac3a01ccde03" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147224" /></Metadata><TypeSignature Language="C#" Value="public interface Comments : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4f0a5432a7d30a1d7e487520018036ac53809490" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922342" /></Metadata><TypeSignature Language="C#" Value="public interface Comments : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Comments implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Comments" />
   <TypeSignature Language="VB.NET" Value="Public Interface Comments&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Comments : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Comments = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,10 +23,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="c12ff-101">Colección de <see cref="T:Microsoft.Office.Interop.Word.Comment" /> objetos que representa los comentarios de una selección, intervalo o documento.</span><span class="sxs-lookup"><span data-stu-id="c12ff-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.Comment" /> objects that represent the comments in a selection, range, or document.</span></span></summary>
-    <remarks><para><span data-ttu-id="c12ff-102">Utilice la <see cref="P:Microsoft.Office.Interop.Word._Document.Comments" /> propiedad para devolver la <b></b> colección comments.</span><span class="sxs-lookup"><span data-stu-id="c12ff-102">Use the <see cref="P:Microsoft.Office.Interop.Word._Document.Comments" /> property to return the <b>Comments</b> collection.</span></span></para>
-      <para><span data-ttu-id="c12ff-103">Utilice el <see cref="M:Microsoft.Office.Interop.Word.Comments.Add(Microsoft.Office.Interop.Word.Range,System.Object@)" /> método para agregar un Comentario en el intervalo especificado.</span><span class="sxs-lookup"><span data-stu-id="c12ff-103">Use the <see cref="M:Microsoft.Office.Interop.Word.Comments.Add(Microsoft.Office.Interop.Word.Range,System.Object@)" /> method to add a comment at the specified range.</span></span></para>
-      <para><span data-ttu-id="c12ff-104">Use <b></b>Comments<paramref name="index" />(), <paramref name="index" /> donde es el número de índice, para devolver un solo objeto <b>comment</b> .</span><span class="sxs-lookup"><span data-stu-id="c12ff-104">Use <b>Comments</b>(<paramref name="index" />), where <paramref name="index" /> is the index number, to return a single <b>Comment</b> object.</span></span> <span data-ttu-id="c12ff-105">El número de índice representa la posición del comentario en el documento, el intervalo o la selección especificada.</span><span class="sxs-lookup"><span data-stu-id="c12ff-105">The index number represents the position of the comment in the specified selection, range, or document.</span></span></para>
+    <summary><span data-ttu-id="91be7-101">Colección de <see cref="T:Microsoft.Office.Interop.Word.Comment" /> objetos que representa los comentarios de una selección, intervalo o documento.</span><span class="sxs-lookup"><span data-stu-id="91be7-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.Comment" /> objects that represent the comments in a selection, range, or document.</span></span></summary>
+    <remarks><para><span data-ttu-id="91be7-102">Utilice la <see cref="P:Microsoft.Office.Interop.Word._Document.Comments" /> propiedad para devolver la colección <b>Comments</b> .</span><span class="sxs-lookup"><span data-stu-id="91be7-102">Use the <see cref="P:Microsoft.Office.Interop.Word._Document.Comments" /> property to return the <b>Comments</b> collection.</span></span></para>
+      <para><span data-ttu-id="91be7-103">Utilice el <see cref="M:Microsoft.Office.Interop.Word.Comments.Add(Microsoft.Office.Interop.Word.Range,System.Object@)" /> método para agregar un Comentario en el intervalo especificado.</span><span class="sxs-lookup"><span data-stu-id="91be7-103">Use the <see cref="M:Microsoft.Office.Interop.Word.Comments.Add(Microsoft.Office.Interop.Word.Range,System.Object@)" /> method to add a comment at the specified range.</span></span></para>
+      <para><span data-ttu-id="91be7-104">Use <b>Comments</b>( <paramref name="index" /> ), donde <paramref name="index" /> es el número de índice, para devolver un solo objeto <b>comment</b> .</span><span class="sxs-lookup"><span data-stu-id="91be7-104">Use <b>Comments</b>(<paramref name="index" />), where <paramref name="index" /> is the index number, to return a single <b>Comment</b> object.</span></span> <span data-ttu-id="91be7-105">El número de índice representa la posición del comentario en el documento, el intervalo o la selección especificada.</span><span class="sxs-lookup"><span data-stu-id="91be7-105">The index number represents the position of the comment in the specified selection, range, or document.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -33,6 +34,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Comment Add (Microsoft.Office.Interop.Word.Range Range, ref object Text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Comment Add([in]class Microsoft.Office.Interop.Word.Range Range, [in]object&amp; Text) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Comments.Add(Microsoft.Office.Interop.Word.Range,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Range As Range, Optional ByRef Text As Object) As Comment" />
+      <MemberSignature Language="F#" Value="abstract member Add : Microsoft.Office.Interop.Word.Range * obj -&gt; Microsoft.Office.Interop.Word.Comment" Usage="comments.Add (Range, Text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,12 +51,12 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
-        <Parameter Name="Text" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Text" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range"><span data-ttu-id="c12ff-106">Objeto <b>Range</b> requerido.</span><span class="sxs-lookup"><span data-stu-id="c12ff-106">Required <b>Range</b> object.</span></span> <span data-ttu-id="c12ff-107">Intervalo al que agregar un comentario.</span><span class="sxs-lookup"><span data-stu-id="c12ff-107">The range to have a comment added to it.</span></span></param>
-        <param name="Text"><span data-ttu-id="c12ff-108"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="c12ff-108">Optional <b>Object</b>.</span></span> <span data-ttu-id="c12ff-109">Texto del comentario.</span><span class="sxs-lookup"><span data-stu-id="c12ff-109">The text of the comment.</span></span></param>
-        <summary><span data-ttu-id="c12ff-110">Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Comment" /> objeto Object que representa un comentario agregado a un rango.</span><span class="sxs-lookup"><span data-stu-id="c12ff-110">Returns a <see cref="T:Microsoft.Office.Interop.Word.Comment" /> object that represents a comment added to a range.</span></span></summary>
+        <param name="Range"><span data-ttu-id="91be7-106">Objeto <b>Range</b> requerido.</span><span class="sxs-lookup"><span data-stu-id="91be7-106">Required <b>Range</b> object.</span></span> <span data-ttu-id="91be7-107">Intervalo al que agregar un comentario.</span><span class="sxs-lookup"><span data-stu-id="91be7-107">The range to have a comment added to it.</span></span></param>
+        <param name="Text"><span data-ttu-id="91be7-108"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="91be7-108">Optional <b>Object</b>.</span></span> <span data-ttu-id="91be7-109">Texto del comentario.</span><span class="sxs-lookup"><span data-stu-id="91be7-109">The text of the comment.</span></span></param>
+        <summary><span data-ttu-id="91be7-110">Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Comment" /> objeto Object que representa un comentario agregado a un rango.</span><span class="sxs-lookup"><span data-stu-id="91be7-110">Returns a <see cref="T:Microsoft.Office.Interop.Word.Comment" /> object that represents a comment added to a range.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -64,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Comments.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Comments.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -81,7 +85,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c12ff-111">Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="c12ff-111">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="91be7-111">Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="91be7-111">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Comments.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Comments.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -109,7 +114,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c12ff-112">Devuelve el número de elementos de la colección especificada.</span><span class="sxs-lookup"><span data-stu-id="c12ff-112">Returns the number of items in the specified collection.</span></span></summary>
+        <summary><span data-ttu-id="91be7-112">Devuelve el número de elementos de la colección especificada.</span><span class="sxs-lookup"><span data-stu-id="91be7-112">Returns the number of items in the specified collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Comments.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Comments.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -137,10 +143,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c12ff-113">Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="c12ff-113">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
+        <summary><span data-ttu-id="91be7-113">Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="91be7-113">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="c12ff-114">Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".</span><span class="sxs-lookup"><span data-stu-id="c12ff-114">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="c12ff-115">[!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</span><span class="sxs-lookup"><span data-stu-id="c12ff-115">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="c12ff-116">La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="c12ff-116">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="c12ff-117">Por ejemplo, Microsoft Word tiene el código de creador MSWD.</span><span class="sxs-lookup"><span data-stu-id="c12ff-117">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="c12ff-118">Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</span><span class="sxs-lookup"><span data-stu-id="c12ff-118">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="91be7-114">Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".</span><span class="sxs-lookup"><span data-stu-id="91be7-114">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="91be7-115">[!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</span><span class="sxs-lookup"><span data-stu-id="91be7-115">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="91be7-116">La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="91be7-116">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="91be7-117">Por ejemplo, Microsoft Word tiene el código de creador MSWD.</span><span class="sxs-lookup"><span data-stu-id="91be7-117">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="91be7-118">Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</span><span class="sxs-lookup"><span data-stu-id="91be7-118">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -150,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Comments.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="comments.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -182,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Comments.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Comment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Comment ^ default[int] { Microsoft::Office::Interop::Word::Comment ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.Comment" Usage="Microsoft.Office.Interop.Word.Comments.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -202,8 +210,8 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index"><span data-ttu-id="c12ff-119"><b>Entero</b> que indica la posición ordinal del objeto individual.</span><span class="sxs-lookup"><span data-stu-id="c12ff-119">An <b>Integer</b> indicating the ordinal position of the individual object.</span></span></param>
-        <summary><span data-ttu-id="c12ff-120">Devuelve un objeto individual de una colección.</span><span class="sxs-lookup"><span data-stu-id="c12ff-120">Returns an individual object in a collection.</span></span></summary>
+        <param name="Index"><span data-ttu-id="91be7-119"><b>Entero</b> que indica la posición ordinal del objeto individual.</span><span class="sxs-lookup"><span data-stu-id="91be7-119">An <b>Integer</b> indicating the ordinal position of the individual object.</span></span></param>
+        <summary><span data-ttu-id="91be7-120">Devuelve un objeto individual de una colección.</span><span class="sxs-lookup"><span data-stu-id="91be7-120">Returns an individual object in a collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -214,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Comments.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Comments.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -231,7 +240,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c12ff-121">Devuelve un objeto que representa el objeto primario del objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="c12ff-121">Returns an object that represents the parent object of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="91be7-121">Devuelve un objeto que representa el objeto primario del objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="91be7-121">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -242,6 +251,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Comments.ShowBy" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowBy As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ShowBy { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowBy : string with get, set" Usage="Microsoft.Office.Interop.Word.Comments.ShowBy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -262,9 +272,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c12ff-122">Devuelve o establece el nombre del revisor cuyos comentarios se muestran en el panel de comentarios.</span><span class="sxs-lookup"><span data-stu-id="c12ff-122">Returns or sets the name of the reviewer whose comments are shown in the comments pane.</span></span></summary>
+        <summary><span data-ttu-id="91be7-122">Devuelve o establece el nombre del revisor cuyos comentarios se muestran en el panel de comentarios.</span><span class="sxs-lookup"><span data-stu-id="91be7-122">Returns or sets the name of the reviewer whose comments are shown in the comments pane.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="c12ff-p106">Puede elegir que se muestren los comentarios de un solo revisor o de todos los revisores. Para ver los comentarios de todos los revisores, establezca el valor de esta propiedad en "Todos los revisores".</span><span class="sxs-lookup"><span data-stu-id="c12ff-p106">You can choose to show comments either by a single reviewer or by all reviewers. To view the comments by all reviewers, set this property to "All Reviewers."</span></span></para>
+        <remarks><para><span data-ttu-id="91be7-p106">Puede elegir que se muestren los comentarios de un solo revisor o de todos los revisores. Para ver los comentarios de todos los revisores, establezca el valor de esta propiedad en "Todos los revisores".</span><span class="sxs-lookup"><span data-stu-id="91be7-p106">You can choose to show comments either by a single reviewer or by all reviewers. To view the comments by all reviewers, set this property to "All Reviewers."</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
