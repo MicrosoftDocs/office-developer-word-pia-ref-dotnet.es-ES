@@ -1,9 +1,10 @@
 <Type Name="PlotArea" FullName="Microsoft.Office.Interop.Word.PlotArea">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="971239e0441099c007c4441e0ec31a201bec6704" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144168" /></Metadata><TypeSignature Language="C#" Value="public interface PlotArea" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e2ee2a0754ee987d7aefe0360d9c933c2ee1ab4e" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924693" /></Metadata><TypeSignature Language="C#" Value="public interface PlotArea" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PlotArea" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.PlotArea" />
   <TypeSignature Language="VB.NET" Value="Public Interface PlotArea" />
   <TypeSignature Language="C++ CLI" Value="public interface class PlotArea" />
+  <TypeSignature Language="F#" Value="type PlotArea = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,7 +21,7 @@
   <Docs>
     <summary>Representa el área de trazado de un gráfico.</summary>
     <remarks><para>Es el área en que se trazan los datos de un gráfico. El área de trazado de un gráfico 2D contiene los marcadores de datos, cuadrículas, etiquetas de datos, líneas de la cuadrícula y elementos opcionales del gráfico situados en el área de gráfico. El área de trazado de un gráfico 3D contiene los elementos anteriores más los planos laterales, plano inferior, ejes, títulos de los ejes y etiquetas de las marcas de graduación del gráfico.</para>
-      <para>El área de trazado está rodeada por el área de gráfico. El área de un gráfico 2D contiene los ejes, el título del gráfico, los títulos de los ejes y la leyenda. El área de un gráfico 3D contiene el título del gráfico y la leyenda. Para obtener información sobre cómo dar formato al área del <see cref="T:Microsoft.Office.Interop.Word.ChartArea" /> gráfico, vea el objeto.</para>
+      <para>El área de trazado está rodeada por el área de gráfico. El área de un gráfico 2D contiene los ejes, el título del gráfico, los títulos de los ejes y la leyenda. El área de un gráfico 3D contiene el título del gráfico y la leyenda. Para obtener información sobre cómo dar formato al área del gráfico, vea el <see cref="T:Microsoft.Office.Interop.Word.ChartArea" /> objeto.</para>
       <para> </para></remarks>
     <example><para>Use la <see cref="P:Microsoft.Office.Interop.Word.Chart.PlotArea" /> propiedad para devolver un <see cref="T:Microsoft.Office.Interop.Word.PlotArea" /> objeto. En el siguiente ejemplo coloca un borde discontinuo alrededor del área del gráfico del primer gráfico del documento activo y, a continuación, se coloca un borde punteado alrededor del área de trazado.</para></example>
   </Docs>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : obj" Usage="Microsoft.Office.Interop.Word.PlotArea.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,7 +50,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta <see cref="T:Microsoft.Office.Interop.Word._Application" /> propiedad devuelve un objeto que representa la aplicación Microsoft Word. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto). Solo lectura.</summary>
+        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto que representa la aplicación Microsoft Word. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto). Solo lectura.</summary>
         <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.Border" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Border As ChartBorder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartBorder ^ Border { Microsoft::Office::Interop::Word::ChartBorder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Border : Microsoft.Office.Interop.Word.ChartBorder" Usage="Microsoft.Office.Interop.Word.PlotArea.Border" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.PlotArea.ClearFormats" />
       <MemberSignature Language="VB.NET" Value="Public Function ClearFormats () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ClearFormats();" />
+      <MemberSignature Language="F#" Value="abstract member ClearFormats : unit -&gt; obj" Usage="plotArea.ClearFormats " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.PlotArea.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.Fill" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Fill As ChartFillFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFillFormat ^ Fill { Microsoft::Office::Interop::Word::ChartFillFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Fill : Microsoft.Office.Interop.Word.ChartFillFormat" Usage="Microsoft.Office.Interop.Word.PlotArea.Fill" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.Format" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As ChartFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFormat ^ Format { Microsoft::Office::Interop::Word::ChartFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Format : Microsoft.Office.Interop.Word.ChartFormat" Usage="Microsoft.Office.Interop.Word.PlotArea.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -195,7 +202,7 @@
       <Docs>
         <summary>Devuelve la línea, relleno y efecto de formato para el objeto.
 
-De sólo <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />lectura.</summary>
+De sólo lectura <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /> .</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -206,6 +213,7 @@ De sólo <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />lectura.</sum
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.Height" />
       <MemberSignature Language="VB.NET" Value="Public Property Height As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Height { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Height : double with get, set" Usage="Microsoft.Office.Interop.Word.PlotArea.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -237,6 +245,7 @@ De sólo <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />lectura.</sum
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.InsideHeight" />
       <MemberSignature Language="VB.NET" Value="Public Property InsideHeight As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double InsideHeight { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.InsideHeight : double with get, set" Usage="Microsoft.Office.Interop.Word.PlotArea.InsideHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -269,6 +278,7 @@ De sólo <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />lectura.</sum
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.InsideLeft" />
       <MemberSignature Language="VB.NET" Value="Public Property InsideLeft As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double InsideLeft { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.InsideLeft : double with get, set" Usage="Microsoft.Office.Interop.Word.PlotArea.InsideLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -301,6 +311,7 @@ De sólo <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />lectura.</sum
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.InsideTop" />
       <MemberSignature Language="VB.NET" Value="Public Property InsideTop As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double InsideTop { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.InsideTop : double with get, set" Usage="Microsoft.Office.Interop.Word.PlotArea.InsideTop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -333,6 +344,7 @@ De sólo <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />lectura.</sum
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.InsideWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property InsideWidth As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double InsideWidth { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.InsideWidth : double with get, set" Usage="Microsoft.Office.Interop.Word.PlotArea.InsideWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -365,6 +377,7 @@ De sólo <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />lectura.</sum
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.Interior" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Interior As Interior" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Interior ^ Interior { Microsoft::Office::Interop::Word::Interior ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Interior : Microsoft.Office.Interop.Word.Interior" Usage="Microsoft.Office.Interop.Word.PlotArea.Interior" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -396,6 +409,7 @@ De sólo <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />lectura.</sum
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.Left" />
       <MemberSignature Language="VB.NET" Value="Public Property Left As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Left { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Left : double with get, set" Usage="Microsoft.Office.Interop.Word.PlotArea.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -427,6 +441,7 @@ De sólo <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />lectura.</sum
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.PlotArea.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -455,6 +470,7 @@ De sólo <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />lectura.</sum
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.PlotArea.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -483,6 +499,7 @@ De sólo <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />lectura.</sum
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.Position" />
       <MemberSignature Language="VB.NET" Value="Public Property Position As XlChartElementPosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlChartElementPosition Position { Microsoft::Office::Interop::Word::XlChartElementPosition get(); void set(Microsoft::Office::Interop::Word::XlChartElementPosition value); };" />
+      <MemberSignature Language="F#" Value="member this.Position : Microsoft.Office.Interop.Word.XlChartElementPosition with get, set" Usage="Microsoft.Office.Interop.Word.PlotArea.Position" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -503,7 +520,7 @@ De sólo <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />lectura.</sum
         <ReturnType>Microsoft.Office.Interop.Word.XlChartElementPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve o establece la posición del área de trazado del gráfico. Lectura y escritura <see cref="T:Microsoft.Office.Interop.Word.XlChartElementPosition" />.</summary>
+        <summary>Devuelve o establece la posición del área de trazado del gráfico. Lectura y escritura <see cref="T:Microsoft.Office.Interop.Word.XlChartElementPosition" /> .</summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.XlChartElementPosition" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -514,6 +531,7 @@ De sólo <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />lectura.</sum
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.PlotArea.Select" />
       <MemberSignature Language="VB.NET" Value="Public Function Select () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; obj" Usage="plotArea.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -540,6 +558,7 @@ De sólo <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />lectura.</sum
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.Top" />
       <MemberSignature Language="VB.NET" Value="Public Property Top As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Top { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Top : double with get, set" Usage="Microsoft.Office.Interop.Word.PlotArea.Top" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -571,6 +590,7 @@ De sólo <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />lectura.</sum
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.PlotArea.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : double with get, set" Usage="Microsoft.Office.Interop.Word.PlotArea.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

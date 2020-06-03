@@ -1,9 +1,10 @@
 <Type Name="DocumentEvents2_XMLBeforeDeleteEventHandler" FullName="Microsoft.Office.Interop.Word.DocumentEvents2_XMLBeforeDeleteEventHandler">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="dd959bd70dac23bc982627c03dc51ca9e3940e13" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146944" /></Metadata><TypeSignature Language="C#" Value="public delegate void DocumentEvents2_XMLBeforeDeleteEventHandler(Range DeletedRange, XMLNode OldXMLNode, bool InUndoRedo);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="34a3dc0bcfc5983f1e1c937f45ca0f0715e24caf" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924378" /></Metadata><TypeSignature Language="C#" Value="public delegate void DocumentEvents2_XMLBeforeDeleteEventHandler(Range DeletedRange, XMLNode OldXMLNode, bool InUndoRedo);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DocumentEvents2_XMLBeforeDeleteEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DocumentEvents2_XMLBeforeDeleteEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DocumentEvents2_XMLBeforeDeleteEventHandler(DeletedRange As Range, OldXMLNode As XMLNode, InUndoRedo As Boolean)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DocumentEvents2_XMLBeforeDeleteEventHandler(Range ^ DeletedRange, XMLNode ^ OldXMLNode, bool InUndoRedo);" />
+  <TypeSignature Language="F#" Value="type DocumentEvents2_XMLBeforeDeleteEventHandler = delegate of Range * XMLNode * bool -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -28,10 +29,10 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="DeletedRange"><see cref="T:Microsoft.Office.Interop.Word.Range" />DataObject. El contenido del elemento XML que se va a eliminar. Si sólo se elimina un elemento y no el texto asociado, <paramref name="DeletedRange" /> el parámetro no existirá y, por lo tanto, se establecerá en <b>Nothing</b>.</param>
+    <param name="DeletedRange"><see cref="T:Microsoft.Office.Interop.Word.Range" />DataObject. El contenido del elemento XML que se va a eliminar. Si sólo se elimina un elemento y no el texto asociado, el <paramref name="DeletedRange" /> parámetro no existirá y, por lo tanto, se establecerá en <b>Nothing</b>.</param>
     <param name="OldXMLNode"><see cref="T:Microsoft.Office.Interop.Word.XMLNode" />DataObject. Nodo que se elimina.</param>
     <param name="InUndoRedo"><b>Boolean</b>. <b>True</b> indica que la acción se realizó mediante la característica de <b>Deshacer</b> o <b>Rehacer</b> de Microsoft Word.</param>
-    <summary>Un tipo de <b>delegado</b> que se usa para agregar un controlador <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLBeforeDelete" /> de eventos para el evento. El evento <b>XMLBeforeDelete</b> se produce cuando un usuario elimina un elemento XML de un documento.</summary>
+    <summary>Un tipo de <b>delegado</b> que se usa para agregar un controlador de eventos para el <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLBeforeDelete" /> evento. El evento <b>XMLBeforeDelete</b> se produce cuando un usuario elimina un elemento XML de un documento.</summary>
     <remarks><para>Si el <paramref name="InUndoRedo" /> parámetro es <b>true</b>, no cambie nunca el XML de un documento mientras <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLAfterInsert" /> se ejecutan los eventos y <b>XMLBeforeDelete</b> . </para>
       <para>Si el <paramref name="InUndoRedo" /> parámetro es <b>false</b>, puede insertar y eliminar el XML en el documento, pero tenga cuidado de que los eventos <b>XMLAfterInsert</b> y <b>XMLBeforeDelete</b> no intenten cancelarse mutuamente, lo que provocará un bucle infinito. Puede evitar bucles infinitos mediante el uso de una variable <b>booleana</b> global y comprobar que al principio del controlador de errores.</para>
       <para> </para></remarks>

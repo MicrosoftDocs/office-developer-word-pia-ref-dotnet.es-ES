@@ -1,9 +1,10 @@
 <Type Name="Indexes" FullName="Microsoft.Office.Interop.Word.Indexes">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="7b57b53793778d56fdc6da5059ee8398d3e740c4" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147964" /></Metadata><TypeSignature Language="C#" Value="public interface Indexes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a1986b3c0df3b28b0be5715c45cc179cb82220dd" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43923958" /></Metadata><TypeSignature Language="C#" Value="public interface Indexes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Indexes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Indexes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Indexes&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Indexes : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Indexes = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -23,9 +24,9 @@
   </Attributes>
   <Docs>
     <summary>Una colección de <see cref="T:Microsoft.Office.Interop.Word.Index" /> objetos que representa todos los índices del documento especificado.</summary>
-    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Word._Document.Indexes" /> propiedad para devolver la <b></b> colección Indexes.</para>
-      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.Indexes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para crear un índice y agregarlo a la <b></b> colección Indexes.</para>
-      <para>Use <b>Indexes</b>(<paramref name="index" />), donde <paramref name="index" /> es el número de índice, para devolver un único objeto <b>index</b> . El número de índice representa la posición del objeto <b>Index</b> en el documento.</para>
+    <remarks><para>Utilice la <see cref="P:Microsoft.Office.Interop.Word._Document.Indexes" /> propiedad para devolver la colección <b>Indexes</b> .</para>
+      <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.Indexes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para crear un índice y agregarlo a la colección <b>Indexes</b> .</para>
+      <para>Use <b>Indexes</b>( <paramref name="index" /> ), donde <paramref name="index" /> es el número de índice, para devolver un único objeto <b>index</b> . El número de índice representa la posición del objeto <b>Index</b> en el documento.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -33,6 +34,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Index Add (Microsoft.Office.Interop.Word.Range Range, ref object HeadingSeparator, ref object RightAlignPageNumbers, ref object Type, ref object NumberOfColumns, ref object AccentedLetters, ref object SortBy, ref object IndexLanguage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Index Add([in]class Microsoft.Office.Interop.Word.Range Range, [in]object&amp; HeadingSeparator, [in]object&amp; RightAlignPageNumbers, [in]object&amp; Type, [in]object&amp; NumberOfColumns, [in]object&amp; AccentedLetters, [in]object&amp; SortBy, [in]object&amp; IndexLanguage) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Indexes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Range As Range, Optional ByRef HeadingSeparator As Object, Optional ByRef RightAlignPageNumbers As Object, Optional ByRef Type As Object, Optional ByRef NumberOfColumns As Object, Optional ByRef AccentedLetters As Object, Optional ByRef SortBy As Object, Optional ByRef IndexLanguage As Object) As Index" />
+      <MemberSignature Language="F#" Value="abstract member Add : Microsoft.Office.Interop.Word.Range * obj * obj * obj * obj * obj * obj * obj -&gt; Microsoft.Office.Interop.Word.Index" Usage="indexes.Add (Range, HeadingSeparator, RightAlignPageNumbers, Type, NumberOfColumns, AccentedLetters, SortBy, IndexLanguage)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,22 +51,22 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
-        <Parameter Name="HeadingSeparator" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="RightAlignPageNumbers" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Type" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="NumberOfColumns" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="AccentedLetters" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="SortBy" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="IndexLanguage" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="HeadingSeparator" Type="System.Object" RefType="ref" />
+        <Parameter Name="RightAlignPageNumbers" Type="System.Object" RefType="ref" />
+        <Parameter Name="Type" Type="System.Object" RefType="ref" />
+        <Parameter Name="NumberOfColumns" Type="System.Object" RefType="ref" />
+        <Parameter Name="AccentedLetters" Type="System.Object" RefType="ref" />
+        <Parameter Name="SortBy" Type="System.Object" RefType="ref" />
+        <Parameter Name="IndexLanguage" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Range">Objeto <b>Range</b> requerido. Intervalo donde desea que aparezca el índice. El índice reemplazará al intervalo, si éste no está contraído.</param>
         <param name="HeadingSeparator"><b>Objeto</b>opcional. Texto entre grupos alfabéticos (las entradas que comienzan con la misma letra) del índice. Puede ser una de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdHeadingSeparator" /> constantes: <b>wdHeadingSeparatorBlankLine</b>, <b>wdHeadingSeparatorLetter</b>, <b>wdHeadingSeparatorLetterFull</b>, <b>wdHeadingSeparatorLetterLow</b>o <b>wdHeadingSeparatorNone</b>.</param>
         <param name="RightAlignPageNumbers"><b>Objeto</b>opcional. <b>True</b> para alinear los números de página con el margen derecho.</param>
-        <param name="Type"><b>Objeto</b>opcional. Especifica si las subentradas se encuentran en la misma línea (continua) que la entrada principal o en una línea independiente (con sangría) del elemento principal. Puede ser cualquiera de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdIndexType" /> constantes: <b>wdIndexIndent</b> o <b>wdIndexRunin</b>.</param>
+        <param name="Type"><b>Objeto</b>opcional. Especifica si las subentradas se encuentran en la misma línea (continua) que la entrada principal o en una línea independiente (con sangría) del elemento principal. Puede ser cualquiera de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdIndexType" /> constantes: <b>WdIndexIndent</b> o <b>wdIndexRunin</b>.</param>
         <param name="NumberOfColumns"><b>Objeto</b>opcional. Número de columnas de cada página del índice. Al especificar 0 (cero) se establece el número de columnas del índice para que sea igual que el del documento.</param>
         <param name="AccentedLetters"><b>Objeto</b>opcional. <b>True</b> para incluir en el índice títulos separados para las letras acentuadas; por ejemplo, las palabras que comiencen con "À" y con "A" se incluyen en títulos diferentes.</param>
-        <param name="SortBy"><b>Objeto</b>opcional. El criterio de ordenación que se usará para el índice especificado. Puede ser cualquiera de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdIndexSortBy" /> constantes: <b>wdIndexSortByStroke</b> o <b>wdIndexSortBySyllable</b>.</param>
+        <param name="SortBy"><b>Objeto</b>opcional. El criterio de ordenación que se usará para el índice especificado. Puede ser cualquiera de las siguientes <see cref="T:Microsoft.Office.Interop.Word.WdIndexSortBy" /> constantes: <b>WdIndexSortByStroke</b> o <b>wdIndexSortBySyllable</b>.</param>
         <param name="IndexLanguage"><b>Objeto</b>opcional. El idioma de ordenación que se usará para el índice especificado. Puede ser cualquiera de las <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes.</param>
         <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Index" /> objeto Object que representa un nuevo índice agregado a un documento.</summary>
         <returns>To be added.</returns>
@@ -75,6 +78,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Index AddOld (Microsoft.Office.Interop.Word.Range Range, ref object HeadingSeparator, ref object RightAlignPageNumbers, ref object Type, ref object NumberOfColumns, ref object AccentedLetters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Index AddOld([in]class Microsoft.Office.Interop.Word.Range Range, [in]object&amp; HeadingSeparator, [in]object&amp; RightAlignPageNumbers, [in]object&amp; Type, [in]object&amp; NumberOfColumns, [in]object&amp; AccentedLetters) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Indexes.AddOld(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddOld (Range As Range, Optional ByRef HeadingSeparator As Object, Optional ByRef RightAlignPageNumbers As Object, Optional ByRef Type As Object, Optional ByRef NumberOfColumns As Object, Optional ByRef AccentedLetters As Object) As Index" />
+      <MemberSignature Language="F#" Value="abstract member AddOld : Microsoft.Office.Interop.Word.Range * obj * obj * obj * obj * obj -&gt; Microsoft.Office.Interop.Word.Index" Usage="indexes.AddOld (Range, HeadingSeparator, RightAlignPageNumbers, Type, NumberOfColumns, AccentedLetters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -93,11 +98,11 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
-        <Parameter Name="HeadingSeparator" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="RightAlignPageNumbers" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Type" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="NumberOfColumns" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="AccentedLetters" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="HeadingSeparator" Type="System.Object" RefType="ref" />
+        <Parameter Name="RightAlignPageNumbers" Type="System.Object" RefType="ref" />
+        <Parameter Name="Type" Type="System.Object" RefType="ref" />
+        <Parameter Name="NumberOfColumns" Type="System.Object" RefType="ref" />
+        <Parameter Name="AccentedLetters" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Range">To be added.</param>
@@ -117,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Indexes.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Indexes.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -145,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Indexes.AutoMarkEntries(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AutoMarkEntries (ConcordanceFileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AutoMarkEntries(System::String ^ ConcordanceFileName);" />
+      <MemberSignature Language="F#" Value="abstract member AutoMarkEntries : string -&gt; unit" Usage="indexes.AutoMarkEntries ConcordanceFileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -174,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Indexes.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Indexes.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -202,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Indexes.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Indexes.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -232,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Indexes.Format" />
       <MemberSignature Language="VB.NET" Value="Public Property Format As WdIndexFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdIndexFormat Format { Microsoft::Office::Interop::Word::WdIndexFormat get(); void set(Microsoft::Office::Interop::Word::WdIndexFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.Format : Microsoft.Office.Interop.Word.WdIndexFormat with get, set" Usage="Microsoft.Office.Interop.Word.Indexes.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -264,6 +274,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Indexes.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="indexes.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -296,6 +307,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Indexes.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Index" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Index ^ default[int] { Microsoft::Office::Interop::Word::Index ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.Index" Usage="Microsoft.Office.Interop.Word.Indexes.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -326,6 +338,8 @@
       <MemberSignature Language="C#" Value="public void MarkAllEntries (Microsoft.Office.Interop.Word.Range Range, ref object Entry, ref object EntryAutoText, ref object CrossReference, ref object CrossReferenceAutoText, ref object BookmarkName, ref object Bold, ref object Italic);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MarkAllEntries([in]class Microsoft.Office.Interop.Word.Range Range, [in]object&amp; Entry, [in]object&amp; EntryAutoText, [in]object&amp; CrossReference, [in]object&amp; CrossReferenceAutoText, [in]object&amp; BookmarkName, [in]object&amp; Bold, [in]object&amp; Italic) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Indexes.MarkAllEntries(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MarkAllEntries (Range As Range, Optional ByRef Entry As Object, Optional ByRef EntryAutoText As Object, Optional ByRef CrossReference As Object, Optional ByRef CrossReferenceAutoText As Object, Optional ByRef BookmarkName As Object, Optional ByRef Bold As Object, Optional ByRef Italic As Object)" />
+      <MemberSignature Language="F#" Value="abstract member MarkAllEntries : Microsoft.Office.Interop.Word.Range * obj * obj * obj * obj * obj * obj * obj -&gt; unit" Usage="indexes.MarkAllEntries (Range, Entry, EntryAutoText, CrossReference, CrossReferenceAutoText, BookmarkName, Bold, Italic)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -341,24 +355,24 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
-        <Parameter Name="Entry" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="EntryAutoText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="CrossReference" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="CrossReferenceAutoText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="BookmarkName" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Bold" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Italic" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Entry" Type="System.Object" RefType="ref" />
+        <Parameter Name="EntryAutoText" Type="System.Object" RefType="ref" />
+        <Parameter Name="CrossReference" Type="System.Object" RefType="ref" />
+        <Parameter Name="CrossReferenceAutoText" Type="System.Object" RefType="ref" />
+        <Parameter Name="BookmarkName" Type="System.Object" RefType="ref" />
+        <Parameter Name="Bold" Type="System.Object" RefType="ref" />
+        <Parameter Name="Italic" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Range">Objeto <b>Range</b> requerido. Intervalo cuyo texto se va a marcar con un campo XE en todo el documento.</param>
-        <param name="Entry"><b>Objeto</b>opcional. Texto que desea que aparezca en el índice, en el formulario <paramref name="MainEntry[:Subentry]" />.</param>
-        <param name="EntryAutoText"><b>Objeto</b>opcional. El elemento de Autotexto que contiene el texto que desea que aparezca en el índice (si se especifica este argumento <paramref name="Entry" /> , se pasa por alto).</param>
+        <param name="Entry"><b>Objeto</b>opcional. Texto que desea que aparezca en el índice, en el formulario <paramref name="MainEntry[:Subentry]" /> .</param>
+        <param name="EntryAutoText"><b>Objeto</b>opcional. El elemento de Autotexto que contiene el texto que desea que aparezca en el índice (si se especifica este argumento, <paramref name="Entry" /> se pasa por alto).</param>
         <param name="CrossReference"><b>Objeto</b>opcional. Referencia cruzada que aparecerá en el índice.</param>
         <param name="CrossReferenceAutoText"><b>Objeto</b>opcional. El nombre del elemento de Autotexto que contiene el texto de una referencia cruzada (si se especifica este argumento, <paramref name="CrossReference" /> se pasa por alto).</param>
         <param name="BookmarkName"><b>Objeto</b>opcional. Nombre del marcador que indica el intervalo de páginas que desee que aparezca en el índice. Si se omite este argumento, en el índice aparecerá el número de la página que contiene el campo XE.</param>
         <param name="Bold"><b>Objeto</b>opcional. <b>True</b> para agregar formato de negrita a los números de página de las entradas de índice.</param>
         <param name="Italic"><b>Objeto</b>opcional. <b>True</b> para agregar formato de cursiva a los números de página de las entradas de índice.</param>
-        <summary>Inserta un campo XE (entrada de índice) detrás de todas las instancias del texto <paramref name="Range" />en.</summary>
+        <summary>Inserta un campo XE (entrada de índice) detrás de todas las instancias del texto en <paramref name="Range" /> .</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -366,6 +380,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Field MarkEntry (Microsoft.Office.Interop.Word.Range Range, ref object Entry, ref object EntryAutoText, ref object CrossReference, ref object CrossReferenceAutoText, ref object BookmarkName, ref object Bold, ref object Italic, ref object Reading);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Field MarkEntry([in]class Microsoft.Office.Interop.Word.Range Range, [in]object&amp; Entry, [in]object&amp; EntryAutoText, [in]object&amp; CrossReference, [in]object&amp; CrossReferenceAutoText, [in]object&amp; BookmarkName, [in]object&amp; Bold, [in]object&amp; Italic, [in]object&amp; Reading) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Indexes.MarkEntry(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MarkEntry (Range As Range, Optional ByRef Entry As Object, Optional ByRef EntryAutoText As Object, Optional ByRef CrossReference As Object, Optional ByRef CrossReferenceAutoText As Object, Optional ByRef BookmarkName As Object, Optional ByRef Bold As Object, Optional ByRef Italic As Object, Optional ByRef Reading As Object) As Field" />
+      <MemberSignature Language="F#" Value="abstract member MarkEntry : Microsoft.Office.Interop.Word.Range * obj * obj * obj * obj * obj * obj * obj * obj -&gt; Microsoft.Office.Interop.Word.Field" Usage="indexes.MarkEntry (Range, Entry, EntryAutoText, CrossReference, CrossReferenceAutoText, BookmarkName, Bold, Italic, Reading)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -381,21 +397,21 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
-        <Parameter Name="Entry" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="EntryAutoText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="CrossReference" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="CrossReferenceAutoText" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="BookmarkName" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Bold" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Italic" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Reading" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Entry" Type="System.Object" RefType="ref" />
+        <Parameter Name="EntryAutoText" Type="System.Object" RefType="ref" />
+        <Parameter Name="CrossReference" Type="System.Object" RefType="ref" />
+        <Parameter Name="CrossReferenceAutoText" Type="System.Object" RefType="ref" />
+        <Parameter Name="BookmarkName" Type="System.Object" RefType="ref" />
+        <Parameter Name="Bold" Type="System.Object" RefType="ref" />
+        <Parameter Name="Italic" Type="System.Object" RefType="ref" />
+        <Parameter Name="Reading" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Objeto <b>Range</b> requerido. Ubicación del elemento. El campo XE se inserta después <paramref name="Range" />de.</param>
+        <param name="Range">Objeto <b>Range</b> requerido. Ubicación del elemento. El campo XE se inserta después de <paramref name="Range" /> .</param>
         <param name="Entry"><b>Objeto</b>opcional. Texto que aparece en el índice. Para indicar un subelemento, incluya el texto del elemento principal y el del subelemento separados por dos puntos (:), por ejemplo "Introducción: El Producto".</param>
-        <param name="EntryAutoText"><b>Objeto</b>opcional. El nombre del elemento de Autotexto que incluye texto para el índice, la tabla de ilustraciones o la tabla<paramref name="Entry" /> de contenido (se pasa por alto).</param>
+        <param name="EntryAutoText"><b>Objeto</b>opcional. El nombre del elemento de Autotexto que incluye texto para el índice, la tabla de ilustraciones o la tabla de contenido ( <paramref name="Entry" /> se pasa por alto).</param>
         <param name="CrossReference"><b>Objeto</b>opcional. Referencia cruzada que va a aparecer en el índice, por ejemplo "Vea Manzanas".</param>
-        <param name="CrossReferenceAutoText"><b>Objeto</b>opcional. Nombre del elemento de Autotexto que contiene el texto de una referencia cruzada (<paramref name="CrossReference" /> se pasa por alto).</param>
+        <param name="CrossReferenceAutoText"><b>Objeto</b>opcional. Nombre del elemento de Autotexto que contiene el texto de una referencia cruzada ( <paramref name="CrossReference" /> se pasa por alto).</param>
         <param name="BookmarkName"><b>Objeto</b>opcional. Nombre del marcador que marca el intervalo de páginas que se desea que aparezcan en el índice. Si se omite este argumento, el número de la página que contiene el campo XE aparece en el índice.</param>
         <param name="Bold"><b>Objeto</b>opcional. <b>True</b> para agregar formato de negrita a los números de página de los elementos en el índice.</param>
         <param name="Italic"><b>Objeto</b>opcional. <b>True</b> para agregar formato de cursiva a los números de página de los elementos en el índice.</param>
@@ -411,6 +427,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Indexes.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Indexes.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
