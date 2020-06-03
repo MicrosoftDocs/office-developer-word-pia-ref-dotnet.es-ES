@@ -1,9 +1,10 @@
 <Type Name="UpBars" FullName="Microsoft.Office.Interop.Word.UpBars">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="226af72472e06bb3185db435171039a38e6e808e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143772" /></Metadata><TypeSignature Language="C#" Value="public interface UpBars" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d9981eb40118eafac419292fef2c3cf5bd93c2db" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925922" /></Metadata><TypeSignature Language="C#" Value="public interface UpBars" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UpBars" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.UpBars" />
   <TypeSignature Language="VB.NET" Value="Public Interface UpBars" />
   <TypeSignature Language="C++ CLI" Value="public interface class UpBars" />
+  <TypeSignature Language="F#" Value="type UpBars = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,11 +19,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="39561-101">Representa las barras ascendentes de un grupo de gráficos.</span><span class="sxs-lookup"><span data-stu-id="39561-101">Represents the up bars in a chart group.</span></span></summary>
-    <remarks><para><span data-ttu-id="39561-p101">Las barras ascendentes conectan los puntos de la serie uno con valores superiores de la última serie del grupo de gráficos (las líneas suben desde la serie uno). Sólo los grupos de líneas 2D que contienen al menos dos series pueden tener barras ascendentes. Este objeto no es una colección. Ningún objeto representa una barra ascendente individual; las barras ascendentes se activan para todos los puntos de un grupo de gráficos o bien se desactivan.</span><span class="sxs-lookup"><span data-stu-id="39561-p101">Up bars connect points on series one with higher values on the last series in the chart group (the lines go up from series one). Only 2-D line groups that contain at least two series can have up bars. This object isn’t a collection. There’s no object that represents a single up bar; you either have up bars turned on for all points in a chart group or you have them turned off.</span></span></para>
-      <para><span data-ttu-id="39561-106">Si la <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasUpDownBars" /> propiedad es <b>false</b>, se deshabilita la mayoría <see cref="T:Microsoft.Office.Interop.Word.UpBars" /> de las propiedades del objeto.</span><span class="sxs-lookup"><span data-stu-id="39561-106">If the <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasUpDownBars" /> property is <b>False</b>, most properties of the <see cref="T:Microsoft.Office.Interop.Word.UpBars" /> object are disabled.</span></span></para>
+    <summary><span data-ttu-id="0c12a-101">Representa las barras ascendentes de un grupo de gráficos.</span><span class="sxs-lookup"><span data-stu-id="0c12a-101">Represents the up bars in a chart group.</span></span></summary>
+    <remarks><para><span data-ttu-id="0c12a-p101">Las barras ascendentes conectan los puntos de la serie uno con valores superiores de la última serie del grupo de gráficos (las líneas suben desde la serie uno). Sólo los grupos de líneas 2D que contienen al menos dos series pueden tener barras ascendentes. Este objeto no es una colección. Ningún objeto representa una barra ascendente individual; las barras ascendentes se activan para todos los puntos de un grupo de gráficos o bien se desactivan.</span><span class="sxs-lookup"><span data-stu-id="0c12a-p101">Up bars connect points on series one with higher values on the last series in the chart group (the lines go up from series one). Only 2-D line groups that contain at least two series can have up bars. This object isn’t a collection. There’s no object that represents a single up bar; you either have up bars turned on for all points in a chart group or you have them turned off.</span></span></para>
+      <para><span data-ttu-id="0c12a-106">Si la <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasUpDownBars" /> propiedad es <b>false</b>, se deshabilita la mayoría de las propiedades del <see cref="T:Microsoft.Office.Interop.Word.UpBars" /> objeto.</span><span class="sxs-lookup"><span data-stu-id="0c12a-106">If the <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasUpDownBars" /> property is <b>False</b>, most properties of the <see cref="T:Microsoft.Office.Interop.Word.UpBars" /> object are disabled.</span></span></para>
       <para> </para></remarks>
-    <example><para><span data-ttu-id="39561-107">Use la <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.UpBars" /> propiedad para devolver el <see cref="T:Microsoft.Office.Interop.Word.UpBars" /> objeto.</span><span class="sxs-lookup"><span data-stu-id="39561-107">Use the <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.UpBars" /> property to return the <see cref="T:Microsoft.Office.Interop.Word.UpBars" /> object.</span></span> <span data-ttu-id="39561-108">En el siguiente ejemplo, se activan las barras ascendentes y descendentes para el grupo de gráficos uno del primer gráfico del documento activo.</span><span class="sxs-lookup"><span data-stu-id="39561-108">The following example turns on up and down bars for chart group one of the first chart in the active document.</span></span> <span data-ttu-id="39561-109">En el ejemplo, a continuación, establece las barras ascendentes color en azul y se establece el color de las barras descendentes en rojo.</span><span class="sxs-lookup"><span data-stu-id="39561-109">The example then sets the up bar color to blue and sets the down bar color to red.</span></span></para></example>
+    <example><para><span data-ttu-id="0c12a-107">Use la <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.UpBars" /> propiedad para devolver el <see cref="T:Microsoft.Office.Interop.Word.UpBars" /> objeto.</span><span class="sxs-lookup"><span data-stu-id="0c12a-107">Use the <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.UpBars" /> property to return the <see cref="T:Microsoft.Office.Interop.Word.UpBars" /> object.</span></span> <span data-ttu-id="0c12a-108">En el siguiente ejemplo, se activan las barras ascendentes y descendentes para el grupo de gráficos uno del primer gráfico del documento activo.</span><span class="sxs-lookup"><span data-stu-id="0c12a-108">The following example turns on up and down bars for chart group one of the first chart in the active document.</span></span> <span data-ttu-id="0c12a-109">En el ejemplo, a continuación, establece las barras ascendentes color en azul y se establece el color de las barras descendentes en rojo.</span><span class="sxs-lookup"><span data-stu-id="0c12a-109">The example then sets the up bar color to blue and sets the down bar color to red.</span></span></para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.UpBars.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : obj" Usage="Microsoft.Office.Interop.Word.UpBars.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,8 +50,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="39561-110">Cuando se usa sin un calificador de objeto, esta <see cref="T:Microsoft.Office.Interop.Word._Application" /> propiedad devuelve un objeto que representa la aplicación Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="39561-110">When used without an object qualifier, this property returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span></span> <span data-ttu-id="39561-111">Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto).</span><span class="sxs-lookup"><span data-stu-id="39561-111">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object (you can use this property with an OLE Automation object to return the application of that object).</span></span> <span data-ttu-id="39561-112">Solo lectura.</span><span class="sxs-lookup"><span data-stu-id="39561-112">Read-only.</span></span></summary>
-        <value><span data-ttu-id="39561-113"><b>Aplicación</b> (vea más arriba)</span><span class="sxs-lookup"><span data-stu-id="39561-113"><b>Application</b> (see above)</span></span></value>
+        <summary><span data-ttu-id="0c12a-110">Cuando se usa sin un calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto que representa la aplicación Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="0c12a-110">When used without an object qualifier, this property returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span></span> <span data-ttu-id="0c12a-111">Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto).</span><span class="sxs-lookup"><span data-stu-id="0c12a-111">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object (you can use this property with an OLE Automation object to return the application of that object).</span></span> <span data-ttu-id="0c12a-112">Solo lectura.</span><span class="sxs-lookup"><span data-stu-id="0c12a-112">Read-only.</span></span></summary>
+        <value><span data-ttu-id="0c12a-113"><b>Aplicación</b> (vea lo anterior)</span><span class="sxs-lookup"><span data-stu-id="0c12a-113"><b>Application</b> (see above)</span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.UpBars.Border" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Border As ChartBorder" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartBorder ^ Border { Microsoft::Office::Interop::Word::ChartBorder ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Border : Microsoft.Office.Interop.Word.ChartBorder" Usage="Microsoft.Office.Interop.Word.UpBars.Border" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -76,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="39561-114">Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> objeto Object que representa el borde del objeto.</span><span class="sxs-lookup"><span data-stu-id="39561-114">Returns a <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> object that represents the border of the object.</span></span> <span data-ttu-id="39561-115">Solo lectura.</span><span class="sxs-lookup"><span data-stu-id="39561-115">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="0c12a-114">Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> objeto Object que representa el borde del objeto.</span><span class="sxs-lookup"><span data-stu-id="0c12a-114">Returns a <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> object that represents the border of the object.</span></span> <span data-ttu-id="0c12a-115">Solo lectura.</span><span class="sxs-lookup"><span data-stu-id="0c12a-115">Read-only.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.UpBars.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.UpBars.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -104,9 +108,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="39561-116">Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="39561-116">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span> <span data-ttu-id="39561-117"><b>Integer</b> de solo lectura.</span><span class="sxs-lookup"><span data-stu-id="39561-117">Read-only <b>Integer</b>.</span></span></summary>
-        <value><span data-ttu-id="39561-118"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="39561-118"><b>Integer</b></span></span></value>
-        <remarks><para><span data-ttu-id="39561-119">Si el objeto se creó en Microsoft Word, la <see cref="P:Microsoft.Office.Interop.Word.UpBars.Creator" /> propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".</span><span class="sxs-lookup"><span data-stu-id="39561-119">If the object was created in Microsoft Word, the <see cref="P:Microsoft.Office.Interop.Word.UpBars.Creator" /> property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span>  <span data-ttu-id="39561-120">Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="39561-120">This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="39561-121">Por ejemplo, Microsoft Word tiene el código de creador MSWD.</span><span class="sxs-lookup"><span data-stu-id="39561-121">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="39561-122">Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</span><span class="sxs-lookup"><span data-stu-id="39561-122">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <summary><span data-ttu-id="0c12a-116">Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="0c12a-116">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span> <span data-ttu-id="0c12a-117"><b>Integer</b> de solo lectura.</span><span class="sxs-lookup"><span data-stu-id="0c12a-117">Read-only <b>Integer</b>.</span></span></summary>
+        <value><span data-ttu-id="0c12a-118"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="0c12a-118"><b>Integer</b></span></span></value>
+        <remarks><para><span data-ttu-id="0c12a-119">Si el objeto se creó en Microsoft Word, la <see cref="P:Microsoft.Office.Interop.Word.UpBars.Creator" /> propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".</span><span class="sxs-lookup"><span data-stu-id="0c12a-119">If the object was created in Microsoft Word, the <see cref="P:Microsoft.Office.Interop.Word.UpBars.Creator" /> property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span>  <span data-ttu-id="0c12a-120">Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="0c12a-120">This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="0c12a-121">Por ejemplo, Microsoft Word tiene el código de creador MSWD.</span><span class="sxs-lookup"><span data-stu-id="0c12a-121">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="0c12a-122">Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</span><span class="sxs-lookup"><span data-stu-id="0c12a-122">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.UpBars.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Function Delete () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; obj" Usage="upBars.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -131,8 +136,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="39561-123">Elimina el objeto.</span><span class="sxs-lookup"><span data-stu-id="39561-123">Deletes the object.</span></span></summary>
-        <returns><span data-ttu-id="39561-124"><b>Objeto</b></span><span class="sxs-lookup"><span data-stu-id="39561-124"><b>Object</b></span></span></returns>
+        <summary><span data-ttu-id="0c12a-123">Elimina el objeto.</span><span class="sxs-lookup"><span data-stu-id="0c12a-123">Deletes the object.</span></span></summary>
+        <returns><span data-ttu-id="0c12a-124"><b>Objeto</b></span><span class="sxs-lookup"><span data-stu-id="0c12a-124"><b>Object</b></span></span></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,6 +147,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.UpBars.Fill" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Fill As ChartFillFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFillFormat ^ Fill { Microsoft::Office::Interop::Word::ChartFillFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Fill : Microsoft.Office.Interop.Word.ChartFillFormat" Usage="Microsoft.Office.Interop.Word.UpBars.Fill" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -159,7 +165,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="39561-125">Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> objeto para el elemento de gráfico principal que contiene las propiedades de formato de relleno del elemento de gráfico.</span><span class="sxs-lookup"><span data-stu-id="39561-125">Returns a  <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> object for the parent chart element that contains fill formatting properties for the   chart element.</span></span> <span data-ttu-id="39561-126">Solo lectura.</span><span class="sxs-lookup"><span data-stu-id="39561-126">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="0c12a-125">Devuelve un <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> objeto para el elemento de gráfico principal que contiene las propiedades de formato de relleno del elemento de gráfico.</span><span class="sxs-lookup"><span data-stu-id="0c12a-125">Returns a  <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> object for the parent chart element that contains fill formatting properties for the   chart element.</span></span> <span data-ttu-id="0c12a-126">Solo lectura.</span><span class="sxs-lookup"><span data-stu-id="0c12a-126">Read-only.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -170,6 +176,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.UpBars.Format" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As ChartFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFormat ^ Format { Microsoft::Office::Interop::Word::ChartFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Format : Microsoft.Office.Interop.Word.ChartFormat" Usage="Microsoft.Office.Interop.Word.UpBars.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -187,9 +194,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="39561-127">Devuelve la línea, relleno y efecto de formato para el objeto.</span><span class="sxs-lookup"><span data-stu-id="39561-127">Returns the line, fill, and effect formatting for the object.</span></span>
+        <summary><span data-ttu-id="0c12a-127">Devuelve la línea, relleno y efecto de formato para el objeto.</span><span class="sxs-lookup"><span data-stu-id="0c12a-127">Returns the line, fill, and effect formatting for the object.</span></span>
 
-<span data-ttu-id="39561-128">De sólo <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />lectura.</span><span class="sxs-lookup"><span data-stu-id="39561-128">Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</span></span></summary>
+<span data-ttu-id="0c12a-128">De sólo lectura <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /> .</span><span class="sxs-lookup"><span data-stu-id="0c12a-128">Read-only <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -200,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.UpBars.Interior" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Interior As Interior" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Interior ^ Interior { Microsoft::Office::Interop::Word::Interior ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Interior : Microsoft.Office.Interop.Word.Interior" Usage="Microsoft.Office.Interop.Word.UpBars.Interior" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -217,7 +225,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="39561-129">Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Interior" /> objeto Object que representa el interior del objeto.</span><span class="sxs-lookup"><span data-stu-id="39561-129">Returns an <see cref="T:Microsoft.Office.Interop.Word.Interior" /> object that represents the interior of the object.</span></span></summary>
+        <summary><span data-ttu-id="0c12a-129">Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Interior" /> objeto Object que representa el interior del objeto.</span><span class="sxs-lookup"><span data-stu-id="0c12a-129">Returns an <see cref="T:Microsoft.Office.Interop.Word.Interior" /> object that represents the interior of the object.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -228,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.UpBars.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.UpBars.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -245,8 +254,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="39561-130">Devuelve un valor de <b>tipo String</b> que representa el nombre del objeto.</span><span class="sxs-lookup"><span data-stu-id="39561-130">Returns a <b>String</b> value that represents the name of the object.</span></span></summary>
-        <value><span data-ttu-id="39561-131"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="39561-131"><b>String</b></span></span></value>
+        <summary><span data-ttu-id="0c12a-130">Devuelve un valor de <b>tipo String</b> que representa el nombre del objeto.</span><span class="sxs-lookup"><span data-stu-id="0c12a-130">Returns a <b>String</b> value that represents the name of the object.</span></span></summary>
+        <value><span data-ttu-id="0c12a-131"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="0c12a-131"><b>String</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,6 +265,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.UpBars.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.UpBars.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -273,8 +283,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="39561-132">Devuelve al objeto primario del objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="39561-132">Returns the parent for the specified object.</span></span> <span data-ttu-id="39561-133">Read-only <b>objeto</b>.</span><span class="sxs-lookup"><span data-stu-id="39561-133">Read-only <b>Object</b>.</span></span></summary>
-        <value><span data-ttu-id="39561-134"><b>Objeto</b></span><span class="sxs-lookup"><span data-stu-id="39561-134"><b>Object</b></span></span></value>
+        <summary><span data-ttu-id="0c12a-132">Devuelve al objeto primario del objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="0c12a-132">Returns the parent for the specified object.</span></span> <span data-ttu-id="0c12a-133">Read-only <b>objeto</b>.</span><span class="sxs-lookup"><span data-stu-id="0c12a-133">Read-only <b>Object</b>.</span></span></summary>
+        <value><span data-ttu-id="0c12a-134"><b>Objeto</b></span><span class="sxs-lookup"><span data-stu-id="0c12a-134"><b>Object</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -284,6 +294,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.UpBars.Select" />
       <MemberSignature Language="VB.NET" Value="Public Function Select () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; obj" Usage="upBars.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -299,8 +310,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="39561-135">Selecciona el objeto.</span><span class="sxs-lookup"><span data-stu-id="39561-135">Selects the object.</span></span></summary>
-        <returns><span data-ttu-id="39561-136"><b>Objeto</b></span><span class="sxs-lookup"><span data-stu-id="39561-136"><b>Object</b></span></span></returns>
+        <summary><span data-ttu-id="0c12a-135">Selecciona el objeto.</span><span class="sxs-lookup"><span data-stu-id="0c12a-135">Selects the object.</span></span></summary>
+        <returns><span data-ttu-id="0c12a-136"><b>Objeto</b></span><span class="sxs-lookup"><span data-stu-id="0c12a-136"><b>Object</b></span></span></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

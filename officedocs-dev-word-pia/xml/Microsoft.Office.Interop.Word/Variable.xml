@@ -1,9 +1,10 @@
 <Type Name="Variable" FullName="Microsoft.Office.Interop.Word.Variable">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3e2a8fae352f5d719c8e9311fb04b65b7fefebfe" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143774" /></Metadata><TypeSignature Language="C#" Value="public interface Variable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dac135c617d95f26e7bf7f3cc0690c7d5eb106a7" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925915" /></Metadata><TypeSignature Language="C#" Value="public interface Variable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Variable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Variable" />
   <TypeSignature Language="VB.NET" Value="Public Interface Variable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Variable" />
+  <TypeSignature Language="F#" Value="type Variable = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,14 +19,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="2e7ff-101">Representa una variable guardada como parte de un documento.</span><span class="sxs-lookup"><span data-stu-id="2e7ff-101">Represents a variable stored as part of a document.</span></span> <span data-ttu-id="2e7ff-102">Las variables de documento se usan para conservar los valores de las macros entre sesiones de macros.</span><span class="sxs-lookup"><span data-stu-id="2e7ff-102">Document variables are used to preserve macro settings in between macro sessions.</span></span></summary>
-    <remarks><para><span data-ttu-id="2e7ff-103">El objeto <b>variable</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Variables" /> colección.</span><span class="sxs-lookup"><span data-stu-id="2e7ff-103">The <b>Variable</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.Variables" /> collection.</span></span> <span data-ttu-id="2e7ff-104">La colección <b>Variables</b> incluye todas las variables de un documento o de una plantilla.</span><span class="sxs-lookup"><span data-stu-id="2e7ff-104">The <b>Variables</b> collection includes all the document variables in a document or template.</span></span></para>
-      <para><span data-ttu-id="2e7ff-105">Use <b>variables</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de la variable de documento o el número de índice, para devolver un único objeto <b>variable</b> .</span><span class="sxs-lookup"><span data-stu-id="2e7ff-105">Use <b>Variables</b>(<paramref name="index" />), where <paramref name="index" /> is the document variable name or the index number, to return a single <b>Variable</b> object.</span></span></para>
-      <para><span data-ttu-id="2e7ff-106">El número de índice representa la posición de la variable de documento en la colección <b>Variables</b>.</span><span class="sxs-lookup"><span data-stu-id="2e7ff-106">The index number represents the position of the document variable in the <b>Variables</b> collection.</span></span> <span data-ttu-id="2e7ff-107">La última variable agregada a la colección <b>variables</b> es el número de índice 1; la segunda variable agregada a la colección es el número de índice 2 y así sucesivamente.</span><span class="sxs-lookup"><span data-stu-id="2e7ff-107">The last variable added to the <b>Variables</b> collection is index number 1; the second-to-last variable added to the collection is index number 2, and so on.</span></span></para>
-      <para><span data-ttu-id="2e7ff-108">Utilice el <see cref="M:Microsoft.Office.Interop.Word.Variables.Add(System.String,System.Object@)" /> del método <see cref="T:Microsoft.Office.Interop.Word.Variables" /> Collection para agregar una variable a un documento.</span><span class="sxs-lookup"><span data-stu-id="2e7ff-108">Use the <see cref="M:Microsoft.Office.Interop.Word.Variables.Add(System.String,System.Object@)" /> of the <see cref="T:Microsoft.Office.Interop.Word.Variables" /> collection method to add a variable to a document.</span></span></para>
-      <para><span data-ttu-id="2e7ff-109">Si intenta agregar una variable de documento con un nombre que ya existe en la colección <b>Variables</b>, se produce un error.</span><span class="sxs-lookup"><span data-stu-id="2e7ff-109">If you try to add a document variable with a name that already exists in the <b>Variables</b> collection, an error occurs.</span></span> <span data-ttu-id="2e7ff-110">Para evitar este error, puede enumerar la colección antes de agregar nuevas variables.</span><span class="sxs-lookup"><span data-stu-id="2e7ff-110">To avoid this error, you can enumerate the collection before adding any new variables.</span></span></para>
-      <para><span data-ttu-id="2e7ff-111">Las variables de documento son invisibles para el usuario a menos que se inserta un campo DOCVARIABLE con el nombre de variable adecuado.</span><span class="sxs-lookup"><span data-stu-id="2e7ff-111">Document variables are invisible to the user unless a DOCVARIABLE field is inserted with the appropriate variable name.</span></span></para>
-      <para><span data-ttu-id="2e7ff-112">Para agregar una variable de documento a una plantilla, abra la plantilla como un documento mediante el <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> método.</span><span class="sxs-lookup"><span data-stu-id="2e7ff-112">To add a document variable to a template, open the template as a document by using the <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> method.</span></span></para>
+    <summary><span data-ttu-id="bc97e-101">Representa una variable guardada como parte de un documento.</span><span class="sxs-lookup"><span data-stu-id="bc97e-101">Represents a variable stored as part of a document.</span></span> <span data-ttu-id="bc97e-102">Las variables de documento se usan para conservar los valores de las macros entre sesiones de macros.</span><span class="sxs-lookup"><span data-stu-id="bc97e-102">Document variables are used to preserve macro settings in between macro sessions.</span></span></summary>
+    <remarks><para><span data-ttu-id="bc97e-103">El objeto <b>variable</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Variables" /> colección.</span><span class="sxs-lookup"><span data-stu-id="bc97e-103">The <b>Variable</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.Variables" /> collection.</span></span> <span data-ttu-id="bc97e-104">La colección <b>Variables</b> incluye todas las variables de un documento o de una plantilla.</span><span class="sxs-lookup"><span data-stu-id="bc97e-104">The <b>Variables</b> collection includes all the document variables in a document or template.</span></span></para>
+      <para><span data-ttu-id="bc97e-105">Use <b>variables</b>( <paramref name="index" /> ), donde <paramref name="index" /> es el nombre de la variable de documento o el número de índice, para devolver un único objeto <b>variable</b> .</span><span class="sxs-lookup"><span data-stu-id="bc97e-105">Use <b>Variables</b>(<paramref name="index" />), where <paramref name="index" /> is the document variable name or the index number, to return a single <b>Variable</b> object.</span></span></para>
+      <para><span data-ttu-id="bc97e-106">El número de índice representa la posición de la variable de documento en la colección <b>Variables</b>.</span><span class="sxs-lookup"><span data-stu-id="bc97e-106">The index number represents the position of the document variable in the <b>Variables</b> collection.</span></span> <span data-ttu-id="bc97e-107">La última variable agregada a la colección <b>variables</b> es el número de índice 1; la segunda variable agregada a la colección es el número de índice 2 y así sucesivamente.</span><span class="sxs-lookup"><span data-stu-id="bc97e-107">The last variable added to the <b>Variables</b> collection is index number 1; the second-to-last variable added to the collection is index number 2, and so on.</span></span></para>
+      <para><span data-ttu-id="bc97e-108">Utilice el <see cref="M:Microsoft.Office.Interop.Word.Variables.Add(System.String,System.Object@)" /> del <see cref="T:Microsoft.Office.Interop.Word.Variables" /> método Collection para agregar una variable a un documento.</span><span class="sxs-lookup"><span data-stu-id="bc97e-108">Use the <see cref="M:Microsoft.Office.Interop.Word.Variables.Add(System.String,System.Object@)" /> of the <see cref="T:Microsoft.Office.Interop.Word.Variables" /> collection method to add a variable to a document.</span></span></para>
+      <para><span data-ttu-id="bc97e-109">Si intenta agregar una variable de documento con un nombre que ya existe en la colección <b>Variables</b>, se produce un error.</span><span class="sxs-lookup"><span data-stu-id="bc97e-109">If you try to add a document variable with a name that already exists in the <b>Variables</b> collection, an error occurs.</span></span> <span data-ttu-id="bc97e-110">Para evitar este error, puede enumerar la colección antes de agregar nuevas variables.</span><span class="sxs-lookup"><span data-stu-id="bc97e-110">To avoid this error, you can enumerate the collection before adding any new variables.</span></span></para>
+      <para><span data-ttu-id="bc97e-111">Las variables de documento son invisibles para el usuario a menos que se inserta un campo DOCVARIABLE con el nombre de variable adecuado.</span><span class="sxs-lookup"><span data-stu-id="bc97e-111">Document variables are invisible to the user unless a DOCVARIABLE field is inserted with the appropriate variable name.</span></span></para>
+      <para><span data-ttu-id="bc97e-112">Para agregar una variable de documento a una plantilla, abra la plantilla como un documento mediante el <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> método.</span><span class="sxs-lookup"><span data-stu-id="bc97e-112">To add a document variable to a template, open the template as a document by using the <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> method.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -35,6 +36,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Variable.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Variable.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -52,7 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="2e7ff-113">Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="2e7ff-113">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="bc97e-113">Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto Object que representa la aplicación Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="bc97e-113">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Variable.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Variable.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -80,10 +83,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="2e7ff-114">Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="2e7ff-114">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
+        <summary><span data-ttu-id="bc97e-114">Devuelve un entero de 32 bits que indica la aplicación en la que se creó el objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="bc97e-114">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="2e7ff-115">Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".</span><span class="sxs-lookup"><span data-stu-id="2e7ff-115">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="2e7ff-116">[!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</span><span class="sxs-lookup"><span data-stu-id="2e7ff-116">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="2e7ff-117">La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="2e7ff-117">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="2e7ff-118">Por ejemplo, Microsoft Word tiene el código de creador MSWD.</span><span class="sxs-lookup"><span data-stu-id="2e7ff-118">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="2e7ff-119">Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</span><span class="sxs-lookup"><span data-stu-id="2e7ff-119">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="bc97e-115">Si el objeto se creó en Microsoft Word, esta propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".</span><span class="sxs-lookup"><span data-stu-id="bc97e-115">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="bc97e-116">[!NOTA] Este valor también puede representarse mediante la constante <b>wdCreatorCode</b>.</span><span class="sxs-lookup"><span data-stu-id="bc97e-116">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="bc97e-117">La propiedad <b>Creator</b> se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="bc97e-117">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="bc97e-118">Por ejemplo, Microsoft Word tiene el código de creador MSWD.</span><span class="sxs-lookup"><span data-stu-id="bc97e-118">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="bc97e-119">Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</span><span class="sxs-lookup"><span data-stu-id="bc97e-119">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Variable.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="variable.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -108,7 +112,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="2e7ff-120">Elimina el objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="2e7ff-120">Deletes the specified object.</span></span></summary>
+        <summary><span data-ttu-id="bc97e-120">Elimina el objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="bc97e-120">Deletes the specified object.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Variable.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.Variable.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -135,7 +140,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="2e7ff-121">Devuelve un <b>entero</b> que representa la posición de un elemento en una colección.</span><span class="sxs-lookup"><span data-stu-id="2e7ff-121">Returns an <b>Integer</b> that represents the position of an item in a collection.</span></span></summary>
+        <summary><span data-ttu-id="bc97e-121">Devuelve un <b>entero</b> que representa la posición de un elemento en una colección.</span><span class="sxs-lookup"><span data-stu-id="bc97e-121">Returns an <b>Integer</b> that represents the position of an item in a collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Variable.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.Variable.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -163,7 +169,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="2e7ff-122">Devuelve o establece el nombre del objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="2e7ff-122">Returns or sets the name of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="bc97e-122">Devuelve o establece el nombre del objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="bc97e-122">Returns or sets the name of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -174,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Variable.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Variable.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -191,7 +198,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="2e7ff-123">Devuelve un objeto que representa el objeto primario del objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="2e7ff-123">Returns an object that represents the parent object of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="bc97e-123">Devuelve un objeto que representa el objeto primario del objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="bc97e-123">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -202,6 +209,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Variable.Value" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Value As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Office.Interop.Word.Variable.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -222,7 +230,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="2e7ff-124">Devuelve o establece el valor de la variable de documento.</span><span class="sxs-lookup"><span data-stu-id="2e7ff-124">Returns or sets the value of the document variable.</span></span></summary>
+        <summary><span data-ttu-id="bc97e-124">Devuelve o establece el valor de la variable de documento.</span><span class="sxs-lookup"><span data-stu-id="bc97e-124">Returns or sets the value of the document variable.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
