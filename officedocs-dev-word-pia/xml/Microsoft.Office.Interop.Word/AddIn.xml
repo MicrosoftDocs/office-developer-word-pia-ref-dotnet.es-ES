@@ -1,9 +1,10 @@
 <Type Name="AddIn" FullName="Microsoft.Office.Interop.Word.AddIn">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="695249a505a14baf5625853d5db3725ed54c358e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144676" /></Metadata><TypeSignature Language="C#" Value="public interface AddIn" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="834391be669fe404d74b4ac56273a8b1154ee8ba" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43921887" /></Metadata><TypeSignature Language="C#" Value="public interface AddIn" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddIn" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AddIn" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddIn" />
   <TypeSignature Language="C++ CLI" Value="public interface class AddIn" />
+  <TypeSignature Language="F#" Value="type AddIn = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,7 +21,7 @@
   <Docs>
     <summary>Representa un solo complemento, tanto si está instalado como si no.</summary>
     <remarks><para>El objeto <b>AddIn</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> colección. La colección <b>AddIns</b> contiene todos los complementos disponibles en Microsoft Word, independientemente de si están cargados actualmente o no. La colección <b>AddIns</b> incluye las plantillas globales o las bibliotecas de complementos (WLL) de Word que se muestran en el cuadro de diálogo Plantillas y complementos (menú herramientas).</para>
-      <para>Use <b>AddIns</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre del complemento o el número de índice, para devolver un solo objeto <b>AddIn</b> . Debe coincidir exactamente con la ortografía (pero no necesariamente las mayúsculas y minúsculas) del nombre, como se muestra en el cuadro de diálogo Plantillas y complementos.</para>
+      <para>Use <b>AddIns</b>( <paramref name="index" /> ), donde <paramref name="index" /> es el nombre del complemento o el número de índice, para devolver un solo objeto <b>AddIn</b> . Debe coincidir exactamente con la ortografía (pero no necesariamente las mayúsculas y minúsculas) del nombre, como se muestra en el cuadro de diálogo Plantillas y complementos.</para>
       <para>El número de índice representa la posición del complemento en la lista de complementos en el cuadro de diálogo Plantillas y complementos.</para>
       <para>Use el <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> método para agregar un complemento a la lista de complementos disponibles y, opcionalmente, instalarlo mediante el <paramref name="Install" /> argumento.</para>
       <para>Para instalar un complemento que se muestra en la lista de complementos disponibles, use la <see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> propiedad.</para>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.AddIn.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Autoload" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Autoload As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Autoload { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Autoload : bool" Usage="Microsoft.Office.Interop.Word.AddIn.Autoload" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Compiled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Compiled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Compiled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Compiled : bool" Usage="Microsoft.Office.Interop.Word.AddIn.Compiled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.AddIn.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.AddIn.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="addIn.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.AddIn.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -203,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Installed" />
       <MemberSignature Language="VB.NET" Value="Public Property Installed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Installed { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Installed : bool with get, set" Usage="Microsoft.Office.Interop.Word.AddIn.Installed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -226,7 +234,7 @@
         <summary>Devuelve o establece un valor que indica <b>true</b> si el complemento especificado está instalado (cargado).</summary>
         <value>To be added.</value>
         <remarks><para>Los complementos que están cargados se encuentran seleccionados en el cuadro de diálogo Plantillas y complementos (menú Herramientas).</para>
-          <para>Los complementos desinstalados se incluyen en la <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> colección. Para quitar una plantilla o una biblioteca WLL de la colección <b>AddIns</b> , <see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" /> aplique el método <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> al objeto (el nombre del complemento se quita del cuadro de diálogo Plantillas y complementos). Para descargar todas las plantillas y bibliotecas WLL, <see cref="M:Microsoft.Office.Interop.Word.AddIns.Unload(System.Boolean)" /> aplique el método a la colección <b>AddIns</b> .</para>
+          <para>Los complementos desinstalados se incluyen en la <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> colección. Para quitar una plantilla o una biblioteca WLL de la colección <b>AddIns</b> , aplique el <see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" /> método al <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> objeto (el nombre del complemento se quita del cuadro de diálogo Plantillas y complementos). Para descargar todas las plantillas y bibliotecas WLL, aplique el <see cref="M:Microsoft.Office.Interop.Word.AddIns.Unload(System.Boolean)" /> método a la colección <b>AddIns</b> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -236,6 +244,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Name" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.AddIn.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -264,6 +273,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.AddIn.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -292,6 +302,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Path" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="Microsoft.Office.Interop.Word.AddIn.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -309,9 +320,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un valor que indica la dirección URL del objeto <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> especificado.</summary>
+        <summary>Devuelve un valor que indica la dirección URL del <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks><para>La ruta de acceso no incluye un carácter de barra diagonal hacia delante al finalhttp://MyServer; por ejemplo, "". Utilice la <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.PathSeparator" /> propiedad para agregar un carácter de barra diagonal hacia la derecha, aunque el valor predeterminado de la propiedad <b>PathSeparator</b> sea\)una barra diagonal inversa (.</para>
+        <remarks><para>La ruta de acceso no incluye un carácter de barra diagonal hacia delante al final; por ejemplo, " http://MyServer ". Utilice la <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.PathSeparator" /> propiedad para agregar un carácter de barra diagonal hacia la derecha, aunque el valor predeterminado de la propiedad <b>PathSeparator</b> sea una barra diagonal inversa ( \) .</para>
           <para> </para></remarks>
       </Docs>
     </Member>

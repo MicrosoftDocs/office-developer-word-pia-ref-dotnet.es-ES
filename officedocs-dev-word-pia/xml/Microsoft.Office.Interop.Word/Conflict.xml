@@ -1,9 +1,10 @@
 <Type Name="Conflict" FullName="Microsoft.Office.Interop.Word.Conflict">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="21e74154c2475877e56ac3b4b4b6917cedd06347" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147210" /></Metadata><TypeSignature Language="C#" Value="public interface Conflict" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8fcb574f4804f8afbf21ecfb81c2808bd2bdf2b0" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922328" /></Metadata><TypeSignature Language="C#" Value="public interface Conflict" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Conflict" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Conflict" />
   <TypeSignature Language="VB.NET" Value="Public Interface Conflict" />
   <TypeSignature Language="C++ CLI" Value="public interface class Conflict" />
+  <TypeSignature Language="F#" Value="type Conflict = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,10 +19,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa una modificación en conflicto en un documento con co-autoría. La <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> enumeración especifica <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> el tipo de un objeto.</summary>
+    <summary>Representa una modificación en conflicto en un documento con co-autoría. La enumeración especifica el tipo de un <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> objeto <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> .</summary>
     <remarks><para>Por lo general, cuando un documento con co-autoría habilitada se modifica simultáneamente, solo un coautor puede modificar un intervalo en particular por vez. Microsoft Word 2010 coloca automáticamente un bloqueo en el intervalo en el momento en que el coautor comienza a editarse para que otros coautores no puedan editar el mismo intervalo al mismo tiempo.</para>
       <para>Se puede producir un conflicto cuando un intervalo concreto de un documento con la co-autoría habilitada se edita simultáneamente antes de que un coautor único obtenga un bloqueo exclusivo en el intervalo. En una situación de conflicto, se muestra a cada coautor que tiene un bloqueo exclusivo en el intervalo, pero el bloqueo no se comunica a los otros coautores. El coautor que guarda primero en el servidor no será parte del conflicto porque su versión del documento se convertirá en la versión establecida. Los coautores que intenten guardar el documento después de que lo haya guardado el primer coautor se encontrarán con un conflicto. El conflicto se producirá entre las distintas versiones del mismo intervalo.</para>
-      <para>Por ejemplo, si un co-autor edita la frase "The Quick Brown Fox" para leer "The Fast rojo Fox" y otro coautor edita simultáneamente la oración para que sea leída, "The Speed White Fox" y ambos cambios se produce antes de que el coautor obtenga un bloqueo exclusivo en el párrafo, se produce un conflicto. En este caso, Word 2010 no puede conciliar "rojo rápido" y "negro rápido". El primer coautor que guarda su versión del documento en el servidor no se encuentra con ningún conflicto. Cuando el coautor siguiente intenta guardar su versión del documento en el servidor, se genera un conflicto y el coautor debe optar por resolver el conflicto, es decir, debe decidir si acepta o rechaza los cambios.</para>
+      <para>Por ejemplo, si un co-autor modifica la frase "The Quick Brown Fox" para leer "The Fast rojo Fox" y otro coautor edita simultáneamente la oración para que sea leída, "The Speed White Fox" y ambos cambios se producen antes de que el coautor obtenga un bloqueo exclusivo en el párrafo, se producirá un conflicto. En este caso, Word 2010 no puede conciliar "rojo rápido" y "negro rápido". El primer coautor que guarda su versión del documento en el servidor no se encuentra con ningún conflicto. Cuando el coautor siguiente intenta guardar su versión del documento en el servidor, se genera un conflicto y el coautor debe optar por resolver el conflicto, es decir, debe decidir si acepta o rechaza los cambios.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Conflict.Accept" />
       <MemberSignature Language="VB.NET" Value="Public Sub Accept ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Accept();" />
+      <MemberSignature Language="F#" Value="abstract member Accept : unit -&gt; unit" Usage="conflict.Accept " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Conflict.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -75,7 +78,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa la aplicación Microsoft Word.</summary>
-        <value><see cref="T:Microsoft.Office.Interop.Word.Application" /> Objeto que representa la aplicación Microsoft Word.</value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Application" />Objeto que representa la aplicación Microsoft Word.</value>
         <remarks><para>Solo lectura.</para>
           <para> </para></remarks>
       </Docs>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Conflict.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.Conflict.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -135,7 +140,7 @@
       </ReturnValue>
       <Docs>
         <summary>Devuelve un valor que representa la posición de un elemento en una colección.</summary>
-        <value>Devuelve <see cref="T:System.Int32" />.</value>
+        <value>Devuelve <see cref="T:System.Int32" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Conflict.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -162,7 +168,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:System.Object" /> objeto que representa el objeto primario del objeto <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> especificado.</summary>
+        <summary>Obtiene un <see cref="T:System.Object" /> objeto que representa el objeto primario del <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> objeto especificado.</summary>
         <value>Un <see cref="T:System.Object" /> que representa el objeto primario del objeto especificado <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -173,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Conflict.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -191,7 +198,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa la parte de un documento incluida en el objeto especificado.</summary>
-        <value><see cref="T:Microsoft.Office.Interop.Word.Range" /> Objeto que representa la parte de un documento incluida en el objeto especificado.</value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Range" />Objeto que representa la parte de un documento incluida en el objeto especificado.</value>
         <remarks><para>Solo lectura.</para>
           <para> </para></remarks>
       </Docs>
@@ -202,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Conflict.Reject" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reject ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reject();" />
+      <MemberSignature Language="F#" Value="abstract member Reject : unit -&gt; unit" Usage="conflict.Reject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -228,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As WdRevisionType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdRevisionType Type { Microsoft::Office::Interop::Word::WdRevisionType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdRevisionType" Usage="Microsoft.Office.Interop.Word.Conflict.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -245,8 +254,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdRevisionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> del <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> objeto.</summary>
-        <value>El <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> del <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> objeto.</value>
+        <summary>Obtiene el del <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> objeto.</summary>
+        <value>El del <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> objeto.</value>
         <remarks><para>Solo lectura.</para>
           <para> </para></remarks>
       </Docs>

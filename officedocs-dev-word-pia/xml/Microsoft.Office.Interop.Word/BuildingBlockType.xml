@@ -1,9 +1,10 @@
 <Type Name="BuildingBlockType" FullName="Microsoft.Office.Interop.Word.BuildingBlockType">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="e98fe9144c59325006f66bdcbaa3a460c1f43761" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146195" /></Metadata><TypeSignature Language="C#" Value="public interface BuildingBlockType" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ce13e86fe0625ceda925c427004d21a62274de70" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922601" /></Metadata><TypeSignature Language="C#" Value="public interface BuildingBlockType" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract BuildingBlockType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.BuildingBlockType" />
   <TypeSignature Language="VB.NET" Value="Public Interface BuildingBlockType" />
   <TypeSignature Language="C++ CLI" Value="public interface class BuildingBlockType" />
+  <TypeSignature Language="F#" Value="type BuildingBlockType = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,7 +20,7 @@
   </Attributes>
   <Docs>
     <summary>Representa un tipo de bloque de creación. Cada <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /> objeto es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> colección.</summary>
-    <remarks><para>Microsoft Office Word usa tipos y categorías para organizar bloques de creación. Cada tipo de bloque de creación está representado <see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" /> por una constante. Utilice la <see cref="P:Microsoft.Office.Interop.Word.BuildingBlockType.Categories" /> propiedad para tener acceso a las categorías de un tipo de bloque de creación específico. Para obtener más información acerca de los bloques de creación, vea <a href="HV10120827">trabajar con bloques de creación</a></para>
+    <remarks><para>Microsoft Office Word usa tipos y categorías para organizar bloques de creación. Cada tipo de bloque de creación está representado por una <see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" /> constante. Utilice la <see cref="P:Microsoft.Office.Interop.Word.BuildingBlockType.Categories" /> propiedad para tener acceso a las categorías de un tipo de bloque de creación específico. Para obtener más información acerca de los bloques de creación, vea <a href="HV10120827">trabajar con bloques de creación</a></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlockType.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.BuildingBlockType.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlockType.Categories" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Categories As Categories" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Categories ^ Categories { Microsoft::Office::Interop::Word::Categories ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Categories : Microsoft.Office.Interop.Word.Categories" Usage="Microsoft.Office.Interop.Word.BuildingBlockType.Categories" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlockType.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.BuildingBlockType.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -104,7 +108,7 @@
       <Docs>
         <summary>Devuelve un <b>entero</b> de 32 bits que indica la aplicación en la que se creó el complemento. Solo lectura.</summary>
         <value><b>Integer</b></value>
-        <remarks><para>Si el objeto se creó en Microsoft Word, la <see cref="P:Microsoft.Office.Interop.Word.BuildingBlockType.Creator" /> propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Este valor también puede representarse mediante la <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />constante. </para>
+        <remarks><para>Si el objeto se creó en Microsoft Word, la <see cref="P:Microsoft.Office.Interop.Word.BuildingBlockType.Creator" /> propiedad devuelve el número hexadecimal 4D535744, que representa la cadena "MSWD".  Este valor también puede representarse mediante la constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" /> . </para>
           <para>Esta propiedad se diseñó principalmente para usarse en Macintosh, donde cada aplicación tiene un código de creador de cuatro caracteres. Por ejemplo, Microsoft Word tiene el código de creador MSWD. Para obtener información adicional acerca de esta propiedad, vea la referencia del lenguaje Ayuda incluida con Microsoft Office Macintosh Edition.</para>
           <para> </para></remarks>
       </Docs>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlockType.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.BuildingBlockType.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlockType.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.BuildingBlockType.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -171,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.BuildingBlockType.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.BuildingBlockType.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -188,7 +195,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve el elemento primario del objeto <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /> especificado.</summary>
+        <summary>Devuelve el elemento primario del <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /> objeto especificado.</summary>
         <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,9 +1,10 @@
 <Type Name="Bookmark" FullName="Microsoft.Office.Interop.Word.Bookmark">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="4d16f348543910c5ebcb48db2c87d1c11e3f73c5" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146349" /></Metadata><TypeSignature Language="C#" Value="public interface Bookmark" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="45d5d4707500f4f9a0319be2eed91416b120f4d0" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922726" /></Metadata><TypeSignature Language="C#" Value="public interface Bookmark" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Bookmark" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Bookmark" />
   <TypeSignature Language="VB.NET" Value="Public Interface Bookmark" />
   <TypeSignature Language="C++ CLI" Value="public interface class Bookmark" />
+  <TypeSignature Language="F#" Value="type Bookmark = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,8 +21,8 @@
   <Docs>
     <summary>Representa un solo marcador.</summary>
     <remarks><para>El objeto <b>Bookmark</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" /> colección. La colección Bookmarks incluye todos los marcadores que aparecen en el cuadro de diálogo Marcador (menú Insertar).</para>
-      <para>Use <b>bookmarks</b>(<paramref name="index" />), donde <paramref name="index" /> es el nombre de marcador o el número de índice, para devolver un solo objeto <b>Bookmark</b> . Hay que usar la ortografía exacta (pero no necesariamente las mayúsculas y minúsculas) del nombre del marcador.</para>
-      <para>El número de índice representa la posición del marcador en el <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> u. Para el <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto, el número de índice representa la posición del marcador en la lista alfabética de marcadores en el cuadro de diálogo marcadores (haga clic en el nombre para ordenar la lista de marcadores alfabéticamente).</para>
+      <para>Use <b>bookmarks</b>( <paramref name="index" /> ), donde <paramref name="index" /> es el nombre de marcador o el número de índice, para devolver un solo objeto <b>Bookmark</b> . Hay que usar la ortografía exacta (pero no necesariamente las mayúsculas y minúsculas) del nombre del marcador.</para>
+      <para>El número de índice representa la posición del marcador en el <see cref="T:Microsoft.Office.Interop.Word.Selection" /> <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto u. Para el <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto, el número de índice representa la posición del marcador en la lista alfabética de marcadores en el cuadro de diálogo marcadores (haga clic en el nombre para ordenar la lista de marcadores alfabéticamente).</para>
       <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Add(System.String,System.Object@)" /> método para agregar un marcador a un intervalo de documentos.</para>
       <para>Utilice la <see cref="P:Microsoft.Office.Interop.Word.Range.BookmarkID" /> propiedad con un objeto Range o Selection para devolver el número de índice del objeto <b>Bookmark</b> de la colección <b>bookmarks</b> .</para>
       <para>Utilice el <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Exists(System.String)" /> método para determinar si ya existe un marcador en la selección, intervalo o documento.</para>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bookmark.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Bookmark.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bookmark.Column" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Column { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Column : bool" Usage="Microsoft.Office.Interop.Word.Bookmark.Column" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Bookmark.Copy(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Copy (Name As String) As Bookmark" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Bookmark ^ Copy(System::String ^ Name);" />
+      <MemberSignature Language="F#" Value="abstract member Copy : string -&gt; Microsoft.Office.Interop.Word.Bookmark" Usage="bookmark.Copy Name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -108,7 +112,7 @@
       </Parameters>
       <Docs>
         <param name="Name">Nombre del nuevo marcador.</param>
-        <summary>Establece un nuevo marcador identificado por el <paramref name="Name" /> argumento en la ubicación marcada por el objeto <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> especificado.</summary>
+        <summary>Establece un nuevo marcador identificado por el <paramref name="Name" /> argumento en la ubicación marcada por el <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objeto especificado.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bookmark.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Bookmark.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Bookmark.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="bookmark.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -174,6 +180,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bookmark.Empty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Empty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Empty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Empty : bool" Usage="Microsoft.Office.Interop.Word.Bookmark.Empty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -204,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bookmark.End" />
       <MemberSignature Language="VB.NET" Value="Public Property End As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int End { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.End : int with get, set" Usage="Microsoft.Office.Interop.Word.Bookmark.End" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -228,7 +236,7 @@
         <value>To be added.</value>
         <remarks><para>El <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objeto tiene una posición inicial y una posición final. La posición final es el punto más alejado del principio del artículo.</para>
           <para>Esta propiedad devuelve la posición del carácter final con respecto al principio del artículo. El artículo del documento principal (<b>wdMainTextStory</b>) empieza por la posición de carácter 0 (cero). Puede cambiar el tamaño de un marcador estableciendo esta propiedad.</para>
-          <para>Si esta propiedad se establece en un valor inferior al de <see cref="P:Microsoft.Office.Interop.Word.Bookmark.Start" /> la propiedad, la propiedad <b>Start</b> se establece en el mismo valor (es decir, <b></b> el inicio <see cref="P:Microsoft.Office.Interop.Word.Bookmark.End" /> y la propiedad son iguales).</para>
+          <para>Si esta propiedad se establece en un valor inferior al de la <see cref="P:Microsoft.Office.Interop.Word.Bookmark.Start" /> propiedad, la propiedad <b>Start</b> se establece en el mismo valor (es decir, el <b>Inicio</b> y la <see cref="P:Microsoft.Office.Interop.Word.Bookmark.End" /> propiedad son iguales).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -238,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bookmark.Name" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.Bookmark.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -266,6 +275,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bookmark.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Bookmark.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -294,6 +304,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bookmark.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Bookmark.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -311,9 +322,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa la parte de un documento incluida en el objeto especificado <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> .</summary>
+        <summary>Devuelve un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa la parte de un documento incluida en el <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks><para>Para obtener información sobre cómo devolver un intervalo de un documento, <see cref="M:Microsoft.Office.Interop.Word.DocumentClass.Range(System.Object@,System.Object@)" /> vea el método.</para>
+        <remarks><para>Para obtener información sobre cómo devolver un intervalo de un documento, vea el <see cref="M:Microsoft.Office.Interop.Word.DocumentClass.Range(System.Object@,System.Object@)" /> método.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -323,6 +334,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Bookmark.Select" />
       <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; unit" Usage="bookmark.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -338,8 +350,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Selecciona el objeto <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> especificado.</summary>
-        <remarks><para>Después de utilizar este método, utilice <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> la propiedad para trabajar con los elementos seleccionados. </para>
+        <summary>Selecciona el <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objeto especificado.</summary>
+        <remarks><para>Después de utilizar este método, utilice la <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> propiedad para trabajar con los elementos seleccionados. </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -349,6 +361,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bookmark.Start" />
       <MemberSignature Language="VB.NET" Value="Public Property Start As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Start { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Start : int with get, set" Usage="Microsoft.Office.Interop.Word.Bookmark.Start" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -373,7 +386,7 @@
         <value>To be added.</value>
         <remarks><para>El <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objeto tiene una posición inicial y una posición final. La posición final es el punto más alejado del principio del artículo.</para>
           <para>Esta propiedad devuelve la posición del carácter final con respecto al principio del artículo. El artículo del documento principal (<b>wdMainTextStory</b>) empieza por la posición de carácter 0 (cero). Puede cambiar el tamaño de un marcador estableciendo esta propiedad.</para>
-          <para>Si esta propiedad se establece en un valor superior al de la propiedad <see cref="P:Microsoft.Office.Interop.Word.Bookmark.End" /> , la propiedad <b>End</b> se establece en el mismo valor que el de <see cref="P:Microsoft.Office.Interop.Word.Bookmark.Start" /> la propiedad.</para>
+          <para>Si esta propiedad se establece en un valor superior al de la <see cref="P:Microsoft.Office.Interop.Word.Bookmark.End" /> propiedad, la propiedad <b>End</b> se establece en el mismo valor que el de la <see cref="P:Microsoft.Office.Interop.Word.Bookmark.Start" /> propiedad.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -383,6 +396,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Bookmark.StoryType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StoryType As WdStoryType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdStoryType StoryType { Microsoft::Office::Interop::Word::WdStoryType get(); };" />
+      <MemberSignature Language="F#" Value="member this.StoryType : Microsoft.Office.Interop.Word.WdStoryType" Usage="Microsoft.Office.Interop.Word.Bookmark.StoryType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

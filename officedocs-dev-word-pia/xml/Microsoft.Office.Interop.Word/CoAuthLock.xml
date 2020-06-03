@@ -1,9 +1,10 @@
 <Type Name="CoAuthLock" FullName="Microsoft.Office.Interop.Word.CoAuthLock">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="6aaadd2e6d6106e1de5d69cd13baf0beed987346" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142239" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthLock" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7cc699b1011ea262a20706e28c750a2371cc0961" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922433" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthLock" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CoAuthLock" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CoAuthLock" />
   <TypeSignature Language="VB.NET" Value="Public Interface CoAuthLock" />
   <TypeSignature Language="C++ CLI" Value="public interface class CoAuthLock" />
+  <TypeSignature Language="F#" Value="type CoAuthLock = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,7 +20,7 @@
   </Attributes>
   <Docs>
     <summary>Representa un bloqueo dentro del documento. El objeto <b>CoAuthLock</b> es un miembro de la <see cref="T:Microsoft.Office.Interop.Word.CoAuthLocks" /> colección.</summary>
-    <remarks><para>Solo lectura. Use <b></b>Locks<paramref name="index" />(), <paramref name="index" /> donde es el número de índice, para devolver un objeto <b>CoAuthLock</b> . Al agregar un objeto <b>CoAuthLock</b> , use la <see cref="T:Microsoft.Office.Interop.Word.WdLockType" /> enumeración para especificar el tipo de bloqueo.</para>
+    <remarks><para>Solo lectura. Use <b>Locks</b>( <paramref name="index" /> ), donde <paramref name="index" /> es el número de índice, para devolver un objeto <b>CoAuthLock</b> . Al agregar un objeto <b>CoAuthLock</b> , use la <see cref="T:Microsoft.Office.Interop.Word.WdLockType" /> enumeración para especificar el tipo de bloqueo.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthLock.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.CoAuthLock.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthLock.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.CoAuthLock.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthLock.HeaderFooter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HeaderFooter As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HeaderFooter { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderFooter : bool" Usage="Microsoft.Office.Interop.Word.CoAuthLock.HeaderFooter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -116,6 +120,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthLock.Owner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Owner As CoAuthor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::CoAuthor ^ Owner { Microsoft::Office::Interop::Word::CoAuthor ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Owner : Microsoft.Office.Interop.Word.CoAuthor" Usage="Microsoft.Office.Interop.Word.CoAuthLock.Owner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -134,7 +139,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene el <b>coautor</b> que posee el bloqueo especificado.</summary>
-        <value>El <b></b> coautor que posee el bloqueo especificado.</value>
+        <value>El <b>coautor</b> que posee el bloqueo especificado.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthLock.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.CoAuthLock.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -161,7 +167,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:System.Object" /> objeto que representa el objeto primario del objeto <see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" /> especificado.</summary>
+        <summary>Obtiene un <see cref="T:System.Object" /> objeto que representa el objeto primario del <see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" /> objeto especificado.</summary>
         <value>Un <see cref="T:System.Object" /> que representa el objeto primario del objeto especificado <see cref="T:Microsoft.Office.Interop.Word.CoAuthLock" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -172,6 +178,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthLock.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.CoAuthLock.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -190,7 +197,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene un <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa la parte de un documento incluida en el objeto especificado.</summary>
-        <value><see cref="T:Microsoft.Office.Interop.Word.Range" /> Objeto que representa la parte de un documento incluida en el objeto especificado.</value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Range" />Objeto que representa la parte de un documento incluida en el objeto especificado.</value>
         <remarks><para>Solo lectura.</para>
           <para> </para></remarks>
       </Docs>
@@ -201,6 +208,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CoAuthLock.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As WdLockType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLockType Type { Microsoft::Office::Interop::Word::WdLockType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdLockType" Usage="Microsoft.Office.Interop.Word.CoAuthLock.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -219,7 +227,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene una <see cref="T:Microsoft.Office.Interop.Word.WdLockType" /> constante que especifica el tipo de bloqueo.</summary>
-        <value><see cref="T:Microsoft.Office.Interop.Word.WdLockType" /> Constante que especifica el tipo de bloqueo.</value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdLockType" />Constante que especifica el tipo de bloqueo.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,6 +237,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CoAuthLock.Unlock" />
       <MemberSignature Language="VB.NET" Value="Public Sub Unlock ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unlock();" />
+      <MemberSignature Language="F#" Value="abstract member Unlock : unit -&gt; unit" Usage="coAuthLock.Unlock " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

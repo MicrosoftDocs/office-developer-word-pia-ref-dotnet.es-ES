@@ -1,9 +1,10 @@
 <Type Name="ChartFont" FullName="Microsoft.Office.Interop.Word.ChartFont">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="7219cd262a2d7cb6c460e3a546798d13518ba259" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142302" /></Metadata><TypeSignature Language="C#" Value="public interface ChartFont" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7249eaeecfb55b65fe50a679c0c9fe9d0d53c9c9" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922468" /></Metadata><TypeSignature Language="C#" Value="public interface ChartFont" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartFont" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ChartFont" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartFont" />
   <TypeSignature Language="C++ CLI" Value="public interface class ChartFont" />
+  <TypeSignature Language="F#" Value="type ChartFont = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,7 +20,7 @@
   </Attributes>
   <Docs>
     <summary>Contiene los atributos de fuente (nombre, tamaño, color, etc.) de un gráfico de objetos.</summary>
-    <remarks><para>Si no desea dar el mismo formato a todo el texto <see cref="T:Microsoft.Office.Interop.Word.AxisTitle" />de <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" />un <see cref="T:Microsoft.Office.Interop.Word.DataLabel" />objeto, <see cref="T:Microsoft.Office.Interop.Word.DisplayUnitLabel" /> , o, use la propiedad <b>Characters</b> de ese objeto para devolver primero un subconjunto del texto como un <see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" /> objeto y, a continuación, <see cref="P:Microsoft.Office.Interop.Word.ChartCharacters.Font" /> utilice la propiedad de la <see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" />objeto para devolver un <see cref="T:Microsoft.Office.Interop.Word.ChartFont" /> objeto que se puede usar para dar formato al subconjunto de texto según sea necesario.</para>
+    <remarks><para>Si no desea dar el mismo formato a todo el texto de un <see cref="T:Microsoft.Office.Interop.Word.AxisTitle" /> objeto,, <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> o, <see cref="T:Microsoft.Office.Interop.Word.DataLabel" /> <see cref="T:Microsoft.Office.Interop.Word.DisplayUnitLabel" /> use la propiedad <b>Characters</b> de ese objeto para devolver primero un subconjunto del texto como un <see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" /> objeto y, a continuación, utilice la <see cref="P:Microsoft.Office.Interop.Word.ChartCharacters.Font" /> propiedad del <see cref="T:Microsoft.Office.Interop.Word.ChartCharacters" /> objeto para devolver un <see cref="T:Microsoft.Office.Interop.Word.ChartFont" /> objeto que puede utilizar para dar formato al subconjunto de texto según sea necesario.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : obj" Usage="Microsoft.Office.Interop.Word.ChartFont.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -46,7 +48,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se usa sin un calificador de objeto, esta <see cref="T:Microsoft.Office.Interop.Word._Application" /> propiedad devuelve un objeto que representa la aplicación Microsoft Word. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto). Solo lectura.</summary>
+        <summary>Cuando se usa sin un calificador de objeto, esta propiedad devuelve un <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto que representa la aplicación Microsoft Word. Cuando se usa con un calificador de objeto, esta propiedad devuelve un objeto <b>Application</b> que representa el creador del objeto especificado (puede usar esta propiedad con un objeto de automatización OLE para devolver la aplicación de ese objeto). Solo lectura.</summary>
         <value><b>Objeto</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Background" />
       <MemberSignature Language="VB.NET" Value="Public Property Background As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Background { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Background : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.Background" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Bold" />
       <MemberSignature Language="VB.NET" Value="Public Property Bold As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Bold { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Bold : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.Bold" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Color" />
       <MemberSignature Language="VB.NET" Value="Public Property Color As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Color { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Color : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.Color" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.ColorIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property ColorIndex As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ColorIndex { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ColorIndex : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.ColorIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -172,7 +178,7 @@
       <Docs>
         <summary>Devuelve o establece un <b>objeto</b> que representa el color de la fuente.</summary>
         <value><b>Objeto</b></value>
-        <remarks><para>El color se especifica como un valor de índice para la paleta de colores activa o bien como una de <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> las siguientes constantes:</para>
+        <remarks><para>El color se especifica como un valor de índice para la paleta de colores activa o bien como una de las siguientes <see cref="T:Microsoft.Office.Interop.Word.XlColorIndex" /> constantes:</para>
           <list type="bullet">
             <item>
               <para>
@@ -194,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ChartFont.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -223,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.FontStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property FontStyle As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ FontStyle { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FontStyle : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.FontStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -245,7 +253,7 @@
       <Docs>
         <summary>Devuelve o establece el estilo de fuente. Lectura/escritura.</summary>
         <value><b>Objeto</b></value>
-        <remarks><para>El cambio de esta propiedad puede <see cref="T:Microsoft.Office.Interop.Word.ChartFont" /> afectar a otras propiedades <see cref="P:Microsoft.Office.Interop.Word.ChartFont.Bold" /> ( <see cref="P:Microsoft.Office.Interop.Word.ChartFont.Italic" />como y).</para>
+        <remarks><para>El cambio de esta propiedad puede afectar a otras <see cref="T:Microsoft.Office.Interop.Word.ChartFont" /> propiedades (como <see cref="P:Microsoft.Office.Interop.Word.ChartFont.Bold" /> y <see cref="P:Microsoft.Office.Interop.Word.ChartFont.Italic" /> ).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -255,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Italic" />
       <MemberSignature Language="VB.NET" Value="Public Property Italic As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Italic { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Italic : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.Italic" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -286,6 +295,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Name { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -317,6 +327,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.OutlineFont" />
       <MemberSignature Language="VB.NET" Value="Public Property OutlineFont As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ OutlineFont { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.OutlineFont : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.OutlineFont" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -345,7 +356,7 @@
       <Docs>
         <summary>Obtiene o establece el valor que describe la fuente como Outline.</summary>
         <value>Un <b>objeto</b> que devuelve <b>true</b> si la fuente es una fuente de contorno; en caso contrario, <b>false</b> .</value>
-        <remarks><para>Devuelve <b>true</b>, <b>false</b>o <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdUndefined" /> (una combinación de true y false). Puede establecerse en <b>true</b>, <b>false</b>o <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdToggle" />.</para>
+        <remarks><para>Devuelve <b>true</b>, <b>false</b>o <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdUndefined" /> (una combinación de true y false). Puede establecerse en <b>true</b>, <b>false</b>o <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdToggle" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -355,6 +366,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ChartFont.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -383,6 +395,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Shadow" />
       <MemberSignature Language="VB.NET" Value="Public Property Shadow As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Shadow { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Shadow : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.Shadow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -410,7 +423,7 @@
       </ReturnValue>
       <Docs>
         <summary>Establece o devuelve el valor que describe la fuente especificada como sombreada</summary>
-        <value>Un <b>objeto</b> establecido en <b>true</b> si la fuente especificada tiene el formato de sombreado; en caso contrario <b></b> , es <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdUndefined" />false o bien.</value>
+        <value>Un <b>objeto</b> establecido en <b>true</b> si la fuente especificada tiene el formato de sombreado; en caso contrario, es <b>false</b> o bien <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdUndefined" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -420,6 +433,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Size { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Size : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -451,6 +465,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.StrikeThrough" />
       <MemberSignature Language="VB.NET" Value="Public Property StrikeThrough As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ StrikeThrough { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StrikeThrough : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.StrikeThrough" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -482,6 +497,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Subscript" />
       <MemberSignature Language="VB.NET" Value="Public Property Subscript As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Subscript { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Subscript : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.Subscript" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -515,6 +531,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Superscript" />
       <MemberSignature Language="VB.NET" Value="Public Property Superscript As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Superscript { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Superscript : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.Superscript" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -548,6 +565,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartFont.Underline" />
       <MemberSignature Language="VB.NET" Value="Public Property Underline As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Underline { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Underline : obj with get, set" Usage="Microsoft.Office.Interop.Word.ChartFont.Underline" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
